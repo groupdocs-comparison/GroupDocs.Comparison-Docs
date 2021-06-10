@@ -3,8 +3,8 @@ id: generate-document-pages-preview
 url: comparison/java/generate-document-pages-preview
 title: Generate document pages preview
 weight: 4
-description: ""
-keywords: 
+description: "Following this guide you will learn how to generate PDF, Word, Excel, PowerPoint documents thumbnails and preview document pages using GroupDocs.Comparison for Java API."
+keywords: Document preview, Preview document pages, Document pages as PNG, document pages as JPG
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 ---
@@ -24,7 +24,7 @@ The following are the steps to generate document preview with GroupDocs.Compari
     *   custom size of preview images (if needed).          
 
 {{< alert style="info" >}}
-Stream that were created by [CreatePageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates_CreatePageStream) callback will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates_ReleasePageStream) to clean up resources.
+Stream that were created by [createPageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates_CreatePageStream) callback will be disposed automatically once after generation of preview image. If you need to implement custom image preview stream disposing you have to pass additional argument [ReleasePageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates_ReleasePageStream) to clean up resources.
 {{< /alert >}}
 
 *   Call [generatePreview](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)) method of [Source](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getSource()) and [Targets](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getTargets()) document and pass [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) to it. 
@@ -48,13 +48,7 @@ try (Comparer comparer = new Comparer("C:\\source.pdf")) {
     PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
         @Override
         public OutputStream invoke(int pageNumber) {
-            String pagePath = "C:\\"+ "result_" + pageNumber + ".png";
-            try {
-                return new FileOutputStream(pagePath);
-            } catch (FileNotFoundException e) {
-                // Process exception
-                throw new RuntimeException(e);
-            }
+            return new FileOutputStream("C:\\" + "result_" + pageNumber + ".png");
         }
     });
     previewOptions.setPreviewFormat(PreviewFormats.PNG);
@@ -71,13 +65,7 @@ try (Comparer comparer = new Comparer("C:\\source.pdf")) {
     PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
         @Override
         public OutputStream invoke(int pageNumber) {
-            String pagePath = "C:\\"+ "result_" + pageNumber + ".png";
-            try {
-                return new FileOutputStream(pagePath);
-            } catch (FileNotFoundException e) {
-                // Process exception
-                throw new RuntimeException(e);
-            }
+            return new FileOutputStream("C:\\" + "result_" + pageNumber + ".png");
         }
     });
     previewOptions.setPreviewFormat(PreviewFormats.PNG);
@@ -91,18 +79,12 @@ try (Comparer comparer = new Comparer("C:\\source.pdf")) {
 ```java
 try (Comparer comparer = new Comparer("C:\\source.pdf")) {
     comparer.add("C:\\target.pdf");
-    comparer.compare("C:\\target.pdf");
-    Document document = new Document("C:\\result.pdf");
+    final Path resultPath = comparer.compare("C:\\result.pdf");
+    Document document = new Document(resultPath);
     PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
         @Override
         public OutputStream invoke(int pageNumber) {
-            String pagePath = "C:\\"+ "result_" + pageNumber + ".png";
-            try {
-                return new FileOutputStream(pagePath);
-            } catch (FileNotFoundException e) {
-                // Process exception
-                throw new RuntimeException(e);
-            }
+            return new FileOutputStream("C:\\" + "result_" + pageNumber + ".png");
         }
     });
     previewOptions.setPreviewFormat(PreviewFormats.PNG);
@@ -120,19 +102,13 @@ The following code snippet demonstrates how to set specific size for preview im
 ```java
 try (Comparer comparer = new Comparer("C:\\source.pdf")) {
     comparer.add("C:\\target.pdf");
-    comparer.compare(new FileOutputStream("C:\\result.pdf"));
-    Document document = new Document("C:\\result.pdf");
-
+    final Path resultPath = comparer.compare("C:\\result.pdf");
+    Document document = new Document(resultPath);
+    
     PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
         @Override
         public OutputStream invoke(int pageNumber) {
-            String pagePath = "C:\\"+ "result-SetSpecificImagesSize_" + pageNumber + ".png";
-            try {
-                return new FileOutputStream(pagePath);
-            } catch (FileNotFoundException e) {
-                // Process exception
-                throw new RuntimeException(e);
-            }
+            return new FileOutputStream("C:\\" + "result-SetSpecificImagesSize_" + pageNumber + ".png");
         }
     });
     previewOptions.setPreviewFormat(PreviewFormats.PNG);
@@ -147,31 +123,19 @@ try (Comparer comparer = new Comparer("C:\\source.pdf")) {
 
 ## Get page previews with manual resource cleaning
 
-By default, after generating and rendering document page preview  image stream will be immediately disposed. However there is an ability to implement custom method for handling this operation.
+By default, after generating and rendering document page preview image stream will be immediately disposed. However, there is an ability to implement custom method for handling this operation.
 
 ```java
-// Method should match with ReleasePageStream interface signature
-private static void userReleaseStreamMethod(int pageNumber, OutputStream stream) {
-    System.out.println("Releasing memory for page: " + pageNumber);
-    stream.close();
-}
- 
 // Somewhere in the same class
 try (Comparer comparer = new Comparer("C:\\source.pdf")) {
     comparer.add("C:\\target.pdf");
-    comparer.compare("C:\\result.pdf");
-    Document document = new Document("C:\\result.pdf");
-
+    final Path resultPath = comparer.compare("C:\\result.pdf");
+    Document document = new Document(resultPath);
+    
     PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
         @Override
         public OutputStream invoke(int pageNumber) {
-            String pagePath = "C:\\"+ "result-GetPagePreviewsResouresCleaning_" + pageNumber + ".png";
-            try {
-                return new FileOutputStream(pagePath);
-            } catch (FileNotFoundException e) {
-                // Process exception
-                throw new RuntimeException(e);
-            }
+            return new FileOutputStream("C:\\" + "result-GetPagePreviewsResouresCleaning_" + pageNumber + ".png");
         }
     });
     previewOptions.setPreviewFormat(PreviewFormats.PNG);
@@ -179,7 +143,8 @@ try (Comparer comparer = new Comparer("C:\\source.pdf")) {
     previewOptions.setReleasePageStream(new Delegates.ReleasePageStream() {
         @Override
         public void invoke(int pageNumber, OutputStream outputStream) {
-            userReleaseStreamMethod(pageNumber, outputStream);
+            System.out.println("Releasing memory for page: " + pageNumber);
+            outputStream.close();
         }
     });
     document.generatePreview(previewOptions);

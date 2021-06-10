@@ -3,8 +3,8 @@ id: get-list-of-changes
 url: comparison/java/get-list-of-changes
 title: Get list of changes
 weight: 6
-description: ""
-keywords: 
+description: "This article explains how to get collection of changes between compared documents when using GroupDocs.Comparison for Java."
+keywords: Get file diff, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 ---
@@ -25,7 +25,7 @@ The following code sample demonstrates how to get list of all changes.
 ```java
 try (Comparer comparer = new Comparer("C:\\source.pdf")) {
     comparer.add("C:\\target.pdf");
-    comparer.compare();
+    final Path resultPath = comparer.compare();
     ChangeInfo[] changes = comparer.getChanges();
     System.out.println("Count of changes: " + changes.length);
 }
@@ -36,7 +36,7 @@ try (Comparer comparer = new Comparer("C:\\source.pdf")) {
 ```java
 try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"))) {
     comparer.add(new FileInputStream("C:\\target.pdf"));
-    comparer.compare();
+    final Path resultPath = comparer.compare();
     ChangeInfo[] changes = comparer.getChanges();
     System.out.println("Count of changes: " + changes.length);
 }

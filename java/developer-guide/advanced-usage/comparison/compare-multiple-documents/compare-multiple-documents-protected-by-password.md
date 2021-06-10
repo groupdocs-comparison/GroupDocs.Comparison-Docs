@@ -1,13 +1,15 @@
 ---
-id: compare-multiple-documents-protected-with-password
-url: comparison/java/compare-multiple-documents-protected-with-password
-title: Compare multiple documents protected with password
+id: compare-multiple-documents-protected-by-password
+url: comparison/java/compare-multiple-documents-protected-by-password
+title: Compare multiple documents protected by password
 weight: 1
-description: ""
-keywords: 
+description: "This article describes how to compare multiple Word documents or PowerPoint presentations protected by password using GroupDocs.Comparison for Java API."
+keywords: Compare multiple password protected documents, compare multiple protected documents
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 ---
+{{< alert style="info" >}}NOTE: This feature is available only for Word documents, PowerPoint and Open Document presentations.{{< /alert >}}
+
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to compare more than 2 documents that are protected with a password.
 
 The following are the steps to compare password-protected documents.
@@ -28,7 +30,7 @@ try (Comparer comparer = new Comparer("C:\\source.pdf", new LoadOptions("source-
     comparer.add("C:\\target1.pdf", new LoadOptions("target-password"));
     comparer.add("C:\\target2.pdf", new LoadOptions("target-password"));
     comparer.add("C:\\target3.pdf", new LoadOptions("target-password"));
-    comparer.compare("C:\\result.pdf");
+    final Path resultPath = comparer.compare("C:\\result.pdf");
 }
 ```
 
@@ -39,7 +41,7 @@ try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"), new
     comparer.add(new FileInputStream("C:\\target1.pdf"), new LoadOptions("target-password"));
     comparer.add(new FileInputStream("C:\\target2.pdf"), new LoadOptions("target-password"));
     comparer.add(new FileInputStream("C:\\target3.pdf"), new LoadOptions("target-password"));
-    comparer.compare(new FileOutputStream("C:\\result.pdf"));
+    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"));
 }
 ```
 
