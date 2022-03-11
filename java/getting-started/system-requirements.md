@@ -43,7 +43,7 @@ GroupDocs.Comparison for Java supports any 32-bit or 64-bit operating system t
 
 GroupDocs.Comparison for Java supports the following Java versions:
 
-*   J2SE 7.0 (1.7)
+*   J2SE 7.0 (1.7) **DEPRECATED** (Since next version Java 7 will not be supported anymore)
 *   J2SE 8.0 (1.8)
 *   or above (*for example Java 10*)
 

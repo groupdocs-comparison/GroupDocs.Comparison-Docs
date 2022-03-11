@@ -39,7 +39,7 @@ First, you need to specify GroupDocs repository configuration/location in your M
 	<repository>
 		<id>GroupDocsJavaAPI</id>
 		<name>GroupDocs Java API</name>
-		<url>http://repository.groupdocs.com/repo/</url>
+		<url>https://repository.groupdocs.com/repo/</url>
 	</repository>
 </repositories>
 ```
@@ -53,7 +53,7 @@ Then define **[GroupDocs.Comparison for Java](https://products.groupdocs.com/com
     <dependency>
         <groupId>com.groupdocs</groupId>
         <artifactId>groupdocs-comparison</artifactId>
-        <version>21.6.1</version> 
+        <version>22.3</version> 
     </dependency>
 </dependencies>
 ```
