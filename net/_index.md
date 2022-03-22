@@ -3,8 +3,8 @@ id: home
 url: comparison/net
 title: GroupDocs.Comparison for .NET
 weight: 1
-description: GroupDocs.Compairson for .NET developer documentation. Learn how to diff docx, pptx, and pdf files using C#.
-keywords: compare,diff,compare files,diff files,.net api,api,xlsx,microsoft word,docx,pptx,pdf,c#
+description: GroupDocs.Compairson for .NET developer documentation. Learn how to diff docx, pptx, and compare pdf files using C#.
+keywords: compare,diff,compare files,diff files,.net api,file diff,api,xlsx,microsoft word,docx,pptx,pdf,c#,compare pdf
 productName: GroupDocs.Comparison for .NET
 hideChildren: True
 ---
