@@ -18,7 +18,7 @@ hideChildren: False
 
 ### Supported Runtime
 
-**[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** supports Java run-time version 7 (1.7) and above.
+**[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** supports Java run-time version 7 (1.7) and above and Kotlin.
 
 ### Development Environments
 
@@ -34,28 +34,74 @@ GroupDocs hosts all Java APIs on [GroupDocs Repository](https://repository.grou
 
 First, you need to specify GroupDocs repository configuration/location in your Maven `pom.xml` as follows:
 
+<details open><summary>Connect GroupDocs repository</summary><blockquote>
+<details open><summary>Maven</summary>
+
 ```xml
-<repositories>
-	<repository>
-		<id>GroupDocsJavaAPI</id>
-		<name>GroupDocs Java API</name>
-		<url>https://repository.groupdocs.com/repo/</url>
-	</repository>
-</repositories>
+<repository>
+    <id>GroupDocsJavaAPI</id>
+    <name>GroupDocs Java API</name>
+    <url>https://repository.groupdocs.com/repo/</url>
+</repository>
 ```
+
+</details>
+<details><summary>Gradle</summary>
+
+```groovy
+repositories {
+    maven {
+        url "https://repository.groupdocs.com/repo/"
+    }
+}
+```
+
+</details>
+<details><summary>Kotlin</summary>
+
+```kotlin
+repositories {
+    maven(url = "https://repository.groupdocs.com/repo/")
+}
+```
+
+</details>
+</blockquote></details>
 
 ### Define GroupDocs.Comparison for Java API Dependency
 
 Then define **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** API dependency in your `pom.xml` as follows:
 
+<details open><summary>Add GroupDocs.Comparison dependency</summary><blockquote>
+<details open><summary>Maven</summary>
+
 ```xml
-<dependencies>
-    <dependency>
-        <groupId>com.groupdocs</groupId>
-        <artifactId>groupdocs-comparison</artifactId>
-        <version>22.3</version> 
-    </dependency>
-</dependencies>
+<dependency>
+    <groupId>com.groupdocs</groupId>
+    <artifactId>groupdocs-comparison</artifactId>
+    <version>22.3</version>
+</dependency>
 ```
+
+</details>
+<details><summary>Gradle</summary>
+
+```groovy
+dependencies {
+    implementation 'com.groupdocs:groupdocs-comparison:22.3'
+}
+```
+
+</details>
+<details><summary>Kotlin</summary>
+
+```kotlin
+dependencies {
+    implementation("com.groupdocs:groupdocs-comparison:22.3")
+}
+```
+
+</details>
+</blockquote></details>
 
 After performing above-mentioned steps, GroupDocs.Comparison for Java dependency will finally be added to your Maven project.
