@@ -8,7 +8,7 @@ keywords:
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 ---
-{{< alert style="info" >}}You can use GroupDocs.Comparison without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
+{{< alert style="info" >}}You can use **[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
 
 ## Evaluation Limitations
 
@@ -28,7 +28,7 @@ Code given below justifies how to apply license using file path.
 
 ```java
 	License lic = new License();
-	lic.setLicense(licensePath.toString());
+	lic.setLicense(licensePath);
 ```
 
 ### Apply License Using License File Stream
@@ -45,7 +45,7 @@ try (InputStream licenseStream = new FileInputStream(filePath)) {
 {{< alert style="info" >}}Calling License#setLicense multiple times is not harmful but simply wastes processor time. Call License#setLicense in your startup code, before using GroupDocs.Comparison API for compare two or more files in applications on the Java platform. Compiled file shows line-by-line difference of content, paragraphs, characters, styles, shapes and positions.
 classes.{{< /alert >}}
 
-### Metered Licensing
+### Setting Metered License
 
 {{< alert style="info" >}}You can also set Metered license as an alternative to license file. It is a new licensing mechanism that will be used along with existing licensing method. It is useful for the customers who want to be billed based on the usage of the API features. For more details, please refer to [Metered Licensing FAQ](https://purchase.groupdocs.com/faqs/licensing/metered) section.{{< /alert >}}
 
@@ -65,7 +65,7 @@ To check current consumption quantity:
 
 ```java
 // Get consumption quantity from metered
-BigDecimal amountBefor = Metered.getConsumptionQuantity();
+double amountBefor = Metered.getConsumptionQuantity();
 
 // Call comparison
 String sourcePath = "./data/source.docx";
@@ -75,7 +75,7 @@ try (Comparer comparer = new Comparer(sourcePath)) {
     final Path resultPath = comparer.compare(new CompareOptions());
     
     // Get consumption quantity from metered after several calls of comparison
-    BigDecimal amountAfter = Metered.getConsumptionQuantity();
+    double amountAfter = Metered.getConsumptionQuantity();
 }
 ```
 
@@ -84,9 +84,9 @@ try (Comparer comparer = new Comparer(sourcePath)) {
 You can validate if the license has been set properly or not. The **[License](http://www.aspose.com/api/java/words/com.aspose.words/classes/License)** class has `isValidLicense` method that will return true if license has been properly set.
 
 ```java
-	License lic = new License();
-	lic.setLicense(licensePath);
-	if(License.isValidLicense()){
-	     System.out.println("License is Set!");
-	}
+License lic = new License();
+lic.setLicense(licensePath);
+if(License.isValidLicense()){
+     System.out.println("License is Set!");
+}
 ```

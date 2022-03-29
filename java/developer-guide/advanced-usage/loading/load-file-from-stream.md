@@ -13,7 +13,7 @@ In case when you have the file in the form of a stream. To avoid the overhead
 The following are the steps to be followed:
 
 *   Obtain file stream;     
-*   Pass opened source stream to [Comprer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) class constructor or pass opened target file stream to [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream)) method.
+*   Pass opened source stream to [Comprer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class constructor or pass opened target file stream to [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream)) method.
     
 
 Following code snippet describes how to load file from stream.

@@ -15,7 +15,7 @@ hideChildren: False
 Every particular difference between compared document can be applied or rejected and the exported to a final document.
 
 ## Document information extraction
-GroupDocs.Comparison allows to obtain basic information about source document - file type, size, pages count etc. This may be quite useful for generating previews of compared documents.
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to obtain basic information about source document - file type, size, pages count etc. This may be quite useful for generating previews of compared documents.
 
 ## Comparison summary report
  Once comparison process is complete, you can save a differences summary report which lists all changes found between compared documents.
