@@ -239,3 +239,4 @@ Many other open-source examples are available at [GitHub Repository](https://git
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
 * How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
 * How to [spot photos differences](/comparison/java/how-to-spot-photos-differences-in-java-or-kotlin) in Java or Kotlin
+* How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop

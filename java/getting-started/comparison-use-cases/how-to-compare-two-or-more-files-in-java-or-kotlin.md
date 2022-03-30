@@ -279,3 +279,4 @@ You can build your own application using the above-highlighted features. We will
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
 * How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
 * How to [spot photos differences](/comparison/java/how-to-spot-photos-differences-in-java-or-kotlin) in Java or Kotlin
+* How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
