@@ -7,4 +7,4 @@ xcopy net common\content\%PRODUCT%\net /s /e /Y /i
 xcopy _index.md common\content\%PRODUCT% 
 cd common
 call hugo server
-REM call hugo server --bind=0.0.0.0 --baseURL=http://PUBLIC_IP:1313
+REM call hugo server --bind=0.0.0.0 --baseURL=http://PUBLIC_IP -p 1313
