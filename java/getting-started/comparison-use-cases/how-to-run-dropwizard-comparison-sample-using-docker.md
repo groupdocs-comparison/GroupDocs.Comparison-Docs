@@ -72,7 +72,7 @@ To run Comparison Dropwizard application you should fallow next steps:
 
 1. Go to `\Demos\Dropwizard\` in sample folder
 2. Open console in this directory
-3. Run next command to build an image
+3. Run next command to run a container with Comparison application
     ```shell
        docker run -p 8080:8080 --name my-comparer --rm groupdocs_comparison_dropwizard_sample
     ```
@@ -137,3 +137,4 @@ For more details, options, and examples, you can go through [the documentation](
 * How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
 * How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
 * How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
+* How to [run Spring Comparison sample](comparison/java/how-to-run-spring-comparison-sample-using-docker) as Docker container
