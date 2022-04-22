@@ -120,6 +120,7 @@ docker run -p 8080:8080 --name my-comparer --env FILES_DIR=/home/groupdocs/app/M
 Here is a little details about the command:
 * Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use directory `/home/groupdocs/app/MyDocumentSamples` inside Docker container as folder to keep files. It can be changed to any other path, physically this directory does not exist in Docker image
 * Option `-v groupdocs_comparison_spring_volume:/home/groupdocs/app/MyDocumentSamples` configures Docker to create new volume with name `groupdocs_comparison_spring_volume` and to bind it into container as a directory `/home/groupdocs/app/MyDocumentSamples`, so that any access to `MyDocumentSamples` inside the container will actually make changes inside the volume. After that, stopping container that was run with an option `--rm` or in case of manual deleting the container, volume and files inside it will not be deleted. It is easy to run new container attaching the volume, so that files will be available again.
+
 _Note: `groupdocs_comparison_spring_volume` is just a name of the volume. It can be used for deleting the volume. You can change the name on your taste:)_
 
 ### Get a Free API License

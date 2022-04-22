@@ -18,7 +18,8 @@ hideChildren: False
 
 ### Supported Runtime
 
-**[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** supports Java run-time version 7 (1.7) and above and Kotlin.
+**[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** supports Java run-time version 8 and above (Kotlin is supported as well).
+(_Java 7 is **DEPRECATED** (Since next version Java 7 will not be supported anymore)_)
 
 ### Development Environments
 
