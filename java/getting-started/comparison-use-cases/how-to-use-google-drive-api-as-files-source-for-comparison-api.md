@@ -1,18 +1,18 @@
 ---
 id: how-to-use-google-drive-api-as-files-source-for-comparison-api
 url: comparison/java/how-to-use-google-drive-api-as-files-source-for-comparison-api
-title: How to use Google Drive API as files source for comparison API
+title: How to use Google Drive API as files source for comparing documents
 weight: 17
 description: "The article describes the way to use Google Drive API as files source for GroupDocs Comparison API"
 keywords: Compare documents, Google Drive API, Compare files from Google Drive, Comparison Tool with Java and Google Drive API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 ---
-These days Cloud services are very popular. It means that lots of people use them to store documents, photos and other files. In this situation you may need opportunity to compare files directly from Google Drive, without a need to download and save them locally. You can easily do it combining [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) together with Google Drive API.
+These days Cloud services are very popular. It means that lots of people use them to store documents, photos and other files. In this situation you may need opportunity to compare files directly from Google Drive, without a need to download and save them locally. You can easily do it combining [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java) together with Google Drive API.
 
 ### Configuring Google API
 
-In order to use Google API you must have Google account. Here we will not describe how to register it. You can find out required steps on Google documentation page. Nevertheless, below are steps, needed to use Google Drive API.
+In order to use Google API you must have Google account. Here we will not describe how to register it. You can find out required steps on Google documentation page. Nevertheless, below are steps, needed to use Google Drive API in your project.
 
 #### Creating Google Cloud Platform project and activating Drive API
 
@@ -323,3 +323,4 @@ For more details, options, and examples, you can go through [the documentation](
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
 * How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
 * How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+* How to [use Dropbox API as files source](/comparison/java/how-to-use-dropbox-api-as-files-source-for-comparison-api) for comparing documents in Java or Kotlin
