@@ -239,7 +239,7 @@ For more details, options, and examples, you can go through [the documentation](
 ### See also
 
 * How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+* How to [use comparison tool](/comparison/java/how-to-use-ktor-comparison-sample) with Ktor Framework
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
 * How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
 * How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
