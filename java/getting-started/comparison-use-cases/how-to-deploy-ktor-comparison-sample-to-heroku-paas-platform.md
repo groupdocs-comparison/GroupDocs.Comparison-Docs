@@ -169,5 +169,5 @@ Ktor sample app for [GroupDocs.Comparison](https://products.groupdocs.com/compar
 * How to [compare AutoCad files](/comparison/java/how-to-compare-autocad-drawings) in Java or Kotlin
 * How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+* How to [deploy Spring comparison sample](/comparison/java/how-to-deploy-spring-comparison-sample-to-heroku-paas-platform) to Heroku PaaS platform
 * How to [use comparison tool](/comparison/java/how-to-use-ktor-comparison-sample) with Ktor Framework
