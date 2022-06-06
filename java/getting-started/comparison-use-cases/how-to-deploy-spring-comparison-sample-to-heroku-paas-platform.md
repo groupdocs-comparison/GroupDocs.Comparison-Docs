@@ -9,7 +9,7 @@ productName: GroupDocs.Comparison for Java
 hideChildren: False
 ---
 
-One of the most popular solution to deploy web applications and websites is PaaS (platform as a service). Fortunately, [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java) developed to be easily integrated with them. This article describes the way you can deploy comparison example, developed with Spring Framework, to one of very popular PaaS platform - Heroku. The comparison example is completely free to use and modify. It is available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/68c3f01/Demos/Spring) page.
+One of the most popular solutions to deploy web applications and websites is PaaS (platform as a service). Fortunately, [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java) developed to be easily integrated with them. This article describes the way you can deploy comparison example, developed with Spring Framework, to one of very popular PaaS platform - Heroku. The comparison example is completely free to use and modify. It is available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/68c3f01/Demos/Spring) page.
 
 ### System requirements
 
@@ -144,7 +144,7 @@ Lots of comparison settings, for example, [generating summary page](/comparison/
 
 ### Conclusion
 
-Spring sample application is just one example of using [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/) for comparing Pdf, Word, Excel documents, PowerPoint presentations, Diagrams, CAD files, images and much more [supported file formats](/comparison/java/supported-document-formats/). There are more samples of using GroupDocs.Comparison with Java and Kotlin on [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java). To get more details, options, and examples, you can go through [the documentation](/comparison/java/getting-started/) and [GitHub](https://github.com/groupdocs-comparison) repository. Reach us [on the forum](https://forum.groupdocs.com/) for your queries.
+Comparison sample application created with Spring Framework as a core, is just one example of using [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/) for comparing Pdf, Word, Excel documents, PowerPoint presentations, Diagrams, CAD files, images and much more [supported file formats](/comparison/java/supported-document-formats/). There are more samples of using GroupDocs.Comparison with Java and Kotlin on [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java). To get more details, options, and examples, you can go through [the documentation](/comparison/java/getting-started/) and [GitHub](https://github.com/groupdocs-comparison) repository. Reach us [on the forum](https://forum.groupdocs.com/) for your queries.
 
 ### See also
 
@@ -153,4 +153,4 @@ Spring sample application is just one example of using [GroupDocs.Comparison API
 * How to [depoy Ktor sample](comparison/java/how-to-deploy-ktor-comparison-sample-to-heroku-paas-platform) to Heroku PaaS platform
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
 * How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [use Ktor Framework](/comparison/java/how-to-use-ktor-comparison-sample) comparison sample
+* How to [depoy Dropwizard sample](/comparison/java/how-to-deploy-dropwizard-comparison-sample-to-heroku-paas-platform) to Heroku PaaS platform
