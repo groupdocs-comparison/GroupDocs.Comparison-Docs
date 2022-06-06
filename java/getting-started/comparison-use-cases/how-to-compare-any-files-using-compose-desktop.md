@@ -1,12 +1,29 @@
 ---
 id: how-to-compare-any-files-using-compose-desktop
 url: comparison/java/how-to-compare-any-files-using-compose-desktop
-title: How compare any files in Kotlin Compose Desktop application 
+title: How to compare any files in Kotlin Compose Desktop application 
 weight: 12
 description: "The article is about using comparison API in Kotlin Compose application"
 keywords: Compare any files or documents, differences of files, Diff tool in Kotlin Compose
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Compare text with Kotlin Compose
+        description: Compare text with high performance using GroupDocs.Comparison for Java APIs and Kotlin Compose
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare text in Kotlin
+        description: Learn how to compare text in Kotlin step by step
+        steps:
+        - name: Load source text file
+          text: Create an instance of Comparer class passing source text file path as a constructor parameter
+        - name: Load target text file
+          text: Add one or more target text files to compare them with source one
+        - name: Compare source and target text files
+          text: Run comparison process passing path where the result document should be saved
 ---
 
 In this article, we will discuss how to ues [GroupDocs.Comparison](https://products.groupdocs.com/comparison) API Compose Desktop application with Kotlin. After going through this article, you will find it easy to create comparing desktop application that can be run at any desktop platform, as Windows, Linux or Mac. Kotlin Compose is modern and fast-increasing in popularity UI framework. It is usually (*for now*) used for creating Android applications, but also supports creating Desktop, Web and Multiplatform applications. In this article will not be described how to use Compose in details, as there are lots of information on the internet.
