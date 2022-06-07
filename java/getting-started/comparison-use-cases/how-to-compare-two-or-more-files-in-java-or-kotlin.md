@@ -7,6 +7,23 @@ description: "The article is about comparing two or more Excel, Word, Presentati
 keywords: Compare Excel, compare Word, compare Presentations, Diff tool for Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Several document comparison
+        description: The product allows to compare several documents
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: 
+        description: Learn how to compare several documents in Java or Kotlin project
+        steps:
+        - name: Load source document
+          text: Create an instance of Comparer class passing source document as a constructor parameter
+        - name: Load target documents
+          text: Add one or more target documents to compare them with source one
+        - name: Compare source and several target documents
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 
 Document comparison is one of the most common requirements for today’s world. Whether it is to compare word files, compare excel files, presentations, PDF documents or even compare text files or any other document format, accuracy is the key factor while comparing.

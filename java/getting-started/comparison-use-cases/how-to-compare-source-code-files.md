@@ -7,6 +7,23 @@ description: "This article describes how can you compare programming files and m
 keywords: Compare cs files, compare java files, merge documents
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Code differ
+        description: The product allows to compare code
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: 
+        description: Learn how to compare code in Java or Kotlin project
+        steps:
+        - name: Load source code file
+          text: Create an instance of Comparer class passing source code file as a constructor parameter
+        - name: Load target code files
+          text: Add one or more target code files to compare them with source one
+        - name: Compare source and target code files
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 
 ***

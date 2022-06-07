@@ -7,6 +7,21 @@ description: "The article is about comparing photos in Java or Kotlin to spot th
 keywords: Compare photos, differences of photos, Diff tool for photos in Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Spot differences tool
+        description: The tool allows to spot differences of photos
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to spot differences of photos
+        description: Learn how to spot differences of photos in Java or Kotlin project
+        steps:
+        - name: Photos Comparison API
+          text: Downloading and configuring Comparison API
+        - name: Compare Photos to Highlight Differences
+          text: After creating Comparer object passing source and target photos just call special method to get result document
 ---
 
 In this article, we will discuss how to programmatically find differences between two photos. After going through this, you will find it easy to compare any photos and highlight the identified differences using Java or Kotlin.

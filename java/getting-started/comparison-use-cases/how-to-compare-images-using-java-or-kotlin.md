@@ -7,6 +7,23 @@ description: "You will find how you can use GroupDocs.Comparison for Java inside
 keywords: Compare images, spot images differences, how to compare images in Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Compare images
+        description: The product allows to compare images
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to find differences between two images
+        description: Learn how to find differences between two images in Java or Kotlin project
+        steps:
+        - name: Load source image
+          text: Create an instance of Comparer class passing source image as a constructor parameter
+        - name: Load target images
+          text: Add one or more target images to compare them with source one
+        - name: Compare source and target images
+          text: Run comparison process passing path where the result image should be saved
 ---
 Whether you want to build an application with spot the difference feature or if you want to compare two images programmatically within any of your Java (or Kotlin) based image processing applications, you are at the right place. With our product, you can easily compare JPG, PNG, BMP, or images with some other file formats. Without wasting time, let’s compare images in Java and Kotlin using the **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)**
 

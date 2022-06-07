@@ -7,6 +7,23 @@ description: "You will find how you can use GroupDocs.Comparison for Java inside
 keywords: Compare Text, compare Word, compare Pdf, how to compare documents in Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Compare word documents
+        description: The product allows to compare word or pdf documents
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: 
+        description: Learn how to compare word or pdf documents in Java or Kotlin project
+        steps:
+        - name: Load source word or pdf document
+          text: Create an instance of Comparer class passing source word or pdf document as a constructor parameter
+        - name: Load target word or pdf documents
+          text: Add one or more target word or pdf documents to compare them with source one
+        - name: Compare source and target word or pdf documents
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 After going through this article, you will be able to compare text files, Word files, PDF files, and other documents in Java-based applications. By using this feature, we can compare invoices, contracts, presentations, AutoCAD designs, price lists, or programming files. We will also have opportunity to highlight the identified changes and have the option to either accept or reject any change. You can even build our own [document comparison tool](https://products.groupdocs.app/comparison/total) similar to the one launched by GroupDocs, using the document comparison API for Java.
 

@@ -7,6 +7,23 @@ description: "Read this article and find out how you can use the GroupDocs.Compa
 keywords: How to compare AutoCAD files, CAD files, Comparison Use Case, Compare AutoCAD files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Compare AutoCad drawings
+        description: The product allows to compare AutoCad drawings
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare AutoCad drawings
+        description: Find out how to compare AutoCad drawings
+        steps:
+        - name: Load source AutoCad drawing document
+          text: Create an instance of Comparer class passing source AutoCad drawing document as a constructor parameter
+        - name: Load target AutoCad drawing document
+          text: Add one or more target AutoCad drawing documents to compare them with source one
+        - name: Compare source and target AutoCad drawing documents
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 It becomes increasingly difficult to remember what has been changed from one revision to another as your design develops, especially when working in a remotely distributed team. The **DWG Compare** feature by AutoDesk provides a way to perform a visual comparison between two drawings - it identifies objects that have been modified, added, or removed from the two drawings and uses color and revision clouds to show the differences. The result displays in a new drawing called the *comparison drawing*.
 
@@ -53,9 +70,9 @@ try (Comparer comparer = new Comparer("source.dwg")) {
 
 As a result, we get a DWG file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>.
 
-| Result DWG |
-| --- |
-| ![](comparison/java/images/how-to-compare-autocad-drawings_2.png) 
+| Result DWG                                                        |
+|-------------------------------------------------------------------|
+| ![](comparison/java/images/how-to-compare-autocad-drawings_2.png) |
 
 ## More resources
 ### Advanced Usage Topics

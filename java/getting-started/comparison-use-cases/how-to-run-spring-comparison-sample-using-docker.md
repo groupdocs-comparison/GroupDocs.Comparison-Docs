@@ -7,11 +7,30 @@ description: "The article is about running Spring Comparison sample using Docker
 keywords: Compare photos, Spring Comparison Tool, Spring and Docker, Comparison API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Images, PowerPoint and AutoCad comparer
+        description: The product allows to compare Images, PowerPoint, AutoCad and much more types of files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to run Spring project in Docker container
+        description: Learn how to run and configure Spring project in Docker container
+        steps:
+        - name: Spring Comparison Application
+          text: What is Spring Comparison sample application and why do you need it
+        - name: System Requirements
+          text: Which tools and files you need to run the application in Docker container
+        - name: Launching Spring Comparison sample
+          text: Configuring, building and running Comparison sample application using Docker
+        - name: Configuring Comparison API
+          text: Configuration the application to customize it according to your needs
 ---
 
 You need just a few commands to run [Spring Comparison sample](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Spring) as a Docker container. After reading this article you will have web application that can compare any documents and highlight differences 
 
-### Application to Compare Documents 
+### Spring Comparison Application
 
 Spring Comparison sample is an application, that was created by using Spring Framework together with [GroupDocs.Comparison API for Java](https://products.groupdocs.com/comparison/java) functionality. Tt is just a sample, but it is still fully functional and can be used to compare any [supported file formats](/comparison/java/supported-document-formats/). Furthermore, sources of the application are available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Spring), so that you can easily add some functions or change the application in any way you want.
 
@@ -25,11 +44,7 @@ To run the sample as a Docker container you will need to have installed Docker i
    2. Click `Download ZIP` link
    3. After downloading, extract the archive to any directory you like
 
-### Common Advantages of using Comparison sample inside Docker container
-
-[GroupDocs.Comparison API](https://products.groupdocs.com/comparison) is a modern solution to compare lots of [supported file formats](/comparison/java/supported-document-formats/). It will help you to compare files, extract source/target and result texts, preview changes, accept or reject them, generate summary, generate preview of file pages and [much more](https://docs.groupdocs.com/comparison/java/groupdocs-comparison-overview/). Simultaneously, Docker is a modern software that gives you an opportunity to build and/or run applications without having installed environment, that is required to it. As for Spring Comparison application, you don't need to install and configure Java, Maven and other Java things. 
-
-### Launching Comparison Spring sample
+### Launching Spring Comparison sample
 
 In order to launch the sample, firstly build Docker image. It must be done only once. After it will be built, you can use the image to run Docker container any times
 
@@ -122,6 +137,10 @@ Here is a little details about the command:
 * Option `-v groupdocs_comparison_spring_volume:/home/groupdocs/app/MyDocumentSamples` configures Docker to create new volume with name `groupdocs_comparison_spring_volume` and to bind it into container as a directory `/home/groupdocs/app/MyDocumentSamples`, so that any access to `MyDocumentSamples` inside the container will actually make changes inside the volume. After that, stopping container that was run with an option `--rm` or in case of manual deleting the container, volume and files inside it will not be deleted. It is easy to run new container attaching the volume, so that files will be available again.
 
 _Note: `groupdocs_comparison_spring_volume` is just a name of the volume. It can be used for deleting the volume. You can change the name on your taste:)_
+
+### Common Advantages of using Comparison sample inside Docker container
+
+[GroupDocs.Comparison API](https://products.groupdocs.com/comparison) is a modern solution to compare lots of [supported file formats](/comparison/java/supported-document-formats/). It will help you to compare files, extract source/target and result texts, preview changes, accept or reject them, generate summary, generate preview of file pages and [much more](https://docs.groupdocs.com/comparison/java/groupdocs-comparison-overview/). Simultaneously, Docker is a modern software that gives you an opportunity to build and/or run applications without having installed environment, that is required to it. As for Spring Comparison application, you don't need to install and configure Java, Maven and other Java things.
 
 ### Get a Free API License
 

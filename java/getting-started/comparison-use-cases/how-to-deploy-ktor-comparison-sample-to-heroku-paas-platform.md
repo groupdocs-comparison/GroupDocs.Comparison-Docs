@@ -7,6 +7,27 @@ description: "The article describes the way you can deploy our Ktor comparison s
 keywords: Ktor Framework, Compare documents, Compare files with Kotlin, Paas, Heroku
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Pdf, Word, Excel comparer
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, Code, Image, AutoCad and much more documents
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to deploy Ktor project to Heroku
+        description: Learn how to deploy Comparison Ktor sample project to Heroku
+        steps:
+        - name: System requirements
+          text: Which tools you need to deploy application to Heroku
+        - name: Getting sample application from GitHub
+          text: Downloading pre-configured sample application to deploy it
+        - name: Key points in the project to be deployed to Heroku
+          text: Main things to be configured in the project before starting deploying it
+        - name: Creating Heroku application
+          text: Creating application in Heroku account in which the sample will be deployed
+        - name: Deploying sample application to Heroku
+          text: Running command to deploy the sample application and checking that everything works
 ---
 Platform as a service (PaaS) is very popular solution to deploy web applications and websites. Luckily, [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java) can easily be integrated with them. In the article is described how you can deploy comparison example, that is written with Ktor Framework to one of the most popular PaaS platform - Heroku. The comparison example is free to use and is available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/68c3f01/Demos/Ktor) page.
 
@@ -17,7 +38,19 @@ To deploy the sample to Heroku server you need next applications to be installed
 1. `Heroku CLI` - to get access to your account (of course, you need an account)
 2. `Git` - to load the sample application and to deploy it to Heroku server
 
-### Key points in the sample to be deployed to Heroku
+### Getting sample application from GitHub
+
+1. Go to [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) with samples of [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java/)
+2. Click green button `Code` on the right top of the page and copy HTTPS repository link
+3. Open Windows Command Line or Linux terminal and run next command
+
+    ```shell
+    git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java.git
+    ```
+
+Sample app was downloaded from GitHub to your local directory. Do not close the command line
+
+### Key points in the project to be deployed to Heroku
 
 1. Special gradle task was added to `build.gradle.kts`. It is needed for Heroku to build the executable file the sample
 
@@ -58,18 +91,6 @@ To deploy the sample to Heroku server you need next applications to be installed
     java.runtime.version=11
     ```
 
-### Getting sample app from GitHub
-
-1. Go to [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) with samples of [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java/)
-2. Click green button `Code` on the right top of the page and copy HTTPS repository link
-3. Open Windows Command Line or Linux terminal and run next command
-
-    ```shell
-    git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java.git
-    ```
-
-Sample app was downloaded from GitHub to your local directory. Do not close the command line
-
 ### Creating Heroku application
 
 1. In command line run next commands
@@ -93,7 +114,9 @@ Sample app was downloaded from GitHub to your local directory. Do not close the 
     https://my-comparison-app-name.herokuapp.com/ | https://git.heroku.com/my-comparison-app-name.git
     ```
 
-3. Add heroku git repository link as a remote to sample app repository running next command:
+### Deploying sample application to Heroku
+
+1. Add heroku git repository link as a remote to sample app repository running next command:
 
     ```shell
         heroku git:remote --app my-comparison-app-name --remote heroku
@@ -101,7 +124,7 @@ Sample app was downloaded from GitHub to your local directory. Do not close the 
     
     Where `my-comparison-app-name` is app name, `heroku` is just a name which will be used by git to identify heroku git repository. You can change it, but don't forget new one.
 
-4. Push the application to Heroku server
+2. Push the application to Heroku server
 
     ```shell
     git subtree push --prefix Demos/Ktor heroku master

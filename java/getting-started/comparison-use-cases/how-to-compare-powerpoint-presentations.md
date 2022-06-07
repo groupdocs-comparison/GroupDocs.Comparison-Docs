@@ -7,6 +7,23 @@ description: "The article describes a possible example of using the GroupDocs.Co
 keywords: Compare Presentation, compare style changes, compare pptx, How to compare PowerPoint files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: PowerPoint slide comparison
+        description: The product allows to compare PowerPoint slides
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare PowerPoint slides
+        description: Learn how to compare PowerPoint slides in Java or Kotlin project
+        steps:
+        - name: Load source PowerPoint 
+          text: Create an instance of Comparer class passing source PowerPoint as a constructor parameter
+        - name: Load target PowerPoints
+          text: Add one or more target PowerPoints to compare them with source one
+        - name: Compare source and target PowerPoints
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 You may need to compare two versions of a PowerPoint Presentation to see the differences between them (e.g., if a colleague has edited it directly without noting the changes). And the quickest way to do this is with PowerPoint’s built-in Compare function. To use this:
 

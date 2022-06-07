@@ -7,6 +7,27 @@ description: "The article describes the way to use Google Drive API as files sou
 keywords: Compare documents, Google Drive API, Compare files from Google Drive, Comparison Tool with Java and Google Drive API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name:  PowerPoint, Image and AutoCad comparer
+        description: The product allows to compare PowerPoint, Image and AutoCad files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name:  How to use Google Drive API to spot differences of files, images or documents
+        description: Learn how to use Google Drive API to spot differences of files, images or documents in Java or Kotlin project
+        steps:
+        - name: Configuring Google API
+          text: Description of steps required to configure Google API
+        - name: Configuring project to use Google Drive API with Comparison API
+          text: All required configurations to use Google Drive API and Comparison API in the project
+        - name: Creating Google Drive API objects
+          text: Creating Service object to work with Google Drive API
+        - name: Get list of files using Google Drive API
+          text: Connect to Google Drive API and load list of files stored in it
+        - name: Comparing Documents directly from Google Drive
+          text: Compare documents which are stored in Google Drive account
 ---
 These days Cloud services are very popular. It means that lots of people use them to store documents, photos and other files. In this situation you may need opportunity to compare files directly from Google Drive, without a need to download and save them locally. You can easily do it combining [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java) together with Google Drive API.
 
@@ -77,7 +98,7 @@ In order to use Google API you must have Google account. Here we will not descri
 
    ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
 
-### Configuring Project to Use Google Drive API with GroupDocs.Comparison API
+### Configuring project to use Google Drive API with Comparison API
 
 To use Google Drive API as a file storage of Comparison API you need to add some libraries and repository to the project.
 
@@ -168,7 +189,7 @@ dependencies {
 </details>
 </blockquote></details>
 
-### Creating Service object to work with Google Drive API
+### Creating Google Drive API objects
 
 First, we need JSON factory, that will be used for communication with Google server
 
@@ -220,7 +241,7 @@ Finally, we build an object that will be used to access Google Drive files
       .build();
    ```
 
-### Getting List of Files using Google Drive API
+### Get list of files using Google Drive API
 
 To print list of files which are on your Google Drive, execute next code
 

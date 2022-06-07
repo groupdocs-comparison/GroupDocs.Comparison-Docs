@@ -7,6 +7,27 @@ description: "The article describes how to deploy Spring comparison sample to He
 keywords: Spring Framework, Compare documents, Compare files with Kotlin, Paas, Heroku
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Spreadsheet, AutoCad, Image comparer
+        description: The product allows to compare PowerPoint, Code, Image, AutoCad, Pdf, Word, Excel and much more documents
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to deploy Spring project to Heroku
+        description: Learn how to deploy Comparison Spring sample project to Heroku
+        steps:
+        - name: System requirements
+          text: Which tools you need to deploy application to Heroku
+        - name: Getting sample application from GitHub
+          text: Downloading pre-configured sample application to deploy it
+        - name: Main points in the project to be deployed to Heroku
+          text: Main things to be configured in the project before starting deploying it
+        - name: Creating Heroku application
+          text: Creating application in Heroku account in which the sample will be deployed
+        - name: Deploying sample application to Heroku
+          text: Running command to deploy the sample application and checking that everything works
 ---
 
 One of the most popular solutions to deploy web applications and websites is PaaS (platform as a service). Fortunately, [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java) developed to be easily integrated with them. This article describes the way you can deploy comparison example, developed with Spring Framework, to one of very popular PaaS platform - Heroku. The comparison example is completely free to use and modify. It is available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/68c3f01/Demos/Spring) page.
@@ -18,7 +39,19 @@ Next applications must be installed to deploy the sample to Heroku server
 1. `Heroku CLI` - tool to access Heroku account (of course, you need an account)
 2. `Git` - tool to download sample application and to deploy it to Heroku server
 
-### Main points in the sample to be deployed to Heroku
+### Getting sample application from GitHub
+
+1. Open [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) with samples of [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java/)
+2. Using green button `Code` on the right top of the page copy HTTPS repository link
+3. Open Linux terminal or Windows Command Line and run the next command
+
+    ```shell
+    git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java.git
+    ```
+
+The command will download project with samples from GitHub to your local directory. Do not close the command line
+
+### Main points in the project to be deployed to Heroku
 
 1. Maven profile to build JAR file is configured and active by default
 2. Sample configured to use `PORT` environment variable (file `configuration.yml`). It is important, because Heroku can change port each time app starts
@@ -40,18 +73,6 @@ Next applications must be installed to deploy the sample to Heroku server
     ```properties
     java.runtime.version=1.8
     ```
-
-### Getting sample app from GitHub
-
-1. Open [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) with samples of [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java/)
-2. Using green button `Code` on the right top of the page copy HTTPS repository link
-3. Open Linux terminal or Windows Command Line and run the next command
-
-    ```shell
-    git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java.git
-    ```
-
-The command will download project with samples from GitHub to your local directory. Do not close the command line
 
 ### Creating Heroku application
 
@@ -76,7 +97,9 @@ The command will download project with samples from GitHub to your local directo
     https://my-spring-comparer.herokuapp.com/ | https://git.heroku.com/my-spring-comparer.git
     ```
 
-3. Next, add heroku repository link as a remote to sample app repository using next command:
+### Deploying sample application to Heroku
+
+1. Next, add heroku repository link as a remote to sample app repository using next command:
 
     ```shell
         heroku git:remote --app my-spring-comparer --remote heroku-spring
@@ -84,7 +107,7 @@ The command will download project with samples from GitHub to your local directo
     
     Where `my-spring-comparer` is the name of Heroku app, `heroku-spring` is a name that will be used by git to identify heroku repository. You can change it, but don't forget new one.
 
-4. Deploy the application to Heroku server using next command
+2. Deploy the application to Heroku server using next command
 
     ```shell
     git subtree push --prefix Demos/Spring heroku-spring master

@@ -7,6 +7,23 @@ description: "You will find how you can use GroupDocs.Comparison for Java to see
 keywords: Compare Text, compare Word, compare Pdf, how to compare documents in Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Files diff
+        description: The product allows to diff files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to check if two files are identical
+        description:  Learn how to check if two files are identical in Java or Kotlin project
+        steps:
+        - name: Load source file
+          text: Create an instance of Comparer class passing source file as a constructor parameter
+        - name: Load target files
+          text: Add one or more target files to compare them with source one
+        - name: Compare source and target files
+          text: Run comparison process passing path where the result file should be saved
 ---
 
 The [GroupDocs.Comparison](https://products.groupdocs.com/comparison) is a Java library which allows you to compare documents and see differences. Compare Microsoft Word, Excel, PowerPoint, OpenDocument, PDF, Text, HTML and many other documents, retrieve a list of changes between source and target documents, apply or reject changes and save results with [GroupDocs.Comparison](https://products.groupdocs.com/comparison) API. In addition to this, GroupDocs.Comparison can identify styling and formatting changes – like bold, italic, underlines, strikethroughs, font types, etc.

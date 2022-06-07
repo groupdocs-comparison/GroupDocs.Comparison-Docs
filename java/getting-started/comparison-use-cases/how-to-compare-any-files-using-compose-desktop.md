@@ -10,20 +10,20 @@ hideChildren: False
 structuredData:
     showOrganization: True
     application:
-        name: Compare text with Kotlin Compose
-        description: Compare text with high performance using GroupDocs.Comparison for Java APIs and Kotlin Compose
+        name: Compare text
+        description: The product allows to compare text or any other files
         productCode: comparison
         productPlatform: java
     howTo:
-        name: How to compare text in Kotlin
-        description: Learn how to compare text in Kotlin step by step
+        name: How to compare text in Kotlin Compose project
+        description: Learn how to compare text or any other files in Kotlin Compose project
         steps:
-        - name: Load source text file
-          text: Create an instance of Comparer class passing source text file path as a constructor parameter
-        - name: Load target text file
-          text: Add one or more target text files to compare them with source one
-        - name: Compare source and target text files
-          text: Run comparison process passing path where the result document should be saved
+        - name: Load source text or file
+          text: Create an instance of Comparer class passing source text or file path as a constructor parameter
+        - name: Load target text or file
+          text: Add one or more target texts or files to compare them with source one
+        - name: Compare source and target text or files
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 
 In this article, we will discuss how to ues [GroupDocs.Comparison](https://products.groupdocs.com/comparison) API Compose Desktop application with Kotlin. After going through this article, you will find it easy to create comparing desktop application that can be run at any desktop platform, as Windows, Linux or Mac. Kotlin Compose is modern and fast-increasing in popularity UI framework. It is usually (*for now*) used for creating Android applications, but also supports creating Desktop, Web and Multiplatform applications. In this article will not be described how to use Compose in details, as there are lots of information on the internet.

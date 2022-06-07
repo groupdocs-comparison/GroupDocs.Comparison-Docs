@@ -7,6 +7,23 @@ description: "This article describes how to compare contracts, drafts and legal 
 keywords: Compare contracts, compare drafts, compare blacklining, compare redlining
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Compare contract
+        description: The product allows to compare contract deals
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare contracts in Java or Kotlin
+        description: Learn how to compare contracts in Java or Kotlin project
+        steps:
+        - name: Load source contract
+          text: Create an instance of Comparer class passing source contract as a constructor parameter
+        - name: Load target contract
+          text: Add one or more target contracts to compare them with source one
+        - name: Compare source and target contracts
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 An ordinary employee is often faced with the need to compare two versions of the same document. For example, upon receipt of a signed version of an agreement, it is important to ensure that the counterparty has not made major changes affecting the terms of the transaction. And on the next round of approval of the draft document within the company, you only need to look at the changed sections so as not to waste time re-reading the entire text.
 

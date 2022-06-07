@@ -7,8 +7,25 @@ description: "You will find how you can use GroupDocs.Comparison for Java inside
 keywords: Compare docx files, invoices comparison, how to compare invoices
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Match invoices
+        description: The product allows to match invoices
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to match invoices
+        description: Learn how to match invoices in Java or Kotlin project
+        steps:
+        - name: Load source invoice
+          text: Create an instance of Comparer class passing source invoice as a constructor parameter
+        - name: Load target invoices
+          text: Add one or more target invoices to compare them with source one
+        - name: Compare source and target invoices
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
-Sometimes you need to achieve maximum accuracy in comparing files. Suppose you have two versions of an important document and you need to find differences character-by-character or the opposite case, you need to compare the documents, but the details are not important to you, and you only need words that have changes. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** provides the ability to compare documents with sensitivity settings
+Sometimes you need to achieve maximum accuracy in comparing files. Suppose you have two versions of an important document, and you need to find differences character-by-character or the opposite case, you need to compare the documents, but the details are not important to you, and you only need words that have changes. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** provides the ability to compare documents with sensitivity settings
 
 For example, there are two invoices in the DOCX format and you need to compare their contents with the maximum level of detail and comparison sensitivity.
 

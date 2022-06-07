@@ -7,10 +7,29 @@ description: "The article describes GroupDocs Comparison sample created with usi
 keywords: Ktor Framework, Compare documents, Compare files with Kotlin, Comparison Tool with Kotlin and Ktor Framework
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Pdf, Word, Image comparison API
+        description: The product allows to compare Pdf, Word and Image files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to use Ktor Framework
+        description: Learn how to use Ktor Framework to compare documents, images and other files in Java or Kotlin project
+        steps:
+        - name: Which technologies will be used
+          text: Find out which technologies are required and will be used in the application
+        - name: Common structure of the project
+          text: It is very important to form main structure of the application project
+        - name: Entry point or how to run the sample
+          text: One or few ways the application will be launched
+        - name: Key places inside the application
+          text: Implement general functions inside the application to make it work
 ---
 There are lots of popular web frameworks which you can use with GroupDocs Comparison library. One of the most modern and powerful Kotlin frameworks is Ktor. This article describes example of using Ktor Framework together with modern and powerful [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) for comparing Word, Excel, PowerPoint, Pdf documents, photos and much more. The example is completely free to  use and available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/68c3f01/Demos/Ktor)
 
-### Used technologies
+### Which technologies will be used
 
 1. Kotlin - A modern programming language that makes developers happier. Fully compatible with Java libraries.
 2. Ktor - Modern, Open Source, free, and fun Web Framework.
@@ -19,7 +38,7 @@ There are lots of popular web frameworks which you can use with GroupDocs Compar
 5. Koin - Smart Kotlin injection library
 6. Logback - Universal logging system
 
-### Common description of project structure
+### Common structure of the project
 
 * `config` - Kotlin classes for mapping application and comparer configurations
 * `di` - Koin dependency injection modules

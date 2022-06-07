@@ -7,6 +7,27 @@ description: "The article describes the way to use Dropbox API as files source f
 keywords: Compare documents, Dropbox API, Compare files from Dropbox, Comparison Tool with Java and Dropbox API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Pdf, Excel and Word comparer
+        description: The product allows to compare Pdf, Excel and Word documents using DropBox API
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to use DropBox API to spot differences of documents
+        description: Learn how to use DropBox API to spot differences of documents in Java or Kotlin project
+        steps:
+        - name: Configuring Dropbox API
+          text: Description of steps required to configure Dropbox API
+        - name: Configuring project to use Dropbox API with Comparison API
+          text: All required configurations to use Dropbox API and Comparison API in the project
+        - name: Creating Dropbox API objects
+          text: Create Client object to work with Dropbox API
+        - name: Get list of files using Dropbox API
+          text: Connect to Dropbox API and load list of files stored in it
+        - name: Comparing documents directly from Dropbox
+          text: Compare documents which are stored in Dropbox account
 ---
 Nowadays Cloud services are highly popular. Therefore, lots of people use them as a storage for photos, images, documents and other files. This way, you may need opportunity to compare documents directly from Dropbox, without downloading and saving them locally. You can do it easily using [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) together with Dropbox API.
 
@@ -33,7 +54,7 @@ Preparing to using Dropbox API you must have Dropbox account. It is very easy to
 
    ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
 
-#### Configuring Dropbox API
+#### Updating Dropbox API settings
 
 1. First of all, open `Permissions` tab and select next permissions
 
@@ -54,7 +75,7 @@ Preparing to using Dropbox API you must have Dropbox account. It is very easy to
 
 4. That's actually all. The token is the only thing that you need to access your Dropbox files. Save the token somewhere, we will use it later.
 
-### Configuring Project to Use Dropbox API with GroupDocs.Comparison for Java
+### Configuring project to use Dropbox API with Comparison API
 
 To use Dropbox API as a file storage for comparing documents, you need to add some libraries and repository to the project.
 
@@ -131,7 +152,7 @@ dependencies {
 </details>
 </blockquote></details>
 
-### Creating Client object to work with Dropbox API
+### Creating Dropbox API objects
 
 Actually, it is very easy to start working with Dropbox API
 
@@ -144,7 +165,7 @@ Where:
    1. `mycompany/best-comparison-app` - is just identifier that you will see in logs of Dropbox website
    2. `YOUR ACCESS TOKEN` - here should be access token, that was generated previously
 
-### Getting List of Files using Dropbox API
+### Get list of files using Dropbox API
 
 To print list of files which are in your Dropbox app directory, run next code (do not forget to upload some files via Dropbox webpage, because by default app directory is empty)
 
@@ -172,7 +193,7 @@ Here is an example of the output:
 
 In the output each line is one file. It's path, name and size. You can use this information to show list of files. There are more data, that can be got for each file. More information can be found on Dropbox Documentation page. **Keep in mind**, the code above is just example. There is a pagination, that should be processed in order to get all files.
 
-### Comparing Documents directly from Dropbox
+### Comparing documents directly from Dropbox
 
 [GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java/) is a flexible, powerful and modern library that you can use in any Java, Kotlin or other Java compatible projects to compare Word, Excel, PowerPoint documents, photos, images, diagrams, code files, and much more [supported file formats](/comparison/java/supported-document-formats/). Comparison API contains lots of flexible settings, for example: accepting/rejecting changes, generating summary page, generating document preview images, comparing more than two documents (multi comparing), changing comparison sensitivity and changes highlighting styles. Read more about settings in [the documentation](/comparison/java/getting-started/). On our [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) you can find different samples of using Comparison library with different frameworks, as Dropwizard, Spring, Kotlin Compose Desktop and so on.
 

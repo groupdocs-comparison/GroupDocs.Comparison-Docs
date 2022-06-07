@@ -7,6 +7,23 @@ description: "The article is about the easiest way to use GroupDocs.Comparison A
 keywords: Compare documents, Spring Comparison API, Dropwizard Comparison API, Comparison Tool with Docker
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Diff checker
+        description: The product allows to check diff of files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to check if two documents are identical
+        description: Learn how to use diff checker in Java or Kotlin project
+        steps:
+        - name: Load source document
+          text: Create an instance of Comparer class passing source document as a constructor parameter
+        - name: Load target documents
+          text: Add one or more target documents to compare them with source one
+        - name: Compare source and target documents
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 Sometimes there is a need to compare two Pdf, Word or Excel documents as fast, as possible, without installing lots of soft. In case you have Docker installed, the easiest way is to use it together with [GroupDocs.Comparison API](https://products.groupdocs.com/comparison)
 

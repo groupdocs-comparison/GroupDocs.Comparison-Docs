@@ -7,6 +7,23 @@ description: "This article describes how to compare files using Microsoft Excel 
 keywords: Compare Excel files, compare spreedsheet, how to compare Excel files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Excel comparer
+        description: The product allows to compare Excel spreadsheets
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare Excel spreadsheets
+        description: Learn how to compare Excel spreadsheets in Java or Kotlin project
+        steps:
+        - name: Load source Excel spreadsheet
+          text: Create an instance of Comparer class passing source spreadsheet as a constructor parameter
+        - name: Load target Excel spreadsheets
+          text: Add one or more target Excel spreadsheets to compare them with source one
+        - name: Compare source and target Excel spreadsheets
+          text: Run comparison process passing path where the result of the comparison will be saved
 ---
 Let's say you have two Excel workbooks, or maybe two versions of the same workbook, that you want to compare. Or maybe you want to find potential problems, like manually-entered (instead of calculated) totals, or broken formulas. If you have Microsoft Office Professional Plus 2013, you can use Microsoft Spreadsheet Compare to run a report on the differences and problems it finds.
 

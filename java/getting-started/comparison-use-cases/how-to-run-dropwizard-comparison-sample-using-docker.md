@@ -7,11 +7,30 @@ description: "The article is about running Dropwizard Comparison sample using Do
 keywords: Compare photos, Dropwizard Comparison Tool, Dropwizard and Docker, Comparison API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: AutoCad, PowerPoint, Word comparer
+        description: The product allows to compare AutoCad, PowerPoint, Word and much more types of files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to run Dropwizard project in Docker container
+        description: Learn how to run and configure Dropwizard project in Docker container
+        steps:
+        - name: Dropwizard Comparison Application
+          text: What is Dropwizard Comparison sample application and why do you need it
+        - name: System Requirements
+          text: Which tools and files you need to run the application in Docker container
+        - name: Launching Dropwizard Comparison sample
+          text: Configuring, building and running Comparison sample application using Docker
+        - name: Configuring Comparison API
+          text: Configuration the application to customize it according to your needs
 ---
 
 Reading this article you will understand how to run [Dropwizard Comparison sample](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Dropwizard) just in few commands using Docker. After going through this, you will have web application to compare any documents and highlight the identified differences
 
-### Document Comparison Application
+### Dropwizard Comparison Application
 
 Dropwizard Comparison sample is a sample application, that is created with using Dropwizard Framework to familiarize with [GroupDocs.Comparison API for Java](https://products.groupdocs.com/comparison/java) functionality. Despite the fact that it is just a sample, the application is fully functional and can be used to compare any [supported file formats](/comparison/java/supported-document-formats/). Moreover, thanks to the fact, that sources of the application are available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Dropwizard), you can easily add needed change the application in any way or add some functions.
 
@@ -25,14 +44,9 @@ To run the sample using Docker you will need to install Docker itself and downlo
    2. Click `Download ZIP` link
    3. After download finished, extract the archive to any directory you like
 
-### Advantages of using Comparison sample with Docker
-
-[GroupDocs.Comparison API](https://products.groupdocs.com/comparison) is a modern library that has lots of [supported file formats](/comparison/java/supported-document-formats/) and can be used to compare files, preview changes, accept or reject them, extract source/target and result texts, generate preview of file, generate summary page and [much more](https://docs.groupdocs.com/comparison/java/groupdocs-comparison-overview/). Tn the same time, Docker is a modern technology that gives you an opportunity to build and/or run applications without having installed environment required to it. Connected to Dropwizard Comparison application, you don't need to have Java, Maven and other things installed and configured. 
-
 ### Launching Dropwizard Comparison sample
 
 In order to launch the sample you firstly need to build Docker image. It must be done only once and after that you can use the image to run Docker container whenever you want
-
 
 #### Configuring Comparison application
 
@@ -119,6 +133,10 @@ A little details about the command:
 * Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use directory `/home/groupdocs/app/MyDocumentSamples` inside Docker container as folder to keep files. You can change the path to any other, physically this directory does not exists in Docker image
 * Option `-v groupdocs_comparison_dropwizard_volume:/home/groupdocs/app/MyDocumentSamples` says Docker to create new volume with name `groupdocs_comparison_dropwizard_volume` and to map it into container as a directory `/home/groupdocs/app/MyDocumentSamples`. In this way, any access inside the container to `MyDocumentSamples` will actually make changes inside the volume. So that stopping container that was run with option `--rm` or manual deleting the container will not have any effect on volume and files inside it. You can easily run new container with attaching the volume to it and files will be available again.
 _Note: `groupdocs_comparison_dropwizard_volume` is just name of the volume that can be used, for example, for deleting the volume. You can change it on your taste:)_
+
+### Advantages of using Comparison sample with Docker
+
+[GroupDocs.Comparison API](https://products.groupdocs.com/comparison) is a modern library that has lots of [supported file formats](/comparison/java/supported-document-formats/) and can be used to compare files, preview changes, accept or reject them, extract source/target and result texts, generate preview of file, generate summary page and [much more](https://docs.groupdocs.com/comparison/java/groupdocs-comparison-overview/). Tn the same time, Docker is a modern technology that gives you an opportunity to build and/or run applications without having installed environment required to it. Connected to Dropwizard Comparison application, you don't need to have Java, Maven and other things installed and configured.
 
 ### Get a Free API License
 
