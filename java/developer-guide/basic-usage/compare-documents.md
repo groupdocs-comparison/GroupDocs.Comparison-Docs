@@ -7,6 +7,23 @@ description: "This article demonstrates how to compare Word, Excel, PowerPoint, 
 keywords: Compare documents, document comparison in C#
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare documents
+        description: Learn how to compare documents
+        steps:
+        - name: Create 'Comparer' object
+          text: Create 'Comparer' object passing source document as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process and to get path of the result document
 ---
 ## File comparison features
 

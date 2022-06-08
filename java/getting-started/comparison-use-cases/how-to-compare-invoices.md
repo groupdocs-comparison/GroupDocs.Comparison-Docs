@@ -29,9 +29,9 @@ Sometimes you need to achieve maximum accuracy in comparing files. Suppose you h
 
 For example, there are two invoices in the DOCX format and you need to compare their contents with the maximum level of detail and comparison sensitivity.
 
-|  | Files  |
+|  | Files                                                      |
 | --- | --- |
-|Source Invoice|![](comparison/java/images/how-to-compare-invoices.png) | |Target Invoice |![](comparison/java/images/how-to-compare-invoices_1.png)|  
+|Source Invoice| ![](comparison/java/images/how-to-compare-invoices.png)    | |Target Invoice |![](comparison/java/images/how-to-compare-invoices_1.png) |  
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison) provides the ability to compare two files in DOCX format(or any other [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}})) with adjustment of detalization level and[comparison sensitivity](https://docs.groupdocs.com/display/comparisonjava/Set+Comparison+Sensitivity+While+Comparing+Documents).
 

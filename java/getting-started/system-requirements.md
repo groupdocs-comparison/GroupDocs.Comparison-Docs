@@ -7,6 +7,13 @@ description: "On this page you will find system requirements supported platforms
 keywords: System Requirements, Supported Operating System, Supported Frameworks
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
 ---
 ## Overview
 

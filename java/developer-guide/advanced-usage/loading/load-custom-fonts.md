@@ -7,6 +7,27 @@ description: "This article explains how to load custom fonts PDF, Word, Excel, P
 keywords: Custom fonts, fonts
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to load custom fonts
+        description: Learn how to load custom fonts
+        steps:
+        - name: Create 'LoadOptions' object
+          text: Create object of 'LoadOptions' class
+        - name: Add font paths
+          text: Add font paths to a list that is available with a help of 'getFontDirectories()' method
+        - name: Create object of 'Comparer' class
+          text: Create 'Comparer' object passing source document and load options with font paths as a constructor arguments
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process and to get path of the result document
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/java) allows you to compare documents whose content has non-standard fonts.
 

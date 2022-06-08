@@ -7,6 +7,21 @@ description: ""
 keywords: 
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to get supported file formats
+        description: Learn how to get supported by Comparison API file formats
+        steps:
+        - name: Call special method to get supported file format
+          text: Call 'getSupportedFileTypes()' method in order to get list of file formats
+        - name: Go through the list and print each type
+          text: Using 'for' cycle print each supported file format
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to get the list of all [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}}) by following the below steps:
 

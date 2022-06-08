@@ -7,6 +7,13 @@ description: "This article describes the main functions of GroupDocs.Comparison 
 keywords: File comparison, Apply Reject changes between documents, information extraction
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report 
+        productCode: comparison
+        productPlatform: java
 ---
 ## File comparison
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** provides an ability to detect differences between source and target files for changes at paragraphs, words and characters levels. Can identify styling and formatting changes - like bold, italic, underlines, strike-troughs, font types, etc.

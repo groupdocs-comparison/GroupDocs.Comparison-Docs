@@ -4,9 +4,16 @@ url: comparison/java/supported-document-formats
 title: Supported File Formats
 weight: 2
 description: "The following article indicates the file formats that GroupDocs.Comparison can work with."
-keywords: File comparison, Apply Reject changes between documents, information extraction
+keywords: File comparison, Apply Reject changes between documents, information extraction, supported file formats
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
 ---
 The following table indicates the file formats that **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** can work with.
 

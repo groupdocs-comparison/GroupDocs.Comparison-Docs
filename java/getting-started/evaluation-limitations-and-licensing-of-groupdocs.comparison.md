@@ -7,6 +7,21 @@ description: ""
 keywords: 
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to apply Comparison API license
+        description: Learn how to apply Comparison API license to make it free from evaluation limitations
+        steps:
+        - name: Create License object
+          text: Create object that will be used to set license
+        - name: Apply license
+          text: Call special method that will set the license and pass license path or input stream
 ---
 {{< alert style="info" >}}You can use **[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
 

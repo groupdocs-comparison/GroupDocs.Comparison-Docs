@@ -7,6 +7,27 @@ description: "This article explains how to load values from variables of string 
 keywords: Load values from variables of string type, Load text with GroupDocs.Comparison
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to load text from string
+        description: Learn how to text from string
+        steps:
+        - name: Create object of 'LoadOptions' class
+          text: Create 'LoadOptions' object
+        - name: Configure load options
+          text: Use method 'setLoadText(true)' to let Comparer know that the constructor argument will be source text
+        - name: Create object of 'Comparer' class
+          text: Create 'Comparer' object passing source text and load options as a constructor arguments
+        - name: Add target text
+          text: Use 'add' method to add text for comparing and load options
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process and to get path of the result document
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/java) allows to compare values from variables of *string* type.
 The following are the steps to compare text from variables:

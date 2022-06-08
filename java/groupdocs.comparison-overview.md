@@ -7,6 +7,13 @@ description: "In this article, get acquainted with the features, functions, supp
 keywords: GroupDocs.Comparison Overview, Developer usage
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
 ---
 ## What is GroupDocs.Comparison?
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** – API for compare and merge two or more files in applications on the Java platform. Compiled file shows line-by-line difference of content, paragraphs, characters, styles, shapes and positions.

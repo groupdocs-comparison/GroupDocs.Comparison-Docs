@@ -7,6 +7,21 @@ description: ""
 keywords: 
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to get file info
+        description: Learn how to get information of the file with a help of Comparison API
+        steps:
+        - name: Create 'Comparer' object
+          text: Create 'Comparer' object passing file path as a constructor argument
+        - name: Get document info using special method
+          text: Call 'getSource()' method to get 'Document' object. Then, call 'getDocumentInfo()' method of 'Document' object to get document info
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to get file information which includes:
 

@@ -7,6 +7,23 @@ description: ""
 keywords: 
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to load file from input stream
+        description: Learn how to load file from input stream
+        steps:
+        - name: Create 'Comparer' object
+          text: Create 'Comparer' object passing source input stream as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process and to get path of the result document
 ---
 In case when you have the file in the form of a stream. To avoid the overhead of saving stream as a file on disk, **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** provides a way to work with file streams directly. 
 

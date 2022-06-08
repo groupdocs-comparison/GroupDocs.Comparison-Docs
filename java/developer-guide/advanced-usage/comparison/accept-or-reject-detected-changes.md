@@ -7,6 +7,25 @@ description: "Following this guide you will learn how to apply or discard change
 keywords: Apply changes to compared document, reject comparison changes, document comparison changes
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to accept or reject changes
+        description: Learn how to accept or reject changes detected by comparison
+        steps:
+        - name: Compare documents
+          text: Compare source and target documents as usual
+        - name: Get detected changes 
+          text: Use method 'getChanges()' of Comparer object to access all detected changes
+        - name: Accept or reject each change
+          text: Use method 'setComparisonAction(ComparisonAction.REJECT)' to accept or reject each change
+        - name: Apply changes
+          text: Use 'applyChanges()' method of comparer object to apply changes
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** provides an ability to apply or discard specific changes between source and target files and save resultant document with (or without) selected changes. 
 

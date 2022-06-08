@@ -7,6 +7,23 @@ description: "This article explains how to load password-protected PDF, Word, Ex
 keywords: Load password-protected document, Load protected document with GroupDocs.Comparison
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare password-protected documents
+        description: Learn how to compare password-protected documents
+        steps:
+        - name: Create 'Comparer' object
+          text: Create 'Comparer' object passing as a constructor argument source document and object of 'LoadOptions' with password
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing passing as second argument object of 'LoadOptions' with password
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process and to get path of the result document
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to compare documents that are protected with a password.
 
