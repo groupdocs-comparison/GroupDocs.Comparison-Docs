@@ -7,6 +7,27 @@ description: "This article explains how to set document password after files com
 keywords: Compare document and protect with password
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to set password for resultant document
+        description: Learn how to set password for resultant document
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Set up compare options object
+          text: Create object of 'CompareOptions' class and call its method 'setPasswordSaveOption(PasswordSaveOption.User)' to enable appropriate settings
+        - name: Set up document save object
+          text: Create object of 'SaveOptions' class and use its method 'setPassword()' to pass password of the result document
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process passing compare options as a second argument and save options as a third argument
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to protect resultant document with password.
 

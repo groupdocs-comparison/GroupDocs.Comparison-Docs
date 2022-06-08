@@ -7,6 +7,25 @@ description: "This article explains how to control file merging in GroupDocs.Com
 keywords: Merging documents, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to merge source code files
+        description: Learn how to merge source code files with a help of comparison
+        steps:
+        - name: Compare documents
+          text: Compare source and target documents as usual
+        - name: Get detected changes
+          text: Use method 'getChanges()' of Comparer object to access all detected changes
+        - name: Accept or reject each change
+          text: Use method 'setComparisonAction()' to accept or reject each change using constants 'ComparisonAction.ACCEPT' and 'ComparisonAction.REJECT'
+        - name: Merge source code files
+          text: Use 'applyChanges()' method of comparer object passing object of 'ApplyChangeOptions' with changes to apply changes
 ---
 
 ***

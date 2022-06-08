@@ -7,6 +7,25 @@ description: "Follow this guide and learn how to set document metadata when savi
 keywords: Save document metadata,  Compare documents, Document comparison, File diff
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to set document metadata on save
+        description: Learn how to set document metadata on save
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Set up document save object
+          text: Create object of 'SaveOptions' class and use its method 'setCloneMetadataType()' with 'MetadataType.Source' or 'MetadataType.Target' parameter
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process passing save options as a second argument
 ---
 Usually documents can contain some metadata information, such as author, organization, etc. [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison) provides an ability to select metadata source when saving resultant document.  
 

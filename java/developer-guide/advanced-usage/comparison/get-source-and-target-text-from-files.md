@@ -7,6 +7,27 @@ description: "This article explains how to get source and target texts of speci
 keywords: Get target txt, Get source txt, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to get text of source and target documents
+        description: Learn how to get text of source and target documents
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process and path to result document
+        - name: Get list of changes
+          text: Use 'getChanges()' method of comparer object to get list of changes
+        - name: Retrieve text of source and target documents
+          text: Use 'getSourceText()' and 'getTargetText()' methods of comparer object to retrieve text of source and target documents
 ---
 [**GroupDocs.Comparison for Java**](https://products.groupdocs.com/comparison/java) allows to getting source and target texts of specific changes in result file.
 

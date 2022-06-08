@@ -7,6 +7,29 @@ description: "Following this guide you will learn how to generate PDF, Word, Exc
 keywords: Document preview, Preview document pages, Document pages as PNG, document pages as JPG
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to generate document pages preview
+        description: Learn how to generate document pages preview
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Create 'CreatePageStream' object
+          text: Create class that will extends 'CreatePageStream' class and instantiate it. Method 'public OutputStream invoke(int pageNumber)' will be called for providing output stream for each page of document so that preview images will be saved into those streams
+        - name: Create 'PreviewOptions'
+          text: Create an instance of 'PreviewOptions' class passing create page stream object as an argument 
+        - name: Configure preview options
+          text: Update image preview format with a help op 'setPreviewFormat(PreviewFormats.PNG)' method and page numbers with 'setPageNumbers(new int[]{1, 2})' method
+        - name: Retrieve source document
+          text: Use 'getSource()' method to retrieve source document object
+        - name: Generate preview images
+          text: Call 'generatePreview' method passing preview options as an argument
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to generate page previews for source, target and resultant document(s) using [generatePreview](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)) method of a [Document](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) class.
 

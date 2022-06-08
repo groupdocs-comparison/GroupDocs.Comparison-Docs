@@ -7,6 +7,25 @@ description: "This article explains how to obtain coordinates for detected chang
 keywords: Compare documents, get changes coordinates
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to get coordinates of changes
+        description: Learn how to get coordinates of changes in document
+        steps:
+        - name: Create 'CompareOptions' object
+          text: Create object of 'CompareOptions' class
+        - name: Set up options
+          text: Use methods 'setCalculateCoordinates(true)' of options object so that comparer will prepare coordinates
+        - name: Use compare options
+          text: Calling 'compare()' method of a comparer object pass compare options as a second argument
+        - name: Retrieve list of changes with coordinates
+          text: Call 'getChanges()' method of a comparer object to get list of changes with its coordinate inside
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to detect changes between source and target documents and obtain changes coordinates at document preview images. These coordinates can be quite useful for highlighting detected changes at document preview images with some graphics (for example, place a red rectangle around each detected change).
 

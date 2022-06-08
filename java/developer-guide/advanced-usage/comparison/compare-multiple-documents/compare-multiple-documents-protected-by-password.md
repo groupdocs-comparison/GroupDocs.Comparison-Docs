@@ -7,6 +7,25 @@ description: "This article describes how to compare multiple Word documents or P
 keywords: Compare multiple password protected documents, compare multiple protected documents
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare multiple documents protected by password
+        description: Learn how to compare multiple documents protected by password
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document and load options with password as a constructor argument
+        - name: Add first target document
+          text: Use 'add' method to add first target document and load options with password for comparing
+        - name: Add second target document
+          text: Use 'add' method to add second target document and load options with password for comparing
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process and to get path of the result document
 ---
 {{< alert style="info" >}}NOTE: This feature is available only for Word documents, PowerPoint and Open Document presentations.{{< /alert >}}
 

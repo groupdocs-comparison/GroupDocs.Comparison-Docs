@@ -7,6 +7,27 @@ description: "Following this guide you will learn how to compare multiple docume
 keywords: Compare multiple documents, style change detection, Multi-compare files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to compare multiple documents with specific settings
+        description: Learn how to compare multiple documents with specific settings
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Add first target document
+          text: Use 'add' method to add first target document
+        - name: Add second target document
+          text: Use 'add' method to add second target document
+        - name: Create object of 'CompareOptions' class
+          text: Create 'CompareOptions' object and change its properties to configure comparison process
+        - name: Run comparison process with specific settings
+          text: Call 'compare' method passing object of 'CompareOptions' class to run comparison process and to get path of the result document
 ---
 {{< alert style="info" >}}NOTE: This feature available only for Microsoft Word documents, Microsoft PowerPoint and Open Document presentations.{{< /alert >}}
 

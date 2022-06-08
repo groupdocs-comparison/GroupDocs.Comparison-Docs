@@ -7,6 +7,27 @@ description: "Following this guide, you will learn how to apply or discard revis
 keywords: Revision, revision processing, accept or reject revision, apply change for revision
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to accept or reject revisions
+        description: Learn how to accept or reject revisions
+        steps:
+        - name: Create 'RevisionHandler' object
+          text: Create object of 'RevisionHandler' class passing source document as a constructor argument
+        - name: Get list of revisions
+          text: Use 'getRevisions()' method to get lst of revisions
+        - name: Check type of each revision and apply required action
+          text: Check revisions types using 'getType()' method that returns one of 'RevisionType.*' value and apply required action using method 'setAction(RevisionAction.Accept)'
+        - name: Create object of 'ApplyRevisionOptions' class
+          text: Create instance of 'ApplyRevisionOptions' class and use its methods 'setChanges(changesList)' to put changes
+        - name: Apply revision changes
+          text: Use method 'applyRevisionChanges()' of 'RevisionHandler' object passing result document path and revision options as arguments
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** provides the ability to get revisions from a Docx file format, process and save the processing result.
 Below are the steps to *take* revisions from a document, *accept / reject* revisions, and *write* the processing result to a final file.

@@ -7,6 +7,25 @@ description: "This article explains how to activate the comparison of document p
 keywords: variables properties, built properties, custom properties, compare document properties, CompareVariableProperty, CompareDocumentProperty
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to get extended information on the summary page
+        description: Learn how to get extended information on the summary page
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Set up compare options object
+          text: Create object of 'CompareOptions' class and use its methods 'setCompareVariableProperty(true)' and 'setCompareDocumentProperty(true)' to enable appropriate settings
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process passing compare options as a second argument
 ---
 
 ***

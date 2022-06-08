@@ -7,6 +7,25 @@ description: "This article explains how to adjust the display of the resulting d
 keywords: LeaveGaps, gap lines, empty lines
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to show gap lines instead of changes
+        description: Learn how to show gap lines instead of changes
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing
+        - name: Set up compare options object
+          text: Create object of 'CompareOptions' class and use its methods 'setShowInsertedContent(false)', 'setShowDeletedContent(false)' and 'setLeaveGaps(true)' to configure appropriate settings
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process passing compare options as a second argument
 ---
 
 ***
@@ -30,7 +49,7 @@ Here are the simple steps to get the above result:
 
 ```java
 try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.Add(targetPath);
+    comparer.add(targetPath);
 
     CompareOptions options = new CompareOptions();
     options.setShowInsertedContent(false);

@@ -7,6 +7,25 @@ description: "This article explains how to get collection of changes between com
 keywords: Get file diff, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to get list of changes
+        description: Learn how to get list of changes
+        steps:
+        - name: Create 'Comparer' object
+          text: Create object of 'Comparer' class passing source document as a constructor argument
+        - name: Add one or more target documents
+          text: Use 'add' method to add one or more documents for comparing 
+        - name: Run comparison process
+          text: Call 'compare' method to run comparison process
+        - name: Retrieve list of changes
+          text: Use 'getChanges()' method of comparer object to retrieve list of changes
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to obtain list of changes between source and target files.
 

@@ -7,6 +7,23 @@ description: "Learn more about document comparison sensitivity and how to adjust
 keywords: Comparison sensitivity, comparison detalisation level, compare documents, file comparison
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+structuredData:
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to adjust comparison sensitivity
+        description: Learn how to adjust comparison sensitivity
+        steps:
+        - name: Configure comparison options
+          text: Create object of 'CompareOptions' class
+        - name: Set sensitivity level
+          text: Use method 'setSensitivityOfComparison()' of the object to set sensitivity of comparison
+        - name: Use options object comparing documents
+          text: Pass options as a second argument of '.compare()' method
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to adjust comparison sensitivity to achieve the necessary balance between file comparison speed and accuracy. Possible comparison sensitivity values range is from **0** to **100**.
 
