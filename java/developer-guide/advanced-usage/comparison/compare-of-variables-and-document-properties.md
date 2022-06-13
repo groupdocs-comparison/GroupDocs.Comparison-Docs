@@ -48,16 +48,7 @@ Following are the steps to activate compare document properties:
 
 ---
 
-```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
-    CompareOptions options = new CompareOptions();
-    options.setCompareVariableProperty(true); // to activate the comparison of variable properties
-    options.setCompareDocumentProperty(true); // to activate the comparison of built and custom properties
-
-    final Path resultPath = comparer.compare(RESULT_PATH, options);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/eb7a2b4514a63bf8846a4520787f4fc5.js"></script>
 
 ## The result of comparing properties
 

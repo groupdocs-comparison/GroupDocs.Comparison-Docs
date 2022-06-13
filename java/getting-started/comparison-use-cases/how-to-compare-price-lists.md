@@ -52,27 +52,20 @@ Microsoft Office Professional Plus 2013 offers spreadsheet comparisons, but **[G
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target document path or stream. Repeat this step for every target document;
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)) method.
 
-|   | Files |
-| --- | --- |
+|                     | Files                                                        |
+|---------------------|--------------------------------------------------------------|
 | Price List for 2018 | ![](comparison/java/images/how-to-compare-price-lists_3.png) |
 | Price List for 2019 | ![](comparison/java/images/how-to-compare-price-lists_4.png) |
 | Price List for 2020 | ![](comparison/java/images/how-to-compare-price-lists_5.png) |
 
 Here is the code that is used to compare three price lists.
 
-```java
-try (Comparer comparer = new Comparer(SOURCE_FILE)) {
-    comparer.add(TARGET_FILE_ONE);
-    comparer.add(TARGET_FILE_TWO);
-
-    final Path resultPath = comparer.compare(RESULT_FILE);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/fdc74c8d9ae6abf118bb1551446e2ca4.js"></script>
 
 As a result, we get a XSLX file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>
 
-| Result Price List |
-| --- |
+| Result Price List                                            |
+|--------------------------------------------------------------|
 | ![](comparison/java/images/how-to-compare-price-lists_6.png) | 
 
 ## More resources

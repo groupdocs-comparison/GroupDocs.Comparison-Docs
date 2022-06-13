@@ -48,23 +48,13 @@ The following code snippet demonstrates the simplest case of documents compariso
 <details open><summary>Compare documents using local files</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.docx")) {
-    comparer.add("D:\\target.docx");
-    comparer.compare("D:\\result.docx");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e449c06565647b3cdaed7511da401478.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.docx").use { comparer ->
-    comparer.add("D:\\target.docx")
-    comparer.compare("D:\\result.docx")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/fdc16a21af9b8d6900d1a369b3c1cafd.js"></script>
 
 </details>
 </blockquote></details>
@@ -78,33 +68,13 @@ You can also use streams to compare documents. Not only file stream, there is no
 <details open><summary>Compare documents using streams</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (InputStream sourceStream = new FileInputStream("D:\\source.png");
-     InputStream targetStream = new FileInputStream("D:\\target.png");
-     OutputStream resultStream = new FileOutputStream("D:\\result.png")) {
-    try (Comparer comparer = new Comparer(sourceStream)) {
-        comparer.add(targetStream);
-        comparer.compare(resultStream);
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6afc74d39ca3045cc8c693c41907d76e.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-FileInputStream("D:\\source.png").use { sourceStream ->
-    FileInputStream("D:\\target.png").use { targetStream ->
-        FileOutputStream("D:\\result.png").use { resultStream ->
-            Comparer(sourceStream).use { comparer ->
-                comparer.add(targetStream)
-                comparer.compare(resultStream)
-            }
-        }
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/37db39ac21988d21259ef7e8039a3298.js"></script>
 
 </details>
 </blockquote></details>
@@ -134,30 +104,13 @@ The following are the steps to apply/reject changes to the resultant document.
 <details open><summary>The following code sample shows how to accept/reject detected differences.</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.docx")) {
-    comparer.add("D:\\target.docx");
-    comparer.compare();
-
-    final ChangeInfo[] changes = comparer.getChanges();
-    changes[0].setComparisonAction(ComparisonAction.REJECT);
-    comparer.applyChanges("D:\\result.docx", new SaveOptions(), new ApplyChangeOptions(changes));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/34d8fa500b337c43f968bf18fd8527a5.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.docx").use { comparer ->
-    comparer.add("D:\\target.docx")
-    comparer.compare()
-    val changes = comparer.changes
-    changes[0].comparisonAction = ComparisonAction.REJECT
-    comparer.applyChanges("D:\\result.docx", SaveOptions(), ApplyChangeOptions(changes))
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/f3b12253aafaf6c4a4a862b2ea206331.js"></script>
 
 </details>
 </blockquote></details>
@@ -186,43 +139,13 @@ The following steps shows how to generate a document preview with [GroupDocs.Com
 <details open><summary>Get page previews for resultant document</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.docx")) {
-    comparer.add("D:\\target.docx");
-    final Document source = comparer.getSource();
-    final List<Document> targets = comparer.getTargets();
-  
-    final PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
-        @Override
-        public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream("D:\\preview-for-page-" + pageNumber + ".png");
-        }
-    });
-    previewOptions.setPageNumbers(new int[]{1, 2});
-    previewOptions.setPreviewFormat(PreviewFormats.PNG);
-    source.generatePreview(previewOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/565efa20595c05ecb81d9ca44045afdf.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.docx").use { comparer ->
-    comparer.add("D:\\target.docx")
-    val source: Document = comparer.source
-    val targets: List<Document> = comparer.targets
-    val previewOptions = PreviewOptions(object : CreatePageStream() {
-        operator fun invoke(pageNumber: Int): OutputStream? {
-            return FileOutputStream("D:\\preview-for-page-$pageNumber.png")
-        }
-    })
-    previewOptions.pageNumbers = intArrayOf(1, 2)
-    previewOptions.previewFormat = PreviewFormats.PNG
-    source.generatePreview(previewOptions)
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/fc4c8a219bdd0419222bd76275219fd2.js"></script>
 
 </details>
 </blockquote></details>
@@ -238,27 +161,13 @@ Comparer("D:\\source.docx").use { comparer ->
 <details open><summary>How to compare multiple documents in Java</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.docx")) {
-    comparer.add("D:\\target1.docx");
-    comparer.add("D:\\target2.docx");
-    comparer.add("D:\\target3.docx");
-    comparer.compare("D:\\result.docx");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/7b6ad368a55e6df16c2f0b9d86edebe5.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.docx").use { comparer ->
-    comparer.add("D:\\target1.docx")
-    comparer.add("D:\\target2.docx")
-    comparer.add("D:\\target3.docx")
-    comparer.compare("D:\\result.docx")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/ad47af4d760d17752962f86be72fb8ec.js"></script>
 
 </details>
 </blockquote></details>

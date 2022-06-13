@@ -55,7 +55,7 @@ Using **[GroupDocs.Comparsion](https://products.groupdocs.com/comparison)** API 
 
 In general you have to follow these steps to compare two source code files (please find other supported formats list [here](https://wiki.lisbon.dynabic.com/display/comparison/Supported+File+Formats)):
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream;
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method  and specify path target document path or stream;
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()) method and perform file comparison.
 
@@ -70,24 +70,14 @@ You can learn more about the ComparisonAction property [here](https://wiki.lisbo
 
 The following code samples demonstrate how to compare two CS files and accept or reject detected changes in a specific range.
 
-```java
-try (Comparer comparer = new Comparer(SOURCE_FILE)) {
-    comparer.add(TARGET_FILE); // NOTE: Put here actual path to target document
-    final Path resultPath = comparer.compare();
-    ChangeInfo[] changes = comparer.getChanges();
-    changes[0].setComparisonAction(ComparisonAction.REJECT); // This is how to reject first detected difference;
-    changes[1].setComparisonAction(ComparisonAction.REJECT); // This is how to reject second detected difference;
-    changes[2].setComparisonAction(ComparisonAction.REJECT); // This is how to reject third detected difference;
-    comparer.applyChanges(RESULT_FILE, new ApplyChangeOptions(changes));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/a7fa2bad5b8034df93e8e68d3cba83fc.js"></script>
 
 As a result, we get a merged CS file where the deleted elements are marked in <font color="red">red</font>, the added – in <font color="blue">blue</font>, and the modified – in <font color="green">green</font>.
 
 Also, you will receive a file in HTML format with changed places in the code.
 
-|  The result HTML file | The result HTML file using the ComparisonAction property |
-| --- | --- |
+| The result HTML file                                                     | The result HTML file using the ComparisonAction property                 |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | ![](comparison/java/images/how-to-compare-source-code-files_result1.png) | ![](comparison/java/images/how-to-compare-source-code-files_result2.png) |
 
 ## More resources

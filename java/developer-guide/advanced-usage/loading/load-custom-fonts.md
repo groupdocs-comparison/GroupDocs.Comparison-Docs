@@ -40,16 +40,7 @@ The following are the steps to connect custom fonts and compare documents:
 
 The following code sample shows how to connect custom fonts and compare documents.
 
-```java
-// Instantiate the LoadOptions object and create a list of custom font directories.
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.getFontDirectories().add("./fontPath/");
- 
-try (Comparer comparer = new Comparer("source.docx", loadOptions)) {
-    comparer.add("target.docx");
-    final Path resultPath = comparer.compare("result.docx");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/426fbb1a2e2ad8130ec02e21d04ef718.js"></script>
 
 ## More resources
 

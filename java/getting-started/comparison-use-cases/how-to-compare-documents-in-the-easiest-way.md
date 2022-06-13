@@ -56,9 +56,7 @@ The easiest way to run [GroupDocs.Comparison](https://products.groupdocs.com/com
 
 Here is command to run the comparer:
 
-```bash
-docker run -p 8080:8080 --name my-comparer --rm groupdocs/comparison:22.3-java-openjdk8-bullseye-dropwizard
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/4958fa72f02e5d83324fc63b326e0609.js"></script>
 
 That is all. Just wait while Docker download and run the application. To access comparer interface open [http://localhost:8080/comparison/](http://localhost:8080/comparison/) in favourite browser
 
@@ -92,9 +90,7 @@ At the moment there is no way to deploy container using Docker Desktop. Neverthe
 
 Nevertheless, there are a few options which you can change to configure Comparison sample running it with Docker. You can use some of predefined environment variables. As an example, if you want to disable uploading, pass environment variable `UPLOAD_ON` with value `false` in command that runs container. In this way the command will be like:
 
-```shell
-docker run -p 8080:8080 --name my-comparer --env UPLOAD_ON=false --rm groupdocs/comparison:22.3-java-openjdk8-bullseye-spring
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/8120ee53c065f2732ded283a427bf87d.js"></script>
 
 There are next predefined variables:
 * `LIC_PATH` - path to directory with license file
@@ -113,9 +109,7 @@ _Note: Keep in mind, `LIC_PATH`, `FILES_DIR` and `RESULT_DIR` paths are point to
 
 You may need to save files between application runs. To do it you should use Docker's volumes, for example: add parameter `-v groupdocs_comparison_volume:/home/groupdocs/app/MyDocumentSamples` to create new volume and pass `/home/groupdocs/app/MyDocumentSamples` as a value of environment variable `FILES_DIR`. In this way command will be like:
 
-```shell
-docker run -p 8080:8080 --name my-comparer --env FILES_DIR=/home/groupdocs/app/MyDocumentSamples -v groupdocs_comparison_volume:/home/groupdocs/app/MyDocumentSamples --rm groupdocs/comparison:22.3-java-openjdk8-bullseye-spring
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e492c0c7d27267ff506ecd3eaffcd4de.js"></script>
 
 * Parameter `-v groupdocs_comparison_volume:/home/groupdocs/app/MyDocumentSamples` configures Docker to create new volume with name `groupdocs_comparison_volume` and to bind it into container as a directory `/home/groupdocs/app/MyDocumentSamples`. In this way, any access to `MyDocumentSamples` inside the container will actually make changes inside the volume. Stopping container that was run with an option `--rm` or manual deleting the container, volume and files inside it will not be deleted. It is easy to run new container attaching the volume, to access files again.
   Here is a little details about the command:

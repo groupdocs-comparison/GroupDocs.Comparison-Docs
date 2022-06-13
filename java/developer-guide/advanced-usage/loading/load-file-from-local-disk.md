@@ -29,12 +29,7 @@ When the source file is located on the local disk **[GroupDocs.Comparison](htt
 
 Following code snippet shows how to load files from local disk.
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final Path resultPath = comparer.compare("C:\\result.pdf");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/bcd9553b0796c190990221c33d060d2a.js"></script>
 
 ## More resources
 

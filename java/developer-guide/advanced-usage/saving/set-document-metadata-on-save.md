@@ -36,7 +36,7 @@ Possible metadata sources are:
     
 
 The following are the steps to set resultant file metadata:
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source file path or stream;    
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source file path or stream;    
 *   Call [add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target file path or stream.    
 *   Instantiate [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) object and use property [CloneMetadataType](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions#setCloneMetadataType(int)) to set desired [MetadataType](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/MetadataType) variant;    
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String,%20com.groupdocs.comparison.options.CompareOptions)) method and pass [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) object to method;
@@ -46,41 +46,15 @@ The following code demonstrates how to set resultant file metadata.
 
 ## Set metadata from source file
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setCloneMetadataType(MetadataType.Source);
-    final Path resultPath = comparer.compare("C:\\result.pdf", saveOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/c9dfcc0917a4d9124c134e77056669d4.js"></script>
 
 ## Set metadata from target file
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setCloneMetadataType(MetadataType.Target);
-    final Path resultPath = comparer.compare("C:\\result.pdf", saveOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0a632a692a09ab484ac19dba075241eb.js"></script>
 
-## Set user-defined metadata 
+## Set user-defined metadata
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final FileAuthorMetadata fileAuthorMetadata = new FileAuthorMetadata();
-    fileAuthorMetadata.setAuthor("Tom");
-    fileAuthorMetadata.setCompany("GroupDocs");
-    fileAuthorMetadata.setLastSaveBy("Jack");
-    final SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setCloneMetadataType(MetadataType.FileAuthor);
-    saveOptions.setFileAuthorMetadata(fileAuthorMetadata);
-    final Path resultPath = comparer.compare("C:\\result.pdf", saveOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/abec6b3417cc08a6b51d83a102379ecd.js"></script>
 
 ## More resources
 

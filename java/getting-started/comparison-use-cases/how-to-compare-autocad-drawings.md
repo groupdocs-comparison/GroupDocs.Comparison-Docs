@@ -61,12 +61,7 @@ Here are the steps to compare two DWG files:
 
 The following code sample demonstrates an approach described above.
 
-```java
-try (Comparer comparer = new Comparer("source.dwg")) {
-    comparer.add("target.dwg"); // NOTE: Put here actual path to target document
-    final Path resultPath = comparer.compare("result.dwg"); // NOTE: Put here actual path to result document
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0aef8c83e0ce63b0639755dcb0a696e7.js"></script>
 
 As a result, we get a DWG file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>.
 

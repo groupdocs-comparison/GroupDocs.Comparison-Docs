@@ -34,13 +34,13 @@ structuredData:
 
 For better understanding about how comparison algorithms work let's suppose we have two strings:
 
-| Strings |
-| --- |
-| `1``. It is our equity poetry` |
-| `2``. Jack is a glad calf` |
+| Strings                        |
+|--------------------------------|
+| `1`. `It is our equity poetry` |
+| `2`. `Jack is a glad calf`     |
 
 We will highlight removed text parts with <font color="red">**red**</font> and inserted parts with <font color="blue">**blue**</font> color. So, these strings have two common sub-sequences: "**is**" word and 4 space symbols.   
-**  
+
 Common sub-sequence is - " **is**   " and its length is 6 symbols (there are 4 space symbols in it).  
 Length of inserted sub-sequence is 13 symbols - **Jackagladcalf**  
 Removed sub-sequence length is 17 symbols - **Itourequitypoetry**  
@@ -58,8 +58,6 @@ The first string considered completely removed and the second string considered 
 Common sub-sequence was found, because **85% > 83%**. The same results will be produced for any calculated percent bigger than **83%**.
 
 
-Here are the steps to compare documents with specific comparison sensitivity:
-
 Here are the steps to compare files with specific comparison sensitivity:
 
 *   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source file path or stream;    
@@ -72,16 +70,7 @@ The following code snippet demonstrates how compare files with specific sensit
 
 ## Compare files with sensitivity adjustment
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-
-    CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setSensitivityOfComparison(100);
-
-    final Path resultPath = comparer.compare("C:\\result.pdf", compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/cd7ce7b32ec9210313ec1bc4ae772e2a.js"></script>
 
 ## More resources
 

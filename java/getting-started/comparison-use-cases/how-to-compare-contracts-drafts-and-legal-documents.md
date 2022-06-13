@@ -64,19 +64,13 @@ Sometimes Microsoft Word comparison features may be not enough to satisfy your r
 
 Let's say you have two contracts in DOCX format that were concluded in different years (For example, for 2018 and 2019). Now you are going to compare how the conditions have changed after some time.
 
-|  | Files |
-| --- | --- |
-|Source File - Contract signed in 2018| ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) |
-|Target File- Contract signed in 2019|![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
+| Source File - Contract signed in 2018                                                 | Target File- Contract signed in 2019                                                              |
+|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) | ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)             |
 
 Here is the code that is used to compare two contracts.
 
-```java
-try (Comparer comparer = new Comparer("source-contract.docx")) {
-    comparer.add("target_contract.docx");
-    final Path resultPath = comparer.compare("result-contract.docx");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/2fe078a7c1db4dd932ee0ab907d71732.js"></script>
 
 As a result, we get a DOCX file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>.
 

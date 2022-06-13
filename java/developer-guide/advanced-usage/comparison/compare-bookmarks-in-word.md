@@ -43,15 +43,7 @@ The following are the steps to compare bookmarks of documents:
 
 ---
 
-```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
-
-    CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setCompareBookmarks(true);
-    final Path resultPath = comparer.compare(RESULT_PATH, compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/11f02eec9356367c4bd7ac9810114caa.js"></script>
 
 ## The result after comparing document with enabled CompareBookmarks option
 

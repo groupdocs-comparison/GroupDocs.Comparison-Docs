@@ -45,7 +45,7 @@ Changes styling coloring scheme can be customized if needed, changed text blocks
 
 Here are simple steps to compare two documents:
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream;
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target document path or stream.
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)) method.
 
@@ -53,21 +53,11 @@ The following code snippet demonstrates the simplest case of documents compariso
 
 ## Compare documents from local file 
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final Path resultPath = comparer.compare("C:\\result.pdf");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/bcd9553b0796c190990221c33d060d2a.js"></script>
 
 ## Compare documents from stream 
 
-```java
-try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"))) {
-    comparer.add(new FileInputStream("C:\\target.pdf"));
-    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/f9d153b18ca0705c14f71f817325508d.js"></script>
 
 ## More resources
 ### Advanced Usage Topics

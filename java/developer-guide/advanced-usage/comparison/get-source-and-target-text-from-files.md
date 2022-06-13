@@ -42,34 +42,11 @@ The following code example demonstrates how to get specified texts from a file.
 
 ## Get target text from local disk
 
-```java
-try (Comparer comparer = new Comparer(sourceDocumentPath)) {
-    comparer.add(targetDocumentPath);
-    final Path resultPath = comparer.compare(outputPath);
-    ChangeInfo[] changes = comparer.getChanges();
-    for (ChangeInfo change : changes) {
-        System.out.println();
-        System.out.println("Source text: " + change.getSourceText());
-        System.out.println("Target text: " + change.getTargetText());
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/d37858b84f9e3606fc80d3a645b87e31.js"></script>
 
 ## Get target text from stream
 
-```java
-try (InputStream inputStream = new FileInputStream(sourceDocumentPath);
-        Comparer comparer = new Comparer(inputStream)) {
-        comparer.add(targetDocumentPath);
-        final Path resultPath = comparer.compare(outputPath);
-        ChangeInfo[] changes = comparer.getChanges();
-        for (ChangeInfo change : changes) {
-        System.out.println();
-        System.out.println("Source text: " + change.getSourceText());
-        System.out.println("Target text: " + change.getTargetText());
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/8e69835903ec356fa36ded4f7cb5d88b.js"></script>
 
 ## More resources
 

@@ -44,23 +44,13 @@ Steps below will show you how to compare any two Word documents in just a few li
 <details open><summary>The code below shows how to compare two Word documents in Java</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.doc")) {
-    comparer.add("D:\\target.doc");
-    comparer.compare("D:\\result.doc");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e449c06565647b3cdaed7511da401478.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.doc").use { comparer ->
-    comparer.add("D:\\target.doc")
-    comparer.compare("D:\\result.doc")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/fdc16a21af9b8d6900d1a369b3c1cafd.js"></script>
 
 </details>
 </blockquote></details>
@@ -80,33 +70,13 @@ You can similarly pass the document as a stream to the Comparer class to get it 
 <details open><summary>Here is the Java/Kotlin code to give you a clear idea</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (InputStream sourceStream = new FileInputStream("D:\\source.png");
-     InputStream targetStream = new FileInputStream("D:\\target.png");
-     OutputStream resultStream = new FileOutputStream("D:\\result.png")) {
-    try (Comparer comparer = new Comparer(sourceStream)) {
-        comparer.add(targetStream);
-        comparer.compare(resultStream);
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6afc74d39ca3045cc8c693c41907d76e.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-FileInputStream("D:\\source.png").use { sourceStream ->
-    FileInputStream("D:\\target.png").use { targetStream ->
-        FileOutputStream("D:\\result.png").use { resultStream ->
-            Comparer(sourceStream).use { comparer ->
-                comparer.add(targetStream)
-                comparer.compare(resultStream)
-            }
-        }
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/37db39ac21988d21259ef7e8039a3298.js"></script>
 
 </details>
 </blockquote></details>
@@ -124,44 +94,13 @@ After comparing documents, you have the option to either accept or reject any ch
 <details open><summary>Here is the Java/Kotlin code to give you a clear idea</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.doc")) {
-    comparer.add("D:\\target.doc");
-    comparer.compare();
-
-    final ChangeInfo[] changes = comparer.getChanges();
-    for (int index = 0; index < changes.length; index++) {
-        // As an example accept each second change
-        if (index % 2 == 0) {
-            changes[index].setComparisonAction(ComparisonAction.ACCEPT);
-        } else {
-            changes[index].setComparisonAction(ComparisonAction.REJECT);
-        }
-    }
-    comparer.applyChanges("D:\\result.doc", new ApplyChangeOptions(changes));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/34d8fa500b337c43f968bf18fd8527a5.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.doc").use { comparer ->
-    comparer.add("D:\\target.doc")
-    comparer.compare()
-    val changes = comparer.changes
-    for (index in changes.indices) {
-        // As an example accept each second change
-        if (index % 2 == 0) {
-            changes[index].comparisonAction = ComparisonAction.ACCEPT
-        } else {
-            changes[index].comparisonAction = ComparisonAction.REJECT
-        }
-    }
-    comparer.applyChanges("D:\\result.doc", ApplyChangeOptions(changes))
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/f3b12253aafaf6c4a4a862b2ea206331.js"></script>
 
 </details>
 </blockquote></details>
@@ -180,26 +119,16 @@ Using the [Comparer](https://apireference.groupdocs.com/comparison/java/com.grou
 
 ---
 
-<details open><summary>The code below shows how to compare two Word documents in Java</summary><blockquote>
+<details open><summary>The code below shows how to compare two Text files in Java or Kotlin</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.txt")) {
-    comparer.add("D:\\target.txt");
-    comparer.compare("D:\\result.txt");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0ceff72d9ce7fb91f457bfb670852981.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.txt").use { comparer ->
-    comparer.add("D:\\target.txt")
-    comparer.compare("D:\\result.txt")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/46542d922b12c025aab2cd62486f8278.js"></script>
 
 </details>
 </blockquote></details>
@@ -214,30 +143,20 @@ Here is the [list of all file's formats](https://docs.groupdocs.com/comparison/j
 
 ### Compare PDF Files for Text Difference using Java or Kotlin
 
-We can compare PDF files using the same code, just by changing the file extensions to “.pdf”.
+We can compare PDF files using the same code, just by changing the file extensions to `.pdf`.
 
 ---
 
 <details open><summary>The code below compares two pdf files and shows differences</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.pdf")) {
-    comparer.add("D:\\target.pdf");
-    comparer.compare("D:\\result.pdf");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/4a1f80dd89b4d12f62e8423e09733ea7.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.pdf").use { comparer ->
-    comparer.add("D:\\target.pdf")
-    comparer.compare("D:\\result.pdf")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/b0d4823f85f0ea9370dfbdd421664e90.js"></script>
 
 </details>
 </blockquote></details>

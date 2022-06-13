@@ -35,7 +35,7 @@ structuredData:
 
 The following are the steps to compare multiple documents with specific options.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream;
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target document path or stream. Repeat this step for every target document.
 *   Instantiate [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object and specify desired options;
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String,%20com.groupdocs.comparison.options.CompareOptions)) method and pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object from previous step.
@@ -44,39 +44,11 @@ The following code sample shows how to compare multiple documents with specific
 
 ## Compare multiple documents with specific compare settings from local disk
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target1.pdf");
-    comparer.add("C:\\target2.pdf");
-    comparer.add("C:\\target3.pdf");
-
-    final StyleSettings styleSettings = new StyleSettings();
-    styleSettings.setFontColor(Color.YELLOW);
-
-    CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setInsertedItemStyle(styleSettings);
-
-    final Path resultPath = comparer.compare("C:\\result.pdf", compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/9afb39e82ef686e97c30191f8fa3ee21.js"></script>
 
 ## Compare multiple documents with specific compare settings from stream
 
-```java
-try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"))) {
-    comparer.add(new FileInputStream("C:\\target1.pdf"));
-    comparer.add(new FileInputStream("C:\\target2.pdf"));
-    comparer.add(new FileInputStream("C:\\target3.pdf"));
-
-    final StyleSettings styleSettings = new StyleSettings();
-    styleSettings.setFontColor(Color.YELLOW);
-
-    CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setInsertedItemStyle(styleSettings);
-
-    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"), compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0c32eddfc1a3baad1583ba7457c8ae3b.js"></script>
 
 ## More resources
 

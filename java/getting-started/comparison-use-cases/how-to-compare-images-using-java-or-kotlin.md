@@ -40,33 +40,17 @@ You can download the ZIP file with JAR library, documentation and other useful f
 <details open><summary>Connect GroupDocs repository</summary><blockquote>
 <details open><summary>Maven</summary>
 
-```xml
-<repository>
-    <id>GroupDocsJavaAPI</id>
-    <name>GroupDocs Java API</name>
-    <url>https://repository.groupdocs.com/repo/</url>
-</repository>
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/9de00b81ae5dd326fc85fecb5c1220a6.js"></script>
 
 </details>
 <details><summary>Gradle</summary>
 
-```groovy
-repositories {
-    maven {
-        url "https://repository.groupdocs.com/repo/"
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/15f77ae825f310acd9cad555dcea0019.js"></script>
 
 </details>
 <details><summary>Kotlin</summary>
 
-```kotlin
-repositories {
-    maven(url = "https://repository.groupdocs.com/repo/")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/ad7ad48d4e7f9f60e858c7ba546f3745.js"></script>
 
 </details>
 </blockquote></details>
@@ -76,31 +60,17 @@ repositories {
 <details open><summary>Add GroupDocs.Comparison dependency</summary><blockquote>
 <details open><summary>Maven</summary>
 
-```xml
-<dependency>
-    <groupId>com.groupdocs</groupId>
-    <artifactId>groupdocs-comparison</artifactId>
-    <version>22.3</version>
-</dependency>
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/f4d8f0b56d1dfa24dea18c68cd9d8001.js"></script>
 
 </details>
 <details><summary>Gradle</summary>
 
-```groovy
-dependencies {
-    implementation 'com.groupdocs:groupdocs-comparison:22.3'
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/b760d58061daa45d9b211e2701aa52b5.js"></script>
 
 </details>
 <details><summary>Kotlin</summary>
 
-```kotlin
-dependencies {
-    implementation("com.groupdocs:groupdocs-comparison:22.3")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/b20a9f70c3442ca586a95b00a778a464.js"></script>
 
 </details>
 </blockquote></details>
@@ -120,23 +90,13 @@ Comparing two images in Java is too easy with [GroupDocs.Comparison](https://pro
 <details open><summary>The code below shows how to compare two images in Java. As an example, it compares two JPG images and saves the output with differences.</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.png")) {
-    comparer.add("D:\\target.png");
-    comparer.compare("D:\\result.png");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/a95fbd4fb36fc8bf201e3a187a637750.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.png").use { comparer ->
-    comparer.add("D:\\target.png")
-    comparer.compare("D:\\result.png")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/bebea06fbaf649b6582ea86967994193.js"></script>
 
 </details>
 </blockquote></details>

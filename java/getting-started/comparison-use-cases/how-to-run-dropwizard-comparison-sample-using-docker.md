@@ -32,7 +32,7 @@ Reading this article you will understand how to run [Dropwizard Comparison sampl
 
 ### Dropwizard Comparison Application
 
-Dropwizard Comparison sample is a sample application, that is created with using Dropwizard Framework to familiarize with [GroupDocs.Comparison API for Java](https://products.groupdocs.com/comparison/java) functionality. Despite the fact that it is just a sample, the application is fully functional and can be used to compare any [supported file formats](/comparison/java/supported-document-formats/). Moreover, thanks to the fact, that sources of the application are available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Dropwizard), you can easily add needed change the application in any way or add some functions.
+Dropwizard Comparison sample is a sample application, that is created with using Dropwizard Framework to familiarize with [GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java) functionality. Despite the fact that it is just a sample, the application is fully functional and can be used to compare any [supported file formats](/comparison/java/supported-document-formats/). Moreover, thanks to the fact, that sources of the application are available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Dropwizard), you can easily add needed change the application in any way or add some functions.
 
 ### System Requirements
 
@@ -72,9 +72,8 @@ To create Docker image for the sample:
 1. Go to `\Demos\Dropwizard\` in sample folder
 2. Open console in this directory
 3. Run next command to build an image
-    ```shell
-       docker build -t groupdocs_comparison_dropwizard_sample ./
-    ```
+
+<script src="https://gist.github.com/groupdocs-comparison-gists/2e53fb1ea7e4ed42c7762466f19e7264.js"></script>
 
 That's actually all. The image is built and added to Docker's list of images.
 
@@ -87,9 +86,8 @@ To run Comparison Dropwizard application you should fallow next steps:
 1. Go to `\Demos\Dropwizard\` in sample folder
 2. Open console in this directory
 3. Run next command to run a container with Comparison application
-    ```shell
-       docker run -p 8080:8080 --name my-comparer --rm groupdocs_comparison_dropwizard_sample
-    ```
+
+<script src="https://gist.github.com/groupdocs-comparison-gists/ab9927537387e9f562e3f25146e730d1.js"></script>
    
 After that, just open link [http://localhost:8080/comparison](http://localhost:8080/comparison) in your favourite browser to see Comparison application
 
@@ -107,9 +105,7 @@ To stop the container just run command `docker stop my-comparer`
 
 In order to configure application you can use some of predefined environment variables. For example, if you want to disable possibility to download result document, just pass environment variable `DOWNLOAD_ON` with value `false` with command of starting container. In this way the command will look like:
 
-```shell
-docker run -p 8080:8080 --name my-comparer --env DOWNLOAD_ON=false --rm groupdocs_comparison_dropwizard_sample
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/db2f770f4e36f9c56478366f13d0e4c1.js"></script>
 
 There are next predefined variables:
 * `LIC_PATH` - path to directory with license file
@@ -125,9 +121,7 @@ _Note: Keep in mind, `LIC_PATH`, `FILES_DIR` and `RESULT_DIR` paths are point to
 
 There is a common need to keep files between application runs. To do it you need to use Docker's volumes. For example, you can add parameter `-v groupdocs_comparison_dropwizard_volume:/home/groupdocs/app/MyDocumentSamples` together with passing environment variable `FILES_DIR` to create new volume and pass it as directory with files. In this way command be like:
 
-```shell
-docker run -p 8080:8080 --name my-comparer --env FILES_DIR=/home/groupdocs/app/MyDocumentSamples -v groupdocs_comparison_dropwizard_volume:/home/groupdocs/app/MyDocumentSamples --rm groupdocs_comparison_dropwizard_sample
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/ea0d5fb6d7dfb582df75a2985caa6e08.js"></script>
 
 A little details about the command:
 * Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use directory `/home/groupdocs/app/MyDocumentSamples` inside Docker container as folder to keep files. You can change the path to any other, physically this directory does not exists in Docker image

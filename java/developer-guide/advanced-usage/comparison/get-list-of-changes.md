@@ -31,7 +31,7 @@ structuredData:
 
 The following are the steps to obtain changes list.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source file path or stream;    
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source file path or stream;    
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target file path or stream;    
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()) method;    
 *   Call [getChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()) method.
@@ -41,25 +41,11 @@ The following code sample demonstrates how to get list of all changes.
 
 ## Get list of changes from local disk
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final Path resultPath = comparer.compare();
-    ChangeInfo[] changes = comparer.getChanges();
-    System.out.println("Count of changes: " + changes.length);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/883e152bcb4f92becd8cc5051118c36a.js"></script>
 
 ## Get list of changes from stream
 
-```java
-try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"))) {
-    comparer.add(new FileInputStream("C:\\target.pdf"));
-    final Path resultPath = comparer.compare();
-    ChangeInfo[] changes = comparer.getChanges();
-    System.out.println("Count of changes: " + changes.length);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/a39965c7ca12a3a78f65821c59d20c29.js"></script>
 
 ## More resources
 

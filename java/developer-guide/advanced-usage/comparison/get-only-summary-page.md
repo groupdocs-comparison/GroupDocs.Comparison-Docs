@@ -45,14 +45,7 @@ The following code sample shows how to get only summary page.
 
 ---
 
-```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-	comparer.add(targetPath);
-	CompareOptions options = new CompareOptions();
-    options.setShowOnlySummaryPage(true);
-    final Path resultPath = comparer.compare(RESULT_PATH, options);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/bfc0826204c5a3bafab7ab9ace333dab.js"></script>
 
 ## More resources
 

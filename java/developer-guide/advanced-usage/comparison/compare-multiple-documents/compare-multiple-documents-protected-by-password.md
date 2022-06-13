@@ -34,7 +34,7 @@ structuredData:
 The following are the steps to compare password-protected documents.
 
 *   Instantiate [LoadOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) object and specify source document password;        
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream and [LoadOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) object created at previous step;
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream and [LoadOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) object created at previous step;
 *   Instantiate another [LoadOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) object and specify target document password;
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target document path or stream and [LoadOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) object created at previous step. Repeat this step for every target document that is password-protected;
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)) method.
@@ -44,25 +44,11 @@ The following code sample shows how to compare password-protected documents.
 
 ## Compare multiple protected documents from local disk
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf", new LoadOptions("source-password"))) {
-    comparer.add("C:\\target1.pdf", new LoadOptions("target-password"));
-    comparer.add("C:\\target2.pdf", new LoadOptions("target-password"));
-    comparer.add("C:\\target3.pdf", new LoadOptions("target-password"));
-    final Path resultPath = comparer.compare("C:\\result.pdf");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/9978b3445782673d7c20705c50936bd4.js"></script>
 
 ## Compare multiple protected documents from stream
 
-```java
-try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"), new LoadOptions("source-password"))) {
-    comparer.add(new FileInputStream("C:\\target1.pdf"), new LoadOptions("target-password"));
-    comparer.add(new FileInputStream("C:\\target2.pdf"), new LoadOptions("target-password"));
-    comparer.add(new FileInputStream("C:\\target3.pdf"), new LoadOptions("target-password"));
-    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/4409fcbfc437b1e1c82fcd0db650cc39.js"></script>
 
 ## More resources
 

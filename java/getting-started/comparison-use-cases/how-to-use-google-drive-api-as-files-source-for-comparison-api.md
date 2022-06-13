@@ -102,36 +102,20 @@ In order to use Google API you must have Google account. Here we will not descri
 
 To use Google Drive API as a file storage of Comparison API you need to add some libraries and repository to the project.
 
-<details open><summary>Repository</summary><blockquote>
+<details open><summary>Connect GroupDocs repository</summary><blockquote>
 <details open><summary>Maven</summary>
 
-```xml
-<repository>
-    <id>GroupDocsJavaAPI</id>
-    <name>GroupDocs Java API</name>
-    <url>https://repository.groupdocs.com/repo/</url>
-</repository>
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/9de00b81ae5dd326fc85fecb5c1220a6.js"></script>
 
 </details>
 <details><summary>Gradle</summary>
 
-```groovy
-repositories {
-    maven {
-        url "https://repository.groupdocs.com/repo/"
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/15f77ae825f310acd9cad555dcea0019.js"></script>
 
 </details>
 <details><summary>Kotlin</summary>
 
-```kotlin
-repositories {
-    maven(url = "https://repository.groupdocs.com/repo/")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/ad7ad48d4e7f9f60e858c7ba546f3745.js"></script>
 
 </details>
 </blockquote></details>
@@ -139,52 +123,17 @@ repositories {
 <details open><summary>Libraries</summary><blockquote>
 <details open><summary>Maven</summary>
 
-```xml
-<dependency>
-   <groupId>com.groupdocs</groupId>
-   <artifactId>groupdocs-comparison</artifactId>
-   <version>22.3</version>
-</dependency>
-<dependency>
-   <groupId>com.google.api-client</groupId>
-   <artifactId>google-api-client</artifactId>
-   <version>1.33.0</version>
-</dependency>
-<dependency>
-   <groupId>com.google.apis</groupId>
-   <artifactId>google-api-services-drive</artifactId>
-   <version>v3-rev20211107-1.32.1</version>
-</dependency>
-<dependency>
-   <groupId>com.google.oauth-client</groupId>
-   <artifactId>google-oauth-client-jetty</artifactId>
-   <version>1.32.1</version>
-</dependency>
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/513c0cf2cf6ec736df038122fe7389a3.js"></script>
 
 </details>
 <details><summary>Gradle</summary>
 
-```groovy
-dependencies {
-   implementation 'com.groupdocs:groupdocs-comparison:22.3'
-   implementation 'com.google.api-client:google-api-client:1.33.0'
-   implementation 'com.google.apis:google-api-services-drive:v3-rev20211107-1.32.1'
-   implementation 'com.google.oauth-client:google-oauth-client-jetty:1.32.1'
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/7af8c044d34a45f5858667bd3b8a05c8.js"></script>
 
 </details>
 <details><summary>Kotlin</summary>
 
-```kotlin
-dependencies {
-    implementation("com.groupdocs:groupdocs-comparison:22.3")
-    implementation("com.google.api-client:google-api-client:1.33.0")
-    implementation("com.google.apis:google-api-services-drive:v3-rev20211107-1.32.1")
-    implementation("com.google.oauth-client:google-oauth-client-jetty:1.32.1")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/22abc7b8e5548ad0f240b604f7092516.js"></script>
 
 </details>
 </blockquote></details>
@@ -193,72 +142,35 @@ dependencies {
 
 First, we need JSON factory, that will be used for communication with Google server
 
-   ```java
-   final JsonFactory jsonFactory = new GsonFactory();
-   ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0853a71cd95b079fe683eac607e7fa3a.js"></script>
 
 Secondly, we need to create transport object
 
-   ```java
-   final NetHttpTransport httpTransport = GoogleNetHttpTransport.newTrustedTransport();
-   ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/844c3077a831fc8dee4485ef8302c79d.js"></script>
 
 After that we must create client secrets object. It is the place, where we will use json file that was downloaded after creating API credentials
 
-   ```java
-   InputStream in = Main.class.getResourceAsStream("/Path/To/Credentials/Json/File");
-   GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(jsonFactory, new InputStreamReader(in));
-   ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/139ac242d9a5af46ac70de236cfa9402.js"></script>
 
 Next step is to create authorization flow that will be used for authorization request. A little details about options:
    * `DriveScopes.DRIVE` - is a scope that was enabled while creating API credentials
    * `"/Path/To/Directory/To/Save/Tokens"` - The tokens directory is needed to save authorization tokens. You can remove this line, but in this way Google API will ask for authorization each time.
 
-   ```java
-   GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
-        httpTransport, 
-        jsonFactory, 
-        clientSecrets, 
-        Collections.singletonList(DriveScopes.DRIVE)
-   )
-      .setDataStoreFactory(new FileDataStoreFactory(new java.io.File("/Path/To/Directory/To/Save/Tokens")))
-      .setAccessType("offline")
-      .build();
-   ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/a4ee3fdba7423db24797967851f16b56.js"></script>
 
 Now we will request authorization. It will open Google authorization page in default web browser, where you can grand access to the application. More information can be found on Google Documentation page.
 
-   ```java
-   LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
-   Credential credential = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
-   ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/cf913a2f12e3f2233b5f4b9e8cc98654.js"></script>
 
 Finally, we build an object that will be used to access Google Drive files
 
-   ```java
-   Drive service = new Drive.Builder(httpTransport, jsonFactory, credential)
-      .setApplicationName("my-comparison-application")
-      .build();
-   ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/c767f20a31dede6afd5412013908016d.js"></script>
 
 ### Get list of files using Google Drive API
 
 To print list of files which are on your Google Drive, execute next code
 
-```java
-   FileList result = service.files().list()
-          .setFields("files(id, name, size)")
-          .execute();
-   List<File> files = result.getFiles();
-   if (files == null || files.isEmpty()) {
-      System.out.println("No files found.");
-   } else {
-      System.out.println("Files:");
-      for (File file : files) {
-          System.out.printf("- %s  %s (%d bytes)\n", file.getId(), file.getName(), file.getSize());
-      }
-   }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/362c635862024863ac606182e3e62a3c.js"></script>
 
 Here is an example of the output:
 
@@ -280,19 +192,7 @@ In the output each line is one file. It's ID, name and size. You can use this in
 
 You can easily compare dwo documents, which are located on your Google Drive saving result document locally or saving it into Java stream and use it whatever you want. **Keep in mind** that `1ZSDTUZArzuwYab0GUbXEoSX_b9kt2mk0` and `1mKk0yt_bBoN9K9mm-3iGXLxfTzkrdw2O` are IDs got in the previous steps. For you, they will be different.
 
-```java
-   final Drive.Files.Get getSourceFile = service.files().get("1ZSDTUZArzuwYab0GUbXEoSX_b9kt2mk0");
-   final Drive.Files.Get getTargetFile = service.files().get("1mKk0yt_bBoN9K9mm-3iGXLxfTzkrdw2O");
-   try (final InputStream apiSourceInputStream = getSourceFile.executeMediaAsInputStream();
-       final InputStream apiTargetInputStream = getTargetFile.executeMediaAsInputStream()) {
-      try (final Comparer comparer = new Comparer(apiSourceInputStream);
-           OutputStream outputStream = new BufferedOutputStream(Files.newOutputStream(Paths.get("/Path/To/Save/Result/Document.docx")))) {
-          comparer.add(apiTargetInputStream);
-          final Path resultPath = comparer.compare(outputStream);
-          System.out.println(resultPath);
-      }
-   }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0dd5de335fee2e1f78dc8c4c82299010.js"></script>
 
 In output console you will see path to the result document.
 
@@ -300,31 +200,8 @@ In output console you will see path to the result document.
 
 Below you can see the code that will compare documents directly from Google Drive. Output files will be uploaded to Google Drive without saving locally anything. After that, you can open Google Drive page in web browser and see result document, for example, using Google Docs.
 
-```java
-   // Comparing files from Google Drive saving back to Google Drive
-   final Drive.Files.Get getSourceFile = service.files().get("1ZSDTUZArzuwYab0GUbXEoSX_b9kt2mk0");
-   final Drive.Files.Get getTargetFile = service.files().get("1mKk0yt_bBoN9K9mm-3iGXLxfTzkrdw2O");
-   try (final InputStream apiSourceInputStream = getSourceFile.executeMediaAsInputStream();
-       final InputStream apiTargetInputStream = getTargetFile.executeMediaAsInputStream()) {
-      try (final Comparer comparer = new Comparer(apiSourceInputStream);
-           ByteArrayOutputStream outputStream = new ByteArrayOutputStream()) {
-          comparer.add(apiTargetInputStream);
-          comparer.compare(outputStream);
-   
-          try (final ByteArrayInputStream arrayInputStream = new ByteArrayInputStream(outputStream.toByteArray())) {
-              final com.google.api.services.drive.model.File fileMetadata = new com.google.api.services.drive.model.File();
-              fileMetadata.setName("Comparer_Result.docx");
-              final InputStreamContent inputStreamContent = new InputStreamContent("application/octet-stream", arrayInputStream);
-   
-              com.google.api.services.drive.model.File file = service.files()
-                      .create(fileMetadata, inputStreamContent)
-                      .setFields("id, name, size")
-                      .execute();
-              System.out.printf("Uploaded: [%s] %s (%d bytes)\n", file.getId(), file.getName(), file.getSize());
-          }
-      }
-   }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/d067df3bf323e06d468952af2b7b335b.js"></script>
+
 In output console you will see ID, name and size of uploaded document. 
 
 ### Get a Free API License

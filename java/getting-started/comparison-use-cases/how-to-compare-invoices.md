@@ -29,15 +29,15 @@ Sometimes you need to achieve maximum accuracy in comparing files. Suppose you h
 
 For example, there are two invoices in the DOCX format and you need to compare their contents with the maximum level of detail and comparison sensitivity.
 
-|  | Files                                                      |
-| --- | --- |
-|Source Invoice| ![](comparison/java/images/how-to-compare-invoices.png)    | |Target Invoice |![](comparison/java/images/how-to-compare-invoices_1.png) |  
+| Source Invoice                                          |                       Target Invoice                      |
+|---------------------------------------------------------|-----------------------------------------------------------|
+| ![](comparison/java/images/how-to-compare-invoices.png) | ![](comparison/java/images/how-to-compare-invoices_1.png) |
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison) provides the ability to compare two files in DOCX format(or any other [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}})) with adjustment of detalization level and[comparison sensitivity](https://docs.groupdocs.com/display/comparisonjava/Set+Comparison+Sensitivity+While+Comparing+Documents).
 
 The following are the steps to compare two DOCX files with specific settings of detalization level and[comparison sensitivity.]({{< ref "comparison/java/developer-guide/advanced-usage/comparison/adjusting-comparison-sensitivity.md" >}})
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream;
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target document path or stream;
 *   Instantiate [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object with desired [setSensitivityOfComparison](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setSensitivityOfComparison(int)) and [setDetalisationLevel](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setDetalisationLevel(int)) value;    
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String,%20com.groupdocs.comparison.options.CompareOptions)) method and pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object to method.
@@ -45,23 +45,13 @@ The following are the steps to compare two DOCX files with specific settings of
 
 The following code samples demonstrate how to compare two DOCX files.
 
-```java
-try (Comparer comparer = new Comparer(SOURCE_FILE)) {
-    comparer.add(TARGET_FILE);
- 
-    final CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setSensitivityOfComparison(100);
-    compareOptions.setDetalisationLevel(DetalisationLevel.High);
-
-    final Path resultPath = comparer.compare(RESULT_FILE, compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/c0ea4e8b64b330c78449bafa4d733b04.js"></script>
 
 As a result, we get a DOCX file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>
 
-| Result Invoice |
-| --- |
-| ![](comparison/java/images/how-to-compare-invoices_2.png)| 
+| Result Invoice                                            |
+|-----------------------------------------------------------|
+| ![](comparison/java/images/how-to-compare-invoices_2.png) | 
 
 ## More resources
 ### Advanced Usage Topics

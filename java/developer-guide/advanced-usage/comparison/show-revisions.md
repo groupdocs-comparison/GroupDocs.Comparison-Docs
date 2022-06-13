@@ -45,29 +45,22 @@ By default, the display of revisions is *enabled*. Below are the steps to turn o
 
 ---
 
-```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
-    CompareOptions options = new CompareOptions();
-    options.setShowRevisions(false);
-    final Path resultPath = comparer.compare(RESULT_PATH, options);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e43eb36dafa0ef2d0690fe5d2ab38460.js"></script>
 
 ## Example of a result with the Revision display enabled
 
 ---
 
-| Closed state | Open state |
-|:---:|:---:|
+|                            Closed state                             |                            Open state                              |
+|:-------------------------------------------------------------------:|:------------------------------------------------------------------:|
 | ![](comparison/java/images/show-revisions-true-close-revisions.png) | ![](comparison/java/images/show-revisions-true-open-revisions.png) |
 
 ## Example of a result with the Revision display disabled
 
 ---
 
-| Disable display Revisions |
-|:---:|
+|              Disable display Revisions               |
+|:----------------------------------------------------:|
 | ![](comparison/java/images/show-revisions-false.png) |
 
 ## More resources

@@ -56,39 +56,27 @@ After that, project with samples from GitHub will be downloaded to your local di
 
 1. Sample configured to use `PORT` environment variable (file `configuration.yml`). It must be done because Heroku can change port each time app starts
 
-    ```yaml
-    server:
-      connector:
-        port: ${PORT:-8080}
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/03c23b58c3448dd517029a37d3f1118d.js"></script>
 
 2. To let Heroku know how to run the application, special file (`Procfile`) was created 
 
-    ```
-    web: java -jar target/comparison-dropwizard-22.3.jar
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/6c193c0ab14440ef6265018b54e2956e.js"></script>
 
 3. File `system.properties` was created to specify Java version that the app needs
 
-    ```properties
-    java.runtime.version=1.8
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/387d00d93e8527292e71385fa0c22d0f.js"></script>
+
 ### Creating Heroku application
 
 1. Run next command to go to samples directory and to run log in process
 
-    ```shell
-    cd .\GroupDocs.Comparison-for-Java\
-    heroku login
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/5846d06dbc8f5a099596e10531a1fc20.js"></script>
 
     Heroku page will be opened in a browser where you must log in so that command line tool will have access to your account
 
 2. Run command below to create new Heroku application
 
-    ```shell
-    heroku apps:create my-dropwizard-comparer
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/70a482acde3a286d42a34939019c0a95.js"></script>
 
     Where `my-dropwizard-comparer` is the name of new application. You are free to change it however you want, the only thing - it must be unique. The result of the command is a web url to access your new application and a link to heroku git repository. Below is an example of command line result output:
 
@@ -100,17 +88,13 @@ After that, project with samples from GitHub will be downloaded to your local di
 
 1. Next, add heroku repository link as a 'remote' to sample application repository using command below
 
-    ```shell
-        heroku git:remote --app my-dropwizard-comparer --remote heroku-dropwizard
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/bf5d9c5d71cdd1a4a7fdd52ee552942a.js"></script>
     
     Where `my-dropwizard-comparer` is Heroku app name, `heroku-dropwizard` heroku repository identifier. You can change it, but don't forget new one.
 
 2. Deploy the application to Heroku server using command below
 
-    ```shell
-    git subtree push --prefix Demos/Dropwizard heroku-dropwizard master
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/f605188b333f3ae13f048837f89892f4.js"></script>
     
     Here is `Demos/Dropwizard` a path to the sample you want to push. It is relative, starts from git root of the sample. `heroku-dropwizard` is heroku repository identifier from previous step. `master` is a git branch in Heroku repository. At the moment Heroku deploys only `master` and `main` branches.
     
@@ -122,39 +106,25 @@ To manage applications you can use Heroku [web interface](https://dashboard.hero
 
 * The command below will show common help of Heroku CLI
 
-    ```shell
-    heroku help
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/2227f67f2799830aafa784cb787a9c3e.js"></script>
 
 * To see help for definite command, type it after `help` word
 
-    ```shell
-    heroku help logs
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/2feb7810177c6918d9651e2a898ce3a7.js"></script>
 
 * To see logs of specific application just run next command (you can add `--tail` parameter to show logs in real time)
 
-    ```shell
-    heroku logs --app my-dropwizard-comparer
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/4984f5d703b956cb9c2db0193dfdcea3.js"></script>
 
 * It is easy to access remote filesystem running command below
 
-    ```shell
-    heroku run bash --app my-dropwizard-comparer
-    # For exit type 'exit'
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/eb2c27b5111502e256b121fae24f50ad.js"></script>
 
     Note: all changes in remote filesystem will be lost when the app restarts
 
 * To restart the app use command below
 
-    ```shell
-    # To show heroku runner that is used in your app
-    heroku ps --app my-dropwizard-comparer
-    # Change 'web.1' to your apps runner
-    heroku ps:restart web.1 --app my-dropwizard-comparer
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/f06a5c8ad2cd9c1d7313459d96abccce.js"></script>
 
 ### More opportunities
 

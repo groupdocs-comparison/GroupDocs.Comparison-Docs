@@ -35,12 +35,7 @@ The following are the steps to be followed:
 
 Following code snippet describes how to load file from stream.
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/f9d153b18ca0705c14f71f817325508d.js"></script>
 
 ## More resources
 

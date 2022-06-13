@@ -66,55 +66,15 @@ The following code snippet demonstrates how to generate document previews.
 
 ## Get page previews for source document
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
-        @Override
-        public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream("C:\\" + "result_" + pageNumber + ".png");
-        }
-    });
-    previewOptions.setPreviewFormat(PreviewFormats.PNG);
-    previewOptions.setPageNumbers(new int[]{1, 2});
-    comparer.getSource().generatePreview(previewOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/74af4dca2cd81b3d14b5136fdd291f26.js"></script>
 
 ## Get page previews for target document
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
-        @Override
-        public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream("C:\\" + "result_" + pageNumber + ".png");
-        }
-    });
-    previewOptions.setPreviewFormat(PreviewFormats.PNG);
-    previewOptions.setPageNumbers(new int[]{1, 2});
-    comparer.getTargets().get(0).generatePreview(previewOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e34414e2945b837f57160900fa1e925b.js"></script>
 
 ## Get page previews for resultant document
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final Path resultPath = comparer.compare("C:\\result.pdf");
-    Document document = new Document(resultPath);
-    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
-        @Override
-        public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream("C:\\" + "result_" + pageNumber + ".png");
-        }
-    });
-    previewOptions.setPreviewFormat(PreviewFormats.PNG);
-    previewOptions.setPageNumbers(new int[]{1, 2});
-    document.generatePreview(previewOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/5da1f1afc204abe5d0212d68f77e6701.js"></script>
 
 ## Set specific size for preview images
 
@@ -122,25 +82,7 @@ In some cases it may be useful to set specific image size during document pages 
 
 The following code snippet demonstrates how to set specific size for preview images.
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final Path resultPath = comparer.compare("C:\\result.pdf");
-    Document document = new Document(resultPath);
-    
-    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
-        @Override
-        public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream("C:\\" + "result-SetSpecificImagesSize_" + pageNumber + ".png");
-        }
-    });
-    previewOptions.setPreviewFormat(PreviewFormats.PNG);
-    previewOptions.setPageNumbers(new int[]{1, 2});
-    previewOptions.setHeight(1000);
-    previewOptions.setWidth(1000);
-    document.generatePreview(previewOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/127ca350ae9fb6449f7fd2cdd1be32e0.js"></script>
 
 {{< alert style="info" >}}NOTE: This feature is not supported for WordProcessing documents yet.{{< /alert >}}
 
@@ -148,31 +90,7 @@ try (Comparer comparer = new Comparer("C:\\source.pdf")) {
 
 By default, after generating and rendering document page preview image stream will be immediately disposed. However, there is an ability to implement custom method for handling this operation.
 
-```java
-// Somewhere in the same class
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    final Path resultPath = comparer.compare("C:\\result.pdf");
-    Document document = new Document(resultPath);
-    
-    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
-        @Override
-        public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream("C:\\" + "result-GetPagePreviewsResouresCleaning_" + pageNumber + ".png");
-        }
-    });
-    previewOptions.setPreviewFormat(PreviewFormats.PNG);
-    previewOptions.setPageNumbers(new int[]{1, 2});
-    previewOptions.setReleasePageStream(new Delegates.ReleasePageStream() {
-        @Override
-        public void invoke(int pageNumber, OutputStream outputStream) {
-            System.out.println("Releasing memory for page: " + pageNumber);
-            outputStream.close();
-        }
-    });
-    document.generatePreview(previewOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/36201a68f984bd2840ccf577a823eb0f.js"></script>
 
 ## More resources
 

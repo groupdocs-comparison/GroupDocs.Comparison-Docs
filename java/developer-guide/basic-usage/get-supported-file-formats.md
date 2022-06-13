@@ -30,12 +30,7 @@ structuredData:
 
 The following code sample demonstrates how to get supported file formats list.
 
-```java
-Iterable<FileType> fileTypes = FileType.getSupportedFileTypes();
-for (FileType fileType : fileTypes) {
-    System.out.println(fileType);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/bfd324e74c6d9c58a6dcbb4833fb834e.js"></script>
 
 ## More resources
 ### Advanced Usage Topics

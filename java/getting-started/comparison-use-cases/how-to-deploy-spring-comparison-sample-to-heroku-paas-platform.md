@@ -56,40 +56,27 @@ The command will download project with samples from GitHub to your local directo
 1. Maven profile to build JAR file is configured and active by default
 2. Sample configured to use `PORT` environment variable (file `configuration.yml`). It is important, because Heroku can change port each time app starts
 
-    ```yaml
-    server:
-      connector:
-        port: ${PORT:8080}
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/2f55731e40bfc2db4b42e48c58f8faa6.js"></script>
 
 3. To say Heroku how to run the application was created special file (`Procfile`) 
 
-    ```
-    web: java -jar target/comparison-spring-22.3.0.jar
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/90a35cf6498755ae7672cb83cfbd4d73.js"></script>
 
 4. File `system.properties` was created to specify Java version our app needs
 
-    ```properties
-    java.runtime.version=1.8
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/387d00d93e8527292e71385fa0c22d0f.js"></script>
 
 ### Creating Heroku application
 
 1. Run next command in order to go to samples directory and to log in with Heroku account
 
-    ```shell
-    cd .\GroupDocs.Comparison-for-Java\
-    heroku login
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/5846d06dbc8f5a099596e10531a1fc20.js"></script>
 
     The last command will open Heroku website where you should log in to grand command line tool access to your account
 
 2. Use next command to create new Heroku application
 
-    ```shell
-    heroku apps:create my-spring-comparer
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/549e2bd14bbff90c1a1e8c6be2b64053.js"></script>
 
     Where `my-spring-comparer` is the name of the app. You can change it however you want, but it must be unique. The result of the command will be a web url to access your new app and a link to heroku git repository. Here is an example of command line output:
 
@@ -101,17 +88,13 @@ The command will download project with samples from GitHub to your local directo
 
 1. Next, add heroku repository link as a remote to sample app repository using next command:
 
-    ```shell
-        heroku git:remote --app my-spring-comparer --remote heroku-spring
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/9b23f36cc6434900449e4906bed6d7cc.js"></script>
     
     Where `my-spring-comparer` is the name of Heroku app, `heroku-spring` is a name that will be used by git to identify heroku repository. You can change it, but don't forget new one.
 
 2. Deploy the application to Heroku server using next command
 
-    ```shell
-    git subtree push --prefix Demos/Spring heroku-spring master
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/cd1fc18b42f1c00841be0371c538385a.js"></script>
     
     Here is `Demos/Spring` a path to the sample you want to push. The root of the path is a root directory of git project of the sample. `heroku-spring` is heroku repository name from previous step, that is used to identify it. `master` is a git branch in Heroku repository. At the moment Heroku deploys only `master` and `main` branches.
     
@@ -123,39 +106,25 @@ You can manage your applications in Heroku [web interface](https://dashboard.her
 
 * Use next command to show common help of Heroku CLI
 
-    ```shell
-    heroku help
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/2227f67f2799830aafa784cb787a9c3e.js"></script>
 
 * To show help for definite command, type it after `help` word
 
-    ```shell
-    heroku help logs
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/2feb7810177c6918d9651e2a898ce3a7.js"></script>
 
 * To show logs of specific application use next command (add `--tail` parameter to see logs in real time)
 
-    ```shell
-    heroku logs --app my-spring-comparer
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/1fb868756cff79b05bbb951dd620f842.js"></script>
 
 * It is possible to access remote filesystem using next command
 
-    ```shell
-    heroku run bash --app my-spring-comparer
-    # For exit type 'exit'
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/1b7968ffc4805be2774ef9c33de252a3.js"></script>
 
     Don't forget, all changes in remote filesystem will be lost when the app restarts
 
 * You can restart the app using next command
 
-    ```shell
-    # To show heroku runner that is used in your app
-    heroku ps --app my-spring-comparer
-    # Change 'web.1' to your apps runner
-    heroku ps:restart web.1 --app my-spring-comparer
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/be60e3092d9e2515423a621e01a1833a.js"></script>
 
 ### More opportunities
 

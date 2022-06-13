@@ -54,59 +54,31 @@ Sample app was downloaded from GitHub to your local directory. Do not close the 
 
 1. Special gradle task was added to `build.gradle.kts`. It is needed for Heroku to build the executable file the sample
 
-    ```kotlin
-    tasks {
-        create("stage").dependsOn("installDist")
-    }
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/9420eee014f7f425a6f53cc8405fb21d.js"></script>
 
 2. Using port from `PORT` environment variable (file `application.conf`). It is important, because Heroku can change port each time app starts
 
-    ```
-    ktor {
-        deployment {
-            dev {
-                ...
-                port = 8080
-                port = ${?PORT}
-            }
-            prod {
-                ...
-                port = 80
-                port = ${?PORT}
-            }
-        }
-    }
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/c3e61833f1878eccfd5c7bb4830f62e5.js"></script>
 
 3. File `Procfile` was created in order to say Heroku how to run out application
 
-    ```
-    web: ./build/install/comparison-ktor/bin/comparison-ktor
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/585de64fb7b5d3b0f8af68871f39161d.js"></script>
 
 4. File `system.properties` was created to specify Java version our app needs
 
-    ```properties
-    java.runtime.version=11
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/387d00d93e8527292e71385fa0c22d0f.js"></script>
 
 ### Creating Heroku application
 
 1. In command line run next commands
 
-    ```shell
-    cd .\GroupDocs.Comparison-for-Java\
-    heroku login
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/5846d06dbc8f5a099596e10531a1fc20.js"></script>
 
     It will open Heroku web page where you should log in to give command line tool access to your account
 
 2. Create application running next command:
 
-    ```shell
-    heroku apps:create my-comparison-app-name
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/960345297cd9dd3cf427939d500a753b.js"></script>
 
     Where `my-comparison-app-name` is the name of the app. You can use any name, but it must be unique. The result of the command will be a web url to access your new app and a link to heroku git repository:
 
@@ -118,17 +90,13 @@ Sample app was downloaded from GitHub to your local directory. Do not close the 
 
 1. Add heroku git repository link as a remote to sample app repository running next command:
 
-    ```shell
-        heroku git:remote --app my-comparison-app-name --remote heroku
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/bc2086fe645337ae3e27fa9778766208.js"></script>
     
     Where `my-comparison-app-name` is app name, `heroku` is just a name which will be used by git to identify heroku git repository. You can change it, but don't forget new one.
 
 2. Push the application to Heroku server
 
-    ```shell
-    git subtree push --prefix Demos/Ktor heroku master
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/11a09f4de71024831f9f931bd8e9621f.js"></script>
     
     Here is `Demos/Ktor` a path to the sample you want to push. The root of the path is a root directory of git project of the sample. `heroku` is a name from previous step, that is used to identify heroku git repository. `master` is a git branch in Heroku git repository. Heroku deploys only `master` and `main` branches.
     
@@ -140,39 +108,25 @@ You can manage your apps in Heroku [web interface](https://dashboard.heroku.com/
 
 * To show common help use next commands
 
-    ```shell
-    heroku help
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/2227f67f2799830aafa784cb787a9c3e.js"></script>
 
 * To show help for definite command, type it after `help` word
 
-    ```shell
-    heroku help logs
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/2feb7810177c6918d9651e2a898ce3a7.js"></script>
 
 * To show logs use next command (add `--tail` parameter to show logs in real time)
 
-    ```shell
-    heroku logs --app my-comparison-app-name
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/8214014faef1b27e8e2279405b43093e.js"></script>
 
 * To access remote filesystem you can use next command
 
-    ```shell
-    heroku run bash --app my-comparison-app-name
-    # For exit type 'exit'
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/5c46e7a117ec410deabd4e5d7a4abb60.js"></script>
 
     Keep in mind, all changes in remote filesystem  will be lost when the app restarts
 
 * To restart the app, use next commands
 
-    ```shell
-    # To show heroku runner that is used in your app
-    heroku ps --app my-comparison-app-name
-    # Change 'web.1' to your apps runner
-    heroku ps:restart web.1 --app my-comparison-app-name
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/fecb1c7111e46cc1d3c4cd8d912becd3.js"></script>
 
 ### More opportunities
 

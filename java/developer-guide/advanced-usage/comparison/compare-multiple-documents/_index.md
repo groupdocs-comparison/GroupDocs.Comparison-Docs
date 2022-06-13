@@ -33,7 +33,7 @@ structuredData:
 
 The following are the steps to compare multiple documents.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream;
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
 *   Call [add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream. Repeat this step for every target document.
 *   Call [compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method.
 
@@ -41,25 +41,11 @@ The following code sample shows how to compare multiple documents with specific
 
 ## Compare multiple documents from local disk
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target1.pdf");
-    comparer.add("C:\\target2.pdf");
-    comparer.add("C:\\target3.pdf");
-    final Path resultPath = comparer.compare("C:\\result.pdf");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/4234d069bdad865fe0d4ba00f199bbf4.js"></script>
 
 ## Compare multiple documents from stream
 
-```java
-try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"))) {
-    comparer.add(new FileInputStream("C:\\target1.pdf"));
-    comparer.add(new FileInputStream("C:\\target2.pdf"));
-    comparer.add(new FileInputStream("C:\\target3.pdf"));
-    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6b447c4faa7b44ba103c96e8f2d8ab8d.js"></script>
 
 ## More resources
 

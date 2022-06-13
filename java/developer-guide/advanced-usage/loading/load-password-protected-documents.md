@@ -37,12 +37,7 @@ The following are the steps to compare password-protected documents.
 
 The following code sample shows how to compare password protected documents.
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf", new LoadOptions("source-password"))) {
-    comparer.add("C:\\target.pdf", new LoadOptions("target-password"));
-    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/8c2a3079211b7489e37fa3e8b715d80c.js"></script>
 
 ## More resources
 

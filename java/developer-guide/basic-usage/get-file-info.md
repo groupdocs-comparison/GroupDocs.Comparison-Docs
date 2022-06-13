@@ -34,28 +34,11 @@ The following code samples demonstrate how to get file information.
 
 ## Get file info for the file from local disk
 
-```java
-    try (Comparer comparer = new Comparer("C:\\source.docx")) {
-        IDocumentInfo info = comparer.getSource().getDocumentInfo();
-        for (int i = 0; i < info.getPageCount(); i++) {
-            System.out.printf("\nFile type: %s\nNumber of pages: %d\nDocument size: %d bytes\nWidth: %d\nHeight: %d%n",
-                info.getFileType().getFileFormat(), info.getPageCount(), info.getSize(), info.getPagesInfo().get(i).getWidth(), info.getPagesInfo().get(i).getHeight());
-        }
-    }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/cba10d2dea13e2c62383d7e88c3e6615.js"></script>
 
 ## Get file for the file from stream
 
-```java
-    try (InputStream inputStream = new FileInputStream("C:\\source.docx");
-        Comparer comparer = new Comparer(inputStream)) {
-        IDocumentInfo info = comparer.getSource().getDocumentInfo();
-        for (int i = 0; i < info.getPageCount(); i++) {
-            System.out.printf("\nFile type: %s\nNumber of pages: %d\nDocument size: %d bytes\nWidth: %d\nHeight: %d%n", 
-                info.getFileType().getFileFormat(), info.getPageCount(), info.getSize(), info.getPagesInfo().get(i).getWidth(), info.getPagesInfo().get(i).getHeight());
-        }
-    }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/19baec4618b31a67fa06db5a74e68497.js"></script>
 
 ## More resources
 ### Advanced Usage Topics

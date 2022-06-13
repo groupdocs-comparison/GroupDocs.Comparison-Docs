@@ -21,7 +21,7 @@ structuredData:
         - name: Compare documents
           text: Compare source and target documents as usual
         - name: Get detected changes
-          text: Use method 'getChanges()' of Comparer object to access all detected changes
+          text: Use method 'getChanges()' of 'Comparer' object to access all detected changes
         - name: Accept or reject each change
           text: Use method 'setComparisonAction()' to accept or reject each change using constants 'ComparisonAction.ACCEPT' and 'ComparisonAction.REJECT'
         - name: Merge source code files
@@ -62,23 +62,9 @@ If you did not use ComparisonAction, then in the resulting file, all changes wil
 ---
 
 The following code samples demonstrate how to merge two source code files.
-```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
-    final Path resultPath = comparer.compare(RESULT_PATH);
 
-    ChangeInfo[] changes = comparer.getChanges();
-    for (int i = 0; i < 10; i++) {
-        changes[i].setComparisonAction(ComparisonAction.ACCEPT);
-    }
+<script src="https://gist.github.com/groupdocs-comparison-gists/0eada62d9c41ac852ad8ff18951e8abc.js"></script>
 
-    for (int i = 10; i < changes.length; i++) {
-    	changes[i].setComparisonAction(ComparisonAction.REJECT);
-    }
-
-    comparer.applyChanges(resultPath, new ApplyChangeOptions(changes));
-}
-```
 ## The result of merging files
 
 ---
@@ -87,8 +73,8 @@ As a result, we get a merged source code file where the deleted elements are mar
 
 Also, you will receive a file in HTML format with changed places in the code.
 
-| Result source code file | Result HTML file |
-| --- | --- |
+| Result source code file                                                 | Result HTML file                                                          |
+|-------------------------------------------------------------------------|---------------------------------------------------------------------------|
 | ![](comparison/java/images/how-to-merge-source-code-file-result-CS.png) | ![](comparison/java/images/how-to-merge-source-code-file-result-HTML.png) |
 
 As you can see from the resulting files, only one of the two methods was removed.

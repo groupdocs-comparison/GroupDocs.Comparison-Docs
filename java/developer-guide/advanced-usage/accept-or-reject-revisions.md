@@ -51,51 +51,21 @@ The following code example demonstrates how to get revisions from a document, ac
 
 ## Accept or Reject revisions from local disk
 
-```java
-try (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Document_with_revision.docx")) {
-    List<RevisionInfo> revisionList = revisionHandler.getRevisions();
-    for (RevisionInfo revision : revisionList) {
-        if (revision.getType() == RevisionType.Insertion) {
-            revision.setAction(RevisionAction.Accept);
-        }
-    }
-    ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions();
-    revisionOptions.setChanges(revisionList);
-    revisionHandler.applyRevisionChanges(pathRevision + "result.docx", revisionOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/959d27303cb17b3f1c026ca018626137.js"></script>
 
 ## Accept or Reject revisions from stream
 
-```java
-try (InputStream inputStream = new FileInputStream("Document_with_revision.docx");
-    RevisionHandler revisionHandler = new RevisionHandler(inputStream)) {
-    List<RevisionInfo> revisionList = revisionHandler.getRevisions();
-    for (RevisionInfo revision : revisionList) {
-        if (revision.getType() == RevisionType.Insertion) {
-            revision.setAction(RevisionAction.Accept);
-        }
-    }
-    ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions(revisionList);
-    revisionHandler.applyRevisionChanges(pathRevision + "result.docx", revisionOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/4e175bc335e86438f4dc6e742e8b4c57.js"></script>
 
 ## Accept or Reject all revisions
 
-```java
-try (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Document_with_revision.docx")) {
-    ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions();
-    revisionOptions.setCommonHandler(RevisionAction.Accept);
-	revisionHandler.applyRevisionChanges(pathRevision + "result.docx", revisionOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/f66fbdb53c66bd82c03d5697d47bf9d0.js"></script>
 
 ## Result of revision processing
 Below are the source and output files based on the code presented earlier.
 
-| Source file | Result  file |
-| --- | --- |
+| Source file                                   | Result file                                          |
+|-----------------------------------------------|------------------------------------------------------|
 | ![](comparison/java/images/revision-file.png) | ![](comparison/java/images/result-revision-file.png) |
 
 ## More resources

@@ -40,51 +40,31 @@ You will then enter Review Mode. This will open the Reviewing Pane, which shows 
 
 Such functionality that is provided by third-party programs is clearly not enough. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** provides many features for comparing a wide range of [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}}), including PowerPoint Presentation format. Let's make an example, you made a presentation at different times, but the elements on the slides are not located as you originally did. To find where the slides differ, you can compare two files in PPTX format using the **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** functionality along with a built-in option that helps find changes in styles.
 
-|   |  Presentations |
-| --- | --- |
-|Original | ![](comparison/java/images/how-to-compare-powerpoint-presentations_1.png)|
-|Modified | ![](comparison/java/images/how-to-compare-powerpoint-presentations_2.png)|
+| Original  presentation                                                    | Modified presentation                                                      |
+|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
+| ![](comparison/java/images/how-to-compare-powerpoint-presentations_1.png) | ![](comparison/java/images/how-to-compare-powerpoint-presentations_2.png)  |
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/java) provides the ability to compare two files in PPTX format(or any other [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}}))
 
 The following are the steps to compare two PPTX files.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream; 
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream; 
 *   Instantiate [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object with desired parameters; 
 *   Call[ compare ](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String,%20com.groupdocs.comparison.options.CompareOptions)) method and pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object to method;
 
 The following code samples demonstrate how to compare two PPTX files.
 
-```java
-try (Comparer comparer = new Comparer(SOURCE_FILE)) {
-    comparer.add(TARGET_FILE);
- 
-    final CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setDetectStyleChanges(true);
-    compareOptions.setDetalisationLevel(DetalisationLevel.High);
-
-    final Path resultPath = comparer.compare(RESULT_FILE, compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/b4e2d61b246bba68f353feeff2cce6bd.js"></script>
 
 As a result, we get a PPTX file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>
 
-| Result Slide |
-| --- |
-| ![](comparison/java/images/how-to-compare-powerpoint-presentations_3.png)
+| Result Slide                                                              |
+|---------------------------------------------------------------------------|
+| ![](comparison/java/images/how-to-compare-powerpoint-presentations_3.png) |
 
 To compare comments in presentation document, you have to set DetalisationLevel property to High:
 
-```java
-    try (Comparer comparer = new Comparer(sourcePath)) {
-        comparer.add(targetPath);
-
-        CompareOptions compareOptions = new CompareOptions();
-        compareOptions.setDetalisationLevel(DetalisationLevel.High);
-
-        final Path resultPath = comparer.compare(resultPath, compareOptions);
-    }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/847f4abe4420c4f476f6432ae3b67db1.js"></script>
 
 ## More resources
 ### Advanced Usage Topics

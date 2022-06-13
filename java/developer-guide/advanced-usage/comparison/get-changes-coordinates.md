@@ -31,7 +31,7 @@ structuredData:
 
 The following are the steps to obtain changes coordinates.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source file path or stream;    
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source file path or stream;    
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target file path or stream.     
 *   Instantiate [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object and set [CalculateCoordinates](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setCalculateCoordinates(boolean)) setter to *true*;    
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String,%20com.groupdocs.comparison.options.CompareOptions)) method and pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object from previous step.    
@@ -42,21 +42,7 @@ The following code sample shows how to get changes coordinates.
 
 ## Coordinates calculation example
 
-```java
-    try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-        comparer.add("C:\\target.pdf");
-
-        CompareOptions compareOptions = new CompareOptions();
-        compareOptions.setCalculateCoordinates(true);
-        final Path resultPath = comparer.compare("C:\\result.pdf", compareOptions);
-
-        ChangeInfo[] changes = comparer.getChanges();
-        for (ChangeInfo change : changes) {
-            System.out.printf("Change Type: %d, X: %f, Y: %f, Text: %s%n",
-                change.getType(), change.getBox().getX(), change.getBox().getY(), change.getText());
-        }
-    }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/fd4a88331289a9d88fad5e1f0bb0c5e2.js"></script>
 
 ## More resources
 ### GitHub Examples

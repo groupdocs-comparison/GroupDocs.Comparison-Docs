@@ -71,17 +71,13 @@ The entry point of the application is in a file `Application.kt`. There is a `ma
 
 To run the application, open command line in Ktor sample directory and run next command
 
-```shell
-.\gradlew.bat :run
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6987202c524f6c430eae2669bad8c64b.js"></script>
 
 The command will run application using gradle wrapper, that is in `gradle` directory. Open [http://localhost:8080/comparer](http://localhost:8080/comparison) in web browser.
 
 You can easily create archive for distribution. To do it, just build the application with the next command
 
-```shell
-.\gradlew.bat :build
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/77581fd6decb81d87d7a7487f997de7a.js"></script>
 
 After that, you can go to `.\build\distributions\` directory and find next distribution files:
 
@@ -97,70 +93,33 @@ There are two directories inside them, `lib` with all application libraries and 
 Package `mudules` contains some amount of sub packages. Each of them is a single request. For example, lets review sub package `compare`.
 The package has two files: 
 1. `CompareModule.kt` - contains url mapping, will be called when request to compare documents will be sent from browser
-   ```kotlin
-   post("/compare") {
-       val request = call.receive<CompareRequest>()
-       val response = compareController.compare(request)
-       call.respond(HttpStatusCode.OK, response)
-   }
-    ```
-   All, the class does: catches request, extracts parameters, calls controller and returns response object
+
+    <script src="https://gist.github.com/groupdocs-comparison-gists/6c365c5e96514aad2d97c319e67540d5.js"></script>
+
+    All, the class does: catches request, extracts parameters, calls controller and returns response object
 2. `CompareController.kt` - combining usecases results and parameters creates response object.
    First of all, using `PathManager` it checks that request paths are inside allowed directories 
-   ```kotlin
-   val sourceFilePath = pathManager.assertPathIsInsideFilesDirectory(sourceFile)
-   val targetFilePath = pathManager.assertPathIsInsideFilesDirectory(targetFile)
-   ```
-   Then, the controller checks, are requested files supported by comparison application. For this purpose it uses special usecase, that is called `AreFilesSupportedUseCase`
-   ```kotlin
-   if (!checkAreFilesSupported(sourceFilePath.fileName.toString(), targetFilePath.fileName.toString())) {
-       throw InternalServerException("File's types are different or are not supported")
-   }
-   ```
-   The next step is to create path to the file, in which will be saved the result document of the comparison process
-   ```kotlin
-   val resultPath = pathManager.createPathForResultFile(
-       sourceName = sourceFilePath.fileName.toString(),
-       targetName = targetFilePath.fileName.toString(),
-       extension = resultExtension
-   )
-   ```
-   Temporary files are used to minimize usage of RAM. It is easy to change app so that it will not save any files. Temporary directory can be specified in `comparer.conf`. By default, system temp directory is used.
 
-   Now, the controller uses `CompareDocumentsUseCase` to compare source and target documents and to save the result file. Also, the usecase returns list of changes, that will be set into response object later
-    ```kotlin
-    val changeInfos = withContext(Dispatchers.IO) {
-        BufferedOutputStream(FileOutputStream(resultPath.toFile())).use { outputStream ->
-            return@withContext compareDocuments(
-                sourcePath = sourceFilePath,
-                sourcePassword = sourcePassword,
-                targetPath = targetFilePath,
-                targetPassword = targetPassword,
-                outputStream = outputStream
-            )
-        }
-    }
-    ```
-   The next usecase, which is called `RetrieveLocalFilePagesStreamUseCase`, is used to get input stream for each page of the result document
-    ```kotlin
-    BufferedInputStream(FileInputStream(resultPath.toFile())).use { inputStream ->
-        retrieveLocalFilePagesStream(
-            inputStream = inputStream,
-            previewWidth = previewPageWidth,
-            previewRatio = previewPageRatio
-        ) { pageNumber, pageInputStream ->
-            val data = Base64.getEncoder().encodeToString(pageInputStream.readAllBytes())
-            pages.add(
-                ComparePage(
-                    number = pageNumber - 1,
-                    width = previewPageWidth,
-                    height = (previewPageWidth * previewPageRatio).toInt(),
-                    data = data
-                )
-            )
-        }
-    }
-    ```
+    <script src="https://gist.github.com/groupdocs-comparison-gists/80121384a48c0bd18adf82471ec06158.js"></script>
+
+    Then, the controller checks, are requested files supported by comparison application. For this purpose it uses special usecase, that is called `AreFilesSupportedUseCase`
+
+    <script src="https://gist.github.com/groupdocs-comparison-gists/d967ad8ff4850452d20be766fc80e540.js"></script>
+
+    The next step is to create path to the file, in which will be saved the result document of the comparison process
+
+    <script src="https://gist.github.com/groupdocs-comparison-gists/e5fbb26f52bd2a20e6ba7e918761bc60.js"></script>
+
+    Temporary files are used to minimize usage of RAM. It is easy to change app so that it will not save any files. Temporary directory can be specified in `comparer.conf`. By default, system temp directory is used.
+
+    Now, the controller uses `CompareDocumentsUseCase` to compare source and target documents and to save the result file. Also, the usecase returns list of changes, that will be set into response object later
+
+    <script src="https://gist.github.com/groupdocs-comparison-gists/8c38027c876bcdb257a410ed9ed295b6.js"></script>
+
+    The next usecase, which is called `RetrieveLocalFilePagesStreamUseCase`, is used to get input stream for each page of the result document
+
+    <script src="https://gist.github.com/groupdocs-comparison-gists/3a9ae7912f345b02e45a2469287ffed6.js"></script>
+
     And the last step is to map groupdocs `ChangeInfo` objects into response models, which will be sent as a result
 
 #### What is usecases and how to use them
@@ -170,19 +129,7 @@ As an example, let's overview `CompareDocumentsUseCase`
 
 The usecase has `invoke` operator overridden, so that it can be called using it's object as a function. The only aim of the usecase is to compare source and target documents and to write the result to provided output stream. 
 
-```kotlin
-class CompareDocumentsUseCase : KoinComponent {
-    operator fun invoke(
-        sourcePath: Path,
-        targetPath: Path,
-        sourcePassword: String? = null,
-        targetPassword: String? = null,
-        outputStream: OutputStream
-    ): List<ChangeInfo> {
-       // ... 
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/a73539b2fdb66f8cde9495beb47d5fc5.js"></script>
 
 As a parameters it takes paths of source and target documents and output stream, in which the result should be saved. Optional parameters are passwords for each document.
 
@@ -190,25 +137,11 @@ To compare documents we use powerful and modern [GroupDocs.Comparison for Java/K
 
 First step is to create object of `Comparer` class. Load options are used to provide password for the document. Also, with options you can configure Comparer to use first parameter not as path to the source document (streams are also available) but to use it as a source text for comparison process. Furthermore, there is an option to configure directories with specific fonts. Comparer implements Java `Closeable` interface, so it is very easy to free used memory.
 
-```kotlin
-Comparer(sourcePath, LoadOptions(sourcePassword)).use { comparer ->
-   // ...
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/cded4b9f8a4f1fd1ec4ae1de61c3b15a.js"></script>
 
 Inside `use` block we call `add` method of comparer to add second document or text for comparing. The method takes the same `LoadOptions` parameter. Moreover, [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java/) supports multi-document comparison, so that you can add more than one target document.
 
-```kotlin
- comparer.apply {
-     add(targetPath, LoadOptions(targetPassword))
-     compare(outputStream, CompareOptions().apply {
-         showDeletedContent = true
-         detectStyleChanges = true
-         calculateCoordinates = true
-     })
-     return changes.toList()
- }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/180ae9b27854c4b11dde7854e6ead725.js"></script>
 
 The last thin is to call `compare` method, that will start comparison process. As you can see, the method takes `CompareOptions` object as a second argument. Here are used just a few options. It is configured to show content, that was deleted in target document, to recognise and process styles changes and to provide coordinate of each change in the result document. There are much more options available. For example, you can enable generating summary page, change comparison sensitivity level, enable/disable each type of change, configure it's style in result document and so on. More options you can find [in the documentation](/comparison/java/getting-started/).
 At the end of the `apply` block we use `comparer.getChanges()` method to get list of changes. 
@@ -217,31 +150,7 @@ At the end of the `apply` block we use `comparer.getChanges()` method to get lis
 
 One more important thing in the application is an object `ModulesInjection`. It is used to give Koin information about classes and interfaces, which it should create or inject. Here are controllers, usecases and managers. Adding any new class, that must be injected by Koin, it is highly important to specify it in one of modules here.
 
-
-```kotlin
-object ModulesInjection {
-    val controllerBeans = module {
-        singleOf(::ConfigControllerImpl) { bind<ConfigController>() }
-        singleOf(::TreeControllerImpl) { bind<TreeController>() }
-        singleOf(::DownloadControllerImpl) { bind<DownloadController>() }
-        singleOf(::UploadControllerImpl) { bind<UploadController>() }
-        singleOf(::CompareControllerImpl) { bind<CompareController>() }
-        singleOf(::PageControllerImpl) { bind<PageController>() }
-        singleOf(::DescriptionControllerImpl) { bind<DescriptionController>() }
-
-    }
-    val usecaseBeans = module {
-        singleOf(::GetLocalFilesUseCase)
-        singleOf(::RetrieveLocalFilePagesStreamUseCase)
-        singleOf(::AreFilesSupportedUseCase)
-        singleOf(::CompareDocumentsUseCase)
-        singleOf(::SaveStreamToFilesDirectoryUseCase)
-    }
-    val managerBeans = module {
-        singleOf(::PathManagerImpl) { bind<PathManager>() }
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0754c1a4729f7b0f0e6d4828049d6a48.js"></script>
 
 ### Get a Free API License
 

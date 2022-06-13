@@ -25,21 +25,8 @@ Here is a brief comparison of how to compare document with old and new API.
 
 **Old coding style**
 
-```java
-Comparer comparer = new Comparer();
-ComparisonSettings settings = new ComparisonSettings();
-settings.setStyleChangeDetection(true);
-ICompareResult result = comparer.compare("source.docx", "target.docx", settings);
-result.saveDocument("result.docx");
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e2edd2208e2c0cec2a3807160d850c0e.js"></script>
 
 **New coding style**
 
-```java
-try (Comparer comparer = new Comparer("source.docx")) {
-    comparer.add("target.docx");
-    CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setDetectStyleChanges(true);
-    final Path resultPath = comparer.compare("result.docx", compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/2d026c76b30856c2e86c0a27df28b236.js"></script>

@@ -46,14 +46,7 @@ The following code sample shows how to get extended information about comparison
 
 ---
 
-```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-	comparer.add(targetPath);
-	CompareOptions options = new CompareOptions();
-    options.setExtendedSummaryPage(true);
-    final Path resultPath = comparer.compare(resultPath, options);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/956c10cbdd05aad7fb86137f4f9a0c01.js"></script>
 
 ## Example of displaying the summary page with extended information
 

@@ -44,23 +44,13 @@ This article will give you the idea, how [GroupDocs.Comparison](https://products
 <details open><summary>Comparing documents by paths</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.xlsx")) {
-    comparer.add("D:\\target.xlsx");
-    comparer.compare("D:\\result.xlsx");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/d2ba23fdd66d71b44ef14b71cf9a1b69.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.xlsx").use { comparer ->
-    comparer.add("D:\\target.xlsx")
-    comparer.compare("D:\\result.xlsx")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6f39584978729a7329efafa6c3f89dfb.js"></script>
 
 </details>
 </blockquote></details>
@@ -97,27 +87,13 @@ The API already supports the comparison of multiple files for various document f
 <details open><summary>Comparing multiple Excel documents</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.xlsx")) {
-    comparer.add("D:\\target1.xlsx");
-    comparer.add("D:\\target2.xlsx");
-    comparer.add("D:\\target3.xlsx");
-    comparer.compare("D:\\result.xlsx");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/5e338fb9c2a7401015edafb9779bcc4d.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.xlsx").use { comparer ->
-    comparer.add("D:\\target1.xlsx")
-    comparer.add("D:\\target2.xlsx")
-    comparer.add("D:\\target3.xlsx")
-    comparer.compare("D:\\result.xlsx")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/205830e46292994ccd43fece4d5e93a9.js"></script>
 
 </details>
 </blockquote></details>
@@ -138,33 +114,13 @@ As a programmer, you are not only allowed to compare documents that are availabl
 <details open><summary>Comparing multiple Excel documents from streams</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (InputStream sourceStream = new FileInputStream("D:\\source.xlsx");
-     InputStream targetStream = new FileInputStream("D:\\target.xlsx");
-     OutputStream resultStream = new FileOutputStream("D:\\result.xlsx")) {
-    try (Comparer comparer = new Comparer(sourceStream)) {
-        comparer.add(targetStream);
-        comparer.compare(resultStream);
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/09d353ac257edd0fec5a4a058d2a2c75.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-FileInputStream("D:\\source.xlsx").use { sourceStream ->
-    FileInputStream("D:\\target.xlsx").use { targetStream ->
-        FileOutputStream("D:\\result.xlsx").use { resultStream ->
-            Comparer(sourceStream).use { comparer ->
-                comparer.add(targetStream)
-                comparer.compare(resultStream)
-            }
-        }
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/ce4b5dba4acca392b96d55d80208e3be.js"></script>
 
 </details>
 </blockquote></details>
@@ -179,36 +135,16 @@ Just a little change in the code of comparing documents that are not password-pr
 
 ---
 
-<details open><summary>Comparing multiple Excel documents from streams</summary><blockquote>
+<details open><summary>Comparing multiple password-protected Excel documents from streams</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (InputStream sourceStream = new FileInputStream("D:\\source.docx");
-     InputStream targetStream = new FileInputStream("D:\\target.docx");
-     OutputStream resultStream = new FileOutputStream("D:\\result.docx")) {
-    try (Comparer comparer = new Comparer(sourceStream, new LoadOptions("password"))) {
-        comparer.add(targetStream, new LoadOptions("password"));
-        comparer.compare(resultStream);
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/8c2a3079211b7489e37fa3e8b715d80c.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-FileInputStream("D:\\source.docx").use { sourceStream ->
-    FileInputStream("D:\\target.docx").use { targetStream ->
-        FileOutputStream("D:\\result.docx").use { resultStream ->
-            Comparer(sourceStream, LoadOptions("password")).use { comparer ->
-                comparer.add(targetStream, LoadOptions("password"))
-                comparer.compare(resultStream)
-            }
-        }
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/62e7f2b878fcefbf4f79a49fa15949ae.js"></script>
 
 </details>
 </blockquote></details>
@@ -223,50 +159,16 @@ One step ahead of just comparing, using the code similar to the mentioned below,
 
 ---
 
-<details open><summary>Comparing multiple documents with specific settings</summary><blockquote>
+<details open><summary>Comparing multiple documents with specific style settings</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (InputStream sourceStream = new FileInputStream("D:\\source.docx");
-    InputStream targetStream = new FileInputStream("D:\\target.docx");
-    OutputStream resultStream = new FileOutputStream("D:\\result.docx")) {
-    try (Comparer comparer = new Comparer(sourceStream)) {
-        comparer.add(targetStream);
-
-        final StyleSettings styleSettings = new StyleSettings();
-        styleSettings.setFontColor(Color.YELLOW);
-
-        final CompareOptions compareOptions = new CompareOptions();
-        compareOptions.setInsertedItemStyle(styleSettings);
-
-        comparer.compare(resultStream, compareOptions);
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/0757e56451c630d17d44a846a2faafc2.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-FileInputStream("D:\\source.docx").use { sourceStream ->
-    FileInputStream("D:\\target.docx").use { targetStream ->
-        FileOutputStream("D:\\result.docx").use { resultStream ->
-            Comparer(sourceStream, LoadOptions("password")).use { comparer ->
-                comparer.add(targetStream, LoadOptions("password"))
-
-                val styleSettings = StyleSettings()
-                styleSettings.fontColor = Color.YELLOW
-
-                val compareOptions = CompareOptions()
-                compareOptions.insertedItemStyle = styleSettings
-
-                comparer.compare(resultStream, compareOptions)
-            }
-        }
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e1360304d78aebb5a4fc16503210e63a.js"></script>
 
 </details>
 </blockquote></details>

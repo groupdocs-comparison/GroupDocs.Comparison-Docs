@@ -31,7 +31,7 @@ structuredData:
 
 The following are the steps to apply/reject changes to resultant file.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream;
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method  and specify path target document path or stream;
 *   Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)) method;
 *   Call [getChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()) method and obtain detected changes list;
@@ -47,46 +47,15 @@ The following code sample shows how to accept/reject detected changes.
 
 ## Accept or Reject changes for documents stored at local disk
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.docx")) {
-    comparer.add("C:\\target.docx");
-    final Path resultPath = comparer.compare();
-    ChangeInfo[] changes = comparer.getChanges();
-    changes[0].setComparisonAction(ComparisonAction.REJECT);
-    comparer.applyChanges("result.docx", new SaveOptions(), new ApplyChangeOptions(changes));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/c3d730c6ae104b20c9a71743bd648776.js"></script>
 
 ## Accept or Reject changes for documents provided as a stream
 
-```java
-try (OutputStream outputStream = new FileOutputStream("C:\\result.docx");
-        Comparer comparer = new Comparer("C:\\source.docx")) {
-    comparer.add("C:\\target.docx");
-    final Path resultPath = comparer.compare(new SaveOptions(), new CompareOptions());
-    ChangeInfo[] changes = comparer.getChanges();
-    changes[0].setComparisonAction(ComparisonAction.REJECT);
-    comparer.applyChanges(outputStream, new ApplyChangeOptions(changes));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/2b802b7d8e6d4ebe9d12ff4d7390dbf2.js"></script>
 
 ## The following code sample shows how to accept/reject detected changes using SaveOriginalState option
 
-```java
-try (Comparer comparer = new Comparer("source.docx")) {
-	comparer.add("target.docx");
-    final Path resultPath = comparer.compare();
-    ChangeInfo[] changes = comparer.getChanges();
-    changes[0].setComparisonAction(ComparisonAction.REJECT);
-    ApplyChangeOptions changeOptions = new ApplyChangeOptions();
-    changeOptions.setChanges(changes);
-    changeOptions.setSaveOriginalState(true);
-    comparer.applyChanges("resultWithRejectedChange.docx", changeOptions);
-    changes = comparer.getChanges();
-    changes[0].setComparisonAction(ComparisonAction.ACCEPT);
-    comparer.applyChanges("resultWithAcceptedChange.docx", new ApplyChangeOptions(changes));
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/9b7f737eba537c3e9916568dce25441c.js"></script>
 
 ## More resources
 ### GitHub Examples

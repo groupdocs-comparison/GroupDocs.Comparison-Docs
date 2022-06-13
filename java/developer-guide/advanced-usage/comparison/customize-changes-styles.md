@@ -18,8 +18,8 @@ structuredData:
         name: How to customize changes styles
         description: Learn how to customize changes styles
         steps:
-        - name: Create 'StyleSettings ' object
-          text: Create object of 'StyleSettings ' class
+        - name: Create 'StyleSettings' object
+          text: Create object of 'StyleSettings' class
         - name: Change style settings
           text: Update properties of the object to change style settings
         - name: Create 'CompareOptions' object
@@ -43,81 +43,11 @@ The following code snippet demonstrates how to compare files with specific opt
 
 ## Compare files from local disk with custom change styles
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-    
-    CompareOptions compareOptions = new CompareOptions();
-
-    final StyleSettings insertedStyleSettings = new StyleSettings();
-    insertedStyleSettings.setHighlightColor(Color.RED);
-    insertedStyleSettings.setFontColor(Color.GREEN);
-    insertedStyleSettings.setUnderline(true);
-    insertedStyleSettings.setBold(true);
-    insertedStyleSettings.setStrikethrough(true);
-    insertedStyleSettings.setItalic(true);
-    compareOptions.setInsertedItemStyle(insertedStyleSettings);
-
-    final StyleSettings deletedStyleSettings = new StyleSettings();
-    deletedStyleSettings.setHighlightColor(Color.PINK);
-    deletedStyleSettings.setFontColor(Color.CYAN);
-    deletedStyleSettings.setUnderline(true);
-    deletedStyleSettings.setBold(true);
-    deletedStyleSettings.setStrikethrough(true);
-    deletedStyleSettings.setItalic(true);
-    compareOptions.setDeletedItemStyle(deletedStyleSettings);
-
-    final StyleSettings changedStyleSettings = new StyleSettings();
-    changedStyleSettings.setHighlightColor(Color.LIGHT_GRAY);
-    changedStyleSettings.setFontColor(Color.GRAY);
-    changedStyleSettings.setUnderline(true);
-    changedStyleSettings.setBold(true);
-    changedStyleSettings.setStrikethrough(true);
-    changedStyleSettings.setItalic(true);
-    compareOptions.setChangedItemStyle(changedStyleSettings);
-
-    final Path resultPath = comparer.compare("C:\\result.pdf", compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/e0cebcc9c017d1226d0571aca1b18c56.js"></script>
 
 ## Compare files from stream with custom change styles
 
-```java
-try (Comparer comparer = new Comparer(new FileInputStream("C:\\source.pdf"))) {
-    comparer.add(new FileInputStream("C:\\target.pdf"));
-    
-    CompareOptions compareOptions = new CompareOptions();
-
-    final StyleSettings insertedStyleSettings = new StyleSettings();
-    insertedStyleSettings.setHighlightColor(Color.RED);
-    insertedStyleSettings.setFontColor(Color.GREEN);
-    insertedStyleSettings.setUnderline(true);
-    insertedStyleSettings.setBold(true);
-    insertedStyleSettings.setStrikethrough(true);
-    insertedStyleSettings.setItalic(true);
-    compareOptions.setInsertedItemStyle(insertedStyleSettings);
-
-    final StyleSettings deletedStyleSettings = new StyleSettings();
-    deletedStyleSettings.setHighlightColor(Color.PINK);
-    deletedStyleSettings.setFontColor(Color.CYAN);
-    deletedStyleSettings.setUnderline(true);
-    deletedStyleSettings.setBold(true);
-    deletedStyleSettings.setStrikethrough(true);
-    deletedStyleSettings.setItalic(true);
-    compareOptions.setDeletedItemStyle(deletedStyleSettings);
-
-    final StyleSettings changedStyleSettings = new StyleSettings();
-    changedStyleSettings.setHighlightColor(Color.LIGHT_GRAY);
-    changedStyleSettings.setFontColor(Color.GRAY);
-    changedStyleSettings.setUnderline(true);
-    changedStyleSettings.setBold(true);
-    changedStyleSettings.setStrikethrough(true);
-    changedStyleSettings.setItalic(true);
-    compareOptions.setChangedItemStyle(changedStyleSettings);
-
-    final Path resultPath = comparer.compare(new FileOutputStream("C:\\result.pdf"), compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/c39aba0ce82cbddd74c367ff89a1e906.js"></script>
 
 ## More resources
 

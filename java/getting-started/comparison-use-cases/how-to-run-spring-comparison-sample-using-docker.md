@@ -32,7 +32,7 @@ You need just a few commands to run [Spring Comparison sample](https://github.co
 
 ### Spring Comparison Application
 
-Spring Comparison sample is an application, that was created by using Spring Framework together with [GroupDocs.Comparison API for Java](https://products.groupdocs.com/comparison/java) functionality. Tt is just a sample, but it is still fully functional and can be used to compare any [supported file formats](/comparison/java/supported-document-formats/). Furthermore, sources of the application are available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Spring), so that you can easily add some functions or change the application in any way you want.
+Spring Comparison sample is an application, that was created by using Spring Framework together with [GroupDocs.Comparison API for Java](https://products.groupdocs.com/comparison/java) functionality. It is just a sample, but it is still fully functional and can be used to compare any [supported file formats](/comparison/java/supported-document-formats/). Furthermore, sources of the application are available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Spring), so that you can easily add some functions or change the application in any way you want.
 
 ### System Requirements
 
@@ -73,9 +73,7 @@ To build Docker image for the sample and install it to local Docker instance, do
 2. Open console window in this directory
 3. Run next command to build an image
 
-   ```shell
-       docker build -t groupdocs_comparison_spring_sample ./
-    ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/9ba24482d5625a6ba08c13045f7c115e.js"></script>
 
 That's actually all. The image is already built and added to local Docker's list of images.
 
@@ -88,9 +86,8 @@ To run Comparison Spring application having prebuilt Docker image, fallow next s
 1. Go to `\Demos\Spring\` in sample folder
 2. Open console window in this directory
 3. Run next command to create container of the image and run application
-    ```shell
-       docker run -p 8080:8080 --name my-comparer --rm groupdocs_comparison_spring_sample
-    ```
+
+<script src="https://gist.github.com/groupdocs-comparison-gists/2b74fad512ad1f6155ad70eb4958d10e.js"></script>
    
 After that, just open link [http://localhost:8080/comparison](http://localhost:8080/comparison) in any web browser to see the Comparison application
 
@@ -108,9 +105,7 @@ To stop the container just run command `docker stop my-comparer` in command line
 
 To have opportunity to configure application, it is possible to use some of predefined environment variables. As an example, if you want to hide download button, just pass environment variable `DOWNLOAD_ON` with value `false` in command that run container. In this way the command will be like:
 
-```shell
-docker run -p 8080:8080 --name my-comparer --env DOWNLOAD_ON=false --rm groupdocs_comparison_spring_sample
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/136b93614d02f6c4d779620b83b89f98.js"></script>
 
 There are next predefined variables:
 * `LIC_PATH` - path to directory with license file
@@ -128,9 +123,7 @@ _Note: Keep in mind, `LIC_PATH`, `FILES_DIR` and `RESULT_DIR` paths are point to
 
 It is usual request about keeping files between application runs. To do it you just need to use Docker's volumes. Here is an example: add parameter `-v groupdocs_comparison_spring_volume:/home/groupdocs/app/MyDocumentSamples` together with passing environment variable `FILES_DIR` to create new volume and pass it as a directory with files. In this way command be like:
 
-```shell
-docker run -p 8080:8080 --name my-comparer --env FILES_DIR=/home/groupdocs/app/MyDocumentSamples -v groupdocs_comparison_spring_volume:/home/groupdocs/app/MyDocumentSamples --rm groupdocs_comparison_spring_sample
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6c2bae3b6197d6ea3aa78b6b8646e278.js"></script>
 
 Here is a little details about the command:
 * Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use directory `/home/groupdocs/app/MyDocumentSamples` inside Docker container as folder to keep files. It can be changed to any other path, physically this directory does not exist in Docker image

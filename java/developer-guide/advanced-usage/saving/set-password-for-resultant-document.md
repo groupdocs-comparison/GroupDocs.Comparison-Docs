@@ -32,7 +32,7 @@ structuredData:
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to protect resultant document with password.
 
 The following are the steps to protect resultant document:
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) objectwith source document path or stream;    
+*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;    
 *   Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target document path or stream.    
 *   Instantiate [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object with 
 *   Set [PasswordSaveOption](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setPasswordSaveOption(int)) property of [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object to [PasswordSaveOption.User](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/PasswordSaveOption#User);    
@@ -42,17 +42,7 @@ The following are the steps to protect resultant document:
 
 The following code snippet demonstrates how to compare documents and protect resultant document with password
 
-```java
-try (Comparer comparer = new Comparer("C:\\source.pdf")) {
-    comparer.add("C:\\target.pdf");
-
-    CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setPasswordSaveOption(PasswordSaveOption.User);
-    SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setPassword("3333");
-    final Path resultPath = comparer.compare("C:\\result.pdf", saveOptions, compareOptions);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/c0c27c8c12411d3c228f9df899b4fc92.js"></script>
 
 ## More resources
 

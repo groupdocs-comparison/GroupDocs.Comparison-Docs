@@ -49,23 +49,13 @@ Here is the code, compares two JPG photos and saves the output that highlights t
 <details open><summary>The following code shows how to compare two photos in Java</summary><blockquote>
 <details open><summary>Java</summary>
 
-```java
-try (Comparer comparer = new Comparer("D:\\source.jpg")) {
-    comparer.add("D:\\target.jpg");
-    comparer.compare("D:\\result.jpg");
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/a95fbd4fb36fc8bf201e3a187a637750.js"></script>
 
 </details>
 
 <details><summary>Kotlin</summary>
 
-```kotlin
-Comparer("D:\\source.jpg").use { comparer ->
-    comparer.add("D:\\target.jpg")
-    comparer.compare("D:\\result.jpg")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/bebea06fbaf649b6582ea86967994193.js"></script>
 
 </details>
 </blockquote></details>

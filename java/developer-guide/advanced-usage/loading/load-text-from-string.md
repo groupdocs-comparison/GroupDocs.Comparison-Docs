@@ -37,23 +37,13 @@ The following are the steps to compare text from variables:
 * Pass target string content to [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String,%20com.groupdocs.comparison.options.load.LoadOptions)) method together with [LoadOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) in which [LoadText](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions#setLoadText(boolean)) property is set to true.
 
 The following code snippet shows how to load values from variables:
-```java
-try (Comparer comparer = new Comparer("source text", new LoadOptions(true))) {
-    comparer.add("target text", new LoadOptions(true));
-    comparer.compare();
-    String result = comparer.getResultString();
-}
-```
+
+<script src="https://gist.github.com/groupdocs-comparison-gists/425813e53c5d5fb0fd54bd7cbdbbc8cb.js"></script>
 ---
 
 Can also be combined with different ways of passing documents (be it file path or stream), as shown in the following code example:
-```java
-try (Comparer comparer = new Comparer(inputStream)) {
-    comparer.add("target text", new LoadOptions(true));
-    comparer.compare();
-    String result = comparer.getResultString();
-}
-```
+
+<script src="https://gist.github.com/groupdocs-comparison-gists/c600672647eab7f9c38ec9bd77466e67.js"></script>
 
 ## More resources
 

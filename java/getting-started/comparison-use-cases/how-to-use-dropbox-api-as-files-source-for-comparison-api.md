@@ -79,36 +79,20 @@ Preparing to using Dropbox API you must have Dropbox account. It is very easy to
 
 To use Dropbox API as a file storage for comparing documents, you need to add some libraries and repository to the project.
 
-<details open><summary>Repository</summary><blockquote>
+<details open><summary>Connect GroupDocs repository</summary><blockquote>
 <details open><summary>Maven</summary>
 
-```xml
-<repository>
-    <id>GroupDocsJavaAPI</id>
-    <name>GroupDocs Java API</name>
-    <url>https://repository.groupdocs.com/repo/</url>
-</repository>
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/9de00b81ae5dd326fc85fecb5c1220a6.js"></script>
 
 </details>
 <details><summary>Gradle</summary>
 
-```groovy
-repositories {
-    maven {
-        url "https://repository.groupdocs.com/repo/"
-    }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/15f77ae825f310acd9cad555dcea0019.js"></script>
 
 </details>
 <details><summary>Kotlin</summary>
 
-```kotlin
-repositories {
-    maven(url = "https://repository.groupdocs.com/repo/")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/ad7ad48d4e7f9f60e858c7ba546f3745.js"></script>
 
 </details>
 </blockquote></details>
@@ -116,38 +100,17 @@ repositories {
 <details open><summary>Libraries</summary><blockquote>
 <details open><summary>Maven</summary>
 
-```xml
-<dependency>
-   <groupId>com.groupdocs</groupId>
-   <artifactId>groupdocs-comparison</artifactId>
-   <version>22.3</version>
-</dependency>
-<dependency>
-   <groupId>com.dropbox.core</groupId>
-   <artifactId>dropbox-core-sdk</artifactId>
-   <version>4.0.1</version>
-</dependency>
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6dbf6684650c250c88ae1a583454a99e.js"></script>
 
 </details>
 <details><summary>Gradle</summary>
 
-```groovy
-dependencies {
-   implementation 'com.groupdocs:groupdocs-comparison:22.3'
-   implementation 'com.dropbox.core:dropbox-core-sdk:4.0.1'
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/391a5a558c5a2a38d5d5da9349c8a1d5.js"></script>
 
 </details>
 <details><summary>Kotlin</summary>
 
-```kotlin
-dependencies {
-    implementation("com.groupdocs:groupdocs-comparison:22.3")
-    implementation("com.dropbox.core:dropbox-core-sdk:4.0.1")
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/092c23f2daabd4a481d47d686a36deeb.js"></script>
 
 </details>
 </blockquote></details>
@@ -156,10 +119,7 @@ dependencies {
 
 Actually, it is very easy to start working with Dropbox API
 
-   ```java
-   DbxRequestConfig config = DbxRequestConfig.newBuilder("mycompany/best-comparison-app").build();
-   DbxClientV2 client = new DbxClientV2(config, "YOUR ACCESS TOKEN");
-   ```
+<script src="https://gist.github.com/groupdocs-comparison-gists/71e514fc974faa424f41cc1626501a88.js"></script>
 
 Where:
    1. `mycompany/best-comparison-app` - is just identifier that you will see in logs of Dropbox website
@@ -169,20 +129,7 @@ Where:
 
 To print list of files which are in your Dropbox app directory, run next code (do not forget to upload some files via Dropbox webpage, because by default app directory is empty)
 
-```java
-   ListFolderResult result = client.files().listFolder("");
-   final List<Metadata> entries = result.getEntries();
-   // final boolean hasMore = result.getHasMore(); // There are at least one more page with results
-   
-   for (Metadata metadata : entries) {
-      final String path = metadata.getPathLower();
-      final String fileName = metadata.getName();
-      final boolean isDirectory = metadata instanceof FolderMetadata;
-      final long size = metadata instanceof FileMetadata ? ((FileMetadata) metadata).getSize() : 0;
-      
-      System.out.printf("- %s  %s (%d bytes)\n", path, fileName, size);
-   }
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/6f450d94c73366d1b9bd54d8275763a9.js"></script>
 
 Here is an example of the output:
 
@@ -201,23 +148,7 @@ In the output each line is one file. It's path, name and size. You can use this 
 
 It is easy compare dwo documents from on your Dropbox saving the result document on local disk or writing it into Java output stream to use it wherever you want.
 
-```java
-try (final DbxDownloader<FileMetadata> downloadSource = client.files().download("/source.pdf");
-    final DbxDownloader<FileMetadata> downloadTarget = client.files().download("/target.pdf")) {
-   try (final InputStream sourceStream = downloadSource.getInputStream();
-      final InputStream targetStream = downloadTarget.getInputStream();
-      final Comparer comparer = new Comparer(sourceStream)) {
-      
-      comparer.add(targetStream);
-
-      final Path resultPath = Paths.get("/Path/To/Save/Result/Document.pdf");
-      try (OutputStream outputStream = new BufferedOutputStream(Files.newOutputStream(resultPath))) {
-         comparer.compare(outputStream);
-         System.out.println(resultPath);
-      }
-   }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/3a031da813381a949f5b9fed868fb9ec.js"></script>
 
 In output console you will see path to the result document.
 
@@ -225,26 +156,8 @@ In output console you will see path to the result document.
 
 Below you can see, how to compare documents directly from Dropbox with uploading the result document into Dropbox without saving it locally. After that, you can open Dropbox in web browser and find the result document.
 
-```java
-   // Comparing files from Dropbox saving the result back to Dropbox
-try (final DbxDownloader<FileMetadata> downloadSource = client.files().download("/source.pdf");
-   final DbxDownloader<FileMetadata> downloadTarget = client.files().download("/target.pdf")) {
-   try (final InputStream sourceStream = downloadSource.getInputStream();
-      final InputStream targetStream = downloadTarget.getInputStream();
-      final Comparer comparer = new Comparer(sourceStream)) {
-      
-      comparer.add(targetStream);
-      
-      try (final UploadUploader resultUploader = client.files().upload("/result.pdf")) {
-         try (OutputStream outputStream = resultUploader.getOutputStream()) {
-            comparer.compare(outputStream);
-         }
-         final FileMetadata fileMetadata = resultUploader.finish();
-         System.out.println(fileMetadata.getPathLower());
-      }
-   }
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/8c95ba602a127dee49d98bb0f756f987.js"></script>
+
 In output console you will see path of the uploaded document. 
 
 ### Get a Free API License

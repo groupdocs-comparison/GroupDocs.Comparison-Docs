@@ -47,29 +47,18 @@ Here are the simple steps to get the above result:
 
 ---
 
-```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
-
-    CompareOptions options = new CompareOptions();
-    options.setShowInsertedContent(false);
-    options.setShowDeletedContent(false);
-    options.setLeaveGaps(true);
-
-    comparer.compare(resultPath, options);
-}
-```
+<script src="https://gist.github.com/groupdocs-comparison-gists/b59e5ff289223ac376574b284165125d.js"></script>
 
 ## Example code execution
 
 ---
 
-| Default result | Result without LeaveGaps property |
-|:---:|:---:|
+|                        Default result                         |               Result without LeaveGaps property                  |
+|:-------------------------------------------------------------:|:----------------------------------------------------------------:|
 | ![](comparison/java/images/show-gap-lines-default-result.png) | ![](comparison/java/images/show-gap-lines-without-leavegaps.png) |
 
-| Default result | Result with LeaveGaps property |
-|:---:|:---:|
+|                       Default result                          |                 Result with LeaveGaps property                |
+|:-------------------------------------------------------------:|:-------------------------------------------------------------:|
 | ![](comparison/java/images/show-gap-lines-default-result.png) | ![](comparison/java/images/show-gap-lines-with-leavegaps.png) |
 
 ## More resources
