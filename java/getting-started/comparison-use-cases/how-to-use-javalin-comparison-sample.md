@@ -170,5 +170,5 @@ For getting details, options, and examples, you can go through [the documentatio
 * How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
 * How to [use Ktor Comparison](/comparison/java/how-to-use-ktor-comparison-sample) Sample
-* How to [use Dropbox API](/comparison/java/how-to-use-dropbox-api-as-files-source-for-comparison-api) as files source for Comparison API 
+* How to [see comparison and contrast](/comparison/java/how-to-see-comparison-and-contrast-of-essays) of essays 
 * How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin

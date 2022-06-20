@@ -72,6 +72,8 @@ First, you need to specify GroupDocs repository configuration/location in your M
 
 Then define **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** API dependency in your `pom.xml` as follows:
 
+_The latest version of Comparison API can be [found here](https://repository.groupdocs.com/comparison/)_
+
 <details open><summary>Add GroupDocs.Comparison dependency</summary><blockquote>
 <details open><summary>Maven</summary>
 
