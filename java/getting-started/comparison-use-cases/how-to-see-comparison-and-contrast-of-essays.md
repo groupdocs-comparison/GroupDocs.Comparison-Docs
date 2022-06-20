@@ -106,7 +106,7 @@ There are much more options available, for example, [generating summary page](/c
 
 ### Free Online App
 Along with full-featured Java/Kotlin library we provide simple, but powerful free Apps.  
-You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSG and other documents with free to use online [On-Line GroupDocs Comparison Application](https://products.groupdocs.app/comparison).
+You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSG and other documents with free to use online [GroupDocs Comparison Application](https://products.groupdocs.app/comparison).
 
 ### More details
 
