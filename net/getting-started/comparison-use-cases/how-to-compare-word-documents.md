@@ -1,33 +1,34 @@
 ---
-id: how-to-compare-pdf-files
-url: comparison/net/how-to-compare-pdf-files
-title: How to Compare PDF files
+id: how-to-compare-word-documents
+url: comparison/net/how-to-compare-word-documents
+title: How to Compare Word documents
 weight: 1
-description: "Read this article and find out how you can use the GroupDocs.Comparison for .NET to find differences in PDF files. Also, in this article you can find an option to use this product in your production"
-keywords: How to compare PDF files, PDF files, Comparison Use Case, Compare PDF files
+description: "Read this article and find out how you can use the GroupDocs.Comparison for .NET to find differences in Word files. Also, in this article you can find an option to use this product in your production"
+keywords: How to compare Word documents,Word documents, Word files, Comparison Use Case, Compare Word documents
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
-When working with similar documents, it becomes increasingly difficult to find the difference between what was changed in one of the versions, especially when working with large-volume documents.Such functionality as PDF document comparison can significantly improve your work efficiency and, most importantly, speed it up.**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** gives you many options for comparing a wide range of [supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}), including PDF format.
+Often when working with document management, you may encounter a situation where you need to compare large files that are similar to each other, but have slight differences that you would like to know about. And, of course, finding these changes manually is quite a time-consuming process.
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** gives you many options for comparing a wide range of [supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}), including PDF format.
 
-After the comparison, there are three colors on the resulting file that highlight the differences. You can also specify the colors yourself to identify the next difference:
+After comparing the two Word files, you will get a resulting document in which the changes are highlighted in three different colors:
 
 *   Elements that were inserted in the first file. – <font color="blue">**blue**</font>, by default
 *   Elements wich were deleted from the first file – <font color="red">**red**</font>, by default
 *   Elements that have changed their styles (font, color, etc.) – <font color="green">**green**</font>, by default
 
-|  Source / Target / Result PDF files |
+|  Source / Target / Result Words files |
 | --- | --- |
-|Source |![](comparison/net/images/how-to-compare-pdf-1.png) | 
-|Target |![](comparison/net/images/how-to-compare-pdf-2.png)|
-|Result |![](comparison/net/images/how-to-compare-pdf-3.png)|
+|Source |![](comparison/net/images/how-to-compare-word-1.png) | 
+|Target |![](comparison/net/images/how-to-compare-word-2.png)|
+|Result |![](comparison/net/images/how-to-compare-word-3.png)|
 
-The code sample to compare two PDF files:
+The code sample to compare two Word files:
 
 ```csharp
-string sourcePath = @"source.pdf"; // NOTE: Path to the source pdf document 
-string targetPath = @"target.pdf"; // NOTE: Path to the target pdf document 
-string resultPath = @"result.pdf"; // NOTE: Path to the result pdf document       
+string sourcePath = @"source.doc"; // NOTE: Path to the source word document 
+string targetPath = @"target.doc"; // NOTE: Path to the target word document 
+string resultPath = @"result.doc"; // NOTE: Path to the result word document       
             
 using (Comparer comparer = new Comparer(sourcePath))
 {
@@ -40,8 +41,6 @@ using (Comparer comparer = new Comparer(sourcePath))
     comparer.Compare(resultPath, compareOptions);
 }
 ```
-
-As a result, we get a PDF file with highlighted changes, in which the deleted elements are marked with a font <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="yellow">**green**</font>.
 
 ## More resources
 ### Advanced Usage Topics
