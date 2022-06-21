@@ -167,5 +167,6 @@ In this article was shown only few percentage of [GroupDocs.Comparison API](http
 
 * How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
 * How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+* How to [compare Java code files](/comparison/java/how-to-compare-images-using-java-or-kotlin) applying or rejecting changes using Java or Kotlin
 * How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
 * How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
