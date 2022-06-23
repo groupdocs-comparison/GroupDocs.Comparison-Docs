@@ -86,3 +86,12 @@ You may easily run the code above and see the feature in action in our GitHub e
 ### Free Online App
 Along with full-featured Java library we provide simple, but powerful free Apps.
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
+
+### See also
+
+* How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
+* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+* How to [create comparer application](/comparison/java/how-to-use-micronaut-comparison-sample) using Micronaut Framework
+* How to [show autocad drawings preview](/comparison/java/how-to-show-autocad-drawings-preview-in-kotlin-compose-application) in kotlin compose application
+* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
