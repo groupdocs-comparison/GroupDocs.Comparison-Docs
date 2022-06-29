@@ -10,6 +10,8 @@ hideChildren: False
 ---
 Sometimes when working with documents you may need to get the result of a comparison of files in which one or even both files are password protected, and for this very case there is an option to compare files in spite of the fact that they are protected. This option allows you to compare protected files in any format where it is possible to set a password for the file.
 
+![](comparison/net/images/how-to-compare-password-protected-files-1.png)
+
 The code sample to compare two password-protected files:
 
 ```csharp
