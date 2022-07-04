@@ -7,6 +7,26 @@ description: "Following this guide, you will learn how to apply or discard revis
 keywords: Revision, revision processing, accept or reject revision, apply change for revision
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How to accept or Reject revisions  in .NET 
+    description: Learn how to accept or Reject revisions in .NET step by step
+    steps:
+      - name: Create an object 
+        text: Create an object of RevisionHandler class. The constructor takes the revision path or the revision file stream.
+      - name: Get revision
+        text: Call the GetRevisions method of the RevisionHandler object and asign the value to RevisionInfo list.
+      - name: Accept or Reject revision
+        text: If list element type equals Insertion value of RevisionType enum then Accept value of the RevisionAction enum asign to Action field of the element.
+      - name: Apply revision changes
+        text: To apply changes call the method ApplyRevisionChanges of the RevisionHandler object. The method takes a file path parameter of the resulting file and object of ApplyRevisionOptions class which should contains a Changes field initialised by RevisionInfo list.
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides the ability to get revisions from a Docx file format, process and save the processing result.
 Below are the steps to *take* revisions from a document, *accept / reject* revisions, and *write* the processing result to a final file.

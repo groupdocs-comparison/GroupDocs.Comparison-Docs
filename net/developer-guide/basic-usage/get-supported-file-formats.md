@@ -7,6 +7,22 @@ description: "This article explains how to obtain supported file formats list wh
 keywords: Get file info, Get File Type, Page count, File size
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: Get file formats supported by Comparison in .NET 
+    description: Get file formats supported by Comparison .NET step by step
+    steps:
+    - name: Get an array supported file types
+      text: Call the GetSupportedFileTypes method using the FileType object. Additional OrderBy method can be sorting rezulting array, it using lambda expression as parameter. And assign the result to a collection with a FileType data type, with the possibility of iteration.
+    - name: Output supported file types
+      text: Using iteration of your collection, you can display the supported data types, for example, to the console.
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get the list of all [supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}) by following the below steps:
 

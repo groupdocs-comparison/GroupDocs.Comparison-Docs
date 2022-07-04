@@ -7,6 +7,8 @@ description: "Learn more about how to compare multiple Word documents or PowerPo
 keywords: Compare multiple documents, documents multi-comparison, compare more than two documents 
 productName: GroupDocs.Comparison for .NET
 hideChildren: True
+structuredData:
+    showOrganization: True
 ---
 {{< alert style="info" >}}NOTE: This feature is available only for Word documents, PowerPoint and Open Document presentations.{{< /alert >}}
 

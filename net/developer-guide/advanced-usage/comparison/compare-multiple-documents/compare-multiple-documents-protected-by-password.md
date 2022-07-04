@@ -7,6 +7,24 @@ description: "This article describes how to compare multiple Word documents or P
 keywords: Compare multiple password protected documents, compare multiple protected documents
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to Compare multiple documents in .NET 
+      description: Learn how to compare multiple documents in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path or source file stream by first parameter and a LoadOption object by second parameter that contains password. You may specify absolute or relative file path as per your requirements.
+      - name: Load target files
+        text: Add the path to the tagret files using the Add method. Second parameter is a LoadOption object that contains password.
+      - name: Compare documents
+        text: Call the Compare method of your object and put the resulting file path parameter.
 ---
 {{< alert style="info" >}}NOTE: This feature is available only for Word documents, PowerPoint and Open Document presentations.{{< /alert >}}
 

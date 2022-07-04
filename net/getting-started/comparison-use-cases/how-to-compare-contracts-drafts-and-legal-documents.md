@@ -7,6 +7,24 @@ description: "This article describes how to compare contracts, drafts and legal 
 keywords: Compare contracts, compare drafts, compare blacklining, compare redlining
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:  
+    name: Document Comparison
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How to compare contracts drafts and legal documents in .NET
+    description: How to compare contracts drafts and legal documents in .NET step by step
+    steps:
+    - name: Create an object and load source file
+      text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+    - name: Load target file
+      text: Add the path to the tagret file using the Add method.
+    - name: Compare documents
+      text: Call the Compare method of your object and put the resulting file path parameter.
 ---
 An ordinary employee is often faced with the need to compare two versions of the same document. For example, upon receipt of a signed version of an agreement, it is important to ensure that the counterparty has not made major changes affecting the terms of the transaction. And on the next round of approval of the draft document within the company, you only need to look at the changed sections so as not to waste time re-reading the entire text.  
   

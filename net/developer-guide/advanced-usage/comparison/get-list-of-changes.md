@@ -7,6 +7,26 @@ description: "This article explains how to get collection of changes between com
 keywords: Get file diff, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to get list of changes in .NET 
+      description: Learn how to get list of changes in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file path as per your requirements.
+      - name: Load target file
+        text: Add the path to the tagret file or tagret file stream using the Add method.
+      - name: Compare documents
+        text: Call the Compare method of your object.
+      - name: Create an array for file changes
+        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to obtain list of changes between source and target documents.
 
@@ -24,7 +44,7 @@ The following code sample shows demonstrates how to get list of all changes.
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx);
+	comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
 }
@@ -35,7 +55,7 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```csharp
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead("target.docx));
+	comparer.Add(File.OpenRead("target.docx"));
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
 }

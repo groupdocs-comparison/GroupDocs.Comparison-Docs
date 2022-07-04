@@ -7,6 +7,26 @@ description: "Following this guide you will learn how to customize document comp
 keywords: Style change detection, Compare document styles, Document comparison
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to customize changes styles in .NET 
+      description: Learn how to customize changes styles in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+      - name: Load target file
+        text: Add the path to the tagret file using the Add method
+      - name: Specify necessary settings
+        text: Create an options object and initialize InsertedItemStyle, DeletedItemStyle, ChangedItemStyle parameters by object with required parameters.
+      - name: Compare documents
+        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides compare options set with some default values that provides both - appropriate comparison speed and quality. However it is possible to customize comparison options from wide range of parameters and their values to fulfill some specific needs. Example below demonstrates how to change different changes types styling.
 

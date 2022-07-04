@@ -7,6 +7,26 @@ description: "This article explains how to load custom fonts PDF, Word, Excel, P
 keywords: Custom fonts, fonts
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How to load custom fonts in .NET 
+    description: Learn how to load custom fonts in .NET step by step
+    steps:
+    - name: Create an object and load font.
+      text: Create an object of LoadOptions class. Access the object field using the Add method with the path to the font file parameter.
+    - name: Create an object and load source file with Options
+      text: Create an object of Comparer class. The constructor takes the source file path parameter and object of LoadOptions. You may specify absolute or relative file path as per your requirements.
+    - name: Load target file
+      text: Add the path to the tagret file using the Add method.
+    - name: Compare documents
+      text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows you to compare documents whose content has non-standard fonts.
 

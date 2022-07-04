@@ -7,6 +7,24 @@ description: "This article describes how to compare files using Microsoft Excel 
 keywords: Compare Excel files, compare spreedsheet, how to compare Excel files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How to Compare Price Lists in .NET
+    description: How to Compare Price Lists in .NET step by step
+    steps:
+    - name: Create an object and load source file
+      text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+    - name: Load target files
+      text: Add the path to the target files using the Add method.
+    - name: Compare price lists
+      text: Call the Compare method of your object and put the resulting file path parameter.
 ---
 Let's say you have two Excel workbooks, or maybe two versions of the same workbook, that you want to compare. Or maybe you want to find potential problems, like manually-entered (instead of calculated) totals, or broken formulas. If you have Microsoft Office Professional Plus 2013, you can use Microsoft Spreadsheet Compare to run a report on the differences and problems it finds.
 

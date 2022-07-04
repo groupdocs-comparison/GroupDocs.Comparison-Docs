@@ -7,6 +7,8 @@ description: "Learn more about advanced document comparison use cases - how to a
 keywords: Compare document with detalisation, Compare documents with password
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides many ways to customize changes detection algorithm logic and produced results via changing [CompareOptions](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) class properties.   
 Here are the list of settings that can be customized during comparison process:

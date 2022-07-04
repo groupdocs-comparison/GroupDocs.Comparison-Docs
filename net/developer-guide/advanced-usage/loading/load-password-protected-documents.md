@@ -7,6 +7,24 @@ description: "This article explains how to load password-protected PDF, Word, Ex
 keywords: Load password-protected document, Load protected document with GroupDocs.Comparison
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How load file from stream in .NET 
+    description: Learn how to load file from stream in .NET step by step
+    steps:
+    - name: Create an object of LoadOption
+      text: Create an object of LoadOption wich contains the password parameters.
+    - name: Load target file
+      text: Add the path to the tagret files using the Add method. Second parameter is a LoadOption object that contains password. 
+    - name: Compare documents
+      text: Call the Compare method of your object and put the resulting file stream.
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to compare documents that are protected with a password.  
 The following are the steps to compare password-protected documents.

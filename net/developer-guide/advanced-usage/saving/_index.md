@@ -7,6 +7,8 @@ description: "Learn more about document saving and how to customize process with
 keywords: Cloning metadata type, get ot sets password
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+    showOrganization: True
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides different ways of saving resultant document -  save with password, select document metadata source etc.
 

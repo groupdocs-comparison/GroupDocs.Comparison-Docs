@@ -7,6 +7,26 @@ description: "Following this guide you will learn how to compare multiple docume
 keywords: Compare multiple documents, style change detection, Multi-compare files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to compare multiple documents with specific compare settings in .NET 
+      description: Learn how to compare multiple documents with specific compare settings in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+      - name: Specify necessary settings
+        text: Create a compare options object and specify necessary settings.
+      - name: Load target files
+        text: Add the path to the tagret files using the Add method.
+      - name: Compare documents
+        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 {{< alert style="info" >}}NOTE: This feature available only for Microsoft Word documents, Microsoft PowerPoint and Open Document presentations.{{< /alert >}}
 

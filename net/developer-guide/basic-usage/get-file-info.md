@@ -7,6 +7,24 @@ description: "This article explains how to detect document file type, size and c
 keywords: Get file info, Get File Type, Page count, File size
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: Get Comparer file info in .NET 
+    description: Get Comparer file info in .NET step by step
+    steps:
+    - name: Create an object and load source file
+      text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+    - name: Create a file info object
+      text: Call the GetDocumentInfo method on the Source field of the comparer object and assign the result to file info object of IDocumentInfo class.
+    - name: Get file information
+      text: To get general information about a file, access the required field using the file info object. To get information about a particular page, use the PagesInfo field with the required page index and access the required field after that.
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get file information which includes:
 

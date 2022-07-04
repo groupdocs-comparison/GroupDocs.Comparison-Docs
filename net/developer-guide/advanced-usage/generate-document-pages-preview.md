@@ -7,6 +7,30 @@ description: "Following this guide you will learn how to generate PDF, Word, Exc
 keywords: Document preview, Preview document pages, Document pages as PNG, document pages as JPG
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How to generate document pages preview  in .NET 
+    description: Learn how to generate document pages preview in .NET step by step
+    steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+      - name: Load target file
+        text: Add the path to the tagret file using the Add method.
+      - name: Compare files
+        text: Call the Compare method of your object without parameters.
+      - name: Create an object of the settings
+        text: Create an object of PreviewOptions class and initialise it the necessary parameters.
+      - name: Generate preview for source or target document
+        text: Call the GeneratePreview method of the necessary document of the Comparer object.
+      - name: Generate preview for resultant document
+        text: Create an object of Document class. The constructor takes the result file stream parameter. Call the GeneratePreview method with PreviewOptions parameter.
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to generate page previews for source, target and resultant document(s) using [GeneratePreview](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview) method of a [Document](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/document) class.
 
@@ -48,7 +72,6 @@ using (Comparer comparer = new Comparer("source.docx"))
     previewOptions.PageNumbers = new int[] { 1, 2 };
     comparer.Source.GeneratePreview(previewOptions);
 }
-
 ```
 
 ## Get page previews for target document

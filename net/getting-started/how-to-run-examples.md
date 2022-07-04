@@ -7,6 +7,24 @@ description: "In this article you can find how to run examples. We offer multipl
 keywords: How to run comparison, basic usage, How to run examples
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to Run Examples in .NET 
+      description: How to Run Examples in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+      - name: Load target file
+        text: Add the path to the tagret file using the Add method
+      - name: Compare documents
+        text: Call the Compare method of your object and put the resulting file path parameter.
 ---
 {{< alert style="warning" >}}Before running an example make sure that GroupDocs.Comparison has been installed successfully.{{< /alert >}}
 

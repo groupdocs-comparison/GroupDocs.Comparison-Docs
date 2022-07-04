@@ -7,6 +7,24 @@ description: "This article explains how to load values from variables of string 
 keywords: Load values from variables of string type, Load text with GroupDocs.Comparison
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How load text from string in .NET 
+    description: Learn how to load file from string in .NET step by step
+    steps:
+      - name: Create an object and load source text
+        text: Create an object of Comparer class. The constructor takes the source text by first parameter and a LoadOption object with LoadText parameter.
+      - name: Load target text
+        text: Add the tagret text using the Add method. Second parameter is a LoadOption object that contains LoadText = true.
+      - name: Compare documents
+        text: Create a string variable where the result of the comparison will be placed.
 ---
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to compare values from variables of *string* type.
 The following are the steps to compare text from variables:

@@ -7,6 +7,30 @@ description: "Following this guide you will learn how to apply or discard change
 keywords: Apply changes to compared document, reject comparison changes, document comparison changes
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to accept or reject detected changes in .NET 
+      description: Learn how to accept or reject detected changes in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file path as per your requirements.
+      - name: Load target file
+        text: Add the path to the tagret file or tagret file stream using the Add method.
+      - name: Compare files
+        text: Call the Compare method of your object without parameters.
+      - name: Create an array for file changes
+        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
+      - name: Reject or accept changes
+        text: To reject or Accept changes, access the ComparisonAction field of the array element and set the Reject or Accept value from the enum ComparisonAction.
+      - name: Apply Changes
+        text: To apply changes call the method ApplyChanges of the Comparer class object. The method takes a file stream parameter of the resulting file and object of ApplyChangeOptions class which should contains a ChangeInfo array.
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides an ability to apply or discard specific changes between source and target documents and save resultant document with (or without) selected changes.  
 The following are the steps to apply/reject changes to resultant document.

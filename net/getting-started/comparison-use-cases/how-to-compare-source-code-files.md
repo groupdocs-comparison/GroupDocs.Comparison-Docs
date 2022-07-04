@@ -7,6 +7,30 @@ description: "This article describes how to compare files using GroupDocs.Compar
 keywords: Compare Source Code files, Source Code files, how to compare Source Code files files, ComparisonAction,  ComparisonAction.Accept, ComparisonAction.Reject
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How to compare Source Code Files in .NET
+    description: How to compare Source Code Files in .NET step by step
+    steps:
+    - name: Create an object and load source file
+      text: Create an object of Comparer class. The constructor takes the source file path or stream parameter. You may specify absolute or relative file path as per your requirements.
+    - name: Load target file
+      text: Add the path to the tagret file using the Add method.
+    - name: Compare files
+      text: Call the Compare method of your object without parameters.
+    - name: Create an array for file changes
+      text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
+    - name: Reject changes
+      text: To reject changes, access the ComparisonAction field of the array element and set the Reject value from the enum ComparisonAction.
+    - name: Apply Changes
+      text: To apply changes call the method ApplyChanges of the Comparer class object. The method takes a file stream parameter of the resulting file and object of ApplyChangeOptions class which should contains a ChangeInfo array.
 ---
 
 ***

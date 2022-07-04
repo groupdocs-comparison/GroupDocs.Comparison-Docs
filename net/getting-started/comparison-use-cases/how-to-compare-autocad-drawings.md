@@ -7,6 +7,24 @@ description: "Read this article and find out how you can use the GroupDocs.Compa
 keywords: How to compare AutoCAD files, CAD files, Comparison Use Case, Compare AutoCAD files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How to Compare AutoCAD drawings in .NET
+    description: How to Compare AutoCAD drawings in .NET step by step
+    steps:
+    - name: Create an object and load source file
+      text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+    - name: Load target file
+      text: Add the path to the tagret file using the Add method.
+    - name: Compare drawings
+      text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 It becomes increasingly difficult to remember what has been changed from one revision to another as your design develops, especially when working in a remotely distributed team. The **DWG Compare** feature by AutoDesk provides a way to perform a visual comparison between two drawings - it identifies objects that have been modified, added, or removed from the two drawings and uses color and revision clouds to show the differences. The result displays in a new drawing called the *comparison drawing*.  
 

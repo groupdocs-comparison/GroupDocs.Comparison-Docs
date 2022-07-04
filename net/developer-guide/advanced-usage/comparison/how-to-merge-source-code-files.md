@@ -7,6 +7,30 @@ description: "This article explains how to control file merging in GroupDocs.Com
 keywords: Merging documents, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to get source and target text in .NET 
+      description: Learn how to get source and target text in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path. You may specify absolute or relative file path as per your requirements.
+      - name: Load target file
+        text: Add the path to the tagret file using the Add method.
+      - name: Create an array for file changes
+        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
+      - name: Reject or accept changes
+        text: To reject or Accept changes, access the ComparisonAction field of the array element and set the Reject or Accept value from the enum ComparisonAction.
+      - name: Create an array for file changes
+        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
+      - name: Apply Changes
+        text: To apply changes call the method ApplyChanges of the Comparer class object. The method takes a file stream parameter of the resulting file and object of ApplyChangeOptions class which should contains a ChangeInfo array.
 ---
 
 ***

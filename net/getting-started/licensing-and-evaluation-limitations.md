@@ -7,6 +7,22 @@ description: "Follow the instructions on this site to configure the license and 
 keywords: Licensing, evaluation limitations, setting metered license, setting license
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to Setting License in .NET 
+      description: Learn how to Setting License in .NET step by step
+      steps:
+      - name: Create an object
+        text: Create an object of license class.
+      - name: Set license
+        text: Call the SetLicense method of your object and put the license path or license file stream parameter.
 ---
 {{< alert style="info" >}}You can use GroupDocs.Comparison without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
 

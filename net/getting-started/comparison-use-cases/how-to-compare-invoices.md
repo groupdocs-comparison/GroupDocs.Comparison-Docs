@@ -7,6 +7,26 @@ description: "You will find how you can use GroupDocs.Comparison for .NET inside
 keywords: Compare docx files, invoices comparison, how to compare invoices
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+      name: Document Comparison   
+      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+      productCode: comparison
+      productPlatform: net
+  showVideo: True
+  howTo:
+      name: How to Compare Invoices in .NET
+      description: How to Compare Invoices in .NET step by step
+      steps:
+      - name: Create an object and load source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
+      - name: Load target file
+        text: Add the path to the tagret file using the Add method.
+      - name: Specify necessary settings
+        text: Create an options object and specify necessary settings.
+      - name: Compare invoices
+        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 Sometimes you need to achieve maximum accuracy in comparing files. Suppose you have two versions of an important document and you need to find differences character-by-character or the opposite case, you need to compare the documents, but the details are not important to you, and you only need words that have changes. **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides the ability to compare documents with sensitivity settings  
 

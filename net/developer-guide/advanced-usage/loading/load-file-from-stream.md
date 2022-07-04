@@ -7,6 +7,24 @@ description: "This article explains how to load PDF, Word, Excel, PowerPoint doc
 keywords: Load document from stream, Load document with GroupDocs.Comparison
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+structuredData:
+  showOrganization: True
+  application:    
+    name: Document Comparison   
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
+  showVideo: True
+  howTo:
+    name: How load file from stream in .NET 
+    description: Learn how to load file from stream in .NET step by step
+    steps:
+    - name: Create an object and specify source file stream
+      text: Create an object of Comparer class. The constructor takes the source file stream. You may specify absolute or relative file path as per your requirements.
+    - name: Load target file
+      text: Add the tagret file stream using the Add method.
+    - name: Compare documents
+      text: Call the Compare method of your object and put the resulting file stream.
 ---
 In case when you have the file in the form of a stream. To avoid the overhead of saving stream as a file on disk, **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides a way to work with file streams directly.
 
