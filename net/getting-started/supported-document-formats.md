@@ -61,8 +61,8 @@ The following table indicates the file formats that **[GroupDocs.Comparison](ht
 | [EMLX](https://docs.fileformat.com/email/emlx/) | Apple Mail E-mail File | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
 | [MSG](https://docs.fileformat.com/email/msg/) | Microsoft Outlook E-mail Message | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
 | [CS](https://docs.fileformat.com/programming/cs/) | CSharp Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
-| JAVA | Java Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
+| [JAVA](https://docs.fileformat.com/programming/java/) | Java Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
 | [CPP](https://docs.fileformat.com/programming/cpp/) | C++ Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
-| JS | JavaScript Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
-| PY | Python Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
-| RB | Ruby Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
+| [JS](https://docs.fileformat.com/web/js/) | JavaScript Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
+| [PY](https://docs.fileformat.com/programming/py/) | Python Language | ![(tick)](comparison/net/images/check.png) | ![(tick)](comparison/net/images/check.png) |
+| [RB](https://docs.fileformat.com/ebook/rb/) | Ruby Language | ![(tick)]
