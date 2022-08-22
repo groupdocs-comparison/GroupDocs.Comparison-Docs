@@ -21,7 +21,7 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 
 | Key | Summary | Issue Type |
 | --- | --- | --- |
-| COMPARISONNET-2385 | Words: Show results of comparison in result document as a Word Track changes | Feature |
+| COMPARISONNET-3106 | Words: Show results of comparison in result document as a Word Track changes | Feature |
 
 
 ## Public API and Backward Incompatible Changes
