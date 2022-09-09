@@ -55,11 +55,11 @@ Here are the simple steps to get the above result:
 
 |                        Default result                         |               Result without LeaveGaps property                  |
 |:-------------------------------------------------------------:|:----------------------------------------------------------------:|
-| ![](comparison/java/images/show-gap-lines-default-result.png) | ![](comparison/java/images/show-gap-lines-without-leavegaps.png) |
+| ![](/comparison/java/images/show-gap-lines-default-result.png) | ![](/comparison/java/images/show-gap-lines-without-leavegaps.png) |
 
 |                       Default result                          |                 Result with LeaveGaps property                |
 |:-------------------------------------------------------------:|:-------------------------------------------------------------:|
-| ![](comparison/java/images/show-gap-lines-default-result.png) | ![](comparison/java/images/show-gap-lines-with-leavegaps.png) |
+| ![](/comparison/java/images/show-gap-lines-default-result.png) | ![](/comparison/java/images/show-gap-lines-with-leavegaps.png) |
 
 ## More resources
 

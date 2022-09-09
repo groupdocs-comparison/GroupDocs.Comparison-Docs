@@ -83,7 +83,7 @@ GroupDocs.Comparison 使用的更改检测算法允许您检测各种文档部�
 
 假设您有两份 DOCX 格式的合同，它们是在不同年份签订的。如果你使用上面的代码比较这些合约，你会得到一个 DOCX 文件，其中删除的元素标记为红色，添加为蓝色，修改为绿色，如下所示：
 
-![Comparing two contracts](comparison/java/images/how-to-get-diff-of-contracts.png)
+![Comparing two contracts](/comparison/java/images/how-to-get-diff-of-contracts.png)
 
 
 ## 接受或拒绝检测到的差异

@@ -92,7 +92,7 @@ Um die Vergleichs-Dropwizard-Anwendung auszuführen, sollten Sie die nächsten S
 
 Öffnen Sie danach einfach den Link [http://localhost:8080/comparison](http://localhost:8080/comparison) in Ihrem bevorzugten Browser, um die Vergleichsanwendung anzuzeigen
 
-![](comparison/java/images/how-to-run-dropwizard-comparison-sample-using-docker.png)
+![](/comparison/java/images/how-to-run-dropwizard-comparison-sample-using-docker.png)
 
 Ein paar Details zum Befehl:
 * „my-comparer“ ist der Name eines Docker-Containers, mit dem Sie die Anwendung stoppen können. Er kann in jeden anderen Namen geändert werden

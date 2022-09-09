@@ -61,7 +61,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | WordTrackChanges true |
 |:---:|
-| ![](comparison/net/images/word-track-changes-option-true.png) |
+| ![](/comparison/net/images/word-track-changes-option-true.png) |
 
 ## Example of a result with the Revision display disabled
 
@@ -69,7 +69,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | WordTrackChanges false |
 |:---:|
-| ![](comparison/net/images/word-track-changes-option-false.png) |
+| ![](/comparison/net/images/word-track-changes-option-false.png) |
 
 ## More resources
 

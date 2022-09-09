@@ -83,7 +83,7 @@ You can also use streams to compare documents. Not only file stream, there is no
 
 Let’s say you have two contracts in DOCX format that were concluded in different years. If you use the above code to compare these contracts, you get a DOCX file where deleted elements are marked in red, added in blue, and modified in green as shown below:
 
-![Comparing two contracts](comparison/java/images/how-to-get-diff-of-contracts.png)
+![Comparing two contracts](/comparison/java/images/how-to-get-diff-of-contracts.png)
 
 
 ## Accept or Reject detected differences

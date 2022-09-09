@@ -51,8 +51,8 @@ text: 调用对象的 Compare 方法并将生成的文件路径参数和选项�
 
 |源/目标图纸 |
 | --- |
-|![](comparison/net/images/how-to-compare-autocad-drawings.png) |
-|![](comparison/net/images/how-to-compare-autocad-drawings_1.png)|
+|![](/comparison/net/images/how-to-compare-autocad-drawings.png) |
+|![](/comparison/net/images/how-to-compare-autocad-drawings_1.png)|
 
 以下是比较两个 DWG 文件的步骤：
 
@@ -72,7 +72,7 @@ using (Comparer comparer = new Comparer(@"source.dwg"))
 
 结果，我们得到了一个 DWG 文件，其中删除的元素标记为<font color="red">**red**</font> ，添加的 - 标记为<font color="blue">**blue**</font> ，修改的 - 标记为<font color="green">**green**</font> 。
 
-![](comparison/net/images/how-to-compare-autocad-drawings_2.png)
+![](/comparison/net/images/how-to-compare-autocad-drawings_2.png)
 
 ## 更多资源
 ### 高级用法主题

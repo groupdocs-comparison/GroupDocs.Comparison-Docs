@@ -127,13 +127,13 @@ _Последнюю версию Comparison API можно [найти здес�
 
 | Исходный JSON-файл | Целевой файл Json | Результат HTML-файл | Результат Html-файл после применения изменений |
 |------------------------------------------------- --------------------------------------|----------- -------------------------------------------------- --------------------------|--------- -------------------------------------------------- -----------------------------|----------------------------------- -------------------------------------------------- --------------------------|
-| ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-source.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-target.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-result.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-applied.png) |
+| ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-source.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-target.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-result.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-applied.png) |
 
 Как видите, изменения pobox -> hacker, 200 -> 88 и 100 -> 6 были отклонены, а изменения внутри свойств defaultListTemplate, defaultFileTemplate и useJSP остались в документе. Действительный результирующий документ Json также был сохранен. Вы можете увидеть это ниже
 
 | Результирующий файл Json |
 |:------------------------------------------------ -------------------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-resultant.png) |
+| ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-resultant.png) |
 
 ### Получите бесплатную лицензию API
 

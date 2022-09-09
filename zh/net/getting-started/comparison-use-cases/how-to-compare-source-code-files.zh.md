@@ -39,7 +39,7 @@ text：要应用更改，请调用 Comparer 类对象的 ApplyChanges 方法。�
 
 当您需要查看由两个不同的人编辑的两个版本的 C# (CSharp) 源代码文件并为每个编辑的代码块选择正确的变体时，让我们查看一些常见用例。请检查我们将在下图中比较的 source.cs 和 target.cs 文件。
 
-![](comparison/net/images/how-to-compare-source-code-files1.png)
+![](/comparison/net/images/how-to-compare-source-code-files1.png)
 
 正如我们所见，比较文件之间存在多个差异：
 * 类名不同 - *CropImage* 与 *ImageCropTests*；
@@ -50,7 +50,7 @@ text：要应用更改，请调用 Comparer 类对象的 ApplyChanges 方法。�
 
 下图展示了一些桌面比较工具检测到的所有提到的变化。它工作得很好，在用户界面中检测并突出显示所有差异。
 
-![](comparison/net/images/how-to-compare-source-code-files2.png)
+![](/comparison/net/images/how-to-compare-source-code-files2.png)
 
 但是，有时您可能需要一些现有比较工具不提供的功能，或者您想以自己的方式实现比较过程。然后，您肯定需要以编程方式比较文档并通过代码管理发现的更改。这就是 **[GroupDocs.Comparsion](https://products.groupdocs.com/comparison/net)** 功能将派上用场的地方，所以让我们看看如何将源代码文件与它进行比较。
 

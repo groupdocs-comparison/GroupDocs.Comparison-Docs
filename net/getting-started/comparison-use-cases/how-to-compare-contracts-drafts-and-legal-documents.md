@@ -38,15 +38,15 @@ As a result of creating a text file, we have to subject it to multiple changes. 
 *   First, open the Microsoft Word. Go to the "**Review**" tab, in the "**Comparison**" section, click "**Compare**".
 *   "**Version comparison**" pop-up window appears in front of which you now need to load two types of documents: the original and the modified one.  
       
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
     
 *   After you have selected two versions of a text document, click **OK**  
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
       
     
 *   The comparison results will open in a new window, and it will look something like this:  
       
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
     
 *   In the highlighted square with the number "1", all deleted and inserted words will appear. To the right, the zone with the number "2" Shows the document being compared with the presence in the text and the words deleted and inserted in their place.  
     The workspace with the number "3" shows us the source document (before making changes), while the space with the number "4" shows us the changed document with the changes made.  
@@ -67,8 +67,8 @@ Let's say you have two contracts in DOCX format that were concluded in different
 
 |  | Files |
 | --- | --- |
-|Source File - Contract signed in 2018| ![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) |
-|Target File- Contract signed in 2019|![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
+|Source File - Contract signed in 2018| ![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) |
+|Target File- Contract signed in 2019|![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
 
 Here is the code that is used to compare two contracts.
 
@@ -82,7 +82,7 @@ using (Comparer comparer = new Comparer("source-contract.docx"))
 
 As a result, we get a DOCX file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>.
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
 
 ## More resources
 ### Advanced Usage Topics

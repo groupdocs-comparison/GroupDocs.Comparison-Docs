@@ -127,13 +127,13 @@ _Последнюю версию библиотеки сравнения мож�
 
 | Файл исходного кода Java | Целевой файл кода Java | Результат HTML-файл | Результат HTML-файл с примененными изменениями |
 |------------------------------------------------- ----------------------------------------------------------|----- -------------------------------------------------- --------------------------------------|----------- -------------------------------------------------- --------------------------|--------- -------------------------------------------------- ---------------------|
-| ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-source.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-target.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-result.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-applied.png) |
+| ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-source.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-target.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-result.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-applied.png) |
 
 На изображениях видно, что изменения `0` -> `3` и `1` -> `5` были отклонены, а изменения `long` -> `int` и `--` -> `++` сохранен. Действительный файл кода Java также был сохранен. Вы можете увидеть это ниже
 
 | Результирующий файл Json |
 |:------------------------------------------------ -------------------------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-resultant.png) |
+| ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-resultant.png) |
 
 ### Получите бесплатную лицензию API
 

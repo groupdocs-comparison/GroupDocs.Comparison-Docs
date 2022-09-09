@@ -79,7 +79,7 @@ using (Comparer comparer = new Comparer(sourceDocumentPath))
 
 |   |  All Compare Options |
 | --- | --- |
-|Options | ![](comparison/net/images/how-to-select-options-for-flexible-comparing-1.png)|
+|Options | ![](/comparison/net/images/how-to-select-options-for-flexible-comparing-1.png)|
 
 
 ## More resources

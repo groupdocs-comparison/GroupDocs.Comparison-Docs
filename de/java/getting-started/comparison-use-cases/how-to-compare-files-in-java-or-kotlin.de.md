@@ -83,7 +83,7 @@ Sie können auch Streams verwenden, um Dokumente zu vergleichen. Nicht nur Datei
 
 Angenommen, Sie haben zwei Verträge im DOCX-Format, die in unterschiedlichen Jahren abgeschlossen wurden. Wenn Sie den obigen Code verwenden, um diese Verträge zu vergleichen, erhalten Sie eine DOCX-Datei, in der gelöschte Elemente wie unten gezeigt rot markiert, blau hinzugefügt und grün geändert werden:
 
-![Comparing two contracts](comparison/java/images/how-to-get-diff-of-contracts.png)
+![Comparing two contracts](/comparison/java/images/how-to-get-diff-of-contracts.png)
 
 
 ## Erkannte Unterschiede akzeptieren oder ablehnen

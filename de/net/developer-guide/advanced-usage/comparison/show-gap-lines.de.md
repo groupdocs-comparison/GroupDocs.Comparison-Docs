@@ -69,11 +69,11 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Standardergebnis | Ergebnis ohne LeaveGaps-Eigenschaft |
 |:---:|:---:|
-| ![](comparison/net/images/show-gap-lines-default-result.png) | ![](comparison/net/images/show-gap-lines-without-leavegaps.png) |
+| ![](/comparison/net/images/show-gap-lines-default-result.png) | ![](/comparison/net/images/show-gap-lines-without-leavegaps.png) |
 
 | Standardergebnis | Ergebnis mit LeaveGaps-Eigenschaft |
 |:---:|:---:|
-| ![](comparison/net/images/show-gap-lines-default-result.png) | ![](comparison/net/images/show-gap-lines-with-leavegaps.png) |
+| ![](/comparison/net/images/show-gap-lines-default-result.png) | ![](/comparison/net/images/show-gap-lines-with-leavegaps.png) |
 
 ## Mehr Ressourcen
 

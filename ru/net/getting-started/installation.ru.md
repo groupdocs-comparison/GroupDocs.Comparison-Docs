@@ -24,7 +24,7 @@ NuGet — это самый простой способ загрузить и у
 
 
 
-![](comparison/net/images/installation.png)
+![](/comparison/net/images/installation.png)
 
 ### Использование консоли диспетчера пакетов
 
@@ -38,7 +38,7 @@ NuGet — это самый простой способ загрузить и у
 
 
 
-![](comparison/net/images/installation_1.png)
+![](/comparison/net/images/installation_1.png)
 
 ## Установить с официального сайта GroupDocs
 

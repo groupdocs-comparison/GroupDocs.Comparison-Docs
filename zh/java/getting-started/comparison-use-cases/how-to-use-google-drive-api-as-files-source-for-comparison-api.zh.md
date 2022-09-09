@@ -40,44 +40,44 @@ text: 在项目中使用 Google Drive API 和 Comparison API 所需的所有配�
 1.打开【谷歌云平台仪表盘】(https://console.cloud.google.com/apis/dashboard)
 2. 点击“选择项目”打开项目列表
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
 
 3.为了创建一个项目，点击`NEW PROJECT`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
 
 4. 输入项目名称，点击`Create`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
 
 5. 点击`Enable APIs and services`启用Google Drive API
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
 
 6.找到`Google Drive API`，选择它并在打开的页面上点击`Enable`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
 
 #### 创建同意屏幕
 
 1. 打开【Credentials】(https://console.cloud.google.com/apis/credentials)页面，检查选择的项目是否正确
 2. 点击`Create Credentials`并选择`OAuth client ID`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. 单击“配置同意屏幕”按钮
 4. 选择“用户类型”并点击“创建”
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
 
 5.填写`App信息`点击`保存并继续`
 6. 单击“添加或删除范围”以配置凭据范围。
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
 
 7. 在“更新选定范围”屏幕上检查所需范围。您可以使用过滤器来搜索范围。选择所有需要的范围后，单击“更新”按钮
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
 
 8.点击“保存并继续”进入下一步
 9. 使用“添加用户”按钮添加用户，然后单击“保存并继续”
@@ -88,15 +88,15 @@ text: 在项目中使用 Google Drive API 和 Comparison API 所需的所有配�
 1. 打开【Credentials】(https://console.cloud.google.com/apis/credentials)页面，检查选择的项目是否正确
 2. 点击`Create Credentials`并选择`OAuth client ID`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. 选择应用类型为“桌面应用”，输入名称并点击“创建”
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
 
 4. 现在，复制并保存您的“客户端 ID”、“客户端密码”，当然还有下载并保存 JSON 文件，该文件将用于访问 Google Drive API
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
 
 ### 配置项目以使用 Google Drive API 和比较 API
 

@@ -127,13 +127,13 @@ Hier sind Screenshots aller Dateien:
 
 | Json-Quelldatei | Ziel-Json-Datei | Ergebnis HTML-Datei | Ergebnis Html-Datei nach Übernahme der Änderungen |
 |------------------------------------------------------------- --------------------------------------|----------- -------------------------------------------------- ---------------------|----------------------- -------------------------------------------------- --------------|----------------------------------- -------------------------------------------------- --------------------------|
-| ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-source.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-target.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-result.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-applied.png) |
+| ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-source.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-target.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-result.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-applied.png) |
 
 Wie Sie sehen können, wurden Änderungen `pobox` -> `hacker`, `200` -> `88` und `100` -> `6` zurückgewiesen, während Änderungen innerhalb der Eigenschaften `defaultListTemplate`, `defaultFileTemplate` und `useJSP` wurden im Dokument belassen. Ein gültiges resultierendes Json-Dokument wurde ebenfalls gespeichert. Sie können es unten sehen
 
 | Resultierende Json-Datei |
 |: ------------------------------------------------ ----------------------------------------:|
-| ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-resultant.png) |
+| ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-resultant.png) |
 
 ### Holen Sie sich eine kostenlose API-Lizenz
 

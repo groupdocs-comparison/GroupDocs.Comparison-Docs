@@ -54,7 +54,7 @@ text: Вызовите метод Compare вашего объекта и пом�
 
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
     
 
 
@@ -66,7 +66,7 @@ text: Вызовите метод Compare вашего объекта и пом�
 * После того, как вы выбрали две версии текстового документа, нажмите **ОК**
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
       
 
 
@@ -100,7 +100,7 @@ text: Вызовите метод Compare вашего объекта и пом�
 
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
     
 
 
@@ -141,8 +141,8 @@ text: Вызовите метод Compare вашего объекта и пом�
 
 | | Файлы |
 | --- | --- |
-|Исходный файл - Контракт подписан в 2018 году| ![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) |
-|Целевой файл – Контракт, подписанный в 2019 году|![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
+|Исходный файл - Контракт подписан в 2018 году| ![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) |
+|Целевой файл – Контракт, подписанный в 2019 году|![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
 
 Вот код, который используется для сравнения двух контрактов.
 
@@ -156,7 +156,7 @@ using (Comparer comparer = new Comparer("source-contract.docx"))
 
 В результате мы получаем файл DOCX, в котором удаленные элементы отмечены <font color="red">**красным**</font> , добавленные — <font color="blue">**синим**</font> , а измененные — <font color="green">**зеленым**</font> .
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
 
 ## Дополнительные ресурсы
 ### Темы для продвинутого использования

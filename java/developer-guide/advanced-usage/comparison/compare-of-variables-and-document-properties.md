@@ -56,7 +56,7 @@ Following are the steps to activate compare document properties:
 
 The result of comparing properties is presented on a separate page - *Properties summary page*.
 
-![](comparison/java/images/properties-summary-page.png)
+![](/comparison/java/images/properties-summary-page.png)
 
 ## More resources
 

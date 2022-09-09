@@ -55,8 +55,8 @@ Im Folgenden sind die Schritte zum Anwenden/Ablehnen von Änderungen an der resu
 
 Beispielsweise müssen Sie mehrere Versionen von Quellcodedateien vergleichen und zusammenführen und Änderungen akzeptieren oder verwerfen, die von verschiedenen Personen vorgenommen wurden.
 
-![](comparison/net/images/how-to-merge-source-code-file-source.png)
-![](comparison/net/images/how-to-merge-source-code-file-target.png)
+![](/comparison/net/images/how-to-merge-source-code-file-source.png)
+![](/comparison/net/images/how-to-merge-source-code-file-target.png)
 
 Die Unterschiede zeigen, dass zwei Methoden in die Datei **source.cs** geschrieben werden: *AddNumbers* und *Sum*.
 
@@ -97,7 +97,7 @@ Außerdem erhalten Sie eine Datei im HTML-Format mit geänderten Stellen im Code
 
 | Ergebnisquellcodedatei | Ergebnis-HTML-Datei |
 | --- | --- |
-| ![](comparison/net/images/how-to-merge-source-code-file-result-CS.png) | ![](comparison/net/images/how-to-merge-source-code-file-result-HTML.png) |
+| ![](/comparison/net/images/how-to-merge-source-code-file-result-CS.png) | ![](/comparison/net/images/how-to-merge-source-code-file-result-HTML.png) |
 
 Wie Sie den resultierenden Dateien entnehmen können, wurde nur eine der beiden Methoden entfernt.
 

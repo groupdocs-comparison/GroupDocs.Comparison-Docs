@@ -51,7 +51,7 @@ hideChildren: False
 
 Результат сопоставления закладок представлен в виде вставленных комментариев с описанием в документе. См. пример ниже на изображении:
 
-![](comparison/java/images/compared-bookmarks.png)
+![](/comparison/java/images/compared-bookmarks.png)
 
 ## Дополнительные ресурсы
 

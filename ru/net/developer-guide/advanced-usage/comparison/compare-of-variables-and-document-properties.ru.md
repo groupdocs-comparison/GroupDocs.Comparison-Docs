@@ -68,7 +68,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 Результат сравнения свойств представлен на отдельной странице - *Сводная страница свойств*.
 
-![](comparison/net/images/properties-summary-page.png)
+![](/comparison/net/images/properties-summary-page.png)
 
 ## Дополнительные ресурсы
 

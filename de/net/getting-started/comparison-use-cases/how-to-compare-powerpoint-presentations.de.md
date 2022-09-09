@@ -37,7 +37,7 @@ Möglicherweise müssen Sie zwei Versionen einer PowerPoint-Präsentation vergle
 
 Sie gelangen dann in den Überprüfungsmodus. Dadurch wird das Überprüfungsfenster geöffnet, das eine Liste aller Bearbeitungen in der Präsentation auf der rechten Seite des Bildschirms anzeigt.
 
-![](comparison/net/images/how-to-compare-powerpoint-presentations.png)
+![](/comparison/net/images/how-to-compare-powerpoint-presentations.png)
 
 ## So vergleichen Sie zwei Präsentationen mit GroupDocs.Comparison
 
@@ -45,8 +45,8 @@ Eine solche Funktionalität, die von Drittanbieterprogrammen bereitgestellt wird
 
 | | Präsentationen |
 | --- | --- |
-|Original | ![](comparison/net/images/how-to-compare-powerpoint-presentations_1.png)|
-|Geändert | ![](comparison/net/images/how-to-compare-powerpoint-presentations_2.png)|
+|Original | ![](/comparison/net/images/how-to-compare-powerpoint-presentations_1.png)|
+|Geändert | ![](/comparison/net/images/how-to-compare-powerpoint-presentations_2.png)|
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) bietet die Möglichkeit, zwei Dateien im PPTX-Format (oder anderen [unterstützten Dateiformaten]) zu vergleichen ({{< ref "comparison /net/getting-started/supported-document-formats.md" >}}))
 
@@ -81,7 +81,7 @@ Als Ergebnis erhalten wir eine PPTX-Datei, in der die gelöschten Elemente in <f
 
 | Ergebnisfolie |
 | --- |
-| ![](comparison/net/images/how-to-compare-powerpoint-presentations_3.png))
+| ![](/comparison/net/images/how-to-compare-powerpoint-presentations_3.png))
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

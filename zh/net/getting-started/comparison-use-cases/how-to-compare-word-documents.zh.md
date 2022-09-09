@@ -19,9 +19,9 @@ keywords: "如何比较 Word 文档、Word 文档、Word 文件、比较用例�
 
 |源/目标/结果词文件|
 | --- | --- |
-|来源 |![](comparison/net/images/how-to-compare-word-1.png) |
-|目标 |![](comparison/net/images/how-to-compare-word-2.png)|
-|结果 |![](comparison/net/images/how-to-compare-word-3.png)|
+|来源 |![](/comparison/net/images/how-to-compare-word-1.png) |
+|目标 |![](/comparison/net/images/how-to-compare-word-2.png)|
+|结果 |![](/comparison/net/images/how-to-compare-word-3.png)|
 
 比较两个 Word 文件的代码示例：
 

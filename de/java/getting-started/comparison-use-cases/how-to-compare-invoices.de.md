@@ -31,7 +31,7 @@ Beispielsweise liegen zwei Rechnungen im DOCX-Format vor, deren Inhalt Sie mit m
 
 | Quellenrechnung | Zielrechnung |
 |------------------------------------------------------------- --------|----------------------------------------- ------------------|
-| ![](comparison/java/images/how-to-compare-invoices.png) | ![](comparison/java/images/how-to-compare-invoices_1.png) |
+| ![](/comparison/java/images/how-to-compare-invoices.png) | ![](/comparison/java/images/how-to-compare-invoices_1.png) |
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison) bietet die Möglichkeit, zwei Dateien im DOCX-Format (oder anderen [unterstützten Dateiformaten]) zu vergleichen ({{< ref "comparison/java /getting-started/supported-document-formats.md" >}})) mit Anpassung der Detaillierungsstufe und [Vergleichsempfindlichkeit](https://docs.groupdocs.com/display/comparisonjava/Set+Comparison+Sensitivity+While +Vergleichen+Dokumente).
 
@@ -52,7 +52,7 @@ Als Ergebnis erhalten wir eine DOCX-Datei, in der die gelöschten Elemente in <f
 
 | Ergebnisrechnung |
 |------------------------------------------------------------- ----------|
-| ![](comparison/java/images/how-to-compare-invoices_2.png) |
+| ![](/comparison/java/images/how-to-compare-invoices_2.png) |
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

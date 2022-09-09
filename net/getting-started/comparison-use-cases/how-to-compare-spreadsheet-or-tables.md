@@ -37,9 +37,9 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 |  Source / Target / Result Excel files |
 | --- | --- |
-|Source |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) | 
-|Target |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
-|Result |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-3.png)|
+|Source |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) | 
+|Target |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
+|Result |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-3.png)|
 
 As a result, you have an Excel file with highlighted changes, in which the deleted elements are marked with a font <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="yellow">**green**</font>.
 

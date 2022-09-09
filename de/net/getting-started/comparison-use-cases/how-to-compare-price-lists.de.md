@@ -33,7 +33,7 @@ Angenommen, Sie haben zwei Excel-Arbeitsmappen oder vielleicht zwei Versionen de
 Um zwei Excel-Arbeitsmappen mit Office Professional Plus 2013 zu vergleichen, sollten Sie:
 
 * Klicken Sie auf **Home > Dateien vergleichen**. Das Dialogfeld „Dateien vergleichen“ wird angezeigt.
-![](comparison/net/images/how-to-compare-price-lists.jpg)
+![](/comparison/net/images/how-to-compare-price-lists.jpg)
 * Klicken Sie auf das blaue Ordnersymbol neben dem Feld **Vergleichen**, um zum Speicherort der früheren Version Ihrer Arbeitsmappe zu navigieren.
       
 
@@ -43,7 +43,7 @@ Um zwei Excel-Arbeitsmappen mit Office Professional Plus 2013 zu vergleichen, so
 
 
 
-![](comparison/net/images/how-to-compare-price-lists_1.jpg)
+![](/comparison/net/images/how-to-compare-price-lists_1.jpg)
       
 
 
@@ -66,7 +66,7 @@ Um zwei Excel-Arbeitsmappen mit Office Professional Plus 2013 zu vergleichen, so
 
 
 
-![](comparison/net/images/how-to-compare-price-lists_2.png)
+![](/comparison/net/images/how-to-compare-price-lists_2.png)
 * Klicken Sie auf **OK**, um den Vergleich durchzuführen.
 
 ## So vergleichen Sie Excel-Dateien mit GroupDocs.Comparison
@@ -91,9 +91,9 @@ Microsoft Office Professional Plus 2013 bietet Tabellenkalkulationsvergleiche, a
 
 | | Dateien |
 | --- | --- |
-| Preisliste für 2018 | ![](comparison/net/images/how-to-compare-price-lists_3.png) |
-| Preisliste für 2019 | ![](comparison/net/images/how-to-compare-price-lists_4.png) |
-| Preisliste für 2020 | ![](comparison/net/images/how-to-compare-price-lists_5.png) |
+| Preisliste für 2018 | ![](/comparison/net/images/how-to-compare-price-lists_3.png) |
+| Preisliste für 2019 | ![](/comparison/net/images/how-to-compare-price-lists_4.png) |
+| Preisliste für 2020 | ![](/comparison/net/images/how-to-compare-price-lists_5.png) |
 
 Hier ist der Code, der verwendet wird, um drei Preislisten zu vergleichen.
 
@@ -123,7 +123,7 @@ Als Ergebnis erhalten wir eine XSLX-Datei, in der die gelöschten Elemente in <f
 
 | Ergebnis Preisliste |
 | --- |
-| ![](comparison/net/images/how-to-compare-price-lists_6.png) |
+| ![](/comparison/net/images/how-to-compare-price-lists_6.png) |
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

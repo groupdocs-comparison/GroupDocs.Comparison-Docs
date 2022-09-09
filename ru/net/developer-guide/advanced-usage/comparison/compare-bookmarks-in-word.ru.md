@@ -62,7 +62,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 Результат сопоставления закладок представлен в виде вставленных комментариев с описанием в документе. См. пример ниже на изображении:
 
-![](comparison/net/images/compared-bookmarks.png)
+![](/comparison/net/images/compared-bookmarks.png)
 
 ## Дополнительные ресурсы
 

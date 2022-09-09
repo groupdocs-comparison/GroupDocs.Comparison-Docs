@@ -60,7 +60,7 @@ Hier ist der Befehl zum Ausführen des Vergleichs:
 
 Das ist alles. Warten Sie einfach, während Docker die Anwendung herunterlädt und ausführt. Um auf die Vergleichsschnittstelle zuzugreifen, öffnen Sie [http://localhost:8080/comparison/](http://localhost:8080/comparison/) in Ihrem bevorzugten Browser
 
-![](comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
+![](/comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
 
 Mit der Benutzeroberfläche können Sie zwei beliebige Dokumente aus der Liste der [unterstützten Dateiformate](/comparison/java/supported-document-formats/) auswählen und vergleichen. Es ist möglich, Dokumente sowohl vom lokalen PC als auch per URL hochzuladen. Standardmäßig sind zwei kleine Beispieldokumente verfügbar, mit denen Sie überprüfen können, ob alles richtig funktioniert. Wenn Sie über das Terminal auf den Container zugreifen, finden Sie Anwendungsdateien unter dem Pfad „/home/groupdocs/app/“. Es gibt auch standardmäßige „DocumentSamples“- und „Licenses“-Verzeichnisse.
 

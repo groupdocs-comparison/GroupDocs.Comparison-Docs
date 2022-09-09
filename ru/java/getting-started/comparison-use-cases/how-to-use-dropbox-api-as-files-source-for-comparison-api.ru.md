@@ -40,19 +40,19 @@ hideChildren: False
 1. Откройте [Консоль приложений Dropbox] (https://www.dropbox.com/developers/apps).
 2. Нажмите «Создать приложение», чтобы создать новое приложение.
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
 
 3. Выберите «API ограниченного доступа».
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
 
 4. Затем выберите «Папка приложения» (вы можете выбрать «Полный ящик», чтобы предоставить приложению доступ ко всем вашим файлам).
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
 
 5. Наконец, введите имя приложения и нажмите «Создать приложение».
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
 
 #### Обновление настроек Dropbox API
 
@@ -66,11 +66,11 @@ hideChildren: False
 
 **Не забудьте** нажать кнопку «Отправить», чтобы сохранить изменения
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
 
 2. После сохранения изменений вернитесь на вкладку «Настройки» и сгенерируйте токен доступа, нажав кнопку «Создать».
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
 
 **Имейте в виду**, что после любых изменений разрешений вы должны сгенерировать новый токен, старый **не будет** автоматически обновляться в соответствии с изменениями разрешений.
 

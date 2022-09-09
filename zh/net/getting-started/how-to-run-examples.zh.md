@@ -59,13 +59,13 @@ comparer.Add(targetDocumentPath);
 **GroupDocs.Comparison** 的完整示例包托管在 [GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET) 上。您可以从 [这里](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET/archive/master.zip) 下载 ZIP 文件，或者使用您最喜欢的 git 客户端克隆 GitHub 的存储库.
 如果您下载 ZIP 文件，请解压缩本地磁盘上的文件夹。提取的文件和文件夹将如下图所示：
 
-![](comparison/net/images/how-to-run-examples.jpg)
+![](/comparison/net/images/how-to-run-examples.jpg)
 
 在提取的文件和文件夹中，您可以找到 CSharp 解决方案文件。该项目是在 **Microsoft Visual Studio 2019** 中创建的。 **Resources** 文件夹包含示例中使用的所有示例文档和图像文件。
 要运行示例，请在 Visual Studio 中打开解决方案文件并构建项目。要添加 **GroupDocs.Comparison** 的缺失引用，请参阅 [安装指南]({{< ref "comparison/net/getting-started/installation.md" >}})。所有函数都是从 **RunExamples.cs** 调用的。
 取消注释您要运行的功能并注释其余部分。
 
-![](comparison/net/images/how-to-run-examples_1.png)
+![](/comparison/net/images/how-to-run-examples_1.png)
 
 ## 运行 MVC 示例
 

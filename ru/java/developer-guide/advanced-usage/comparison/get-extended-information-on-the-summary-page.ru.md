@@ -52,7 +52,7 @@ name: Как получить расширенную информацию на �
 
 ---
 
-![](comparison/java/images/how-to-get-extended-information-image.png)
+![](/comparison/java/images/how-to-get-extended-information-image.png)
 
 ## Дополнительные ресурсы
 

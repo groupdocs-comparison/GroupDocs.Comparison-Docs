@@ -95,7 +95,7 @@ using (Comparer comparer = new Comparer(sourceDocumentPath))
 
 | |所有比较选项 |
 | --- | --- |
-|选项 | ![](comparison/net/images/how-to-select-options-for-flexible-comparing-1.png)|
+|选项 | ![](/comparison/net/images/how-to-select-options-for-flexible-comparing-1.png)|
 
 
 ## 更多资源

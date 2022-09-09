@@ -8,7 +8,7 @@ keywords: "сравнивать, различать, сравнивать фай
 productName: GroupDocs.Comparison для Java
 hideChildren: True
 ---
-<img src="comparison/java/images/home.png" alt="Сравнение групповых документов с логотипом Java" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/comparison/java/images/home.png" alt="Сравнение групповых документов с логотипом Java" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
 GroupDocs.Comparison позволяет сравнивать документы Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text и HTML.
 

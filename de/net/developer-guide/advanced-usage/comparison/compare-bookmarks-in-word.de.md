@@ -62,7 +62,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 Das Ergebnis der verglichenen Lesezeichen wird als eingefügte Kommentare mit Beschreibung im Dokument dargestellt. Siehe Beispiel unten auf dem Bild:
 
-![](comparison/net/images/compared-bookmarks.png)
+![](/comparison/net/images/compared-bookmarks.png)
 
 ## Mehr Ressourcen
 

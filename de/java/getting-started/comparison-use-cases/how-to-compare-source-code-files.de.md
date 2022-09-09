@@ -32,7 +32,7 @@ Es gibt viele Vergleichstools, die es mehreren Benutzern ermöglichen, ihre Änd
 
 Sehen wir uns einen häufigen Anwendungsfall an, wenn Sie zwei Versionen einer C#-Quellcodedatei (CSharp) überprüfen müssen, die von zwei verschiedenen Personen bearbeitet wurden, und die richtige Variante für jeden bearbeiteten Codeblock auswählen müssen. Bitte überprüfen Sie die source.cs- und target.cs-Dateien, die wir im folgenden Bild vergleichen werden.
 
-![](comparison/java/images/how-to-compare-source-code-files1.png)
+![](/comparison/java/images/how-to-compare-source-code-files1.png)
 
 Wie wir sehen können, gibt es mehrere Unterschiede zwischen den verglichenen Dateien:
 * Klassennamen sind unterschiedlich - *CropImage* vs *ImageCropTests*;
@@ -43,7 +43,7 @@ Wie wir sehen können, gibt es mehrere Unterschiede zwischen den verglichenen Da
 
 Das folgende Bild zeigt alle erwähnten Änderungen, die von einigen Desktop-Vergleichstools erkannt wurden. Es funktioniert einwandfrei, alle Unterschiede werden erkannt und in einer Benutzeroberfläche hervorgehoben.
 
-![](comparison/java/images/how-to-compare-source-code-files2.png)
+![](/comparison/java/images/how-to-compare-source-code-files2.png)
 
 Manchmal benötigen Sie jedoch einige Funktionen, die vorhandene Vergleichstools nicht bieten, oder Sie möchten den Vergleichsprozess auf Ihre eigene Weise implementieren. Dann benötigen Sie auf jeden Fall eine Möglichkeit, Dokumente programmatisch zu vergleichen und entdeckte Änderungen per Code zu verwalten. Hier kommen die Funktionen von **[GroupDocs.Comparsion](https://products.groupdocs.com/comparison)** zu Hilfe, also sehen wir uns an, wie man Quellcodedateien damit vergleicht.
 
@@ -79,7 +79,7 @@ Außerdem erhalten Sie eine Datei im HTML-Format mit geänderten Stellen im Code
 
 | Die resultierende HTML-Datei | Die Ergebnis-HTML-Datei, die die ComparisonAction-Eigenschaft | verwendet
 |------------------------------------------------------------- --------------------|------------------------ -------------------------------------------------- |
-| ![](comparison/java/images/how-to-compare-source-code-files_result1.png) | ![](comparison/java/images/how-to-compare-source-code-files_result2.png) |
+| ![](/comparison/java/images/how-to-compare-source-code-files_result1.png) | ![](/comparison/java/images/how-to-compare-source-code-files_result2.png) |
 
 ## Mehr Ressourcen
 

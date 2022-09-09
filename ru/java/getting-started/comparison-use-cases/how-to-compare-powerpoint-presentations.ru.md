@@ -34,7 +34,7 @@ hideChildren: False
 
 Затем вы войдете в режим просмотра. Откроется панель просмотра, которая показывает список всех правок в презентации в правой части экрана.
 
-![](comparison/java/images/how-to-compare-powerpoint-presentations.png)
+![](/comparison/java/images/how-to-compare-powerpoint-presentations.png)
 
 ## Как сравнить две презентации с помощью GroupDocs.Comparison
 
@@ -42,7 +42,7 @@ hideChildren: False
 
 | Оригинальная презентация | Измененная презентация |
 |------------------------------------------------- --------------------------|--------- -------------------------------------------------- ---|
-| ![](comparison/java/images/how-to-compare-powerpoint-presentations_1.png) | ![](comparison/java/images/how-to-compare-powerpoint-presentations_2.png) |
+| ![](/comparison/java/images/how-to-compare-powerpoint-presentations_1.png) | ![](/comparison/java/images/how-to-compare-powerpoint-presentations_2.png) |
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/java) предоставляет возможность сравнить два файла в формате PPTX (или любых других [поддерживаемых форматах файлов]({{< ref "comparison /java/getting-started/supported-document-formats.md" >}}))
 
@@ -60,7 +60,7 @@ hideChildren: False
 
 | Слайд результатов |
 |------------------------------------------------- --------------------------|
-| ![](comparison/java/images/how-to-compare-powerpoint-presentations_3.png) |
+| ![](/comparison/java/images/how-to-compare-powerpoint-presentations_3.png) |
 
 Для сравнения комментариев в документе презентации необходимо установить для свойства DetalisationLevel значение High:
 

@@ -55,8 +55,8 @@ name: Как получить исходный и целевой текст в .
 
 Например, вам нужно сравнить и объединить несколько версий файлов исходного кода, и вам нужно принять или отменить изменения, сделанные разными людьми.
 
-![](comparison/net/images/how-to-merge-source-code-file-source.png)
-![](comparison/net/images/how-to-merge-source-code-file-target.png)
+![](/comparison/net/images/how-to-merge-source-code-file-source.png)
+![](/comparison/net/images/how-to-merge-source-code-file-target.png)
 
 Различия показывают, что в файле **source.cs** записаны два метода: *AddNumbers* и *Sum*.
 
@@ -97,7 +97,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Файл исходного кода результата | Результирующий HTML-файл |
 | --- | --- |
-| ![](comparison/net/images/how-to-merge-source-code-file-result-CS.png) | ![](comparison/net/images/how-to-merge-source-code-file-result-HTML.png) |
+| ![](/comparison/net/images/how-to-merge-source-code-file-result-CS.png) | ![](/comparison/net/images/how-to-merge-source-code-file-result-HTML.png) |
 
 Как видно из полученных файлов, из двух методов был удален только один.
 

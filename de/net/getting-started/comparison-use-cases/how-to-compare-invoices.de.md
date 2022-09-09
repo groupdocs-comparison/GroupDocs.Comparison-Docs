@@ -34,7 +34,7 @@ Beispielsweise liegen zwei Rechnungen im DOCX-Format vor, deren Inhalt Sie mit m
 
 | | Dateien |
 | --- | --- |
-|Quellrechnung|![](comparison/net/images/how-to-compare-invoices.png) | |Zielrechnung |![](comparison/net/images/how-to-compare-invoices_1.png)|
+|Quellrechnung|![](/comparison/net/images/how-to-compare-invoices.png) | |Zielrechnung |![](/comparison/net/images/how-to-compare-invoices_1.png)|
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) bietet die Möglichkeit, zwei Dateien im DOCX-Format (oder jedem anderen [unterstützten Dateiformat]) zu vergleichen ({{< ref "comparison /net/getting-started/supported-document-formats.md" >}}) mit Anpassung der Detaillierungsstufe und [Vergleichsempfindlichkeit.]({{< ref "comparison/net/developer-guide/advanced-usage/comparison/ Anpassungsvergleich-Empfindlichkeit.md" >}})
 
@@ -70,7 +70,7 @@ Als Ergebnis erhalten wir eine DOCX-Datei, in der die gelöschten Elemente in <f
 
 | Ergebnisrechnung |
 | --- |
-| ![](comparison/net/images/how-to-compare-invoices_2.png)|
+| ![](/comparison/net/images/how-to-compare-invoices_2.png)|
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

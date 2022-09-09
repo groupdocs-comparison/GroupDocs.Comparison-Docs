@@ -94,11 +94,11 @@ _Последнюю версию Comparison API можно [найти здес�
 
 | Исходное эссе | Целевое эссе |
 |------------------------------------------------- ---------------------|------------- -------------------------------------------------- ----------------------|
-| ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-source.png) | ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-target.png) |
+| ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-source.png) | ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-target.png) |
 
 | Файл результатов |
 |:------------------------------------------------ --------------------------------------------------:|
-| ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-result.png) |
+| ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-result.png) |
 
 ### Получите бесплатную лицензию API
 

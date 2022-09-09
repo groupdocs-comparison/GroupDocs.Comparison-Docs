@@ -127,13 +127,13 @@ Here are screenshots of all files:
 
 | Source Json file                                                                      | Target Json file                                                                      | Result Html file                                                                      | Result Html file after applying changes                                                                       |
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-source.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-target.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-result.png) | ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-applied.png)                        |
+| ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-source.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-target.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-result.png) | ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-applied.png)                        |
 
 As you can see, changes `pobox` -> `hacker`, `200` -> `88` and `100` -> `6` were rejected, while changes inside properties `defaultListTemplate`, `defaultFileTemplate` and `useJSP` were left in the document. Valid resultant Json document was also saved. You can see it below
 
 |                                   Resultant Json file                                    |
 |:----------------------------------------------------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-json-applying-rejecting-changes-resultant.png) |
+| ![](/comparison/java/images/how-to-compare-json-applying-rejecting-changes-resultant.png) |
 
 ### Get a Free API License
 

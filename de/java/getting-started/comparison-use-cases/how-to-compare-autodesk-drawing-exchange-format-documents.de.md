@@ -55,11 +55,11 @@ Hier Beispiele für Quell-, Ziel- und Ergebnisdokumente:
 
 | Quell-DXF-Dokument (Autodesk Drawing eXchange Format) | Ziel-DXF-Dokument (Autodesk Drawing eXchange Format) |
 |------------------------------------------------------------- -------------------------------------------------| -------------------------------------------------- ------------------------------------------------|
-| ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-source.png) | ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-target.png) |
+| ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-source.png) | ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-target.png) |
 
 | Ergebnis PDF-Dokument |
 |: ------------------------------------------------ ------------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-result.png) |
+| ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-result.png) |
 
 
 ### So nutzen Sie zusätzliche Vergleichsmöglichkeiten

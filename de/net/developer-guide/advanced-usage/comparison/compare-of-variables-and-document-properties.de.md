@@ -68,7 +68,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 Das Ergebnis des Immobilienvergleichs wird auf einer separaten Seite präsentiert - *Eigenschaftsübersichtsseite*.
 
-![](comparison/net/images/properties-summary-page.png)
+![](/comparison/net/images/properties-summary-page.png)
 
 ## Mehr Ressourcen
 

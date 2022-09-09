@@ -95,7 +95,7 @@ using (Comparer comparer = new Comparer(sourceDocumentPath))
 
 | | Alle Vergleichsoptionen |
 | --- | --- |
-|Optionen | ![](comparison/net/images/how-to-select-options-for-flexible-comparing-1.png)|
+|Optionen | ![](/comparison/net/images/how-to-select-options-for-flexible-comparing-1.png)|
 
 
 ## Mehr Ressourcen

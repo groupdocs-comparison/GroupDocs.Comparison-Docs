@@ -59,7 +59,7 @@ hideChildren: False
 
 Вот пример результирующего документа Word, сгенерированного кодом выше. Он содержит выделенные отличия сравниваемых документов. Удаленный контент будет отмечен красным, добавленный контент будет отображаться синим, однако измененный контент будет отображаться зеленым цветом.
 
-![Word documents comparison result](comparison/java/images/how-to-compare-documents.png)
+![Word documents comparison result](/comparison/java/images/how-to-compare-documents.png)
 
 ### Сравнение файлов Word с использованием потоков Java или Kotlin
 
@@ -137,7 +137,7 @@ _Более подробную информацию о принятии и от�
 
 Вот исходный, целевой и выходной текстовые файлы, которые показывают результат сравнения двух текстовых файлов с использованием приведенного выше кода.
 
-![Comparing text files](comparison/java/images/how-to-compare-text-files.png)
+![Comparing text files](/comparison/java/images/how-to-compare-text-files.png)
 
 Вот [список всех форматов файлов](https://docs.groupdocs.com/comparison/java/supported-document-formats/), поддерживаемых [GroupDocs.Comparison for Java](https://products.groupdocs. com/сравнение/java)
 
@@ -165,7 +165,7 @@ _Более подробную информацию о принятии и от�
 
 Вот результат сравнения двух файлов PDF на Java или Kotlin.
 
-![Comparing text files](comparison/java/images/how-to-compare-pdf-files-using-java-or-kotlin.png)
+![Comparing text files](/comparison/java/images/how-to-compare-pdf-files-using-java-or-kotlin.png)
 
 Многие другие примеры с открытым исходным кодом доступны в [репозитории GitHub] (https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java). Вы можете загрузить и быстро запустить примеры, используя руководство [начало работы](https://docs.groupdocs.com/comparison/java/getting-started/). В случае возникновения каких-либо вопросов ознакомьтесь с [документацией](https://docs.groupdocs.com/comparison/java/groupdocs-comparison-overview/) или свяжитесь с нами в любое время [на форуме](https:// forum.groupdocs.com/c/conversion/).
 

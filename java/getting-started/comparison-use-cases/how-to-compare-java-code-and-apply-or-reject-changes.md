@@ -127,13 +127,13 @@ Here are screenshots of all generated files:
 
 | Source Java code file                                                                       | Target Java code file                                                                       | Result Html file                                                                      | Result Html file with changes applied                                                        |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-source.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-target.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-result.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-applied.png) |
+| ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-source.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-target.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-result.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-applied.png) |
 
 On the images you can see that changes `0` -> `3` and `1` -> `5` were rejected, while changes `long` -> `int` and `--` -> `++` were saved. The valid Java code file was also saved. You can see it below
 
 |                    Resultant Json file                                                         |
 |:----------------------------------------------------------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-resultant.png) |
+| ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-resultant.png) |
 
 ### Get a Free API License
 

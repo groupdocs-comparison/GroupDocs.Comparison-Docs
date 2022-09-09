@@ -56,7 +56,7 @@ Im Folgenden sind die Schritte zum Aktivieren der Vergleichsdokumenteigenschafte
 
 Das Ergebnis des Immobilienvergleichs wird auf einer separaten Seite präsentiert - *Eigenschaftsübersichtsseite*.
 
-![](comparison/java/images/properties-summary-page.png)
+![](/comparison/java/images/properties-summary-page.png)
 
 ## Mehr Ressourcen
 

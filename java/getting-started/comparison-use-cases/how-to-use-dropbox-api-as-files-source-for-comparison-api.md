@@ -40,19 +40,19 @@ Preparing to using Dropbox API you must have Dropbox account. It is very easy to
 1. Open [Dropbox App Console](https://www.dropbox.com/developers/apps)
 2. Click `Create app` to create new application
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
 
 3. Choose `Scoped access API`
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
 
 4. Then choose `App folder` (you can choose `Full dropbox` to give app access to all your files)
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
 
 5. Finally, enter app name and click `Create app`
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
 
 #### Updating Dropbox API settings
 
@@ -65,11 +65,11 @@ Preparing to using Dropbox API you must have Dropbox account. It is very easy to
    
    **Do not forget** to click `Submit` button to save changes
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
 
 2. After saving changes go back to `Settings` tab and generate access token clicking `Generate` button
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
 
    **Keep in mind** that after any changes of permissions you must generate new token, old one **will not** automatically updated according to permissions changes
 

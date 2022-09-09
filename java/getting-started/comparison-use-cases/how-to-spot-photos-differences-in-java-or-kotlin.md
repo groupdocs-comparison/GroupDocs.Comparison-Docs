@@ -64,11 +64,11 @@ Here is the code, compares two JPG photos and saves the output that highlights t
 
 Source and target photos
 
-![Source and target photos](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
+![Source and target photos](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
 
 Resultant photo
 
-![Result photo](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
+![Result photo](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
 
 ---
 

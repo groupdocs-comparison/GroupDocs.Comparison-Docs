@@ -24,7 +24,7 @@ NuGet 是下载和安装 **[GroupDocs.Comparison for .NET](https://products.grou
 
 
 
-![](comparison/net/images/installation.png)
+![](/comparison/net/images/installation.png)
 
 ### 使用包管理器控制台
 
@@ -38,7 +38,7 @@ NuGet 是下载和安装 **[GroupDocs.Comparison for .NET](https://products.grou
 
 
 
-![](comparison/net/images/installation_1.png)
+![](/comparison/net/images/installation_1.png)
 
 ## 从 GroupDocs 官方网站安装
 

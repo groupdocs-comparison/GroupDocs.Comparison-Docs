@@ -40,44 +40,44 @@ In order to use Google API you must have Google account. Here we will not descri
 1. Open [Google Cloud Platform Dashboard](https://console.cloud.google.com/apis/dashboard)
 2. Click `Select a project` to open list of projects
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
 
 3. In order to create a project, click `NEW PROJECT`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
 
 4. Enter project name and click `Create`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
 
 5. Click `Enable APIs and services` to enable Google Drive API
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
 
 6. Find `Google Drive API`, select it and click `Enable` on the opened page
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
 
 #### Creating Consent Screen
 
 1. Open [Credentials](https://console.cloud.google.com/apis/credentials) page and check that selected project is correct
 2. Click `Create Credentials` and select `OAuth client ID`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. Click `Configure Consent Screen` button
 4. Select `User Type` and click `Create`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
 
 5. Fill `App information` and click `Save and continue`
 6. Click `Add or remove scopes` to configure credential scopes.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
 
 7. On the `Update selected scopes` screen check needed scopes. You can use filters to search scopes. After selecting all needed scopes, click `Update` button
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
 
 8. Click `Save and continue` to go to the next step
 9. Add users using `Add users` button and click `Save and continue`
@@ -88,15 +88,15 @@ In order to use Google API you must have Google account. Here we will not descri
 1. Open [Credentials](https://console.cloud.google.com/apis/credentials) page and check that selected project is correct
 2. Click `Create Credentials` and select `OAuth client ID`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. Select application type as `Desktop app`, enter its name and click `Create`
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
 
 4. Now, copy and save your `Client ID`, `Client secret` and of course download and save JSON file, that will be used to access Google Drive API
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
 
 ### Configuring project to use Google Drive API with Comparison API
 

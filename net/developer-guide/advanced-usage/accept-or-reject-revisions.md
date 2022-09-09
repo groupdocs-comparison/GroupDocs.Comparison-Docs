@@ -90,7 +90,7 @@ Below are the source and output files based on the code presented earlier.
 
 | Source file | Result  file |
 | --- | --- |
-| ![](comparison/net/images/revision-file.png) | ![](comparison/net/images/result-revision-file.png) |
+| ![](/comparison/net/images/revision-file.png) | ![](/comparison/net/images/result-revision-file.png) |
 
 ## More resources
 ### GitHub Examples

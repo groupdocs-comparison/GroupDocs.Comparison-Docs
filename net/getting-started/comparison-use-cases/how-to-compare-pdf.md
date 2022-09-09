@@ -18,9 +18,9 @@ After the comparison, there are three colors on the resulting file that highligh
 
 |  Source / Target / Result PDF files |
 | --- | --- |
-|Source |![](comparison/net/images/how-to-compare-pdf-1.png) | 
-|Target |![](comparison/net/images/how-to-compare-pdf-2.png)|
-|Result |![](comparison/net/images/how-to-compare-pdf-3.png)|
+|Source |![](/comparison/net/images/how-to-compare-pdf-1.png) | 
+|Target |![](/comparison/net/images/how-to-compare-pdf-2.png)|
+|Result |![](/comparison/net/images/how-to-compare-pdf-3.png)|
 
 The code sample to compare two PDF files:
 

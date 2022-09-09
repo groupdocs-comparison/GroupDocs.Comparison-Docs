@@ -50,8 +50,8 @@ text：像往常一样比较源文档和目标文档
 
 例如，您需要比较和合并多个版本的源代码文件，并且您需要接受或丢弃不同人所做的更改。
 
-![](comparison/java/images/how-to-merge-source-code-file-source.png)
-![](comparison/java/images/how-to-merge-source-code-file-target.png)
+![](/comparison/java/images/how-to-merge-source-code-file-source.png)
+![](/comparison/java/images/how-to-merge-source-code-file-target.png)
 
 差异表明**source.cs** 文件中写入了两种方法：*AddNumbers* 和*Sum*。
 

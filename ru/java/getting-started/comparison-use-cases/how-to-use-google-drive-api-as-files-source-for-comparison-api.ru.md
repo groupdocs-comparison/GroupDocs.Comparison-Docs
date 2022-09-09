@@ -40,44 +40,44 @@ hideChildren: False
 1. Откройте [Панель инструментов Google Cloud Platform](https://console.cloud.google.com/apis/dashboard)
 2. Нажмите «Выбрать проект», чтобы открыть список проектов.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
 
 3. Чтобы создать проект, нажмите «НОВЫЙ ПРОЕКТ».
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
 
 4. Введите имя проекта и нажмите «Создать».
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
 
 5. Нажмите «Включить API и службы», чтобы включить API Google Диска.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
 
 6. Найдите «Google Диск API», выберите его и нажмите «Включить» на открывшейся странице.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
 
 #### Создание экрана согласия
 
 1. Откройте страницу [Учетные данные](https://console.cloud.google.com/apis/credentials) и проверьте правильность выбранного проекта.
 2. Нажмите «Создать учетные данные» и выберите «Идентификатор клиента OAuth».
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. Нажмите кнопку «Настроить экран согласия».
 4. Выберите «Тип пользователя» и нажмите «Создать».
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
 
 5. Заполните «Информация о приложении» и нажмите «Сохранить и продолжить».
 6. Нажмите «Добавить или удалить области», чтобы настроить области учетных данных.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
 
 7. На экране «Обновить выбранные области» проверьте необходимые области. Вы можете использовать фильтры для поиска областей. После выбора всех необходимых областей нажмите кнопку «Обновить».
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
 
 8. Нажмите «Сохранить и продолжить», чтобы перейти к следующему шагу.
 9. Добавьте пользователей с помощью кнопки «Добавить пользователей» и нажмите «Сохранить и продолжить».
@@ -88,15 +88,15 @@ hideChildren: False
 1. Откройте страницу [Учетные данные](https://console.cloud.google.com/apis/credentials) и проверьте правильность выбранного проекта.
 2. Нажмите «Создать учетные данные» и выберите «Идентификатор клиента OAuth».
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. Выберите тип приложения «Настольное приложение», введите его имя и нажмите «Создать».
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
 
 4. Теперь скопируйте и сохраните свой «Идентификатор клиента», «Секрет клиента» и, конечно же, загрузите и сохраните файл JSON, который будет использоваться для доступа к API Google Диска.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
 
 ### Настройка проекта для использования API Google Диска с API сравнения
 

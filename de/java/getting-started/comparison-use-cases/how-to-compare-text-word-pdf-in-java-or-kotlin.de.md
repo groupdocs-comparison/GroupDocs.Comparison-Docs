@@ -59,7 +59,7 @@ Die folgenden Schritte zeigen Ihnen, wie Sie zwei beliebige Word-Dokumente in nu
 
 Hier ist ein Beispiel für das resultierende Word-Dokument, das durch den obigen Code generiert wurde. Es enthält die hervorgehobenen Unterschiede der verglichenen Dokumente. Der gelöschte Inhalt wird rot markiert, hinzugefügter Inhalt wird blau angezeigt, Grün zeigt jedoch den geänderten Inhalt.
 
-![Word documents comparison result](comparison/java/images/how-to-compare-documents.png)
+![Word documents comparison result](/comparison/java/images/how-to-compare-documents.png)
 
 ### Word-Dateien mit Java- oder Kotlin-Streams vergleichen
 
@@ -137,7 +137,7 @@ Mit der Klasse [Comparer](https://apireference.groupdocs.com/comparison/java/com
 
 Hier sind die Quell-, Ziel- und Ausgabetextdateien, die das Vergleichsergebnis des Abgleichs zweier Textdateien mit dem obigen Code zeigen.
 
-![Comparing text files](comparison/java/images/how-to-compare-text-files.png)
+![Comparing text files](/comparison/java/images/how-to-compare-text-files.png)
 
 Hier ist die [Liste aller Dateiformate](https://docs.groupdocs.com/comparison/java/supported-document-formats/), die von [GroupDocs.Comparison for Java](https://products.groupdocs. com/vergleich/java)
 
@@ -165,7 +165,7 @@ Wir können PDF-Dateien mit demselben Code vergleichen, indem wir einfach die Da
 
 Hier ist ein Ergebnis des Vergleichs zweier PDF-Dateien in Java oder Kotlin.
 
-![Comparing text files](comparison/java/images/how-to-compare-pdf-files-using-java-or-kotlin.png)
+![Comparing text files](/comparison/java/images/how-to-compare-pdf-files-using-java-or-kotlin.png)
 
 Viele weitere Open-Source-Beispiele sind unter [GitHub Repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) verfügbar. Sie können Beispiele mithilfe des Leitfadens [Erste Schritte](https://docs.groupdocs.com/comparison/java/getting-started/) herunterladen und schnell ausführen. Bei Fragen schauen Sie in die [Dokumentation](https://docs.groupdocs.com/comparison/java/groupdocs-comparison-overview/) oder erreichen uns jederzeit [im Forum](https:// forum.groupdocs.com/c/conversion/).
 

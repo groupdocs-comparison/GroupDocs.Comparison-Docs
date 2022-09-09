@@ -60,7 +60,7 @@ text: 运行比较过程传递路径，比较结果将被保存在哪里
 
 就这些。等待 Docker 下载并运行应用程序。要访问比较器界面，请在喜欢的浏览器中打开 [http://localhost:8080/comparison/](http://localhost:8080/comparison/)
 
-![](comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
+![](/comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
 
 使用 UI，您可以选择 [支持的文件格式](/comparison/java/supported-document-formats/) 列表中的任意两个文档并进行比较。可以从本地 PC 以及通过 URL 上传文档。默认情况下有两个可用的小示例文档，您可以使用它们来检查一切是否正常。通过终端访问容器，可以通过路径`/home/groupdocs/app/`找到应用文件。还有默认的“DocumentSamples”和“Licenses”目录。
 

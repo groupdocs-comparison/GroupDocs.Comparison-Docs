@@ -59,13 +59,13 @@ Vergleicher.Vergleichen (Ausgangspfad);
 Das vollständige Beispielpaket von **GroupDocs.Comparison** wird auf [GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET) gehostet. Sie können die ZIP-Datei entweder [hier] herunterladen (https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET/archive/master.zip) oder das Repository von GitHub mit Ihrem bevorzugten Git-Client klonen .
 Falls Sie die ZIP-Datei herunterladen, extrahieren Sie die Ordner auf Ihrer lokalen Festplatte. Die extrahierten Dateien und Ordner sehen wie im folgenden Bild aus:
 
-![](comparison/net/images/how-to-run-examples.jpg)
+![](/comparison/net/images/how-to-run-examples.jpg)
 
 In extrahierten Dateien und Ordnern finden Sie die CSharp-Lösungsdatei. Das Projekt wird in **Microsoft Visual Studio 2019** erstellt. Der Ordner **Ressourcen** enthält alle Beispieldokumente und Bilddateien, die in den Beispielen verwendet werden.
 Um die Beispiele auszuführen, öffnen Sie die Projektmappendatei in Visual Studio und erstellen Sie das Projekt. Um fehlende Referenzen von **GroupDocs.Comparison** hinzuzufügen, siehe [Installationsanleitung]({{< ref "comparison/net/getting-started/installation.md" >}}). Alle Funktionen werden von **RunExamples.cs** aufgerufen.
 Entkommentieren Sie die Funktion, die Sie ausführen möchten, und kommentieren Sie den Rest.
 
-![](comparison/net/images/how-to-run-examples_1.png)
+![](/comparison/net/images/how-to-run-examples_1.png)
 
 ## Führen Sie MVC-Beispiele aus
 

@@ -8,7 +8,7 @@ keywords: "vergleichen, Diff, Dateien vergleichen, Diff-Dateien, Java-API, API, 
 Produktname: GroupDocs.Vergleich für Java
 ausblendenKinder: Stimmt
 ---
-<img src="comparison/java/images/home.png" alt="Groupdocs-Vergleich Java-Logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/comparison/java/images/home.png" alt="Groupdocs-Vergleich Java-Logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
 GroupDocs.Comparison ermöglicht es Ihnen, Microsoft Word-, Excel-, PowerPoint-, openDocument-ODT-, PDF-, Text- und HTML-Dokumente zu unterscheiden.
 

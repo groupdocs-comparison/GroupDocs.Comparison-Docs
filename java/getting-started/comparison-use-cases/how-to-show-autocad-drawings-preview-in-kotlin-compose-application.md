@@ -83,7 +83,7 @@ Below you can see result application screen. It is made very simple to be easy u
 
 |                  Preview of AutoCad drawing file in Kotlin Compose Multiplatform                   |
 |:--------------------------------------------------------------------------------------------------:|
-| ![](comparison/java/images/how-to-show-autocad-drawings-preview-in-kotlin-compose-application.png) |
+| ![](/comparison/java/images/how-to-show-autocad-drawings-preview-in-kotlin-compose-application.png) |
 
 ### Get a Free API License
 

@@ -51,7 +51,7 @@ hideChildren: False
 
 | Исходные/целевые чертежи |
 | --- |
-|![](comparison/net/images/how-to-compare-autocad-drawings.png) |
+|![](/comparison/net/images/how-to-compare-autocad-drawings.png) |
 |![](сравнение/net/images/как сравнить-autocad-drawings_1.png)|
 
 Вот шаги для сравнения двух файлов DWG:
@@ -72,7 +72,7 @@ using (Comparer comparer = new Comparer(@"source.dwg"))
 
 В результате получаем DWG-файл, в котором удаленные элементы отмечены <font color="red">**красным**</font> , добавленные — <font color="blue">**синим**</font> , а измененные — <font color="green">**зеленым**</font> .
 
-![](comparison/net/images/how-to-compare-autocad-drawings_2.png)
+![](/comparison/net/images/how-to-compare-autocad-drawings_2.png)
 
 ## Дополнительные ресурсы
 ### Темы для продвинутого использования

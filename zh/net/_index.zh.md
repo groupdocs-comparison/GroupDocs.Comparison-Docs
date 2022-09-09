@@ -8,7 +8,7 @@ keywords: "比较,diff,比较文件,diff files,.net api,file diff,api,xlsx,micro
 产品名称：GroupDocs.Comparison for .NET
 hideChildren：真
 ---
-<img src="comparison/net/images/home.png" alt="groupdocs 比较 .net 徽标" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/comparison/net/images/home.png" alt="groupdocs 比较 .net 徽标" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
 GroupDocs.Comparison 使您能够区分 Microsoft Word、Excel、PowerPoint、openDocument ODT、PDF、文本和 HTML 文档。
 

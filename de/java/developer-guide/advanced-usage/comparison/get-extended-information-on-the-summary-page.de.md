@@ -52,7 +52,7 @@ Das folgende Codebeispiel zeigt, wie Sie erweiterte Informationen zum Vergleich 
 
 ---
 
-![](comparison/java/images/how-to-get-extended-information-image.png)
+![](/comparison/java/images/how-to-get-extended-information-image.png)
 
 ## Mehr Ressourcen
 

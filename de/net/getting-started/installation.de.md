@@ -24,7 +24,7 @@ Befolgen Sie diese Schritte, um GroupDocs.Comparison mit der Paket-Manager-GUI z
 
 
 
-![](comparison/net/images/installation.png)
+![](/comparison/net/images/installation.png)
 
 ### Verwenden der Paket-Manager-Konsole
 
@@ -38,7 +38,7 @@ Sie können die folgenden Schritte ausführen, um mit der Paket-Manager-Konsole 
 
 
 
-![](comparison/net/images/installation_1.png)
+![](/comparison/net/images/installation_1.png)
 
 ## Von der offiziellen GroupDocs-Website installieren
 

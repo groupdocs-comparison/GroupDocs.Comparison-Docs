@@ -18,9 +18,9 @@ keywords: "如何比较 PDF 文件、PDF 文件、比较用例、比较 PDF 文�
 
 |源/目标/结果 PDF 文件 |
 | --- | --- |
-|来源 |![](comparison/net/images/how-to-compare-pdf-1.png) |
-|目标 |![](comparison/net/images/how-to-compare-pdf-2.png)|
-|结果 |![](comparison/net/images/how-to-compare-pdf-3.png)|
+|来源 |![](/comparison/net/images/how-to-compare-pdf-1.png) |
+|目标 |![](/comparison/net/images/how-to-compare-pdf-2.png)|
+|结果 |![](/comparison/net/images/how-to-compare-pdf-3.png)|
 
 比较两个 PDF 文件的代码示例：
 

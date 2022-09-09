@@ -27,7 +27,7 @@ text: 运行比较过程，传递结果图像应保存的路径
 ---
 无论您是想构建具有发现差异功能的应用程序，还是想在任何基于 Java（或 Kotlin）的图像处理应用程序中以编程方式比较两个图像，您都来对了地方。使用我们的产品，您可以轻松地将 JPG、PNG、BMP 或图像与其他一些文件格式进行比较。不要浪费时间，让我们使用 **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** 比较 Java 和 Kotlin 中的图像
 
-![Idea of comparing images](comparison/java/images/how-to-compare-images.png)
+![Idea of comparing images](/comparison/java/images/how-to-compare-images.png)
 
 ## Java 图像比较 API
 

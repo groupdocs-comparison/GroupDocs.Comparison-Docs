@@ -50,8 +50,8 @@ The following are the steps to apply/reject changes to resultant file.
 
 For example, you need to compare and merge several versions of source code files and you need to accept or discard changes made by different persons.
 
-![](comparison/java/images/how-to-merge-source-code-file-source.png)
-![](comparison/java/images/how-to-merge-source-code-file-target.png)
+![](/comparison/java/images/how-to-merge-source-code-file-source.png)
+![](/comparison/java/images/how-to-merge-source-code-file-target.png)
 
 The differences show that two methods are written in the **source.cs** file: *AddNumbers* and *Sum*.
 
@@ -75,7 +75,7 @@ Also, you will receive a file in HTML format with changed places in the code.
 
 | Result source code file                                                 | Result HTML file                                                          |
 |-------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-merge-source-code-file-result-CS.png) | ![](comparison/java/images/how-to-merge-source-code-file-result-HTML.png) |
+| ![](/comparison/java/images/how-to-merge-source-code-file-result-CS.png) | ![](/comparison/java/images/how-to-merge-source-code-file-result-HTML.png) |
 
 As you can see from the resulting files, only one of the two methods was removed.
 

@@ -64,11 +64,11 @@ Hier ist der Code, vergleicht zwei JPG-Fotos und speichert die Ausgabe, die die 
 
 Quell- und Zielfotos
 
-![Source and target photos](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
+![Source and target photos](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
 
 Ergebnisfoto
 
-![Result photo](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
+![Result photo](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
 
 ---
 

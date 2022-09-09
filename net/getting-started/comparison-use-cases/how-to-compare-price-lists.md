@@ -33,16 +33,16 @@ Let's say you have two Excel workbooks, or maybe two versions of the same workbo
 To compare two Excel workbooks with Office Professional Plus 2013 you should:
 
 *   Click **Home > Compare Files**. The Compare Files dialog box appears.  
-![](comparison/net/images/how-to-compare-price-lists.jpg)
+![](/comparison/net/images/how-to-compare-price-lists.jpg)
 *   Click the blue folder icon next to the **Compare** box to browse to the location of the earlier version of your workbook.  
       
-![](comparison/net/images/how-to-compare-price-lists_1.jpg)
+![](/comparison/net/images/how-to-compare-price-lists_1.jpg)
       
     
 *   Click the green folder icon next to the **To** box to browse to the location of the workbook that you want to compare to the earlier version, and then click **OK**.
 *   In the left pane, choose the options you want to see in the results of the workbook comparison by checking or unchecking the options, such as **Formulas**, **Macros**, or **Cell Format**. Or, just **Select All**.  
       
-![](comparison/net/images/how-to-compare-price-lists_2.png)
+![](/comparison/net/images/how-to-compare-price-lists_2.png)
 *   Click **OK** to run the comparison.
 
 ## How to compare Excel files using GroupDocs.Comparison
@@ -57,9 +57,9 @@ Microsoft Office Professional Plus 2013 offers spreadsheet comparisons, but **[G
 
 |   | Files |
 | --- | --- |
-| Price List for 2018 | ![](comparison/net/images/how-to-compare-price-lists_3.png) |
-| Price List for 2019 | ![](comparison/net/images/how-to-compare-price-lists_4.png) |
-| Price List for 2020 | ![](comparison/net/images/how-to-compare-price-lists_5.png) |
+| Price List for 2018 | ![](/comparison/net/images/how-to-compare-price-lists_3.png) |
+| Price List for 2019 | ![](/comparison/net/images/how-to-compare-price-lists_4.png) |
+| Price List for 2020 | ![](/comparison/net/images/how-to-compare-price-lists_5.png) |
 
 Here is the code that is used to compare three price lists.
 
@@ -82,7 +82,7 @@ As a result, we get a XSLX file where the deleted elements are marked in <font c
 
 | Result Price List |
 | --- |
-| ![](comparison/net/images/how-to-compare-price-lists_6.png) | 
+| ![](/comparison/net/images/how-to-compare-price-lists_6.png) | 
 
 ## More resources
 ### Advanced Usage Topics

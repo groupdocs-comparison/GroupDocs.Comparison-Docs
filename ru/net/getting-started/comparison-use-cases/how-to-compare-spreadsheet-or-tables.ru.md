@@ -39,8 +39,8 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Исходные/целевые/результатные файлы Excel |
 | --- | --- |
-|Источник |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) |
-|Target |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
+|Источник |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) |
+|Target |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
 |Результат |![](сравнение/net/images/как-сравнить-таблицу-или-таблицы-3.png)|
 
 В результате у вас есть файл Excel с выделенными изменениями, в котором удаленные элементы отмечены шрифтом <font color="red">**красным**</font> , добавленные — <font color="blue">**синим**</font> , а измененные — <font color="yellow">**зеленым**</font> .

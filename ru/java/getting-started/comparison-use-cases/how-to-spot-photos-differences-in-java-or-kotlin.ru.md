@@ -64,11 +64,11 @@ hideChildren: False
 
 Исходные и целевые фотографии
 
-![Source and target photos](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
+![Source and target photos](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
 
 Результирующее фото
 
-![Result photo](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
+![Result photo](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
 
 ---
 

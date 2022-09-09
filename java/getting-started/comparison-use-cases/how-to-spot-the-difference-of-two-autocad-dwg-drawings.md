@@ -47,11 +47,11 @@ Here are examples of source, target and result documents:
 
 | Source AutoCad drawing (DWG files)                                           | Target AutoCad drawing (DWG files)                                           |
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-source.png) | ![](comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-target.png) |
+| ![](/comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-source.png) | ![](/comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-target.png) |
 
 |                    Result PDF document                                                           |
 |:------------------------------------------------------------------------------------------------:|
-| ![](comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-result.png) |
+| ![](/comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-result.png) |
 
 ### How to use additional comparison options
 

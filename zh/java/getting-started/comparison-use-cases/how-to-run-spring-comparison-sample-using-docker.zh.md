@@ -92,7 +92,7 @@ _注意：上面命令中的`groupdocs_comparison_spring_sample`只是将要构�
 
 之后，只需在任何 Web 浏览器中打开链接 [http://localhost:8080/comparison](http://localhost:8080/comparison) 即可查看比较应用程序
 
-![](comparison/java/images/how-to-run-spring-comparison-sample-using-docker.png)
+![](/comparison/java/images/how-to-run-spring-comparison-sample-using-docker.png)
 
 关于命令的一些细节：
 * `my-comparer` 是 Docker 容器的名称，可用于停止 docker 容器与应用程序。可以根据需要更改

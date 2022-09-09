@@ -34,7 +34,7 @@ Möglicherweise müssen Sie zwei Versionen einer PowerPoint-Präsentation vergle
 
 Sie gelangen dann in den Überprüfungsmodus. Dadurch wird das Überprüfungsfenster geöffnet, das eine Liste aller Bearbeitungen in der Präsentation auf der rechten Seite des Bildschirms anzeigt.
 
-![](comparison/java/images/how-to-compare-powerpoint-presentations.png)
+![](/comparison/java/images/how-to-compare-powerpoint-presentations.png)
 
 ## So vergleichen Sie zwei Präsentationen mit GroupDocs.Comparison
 

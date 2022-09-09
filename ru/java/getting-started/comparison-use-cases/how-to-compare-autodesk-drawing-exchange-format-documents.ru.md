@@ -55,11 +55,11 @@ hideChildren: False
 
 | Исходный документ DXF (формат Autodesk Drawing eXchange) | Целевой документ DXF (формат Autodesk Drawing eXchange) |
 |------------------------------------------------- -------------------------------------------------- | -------------------------------------------------- ----------------------------------|
-| ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-source.png) | ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-target.png) |
+| ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-source.png) | ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-target.png) |
 
 | Результат PDF-документ |
 |:------------------------------------------------ ------------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-result.png) |
+| ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-result.png) |
 
 
 ### Как использовать дополнительные параметры сравнения

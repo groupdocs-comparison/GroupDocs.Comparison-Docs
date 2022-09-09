@@ -60,7 +60,7 @@ hideChildren: False
 
 Это все. Просто подождите, пока Docker загрузит и запустит приложение. Чтобы получить доступ к интерфейсу сравнения, откройте [http://localhost:8080/comparison/](http://localhost:8080/comparison/) в любимом браузере.
 
-![](comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
+![](/comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
 
 С помощью пользовательского интерфейса вы можете выбрать любые два документа из списка [поддерживаемых форматов файлов](/comparison/java/supported-document-formats/) и сравнить их. Документы можно загружать как с локального ПК, так и по URL. По умолчанию доступны два небольших образца документов, вы можете использовать их, чтобы проверить, что все работает правильно. Заходя в контейнер через терминал, вы можете найти файлы приложения по пути `/home/groupdocs/app/`. Существуют также каталоги DocumentSamples и Licenses по умолчанию.
 

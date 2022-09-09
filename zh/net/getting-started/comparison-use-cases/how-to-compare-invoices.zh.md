@@ -34,7 +34,7 @@ text: 调用对象的 Compare 方法并将生成的文件路径参数和选项�
 
 | |文件 |
 | --- | --- |
-|源发票|![](comparison/net/images/how-to-compare-invoices.png) | |目标发票 |![](comparison/net/images/how-to-compare-invoices_1.png)|
+|源发票|![](/comparison/net/images/how-to-compare-invoices.png) | |目标发票 |![](/comparison/net/images/how-to-compare-invoices_1.png)|
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) 提供了比较 DOCX 格式（或任何其他[支持的文件格式]（{{< ref "comparison /net/getting-started/supported-document-formats.md" >}}) 与 detalization level 和 [比较敏感度]({{< ref "comparison/net/developer-guide/advanced-usage/comparison/调整比较敏感度.md" >}})
 
@@ -70,7 +70,7 @@ using (Comparer comparer = new Comparer(sourceDocumentPath))
 
 |结果发票 |
 | --- |
-| ![](comparison/net/images/how-to-compare-invoices_2.png)|
+| ![](/comparison/net/images/how-to-compare-invoices_2.png)|
 
 ## 更多资源
 ### 高级用法主题

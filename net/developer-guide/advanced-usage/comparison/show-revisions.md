@@ -61,7 +61,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Closed state | Open state |
 |:---:|:---:|
-| ![](comparison/net/images/show-revisions-true-close-revisions.png) | ![](comparison/net/images/show-revisions-true-open-revisions.png) |
+| ![](/comparison/net/images/show-revisions-true-close-revisions.png) | ![](/comparison/net/images/show-revisions-true-open-revisions.png) |
 
 ## Example of a result with the Revision display disabled
 
@@ -69,7 +69,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Disable display Revisions |
 |:---:|
-| ![](comparison/net/images/show-revisions-false.png) |
+| ![](/comparison/net/images/show-revisions-false.png) |
 
 ## More resources
 

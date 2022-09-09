@@ -19,8 +19,8 @@ Nach dem Vergleich gibt es drei Farben in der resultierenden Datei, die die Unte
 | Quelle / Ziel / Ergebnis PDF-Dateien |
 | --- | --- |
 |Quelle |![](Vergleich/net/images/how-to-compare-pdf-1.png) |
-|Ziel |![](comparison/net/images/how-to-compare-pdf-2.png)|
-|Ergebnis |![](comparison/net/images/how-to-compare-pdf-3.png)|
+|Ziel |![](/comparison/net/images/how-to-compare-pdf-2.png)|
+|Ergebnis |![](/comparison/net/images/how-to-compare-pdf-3.png)|
 
 Das Codebeispiel zum Vergleichen zweier PDF-Dateien:
 

@@ -19,8 +19,8 @@ hideChildren: False
 
 | Исходный / Целевой / Результат Word файлы |
 | --- | --- |
-|Источник |![](comparison/net/images/how-to-compare-word-1.png) |
-|Цель |![](comparison/net/images/how-to-compare-word-2.png)|
+|Источник |![](/comparison/net/images/how-to-compare-word-1.png) |
+|Цель |![](/comparison/net/images/how-to-compare-word-2.png)|
 |Результат |![](сравнение/net/images/how-to-compare-word-3.png)|
 
 Пример кода для сравнения двух файлов Word:

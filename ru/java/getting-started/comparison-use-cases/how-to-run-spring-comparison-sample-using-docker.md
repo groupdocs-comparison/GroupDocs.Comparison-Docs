@@ -91,7 +91,7 @@ To run Comparison Spring application having prebuilt Docker image, fallow next s
    
 After that, just open link [http://localhost:8080/comparison](http://localhost:8080/comparison) in any web browser to see the Comparison application
 
-![](comparison/java/images/how-to-run-spring-comparison-sample-using-docker.png)
+![](/comparison/java/images/how-to-run-spring-comparison-sample-using-docker.png)
 
 A little details about the command:
 * `my-comparer` is a name of Docker container, that can be used to stop docker container with the application. It can be changed as you want

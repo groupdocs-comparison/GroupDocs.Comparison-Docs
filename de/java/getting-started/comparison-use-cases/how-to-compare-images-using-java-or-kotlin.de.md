@@ -27,7 +27,7 @@ Text: Führen Sie den Vergleichspfad durch, in dem das Ergebnisbild gespeichert 
 ---
 Egal, ob Sie eine Anwendung mit der Funktion „Unterschiede erkennen“ erstellen oder zwei Bilder programmgesteuert in einer Ihrer Java- (oder Kotlin-)basierten Bildverarbeitungsanwendungen vergleichen möchten, Sie sind an der richtigen Stelle. Mit unserem Produkt können Sie ganz einfach JPG, PNG, BMP oder Bilder mit einigen anderen Dateiformaten vergleichen. Lassen Sie uns, ohne Zeit zu verschwenden, Bilder in Java und Kotlin mit dem **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** vergleichen.
 
-![Idea of comparing images](comparison/java/images/how-to-compare-images.png)
+![Idea of comparing images](/comparison/java/images/how-to-compare-images.png)
 
 ## Java-Bildvergleichs-API
 

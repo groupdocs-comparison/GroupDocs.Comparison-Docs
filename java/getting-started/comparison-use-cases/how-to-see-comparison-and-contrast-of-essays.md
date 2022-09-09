@@ -94,11 +94,11 @@ Kotlin code sample:
 
 | Source essay                                                                        | Target essay                                                                         |
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-source.png) | ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-target.png) |
+| ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-source.png) | ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-target.png) |
 
 |                                     Result file                                     |
 |:-----------------------------------------------------------------------------------:|
-| ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-result.png) |
+| ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-result.png) |
 
 ### Get a Free API License
 

@@ -37,7 +37,7 @@ hideChildren: False
 
 Затем вы войдете в режим просмотра. Откроется панель просмотра, которая показывает список всех правок в презентации в правой части экрана.
 
-![](comparison/net/images/how-to-compare-powerpoint-presentations.png)
+![](/comparison/net/images/how-to-compare-powerpoint-presentations.png)
 
 ## Как сравнить две презентации с помощью GroupDocs.Comparison
 
@@ -45,8 +45,8 @@ hideChildren: False
 
 | | Презентации |
 | --- | --- |
-|Оригинал | ![](comparison/net/images/how-to-compare-powerpoint-presentations_1.png)|
-|Изменено | ![](comparison/net/images/how-to-compare-powerpoint-presentations_2.png)|
+|Оригинал | ![](/comparison/net/images/how-to-compare-powerpoint-presentations_1.png)|
+|Изменено | ![](/comparison/net/images/how-to-compare-powerpoint-presentations_2.png)|
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) предоставляет возможность сравнить два файла в формате PPTX(или любых других [поддерживаемых форматах файлов]({{< ref "comparison /net/getting-started/support-document-formats.md" >}}))
 

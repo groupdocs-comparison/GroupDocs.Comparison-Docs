@@ -33,7 +33,7 @@ text: 调用对象的 Compare 方法并放入生成的文件路径参数。
 要将两个 Excel 工作簿与 Office Professional Plus 2013 进行比较，您应该：
 
 * 单击 **主页 > 比较文件**。出现比较文件对话框。
-![](comparison/net/images/how-to-compare-price-lists.jpg)
+![](/comparison/net/images/how-to-compare-price-lists.jpg)
 * 单击 **Compare** 框旁边的蓝色文件夹图标以浏览到工作簿早期版本的位置。
       
 
@@ -43,7 +43,7 @@ text: 调用对象的 Compare 方法并放入生成的文件路径参数。
 
 
 
-![](comparison/net/images/how-to-compare-price-lists_1.jpg)
+![](/comparison/net/images/how-to-compare-price-lists_1.jpg)
       
 
 
@@ -66,7 +66,7 @@ text: 调用对象的 Compare 方法并放入生成的文件路径参数。
 
 
 
-![](comparison/net/images/how-to-compare-price-lists_2.png)
+![](/comparison/net/images/how-to-compare-price-lists_2.png)
 * 单击 **OK** 运行比较。
 
 ## 如何使用 GroupDocs.Comparison 比较 Excel 文件

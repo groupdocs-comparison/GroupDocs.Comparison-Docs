@@ -22,7 +22,7 @@ Follow these steps to reference GroupDocs.Comparison using Package Manager GUI:
 *   Click the **Install** button to install the latest version of the API into your project as shown in the following screenshot.
     
 
-![](comparison/net/images/installation.png)
+![](/comparison/net/images/installation.png)
 
 ### Using Package Manager Console
 
@@ -34,7 +34,7 @@ You can follow the steps below to reference GroupDocs.Comparison for .NET using 
 *   After successful installation, GroupDocs.Comparison will be referenced in your application.  
     
 
-![](comparison/net/images/installation_1.png)
+![](/comparison/net/images/installation_1.png)
 
 ## Install from official GroupDocs website
 

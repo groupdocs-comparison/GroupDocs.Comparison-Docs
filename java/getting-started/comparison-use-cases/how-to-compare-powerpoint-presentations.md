@@ -34,7 +34,7 @@ You may need to compare two versions of a PowerPoint Presentation to see the dif
 
 You will then enter Review Mode. This will open the Reviewing Pane, which shows a list of all edits in the presentation at the right of the screen.
 
-![](comparison/java/images/how-to-compare-powerpoint-presentations.png)
+![](/comparison/java/images/how-to-compare-powerpoint-presentations.png)
 
 ## How to Compare Two Presentations using GroupDocs.Comparison
 
@@ -42,7 +42,7 @@ Such functionality that is provided by third-party programs is clearly not enoug
 
 | Original  presentation                                                    | Modified presentation                                                      |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-compare-powerpoint-presentations_1.png) | ![](comparison/java/images/how-to-compare-powerpoint-presentations_2.png)  |
+| ![](/comparison/java/images/how-to-compare-powerpoint-presentations_1.png) | ![](/comparison/java/images/how-to-compare-powerpoint-presentations_2.png)  |
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/java) provides the ability to compare two files in PPTX format(or any other [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}}))
 
@@ -60,7 +60,7 @@ As a result, we get a PPTX file where the deleted elements are marked in <font 
 
 | Result Slide                                                              |
 |---------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-compare-powerpoint-presentations_3.png) |
+| ![](/comparison/java/images/how-to-compare-powerpoint-presentations_3.png) |
 
 To compare comments in presentation document, you have to set DetalisationLevel property to High:
 

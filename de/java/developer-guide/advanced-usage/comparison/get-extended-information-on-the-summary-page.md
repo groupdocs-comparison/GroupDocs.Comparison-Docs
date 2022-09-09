@@ -52,7 +52,7 @@ The following code sample shows how to get extended information about comparison
 
 ---
 
-![](comparison/java/images/how-to-get-extended-information-image.png)
+![](/comparison/java/images/how-to-get-extended-information-image.png)
 
 ## More resources
 

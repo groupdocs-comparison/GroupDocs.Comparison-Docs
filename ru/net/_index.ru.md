@@ -8,7 +8,7 @@ keywords: "сравнить, diff, сравнить файлы, файлы diff,
 productName: GroupDocs.Comparison для .NET
 hideChildren: True
 ---
-<img src="comparison/net/images/home.png" alt="сравнение групповых документов .net logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/comparison/net/images/home.png" alt="сравнение групповых документов .net logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
 GroupDocs.Comparison позволяет сравнивать документы Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text и HTML.
 

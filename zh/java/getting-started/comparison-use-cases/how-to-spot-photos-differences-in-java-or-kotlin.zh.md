@@ -64,11 +64,11 @@ keywords: "比较照片，照片的差异，Java中的照片差异工具，Kotli
 
 源照片和目标照片
 
-![Source and target photos](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
+![Source and target photos](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-source.jpg)
 
 结果照片
 
-![Result photo](comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
+![Result photo](/comparison/java/images/how-to-spot-photos-differences-in-java-or-kotlin-result.jpg)
 
 ---
 

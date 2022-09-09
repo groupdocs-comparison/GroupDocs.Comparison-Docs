@@ -37,15 +37,15 @@ hideChildren: False
 * Сначала откройте Microsoft Word. Перейдите на вкладку «**Обзор**», в разделе «**Сравнение**» нажмите «**Сравнить**».
 * Появляется всплывающее окно "**Сравнение версий**", перед которым теперь нужно загрузить два типа документов: исходный и модифицированный.
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents.png)
 
 * После того, как вы выбрали две версии текстового документа, нажмите **ОК**
-    ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+    ![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
 
 
 * Результаты сравнения откроются в новом окне и будут выглядеть примерно так:
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
 
 * В выделенном квадрате с цифрой «1» появятся все удаленные и вставленные слова. Справа зона с цифрой "2" показывает сравниваемый документ с наличием в тексте и удаленными и вставленными на их место словами.
 Рабочее пространство с номером «3» показывает нам исходный документ (до внесения изменений), а пространство с номером «4» показывает нам измененный документ с внесенными изменениями.
@@ -66,7 +66,7 @@ hideChildren: False
 
 | Исходный файл - Контракт подписан в 2018 году | Target File- Контракт подписан в 2019 году |
 |------------------------------------------------- --------------------------------------|----------- -------------------------------------------------- --------------------------------------|
-| ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) | ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_4.png) |
+| ![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_3.png) | ![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_4.png) |
 
 Вот код, который используется для сравнения двух контрактов.
 
@@ -74,7 +74,7 @@ hideChildren: False
 
 В результате мы получаем файл DOCX, в котором удаленные элементы отмечены <font color="red">**красным**</font> , добавленные — <font color="blue">**синим**</font> , а измененные — <font color="green">**зеленым**</font> .
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
 
 ## Дополнительные ресурсы
 ### Темы для продвинутого использования

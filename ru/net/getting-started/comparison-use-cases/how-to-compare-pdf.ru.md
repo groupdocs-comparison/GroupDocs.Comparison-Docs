@@ -18,8 +18,8 @@ hideChildren: False
 
 | Исходный / Целевой / Результат PDF-файлы |
 | --- | --- |
-|Источник |![](comparison/net/images/how-to-compare-pdf-1.png) |
-|Цель |![](comparison/net/images/how-to-compare-pdf-2.png)|
+|Источник |![](/comparison/net/images/how-to-compare-pdf-1.png) |
+|Цель |![](/comparison/net/images/how-to-compare-pdf-2.png)|
 |Результат |![](сравнение/net/images/how-to-compare-pdf-3.png)|
 
 Пример кода для сравнения двух файлов PDF:

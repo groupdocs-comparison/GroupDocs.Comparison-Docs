@@ -59,7 +59,7 @@ text: 运行比较过程传递路径，比较结果将被保存在哪里
 
 这是上面代码生成的结果 Word 文档的示例。它包含比较文档的突出差异。删除的内容会被标记为红色，添加的内容会显示为蓝色，但是，绿色显示修改的内容。
 
-![Word documents comparison result](comparison/java/images/how-to-compare-documents.png)
+![Word documents comparison result](/comparison/java/images/how-to-compare-documents.png)
 
 ### 使用 Java 或 Kotlin 流比较 Word 文件
 
@@ -137,7 +137,7 @@ _有关接受和拒绝更改的更多详细信息，请参阅 [文档](https://d
 
 这是源文本文件、目标文本文件和输出文本文件，显示了使用上述代码匹配两个文本文件的比较结果。
 
-![Comparing text files](comparison/java/images/how-to-compare-text-files.png)
+![Comparing text files](/comparison/java/images/how-to-compare-text-files.png)
 
 这是 [GroupDocs.Comparison for Java](https://products.groupdocs. com/比较/java)
 
@@ -165,7 +165,7 @@ _有关接受和拒绝更改的更多详细信息，请参阅 [文档](https://d
 
 这是在 Java 或 Kotlin 中比较两个 PDF 文件的结果。
 
-![Comparing text files](comparison/java/images/how-to-compare-pdf-files-using-java-or-kotlin.png)
+![Comparing text files](/comparison/java/images/how-to-compare-pdf-files-using-java-or-kotlin.png)
 
 [GitHub 存储库](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) 提供了许多其他开源示例。您可以使用 [入门](https://docs.groupdocs.com/comparison/java/getting-started/) 指南下载并快速运行示例。如有任何问题，请查看[文档](https://docs.groupdocs.com/comparison/java/groupdocs-comparison-overview/) 或随时联系我们[在论坛上](https:// forum.groupdocs.com/c/conversion/）。
 

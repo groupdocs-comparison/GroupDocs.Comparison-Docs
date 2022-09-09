@@ -50,8 +50,8 @@ hideChildren: False
 
 Например, вам нужно сравнить и объединить несколько версий файлов исходного кода, и вам нужно принять или отклонить изменения, сделанные разными людьми.
 
-![](comparison/java/images/how-to-merge-source-code-file-source.png)
-![](comparison/java/images/how-to-merge-source-code-file-target.png)
+![](/comparison/java/images/how-to-merge-source-code-file-source.png)
+![](/comparison/java/images/how-to-merge-source-code-file-target.png)
 
 Различия показывают, что в файле **source.cs** записаны два метода: *AddNumbers* и *Sum*.
 
@@ -75,7 +75,7 @@ hideChildren: False
 
 | Файл исходного кода результата | Результирующий HTML-файл |
 |------------------------------------------------- ------------------------|--------------------------------------- -------------------------------------------------- |
-| ![](сравнение/java/изображения/как-объединить-исходный-код-файл-результат-CS.png) | ![](comparison/java/images/how-to-merge-source-code-file-result-HTML.png) |
+| ![](сравнение/java/изображения/как-объединить-исходный-код-файл-результат-CS.png) | ![](/comparison/java/images/how-to-merge-source-code-file-result-HTML.png) |
 
 Как видно из полученных файлов, из двух методов был удален только один.
 

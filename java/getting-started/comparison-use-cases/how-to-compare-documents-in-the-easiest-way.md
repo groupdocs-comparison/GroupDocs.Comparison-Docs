@@ -60,7 +60,7 @@ Here is command to run the comparer:
 
 That is all. Just wait while Docker download and run the application. To access comparer interface open [http://localhost:8080/comparison/](http://localhost:8080/comparison/) in favourite browser
 
-![](comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
+![](/comparison/java/images/how-to-compare-documents-in-the-easiest-way.png)
 
 With the UI you can choose any two documents which are in the list of [supported file formats](/comparison/java/supported-document-formats/) and compare them. It is possible to upload documents from local PC as well as by URL. There are available two small sample documents by default, you can use them to check that everything works correctly. Accessing the container through terminal, you can find application files by path `/home/groupdocs/app/`. There are also default `DocumentSamples` and `Licenses` directories.
 

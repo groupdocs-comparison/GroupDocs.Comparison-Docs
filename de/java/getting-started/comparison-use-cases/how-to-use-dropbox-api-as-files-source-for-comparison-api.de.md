@@ -40,19 +40,19 @@ Um sich auf die Verwendung der Dropbox-API vorzubereiten, müssen Sie über ein 
 1. Öffnen Sie die [Dropbox-App-Konsole] (https://www.dropbox.com/developers/apps)
 2. Klicken Sie auf „App erstellen“, um eine neue Anwendung zu erstellen
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
 
 3. Wählen Sie „Bereichsbezogene Zugriffs-API“.
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
 
 4. Wählen Sie dann „App-Ordner“ (Sie können „Full Dropbox“ auswählen, um der App Zugriff auf alle Ihre Dateien zu gewähren)
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
 
 5. Geben Sie abschließend den App-Namen ein und klicken Sie auf „App erstellen“.
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
 
 #### Dropbox-API-Einstellungen werden aktualisiert
 
@@ -66,11 +66,11 @@ Um sich auf die Verwendung der Dropbox-API vorzubereiten, müssen Sie über ein 
 
 **Vergessen Sie nicht**, auf die Schaltfläche „Senden“ zu klicken, um die Änderungen zu speichern
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
 
 2. Gehen Sie nach dem Speichern der Änderungen zurück zur Registerkarte „Einstellungen“ und generieren Sie das Zugriffstoken, indem Sie auf die Schaltfläche „Generieren“ klicken
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
 
 **Denken Sie daran**, dass Sie nach jeder Änderung der Berechtigungen ein neues Token generieren müssen, das alte **wird** nicht automatisch entsprechend den Änderungen der Berechtigungen aktualisiert
 

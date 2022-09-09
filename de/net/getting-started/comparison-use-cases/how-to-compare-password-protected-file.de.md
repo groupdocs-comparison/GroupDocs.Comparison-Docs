@@ -10,7 +10,7 @@ versteckenKinder: Falsch
 ---
 Wenn Sie mit Dokumenten arbeiten, müssen Sie manchmal das Ergebnis eines Dateivergleichs erhalten, in dem eine oder sogar beide Dateien passwortgeschützt sind, und für genau diesen Fall gibt es eine Option zum Vergleichen von Dateien, obwohl sie geschützt sind. Mit dieser Option können Sie geschützte Dateien in jedem Format vergleichen, in dem es möglich ist, ein Passwort für die Datei festzulegen.
 
-![](comparison/net/images/how-to-compare-password-protected-files-1.png)
+![](/comparison/net/images/how-to-compare-password-protected-files-1.png)
 
 Das Codebeispiel zum Vergleichen zweier passwortgeschützter Dateien:
 

@@ -40,19 +40,19 @@ text：比较存储在 Dropbox 帐户中的文档
 1.打开【Dropbox App Console】(https://www.dropbox.com/developers/apps)
 2.点击`Create app`创建新应用
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_1.png)
 
 3. 选择`Scoped access API`
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_2.png)
 
 4.然后选择`App folder`（你可以选择`Full dropbox`让app访问你所有的文件）
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_3.png)
 
 5.最后输入app名称，点击`Create app`
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_4.png)
 
 #### 更新 Dropbox API 设置
 
@@ -66,11 +66,11 @@ text：比较存储在 Dropbox 帐户中的文档
 
 **不要忘记**点击“提交”按钮保存更改
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
 
 2. 保存更改后返回“设置”选项卡并单击“生成”按钮生成访问令牌
 
-   ![](comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_6.png)
 
 **请记住**在任何权限更改后您必须生成新令牌，旧令牌**不会**根据权限更改自动更新
 

@@ -92,7 +92,7 @@ Führen Sie die nächsten Schritte aus, um die Vergleichs-Spring-Anwendung mit e
 
 Öffnen Sie danach einfach den Link [http://localhost:8080/comparison](http://localhost:8080/comparison) in einem beliebigen Webbrowser, um die Vergleichsanwendung anzuzeigen
 
-![](comparison/java/images/how-to-run-spring-comparison-sample-using-docker.png)
+![](/comparison/java/images/how-to-run-spring-comparison-sample-using-docker.png)
 
 Ein paar Details zum Befehl:
 * „my-comparer“ ist ein Name des Docker-Containers, der verwendet werden kann, um den Docker-Container mit der Anwendung zu stoppen. Es kann nach Belieben geändert werden

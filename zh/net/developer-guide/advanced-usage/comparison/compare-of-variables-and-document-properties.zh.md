@@ -68,7 +68,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 比较属性的结果显示在单独的页面 - *属性摘要页面*上。
 
-![](comparison/net/images/properties-summary-page.png)
+![](/comparison/net/images/properties-summary-page.png)
 
 ## 更多资源
 

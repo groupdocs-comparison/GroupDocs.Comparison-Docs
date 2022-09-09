@@ -34,7 +34,7 @@ text: 运行比较过程传递路径，比较结果将被保存在哪里
 
 然后您将进入查看模式。这将打开审阅窗格，该窗格在屏幕右侧显示演示文稿中所有编辑的列表。
 
-![](comparison/java/images/how-to-compare-powerpoint-presentations.png)
+![](/comparison/java/images/how-to-compare-powerpoint-presentations.png)
 
 ## 如何使用 GroupDocs.Comparison 比较两个演示文稿
 

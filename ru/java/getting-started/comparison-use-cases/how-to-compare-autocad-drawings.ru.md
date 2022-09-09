@@ -50,7 +50,7 @@ hideChildren: False
 
 | Исходные/целевые чертежи |
 | --- |
-|![](comparison/java/images/how-to-compare-autocad-drawings.png) |
+|![](/comparison/java/images/how-to-compare-autocad-drawings.png) |
 |![](сравнение/java/изображения/как сравнить-autocad-drawings_1.png)|
 
 Вот шаги для сравнения двух файлов DWG:
@@ -67,7 +67,7 @@ hideChildren: False
 
 | Результат DWG |
 |------------------------------------------------- ------------------|
-| ![](comparison/java/images/how-to-compare-autocad-drawings_2.png) |
+| ![](/comparison/java/images/how-to-compare-autocad-drawings_2.png) |
 
 ## Дополнительные ресурсы
 ### Темы для продвинутого использования

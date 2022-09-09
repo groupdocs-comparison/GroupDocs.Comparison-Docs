@@ -10,7 +10,7 @@ keywords: "如何比较受密码保护的文件、受密码保护的文件、比
 ---
 有时在处理文档时，您可能需要比较其中一个或什至两个文件都受密码保护的文件的结果，在这种情况下，尽管文件受到保护，仍然可以选择比较文件。此选项允许您比较可以为文件设置密码的任何格式的受保护文件。
 
-![](comparison/net/images/how-to-compare-password-protected-files-1.png)
+![](/comparison/net/images/how-to-compare-password-protected-files-1.png)
 
 比较两个受密码保护的文件的代码示例：
 

@@ -83,7 +83,7 @@ hideChildren: False
 
 Допустим, у вас есть два договора в формате DOCX, которые были заключены в разные годы. Если вы используете приведенный выше код для сравнения этих контрактов, вы получите файл DOCX, в котором удаленные элементы отмечены красным, добавлены синим и изменены зеленым, как показано ниже:
 
-![Comparing two contracts](comparison/java/images/how-to-get-diff-of-contracts.png)
+![Comparing two contracts](/comparison/java/images/how-to-get-diff-of-contracts.png)
 
 
 ## Принять или отклонить обнаруженные различия

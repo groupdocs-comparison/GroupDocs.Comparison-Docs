@@ -54,7 +54,7 @@ text: 调用对象的 Compare 方法并放入生成的文件路径参数。
 
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
     
 
 
@@ -66,7 +66,7 @@ text: 调用对象的 Compare 方法并放入生成的文件路径参数。
 * 选择文本文档的两个版本后，单击 **OK**
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
       
 
 
@@ -100,7 +100,7 @@ text: 调用对象的 Compare 方法并放入生成的文件路径参数。
 
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
     
 
 
@@ -142,7 +142,7 @@ text: 调用对象的 Compare 方法并放入生成的文件路径参数。
 | |文件 |
 | --- | --- |
 |源文件-2018年签订的合同| ！ []（比较/网络/图像/如何比较合同草稿和法律文件_3.png）|
-|目标文件-2019年签订的合同|![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
+|目标文件-2019年签订的合同|![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
 
 这是用于比较两个合约的代码。
 
@@ -156,7 +156,7 @@ using (Comparer comparer = new Comparer("source-contract.docx"))
 
 结果，我们得到一个 DOCX 文件，其中删除的元素标记为<font color="red">**red**</font> ，添加的 - 标记为<font color="blue">**blue**</font> ，修改的 - 标记为<font color="green">**green**</font> 。
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
 
 ## 更多资源
 ### 高级用法主题

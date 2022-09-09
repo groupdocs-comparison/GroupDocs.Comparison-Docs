@@ -54,7 +54,7 @@ Als Ergebnis der Erstellung einer Textdatei müssen wir diese mehreren Änderung
 
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents.png)
     
 
 
@@ -66,7 +66,7 @@ Als Ergebnis der Erstellung einer Textdatei müssen wir diese mehreren Änderung
 * Nachdem Sie zwei Versionen eines Textdokuments ausgewählt haben, klicken Sie auf **OK**
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
       
 
 
@@ -100,7 +100,7 @@ Als Ergebnis der Erstellung einer Textdatei müssen wir diese mehreren Änderung
 
 
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
     
 
 
@@ -142,7 +142,7 @@ Angenommen, Sie haben zwei Verträge im DOCX-Format, die in unterschiedlichen Ja
 | | Dateien |
 | --- | --- |
 |Quelldatei - Vertrag 2018 unterzeichnet| ![](vergleich/net/bilder/wie-man-vertragsentwürfe-und-rechtliche-dokumente-vergleicht_3.png) |
-|Zieldatei – Vertrag 2019 unterzeichnet|![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
+|Zieldatei – Vertrag 2019 unterzeichnet|![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_4.png)|
 
 Hier ist der Code, der verwendet wird, um zwei Verträge zu vergleichen.
 
@@ -156,7 +156,7 @@ using (Comparer comparer = new Comparer("source-contract.docx"))
 
 Als Ergebnis erhalten wir eine DOCX-Datei, in der die gelöschten Elemente in <font color="red">**rot**</font> , die hinzugefügten in <font color="blue">**blau**</font> und die geänderten in <font color="green">**grün**</font> markiert sind.
 
-![](comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
+![](/comparison/net/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

@@ -32,16 +32,16 @@ hideChildren: False
 Чтобы сравнить две книги Excel с Office профессиональный плюс 2013, вам необходимо:
 
 * Нажмите **Главная > Сравнить файлы**. Появится диалоговое окно «Сравнить файлы».
-    ![](comparison/java/images/how-to-compare-price-lists.jpg)
+    ![](/comparison/java/images/how-to-compare-price-lists.jpg)
 * Щелкните значок синей папки рядом с полем **Сравнить**, чтобы перейти к местоположению более ранней версии вашей книги.
 
-![](comparison/java/images/how-to-compare-price-lists_1.jpg)
+![](/comparison/java/images/how-to-compare-price-lists_1.jpg)
 
 
 * Щелкните значок зеленой папки рядом с полем **Кому**, чтобы перейти к местоположению книги, которую вы хотите сравнить с более ранней версией, а затем нажмите **ОК**.
 * На левой панели выберите параметры, которые вы хотите видеть в результатах сравнения книг, установив или сняв флажки с таких параметров, как **Формулы**, **Макросы** или **Формат ячеек**. Или просто **Выбрать все**.
 
-![](comparison/java/images/how-to-compare-price-lists_2.png)
+![](/comparison/java/images/how-to-compare-price-lists_2.png)
 * Нажмите **ОК**, чтобы запустить сравнение.
 
 ## Как сравнивать файлы Excel с помощью GroupDocs.Comparison
@@ -54,9 +54,9 @@ Microsoft Office Professional Plus 2013 предлагает сравнение 
 
 | | Файлы |
 |---------------------|------------- -----------------------------------|
-| Прайс-лист на 2018 год | ![](comparison/java/images/how-to-compare-price-lists_3.png) |
-| Прайс-лист на 2019 год | ![](comparison/java/images/how-to-compare-price-lists_4.png) |
-| Прайс-лист на 2020 год | ![](comparison/java/images/how-to-compare-price-lists_5.png) |
+| Прайс-лист на 2018 год | ![](/comparison/java/images/how-to-compare-price-lists_3.png) |
+| Прайс-лист на 2019 год | ![](/comparison/java/images/how-to-compare-price-lists_4.png) |
+| Прайс-лист на 2020 год | ![](/comparison/java/images/how-to-compare-price-lists_5.png) |
 
 Вот код, который используется для сравнения трех прайс-листов.
 
@@ -66,7 +66,7 @@ Microsoft Office Professional Plus 2013 предлагает сравнение 
 
 | Результат Прейскурант |
 |------------------------------------------------- -------------|
-| ![](comparison/java/images/how-to-compare-price-lists_6.png) |
+| ![](/comparison/java/images/how-to-compare-price-lists_6.png) |
 
 ## Дополнительные ресурсы
 ### Темы для продвинутого использования

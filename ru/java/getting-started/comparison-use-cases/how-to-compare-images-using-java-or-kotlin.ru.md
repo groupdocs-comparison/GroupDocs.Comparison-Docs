@@ -27,7 +27,7 @@ hideChildren: False
 ---
 Хотите ли вы создать приложение с функцией обнаружения различий или хотите программно сравнить два изображения в любом из ваших приложений для обработки изображений на основе Java (или Kotlin), вы попали в нужное место. С нашим продуктом вы можете легко сравнивать JPG, PNG, BMP или изображения с некоторыми другими форматами файлов. Не теряя времени, сравним изображения в Java и Kotlin с помощью **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)**
 
-![Idea of comparing images](comparison/java/images/how-to-compare-images.png)
+![Idea of comparing images](/comparison/java/images/how-to-compare-images.png)
 
 ## API сравнения изображений Java
 

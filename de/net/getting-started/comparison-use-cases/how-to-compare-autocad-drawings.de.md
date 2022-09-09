@@ -51,8 +51,8 @@ Trotz der Tatsache, dass die von AutoDesk bereitgestellte Zeichnungsvergleichsfu
 
 | Quell-/Zielzeichnungen |
 | --- |
-|![](comparison/net/images/how-to-compare-autocad-drawings.png) |
-|![](comparison/net/images/how-to-compare-autocad-drawings_1.png)|
+|![](/comparison/net/images/how-to-compare-autocad-drawings.png) |
+|![](/comparison/net/images/how-to-compare-autocad-drawings_1.png)|
 
 Hier sind die Schritte zum Vergleichen von zwei DWG-Dateien:
 
@@ -72,7 +72,7 @@ using (Comparer comparer = new Comparer(@"source.dwg"))
 
 Als Ergebnis erhalten wir eine DWG-Datei, in der die gelöschten Elemente in <font color="red">**rot**</font> , die hinzugefügten in <font color="blue">**blau**</font> und die geänderten in <font color="green">**grün**</font> markiert sind.
 
-![](comparison/net/images/how-to-compare-autocad-drawings_2.png)
+![](/comparison/net/images/how-to-compare-autocad-drawings_2.png)
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

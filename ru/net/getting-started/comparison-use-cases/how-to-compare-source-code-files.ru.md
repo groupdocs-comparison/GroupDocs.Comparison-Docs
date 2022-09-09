@@ -39,7 +39,7 @@ hideChildren: False
 
 Давайте рассмотрим распространенный случай, когда вам нужно просмотреть две версии файла исходного кода C# (CSharp), отредактированного двумя разными людьми, и выбрать правильный вариант для каждого редактируемого блока кода. Пожалуйста, проверьте файлы source.cs и target.cs, которые мы собираемся сравнить, на изображении ниже.
 
-![](comparison/net/images/how-to-compare-source-code-files1.png)
+![](/comparison/net/images/how-to-compare-source-code-files1.png)
 
 Как мы видим, между сравниваемыми файлами есть несколько различий:
 * названия классов разные - *CropImage* vs *ImageCropTests*;
@@ -50,7 +50,7 @@ hideChildren: False
 
 На изображении ниже показаны все упомянутые изменения, обнаруженные некоторыми инструментами сравнения настольных компьютеров. Он работает просто отлично, все различия обнаружены и выделены в пользовательском интерфейсе.
 
-![](comparison/net/images/how-to-compare-source-code-files2.png)
+![](/comparison/net/images/how-to-compare-source-code-files2.png)
 
 Однако иногда вам могут понадобиться некоторые функции, которые не предоставляют существующие инструменты сравнения, или вы хотите реализовать процесс сравнения по-своему. Тогда вам обязательно понадобится возможность программно сравнивать документы и управлять обнаруженными изменениями через код. Здесь на помощь придут функции **[GroupDocs.Comparsion](https://products.groupdocs.com/comparison/net)**, поэтому давайте посмотрим, как сравнивать с ним файлы исходного кода.
 
@@ -106,7 +106,7 @@ using (Comparer comparer = new Comparer("source.cs"))
 
 | Результирующий HTML-файл | Результирующий HTML-файл с использованием свойства ComparisonAction |
 | --- | --- |
-| ![](comparison/net/images/how-to-compare-source-code-files_result1.PNG) | ![](comparison/net/images/how-to-compare-source-code-files_result2.PNG) |
+| ![](/comparison/net/images/how-to-compare-source-code-files_result1.PNG) | ![](/comparison/net/images/how-to-compare-source-code-files_result2.PNG) |
 
 ## Дополнительные ресурсы
 

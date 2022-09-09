@@ -53,7 +53,7 @@ By default, the display of revisions is *enabled*. Below are the steps to turn o
 
 |                            Closed state                             |                            Open state                              |
 |:-------------------------------------------------------------------:|:------------------------------------------------------------------:|
-| ![](comparison/java/images/show-revisions-true-close-revisions.png) | ![](comparison/java/images/show-revisions-true-open-revisions.png) |
+| ![](/comparison/java/images/show-revisions-true-close-revisions.png) | ![](/comparison/java/images/show-revisions-true-open-revisions.png) |
 
 ## Example of a result with the Revision display disabled
 
@@ -61,7 +61,7 @@ By default, the display of revisions is *enabled*. Below are the steps to turn o
 
 |              Disable display Revisions               |
 |:----------------------------------------------------:|
-| ![](comparison/java/images/show-revisions-false.png) |
+| ![](/comparison/java/images/show-revisions-false.png) |
 
 ## More resources
 

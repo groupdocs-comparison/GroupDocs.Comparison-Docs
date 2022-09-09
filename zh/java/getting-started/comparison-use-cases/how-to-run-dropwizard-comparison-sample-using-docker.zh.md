@@ -92,7 +92,7 @@ _注意：命令中的`groupdocs_comparison_dropwizard_sample`只是将要创建
 
 之后，只需在您喜欢的浏览器中打开链接 [http://localhost:8080/comparison](http://localhost:8080/comparison) 即可查看比较应用程序
 
-![](comparison/java/images/how-to-run-dropwizard-comparison-sample-using-docker.png)
+![](/comparison/java/images/how-to-run-dropwizard-comparison-sample-using-docker.png)
 
 关于命令的一些细节：
 * `my-comparer` 是 Docker 容器的名称，您可以使用它来停止应用程序。它可以更改为任何其他名称

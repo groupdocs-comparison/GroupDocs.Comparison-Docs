@@ -37,15 +37,15 @@ text: 运行比较过程传递路径，比较结果将被保存在哪里
 * 首先，打开 Microsoft Word。转到“**评论**”选项卡，在“**比较**”部分中，单击“**比较**”。
 * “**版本比较**”弹出窗口出现在您面前，您现在需要加载两种类型的文档：原始文件和修改后的文件。
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents.png)
 
 * 选择文本文档的两个版本后，单击 **OK**
-    ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+    ![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
 
 
 * 比较结果将在新窗口中打开，如下所示：
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
 
 * 在带有数字“1”的高亮方块中，将出现所有已删除和插入的单词。在右侧，带有数字“2”的区域显示正在比较的文档与文本中的存在以及已删除并在其位置插入的单词。
 编号为“3”的工作区向我们展示了源文档（在进行更改之前），而编号为“4”的空间向我们展示了已更改的文档以及所做的更改。
@@ -74,7 +74,7 @@ text: 运行比较过程传递路径，比较结果将被保存在哪里
 
 结果，我们得到一个 DOCX 文件，其中删除的元素标记为<font color="red">**red**</font> ，添加的 - 标记为<font color="blue">**blue**</font> ，修改的 - 标记为<font color="green">**green**</font> 。
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
 
 ## 更多资源
 ### 高级用法主题

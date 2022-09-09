@@ -61,7 +61,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 The result of compared bookmarks is presented as inserted comments with description in document. See example below on image:
 
-![](comparison/net/images/compared-bookmarks.png)
+![](/comparison/net/images/compared-bookmarks.png)
 
 ## More resources
 

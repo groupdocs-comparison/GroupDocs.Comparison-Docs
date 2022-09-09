@@ -83,7 +83,7 @@ _Последнюю версию библиотеки сравнения мож�
 
 | Предварительный просмотр файла чертежа AutoCad в Kotlin Compose Multiplatform |
 |:------------------------------------------------ -------------------------------------------------- :|
-| ![](comparison/java/images/how-to-show-autocad-drawings-preview-in-kotlin-compose-application.png) |
+| ![](/comparison/java/images/how-to-show-autocad-drawings-preview-in-kotlin-compose-application.png) |
 
 ### Получите бесплатную лицензию API
 

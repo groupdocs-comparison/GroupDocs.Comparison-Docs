@@ -32,16 +32,16 @@ text: 运行比较过程传递路径，比较结果将被保存在哪里
 要将两个 Excel 工作簿与 Office Professional Plus 2013 进行比较，您应该：
 
 * 单击 **主页 > 比较文件**。出现比较文件对话框。
-    ![](comparison/java/images/how-to-compare-price-lists.jpg)
+    ![](/comparison/java/images/how-to-compare-price-lists.jpg)
 * 单击 **Compare** 框旁边的蓝色文件夹图标以浏览到工作簿早期版本的位置。
 
-![](comparison/java/images/how-to-compare-price-lists_1.jpg)
+![](/comparison/java/images/how-to-compare-price-lists_1.jpg)
 
 
 * 单击 **To** 框旁边的绿色文件夹图标以浏览到要与早期版本进行比较的工作簿的位置，然后单击 **OK**。
 * 在左侧窗格中，通过选中或取消选中选项来选择要在工作簿比较结果中看到的选项，例如 **Formulas**、**Macros** 或 **Cell Format**。或者，只需**全选**。
 
-![](comparison/java/images/how-to-compare-price-lists_2.png)
+![](/comparison/java/images/how-to-compare-price-lists_2.png)
 * 单击 **OK** 运行比较。
 
 ## 如何使用 GroupDocs.Comparison 比较 Excel 文件

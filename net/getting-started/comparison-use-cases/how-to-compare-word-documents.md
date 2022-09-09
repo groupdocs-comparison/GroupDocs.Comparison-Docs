@@ -19,9 +19,9 @@ After comparing the two Word files, you will get a resulting document in which t
 
 |  Source / Target / Result Words files |
 | --- | --- |
-|Source |![](comparison/net/images/how-to-compare-word-1.png) | 
-|Target |![](comparison/net/images/how-to-compare-word-2.png)|
-|Result |![](comparison/net/images/how-to-compare-word-3.png)|
+|Source |![](/comparison/net/images/how-to-compare-word-1.png) | 
+|Target |![](/comparison/net/images/how-to-compare-word-2.png)|
+|Result |![](/comparison/net/images/how-to-compare-word-3.png)|
 
 The code sample to compare two Word files:
 

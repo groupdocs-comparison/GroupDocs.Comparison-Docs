@@ -39,9 +39,9 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 |源/目标/结果 Excel 文件 |
 | --- | --- |
-|来源 |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) |
-|目标 |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
-|结果 |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-3.png)|
+|来源 |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) |
+|目标 |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
+|结果 |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-3.png)|
 
 结果，您有一个带有突出显示更改的 Excel 文件，其中删除的元素用字体<font color="red">**red**</font>标记，添加的 - 用<font color="blue">**blue**</font> ，修改的 - 用<font color="yellow">**green**</font> 。
 

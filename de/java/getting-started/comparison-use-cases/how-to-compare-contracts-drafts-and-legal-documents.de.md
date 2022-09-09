@@ -37,15 +37,15 @@ Als Ergebnis der Erstellung einer Textdatei müssen wir diese mehreren Änderung
 * Öffnen Sie zuerst Microsoft Word. Gehen Sie zur Registerkarte „**Bewertung**“, klicken Sie im Abschnitt „**Vergleich**“ auf „**Vergleichen**“.
 * Das Popup-Fenster „**Versionsvergleich**“ erscheint, vor dem Sie jetzt zwei Arten von Dokumenten laden müssen: das Original und das modifizierte.
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents.png)
 
 * Nachdem Sie zwei Versionen eines Textdokuments ausgewählt haben, klicken Sie auf **OK**
-    ![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
+    ![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_1.png)
 
 
 * Die Vergleichsergebnisse werden in einem neuen Fenster geöffnet und sehen etwa so aus:
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_2.png)
 
 * Im hervorgehobenen Quadrat mit der Nummer "1" erscheinen alle gelöschten und eingefügten Wörter. Der Bereich mit der Nummer „2“ rechts zeigt das verglichene Dokument mit dem Vorhandensein im Text und den gelöschten und an ihrer Stelle eingefügten Wörtern.
 Der Arbeitsbereich mit der Nummer „3“ zeigt uns das Quelldokument (vor der Änderung), während der Bereich mit der Nummer „4“ uns das geänderte Dokument mit den vorgenommenen Änderungen zeigt.
@@ -66,7 +66,7 @@ Angenommen, Sie haben zwei Verträge im DOCX-Format, die in unterschiedlichen Ja
 
 | Quelldatei - Vertrag 2018 unterzeichnet | Target File- Vertrag 2019 unterzeichnet |
 |------------------------------------------------------------- --------------------------------------|----------- -------------------------------------------------- --------------------------------------|
-| ![](comparison/java/images/how-to-compare-contracts-designs-and-legal-documents_3.png) | ![](comparison/java/images/how-to-compare-contracts-designs-and-legal-documents_4.png) |
+| ![](/comparison/java/images/how-to-compare-contracts-designs-and-legal-documents_3.png) | ![](/comparison/java/images/how-to-compare-contracts-designs-and-legal-documents_4.png) |
 
 Hier ist der Code, der verwendet wird, um zwei Verträge zu vergleichen.
 
@@ -74,7 +74,7 @@ Hier ist der Code, der verwendet wird, um zwei Verträge zu vergleichen.
 
 Als Ergebnis erhalten wir eine DOCX-Datei, in der die gelöschten Elemente in <font color="red">**rot**</font> , die hinzugefügten in <font color="blue">**blau**</font> und die geänderten in <font color="green">**grün**</font> markiert sind.
 
-![](comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
+![](/comparison/java/images/how-to-compare-contracts-drafts-and-legal-documents_5.png)
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

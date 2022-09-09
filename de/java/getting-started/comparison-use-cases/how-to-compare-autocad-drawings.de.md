@@ -50,8 +50,8 @@ Trotz der Tatsache, dass die von AutoDesk bereitgestellte Zeichnungsvergleichsfu
 
 | Quell-/Zielzeichnungen |
 | --- |
-|![](comparison/java/images/how-to-compare-autocad-drawings.png) |
-|![](comparison/java/images/how-to-compare-autocad-drawings_1.png)|
+|![](/comparison/java/images/how-to-compare-autocad-drawings.png) |
+|![](/comparison/java/images/how-to-compare-autocad-drawings_1.png)|
 
 Hier sind die Schritte zum Vergleichen von zwei DWG-Dateien:
 
@@ -67,7 +67,7 @@ Als Ergebnis erhalten wir eine DWG-Datei, in der die gelöschten Elemente in <fo
 
 | Ergebnis DWG |
 |------------------------------------------------------------- ------------------|
-| ![](comparison/java/images/how-to-compare-autocad-drawings_2.png) |
+| ![](/comparison/java/images/how-to-compare-autocad-drawings_2.png) |
 
 ## Mehr Ressourcen
 ### Erweiterte Nutzungsthemen

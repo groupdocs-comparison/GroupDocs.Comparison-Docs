@@ -33,7 +33,7 @@ text: Вызовите метод Compare вашего объекта и пом�
 Чтобы сравнить две книги Excel с Office профессиональный плюс 2013, вам необходимо:
 
 * Нажмите **Главная > Сравнить файлы**. Появится диалоговое окно «Сравнить файлы».
-![](comparison/net/images/how-to-compare-price-lists.jpg)
+![](/comparison/net/images/how-to-compare-price-lists.jpg)
 * Щелкните значок синей папки рядом с полем **Сравнить**, чтобы перейти к местоположению более ранней версии вашей книги.
       
 
@@ -43,7 +43,7 @@ text: Вызовите метод Compare вашего объекта и пом�
 
 
 
-![](comparison/net/images/how-to-compare-price-lists_1.jpg)
+![](/comparison/net/images/how-to-compare-price-lists_1.jpg)
       
 
 
@@ -66,7 +66,7 @@ text: Вызовите метод Compare вашего объекта и пом�
 
 
 
-![](comparison/net/images/how-to-compare-price-lists_2.png)
+![](/comparison/net/images/how-to-compare-price-lists_2.png)
 * Нажмите **ОК**, чтобы запустить сравнение.
 
 ## Как сравнивать файлы Excel с помощью GroupDocs.Comparison
@@ -91,9 +91,9 @@ Microsoft Office Professional Plus 2013 предлагает сравнение 
 
 | | Файлы |
 | --- | --- |
-| Прайс-лист на 2018 год | ![](comparison/net/images/how-to-compare-price-lists_3.png) |
-| Прайс-лист на 2019 год | ![](comparison/net/images/how-to-compare-price-lists_4.png) |
-| Прайс-лист на 2020 год | ![](comparison/net/images/how-to-compare-price-lists_5.png) |
+| Прайс-лист на 2018 год | ![](/comparison/net/images/how-to-compare-price-lists_3.png) |
+| Прайс-лист на 2019 год | ![](/comparison/net/images/how-to-compare-price-lists_4.png) |
+| Прайс-лист на 2020 год | ![](/comparison/net/images/how-to-compare-price-lists_5.png) |
 
 Вот код, который используется для сравнения трех прайс-листов.
 
@@ -123,7 +123,7 @@ using (Comparer comparer = new Comparer(sourceDocumentPath))
 
 | Результат Прейскурант |
 | --- |
-| ![](comparison/net/images/how-to-compare-price-lists_6.png) |
+| ![](/comparison/net/images/how-to-compare-price-lists_6.png) |
 
 ## Дополнительные ресурсы
 ### Темы для продвинутого использования

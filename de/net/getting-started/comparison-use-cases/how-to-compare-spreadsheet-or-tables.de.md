@@ -39,9 +39,9 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Quell-/Ziel-/Ergebnis-Excel-Dateien |
 | --- | --- |
-|Quelle |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) |
-|Ziel |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
-|Ergebnis |![](comparison/net/images/how-to-compare-spreadsheet-or-tables-3.png)|
+|Quelle |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-1.png) |
+|Ziel |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-2.png)|
+|Ergebnis |![](/comparison/net/images/how-to-compare-spreadsheet-or-tables-3.png)|
 
 Als Ergebnis haben Sie eine Excel-Datei mit hervorgehobenen Änderungen, in der die gelöschten Elemente mit einer Schriftart <font color="red">**rot**</font> , die hinzugefügten – in <font color="blue">**blau**</font> und die geänderten – in <font color="yellow">**grün**</font> gekennzeichnet sind.
 

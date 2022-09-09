@@ -34,7 +34,7 @@ hideChildren: False
 
 | | Файлы |
 | --- | --- |
-|Исходный счет-фактура|![](comparison/net/images/how-to-compare-invoices.png) | |Целевой счет-фактура |![](comparison/net/images/how-to-compare-invoices_1.png)|
+|Исходный счет-фактура|![](/comparison/net/images/how-to-compare-invoices.png) | |Целевой счет-фактура |![](/comparison/net/images/how-to-compare-invoices_1.png)|
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) предоставляет возможность сравнить два файла в формате DOCX (или любых других [поддерживаемых форматах файлов]({{< ref "comparison /net/getting-started/supported-document-formats.md" >}}) с настройкой уровня детализации и [чувствительности к сравнению.]({{< ref "comparison/net/developer-guide/advanced-usage/comparison/ настройка-сравнительная-чувствительность.md" >}})
 

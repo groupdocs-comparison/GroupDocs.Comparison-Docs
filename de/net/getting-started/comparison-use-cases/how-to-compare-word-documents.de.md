@@ -19,9 +19,9 @@ Nach dem Vergleich der beiden Word-Dateien erhalten Sie ein Ergebnisdokument, in
 
 | Quell-/Ziel-/Ergebniswortdateien |
 | --- | --- |
-|Quelle |![](comparison/net/images/how-to-compare-word-1.png) |
-|Ziel |![](comparison/net/images/how-to-compare-word-2.png)|
-|Ergebnis |![](comparison/net/images/how-to-compare-word-3.png)|
+|Quelle |![](/comparison/net/images/how-to-compare-word-1.png) |
+|Ziel |![](/comparison/net/images/how-to-compare-word-2.png)|
+|Ergebnis |![](/comparison/net/images/how-to-compare-word-3.png)|
 
 Das Codebeispiel zum Vergleichen zweier Word-Dateien:
 

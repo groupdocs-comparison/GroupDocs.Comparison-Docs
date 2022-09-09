@@ -55,11 +55,11 @@ Here are examples of source, target and result documents:
 
 | Source DXF (Autodesk Drawing eXchange Format) document                                           | Target DXF (Autodesk Drawing eXchange Format) document                                           |
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-source.png) | ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-target.png) |
+| ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-source.png) | ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-target.png) |
 
 |                    Result PDF document                                                           |
 |:------------------------------------------------------------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-result.png) |
+| ![](/comparison/java/images/how-to-compare-autodesk-drawing-exchange-format-documents-result.png) |
 
 
 ### How to use additional comparison options

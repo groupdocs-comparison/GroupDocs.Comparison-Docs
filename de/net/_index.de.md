@@ -8,7 +8,7 @@ keywords: "vergleichen, Diff, Dateien vergleichen, Diff-Dateien, .net-API, Datei
 Produktname: GroupDocs.Comparison für .NET
 ausblendenKinder: Stimmt
 ---
-<img src="comparison/net/images/home.png" alt="Groupdocs-Vergleich .net-Logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/comparison/net/images/home.png" alt="Groupdocs-Vergleich .net-Logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
 GroupDocs.Comparison ermöglicht es Ihnen, Microsoft Word-, Excel-, PowerPoint-, openDocument-ODT-, PDF-, Text- und HTML-Dokumente zu unterscheiden.
 

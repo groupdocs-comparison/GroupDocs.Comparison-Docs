@@ -61,7 +61,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Geschlossener Zustand | Offener Zustand |
 |:---:|:---:|
-| ![](comparison/net/images/show-revisions-true-close-revisions.png) | ![](comparison/net/images/show-revisions-true-open-revisions.png) |
+| ![](/comparison/net/images/show-revisions-true-close-revisions.png) | ![](/comparison/net/images/show-revisions-true-open-revisions.png) |
 
 ## Beispiel eines Ergebnisses mit deaktivierter Revisionsanzeige
 
@@ -69,7 +69,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 | Anzeigerevisionen deaktivieren |
 |:---:|
-| ![](comparison/net/images/show-revisions-false.png) |
+| ![](/comparison/net/images/show-revisions-false.png) |
 
 ## Mehr Ressourcen
 

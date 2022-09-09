@@ -40,44 +40,44 @@ Um Google API verwenden zu können, müssen Sie über ein Google-Konto verfügen
 1. Öffnen Sie das [Dashboard der Google Cloud-Plattform] (https://console.cloud.google.com/apis/dashboard)
 2. Klicken Sie auf „Projekt auswählen“, um die Projektliste zu öffnen
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_1.png)
 
 3. Um ein Projekt anzulegen, klicken Sie auf „NEUES PROJEKT“.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_2.png)
 
 4. Geben Sie den Projektnamen ein und klicken Sie auf „Erstellen“.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_3.png)
 
 5. Klicken Sie auf „APIs und Dienste aktivieren“, um die Google Drive-API zu aktivieren
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_4.png)
 
 6. Suchen Sie „Google Drive API“, wählen Sie es aus und klicken Sie auf der geöffneten Seite auf „Aktivieren“.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_5.png)
 
 #### Einwilligungsbildschirm erstellen
 
 1. Öffnen Sie die Seite [Credentials](https://console.cloud.google.com/apis/credentials) und prüfen Sie, ob das ausgewählte Projekt korrekt ist
 2. Klicken Sie auf "Create Credentials" und wählen Sie "OAuth-Client-ID".
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. Klicken Sie auf die Schaltfläche „Zustimmungsbildschirm konfigurieren“.
 4. Wählen Sie „Benutzertyp“ und klicken Sie auf „Erstellen“.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_7.png)
 
 5. Füllen Sie „App-Informationen“ aus und klicken Sie auf „Speichern und fortfahren“.
 6. Klicken Sie auf „Bereiche hinzufügen oder entfernen“, um Anmeldebereiche zu konfigurieren.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_8.png)
 
 7. Überprüfen Sie auf dem Bildschirm „Ausgewählte Bereiche aktualisieren“ die erforderlichen Bereiche. Sie können Filter verwenden, um Bereiche zu durchsuchen. Nachdem Sie alle erforderlichen Bereiche ausgewählt haben, klicken Sie auf die Schaltfläche „Aktualisieren“.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_9.png)
 
 8. Klicken Sie auf „Speichern und fortfahren“, um mit dem nächsten Schritt fortzufahren
 9. Fügen Sie Benutzer über die Schaltfläche „Benutzer hinzufügen“ hinzu und klicken Sie auf „Speichern und fortfahren“.
@@ -88,15 +88,15 @@ Um Google API verwenden zu können, müssen Sie über ein Google-Konto verfügen
 1. Öffnen Sie die Seite [Credentials](https://console.cloud.google.com/apis/credentials) und prüfen Sie, ob das ausgewählte Projekt korrekt ist
 2. Klicken Sie auf "Create Credentials" und wählen Sie "OAuth-Client-ID".
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_6.png)
 
 3. Wählen Sie den Anwendungstyp als „Desktop-App“, geben Sie den Namen ein und klicken Sie auf „Erstellen“.
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_10.png)
 
 4. Kopieren und speichern Sie nun Ihre „Client-ID“, „Client-Geheimnis“ und laden Sie natürlich die JSON-Datei herunter und speichern Sie sie, die für den Zugriff auf die Google Drive-API verwendet wird
 
-   ![](comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
+   ![](/comparison/java/images/how-to-use-google-drive-api-as-files-source-for-comparison-api_11.png)
 
 ### Konfigurieren des Projekts zur Verwendung der Google Drive-API mit der Vergleichs-API
 

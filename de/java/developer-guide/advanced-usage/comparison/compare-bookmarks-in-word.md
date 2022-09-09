@@ -51,7 +51,7 @@ The following are the steps to compare bookmarks of documents:
 
 The result of compared bookmarks is presented as inserted comments with description in document. See example below on image:
 
-![](comparison/java/images/compared-bookmarks.png)
+![](/comparison/java/images/compared-bookmarks.png)
 
 ## More resources
 

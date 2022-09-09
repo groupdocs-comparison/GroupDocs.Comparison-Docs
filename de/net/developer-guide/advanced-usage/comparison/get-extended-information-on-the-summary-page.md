@@ -60,7 +60,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 ---
 
-![](comparison/net/images/how-to-get-extended-information-image.png)
+![](/comparison/net/images/how-to-get-extended-information-image.png)
 
 ## More resources
 

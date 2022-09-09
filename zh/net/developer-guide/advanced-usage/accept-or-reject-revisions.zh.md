@@ -90,7 +90,7 @@ using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Doc
 
 |源文件 |结果文件 |
 | --- | --- |
-| ![](comparison/net/images/revision-file.png) | ![](comparison/net/images/result-revision-file.png) |
+| ![](/comparison/net/images/revision-file.png) | ![](/comparison/net/images/result-revision-file.png) |
 
 ## 更多资源
 ### GitHub 示例

@@ -91,7 +91,7 @@ To run Comparison Dropwizard application you should fallow next steps:
    
 After that, just open link [http://localhost:8080/comparison](http://localhost:8080/comparison) in your favourite browser to see Comparison application
 
-![](comparison/java/images/how-to-run-dropwizard-comparison-sample-using-docker.png)
+![](/comparison/java/images/how-to-run-dropwizard-comparison-sample-using-docker.png)
 
 A little details about the command:
 * `my-comparer` is a name of Docker container, that you can use to stop the application. It can be changed to any other name

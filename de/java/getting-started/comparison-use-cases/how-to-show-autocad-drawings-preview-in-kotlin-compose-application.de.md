@@ -83,7 +83,7 @@ Unten sehen Sie den Ergebnisanwendungsbildschirm. Es ist sehr einfach gemacht, u
 
 | Vorschau der AutoCad-Zeichnungsdatei in Kotlin Compose Multiplatform |
 |: ------------------------------------------------ -------------------------------------------------- :|
-| ![](comparison/java/images/how-to-show-autocad-drawings-preview-in-kotlin-compose-application.png) |
+| ![](/comparison/java/images/how-to-show-autocad-drawings-preview-in-kotlin-compose-application.png) |
 
 ### Holen Sie sich eine kostenlose API-Lizenz
 

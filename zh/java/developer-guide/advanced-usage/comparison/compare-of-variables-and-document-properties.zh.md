@@ -56,7 +56,7 @@ CompareOptions 类的以下字段用于启用文档属性的比较功能：
 
 比较属性的结果显示在单独的页面 - *属性摘要页面*上。
 
-![](comparison/java/images/properties-summary-page.png)
+![](/comparison/java/images/properties-summary-page.png)
 
 ## 更多资源
 

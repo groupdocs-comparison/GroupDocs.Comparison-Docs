@@ -66,7 +66,7 @@ Below are the source and output files based on the code presented earlier.
 
 | Source file                                   | Result file                                          |
 |-----------------------------------------------|------------------------------------------------------|
-| ![](comparison/java/images/revision-file.png) | ![](comparison/java/images/result-revision-file.png) |
+| ![](/comparison/java/images/revision-file.png) | ![](/comparison/java/images/result-revision-file.png) |
 
 ## More resources
 ### GitHub Examples

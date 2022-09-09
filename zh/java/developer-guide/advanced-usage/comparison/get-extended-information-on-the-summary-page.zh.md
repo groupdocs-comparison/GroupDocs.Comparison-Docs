@@ -52,7 +52,7 @@ text: 使用 'add' 方法添加一个或多个文档进行比较
 
 ---
 
-![](comparison/java/images/how-to-get-extended-information-image.png)
+![](/comparison/java/images/how-to-get-extended-information-image.png)
 
 ## 更多资源
 

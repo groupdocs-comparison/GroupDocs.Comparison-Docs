@@ -31,7 +31,7 @@ hideChildren: False
 
 | Исходный счет | Целевой счет |
 |------------------------------------------------- ----------------------|-------------------------- ------------------|
-| ![](comparison/java/images/how-to-compare-invoices.png) | ![](comparison/java/images/how-to-compare-invoices_1.png) |
+| ![](/comparison/java/images/how-to-compare-invoices.png) | ![](/comparison/java/images/how-to-compare-invoices_1.png) |
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison) предоставляет возможность сравнить два файла в формате DOCX (или любых других [поддерживаемых форматах файлов]({{< ref "comparison/java /getting-started/supported-document-formats.md" >}})) с настройкой уровня детализации и [чувствительности сравнения](https://docs.groupdocs.com/display/comparisonjava/Set+Comparison+Sensitivity+While +Сравнение+Документов).
 
@@ -52,7 +52,7 @@ hideChildren: False
 
 | Результат Счет |
 |------------------------------------------------- ----------|
-| ![](comparison/java/images/how-to-compare-invoices_2.png) |
+| ![](/comparison/java/images/how-to-compare-invoices_2.png) |
 
 ## Дополнительные ресурсы
 ### Темы для продвинутого использования

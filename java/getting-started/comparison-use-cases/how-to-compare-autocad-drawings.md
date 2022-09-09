@@ -50,8 +50,8 @@ Despite the fact that drawings comparison feature provided by AutoDesk is quite 
 
 |  Source / Target Drawings |
 | --- |
-|![](comparison/java/images/how-to-compare-autocad-drawings.png) |
-|![](comparison/java/images/how-to-compare-autocad-drawings_1.png)|
+|![](/comparison/java/images/how-to-compare-autocad-drawings.png) |
+|![](/comparison/java/images/how-to-compare-autocad-drawings_1.png)|
 
 Here are the steps to compare two DWG files:
 
@@ -67,7 +67,7 @@ As a result, we get a DWG file where the deleted elements are marked in <font c
 
 | Result DWG                                                        |
 |-------------------------------------------------------------------|
-| ![](comparison/java/images/how-to-compare-autocad-drawings_2.png) |
+| ![](/comparison/java/images/how-to-compare-autocad-drawings_2.png) |
 
 ## More resources
 ### Advanced Usage Topics

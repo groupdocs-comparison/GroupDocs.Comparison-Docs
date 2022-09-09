@@ -51,7 +51,7 @@ text: 使用 'add' 方法添加一个或多个文档进行比较
 
 比较书签的结果在文档中显示为插入的注释和描述。请参阅下面的图像示例：
 
-![](comparison/java/images/compared-bookmarks.png)
+![](/comparison/java/images/compared-bookmarks.png)
 
 ## 更多资源
 

@@ -34,7 +34,7 @@ For example, there are two invoices in the DOCX format and you need to compare t
 
 |  | Files  |
 | --- | --- |
-|Source Invoice|![](comparison/net/images/how-to-compare-invoices.png) | |Target Invoice |![](comparison/net/images/how-to-compare-invoices_1.png)|  
+|Source Invoice|![](/comparison/net/images/how-to-compare-invoices.png) | |Target Invoice |![](/comparison/net/images/how-to-compare-invoices_1.png)|  
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides the ability to compare two files in DOCX format (or any other [supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}})  with adjustment of detalization level and [comparison sensitivity.]({{< ref "comparison/net/developer-guide/advanced-usage/comparison/adjusting-comparison-sensitivity.md" >}})
 
@@ -68,7 +68,7 @@ As a result, we get a DOCX file where the deleted elements are marked in <font c
 
 | Result Invoice |
 | --- |
-| ![](comparison/net/images/how-to-compare-invoices_2.png)| 
+| ![](/comparison/net/images/how-to-compare-invoices_2.png)| 
 
 ## More resources
 ### Advanced Usage Topics

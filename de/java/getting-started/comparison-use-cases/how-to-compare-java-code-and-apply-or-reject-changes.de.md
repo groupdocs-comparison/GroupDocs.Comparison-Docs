@@ -127,13 +127,13 @@ Hier sind Screenshots aller generierten Dateien:
 
 | Java-Quellcodedatei | Ziel-Java-Codedatei | Ergebnis HTML-Datei | Ergebnis Html-Datei mit angewendeten Änderungen |
 |------------------------------------------------------------- ---------------------------------------|----- -------------------------------------------------- --------------------------------------|----------- -------------------------------------------------- ---------------------|----------------------- -------------------------------------------------- ---------------------|
-| ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-source.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-target.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-result.png) | ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-applied.png) |
+| ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-source.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-target.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-result.png) | ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-applied.png) |
 
 Auf den Bildern können Sie sehen, dass Änderungen `0` -> `3` und `1` -> `5` abgelehnt wurden, während Änderungen `long` -> `int` und `--` -> `++` waren Gerettet. Die gültige Java-Code-Datei wurde ebenfalls gespeichert. Sie können es unten sehen
 
 | Resultierende Json-Datei |
 |: ------------------------------------------------ ----------------------------------------------:|
-| ![](comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-resultant.png) |
+| ![](/comparison/java/images/how-to-compare-java-code-and-apply-or-reject-changes-resultant.png) |
 
 ### Holen Sie sich eine kostenlose API-Lizenz
 

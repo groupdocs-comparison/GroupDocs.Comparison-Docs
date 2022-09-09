@@ -27,7 +27,7 @@ structuredData:
 ---
 Whether you want to build an application with spot the difference feature or if you want to compare two images programmatically within any of your Java (or Kotlin) based image processing applications, you are at the right place. With our product, you can easily compare JPG, PNG, BMP, or images with some other file formats. Without wasting time, let’s compare images in Java and Kotlin using the **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)**
 
-![Idea of comparing images](comparison/java/images/how-to-compare-images.png)
+![Idea of comparing images](/comparison/java/images/how-to-compare-images.png)
 
 ## Java Image Comparison API
 

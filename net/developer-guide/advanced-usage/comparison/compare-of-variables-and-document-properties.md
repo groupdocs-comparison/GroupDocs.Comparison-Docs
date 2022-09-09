@@ -67,7 +67,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 
 The result of comparing properties is presented on a separate page - *Properties summary page*.
 
-![](comparison/net/images/properties-summary-page.png)
+![](/comparison/net/images/properties-summary-page.png)
 
 ## More resources
 

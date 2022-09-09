@@ -37,7 +37,7 @@ text: 调用对象的 Compare 方法并将生成的文件路径参数和选项�
 
 然后您将进入查看模式。这将打开审阅窗格，该窗格在屏幕右侧显示演示文稿中所有编辑的列表。
 
-![](comparison/net/images/how-to-compare-powerpoint-presentations.png)
+![](/comparison/net/images/how-to-compare-powerpoint-presentations.png)
 
 ## 如何使用 GroupDocs.Comparison 比较两个演示文稿
 

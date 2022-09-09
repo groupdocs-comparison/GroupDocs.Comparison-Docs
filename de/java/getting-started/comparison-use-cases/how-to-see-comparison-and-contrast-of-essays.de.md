@@ -94,11 +94,11 @@ Kotlin-Codebeispiel:
 
 | Quellenaufsatz | Zielaufsatz |
 |------------------------------------------------------------- ------------------------------------|------------- -------------------------------------------------- ----------------------|
-| ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-source.png) | ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-target.png) |
+| ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-source.png) | ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-target.png) |
 
 | Ergebnisdatei |
 |: ------------------------------------------------ -----------------------------------:|
-| ![](comparison/java/images/how-to-see-comparison-and-contrast-of-essays-result.png) |
+| ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-result.png) |
 
 ### Holen Sie sich eine kostenlose API-Lizenz
 
