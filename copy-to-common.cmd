@@ -1,7 +1,11 @@
-call del /S /Q .\common\content\comparison\java\*
-call del /S /Q .\common\content\comparison\net\*
+call del /S /Q .\common\content\comparison\de\*
+call del /S /Q .\common\content\comparison\en\*
+call del /S /Q .\common\content\comparison\ru\*
+call del /S /Q .\common\content\comparison\zh\*
 
-call xcopy /s .\java\ .\common\content\comparison\java\
-call xcopy /s .\net\ .\common\content\comparison\net\
+call xcopy /s .\de\ .\common\content\comparison\de\
+call xcopy /s .\en\ .\common\content\comparison\en\
+call xcopy /s .\ru\ .\common\content\comparison\ru\
+call xcopy /s .\zh\ .\common\content\comparison\zh\
 
 REM PAUSE
