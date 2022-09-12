@@ -48,7 +48,7 @@ Im Folgenden sind die Schritte zum Generieren einer Dokumentvorschau mit der Gro
 
 {{< alert style="info" >}}
 Streams, die vom [createPageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates_CreatePageStream)-Callback erstellt wurden, werden nach der Generierung des Vorschaubilds automatisch verworfen. Wenn Sie eine benutzerdefinierte Bildvorschau-Stream-Entsorgung implementieren müssen, müssen Sie das zusätzliche Argument [ReleasePageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates_ReleasePageStream) übergeben, um Ressourcen zu bereinigen .
-{{< /Alarm >}}
+{{< /alert >}}
 
 * Rufen Sie die Methode [generatePreview](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)) von [Source](https:/ /apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getSource()) und [Targets](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer# getTargets()) Dokument und übergeben Sie [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) daran.
     

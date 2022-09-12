@@ -12,5 +12,5 @@ showOrganization: Stimmt
 ---
 {{< alert style="info" >}}
 In diesem Abschnitt werden einige grundlegende und erweiterte Anwendungsfälle von **[GroupDocs.Comparison for .NET](https://products.groupdocs.com/comparison/net)** beschrieben. Weitere Beispiele und Beispiele finden Sie im [GitHub-Repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET).
-{{< /Alarm >}}
+{{< /alert >}}
 

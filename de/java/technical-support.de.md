@@ -14,7 +14,7 @@ GroupDocs bietet unbegrenzten kostenlosen technischen Support für alle seine Pr
 
 Bitte beachten Sie, dass GroupDocs keinen technischen Support per Telefon bietet. Der telefonische Support ist nur für Verkaufs- und Kauffragen verfügbar.
 
-{{< /Alarm >}}
+{{< /alert >}}
 
 ## Kostenloses GroupDocs-Support-Forum
 
