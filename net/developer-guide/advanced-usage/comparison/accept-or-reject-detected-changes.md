@@ -54,7 +54,7 @@ The following code sample shows how to accept/reject detected changes.
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
     changes[0].ComparisonAction = ComparisonAction.Reject;
@@ -67,7 +67,7 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```csharp
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead("target.docx"));
+    comparer.Add(File.OpenRead("target.docx"));
     comparer.Compare(new SaveOptions(), new CompareOptions());
     ChangeInfo[] changes = comparer.GetChanges(new GetChangeOptions());
     changes[0].ComparisonAction = ComparisonAction.Reject;
@@ -80,7 +80,7 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
     changes[0].ComparisonAction = ComparisonAction.Reject;
