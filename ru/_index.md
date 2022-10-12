@@ -10,7 +10,6 @@ geekdocBreadcrumb: false
 hideChildren: true
 ---
 
-# root _index.md in en folder
+# root _index.md in ru folder
 
-<a href='{{< ref "comparison/_index.md" >}}'>Navigate to /comparison</a>
-
+<a href='{{< ref "comparison/_index.md" >}}'>Перейти на /comparison</a>

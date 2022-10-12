@@ -4,20 +4,11 @@ defaultContentLanguage = "en"
 
 [languages.en]
 languageName = "English"
-contentDir = "content/comparison/en"
+contentDir = "content/en"
 weight = 10
 
-[languages.de]
-languageName = "German"
-contentDir = "content/comparison/de"
-weight = 20
 
 [languages.ru]
 languageName = "Russian"
-contentDir = "content/comparison/ru"
-weight = 30
-
-[languages.zh]
-languageName = "Chenise"
-contentDir = "content/comparison/ru"
-weight = 40
+contentDir = "content/ru"
+weight = 20
