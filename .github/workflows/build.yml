@@ -31,10 +31,9 @@ jobs:
           
       - name: Run and build Hugo
         run: |
-          mkdir -p common/content/${{ env.PRODUCT }}
-          cp -r de common/content/${{ env.PRODUCT }}/de
-          cp -r en common/content/${{ env.PRODUCT }}/en
-          cp -r ru common/content/${{ env.PRODUCT }}/ru
-          cp -r zh common/content/${{ env.PRODUCT }}/zh
+          mkdir -p common/content/en
+          mkdir -p common/content/ru
+          cp -r en common/content/en
+          cp -r ru common/content/ru
           cp multilanguage-config.toml common
           hugo --source common --minify --config config-geekdoc.toml,ignore-total-config.toml,show-feedback-config.toml,multilanguage-config.toml
