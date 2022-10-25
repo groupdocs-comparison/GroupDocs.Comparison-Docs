@@ -20,7 +20,7 @@ Please note that GroupDocs does not provide technical support over the phone. Ph
 
 If you need help with GroupDocs.Comparison, consider the following:
 
-* Make sure you are using the latest GroupDocs.Comparison version before reporting an issue. See [GroupDocs Artifact Repository](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison) to find out about the latest version.
+* Make sure you are using the latest GroupDocs.Comparison version before reporting an issue. See [GroupDocs Artifact Repository](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) to find out about the latest version.
 * Have a look through the forums, this documentation, and the API Reference before reporting an issue – perhaps your question has already been answered.
 * Post your question at [GroupDocs.Comparison Free Support Forum](https://forum.groupdocs.com/c/comparison/12), and we'll assist you. Questions are answered directly by the GroupDocs.Comparison development team.
 * When expecting a reply on the forums, please allow for time zone differences.

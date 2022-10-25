@@ -20,7 +20,7 @@ GroupDocs предоставляет неограниченную бесплат
 
 Если вам нужна помощь с GroupDocs.Comparison, рассмотрите следующее:
 
-* Прежде чем сообщать о проблеме, убедитесь, что вы используете последнюю версию GroupDocs.Comparison. См. [Репозиторий артефактов GroupDocs](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison), чтобы узнать о последней версии.
+* Прежде чем сообщать о проблеме, убедитесь, что вы используете последнюю версию GroupDocs.Comparison. См. [Репозиторий артефактов GroupDocs](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/), чтобы узнать о последней версии.
 * Просмотрите форумы, эту документацию и справочник по API, прежде чем сообщать о проблеме — возможно, на ваш вопрос уже был дан ответ.
 * Разместите свой вопрос на [Форуме бесплатной поддержки GroupDocs.Comparison] (https://forum.groupdocs.com/c/comparison/12), и мы поможем вам. На вопросы отвечает непосредственно команда разработчиков GroupDocs.Comparison.
 * Ожидая ответа на форумах, учитывайте разницу в часовых поясах.

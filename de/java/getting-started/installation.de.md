@@ -44,7 +44,7 @@ text: Vergleichsabhängigkeit hinzufügen, damit das Projekt die erforderlichen 
 
 ## Installation aus dem GroupDocs-Repository mit Maven
 
-GroupDocs hostet alle Java-APIs im [GroupDocs-Repository] (https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo). Sie können die [GroupDocs.Comparison for Java](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison) API einfach direkt in Ihren Maven-Projekten verwenden mit einfachen Konfigurationen.
+GroupDocs hostet alle Java-APIs im [GroupDocs-Repository] (https://releases.groupdocs.com/java/repo/). Sie können die [GroupDocs.Comparison for Java](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) API einfach direkt in Ihren Maven-Projekten verwenden mit einfachen Konfigurationen.
 
 ### GroupDocs-Repository angeben
 

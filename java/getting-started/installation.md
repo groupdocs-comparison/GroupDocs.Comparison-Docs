@@ -44,7 +44,7 @@ structuredData:
 
 ## Installation from GroupDocs Repository using Maven
 
-GroupDocs hosts all Java APIs on [GroupDocs Repository](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo). You can easily use [GroupDocs.Comparison for Java](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison) API directly in your Maven projects with simple configurations.
+GroupDocs hosts all Java APIs on [GroupDocs Repository](https://releases.groupdocs.com/java/repo/). You can easily use [GroupDocs.Comparison for Java](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) API directly in your Maven projects with simple configurations.
 
 ### Specify GroupDocs Repository
 

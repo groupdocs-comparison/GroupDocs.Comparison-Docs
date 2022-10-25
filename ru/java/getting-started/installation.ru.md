@@ -44,7 +44,7 @@ hideChildren: False
 
 ## Установка из репозитория GroupDocs с использованием Maven
 
-GroupDocs размещает все API Java в [репозитории GroupDocs] (https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo). Вы можете легко использовать API [GroupDocs.Comparison for Java](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison) непосредственно в своих проектах Maven. с простыми конфигурациями.
+GroupDocs размещает все API Java в [репозитории GroupDocs] (https://releases.groupdocs.com/java/repo/). Вы можете легко использовать API [GroupDocs.Comparison for Java](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) непосредственно в своих проектах Maven. с простыми конфигурациями.
 
 ### Указать репозиторий GroupDocs
 

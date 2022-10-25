@@ -46,7 +46,7 @@ To add Comparison API to your project, fallow next steps:
 
     <script src="https://gist.github.com/groupdocs-comparison-gists/ad7ad48d4e7f9f60e858c7ba546f3745.js"></script>
 
-3. Go to `dependencies` block and add GroupDocs.Comparison library as dependency (*it is recommended to use [latest version](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison) of the library*)
+3. Go to `dependencies` block and add GroupDocs.Comparison library as dependency (*it is recommended to use [latest version](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) of the library*)
 
     <script src="https://gist.github.com/groupdocs-comparison-gists/b20a9f70c3442ca586a95b00a778a464.js"></script>
 

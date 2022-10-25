@@ -20,7 +20,7 @@ Bitte beachten Sie, dass GroupDocs keinen technischen Support per Telefon bietet
 
 Wenn Sie Hilfe zu GroupDocs.Comparison benötigen, beachten Sie Folgendes:
 
-* Stellen Sie sicher, dass Sie die neueste Version von GroupDocs.Comparison verwenden, bevor Sie ein Problem melden. Siehe [GroupDocs Artifact Repository](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison), um mehr über die neueste Version zu erfahren.
+* Stellen Sie sicher, dass Sie die neueste Version von GroupDocs.Comparison verwenden, bevor Sie ein Problem melden. Siehe [GroupDocs Artifact Repository](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/), um mehr über die neueste Version zu erfahren.
 * Sehen Sie sich die Foren, diese Dokumentation und die API-Referenz an, bevor Sie ein Problem melden – vielleicht wurde Ihre Frage bereits beantwortet.
 * Stellen Sie Ihre Frage im [GroupDocs.Comparison Free Support Forum](https://forum.groupdocs.com/c/comparison/12) und wir helfen Ihnen weiter. Fragen werden direkt vom GroupDocs.Comparison-Entwicklungsteam beantwortet.
 * Wenn Sie eine Antwort in den Foren erwarten, berücksichtigen Sie bitte Zeitzonenunterschiede.

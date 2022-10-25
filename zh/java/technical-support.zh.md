@@ -20,7 +20,7 @@ GroupDocs 为其所有产品提供无限制的免费技术支持。所有用户�
 
 如果您需要有关 GroupDocs.Comparison 的帮助，请考虑以下事项：
 
-* 在报告问题之前，请确保您使用的是最新的 GroupDocs.Comparison 版本。请参阅 [GroupDocs Artifact Repository](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison) 了解最新版本。
+* 在报告问题之前，请确保您使用的是最新的 GroupDocs.Comparison 版本。请参阅 [GroupDocs Artifact Repository](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) 了解最新版本。
 * 在报告问题之前，请查看论坛、本文档和 API 参考——也许您的问题已经得到解答。
 * 在 [GroupDocs.Comparison 免费支持论坛](https://forum.groupdocs.com/c/comparison/12) 上发布您的问题，我们将为您提供帮助。 GroupDocs.Comparison 开发团队直接回答问题。
 * 期待论坛回复时，请注意时区差异。

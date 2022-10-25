@@ -44,7 +44,7 @@ text: 添加比较依赖，以便项目下载需要的库
 
 ## 使用 Maven 从 GroupDocs 存储库安装
 
-GroupDocs 在 [GroupDocs Repository](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo) 上托管所有 Java API。您可以直接在 Maven 项目中轻松使用 [GroupDocs.Comparison for Java](https://repository.groupdocs.com/webapp/#/artifacts/browse/tree/General/repo/com/groupdocs/groupdocs-comparison) API配置简单。
+GroupDocs 在 [GroupDocs Repository](https://releases.groupdocs.com/java/repo/) 上托管所有 Java API。您可以直接在 Maven 项目中轻松使用 [GroupDocs.Comparison for Java](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) API配置简单。
 
 ### 指定 GroupDocs 存储库
 
