@@ -7,28 +7,30 @@ description: "The article describes the way to use Google Drive API as files sou
 keywords: Compare documents, Google Drive API, Compare files from Google Drive, Comparison Tool with Java and Google Drive API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name:  PowerPoint, Image and AutoCad comparer
-        description: The product allows to compare PowerPoint, Image and AutoCad files
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name:  How to use Google Drive API to spot differences of files, images or documents
-        description: Learn how to use Google Drive API to spot differences of files, images or documents in Java or Kotlin project
-        steps:
-        - name: Configuring Google API
-          text: Description of steps required to configure Google API
-        - name: Configuring project to use Google Drive API with Comparison API
-          text: All required configurations to use Google Drive API and Comparison API in the project
-        - name: Creating Google Drive API objects
-          text: Creating Service object to work with Google Drive API
-        - name: Get list of files using Google Drive API
-          text: Connect to Google Drive API and load list of files stored in it
-        - name: Comparing Documents directly from Google Drive
-          text: Compare documents which are stored in Google Drive account
+  showOrganization: True
+  application:
+    name: PowerPoint, Image and AutoCad comparer
+    description: The product allows to compare PowerPoint, Image and AutoCad files
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to use Google Drive API to spot differences of files, images or documents
+    description: Learn how to use Google Drive API to spot differences of files, images or documents in Java or Kotlin project
+    steps:
+      - name: Configuring Google API
+        text: Description of steps required to configure Google API
+      - name: Configuring project to use Google Drive API with Comparison API
+        text: All required configurations to use Google Drive API and Comparison API in the project
+      - name: Creating Google Drive API objects
+        text: Creating Service object to work with Google Drive API
+      - name: Get list of files using Google Drive API
+        text: Connect to Google Drive API and load list of files stored in it
+      - name: Comparing Documents directly from Google Drive
+        text: Compare documents which are stored in Google Drive account
 ---
+
 These days Cloud services are very popular. It means that lots of people use them to store documents, photos and other files. In this situation you may need opportunity to compare files directly from Google Drive, without a need to download and save them locally. You can easily do it combining [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java) together with Google Drive API.
 
 ### Configuring Google API
@@ -153,8 +155,9 @@ After that we must create client secrets object. It is the place, where we will 
 <script src="https://gist.github.com/groupdocs-comparison-gists/139ac242d9a5af46ac70de236cfa9402.js"></script>
 
 Next step is to create authorization flow that will be used for authorization request. A little details about options:
-   * `DriveScopes.DRIVE` - is a scope that was enabled while creating API credentials
-   * `"/Path/To/Directory/To/Save/Tokens"` - The tokens directory is needed to save authorization tokens. You can remove this line, but in this way Google API will ask for authorization each time.
+
+- `DriveScopes.DRIVE` - is a scope that was enabled while creating API credentials
+- `"/Path/To/Directory/To/Save/Tokens"` - The tokens directory is needed to save authorization tokens. You can remove this line, but in this way Google API will ask for authorization each time.
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/a4ee3fdba7423db24797967851f16b56.js"></script>
 
@@ -202,7 +205,7 @@ Below you can see the code that will compare documents directly from Google Driv
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/d067df3bf323e06d468952af2b7b335b.js"></script>
 
-In output console you will see ID, name and size of uploaded document. 
+In output console you will see ID, name and size of uploaded document.
 
 ### Get a Free API License
 
@@ -216,9 +219,9 @@ For more details, options, and examples, you can go through [the documentation](
 
 ### See also
 
-* How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [use Dropbox API as files source](/comparison/java/how-to-use-dropbox-api-as-files-source-for-comparison-api) for comparing documents in Java or Kotlin
+- How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
+- How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [use Dropbox API as files source](/comparison/java/how-to-use-dropbox-api-as-files-source-for-comparison-api) for comparing documents in Java or Kotlin

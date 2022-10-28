@@ -7,5 +7,7 @@ description: "In this manual, you will learn about the installation, basic featu
 keywords: Getting started, Basic features, Licensing, System requirements
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+isMenuItemWithNoContent: True
 ---
+
 In this manual, you will learn about the installation, basic features, licensing, system requirements, supported platforms of GroupDocs.Comparison for Java

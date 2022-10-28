@@ -7,23 +7,25 @@ description: "The article describes usage of GroupDocs.Comparison to see compari
 keywords: comparison and contrast, Compare essays, Compare PDF with Kotlin and Java, Comparison Tool for essays
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Essay comparison API
-        description: The product allows to compare Pdf, Word and Image files
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to see comparison and contrast of essays in Java or Kotlin application
-        description: You can easily see comparison and contrast of essays in your own Java or Kotlin application writing just a few lines of code
-        steps:
-        - name: Configuring comparison library in the project
-          text: To configure comparison library just add maven repository and dependency to the project
-        - name: Run comparison process to see comparison and contrast of essays in the result document
-          text: Below is a description and code example of comparing essays
+  showOrganization: True
+  application:
+    name: Essay comparison API
+    description: The product allows to compare Pdf, Word and Image files
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to see comparison and contrast of essays in Java or Kotlin application
+    description: You can easily see comparison and contrast of essays in your own Java or Kotlin application writing just a few lines of code
+    steps:
+      - name: Configuring comparison library in the project
+        text: To configure comparison library just add maven repository and dependency to the project
+      - name: Run comparison process to see comparison and contrast of essays in the result document
+        text: Below is a description and code example of comparing essays
 ---
-A lot of students write essay every day. Sometimes it is very easy, especially when the topic of the essay is interesting and understandable. But sometimes students spend lots of time just to understand what the essay must be about. It may takes few days to investigate all materials and to write plan that will be used  for writing. Some information can duplicates in different sources. In the same time, nobody wants to write the same information to the essay more than once. The best way to avoid duplications is to compare information from different sources and to check whether it duplicates or not. To see comparison and contrast of different information sources or even few essays you can use powerful and easy-to-use [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) that gives opportunity to compare Word, Excel, PowerPoint, Pdf documents, text files and much more [files formats](/comparison/java/supported-document-formats/). There is free online application for comparison and few samples that can be run on local PC. Links to them are below.
+
+A lot of students write essay every day. Sometimes it is very easy, especially when the topic of the essay is interesting and understandable. But sometimes students spend lots of time just to understand what the essay must be about. It may takes few days to investigate all materials and to write plan that will be used for writing. Some information can duplicates in different sources. In the same time, nobody wants to write the same information to the essay more than once. The best way to avoid duplications is to compare information from different sources and to check whether it duplicates or not. To see comparison and contrast of different information sources or even few essays you can use powerful and easy-to-use [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) that gives opportunity to compare Word, Excel, PowerPoint, Pdf documents, text files and much more [files formats](/comparison/java/supported-document-formats/). There is free online application for comparison and few samples that can be run on local PC. Links to them are below.
 
 ### How to see comparison and contrast of essays in Java or Kotlin application
 
@@ -79,10 +81,10 @@ It is very easy to use [GroupDocs.Comparison](https://products.groupdocs.com/com
 
 Here are the steps to compare two essays as PDF files:
 
-* Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object passing source essay path or stream as an argument
-* Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method and specify target essay path or stream
-* Optionally, you can use [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) and its method [setDetectStyleChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setDetectStyleChanges-boolean-) to configure comparer to highlight style changes (by default changes are shown in green)
-* Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)) method to run the comparison of essays.
+- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object passing source essay path or stream as an argument
+- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target essay path or stream
+- Optionally, you can use [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) and its method [setDetectStyleChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setDetectStyleChanges-boolean-) to configure comparer to highlight style changes (by default changes are shown in green)
+- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to run the comparison of essays.
 
 Java code sample:
 
@@ -92,12 +94,12 @@ Kotlin code sample:
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/fabd50201a84e3325f88db48b7668f8d.js"></script>
 
-| Source essay                                                                        | Target essay                                                                         |
-|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Source essay                                                                         | Target essay                                                                         |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ |
 | ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-source.png) | ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-target.png) |
 
-|                                     Result file                                     |
-|:-----------------------------------------------------------------------------------:|
+|                                     Result file                                      |
+| :----------------------------------------------------------------------------------: |
 | ![](/comparison/java/images/how-to-see-comparison-and-contrast-of-essays-result.png) |
 
 ### Get a Free API License
@@ -105,6 +107,7 @@ Kotlin code sample:
 There are much more options available, for example, [generating summary page](/comparison/java/get-only-summary-page/), [sensitivity of comparison](/comparison/java/adjusting-comparison-sensitivity/) and so on. Lots of them are available only when license is set. You can get a [free temporary license](https://purchase.groupdocs.com/temporary-license) to use the API without evaluation limitations.
 
 ### Free Online App
+
 Along with full-featured Java/Kotlin library we provide simple, but powerful free Apps.  
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSG and other documents with free to use online [GroupDocs Comparison Application](https://products.groupdocs.app/comparison).
 
@@ -116,8 +119,8 @@ For getting details, options, and examples, you can go through [the documentatio
 
 ### See also
 
-* How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [use Javalin Framework](/comparison/java/how-to-use-javalin-comparison-sample) with Comparison API
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
+- How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [use Javalin Framework](/comparison/java/how-to-use-javalin-comparison-sample) with Comparison API
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin

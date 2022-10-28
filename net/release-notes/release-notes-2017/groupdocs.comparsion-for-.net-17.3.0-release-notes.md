@@ -4,33 +4,35 @@ url: comparison/net/groupdocs-comparsion-for-net-17-3-0-release-notes
 title: GroupDocs.Comparsion for .NET 17.3.0 Release Notes
 weight: 9
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparsion for .NET 17.3.0{{< /alert >}}
 
 ## Major Features
 
 There are 3 new features and 4 improvements and 1 fix in this regular monthly release. The most notable are:
 
-*   Add ability of comparing DICOM documents by Comparison.Imaging
-*   Simplified and improved public API across all supported formats
-*   Introduced the process absorbing of tables with merged cells for GroupDocs.Comparison.PDF
-*   Fixed comparing filled tables for GroupDocs.Comparison.PDF
+- Add ability of comparing DICOM documents by Comparison.Imaging
+- Simplified and improved public API across all supported formats
+- Introduced the process absorbing of tables with merged cells for GroupDocs.Comparison.PDF
+- Fixed comparing filled tables for GroupDocs.Comparison.PDF
 
 ## Full List of Issues Covering all Changes in this Release
 
-| Key | Summary | Category |
-| --- | --- | --- |
-| COMPARISONNET-1156 | Add ability of comparing DICOM documents by Comparison.Imaging | New Feature |
-| COMPARISONNET-1163 | Apply/Discard changes for DICOM format | New Feature |
-| OMPARISONNET-1165 | Add summary page to images streams | New Feature |
-| COMPARISONNET-778 | Implement the process absorbing of tables with merged cells | Improvement |
-| COMPARISONNET-1148 | Improved public API | Improvement |
-| COMPARISONNET-1161 | Add ability for comparison of result and original files in Imaging.Tests | Improvement |
+| Key                | Summary                                                                                             | Category    |
+| ------------------ | --------------------------------------------------------------------------------------------------- | ----------- |
+| COMPARISONNET-1156 | Add ability of comparing DICOM documents by Comparison.Imaging                                      | New Feature |
+| COMPARISONNET-1163 | Apply/Discard changes for DICOM format                                                              | New Feature |
+| OMPARISONNET-1165  | Add summary page to images streams                                                                  | New Feature |
+| COMPARISONNET-778  | Implement the process absorbing of tables with merged cells                                         | Improvement |
+| COMPARISONNET-1148 | Improved public API                                                                                 | Improvement |
+| COMPARISONNET-1161 | Add ability for comparison of result and original files in Imaging.Tests                            | Improvement |
 | COMPARISONNET-1157 | Add localize exceptions for wrong passwords while opening documents in Cells, Words, Slides and PDF | Improvement |
-| COMPARISONNET-1160 | PDF Comparison - PDF files with tables and footer lines generating unexpected output | Bug |
+| COMPARISONNET-1160 | PDF Comparison - PDF files with tables and footer lines generating unexpected output                | Bug         |
 
 ## Public API and Backward Incompatible Changes
 

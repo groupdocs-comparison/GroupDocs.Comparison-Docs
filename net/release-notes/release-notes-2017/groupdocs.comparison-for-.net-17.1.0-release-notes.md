@@ -4,39 +4,41 @@ url: comparison/net/groupdocs-comparison-for-net-17-1-0-release-notes
 title: GroupDocs.Comparison For .NET 17.1.0 Release Notes
 weight: 11
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparsion for .NET 17.1.0{{< /alert >}}
 
 ## Major Features
 
 There are 7 new features and 7 improvements and fixes in this regular monthly release. The most notable are:
 
-*   Introduced support of support for Apply/Discard changes in Comparison.Cells
-*   Introduced support of support for Apply/Discard changes in Comparison.PDF
-*   Introduced support of support for Watermarks, Hyperlinks, Comments, Text Box, Shapes in Comparison.Cells
-*   Improved GroupDocs.Comparison.PDF comparison efficiency 
+- Introduced support of support for Apply/Discard changes in Comparison.Cells
+- Introduced support of support for Apply/Discard changes in Comparison.PDF
+- Introduced support of support for Watermarks, Hyperlinks, Comments, Text Box, Shapes in Comparison.Cells
+- Improved GroupDocs.Comparison.PDF comparison efficiency
 
 ## Full List of Issues Covering all Changes in this Release
 
-| Key | Summary | Category |
-| --- | --- | --- |
-| COMPARISONNET-1053 | GroupDocs.Comparison.PDF: Add support for Apply/Discard changes | New Feature |
-| COMPARISONNET-975 | GroupDocs.Comparison.PDF: Add support for Watermarks | New Feature |
-| COMPARISONNET-1065 | GroupDocs.Comparison.Cells: Add support for Hyperlinks | New Feature |
-| COMPARISONNET-1069 | GroupDocs.Comparison.Cells: Add support for Comments | New Feature |
-| COMPARISONNET-1072 | GroupDocs.Comparison.Cells: Add support for Text Box | New Feature |
-| COMPARISONNET-1063 | GroupDocs.Comparison.Cells: Add support of Apply/Discard changes | New Feature |
-| COMPARISONNET-1073 | GroupDocs.Comparison.Cells: Add support for Shapes | New Feature |
-| COMPARISONNET-1075 | GroupDocs.Comparison.Cells: Add borders for deleted and inserted cells and Range of cells | Improvement |
-| COMPARISONNET-679 | Fix problem when moving modified table into new page and not deleting previous version of added table | Improvement |
-| COMPARISONNET-1055 | Improve Trim paragraphs by pages after some change in absorbing paragraphs | Improvement |
-| COMPARISONNET-1080 | GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs | Improvement |
+| Key                | Summary                                                                                                                                      | Category    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| COMPARISONNET-1053 | GroupDocs.Comparison.PDF: Add support for Apply/Discard changes                                                                              | New Feature |
+| COMPARISONNET-975  | GroupDocs.Comparison.PDF: Add support for Watermarks                                                                                         | New Feature |
+| COMPARISONNET-1065 | GroupDocs.Comparison.Cells: Add support for Hyperlinks                                                                                       | New Feature |
+| COMPARISONNET-1069 | GroupDocs.Comparison.Cells: Add support for Comments                                                                                         | New Feature |
+| COMPARISONNET-1072 | GroupDocs.Comparison.Cells: Add support for Text Box                                                                                         | New Feature |
+| COMPARISONNET-1063 | GroupDocs.Comparison.Cells: Add support of Apply/Discard changes                                                                             | New Feature |
+| COMPARISONNET-1073 | GroupDocs.Comparison.Cells: Add support for Shapes                                                                                           | New Feature |
+| COMPARISONNET-1075 | GroupDocs.Comparison.Cells: Add borders for deleted and inserted cells and Range of cells                                                    | Improvement |
+| COMPARISONNET-679  | Fix problem when moving modified table into new page and not deleting previous version of added table                                        | Improvement |
+| COMPARISONNET-1055 | Improve Trim paragraphs by pages after some change in absorbing paragraphs                                                                   | Improvement |
+| COMPARISONNET-1080 | GroupDocs.Comparison.PDF: Improve comparison changes detection for Paragraphs                                                                | Improvement |
 | COMPARISONNET-1056 | Improve GroupDocs.Comparison.PDF comparison quality for images in header, footer, setting coordinates for components and paragraphs by pages | Improvement |
-| COMPARISONNET-1074 | GroupDocs.Comparison: PDF: Set type change for paragraph runs after page break | Bug |
-| COMPARISONNET-1077 | Comparison.Cells: Fix cells appearance after critical update for Aligner comparer and Document builder | Bug |
+| COMPARISONNET-1074 | GroupDocs.Comparison: PDF: Set type change for paragraph runs after page break                                                               | Bug         |
+| COMPARISONNET-1077 | Comparison.Cells: Fix cells appearance after critical update for Aligner comparer and Document builder                                       | Bug         |
 
 ## Public API and Backward Incompatible Changes
 
@@ -45,8 +47,6 @@ There are 7 new features and 7 improvements and fixes in this regular monthly re
 #### Compare Spreadsheet file formats with Settings
 
 Update way to use Comparison Settings for Spreadsheet file formats
-
-
 
 ```csharp
 // Enter presentations paths
@@ -73,8 +73,6 @@ Stream result = comparison.Compare(sourceStream, targetStream, settings);
 
 Update way to use Comparison Settings for Words file formats
 
-
-
 ```csharp
 // Enter Words document paths
 string sourcePath = "./source.odt";
@@ -97,8 +95,6 @@ Stream result = comparison.Compare(sourceStream, targetStream, settings);
 
 #### Comparison example for Open Documents file formats
 
-
-
 ```csharp
 // Enter presentations paths
 string sourcePath = "./source.otp";
@@ -118,16 +114,14 @@ Stream result = comparison.Compare(sourceStream, targetStream, settings);
 
 #### COMPARISONNET-1080 Compare two paragraphs with method CompareWith.
 
-
-
 ```csharp
 // Creating Paragraphs
 ComparisonParagraphBase sourceParagraph = new ComparisonParagraph();
 sourceParagraph.Text = "This is source Paragraph.";
- 
+
 ComparisonParagraphBase targetParagraph = new ComparisonParagraph();
 targetParagraph.Text = "This is target Paragraph.";
- 
+
 // Creating settings for comparison of Paragraphs
 SlidesComparisonSettings settings = new SlidesComparisonSettings();
 // Comparing Paragraphs
@@ -138,8 +132,6 @@ ISlidesCompareResult compareResult = sourceParagraph.CompareWith(targetParagraph
 
 #### Save presentation to image via image folder
 
-
-
 ```csharp
 /using GroupDocs.Comparison.Slides;
 using GroupDocs.Comparison.Slides.Contracts;
@@ -149,16 +141,16 @@ using GroupDocs.Comparison.Common.Images;
 
 //path to file
 string filePath = "./presentation.pptx";
-  
+
 //path to image folder
 string imageFolderPath = "./FolderForImage/";
-  
+
 //Open  document
 ComparisonPresentationBase presentation = new ComparisonPresentationBase(filePath);
-  
+
 //Set settings
 var settings = new ComparsionSlidesImageSettings();
-  
+
 //Save as Image
 presentation.SaveAsImages(imageFolderPath, settings);
 

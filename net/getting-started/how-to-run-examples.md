@@ -7,18 +7,19 @@ description: "In this article you can find how to run examples. We offer multipl
 keywords: How to run comparison, basic usage, How to run examples
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 structuredData:
   showOrganization: True
-  application:    
-      name: Document Comparison   
-      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
-      productCode: comparison
-      productPlatform: net
+  application:
+    name: Document Comparison
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
   showVideo: True
   howTo:
-      name: How to Run Examples in .NET 
-      description: How to Run Examples in .NET step by step
-      steps:
+    name: How to Run Examples in .NET
+    description: How to Run Examples in .NET step by step
+    steps:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
@@ -26,32 +27,34 @@ structuredData:
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter.
 ---
+
 {{< alert style="warning" >}}Before running an example make sure that GroupDocs.Comparison has been installed successfully.{{< /alert >}}
 
 We offer multiple solutions on how you can run **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** examples, by building your own or using our back-end or front-end examples out-of-the-box.
 
 Please choose one from the following list:
 
-
 ## Build project from scratch
 
-*   Open Visual Studio and go to **File** -> **New** -> **Project**.
-*   Select appropriate project type - Console App, ASP.NET Web Application etc.
-*   Install **GroupDocs.Comparison for .NET** from Nuget or official GroupDocs website following this [guide]({{< ref "comparison/net/getting-started/installation.md" >}}).
-*   Code your first application with **GroupDocs.Comparison for .NET** like this
-    ```csharp
-    string sourceDocumentPath = @"C:\source.docx"; // NOTE: Put here actual path to source document
-    string targetDocumentPath = @"C:\target.docx"; // NOTE: Put here actual path to source document
-    string outputPath = @"C:\result.docx"; // NOTE: Put here actual path to source document
-    
-    using (Comparer comparer = new Comparer(sourceDocumentPath))
-    {
-    	comparer.Add(targetDocumentPath);
-        comparer.Compare(outputPath);
-    }
-    ```
-*   Build and Run your project.
-*   Rendered document pages will at path specified in *"outputPath"* parameter.
+- Open Visual Studio and go to **File** -> **New** -> **Project**.
+- Select appropriate project type - Console App, ASP.NET Web Application etc.
+- Install **GroupDocs.Comparison for .NET** from Nuget or official GroupDocs website following this [guide]({{< ref "comparison/net/getting-started/installation.md" >}}).
+- Code your first application with **GroupDocs.Comparison for .NET** like this
+
+  ```csharp
+  string sourceDocumentPath = @"C:\source.docx"; // NOTE: Put here actual path to source document
+  string targetDocumentPath = @"C:\target.docx"; // NOTE: Put here actual path to source document
+  string outputPath = @"C:\result.docx"; // NOTE: Put here actual path to source document
+
+  using (Comparer comparer = new Comparer(sourceDocumentPath))
+  {
+  	comparer.Add(targetDocumentPath);
+      comparer.Compare(outputPath);
+  }
+  ```
+
+- Build and Run your project.
+- Rendered document pages will at path specified in _"outputPath"_ parameter.
 
 ## Run back-end examples
 
@@ -70,24 +73,25 @@ Un-comment the function you want to run and comment the rest.
 
 You can run [GroupDocs.Comparison for .NET MVC Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC) following these steps:
 
-*   Download [source code](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository
-    ```csharp
-    git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC
-    ```
-*   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
-*   Open [http://localhost:8080/comparison](http://localhost:8080/comparison) in your favorite browser
+- Download [source code](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository
+  ```csharp
+  git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC
+  ```
+- Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
+- Open [http://localhost:8080/comparison](http://localhost:8080/comparison) in your favorite browser
 
 For more details about project configuration please refer to this [guide](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC#configuration).
 
 ## Run WebForms examples
 
 You can run [GroupDocs.Comparison for .NET Web.Forms Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms) following these steps:
-*   Download [source code](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository
-    ```csharp
-    git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms
-    ```
-*   Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
-*   Open [http://localhost:8080/comparison](http://localhost:8080/comparison) in your favorite browser
+
+- Download [source code](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms/archive/master.zip) from GitHub or clone this repository
+  ```csharp
+  git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms
+  ```
+- Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
+- Open [http://localhost:8080/comparison](http://localhost:8080/comparison) in your favorite browser
 
 For more details about project configuration please refer to this [guide](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms#configuration).
 

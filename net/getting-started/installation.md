@@ -4,10 +4,12 @@ url: comparison/net/installation
 title: Installation
 weight: 4
 description: "On this page you will find system requirements supported platforms, development environments. GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed."
-keywords: Install from Nuget, How to install GroupDocs.Comparison, Install from website 
+keywords: Install from Nuget, How to install GroupDocs.Comparison, Install from website
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 ---
+
 ## Install from Nuget
 
 NuGet is the easiest way to download and install **[GroupDocs.Comparison for .NET](https://products.groupdocs.com/comparison/net)**. There are ways to install it in your project.
@@ -16,11 +18,10 @@ NuGet is the easiest way to download and install **[GroupDocs.Comparison for .NE
 
 Follow these steps to reference GroupDocs.Comparison using Package Manager GUI:
 
-*   Open your solution/project in Visual Studio.
-*   Click **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**. You can also access the same option through the Solution Explorer. Right-click the solution or project and select Manage NuGet Packages from the context menu.
-*   Select Browse tab and type **"GroupDocs.Comparison"** in the search text box.
-*   Click the **Install** button to install the latest version of the API into your project as shown in the following screenshot.
-    
+- Open your solution/project in Visual Studio.
+- Click **Tools** -> **NuGet Package Manager** -> **Manage NuGet Packages for Solution**. You can also access the same option through the Solution Explorer. Right-click the solution or project and select Manage NuGet Packages from the context menu.
+- Select Browse tab and type **"GroupDocs.Comparison"** in the search text box.
+- Click the **Install** button to install the latest version of the API into your project as shown in the following screenshot.
 
 ![](/comparison/net/images/installation.png)
 
@@ -28,11 +29,10 @@ Follow these steps to reference GroupDocs.Comparison using Package Manager GUI:
 
 You can follow the steps below to reference GroupDocs.Comparison for .NET using the Package Manager Console:
 
-*   Open your solution/project in Visual Studio.
-*   Select **Tools** -> **NuGet Package Manager** -> **Package Manager Console** from the menu to open package manager console.
-*   Type the command **"Install-Package GroupDocs.Comparison"** and press enter to install the latest release into your application.
-*   After successful installation, GroupDocs.Comparison will be referenced in your application.  
-    
+- Open your solution/project in Visual Studio.
+- Select **Tools** -> **NuGet Package Manager** -> **Package Manager Console** from the menu to open package manager console.
+- Type the command **"Install-Package GroupDocs.Comparison"** and press enter to install the latest release into your application.
+- After successful installation, GroupDocs.Comparison will be referenced in your application.
 
 ![](/comparison/net/images/installation_1.png)
 

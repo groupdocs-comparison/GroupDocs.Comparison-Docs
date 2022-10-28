@@ -4,10 +4,12 @@ url: comparison/net/groupdocs-comparison-for-net-19-10-release-notes
 title: GroupDocs.Comparison for .NET 19.10 Release Notes
 weight: 3
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 19.10{{< /alert >}}
 
 ## Major Features
@@ -18,9 +20,9 @@ Starting from 19.10 release, GroupDocs.Comparison for .NET includes .NET Stand
 
 ## Full List of Issues Covering all Changes in this Release
 
-| Key | Summary | Issue Type |
-| --- | --- | --- |
-| COMPARISONNET-2019 | Add .NET Standard 2.0 support | Feature |
+| Key                | Summary                       | Issue Type |
+| ------------------ | ----------------------------- | ---------- |
+| COMPARISONNET-2019 | Add .NET Standard 2.0 support | Feature    |
 
 ## Public API and Backward Incompatible Changes
 

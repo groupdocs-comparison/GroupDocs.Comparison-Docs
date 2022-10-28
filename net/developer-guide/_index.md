@@ -7,9 +7,11 @@ description: "Explains GroupDocs.Comparison for .NET document comparer features 
 keywords: GroupDocs.Comparison Developer Guide, GroupDocs.Comparison .NET Developer Guide, GroupDocs.Comparison Developer Guide C#, Using GroupDocs.Comparison for .NET, GroupDocs.Comparison for .NET use cases
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+isMenuItemWithNoContent: True
 structuredData:
   showOrganization: True
 ---
+
 {{< alert style="info" >}}
 This section describes some basic and advanced use cases of **[GroupDocs.Comparison for .NET](https://products.groupdocs.com/comparison/net)**. Please refer to [GitHub repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET) for more examples and samples.
 {{< /alert >}}

@@ -7,28 +7,30 @@ description: "The article describes the way to use Dropbox API as files source f
 keywords: Compare documents, Dropbox API, Compare files from Dropbox, Comparison Tool with Java and Dropbox API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Pdf, Excel and Word comparer
-        description: The product allows to compare Pdf, Excel and Word documents using DropBox API
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to use DropBox API to spot differences of documents
-        description: Learn how to use DropBox API to spot differences of documents in Java or Kotlin project
-        steps:
-        - name: Configuring Dropbox API
-          text: Description of steps required to configure Dropbox API
-        - name: Configuring project to use Dropbox API with Comparison API
-          text: All required configurations to use Dropbox API and Comparison API in the project
-        - name: Creating Dropbox API objects
-          text: Create Client object to work with Dropbox API
-        - name: Get list of files using Dropbox API
-          text: Connect to Dropbox API and load list of files stored in it
-        - name: Comparing documents directly from Dropbox
-          text: Compare documents which are stored in Dropbox account
+  showOrganization: True
+  application:
+    name: Pdf, Excel and Word comparer
+    description: The product allows to compare Pdf, Excel and Word documents using DropBox API
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to use DropBox API to spot differences of documents
+    description: Learn how to use DropBox API to spot differences of documents in Java or Kotlin project
+    steps:
+      - name: Configuring Dropbox API
+        text: Description of steps required to configure Dropbox API
+      - name: Configuring project to use Dropbox API with Comparison API
+        text: All required configurations to use Dropbox API and Comparison API in the project
+      - name: Creating Dropbox API objects
+        text: Create Client object to work with Dropbox API
+      - name: Get list of files using Dropbox API
+        text: Connect to Dropbox API and load list of files stored in it
+      - name: Comparing documents directly from Dropbox
+        text: Compare documents which are stored in Dropbox account
 ---
+
 Nowadays Cloud services are highly popular. Therefore, lots of people use them as a storage for photos, images, documents and other files. This way, you may need opportunity to compare documents directly from Dropbox, without downloading and saving them locally. You can do it easily using [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) together with Dropbox API.
 
 ### Configuring Dropbox API
@@ -62,7 +64,7 @@ Preparing to using Dropbox API you must have Dropbox account. It is very easy to
    2. files.metadata.read
    3. files.content.write
    4. files.content.read
-   
+
    **Do not forget** to click `Submit` button to save changes
 
    ![](/comparison/java/images/how-to-use-dropbox-api-as-files-source-for-comparison-api_5.png)
@@ -73,7 +75,7 @@ Preparing to using Dropbox API you must have Dropbox account. It is very easy to
 
    **Keep in mind** that after any changes of permissions you must generate new token, old one **will not** automatically updated according to permissions changes
 
-4. That's actually all. The token is the only thing that you need to access your Dropbox files. Save the token somewhere, we will use it later.
+3. That's actually all. The token is the only thing that you need to access your Dropbox files. Save the token somewhere, we will use it later.
 
 ### Configuring project to use Dropbox API with Comparison API
 
@@ -122,8 +124,9 @@ Actually, it is very easy to start working with Dropbox API
 <script src="https://gist.github.com/groupdocs-comparison-gists/71e514fc974faa424f41cc1626501a88.js"></script>
 
 Where:
-   1. `mycompany/best-comparison-app` - is just identifier that you will see in logs of Dropbox website
-   2. `YOUR ACCESS TOKEN` - here should be access token, that was generated previously
+
+1.  `mycompany/best-comparison-app` - is just identifier that you will see in logs of Dropbox website
+2.  `YOUR ACCESS TOKEN` - here should be access token, that was generated previously
 
 ### Get list of files using Dropbox API
 
@@ -158,7 +161,7 @@ Below you can see, how to compare documents directly from Dropbox with uploading
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/8c95ba602a127dee49d98bb0f756f987.js"></script>
 
-In output console you will see path of the uploaded document. 
+In output console you will see path of the uploaded document.
 
 ### Get a Free API License
 
@@ -172,9 +175,9 @@ For more details, options, and examples, you can go through [the documentation](
 
 ### See also
 
-* How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
-* How to [use comparison tool](/comparison/java/how-to-use-ktor-comparison-sample) with Ktor Framework
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [use Google Drive API as files source](/comparison/java/how-to-use-google-drive-api-as-files-source-for-comparison-api) for comparing documents in Java or Kotlin
+- How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
+- How to [use comparison tool](/comparison/java/how-to-use-ktor-comparison-sample) with Ktor Framework
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [use Google Drive API as files source](/comparison/java/how-to-use-google-drive-api-as-files-source-for-comparison-api) for comparing documents in Java or Kotlin

@@ -7,24 +7,26 @@ description: "In the article is written about spotting the difference of two Aut
 keywords: How to compare AutoCAD drawings, DWG files diff, Compare AutoCad Drawing, Compare DWG
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Compare AutoCad drawings (DWG files)
-        description: The product allows to compare AutoCad drawings (DWG files)
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to compare AutoCad drawings (DWG files)
-        description: Find out how to compare AutoCad drawings (DWG files)
-        steps:
-        - name: Load source AutoCad DWG file
-          text: Create an instance of Comparer class passing source AutoCad DWG file as a constructor parameter
-        - name: Load target AutoCad DWG file
-          text: Add one or more target AutoCad DWG file to compare them with source one
-        - name: Compare source and target AutoCad DWG file
-          text: Run comparison process passing path where the result of the comparison will be saved
+  showOrganization: True
+  application:
+    name: Compare AutoCad drawings (DWG files)
+    description: The product allows to compare AutoCad drawings (DWG files)
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to compare AutoCad drawings (DWG files)
+    description: Find out how to compare AutoCad drawings (DWG files)
+    steps:
+      - name: Load source AutoCad DWG file
+        text: Create an instance of Comparer class passing source AutoCad DWG file as a constructor parameter
+      - name: Load target AutoCad DWG file
+        text: Add one or more target AutoCad DWG file to compare them with source one
+      - name: Compare source and target AutoCad DWG file
+        text: Run comparison process passing path where the result of the comparison will be saved
 ---
+
 It is highly difficult to see the difference of two AutoCad drawings (DWG files). Simultaneously, more and more people are in need to do it, especially nowadays, when lots of employee works remotely. Luckily, with [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) library you can easily compare two AutoCad drawings (DWG files) as well lots of other [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}})
 
 ## How to Compare AutoCad drawings (DWG files)
@@ -32,8 +34,8 @@ It is highly difficult to see the difference of two AutoCad drawings (DWG files)
 Just follow next steps to compare two or more of them:
 
 1. Create new instance of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class with source file path or stream as an argument
-2. Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)) method adding target document path or stream to be compared with the source one
-3. Call [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)) method to compare files and save the result document
+2. Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method adding target document path or stream to be compared with the source one
+3. Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to compare files and save the result document
 
 Here is Java code that demonstrate steps described above:
 
@@ -45,12 +47,12 @@ The same thing you can do in Kotlin:
 
 Here are examples of source, target and result documents:
 
-| Source AutoCad drawing (DWG files)                                           | Target AutoCad drawing (DWG files)                                           |
-|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Source AutoCad drawing (DWG files)                                                             | Target AutoCad drawing (DWG files)                                                             |
+| ---------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | ![](/comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-source.png) | ![](/comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-target.png) |
 
-|                    Result PDF document                                                           |
-|:------------------------------------------------------------------------------------------------:|
+|                                      Result PDF document                                       |
+| :--------------------------------------------------------------------------------------------: |
 | ![](/comparison/java/images/how-to-spot-the-difference-of-two-autocad-dwg-drawings-result.png) |
 
 ### How to use additional comparison options
@@ -92,14 +94,15 @@ In this article is written about comparing AutoCad drawings (DWG files) using [G
 For more details, options, and examples, you can go through [the documentation](/comparison/java/getting-started/) and [GitHub](https://github.com/groupdocs-comparison) repository. Reach us [on the forum](https://forum.groupdocs.com/) for your queries.
 
 ### Free Online App
+
 Along with full-featured Java library we provide simple, but powerful free Apps.
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSGand other documents with free to use online **[GroupDocs Comparison App](https://products.groupdocs.app/comparison)**.
 
 ### See also
 
-* How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
-* How to [compare AutoCAD](/comparison/java/how-to-compare-autocad-drawings) drawings
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [use Google Drive API as files source](/comparison/java/how-to-use-google-drive-api-as-files-source-for-comparison-api) for comparing documents in Java or Kotlin
+- How to [compare documents](/comparison/java/how-to-compare-documents-in-the-easiest-way) in the easiest way
+- How to [compare AutoCAD](/comparison/java/how-to-compare-autocad-drawings) drawings
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [use Google Drive API as files source](/comparison/java/how-to-use-google-drive-api-as-files-source-for-comparison-api) for comparing documents in Java or Kotlin

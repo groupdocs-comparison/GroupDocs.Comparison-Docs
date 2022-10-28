@@ -7,18 +7,21 @@ description: GroupDocs.Compairson for .NET developer documentation. Learn how to
 keywords: compare,diff,compare files,diff files,.net api,file diff,api,xlsx,microsoft word,docx,pptx,pdf,c#,compare pdf
 productName: GroupDocs.Comparison for .NET
 hideChildren: True
+fullWidth: True
 ---
+
 <img src="/comparison/net/images/home.png" alt="groupdocs comparison .net logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
-GroupDocs.Comparison enables you to diff Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text and HTML documents. 
+GroupDocs.Comparison enables you to diff Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text and HTML documents.
 
-Document comparison API compares content to detect changes for words, paragraphs and characters. 
+Document comparison API compares content to detect changes for words, paragraphs and characters.
 
 It also compares style changes like font size, bold, italic etc. Differences summary saved in a separate result file.
 
-------
+---
 
 {{< columns >}}
+
 <p><b>About GroupDocs.Comparison</b></p>
 <hr><p>OVERVIEW</p></hr>
 <ul>

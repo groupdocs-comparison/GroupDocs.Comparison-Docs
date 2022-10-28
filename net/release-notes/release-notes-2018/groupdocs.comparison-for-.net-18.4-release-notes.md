@@ -4,10 +4,12 @@ url: comparison/net/groupdocs-comparison-for-net-18-4-release-notes
 title: GroupDocs.Comparison for .NET 18.4 Release Notes
 weight: 9
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 18.4{{< /alert >}}
 
 ## Major Features
@@ -25,14 +27,14 @@ Below the list of most notable changes in  release of GroupDocs.Comparison for 
 
 ## Full List of Issues Covering all Changes in this Release
 
-| Key | Summary | Issue Type |
-| --- | --- | --- |
-| COMPARISONNET-1502 | Implement Comparison.Html | New Feature |
-| COMPARISONNET-1539 | Issues in comparison of table of contents | Bug |
-| COMPARISONNET-1537 | Fatal error in ParagraphDiffIndex | Bug |
-| COMPARISONNET-1529 | Issues with comparing data in tables | Bug |
-| COMPARISONNET-1524 | PPTX comparison output is hidden under some panel | Bug |
-| COMPARISONNET-1523 | PDF Comparison - scrambled/text overlapped output | Bug |
+| Key                | Summary                                           | Issue Type  |
+| ------------------ | ------------------------------------------------- | ----------- |
+| COMPARISONNET-1502 | Implement Comparison.Html                         | New Feature |
+| COMPARISONNET-1539 | Issues in comparison of table of contents         | Bug         |
+| COMPARISONNET-1537 | Fatal error in ParagraphDiffIndex                 | Bug         |
+| COMPARISONNET-1529 | Issues with comparing data in tables              | Bug         |
+| COMPARISONNET-1524 | PPTX comparison output is hidden under some panel | Bug         |
+| COMPARISONNET-1523 | PDF Comparison - scrambled/text overlapped output | Bug         |
 
 ## Public API and Backward Incompatible Changes
 

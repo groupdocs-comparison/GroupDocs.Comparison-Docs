@@ -7,39 +7,40 @@ description: "You will find how you can use GroupDocs.Comparison for Java to see
 keywords: Compare Text, compare Word, compare Pdf, how to compare documents in Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Files diff
-        description: The product allows to diff files
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to check if two files are identical
-        description:  Learn how to check if two files are identical in Java or Kotlin project
-        steps:
-        - name: Load source file
-          text: Create an instance of Comparer class passing source file as a constructor parameter
-        - name: Load target files
-          text: Add one or more target files to compare them with source one
-        - name: Compare source and target files
-          text: Run comparison process passing path where the result file should be saved
+  showOrganization: True
+  application:
+    name: Files diff
+    description: The product allows to diff files
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to check if two files are identical
+    description: Learn how to check if two files are identical in Java or Kotlin project
+    steps:
+      - name: Load source file
+        text: Create an instance of Comparer class passing source file as a constructor parameter
+      - name: Load target files
+        text: Add one or more target files to compare them with source one
+      - name: Compare source and target files
+        text: Run comparison process passing path where the result file should be saved
 ---
 
 The [GroupDocs.Comparison](https://products.groupdocs.com/comparison) is a Java library which allows you to compare documents and see differences. Compare Microsoft Word, Excel, PowerPoint, OpenDocument, PDF, Text, HTML and many other documents, retrieve a list of changes between source and target documents, apply or reject changes and save results with [GroupDocs.Comparison](https://products.groupdocs.com/comparison) API. In addition to this, GroupDocs.Comparison can identify styling and formatting changes – like bold, italic, underlines, strikethroughs, font types, etc.
 
 Changes detection algorithms used by GroupDocs.Comparison allows you to detect differences in various document parts and blocks:
 
-* Text blocks – paragraphs, words and characters
-* Tables
-* Images
-* Shapes etc.
+- Text blocks – paragraphs, words and characters
+- Tables
+- Images
+- Shapes etc.
 
 Here are simple steps to compare two text files and show differences:
 
-* Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document.
-* Add the second file using the [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)) method of Comparer object.
-* Call the [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)) method to get the result of the comparison.
+- Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document.
+- Add the second file using the [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison.
 
 The following code snippet demonstrates the simplest case of documents comparison using a couple lines of code.
 
@@ -85,19 +86,18 @@ Let’s say you have two contracts in DOCX format that were concluded in differe
 
 ![Comparing two contracts](/comparison/java/images/how-to-get-diff-of-contracts.png)
 
-
 ## Accept or Reject detected differences
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison) provides an ability to apply or discard specific changes between source and target documents and save the resultant document with (or without) selected changes.
 
 The following are the steps to apply/reject changes to the resultant document.
 
-* Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream.
-* Call [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)) method and specify  target document's path or stream.
-* Call the [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()) method to comparison process.
-* Call [getChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()) method and obtain detected changes list.
-* Set ComparisonAction of needed change object to [ComparisonAction.ACCEPT](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.Reject](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value.
-* Call [applyChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#applyChanges(java.lang.String,%20com.groupdocs.comparison.options.ApplyChangeOptions)) method and pass object of [ApplyChangeOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/ApplyChangeOptions) with collection of changes to it.
+- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream.
+- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method and specify target document's path or stream.
+- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method to comparison process.
+- Call [getChanges](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method and obtain detected changes list.
+- Set ComparisonAction of needed change object to [ComparisonAction.ACCEPT](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.Reject](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value.
+- Call [applyChanges](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#applyChanges(java.lang.String,%20com.groupdocs.comparison.options.ApplyChangeOptions)>) method and pass object of [ApplyChangeOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/ApplyChangeOptions) with collection of changes to it.
 
 ---
 
@@ -119,20 +119,20 @@ The following are the steps to apply/reject changes to the resultant document.
 
 ### Generate document pages preview
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison) allows you generate page's previews for source, target and resultant documents using [generatePreview](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)) method of a [Document](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) class.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison) allows you generate page's previews for source, target and resultant documents using [generatePreview](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method of a [Document](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) class.
 Class [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) is used to manage preview generation process – specify page numbers, image format etc.
 
 The following steps shows how to generate a document preview with [GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java) API:
 
-* Create a new instance of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class and pass the source document path as a constructor parameter.
-* Add target document(s) to comparer object using [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)) method.
-* [getSource](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getSource()) and [getTargets](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getTargets()) methods of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object allows to access source and target documents and provides [GeneratePreview](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)) method
-* Instantiate the [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) object with:
-  * callback for each page stream creation (see event handler [CreatePageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates.CreatePageStream));
-  * image preview format – PNG / JPG / BMP;
-  * page numbers to process;
-  * custom size of preview images (if needed).
-* Call [generatePreview](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)) method of dource and targets [Document](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) objects passing [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) to it.
+- Create a new instance of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class and pass the source document path as a constructor parameter.
+- Add target document(s) to comparer object using [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method.
+- [getSource](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getSource()>) and [getTargets](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getTargets()>) methods of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object allows to access source and target documents and provides [GeneratePreview](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method
+- Instantiate the [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) object with:
+  - callback for each page stream creation (see event handler [CreatePageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates.CreatePageStream));
+  - image preview format – PNG / JPG / BMP;
+  - page numbers to process;
+  - custom size of preview images (if needed).
+- Call [generatePreview](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method of dource and targets [Document](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) objects passing [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) to it.
 
 ---
 
@@ -182,8 +182,8 @@ Please check the [documentation](/comparison/java/installation/) to learn more a
 
 ### See also
 
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [spot photos differences](/comparison/java/how-to-spot-photos-differences-in-java-or-kotlin) in Java or Kotlin
-* How to [compare Json files](/comparison/java/how-to-compare-json-applying-rejecting-changes) applying or rejecting changes
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [spot photos differences](/comparison/java/how-to-spot-photos-differences-in-java-or-kotlin) in Java or Kotlin
+- How to [compare Json files](/comparison/java/how-to-compare-json-applying-rejecting-changes) applying or rejecting changes

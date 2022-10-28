@@ -7,21 +7,22 @@ description: "The article is about comparing photos in Java or Kotlin to spot th
 keywords: Compare photos, differences of photos, Diff tool for photos in Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Spot differences tool
-        description: The tool allows to spot differences of photos
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to spot differences of photos
-        description: Learn how to spot differences of photos in Java or Kotlin project
-        steps:
-        - name: Photos Comparison API
-          text: Downloading and configuring Comparison API
-        - name: Compare Photos to Highlight Differences
-          text: After creating Comparer object passing source and target photos just call special method to get result document
+  showOrganization: True
+  application:
+    name: Spot differences tool
+    description: The tool allows to spot differences of photos
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to spot differences of photos
+    description: Learn how to spot differences of photos in Java or Kotlin project
+    steps:
+      - name: Photos Comparison API
+        text: Downloading and configuring Comparison API
+      - name: Compare Photos to Highlight Differences
+        text: After creating Comparer object passing source and target photos just call special method to get result document
 ---
 
 In this article, we will discuss how to programmatically find differences between two photos. After going through this, you will find it easy to compare any photos and highlight the identified differences using Java or Kotlin.
@@ -38,9 +39,9 @@ Get the photos comparison library from the [downloads section](https://downloads
 
 Comparing the photos and get the result is just 3 lines of code. You can follow the steps and use the mentioned source code for comparing any of your JPG, PNG, BMP, DICOM, DjVu, GIF, and other images. You can identify the dissimilarities or variations among these within the Java application.
 
-* Select the first photo to compare using constructor of the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class.
-* Add the second photo for comparison using the appropriate [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)) method of Comparer object.
-* Call the [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)) method to get the comparison result of both photos.
+- Select the first photo to compare using constructor of the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class.
+- Add the second photo for comparison using the appropriate [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the comparison result of both photos.
 
 Here is the code, compares two JPG photos and saves the output that highlights the identified differences.
 
@@ -84,10 +85,10 @@ For more details, options, and examples, you can go through [the documentation](
 
 ### See also
 
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
-* How to [run Dropwizard Comparison sample](comparison/java/how-to-run-dropwizard-comparison-sample-using-docker) as Docker container
-* How to [run Spring Comparison sample](comparison/java/how-to-run-spring-comparison-sample-using-docker) as Docker container
+- How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
+- How to [run Dropwizard Comparison sample](comparison/java/how-to-run-dropwizard-comparison-sample-using-docker) as Docker container
+- How to [run Spring Comparison sample](comparison/java/how-to-run-spring-comparison-sample-using-docker) as Docker container

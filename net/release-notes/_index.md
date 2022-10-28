@@ -4,7 +4,8 @@ url: comparison/net/release-notes
 title: Release Notes
 weight: 4
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+isMenuItemWithNoContent: True
 ---

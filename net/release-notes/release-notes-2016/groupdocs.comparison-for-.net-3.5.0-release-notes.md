@@ -4,36 +4,36 @@ url: comparison/net/groupdocs-comparison-for-net-3-5-0-release-notes
 title: GroupDocs.Comparison For .NET 3.5.0 Release Notes
 weight: 4
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparsion for .NET 3.5.0{{< /alert >}}
 
 ## Major Features
 
 There are 9 improvements and fixes in this regular monthly release. The most notable are:
 
-*   Introduced multiple comparison support for Comparison.Words
-*   Introduced apply/discart support for multiple comparison for Comparison.Words
-*   Introduced page header and foooter text absorbers for Comparison.PDF
-*   Improved  paragraph absorber for Comparison.PDF
+- Introduced multiple comparison support for Comparison.Words
+- Introduced apply/discart support for multiple comparison for Comparison.Words
+- Introduced page header and foooter text absorbers for Comparison.PDF
+- Improved  paragraph absorber for Comparison.PDF
 
 ## Full List of Issues Covering all Changes in this Release
 
-| Key | Summary | Category |
-| --- | --- | --- |
-| COMPARISONNET-877 | GroupDocs.Comparison.Words: Add option to compose multiple result list from result lists of each document | New Feature |
-| COMPARISONNET-876 | GroupDocs.Comparison.Words: Support comparing multiple documents with track changes | New Feature |
-| COMPARISONNET-909 | GroupDocs.Comparison.PDF: Add support of absorption of the Page Footer | New Feature |
-| COMPARISONNET-910 | GroupDocs.Comparison.PDF: Add support of absorption of the Page Header | New Feature |
-| COMPARISONNET-880 | GroupDocs.Comparison.Words: Add apply/discard changes support for multiple result changes list | New Feature |
-| COMPARISONNET-880 | GroupDocs.Comparison.Words: Document processing performance improvement | Improvement |
+| Key               | Summary                                                                                                                           | Category    |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----------- |
+| COMPARISONNET-877 | GroupDocs.Comparison.Words: Add option to compose multiple result list from result lists of each document                         | New Feature |
+| COMPARISONNET-876 | GroupDocs.Comparison.Words: Support comparing multiple documents with track changes                                               | New Feature |
+| COMPARISONNET-909 | GroupDocs.Comparison.PDF: Add support of absorption of the Page Footer                                                            | New Feature |
+| COMPARISONNET-910 | GroupDocs.Comparison.PDF: Add support of absorption of the Page Header                                                            | New Feature |
+| COMPARISONNET-880 | GroupDocs.Comparison.Words: Add apply/discard changes support for multiple result changes list                                    | New Feature |
+| COMPARISONNET-880 | GroupDocs.Comparison.Words: Document processing performance improvement                                                           | Improvement |
 | COMPARISONNET-886 | GroupDocs.Comparison.PDF: Divide text into paragraphs by checking if the text fragments are contained in different parent objects | Improvement |
-| COMPARISONNET-904 | GroupDocs.Comparison.PDF: Improved Comparison paragraph absorber for cases with plain text | Improvement |
-| COMPARISONNET-873 | GroupDocs.Comparison.PDF: Improved text comparison support for all Adobe Acrobat formats | Improvement |
-
-  
+| COMPARISONNET-904 | GroupDocs.Comparison.PDF: Improved Comparison paragraph absorber for cases with plain text                                        | Improvement |
+| COMPARISONNET-873 | GroupDocs.Comparison.PDF: Improved text comparison support for all Adobe Acrobat formats                                          | Improvement |
 
 ## Public API and Backward Incompatible Changes
 

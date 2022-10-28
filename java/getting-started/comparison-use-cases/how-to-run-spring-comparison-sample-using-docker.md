@@ -7,28 +7,29 @@ description: "The article is about running Spring Comparison sample using Docker
 keywords: Compare photos, Spring Comparison Tool, Spring and Docker, Comparison API
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Images, PowerPoint and AutoCad comparer
-        description: The product allows to compare Images, PowerPoint, AutoCad and much more types of files
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to run Spring project in Docker container
-        description: Learn how to run and configure Spring project in Docker container
-        steps:
-        - name: Spring Comparison Application
-          text: What is Spring Comparison sample application and why do you need it
-        - name: System Requirements
-          text: Which tools and files you need to run the application in Docker container
-        - name: Launching Spring Comparison sample
-          text: Configuring, building and running Comparison sample application using Docker
-        - name: Configuring Comparison API
-          text: Configuration the application to customize it according to your needs
+  showOrganization: True
+  application:
+    name: Images, PowerPoint and AutoCad comparer
+    description: The product allows to compare Images, PowerPoint, AutoCad and much more types of files
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to run Spring project in Docker container
+    description: Learn how to run and configure Spring project in Docker container
+    steps:
+      - name: Spring Comparison Application
+        text: What is Spring Comparison sample application and why do you need it
+      - name: System Requirements
+        text: Which tools and files you need to run the application in Docker container
+      - name: Launching Spring Comparison sample
+        text: Configuring, building and running Comparison sample application using Docker
+      - name: Configuring Comparison API
+        text: Configuration the application to customize it according to your needs
 ---
 
-You need just a few commands to run [Spring Comparison sample](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Spring) as a Docker container. After reading this article you will have web application that can compare any documents and highlight differences 
+You need just a few commands to run [Spring Comparison sample](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/master/Demos/Spring) as a Docker container. After reading this article you will have web application that can compare any documents and highlight differences
 
 ### Spring Comparison Application
 
@@ -37,6 +38,7 @@ Spring Comparison sample is an application, that was created by using Spring Fra
 ### System Requirements
 
 To run the sample as a Docker container you will need to have installed Docker itself and download Comparison application:
+
 1. Go to official Docker page, download installer depending on your OS
 2. Install Docker using instructions on the official Docker page
 3. Open [Comparison application](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java) GitHub page and download sample sources:
@@ -88,16 +90,17 @@ To run Comparison Spring application having prebuilt Docker image, fallow next s
 3. Run next command to create container of the image and run application
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/2b74fad512ad1f6155ad70eb4958d10e.js"></script>
-   
+
 After that, just open link [http://localhost:8080/comparison](http://localhost:8080/comparison) in any web browser to see the Comparison application
 
 ![](/comparison/java/images/how-to-run-spring-comparison-sample-using-docker.png)
 
 A little details about the command:
-* `my-comparer` is a name of Docker container, that can be used to stop docker container with the application. It can be changed as you want
-* `8080:8080` means that the application inside Docker container is using port `8080` and Docker binds it to port `8080` outside the container, thanks to what you can use it to access the application in your web browser
-* flag `--rm` says Docker that the container should be deleted automatically after it will be stopped. The flag can be omitted if you need to keep container after it will be stopped
-* `groupdocs_comparison_spring_sample` is a name of an image that we built before
+
+- `my-comparer` is a name of Docker container, that can be used to stop docker container with the application. It can be changed as you want
+- `8080:8080` means that the application inside Docker container is using port `8080` and Docker binds it to port `8080` outside the container, thanks to what you can use it to access the application in your web browser
+- flag `--rm` says Docker that the container should be deleted automatically after it will be stopped. The flag can be omitted if you need to keep container after it will be stopped
+- `groupdocs_comparison_spring_sample` is a name of an image that we built before
 
 To stop the container just run command `docker stop my-comparer` in command line
 
@@ -108,14 +111,15 @@ To have opportunity to configure application, it is possible to use some of pred
 <script src="https://gist.github.com/groupdocs-comparison-gists/136b93614d02f6c4d779620b83b89f98.js"></script>
 
 There are next predefined variables:
-* `LIC_PATH` - path to directory with license file
-* `DOWNLOAD_ON` - enables/disables download button in Comparison application UI
-* `UPLOAD_ON` - enables/disables button to upload files _(the button is on the left of the open document dialog)_
-* `PRINT_ON` - enables/disables button to print documents
-* `BROWSE_ON` - enables/disables document browse dialog
-* `FILES_DIR` - path to the directory with uploaded files
-* `RESULT_DIR` - path to the directory with result files
-* `HOST_ADDRESS` - host name or ip for server instance
+
+- `LIC_PATH` - path to directory with license file
+- `DOWNLOAD_ON` - enables/disables download button in Comparison application UI
+- `UPLOAD_ON` - enables/disables button to upload files _(the button is on the left of the open document dialog)_
+- `PRINT_ON` - enables/disables button to print documents
+- `BROWSE_ON` - enables/disables document browse dialog
+- `FILES_DIR` - path to the directory with uploaded files
+- `RESULT_DIR` - path to the directory with result files
+- `HOST_ADDRESS` - host name or ip for server instance
 
 _Note: Keep in mind, `LIC_PATH`, `FILES_DIR` and `RESULT_DIR` paths are point to the folders **inside** Docker container_
 
@@ -126,8 +130,9 @@ It is usual request about keeping files between application runs. To do it you j
 <script src="https://gist.github.com/groupdocs-comparison-gists/6c2bae3b6197d6ea3aa78b6b8646e278.js"></script>
 
 Here is a little details about the command:
-* Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use directory `/home/groupdocs/app/MyDocumentSamples` inside Docker container as folder to keep files. It can be changed to any other path, physically this directory does not exist in Docker image
-* Option `-v groupdocs_comparison_spring_volume:/home/groupdocs/app/MyDocumentSamples` configures Docker to create new volume with name `groupdocs_comparison_spring_volume` and to bind it into container as a directory `/home/groupdocs/app/MyDocumentSamples`, so that any access to `MyDocumentSamples` inside the container will actually make changes inside the volume. After that, stopping container that was run with an option `--rm` or in case of manual deleting the container, volume and files inside it will not be deleted. It is easy to run new container attaching the volume, so that files will be available again.
+
+- Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use directory `/home/groupdocs/app/MyDocumentSamples` inside Docker container as folder to keep files. It can be changed to any other path, physically this directory does not exist in Docker image
+- Option `-v groupdocs_comparison_spring_volume:/home/groupdocs/app/MyDocumentSamples` configures Docker to create new volume with name `groupdocs_comparison_spring_volume` and to bind it into container as a directory `/home/groupdocs/app/MyDocumentSamples`, so that any access to `MyDocumentSamples` inside the container will actually make changes inside the volume. After that, stopping container that was run with an option `--rm` or in case of manual deleting the container, volume and files inside it will not be deleted. It is easy to run new container attaching the volume, so that files will be available again.
 
 _Note: `groupdocs_comparison_spring_volume` is just a name of the volume. It can be used for deleting the volume. You can change the name on your taste:)_
 
@@ -147,9 +152,9 @@ For more details, options, and examples, you can go through [the documentation](
 
 ### See also
 
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
-* How to [run Dropwizard Comparison sample](comparison/java/how-to-run-dropwizard-comparison-sample-using-docker) as Docker container
+- How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
+- How to [run Dropwizard Comparison sample](comparison/java/how-to-run-dropwizard-comparison-sample-using-docker) as Docker container

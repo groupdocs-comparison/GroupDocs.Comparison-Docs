@@ -7,24 +7,26 @@ description: "The article is about the easiest way to use GroupDocs.Comparison A
 keywords: Compare documents, Spring Comparison API, Dropwizard Comparison API, Comparison Tool with Docker
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Diff checker
-        description: The product allows to check diff of files
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to check if two documents are identical
-        description: Learn how to use diff checker in Java or Kotlin project
-        steps:
-        - name: Load source document
-          text: Create an instance of Comparer class passing source document as a constructor parameter
-        - name: Load target documents
-          text: Add one or more target documents to compare them with source one
-        - name: Compare source and target documents
-          text: Run comparison process passing path where the result of the comparison will be saved
+  showOrganization: True
+  application:
+    name: Diff checker
+    description: The product allows to check diff of files
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to check if two documents are identical
+    description: Learn how to use diff checker in Java or Kotlin project
+    steps:
+      - name: Load source document
+        text: Create an instance of Comparer class passing source document as a constructor parameter
+      - name: Load target documents
+        text: Add one or more target documents to compare them with source one
+      - name: Compare source and target documents
+        text: Run comparison process passing path where the result of the comparison will be saved
 ---
+
 Sometimes there is a need to compare two Pdf, Word or Excel documents as fast, as possible, without installing lots of soft. In case you have Docker installed, the easiest way is to use it together with [GroupDocs.Comparison API](https://products.groupdocs.com/comparison)
 
 ### Variety of GroupDocs.Comparison samples
@@ -93,15 +95,16 @@ Nevertheless, there are a few options which you can change to configure Comparis
 <script src="https://gist.github.com/groupdocs-comparison-gists/8120ee53c065f2732ded283a427bf87d.js"></script>
 
 There are next predefined variables:
-* `LIC_PATH` - path to directory with license file
-* `FILES_DIR` - path to the directory with uploaded files
-* `RESULT_DIR` - path to the directory with result files
-* `DOWNLOAD_ON` - enables/disables download button in Comparison application UI
-* `UPLOAD_ON` - enables/disables uploading files _(the upload button is on the left of the open document dialog)_
-* `BROWSE_ON` - enables/disables document browse dialog
-* `PRINT_ON` - enables/disables button to print documents
-* `RIGHTCLICK_ON` - enables/disables right mouse click
-* `HOST_ADDRESS` - host name or ip for server instance
+
+- `LIC_PATH` - path to directory with license file
+- `FILES_DIR` - path to the directory with uploaded files
+- `RESULT_DIR` - path to the directory with result files
+- `DOWNLOAD_ON` - enables/disables download button in Comparison application UI
+- `UPLOAD_ON` - enables/disables uploading files _(the upload button is on the left of the open document dialog)_
+- `BROWSE_ON` - enables/disables document browse dialog
+- `PRINT_ON` - enables/disables button to print documents
+- `RIGHTCLICK_ON` - enables/disables right mouse click
+- `HOST_ADDRESS` - host name or ip for server instance
 
 _Note: Keep in mind, `LIC_PATH`, `FILES_DIR` and `RESULT_DIR` paths are point to the folders **inside** Docker container_
 
@@ -111,9 +114,9 @@ You may need to save files between application runs. To do it you should use Doc
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/e492c0c7d27267ff506ecd3eaffcd4de.js"></script>
 
-* Parameter `-v groupdocs_comparison_volume:/home/groupdocs/app/MyDocumentSamples` configures Docker to create new volume with name `groupdocs_comparison_volume` and to bind it into container as a directory `/home/groupdocs/app/MyDocumentSamples`. In this way, any access to `MyDocumentSamples` inside the container will actually make changes inside the volume. Stopping container that was run with an option `--rm` or manual deleting the container, volume and files inside it will not be deleted. It is easy to run new container attaching the volume, to access files again.
+- Parameter `-v groupdocs_comparison_volume:/home/groupdocs/app/MyDocumentSamples` configures Docker to create new volume with name `groupdocs_comparison_volume` and to bind it into container as a directory `/home/groupdocs/app/MyDocumentSamples`. In this way, any access to `MyDocumentSamples` inside the container will actually make changes inside the volume. Stopping container that was run with an option `--rm` or manual deleting the container, volume and files inside it will not be deleted. It is easy to run new container attaching the volume, to access files again.
   Here is a little details about the command:
-* Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use `/home/groupdocs/app/MyDocumentSamples` directory inside Docker container as a folder to store files. It can be changed to any other path, physically this directory does not exist in Docker image
+- Option `--env FILES_DIR=/home/groupdocs/app/MyDocumentSamples` configures Comparison application to use `/home/groupdocs/app/MyDocumentSamples` directory inside Docker container as a folder to store files. It can be changed to any other path, physically this directory does not exist in Docker image
 
 _Note: `groupdocs_comparison_volume` is just a name of the volume. It can be used for deleting the volume. You can easily change it._
 
@@ -129,9 +132,9 @@ For more details, options, and examples, you can go through [the documentation](
 
 ### See also
 
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
-* How to [run Dropwizard Comparison sample](comparison/java/how-to-run-dropwizard-comparison-sample-using-docker) as Docker container
+- How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
+- How to [run Dropwizard Comparison sample](comparison/java/how-to-run-dropwizard-comparison-sample-using-docker) as Docker container

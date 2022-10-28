@@ -4,34 +4,36 @@ url: comparison/java/evaluation-limitations-and-licensing-of-groupdocs-compariso
 title: Licensing and Evaluation Limitations
 weight: 5
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Documents Comparison Tool
-        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to apply Comparison API license
-        description: Learn how to apply Comparison API license to make it free from evaluation limitations
-        steps:
-        - name: Create License object
-          text: Create object that will be used to set license
-        - name: Apply license
-          text: Call special method that will set the license and pass license path or input stream
+  showOrganization: True
+  application:
+    name: Documents Comparison Tool
+    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to apply Comparison API license
+    description: Learn how to apply Comparison API license to make it free from evaluation limitations
+    steps:
+      - name: Create License object
+        text: Create object that will be used to set license
+      - name: Apply license
+        text: Call special method that will set the license and pass license path or input stream
 ---
+
 {{< alert style="info" >}}You can use **[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
 
 ## Evaluation Limitations
 
 You can easily download **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license. You will face following limitations while using the API without the license:
 
-*   Only first 3 document pages with simple structure are processed.
-*   PDF documents should not have more then four elements in any collection.
-*   Trial badges are placed in the document on the top of each page.
+- Only first 3 document pages with simple structure are processed.
+- PDF documents should not have more then four elements in any collection.
+- Trial badges are placed in the document on the top of each page.
 
 ## Licensing
 
@@ -61,6 +63,7 @@ Create metered object and use method `setMeteredKey`
 <script src="https://gist.github.com/groupdocs-comparison-gists/66fea81ce49f8f21712694c3e84060fb.js"></script>
 
 To check current consumption quantity:
+
 1.  Call method `getConsumptionQuantity` of the `Metered` class.
 2.  It will return the amount/quantity of API requests that you have consumed so far.
 3.  call method `getConsumptionCredit` of the `Metered` class.

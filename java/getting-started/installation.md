@@ -4,32 +4,34 @@ url: comparison/java/installation
 title: Installation
 weight: 4
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Documents Comparison Tool
-        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to install Comparison API
-        description: Learn how to install GroupDocs.Comparison into Java or Kotlin project
-        steps:
-        - name: Specify GroupDocs Repository
-          text: Add GroupDocs Maven repository to the project
-        - name: Define Comparison dependency
-          text: Add comparison dependency so that the project will download required libraries
+  showOrganization: True
+  application:
+    name: Documents Comparison Tool
+    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to install Comparison API
+    description: Learn how to install GroupDocs.Comparison into Java or Kotlin project
+    steps:
+      - name: Specify GroupDocs Repository
+        text: Add GroupDocs Maven repository to the project
+      - name: Define Comparison dependency
+        text: Add comparison dependency so that the project will download required libraries
 ---
+
 ### Operating Systems
 
 **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** can be executed on any Operating System with Java JDK installed.
 
-*   Windows Desktops and Servers
-*   Linux
-*   Mac OS
+- Windows Desktops and Servers
+- Linux
+- Mac OS
 
 ### Supported Runtime
 
@@ -38,9 +40,9 @@ structuredData:
 
 ### Development Environments
 
-*   NetBeans
-*   IntelliJ IDEA
-*   Eclipse
+- NetBeans
+- IntelliJ IDEA
+- Eclipse
 
 ## Installation from GroupDocs Repository using Maven
 

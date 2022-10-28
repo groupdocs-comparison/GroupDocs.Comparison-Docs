@@ -4,7 +4,8 @@ url: comparison/net/release-notes-2021
 title: Release Notes - 2021
 weight: 2
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+isMenuItemWithNoContent: True
 ---

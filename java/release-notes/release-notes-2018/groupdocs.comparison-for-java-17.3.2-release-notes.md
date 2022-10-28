@@ -4,23 +4,25 @@ url: comparison/java/groupdocs-comparison-for-java-17-3-2-release-notes
 title: GroupDocs.Comparison for Java 17.3.2 Release Notes
 weight: 5
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparsion for Java 17.3.2{{< /alert >}}
 
 ## Major Features
 
 Below the list of fixed bugs in this release of GroupDocs.Comparsion for Java. The most notable are:
 
-*   Fixed number of bugs from customers
+- Fixed number of bugs from customers
 
 ## Full List of Issues Covering all Changes in this Release
 
-| Key | Summary | Issue Type |
-| --- | --- | --- |
-| COMPARISONJAVA-255 | Classes with similar names are overwritten | Bug |
+| Key                | Summary                                    | Issue Type |
+| ------------------ | ------------------------------------------ | ---------- |
+| COMPARISONJAVA-255 | Classes with similar names are overwritten | Bug        |
 
 ## Public API and Backward Incompatible Changes
 

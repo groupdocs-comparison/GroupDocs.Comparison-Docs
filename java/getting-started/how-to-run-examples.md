@@ -7,22 +7,24 @@ description: "In this article you can find how to run examples. We offer multipl
 keywords: How to run comparison, basic usage, How to run examples
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Documents Comparison Tool
-        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to run Comparison examples
-        description: Learn how to run GroupDocs.Comparison examples using IDE
-        steps:
-        - name: Open project with examples in IDE
-          text: Open project with Comparison examples using favourite IDE
-        - name: Run main method
-          text: Find main method and run it with IDE 
+  showOrganization: True
+  application:
+    name: Documents Comparison Tool
+    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to run Comparison examples
+    description: Learn how to run GroupDocs.Comparison examples using IDE
+    steps:
+      - name: Open project with examples in IDE
+        text: Open project with Comparison examples using favourite IDE
+      - name: Run main method
+        text: Find main method and run it with IDE
 ---
+
 {{< alert style="warning" >}}Before running an example make sure that GroupDocs.Comparison has been installed successfully.{{< /alert >}}
 
 ## Download from GitHub

@@ -4,21 +4,23 @@ url: comparison/java/groupdocs-comparison-for-java-18-6-1-release-notes
 title: GroupDocs.Comparison for Java 18.6.1 Release Notes
 weight: 3
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparsion for Java 18.6.1{{< /alert >}}
 
 ## Major Features
 
 Below the list of fixed bugs in this release of GroupDocs.Comparsion for Java. The most notable are:
 
-| Key | Summary | Issue Type |
-| --- | --- | --- |
-| COMPARISONJAVA-419 | For RTF comparison, API detects style changes but does not highlight them like it does with DOCX. | Bug |
-| COMPARISONJAVA-425 | Style Changes Not Highlighted | Bug |
-| COMPARISONJAVA-426 | PDF comparison gives a scrambled report | Bug |
+| Key                | Summary                                                                                           | Issue Type |
+| ------------------ | ------------------------------------------------------------------------------------------------- | ---------- |
+| COMPARISONJAVA-419 | For RTF comparison, API detects style changes but does not highlight them like it does with DOCX. | Bug        |
+| COMPARISONJAVA-425 | Style Changes Not Highlighted                                                                     | Bug        |
+| COMPARISONJAVA-426 | PDF comparison gives a scrambled report                                                           | Bug        |
 
 ## Public API and Backward Incompatible Changes
 

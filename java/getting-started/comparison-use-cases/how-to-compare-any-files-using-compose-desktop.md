@@ -1,32 +1,33 @@
 ---
 id: how-to-compare-any-files-using-compose-desktop
 url: comparison/java/how-to-compare-any-files-using-compose-desktop
-title: How to compare any files in Kotlin Compose Desktop application 
+title: How to compare any files in Kotlin Compose Desktop application
 weight: 12
 description: "The article is about using comparison API in Kotlin Compose application"
 keywords: Compare any files or documents, differences of files, Diff tool in Kotlin Compose
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Compare text
-        description: The product allows to compare text or any other files
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: How to compare text in Kotlin Compose project
-        description: Learn how to compare text or any other files in Kotlin Compose project
-        steps:
-        - name: Load source text or file
-          text: Create an instance of Comparer class passing source text or file path as a constructor parameter
-        - name: Load target text or file
-          text: Add one or more target texts or files to compare them with source one
-        - name: Compare source and target text or files
-          text: Run comparison process passing path where the result of the comparison will be saved
+  showOrganization: True
+  application:
+    name: Compare text
+    description: The product allows to compare text or any other files
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name: How to compare text in Kotlin Compose project
+    description: Learn how to compare text or any other files in Kotlin Compose project
+    steps:
+      - name: Load source text or file
+        text: Create an instance of Comparer class passing source text or file path as a constructor parameter
+      - name: Load target text or file
+        text: Add one or more target texts or files to compare them with source one
+      - name: Compare source and target text or files
+        text: Run comparison process passing path where the result of the comparison will be saved
 ---
 
-In this article, we will discuss how to ues [GroupDocs.Comparison](https://products.groupdocs.com/comparison) API Compose Desktop application with Kotlin. After going through this article, you will find it easy to create comparing desktop application that can be run at any desktop platform, as Windows, Linux or Mac. Kotlin Compose is modern and fast-increasing in popularity UI framework. It is usually (*for now*) used for creating Android applications, but also supports creating Desktop, Web and Multiplatform applications. In this article will not be described how to use Compose in details, as there are lots of information on the internet.
+In this article, we will discuss how to ues [GroupDocs.Comparison](https://products.groupdocs.com/comparison) API Compose Desktop application with Kotlin. After going through this article, you will find it easy to create comparing desktop application that can be run at any desktop platform, as Windows, Linux or Mac. Kotlin Compose is modern and fast-increasing in popularity UI framework. It is usually (_for now_) used for creating Android applications, but also supports creating Desktop, Web and Multiplatform applications. In this article will not be described how to use Compose in details, as there are lots of information on the internet.
 
 ## Files Comparison API for Kotlin
 
@@ -41,14 +42,15 @@ You can easily create Compose project by selecting `Kotlin` -> `Compose Desktop 
 ### Configuring project by adding GroupDocs.Comparison repository and library
 
 To add Comparison API to your project, fallow next steps:
+
 1. Open `build.gradle.kts`
 2. Go to `repositories` block and add to it Maven GroupDocs repository
 
-    <script src="https://gist.github.com/groupdocs-comparison-gists/ad7ad48d4e7f9f60e858c7ba546f3745.js"></script>
+<script src="https://gist.github.com/groupdocs-comparison-gists/ad7ad48d4e7f9f60e858c7ba546f3745.js"></script>
 
-3. Go to `dependencies` block and add GroupDocs.Comparison library as dependency (*it is recommended to use [latest version](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) of the library*)
+3. Go to `dependencies` block and add GroupDocs.Comparison library as dependency (_it is recommended to use [latest version](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) of the library_)
 
-    <script src="https://gist.github.com/groupdocs-comparison-gists/b20a9f70c3442ca586a95b00a778a464.js"></script>
+<script src="https://gist.github.com/groupdocs-comparison-gists/b20a9f70c3442ca586a95b00a778a464.js"></script>
 
 4. Refresh project libraries by clicking `Reload All Gradle Projects` button on `Gradle` panel of IDE
 
@@ -88,27 +90,27 @@ This function will open dialog to select file and then set file's path to passed
 Comparison API has lots of functionality and settings, but we will use just few percents of it not to make this article too difficult. Comparing files and get the result is just 3 lines of code. To do it, just follow next **numbered** steps:
 
 1. Create object of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class passing source document path to it.
-   * Alternatively, you can create Comparer object passing to it input stream, to avoid saving source file anywhere
-   * You can pass `LoadOptions("document-password")` as the second parameter to compare password-protected document
-   * It is possible to pass `LoadOptions(true)` as the second parameter to create Comparer object using string, instead of file. In this way the first parameter must be a string that will be compared
-   * To enable logging, pass object of `ComparerSettings` class as additional parameter. The class has useful logger field
+   - Alternatively, you can create Comparer object passing to it input stream, to avoid saving source file anywhere
+   - You can pass `LoadOptions("document-password")` as the second parameter to compare password-protected document
+   - It is possible to pass `LoadOptions(true)` as the second parameter to create Comparer object using string, instead of file. In this way the first parameter must be a string that will be compared
+   - To enable logging, pass object of `ComparerSettings` class as additional parameter. The class has useful logger field
 2. Add the second document path to comparer object using the appropriate [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add-java.lang.String-) method.
-   * All additional options from p.1. are also available here
-3. Call the [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)) method to get the comparison result of both documents.
-   * To configure the comparison process, you can pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions), [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) or both of them. Here is just a few of settings:
-     * Working with document metadata
-     * Protecting result document with password
-     * Configuring styles of added, deleted, changed parts of documents
-     * Changing sensitivity of comparison
-     * Enabling/Disabling different types of changes
-     * Generating summary page
-     * And [much more](/comparison/java/comparison/)
+   - All additional options from p.1. are also available here
+3. Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the comparison result of both documents.
+   - To configure the comparison process, you can pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions), [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) or both of them. Here is just a few of settings:
+     - Working with document metadata
+     - Protecting result document with password
+     - Configuring styles of added, deleted, changed parts of documents
+     - Changing sensitivity of comparison
+     - Enabling/Disabling different types of changes
+     - Generating summary page
+     - And [much more](/comparison/java/comparison/)
 
 Here is the code to compare files:
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/07b102aec320458b093158f5197bb39b.js"></script>
 
-In the code above we use system temporary directory and static method [FileType.fromFileNameOrExtension](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#fromFileNameOrExtension-java.lang.String-), that detects file type, to create path for saving result file. You can change it to save result file to java output stream. *Note: result file here, always has the same name `Result`. It means that each comparison process will replace previous result document.* You can call [FileType.getSupportedFileTypes](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#getSupportedFileTypes--) method to get all supported document's types for the version of Comparison library you have.
+In the code above we use system temporary directory and static method [FileType.fromFileNameOrExtension](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#fromFileNameOrExtension-java.lang.String-), that detects file type, to create path for saving result file. You can change it to save result file to java output stream. _Note: result file here, always has the same name `Result`. It means that each comparison process will replace previous result document._ You can call [FileType.getSupportedFileTypes](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#getSupportedFileTypes--) method to get all supported document's types for the version of Comparison library you have.
 
 ### Saving resultant document to the place which client select
 
@@ -147,13 +149,14 @@ As well as generating previews, [GroupDocs.Comparison](https://products.groupdoc
 <script src="https://gist.github.com/groupdocs-comparison-gists/3ce0ef2b0ef1744448e9a4cf1e05da6a.js"></script>
 
 As you above, method [getChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges--) returns list of changes, each of which has lots of information, as:
-* [Unique id](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getId--) of the change
-* [Change text](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getText--) from resultant document
-* [Text before](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getSourceText--) changes
-* [Text after](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getTargetText--) changes
-* Coordinates [of the box](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getBox--) on the page, in which the change is located in document
-* [List of style](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getStyleChanges--) changes
-* And [so on](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo)
+
+- [Unique id](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getId--) of the change
+- [Change text](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getText--) from resultant document
+- [Text before](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getSourceText--) changes
+- [Text after](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getTargetText--) changes
+- Coordinates [of the box](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getBox--) on the page, in which the change is located in document
+- [List of style](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getStyleChanges--) changes
+- And [so on](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo)
 
 ### Get a Free API License
 
@@ -165,8 +168,8 @@ In this article was shown only few percentage of [GroupDocs.Comparison API](http
 
 ### See also
 
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
-* How to [show autocad drawings preview](/comparison/java/how-to-show-autocad-drawings-preview-in-kotlin-compose-application) in kotlin compose application
-* How to [compare Java code files](/comparison/java/how-to-compare-images-using-java-or-kotlin) applying or rejecting changes using Java or Kotlin
-* How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+- How to [show autocad drawings preview](/comparison/java/how-to-show-autocad-drawings-preview-in-kotlin-compose-application) in kotlin compose application
+- How to [compare Java code files](/comparison/java/how-to-compare-images-using-java-or-kotlin) applying or rejecting changes using Java or Kotlin
+- How to [compare Text, Word or PDF](/comparison/java/how-to-compare-text-word-pdf-in-java-or-kotlin) in Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin

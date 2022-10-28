@@ -4,22 +4,24 @@ url: comparison/java/groupdocs-comparison-for-java-18-6-3-release-notes
 title: GroupDocs.Comparison for Java 18.6.3 Release Notes
 weight: 1
 description: ""
-keywords: 
+keywords:
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 ---
+
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparsion for Java 18.6.3{{< /alert >}}
 
 ## Major Features
 
 Below the list of fixed bugs in this release of GroupDocs.Comparsion for Java. The most notable are:
 
-| Key | Summary | Issue Type |
-| --- | --- | --- |
-| COMPARISONJAVA-372 | Exception occurs while comparing presentations | Bug |
-| COMPARISONJAVA-373 | Comparing files with passwords doesn't work | Bug |
-| COMPARISONJAVA-379 | MultiCompare returns null | Bug |
-| COMPARISONJAVA-441 | Fix Api for MultiComparer | Bug |
+| Key                | Summary                                        | Issue Type |
+| ------------------ | ---------------------------------------------- | ---------- |
+| COMPARISONJAVA-372 | Exception occurs while comparing presentations | Bug        |
+| COMPARISONJAVA-373 | Comparing files with passwords doesn't work    | Bug        |
+| COMPARISONJAVA-379 | MultiCompare returns null                      | Bug        |
+| COMPARISONJAVA-441 | Fix Api for MultiComparer                      | Bug        |
 
 ## Public API and Backward Incompatible Changes
 

@@ -7,24 +7,26 @@ description: "You will find how you can use GroupDocs.Comparison for Java inside
 keywords: Compare Text, compare Word, compare Pdf, how to compare documents in Java, Kotlin
 productName: GroupDocs.Comparison for Java
 hideChildren: False
+toc: True
 structuredData:
-    showOrganization: True
-    application:
-        name: Compare word documents
-        description: The product allows to compare word or pdf documents
-        productCode: comparison
-        productPlatform: java
-    howTo:
-        name: 
-        description: Learn how to compare word or pdf documents in Java or Kotlin project
-        steps:
-        - name: Load source word or pdf document
-          text: Create an instance of Comparer class passing source word or pdf document as a constructor parameter
-        - name: Load target word or pdf documents
-          text: Add one or more target word or pdf documents to compare them with source one
-        - name: Compare source and target word or pdf documents
-          text: Run comparison process passing path where the result of the comparison will be saved
+  showOrganization: True
+  application:
+    name: Compare word documents
+    description: The product allows to compare word or pdf documents
+    productCode: comparison
+    productPlatform: java
+  howTo:
+    name:
+    description: Learn how to compare word or pdf documents in Java or Kotlin project
+    steps:
+      - name: Load source word or pdf document
+        text: Create an instance of Comparer class passing source word or pdf document as a constructor parameter
+      - name: Load target word or pdf documents
+        text: Add one or more target word or pdf documents to compare them with source one
+      - name: Compare source and target word or pdf documents
+        text: Run comparison process passing path where the result of the comparison will be saved
 ---
+
 After going through this article, you will be able to compare text files, Word files, PDF files, and other documents in Java-based applications. By using this feature, we can compare invoices, contracts, presentations, AutoCAD designs, price lists, or programming files. We will also have opportunity to highlight the identified changes and have the option to either accept or reject any change. You can even build our own [document comparison tool](https://products.groupdocs.app/comparison/total) similar to the one launched by GroupDocs, using the document comparison API for Java.
 
 ## Java Document Comparison API
@@ -35,9 +37,9 @@ As a pre-requisite, you may get [GroupDocs.Comparison for Java](https://products
 
 Steps below will show you how to compare any two Word documents in just a few lines of Java or Kotlin code. As a result, you will get the resultant document that will be highlighting the identified changes.
 
-* Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document path.
-* Add the second document to compare using the [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)) method of Comparer object.
-* Call the [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)) method to get the result of the comparison. The compare method takes the name of the output document as a parameter.
+- Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document path.
+- Add the second document to compare using the [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison. The compare method takes the name of the output document as a parameter.
 
 ---
 
@@ -113,9 +115,9 @@ _More details about accepting and rejecting changes can be found in [documentati
 
 Using the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class, we can also compare any text files. Below is the similar code for comparing two text files in Java or Kotlin. Steps are exactly the same as comparing any other two documents:
 
-* Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source text file.
-* Add the second file using the [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)) method of Comparer object.
-* Call the [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)) method to get the result of the comparison.
+- Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source text file.
+- Add the second file using the [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison.
 
 ---
 
@@ -171,8 +173,8 @@ Many other open-source examples are available at [GitHub Repository](https://git
 
 ### See also
 
-* How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
-* How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
-* How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
-* How to [spot photos differences](/comparison/java/how-to-spot-photos-differences-in-java-or-kotlin) in Java or Kotlin
-* How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop
+- How to [compare files](/comparison/java/how-to-compare-files-in-java-or-kotlin) in Java or Kotlin
+- How to [compare images](/comparison/java/how-to-compare-images-using-java-or-kotlin) using Java or Kotlin
+- How to [compare two or more files](/comparison/java/how-to-compare-two-or-more-files-in-java-or-kotlin) in Java or Kotlin
+- How to [spot photos differences](/comparison/java/how-to-spot-photos-differences-in-java-or-kotlin) in Java or Kotlin
+- How to [compare any files](/comparison/java/how-to-compare-any-files-using-compose-desktop) using Compose Desktop

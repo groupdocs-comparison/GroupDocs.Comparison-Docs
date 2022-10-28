@@ -7,18 +7,19 @@ description: "This article explains how to control file merging in GroupDocs.Com
 keywords: Merging documents, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 structuredData:
   showOrganization: True
-  application:    
-      name: Document Comparison   
-      description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
-      productCode: comparison
-      productPlatform: net
+  application:
+    name: Document Comparison
+    description: Compare documents natively with high performance using C# language and GroupDocs.Comparison for .NET
+    productCode: comparison
+    productPlatform: net
   showVideo: True
   howTo:
-      name: How to get source and target text in .NET 
-      description: Learn how to get source and target text in .NET step by step
-      steps:
+    name: How to get source and target text in .NET
+    description: Learn how to get source and target text in .NET step by step
+    steps:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
@@ -33,21 +34,21 @@ structuredData:
         text: To apply changes call the method ApplyChanges of the Comparer class object. The method takes a file stream parameter of the resulting file and object of ApplyChangeOptions class which should contains a ChangeInfo array.
 ---
 
-***
+---
 
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides an ability to merge source code files by using the [ComparisonAction](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/changeinfo/properties/comparisonaction) properties:
 
-*   [ComparisonAction.Accept](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) accepts the found changes and adds them to the file without highlighting;
-*   [ComparisonAction.Reject](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) cancels found changes and removes them from the result file.
+- [ComparisonAction.Accept](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) accepts the found changes and adds them to the file without highlighting;
+- [ComparisonAction.Reject](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) cancels found changes and removes them from the result file.
 
 The following are the steps to apply/reject changes to resultant file.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
-*   Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method  and specify path target document path or stream;
-*   Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method;
-*   Call [GetChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method and obtain detected changes list;
-*   Set [ComparisonAction](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) of needed change object to [ComparisonAction.Accept](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value;
-*   Call [ApplyChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method and pass collection of changes to it.
+- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
+- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method  and specify path target document path or stream;
+- Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method;
+- Call [GetChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method and obtain detected changes list;
+- Set [ComparisonAction](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) of needed change object to [ComparisonAction.Accept](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value;
+- Call [ApplyChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method and pass collection of changes to it.
 
 ## Example of merge source code file by using GroupDocs.Comparison
 
@@ -58,7 +59,7 @@ For example, you need to compare and merge several versions of source code files
 ![](/comparison/net/images/how-to-merge-source-code-file-source.png)
 ![](/comparison/net/images/how-to-merge-source-code-file-target.png)
 
-The differences show that two methods are written in the **source.cs** file: *AddNumbers* and *Sum*.
+The differences show that two methods are written in the **source.cs** file: _AddNumbers_ and _Sum_.
 
 If you did not use ComparisonAction, then in the resulting file, all changes will be committed, and these methods will be removed, but if you need to control the merging of files, the [ComparisonAction](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/changeinfo/properties/comparisonaction) property will help you with this.
 
@@ -67,6 +68,7 @@ If you did not use ComparisonAction, then in the resulting file, all changes wil
 ---
 
 The following code samples demonstrate how to merge two source code files.
+
 ```csharp
 using (Comparer comparer = new Comparer(sourcePath))
 {
@@ -87,16 +89,17 @@ using (Comparer comparer = new Comparer(sourcePath))
     comparer.ApplyChanges(File.Create(resultPath), new ApplyChangeOptions { Changes = changes });
 }
 ```
+
 ## The result of merging files
 
 ---
 
-As a result, we get a merged source code file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>. 
+As a result, we get a merged source code file where the deleted elements are marked in <font color="red">**red**</font>, the added – in <font color="blue">**blue**</font>, and the modified – in <font color="green">**green**</font>.
 
 Also, you will receive a file in HTML format with changed places in the code.
 
-| Result source code file | Result HTML file |
-| --- | --- |
+| Result source code file                                                 | Result HTML file                                                          |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------- |
 | ![](/comparison/net/images/how-to-merge-source-code-file-result-CS.png) | ![](/comparison/net/images/how-to-merge-source-code-file-result-HTML.png) |
 
 As you can see from the resulting files, only one of the two methods was removed.
@@ -106,14 +109,17 @@ As you can see from the resulting files, only one of the two methods was removed
 ---
 
 ### GitHub Examples
+
 You may easily run the code above and see the feature in action in our GitHub examples:
-*   [GroupDocs.Comparison for .NET examples, plugins, and showcase](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET)
-*   [GroupDocs.Comparison for Java examples, plugins, and showcase](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java)
-*   [Document Comparison for .NET MVC UI Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC)
-*   [Document Comparison for .NET App WebForms UI Modern Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms)
-*   [Document Comparison for Java App Dropwizard UI Modern Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java-Dropwizard)
-*   [Document Comparison for Java Spring UI Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java-Spring)
-    
+
+- [GroupDocs.Comparison for .NET examples, plugins, and showcase](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET)
+- [GroupDocs.Comparison for Java examples, plugins, and showcase](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java)
+- [Document Comparison for .NET MVC UI Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC)
+- [Document Comparison for .NET App WebForms UI Modern Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms)
+- [Document Comparison for Java App Dropwizard UI Modern Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java-Dropwizard)
+- [Document Comparison for Java Spring UI Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java-Spring)
+
 ### Free Online App
+
 Along with full-featured .NET library we provide simple, but powerful free Apps.  
 You are welcome to compare your DOC or DOCX, XLS or XLSX, PPT or PPTX, PDF, EML, EMLX, MSG and other documents with free to use online [GroupDocs Comparison App](https://products.groupdocs.app/comparison).
