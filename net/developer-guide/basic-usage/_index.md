@@ -11,6 +11,3 @@ isMenuItemWithNoContent: True
 structuredData:
   showOrganization: True
 ---
-
-Compare your documents fast and easy with our intuitive and powerful API just with few lines of code.  
-Let’s review common usage scenarios when source and target documents are stored at a local drive and you want to compare them using **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** API.

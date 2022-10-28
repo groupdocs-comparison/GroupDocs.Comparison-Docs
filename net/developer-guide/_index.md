@@ -11,7 +11,3 @@ isMenuItemWithNoContent: True
 structuredData:
   showOrganization: True
 ---
-
-{{< alert style="info" >}}
-This section describes some basic and advanced use cases of **[GroupDocs.Comparison for .NET](https://products.groupdocs.com/comparison/net)**. Please refer to [GitHub repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET) for more examples and samples.
-{{< /alert >}}

@@ -11,5 +11,3 @@ isMenuItemWithNoContent: True
 structuredData:
   showOrganization: True
 ---
-
-In this manual, you will learn about the installation, basic features, licensing, system requirements, supported platforms of GroupDocs.Comparison for .NET

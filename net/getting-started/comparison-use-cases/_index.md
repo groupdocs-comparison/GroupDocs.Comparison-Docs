@@ -9,6 +9,3 @@ productName: GroupDocs.Comparison for .NET
 hideChildren: False
 isMenuItemWithNoContent: True
 ---
-
-This section will describe typical problems with comparing files and ways to solve them using **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** API.  
-Learn more about advanced GroupDocs.Comparison features and use case from the guides below.
