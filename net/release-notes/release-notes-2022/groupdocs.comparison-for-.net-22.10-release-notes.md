@@ -7,6 +7,7 @@ description: ""
 keywords: 
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
+toc: True
 ---
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for .NET 22.10{{< /alert >}}
 
