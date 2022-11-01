@@ -76,8 +76,8 @@ Creating distribution archive is as easy as running the application:
 
 After that, go to `.\build\distributions\` directory and you will find next distribution files:
 
-* comparison-micronaut-22.3.tar
-* comparison-micronaut-22.3.zip
+* comparison-micronaut-22.11.tar
+* comparison-micronaut-22.11.zip
 
 Both of them has `bin` directory with scripts to run the app and `lib` directory that contains all application libraries
 

@@ -73,7 +73,7 @@ To run [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) ap
 1. Open Portainer interface
 2. Click `Containers` on the left of the screen
 3. Click `Add container` button
-4. Past `groupdocs/comparison:22.3-java-openjdk8-bullseye-spring` to `Image` field (actual version as well as other available configurations you can find on our [Docker Hub page](https://hub.docker.com/r/groupdocs/comparison/tags))
+4. Past `groupdocs/comparison:22.11-java-openjdk8-bullseye-spring` to `Image` field (actual version as well as other available configurations you can find on our [Docker Hub page](https://hub.docker.com/r/groupdocs/comparison/tags))
 5. Find `Manual network port publishing` and click `publish a new network port` near it
 6. Enter `8080` into `host` text field and `8080` into `container` text field (`host` is the port that you will use to access comparer in web browser. You can past `80` as host port, in this way the application will be available in web browser without entering any port - [http://localhost/comparison/](http://localhost/comparison/))
 7. Click button `Deploy the container`

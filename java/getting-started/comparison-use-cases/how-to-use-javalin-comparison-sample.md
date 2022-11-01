@@ -79,8 +79,8 @@ To create distribution archive, just build the application with the next command
 
 Then go to `.\build\distributions\` directory and you will see distribution files:
 
-* comparison-javalin-22.3.tar
-* comparison-javalin-22.3.zip
+* comparison-javalin-22.11.tar
+* comparison-javalin-22.11.zip
 
 There are two directories inside them, `bin` with scripts to run the app and `lib` with all application libraries
 

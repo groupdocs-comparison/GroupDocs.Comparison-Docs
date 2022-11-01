@@ -2,7 +2,7 @@
 id: groupdocs-comparison-for-java-22-3-release-notes
 url: comparison/java/groupdocs-comparison-for-java-22-3-release-notes
 title: GroupDocs.Comparison for Java 22.3 Release Notes
-weight: 20
+weight: 12
 description: ""
 keywords:
 productName: GroupDocs.Comparison for Java

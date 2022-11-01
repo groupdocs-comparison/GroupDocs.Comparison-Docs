@@ -81,8 +81,8 @@ You can easily create archive for distribution. To do it, just build the applica
 
 After that, you can go to `.\build\distributions\` directory and find next distribution files:
 
-* comparison-ktor-22.3.tar
-* comparison-ktor-22.3.zip
+* comparison-ktor-22.11.tar
+* comparison-ktor-22.11.zip
 
 There are two directories inside them, `lib` with all application libraries and `bin` with scripts to run the app
 
