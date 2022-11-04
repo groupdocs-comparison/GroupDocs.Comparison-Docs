@@ -9,27 +9,27 @@ productName: GroupDocs.Comparison for Java
 hideChildren: False
 toc: True
 structuredData:
-  showOrganization: True
-  application:
-    name: Pdf, Word, Image comparison API
-    description: The product allows to compare Pdf, Word and Image files
-    productCode: comparison
-    productPlatform: java
-  howTo:
-    name: How to use Ktor Framework
-    description: Learn how to use Ktor Framework to compare documents, images and other files in Java or Kotlin project
-    steps:
-      - name: Which technologies will be used
-        text: Find out which technologies are required and will be used in the application
-      - name: Common structure of the project
-        text: It is very important to form main structure of the application project
-      - name: Entry point or how to run the sample
-        text: One or few ways the application will be launched
-      - name: Key places inside the application
-        text: Implement general functions inside the application to make it work
+    showOrganization: True
+    application:
+        name: Pdf, Word, Image comparison API
+        description: The product allows to compare Pdf, Word and Image files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to use Ktor Framework
+        description: Learn how to use Ktor Framework to compare documents, images and other files in Java or Kotlin project
+        steps:
+        - name: Which technologies will be used
+          text: Find out which technologies are required and will be used in the application
+        - name: Common structure of the project
+          text: It is very important to form main structure of the application project
+        - name: Entry point or how to run the sample
+          text: One or few ways the application will be launched
+        - name: Key places inside the application
+          text: Implement general functions inside the application to make it work
 ---
 
-There are lots of popular web frameworks which you can use with GroupDocs Comparison library. One of the most modern and powerful Kotlin frameworks is Ktor. This article describes example of using Ktor Framework together with modern and powerful [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) for comparing Word, Excel, PowerPoint, Pdf documents, photos and much more. The example is completely free to use and available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/68c3f01/Demos/Ktor)
+There are lots of popular web frameworks which you can use with GroupDocs Comparison library. One of the most modern and powerful Kotlin frameworks is Ktor. This article describes example of using Ktor Framework together with modern and powerful [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) for comparing Word, Excel, PowerPoint, Pdf documents, photos and much more. The example is completely free to  use and available [on GitHub](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/68c3f01/Demos/Ktor)
 
 ### Which technologies will be used
 
@@ -67,7 +67,7 @@ In resources:
 
 #### Using IDE
 
-The entry point of the application is in a file `Application.kt`. There is a `main` function that must be run to start the application. You can do it within your favourite IDE.
+The entry point of the application is in a file `Application.kt`. There is a `main` function that must be run to start the application. You can do it within your favourite IDE. 
 
 #### Using command line
 
@@ -83,8 +83,8 @@ You can easily create archive for distribution. To do it, just build the applica
 
 After that, you can go to `.\build\distributions\` directory and find next distribution files:
 
-- comparison-ktor-22.3.tar
-- comparison-ktor-22.3.zip
+- comparison-ktor-22.11.tar
+- comparison-ktor-22.11.zip
 
 There are two directories inside them, `lib` with all application libraries and `bin` with scripts to run the app
 
@@ -93,51 +93,51 @@ There are two directories inside them, `lib` with all application libraries and 
 #### Mappings and controllers
 
 Package `mudules` contains some amount of sub packages. Each of them is a single request. For example, lets review sub package `compare`.
-The package has two files:
+The package has two files: 
 
 1. `CompareModule.kt` - contains url mapping, will be called when request to compare documents will be sent from browser
 
-   <script src="https://gist.github.com/groupdocs-comparison-gists/6c365c5e96514aad2d97c319e67540d5.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/6c365c5e96514aad2d97c319e67540d5.js"></script>
 
-   All, the class does: catches request, extracts parameters, calls controller and returns response object
+    All, the class does: catches request, extracts parameters, calls controller and returns response object
 
 2. `CompareController.kt` - combining usecases results and parameters creates response object.
-   First of all, using `PathManager` it checks that request paths are inside allowed directories
+   First of all, using `PathManager` it checks that request paths are inside allowed directories 
 
     <script src="https://gist.github.com/groupdocs-comparison-gists/80121384a48c0bd18adf82471ec06158.js"></script>
 
-   Then, the controller checks, are requested files supported by comparison application. For this purpose it uses special usecase, that is called `AreFilesSupportedUseCase`
+    Then, the controller checks, are requested files supported by comparison application. For this purpose it uses special usecase, that is called `AreFilesSupportedUseCase`
 
     <script src="https://gist.github.com/groupdocs-comparison-gists/d967ad8ff4850452d20be766fc80e540.js"></script>
 
-   The next step is to create path to the file, in which will be saved the result document of the comparison process
+    The next step is to create path to the file, in which will be saved the result document of the comparison process
 
     <script src="https://gist.github.com/groupdocs-comparison-gists/e5fbb26f52bd2a20e6ba7e918761bc60.js"></script>
 
-   Temporary files are used to minimize usage of RAM. It is easy to change app so that it will not save any files. Temporary directory can be specified in `comparer.conf`. By default, system temp directory is used.
+    Temporary files are used to minimize usage of RAM. It is easy to change app so that it will not save any files. Temporary directory can be specified in `comparer.conf`. By default, system temp directory is used.
 
-   Now, the controller uses `CompareDocumentsUseCase` to compare source and target documents and to save the result file. Also, the usecase returns list of changes, that will be set into response object later
+    Now, the controller uses `CompareDocumentsUseCase` to compare source and target documents and to save the result file. Also, the usecase returns list of changes, that will be set into response object later
 
     <script src="https://gist.github.com/groupdocs-comparison-gists/8c38027c876bcdb257a410ed9ed295b6.js"></script>
 
-   The next usecase, which is called `RetrieveLocalFilePagesStreamUseCase`, is used to get input stream for each page of the result document
+    The next usecase, which is called `RetrieveLocalFilePagesStreamUseCase`, is used to get input stream for each page of the result document
 
     <script src="https://gist.github.com/groupdocs-comparison-gists/3a9ae7912f345b02e45a2469287ffed6.js"></script>
 
-   And the last step is to map groupdocs `ChangeInfo` objects into response models, which will be sent as a result
+    And the last step is to map groupdocs `ChangeInfo` objects into response models, which will be sent as a result
 
 #### What is usecases and how to use them
 
 In common - usecase is a single thin that can be done. Usually, it contains business logic, has only one aim and is easy to test. All usecases in the project are configured to be created by Koin. Some usecases have constructor parameters, which are injected when Koin will create instance of usecase.
 As an example, let's overview `CompareDocumentsUseCase`
 
-The usecase has `invoke` operator overridden, so that it can be called using it's object as a function. The only aim of the usecase is to compare source and target documents and to write the result to provided output stream.
+The usecase has `invoke` operator overridden, so that it can be called using it's object as a function. The only aim of the usecase is to compare source and target documents and to write the result to provided output stream. 
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/a73539b2fdb66f8cde9495beb47d5fc5.js"></script>
 
 As a parameters it takes paths of source and target documents and output stream, in which the result should be saved. Optional parameters are passwords for each document.
 
-To compare documents we use powerful and modern [GroupDocs.Comparison for Java/Kotlin](https://products.groupdocs.com/comparison/java/) library. With the library the comparison process is very easy.
+To compare documents we use powerful and modern [GroupDocs.Comparison for Java/Kotlin](https://products.groupdocs.com/comparison/java/)  library. With the library the comparison process is very easy.
 
 First step is to create object of `Comparer` class. Load options are used to provide password for the document. Also, with options you can configure Comparer to use first parameter not as path to the source document (streams are also available) but to use it as a source text for comparison process. Furthermore, there is an option to configure directories with specific fonts. Comparer implements Java `Closeable` interface, so it is very easy to free used memory.
 
@@ -148,7 +148,7 @@ Inside `use` block we call `add` method of comparer to add second document or te
 <script src="https://gist.github.com/groupdocs-comparison-gists/180ae9b27854c4b11dde7854e6ead725.js"></script>
 
 The last thin is to call `compare` method, that will start comparison process. As you can see, the method takes `CompareOptions` object as a second argument. Here are used just a few options. It is configured to show content, that was deleted in target document, to recognise and process styles changes and to provide coordinate of each change in the result document. There are much more options available. For example, you can enable generating summary page, change comparison sensitivity level, enable/disable each type of change, configure it's style in result document and so on. More options you can find [in the documentation](/comparison/java/getting-started/).
-At the end of the `apply` block we use `comparer.getChanges()` method to get list of changes.
+At the end of the `apply` block we use `comparer.getChanges()` method to get list of changes. 
 
 #### Dependency injection
 

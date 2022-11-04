@@ -9,29 +9,29 @@ productName: GroupDocs.Comparison for Java
 hideChildren: False
 toc: True
 structuredData:
-  showOrganization: True
-  application:
-    name: PowerPoint, Excel, Image comparison API
-    description: The product allows to compare PowerPoint, Excel and Image files
-    productCode: comparison
-    productPlatform: java
-  howTo:
-    name: How to use Javalin Framework
-    description: Learn how to use Javalin Framework to compare documents
-    steps:
-      - name: Used technologies
-        text: Find out which technologies are required and will be used in the application
-      - name: Common project structure
-        text: It is very important to understand main structure of the project
-      - name: How to run the sample
-        text: One or few ways the application can be run
-      - name: Main points inside the application
-        text: Implement general functions inside the application to make it work
+    showOrganization: True
+    application:
+        name: PowerPoint, Excel, Image comparison API
+        description: The product allows to compare PowerPoint, Excel and Image files
+        productCode: comparison
+        productPlatform: java
+    howTo:
+        name: How to use Javalin Framework
+        description: Learn how to use Javalin Framework to compare documents
+        steps:
+        - name: Used technologies
+          text: Find out which technologies are required and will be used in the application
+        - name: Common project structure
+          text: It is very important to understand main structure of the project
+        - name: How to run the sample
+          text: One or few ways the application can be run
+        - name: Main points inside the application
+          text: Implement general functions inside the application to make it work
 ---
 
 GroupDocs Comparison library can be used with lots of popular Web frameworks. One of them is Javalin Framework. Going through the article you will understand, how easy modern and powerful [GroupDocs.Comparison API](https://products.groupdocs.com/comparison) can be combined with Javalin Framework to create web application for comparing AutoCad drawings, PowerPoint presentations, Word, Excel and Pdf documents, photos, images and [much more](/comparison/java/supported-document-formats/). The example application is completely free to use and to be changed. Sources are available on [GitHub page](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/tree/d1e380f/Demos/Javalin)
 
-### Used technologies
+### Used technologies 
 
 1. Kotlin - A modern programming language that makes developers happier. Fully compatible with Java libraries.
 2. Javalin - A simple web framework for Java and Kotlin.
@@ -40,7 +40,7 @@ GroupDocs Comparison library can be used with lots of popular Web frameworks. On
 5. Koin - Smart Kotlin injection library
 6. Slf4j - Wrapper for logging system
 
-### Common project structure
+### Common project structure 
 
 - `config` - Kotlin class for mapping configuration of the application
 - `di` - Modules of Koin dependency injection
@@ -65,7 +65,7 @@ In resources:
 
 #### Using IDE
 
-The entry point of the sample is in a file `Application.kt`. It contains `main` function that must be executed to run the application. You can do it using favourite IDE.
+The entry point of the sample is in a file `Application.kt`. It contains `main` function that must be executed to run the application. You can do it using favourite IDE. 
 
 #### Using command line
 
@@ -81,8 +81,8 @@ To create distribution archive, just build the application with the next command
 
 Then go to `.\build\distributions\` directory and you will see distribution files:
 
-- comparison-javalin-22.3.tar
-- comparison-javalin-22.3.zip
+- comparison-javalin-22.11.tar
+- comparison-javalin-22.11.zip
 
 There are two directories inside them, `bin` with scripts to run the app and `lib` with all application libraries
 
@@ -96,34 +96,34 @@ The package has two files:
 
 1. `CompareModule.kt` - this file contains url mapping, it will be called when request to compare documents will be sent
 
-   <script src="https://gist.github.com/groupdocs-comparison-gists/20a0e6af013f3c0a8a57695efd2ed87d.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/20a0e6af013f3c0a8a57695efd2ed87d.js"></script>
 
-   The class does simple things: catches request, extracts parameters, calls controller and returns response object
+    The class does simple things: catches request, extracts parameters, calls controller and returns response object
 
 2. `CompareController.kt` - using usecases and parameters, it creates response object.
-   Firstly, with a help of `PathManager`, controller checks that request paths are inside allowed directories
+    Firstly, with a help of `PathManager`, controller checks that request paths are inside allowed directories 
 
-   <script src="https://gist.github.com/groupdocs-comparison-gists/80121384a48c0bd18adf82471ec06158.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/80121384a48c0bd18adf82471ec06158.js"></script>
 
-   Secondly, it checks that requested files are supported by the sample. To do it, controller uses special usecase, which name is `AreFilesSupportedUseCase`
+    Secondly, it checks that requested files are supported by the sample. To do it, controller uses special usecase, which name is `AreFilesSupportedUseCase`
 
-   <script src="https://gist.github.com/groupdocs-comparison-gists/d967ad8ff4850452d20be766fc80e540.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/d967ad8ff4850452d20be766fc80e540.js"></script>
 
-   Thirdly, the controller creates path to the file, that will be used to save the result document of the comparison process
+    Thirdly, the controller creates path to the file, that will be used to save the result document of the comparison process
 
-   <script src="https://gist.github.com/groupdocs-comparison-gists/e5fbb26f52bd2a20e6ba7e918761bc60.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/e5fbb26f52bd2a20e6ba7e918761bc60.js"></script>
 
-   There some temporary files are used. It is needed to minimize usage of RAM. Anybody can easily change the sample to avoid saving any files. There is special option in `application.conf` to configure path to the temporary directory. System temp directory is used by default.
+    There some temporary files are used. It is needed to minimize usage of RAM. Anybody can easily change the sample to avoid saving any files. There is special option in `application.conf` to configure path to the temporary directory. System temp directory is used by default.
 
-   The next step is to use `CompareDocumentsUseCase` to compare source and target documents saving the result file. The usecase returns list of changes, that will be set into response object to send it back to client
+    The next step is to use `CompareDocumentsUseCase` to compare source and target documents saving the result file. The usecase returns list of changes, that will be set into response object to send it back to client
 
-   <script src="https://gist.github.com/groupdocs-comparison-gists/8c38027c876bcdb257a410ed9ed295b6.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/8c38027c876bcdb257a410ed9ed295b6.js"></script>
 
-   Usecase `RetrieveLocalFilePagesStreamUseCase`, is used to get input stream for each page of the result document
+    Usecase `RetrieveLocalFilePagesStreamUseCase`, is used to get input stream for each page of the result document
 
-   <script src="https://gist.github.com/groupdocs-comparison-gists/3a9ae7912f345b02e45a2469287ffed6.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/3a9ae7912f345b02e45a2469287ffed6.js"></script>
 
-   And the final thing is to map `ChangeInfo` objects from groupdocs package into response models to be used as a result
+    And the final thing is to map `ChangeInfo` objects from groupdocs package into response models to be used as a result
 
 #### Understanding usecases
 
@@ -141,16 +141,16 @@ There is powerful and modern [GroupDocs.Comparison for Java/Kotlin](https://prod
 To compare documents, presentations, images and so on just do next steps:
 
 1. Create object of `Comparer` class passing source document path or stream.
-Load options can be used to provide password for the source document. Moreover, using options you can configure Comparer to use the first argument as a source text for comparison process. Furthermore, there is an option to configure directories with fonts, specific for the document. Comparer implements Java `Closeable` interface, so it is very easy to free memory after using it.
+        Load options can be used to provide password for the source document. Moreover, using options you can configure Comparer to use the first argument as a source text for comparison process. Furthermore, there is an option to configure directories with fonts, specific for the document. Comparer implements Java `Closeable` interface, so it is very easy to free memory after using it.
 
-<script src="https://gist.github.com/groupdocs-comparison-gists/cded4b9f8a4f1fd1ec4ae1de61c3b15a.js"></script>
+    <script src="https://gist.github.com/groupdocs-comparison-gists/cded4b9f8a4f1fd1ec4ae1de61c3b15a.js"></script>
 
 2. Call `add` method of comparer (inside `use` block) to add second document or text for comparing. The method takes the same `LoadOptions` parameter to provide password and so on. [GroupDocs.Comparison API](https://products.groupdocs.com/comparison/java/) supports multi-document comparison, so you can add more than one target document.
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/180ae9b27854c4b11dde7854e6ead725.js"></script>
 
 3. The final step is to call `compare` method, that will run comparing. The method takes `CompareOptions` object as a second argument. In the sample just a few of available options are used. In the code above the comparer is configured to process styles changes, to show content, that was deleted and to retrieve coordinates of each change in the result document. There are much more options that can be used to configure comparison process. For example, it is easy to change comparison sensitivity level, enable generating summary page, enable/disable each type of change, configure their style in result document and much more. The information can be found [in the documentation](/comparison/java/getting-started/).
-   At the end of the `apply` block method `comparer.getChanges()` is used to get list of changes.
+At the end of the `apply` block method `comparer.getChanges()` is used to get list of changes. 
 
 #### Dependency injection
 

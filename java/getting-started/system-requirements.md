@@ -9,12 +9,12 @@ productName: GroupDocs.Comparison for Java
 hideChildren: False
 toc: True
 structuredData:
-  showOrganization: True
-  application:
-    name: Documents Comparison Tool
-    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
-    productCode: comparison
-    productPlatform: java
+    showOrganization: True
+    application:
+        name: Documents Comparison Tool
+        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+        productCode: comparison
+        productPlatform: java
 ---
 
 ## Overview
@@ -52,7 +52,6 @@ GroupDocs.Comparison for Java supports any 32-bit or 64-bit operating system t
 
 GroupDocs.Comparison for Java supports the following Java versions:
 
-- J2SE 7.0 (1.7) **DEPRECATED** (Since next version Java 7 will not be supported anymore)
 - J2SE 8.0 (1.8)
 - or above (_for example Java 10_)
 
