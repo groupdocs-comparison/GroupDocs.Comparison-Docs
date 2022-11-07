@@ -1,6 +1,6 @@
 ---
-id: groupdocs-comparison-for-java-22-10-release-notes
-url: comparison/java/groupdocs-comparison-for-java-22-10-release-notes
+id: groupdocs-comparison-for-java-22-11-release-notes
+url: comparison/java/groupdocs-comparison-for-java-22-11-release-notes
 title: GroupDocs.Comparison for Java 22.11 Release Notes
 weight: 11
 description: ""
