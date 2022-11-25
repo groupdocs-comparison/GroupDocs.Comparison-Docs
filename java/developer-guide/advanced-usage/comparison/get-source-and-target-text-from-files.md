@@ -35,10 +35,10 @@ structuredData:
 
 The following are the steps to get a list of changed source and target texts:
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
-- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target document path or stream;
-- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method;
-- Call [getChanges](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method.
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
+- Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target document path or stream;
+- Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method;
+- Call [getChanges](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method.
 
 The following code example demonstrates how to get specified texts from a file.
 

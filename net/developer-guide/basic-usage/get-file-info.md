@@ -30,10 +30,10 @@ structuredData:
 
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to get file information which includes:
 
-- [FileType](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);
-- [PageCount](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/pagecount) - count of document pages;
-- [FileSize](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size) - document file size;
-- [PagesInfo](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/pageinfo) - represents information about page.
+- [FileType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) - document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.);
+- [PageCount](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/pagecount) - count of document pages;
+- [FileSize](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size) - document file size;
+- [PagesInfo](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/pageinfo) - represents information about page.
 
 The following code samples demonstrate how to get file information.
 

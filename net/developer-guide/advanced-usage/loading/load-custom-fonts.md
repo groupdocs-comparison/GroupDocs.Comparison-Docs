@@ -34,10 +34,10 @@ structuredData:
 
 The following are the steps to connect custom fonts and compare documents:
 
-- Instantiate [LoadOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object and provide a list of directories for custom fonts;
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream and [LoadOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object created at previous step;
-- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
-- Call [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method.
+- Instantiate [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object and provide a list of directories for custom fonts;
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream and [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object created at previous step;
+- Call [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
+- Call [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method.
 
 The following code sample shows how to connect custom fonts and compare documents.
 

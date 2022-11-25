@@ -33,15 +33,15 @@ In this article, I will use Java API of [GroupDocs.Comparison](https://products.
 
 #### Download and Configure
 
-Get the photos comparison library from the [downloads section](https://downloads.groupdocs.com/comparison/java). For Maven, Gradle or Kotlin based Java applications, installation process is very simple and described on [corresponding documentation page](comparison/java/installation). Later, you can try the examples of this article as well as many more from [GitHub](https://github.com/groupdocs-comparison). For the details, you may also visit the [API Reference](https://apireference.groupdocs.com/comparison/java).
+Get the photos comparison library from the [downloads section](https://downloads.groupdocs.com/comparison/java). For Maven, Gradle or Kotlin based Java applications, installation process is very simple and described on [corresponding documentation page](comparison/java/installation). Later, you can try the examples of this article as well as many more from [GitHub](https://github.com/groupdocs-comparison). For the details, you may also visit the [API Reference](https://reference.groupdocs.com/comparison/java).
 
 ### Compare Photos in Java to Highlight Differences
 
 Comparing the photos and get the result is just 3 lines of code. You can follow the steps and use the mentioned source code for comparing any of your JPG, PNG, BMP, DICOM, DjVu, GIF, and other images. You can identify the dissimilarities or variations among these within the Java application.
 
-- Select the first photo to compare using constructor of the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class.
-- Add the second photo for comparison using the appropriate [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
-- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the comparison result of both photos.
+- Select the first photo to compare using constructor of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class.
+- Add the second photo for comparison using the appropriate [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the comparison result of both photos.
 
 Here is the code, compares two JPG photos and saves the output that highlights the identified differences.
 

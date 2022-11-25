@@ -38,11 +38,11 @@ structuredData:
 
 The following are the steps to obtain changes coordinates.
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
-- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
-- Instantiate [CompareOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object and set [CalculateCoordinates](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions/properties/calculatecoordinates) property to true;
-- Call [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method and pass [CompareOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object from previous step;
-- Call [GetChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method.
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
+- Call [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
+- Instantiate [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object and set [CalculateCoordinates](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions/properties/calculatecoordinates) property to true;
+- Call [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method and pass [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object from previous step;
+- Call [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method.
 
 The following code sample shows how to compare multiple documents with specific options.
 

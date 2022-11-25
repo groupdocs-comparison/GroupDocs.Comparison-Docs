@@ -38,9 +38,9 @@ Changes detection algorithms used by GroupDocs.Comparison allows you to detect d
 
 Here are simple steps to compare two text files and show differences:
 
-- Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document.
-- Add the second file using the [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
-- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison.
+- Initialize the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document.
+- Add the second file using the [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison.
 
 The following code snippet demonstrates the simplest case of documents comparison using a couple lines of code.
 
@@ -92,12 +92,12 @@ Let’s say you have two contracts in DOCX format that were concluded in differe
 
 The following are the steps to apply/reject changes to the resultant document.
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream.
-- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method and specify target document's path or stream.
-- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method to comparison process.
-- Call [getChanges](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method and obtain detected changes list.
-- Set ComparisonAction of needed change object to [ComparisonAction.ACCEPT](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.Reject](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value.
-- Call [applyChanges](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#applyChanges(java.lang.String,%20com.groupdocs.comparison.options.ApplyChangeOptions)>) method and pass object of [ApplyChangeOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/ApplyChangeOptions) with collection of changes to it.
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream.
+- Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method and specify target document's path or stream.
+- Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method to comparison process.
+- Call [getChanges](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method and obtain detected changes list.
+- Set ComparisonAction of needed change object to [ComparisonAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.Reject](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value.
+- Call [applyChanges](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#applyChanges(java.lang.String,%20com.groupdocs.comparison.options.ApplyChangeOptions)>) method and pass object of [ApplyChangeOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/ApplyChangeOptions) with collection of changes to it.
 
 ---
 
@@ -119,20 +119,20 @@ The following are the steps to apply/reject changes to the resultant document.
 
 ### Generate document pages preview
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison) allows you generate page's previews for source, target and resultant documents using [generatePreview](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method of a [Document](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) class.
-Class [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) is used to manage preview generation process – specify page numbers, image format etc.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison) allows you generate page's previews for source, target and resultant documents using [generatePreview](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method of a [Document](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) class.
+Class [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) is used to manage preview generation process – specify page numbers, image format etc.
 
 The following steps shows how to generate a document preview with [GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java) API:
 
-- Create a new instance of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class and pass the source document path as a constructor parameter.
-- Add target document(s) to comparer object using [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method.
-- [getSource](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getSource()>) and [getTargets](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getTargets()>) methods of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object allows to access source and target documents and provides [GeneratePreview](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method
-- Instantiate the [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) object with:
-  - callback for each page stream creation (see event handler [CreatePageStream](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates.CreatePageStream));
+- Create a new instance of [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class and pass the source document path as a constructor parameter.
+- Add target document(s) to comparer object using [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method.
+- [getSource](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getSource()>) and [getTargets](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getTargets()>) methods of [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object allows to access source and target documents and provides [GeneratePreview](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method
+- Instantiate the [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) object with:
+  - callback for each page stream creation (see event handler [CreatePageStream](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.common.delegates/Delegates.CreatePageStream));
   - image preview format – PNG / JPG / BMP;
   - page numbers to process;
   - custom size of preview images (if needed).
-- Call [generatePreview](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method of dource and targets [Document](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) objects passing [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) to it.
+- Call [generatePreview](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document#generatePreview(com.groupdocs.comparison.options.PreviewOptions)>) method of dource and targets [Document](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Document) objects passing [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) to it.
 
 ---
 

@@ -54,9 +54,9 @@ Such functionality that is provided by third-party programs is clearly not enoug
 
 The following are the steps to compare two PPTX files.
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
-- Instantiate [CompareOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object with desired parameters;
-- Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method and pass [CompareOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object to method;
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
+- Instantiate [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object with desired parameters;
+- Call [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method and pass [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object to method;
 
 The following code samples demonstrate how to compare two PPTX files.
 

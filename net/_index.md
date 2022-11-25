@@ -59,7 +59,7 @@ It also compares style changes like font size, bold, italic etc. Differences sum
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>
-	<li><a href="https://apireference.groupdocs.com/comparison/net">GroupDocs.Comparison for .NET API Reference</a></li>
+	<li><a href="https://reference.groupdocs.com/comparison/net">GroupDocs.Comparison for .NET API Reference</a></li>
 	<li><a href='{{< ref "comparison/net/release-notes" >}}'>GroupDocs.Comparison for .NET Release Notes</a></li>
 </ul>
 {{< /columns >}}

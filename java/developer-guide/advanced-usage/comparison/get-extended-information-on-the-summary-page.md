@@ -31,15 +31,15 @@ structuredData:
 
 ---
 
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** allows you to detect changes between source and target files and display changes on the separate page - [SummaryPage](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setGenerateSummaryPage(boolean)>).
-Аlso you can get extended information about comparison of documents, which will be display in the [SummaryPage](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setGenerateSummaryPage(boolean)>).
+**[GroupDocs.Comparison](https://products.groupdocs.com/comparison)** allows you to detect changes between source and target files and display changes on the separate page - [SummaryPage](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setGenerateSummaryPage(boolean)>).
+Аlso you can get extended information about comparison of documents, which will be display in the [SummaryPage](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setGenerateSummaryPage(boolean)>).
 
 The following are the steps to get extended information:
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
-- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target document path or stream;
-- Instantiate [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object and set [ExtendedSummaryPage](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setExtendedSummaryPage(boolean)>) property to *true*;
-- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method and pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object from previous step.
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
+- Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target document path or stream;
+- Instantiate [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object and set [ExtendedSummaryPage](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setExtendedSummaryPage(boolean)>) property to *true*;
+- Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method and pass [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) object from previous step.
 
 The following code sample shows how to get extended information about comparison of documents.
 

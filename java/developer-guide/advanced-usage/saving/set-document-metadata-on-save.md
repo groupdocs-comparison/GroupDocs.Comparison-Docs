@@ -39,10 +39,10 @@ Possible metadata sources are:
 
 The following are the steps to set resultant file metadata:
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source file path or stream;
-- Call [add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target file path or stream.
-- Instantiate [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) object and use property [CloneMetadataType](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions#setCloneMetadataType(int)>) to set desired [MetadataType](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/MetadataType) variant;
-- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String,%20com.groupdocs.comparison.options.CompareOptions)>) method and pass [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) object to method;
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source file path or stream;
+- Call [add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target file path or stream.
+- Instantiate [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) object and use property [CloneMetadataType](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions#setCloneMetadataType(int)>) to set desired [MetadataType](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/MetadataType) variant;
+- Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String,%20com.groupdocs.comparison.options.CompareOptions)>) method and pass [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) object to method;
 
 The following code demonstrates how to set resultant file metadata.
 

@@ -10,7 +10,7 @@ hideChildren: False
 ---
 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** provides different ways of saving resultant document -  save with password, select document metadata source etc.
 
-The [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) class provides following properties to customize saving process:
+The [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) class provides following properties to customize saving process:
 
 *   **CloneMetadataType** - Gets or sets a value indicating whether to clone metadata to target document or not;
 *   **FileAuthorMetadata** - Used when MetadataType is set to FileAuthor, allows set metadata values provided by user;

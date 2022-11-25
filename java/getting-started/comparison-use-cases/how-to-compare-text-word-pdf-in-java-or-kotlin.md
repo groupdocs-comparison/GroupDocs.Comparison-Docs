@@ -37,9 +37,9 @@ As a pre-requisite, you may get [GroupDocs.Comparison for Java](https://products
 
 Steps below will show you how to compare any two Word documents in just a few lines of Java or Kotlin code. As a result, you will get the resultant document that will be highlighting the identified changes.
 
-- Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document path.
-- Add the second document to compare using the [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
-- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison. The compare method takes the name of the output document as a parameter.
+- Initialize the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document path.
+- Add the second document to compare using the [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison. The compare method takes the name of the output document as a parameter.
 
 ---
 
@@ -113,11 +113,11 @@ _More details about accepting and rejecting changes can be found in [documentati
 
 ### Compare text files and show differences using Java or Kotlin
 
-Using the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class, we can also compare any text files. Below is the similar code for comparing two text files in Java or Kotlin. Steps are exactly the same as comparing any other two documents:
+Using the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class, we can also compare any text files. Below is the similar code for comparing two text files in Java or Kotlin. Steps are exactly the same as comparing any other two documents:
 
-- Initialize the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source text file.
-- Add the second file using the [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
-- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison.
+- Initialize the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source text file.
+- Add the second file using the [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the result of the comparison.
 
 ---
 

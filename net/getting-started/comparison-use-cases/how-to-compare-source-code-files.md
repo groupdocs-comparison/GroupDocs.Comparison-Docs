@@ -64,16 +64,16 @@ Using **[GroupDocs.Comparsion](https://products.groupdocs.com/comparison/net)** 
 
 In general you have to follow these steps to compare two source code files (please find other supported formats list [here](https://wiki.lisbon.dynabic.com/display/comparison/Supported+File+Formats)):
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
-- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify path target document path or stream;
-- Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method and perform file comparison.
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
+- Call [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify path target document path or stream;
+- Call [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method and perform file comparison.
 
 At this stage you is able to save comparison report in HTML form and review it. If you need to programmatically obtain collection of detected changes for further processing you have to:
 
-- Call [GetChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method and obtain detected changes list;
-- Set desired [ComparisonAction](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) for needed change object to [ComparisonAction.Accept](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value;
-- Instantiate [ApplyChangeOptions](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/applychangeoptions) object that contains list of changes to be applied (or rejects) to the resultant document;
-- Call [ApplyChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method and save the document.
+- Call [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method and obtain detected changes list;
+- Set desired [ComparisonAction](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) for needed change object to [ComparisonAction.Accept](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value;
+- Instantiate [ApplyChangeOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/applychangeoptions) object that contains list of changes to be applied (or rejects) to the resultant document;
+- Call [ApplyChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method and save the document.
 
 You can learn more about the ComparisonAction property [here](https://wiki.lisbon.dynabic.com/display/comparison/How+to+merge+source+code+files).
 

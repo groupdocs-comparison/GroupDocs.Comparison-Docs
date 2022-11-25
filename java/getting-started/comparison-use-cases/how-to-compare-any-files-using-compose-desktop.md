@@ -89,15 +89,15 @@ This function will open dialog to select file and then set file's path to passed
 
 Comparison API has lots of functionality and settings, but we will use just few percents of it not to make this article too difficult. Comparing files and get the result is just 3 lines of code. To do it, just follow next **numbered** steps:
 
-1. Create object of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class passing source document path to it.
+1. Create object of [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class passing source document path to it.
    - Alternatively, you can create Comparer object passing to it input stream, to avoid saving source file anywhere
    - You can pass `LoadOptions("document-password")` as the second parameter to compare password-protected document
    - It is possible to pass `LoadOptions(true)` as the second parameter to create Comparer object using string, instead of file. In this way the first parameter must be a string that will be compared
    - To enable logging, pass object of `ComparerSettings` class as additional parameter. The class has useful logger field
-2. Add the second document path to comparer object using the appropriate [add](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add-java.lang.String-) method.
+2. Add the second document path to comparer object using the appropriate [add](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add-java.lang.String-) method.
    - All additional options from p.1. are also available here
-3. Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the comparison result of both documents.
-   - To configure the comparison process, you can pass [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions), [SaveOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) or both of them. Here is just a few of settings:
+3. Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to get the comparison result of both documents.
+   - To configure the comparison process, you can pass [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions), [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) or both of them. Here is just a few of settings:
      - Working with document metadata
      - Protecting result document with password
      - Configuring styles of added, deleted, changed parts of documents
@@ -110,7 +110,7 @@ Here is the code to compare files:
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/07b102aec320458b093158f5197bb39b.js"></script>
 
-In the code above we use system temporary directory and static method [FileType.fromFileNameOrExtension](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#fromFileNameOrExtension-java.lang.String-), that detects file type, to create path for saving result file. You can change it to save result file to java output stream. _Note: result file here, always has the same name `Result`. It means that each comparison process will replace previous result document._ You can call [FileType.getSupportedFileTypes](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#getSupportedFileTypes--) method to get all supported document's types for the version of Comparison library you have.
+In the code above we use system temporary directory and static method [FileType.fromFileNameOrExtension](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#fromFileNameOrExtension-java.lang.String-), that detects file type, to create path for saving result file. You can change it to save result file to java output stream. _Note: result file here, always has the same name `Result`. It means that each comparison process will replace previous result document._ You can call [FileType.getSupportedFileTypes](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/FileType#getSupportedFileTypes--) method to get all supported document's types for the version of Comparison library you have.
 
 ### Saving resultant document to the place which client select
 
@@ -140,23 +140,23 @@ Here is the example of generating preview images:
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/33607095e596a70efc85d61740a542e0.js"></script>
 
-Class [PreviewOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) has options not only to set output image format, but also to specify image's width, height, pages to process and so on.
+Class [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/PreviewOptions) has options not only to set output image format, but also to specify image's width, height, pages to process and so on.
 
 #### Showing changes using Comparison API
 
-As well as generating previews, [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) give opportunity to get list of changes and to accept/reject any change. To do it, you need to use method [getChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges-com.groupdocs.comparison.options.GetChangeOptions-) after calling [compare](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare-java.lang.String-) method. You can pass [GetChangeOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/GetChangeOptions) to configure filter, but it is not necessary.
+As well as generating previews, [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) give opportunity to get list of changes and to accept/reject any change. To do it, you need to use method [getChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges-com.groupdocs.comparison.options.GetChangeOptions-) after calling [compare](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare-java.lang.String-) method. You can pass [GetChangeOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/GetChangeOptions) to configure filter, but it is not necessary.
 
 <script src="https://gist.github.com/groupdocs-comparison-gists/3ce0ef2b0ef1744448e9a4cf1e05da6a.js"></script>
 
-As you above, method [getChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges--) returns list of changes, each of which has lots of information, as:
+As you above, method [getChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges--) returns list of changes, each of which has lots of information, as:
 
-- [Unique id](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getId--) of the change
-- [Change text](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getText--) from resultant document
-- [Text before](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getSourceText--) changes
-- [Text after](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getTargetText--) changes
-- Coordinates [of the box](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getBox--) on the page, in which the change is located in document
-- [List of style](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getStyleChanges--) changes
-- And [so on](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo)
+- [Unique id](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getId--) of the change
+- [Change text](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getText--) from resultant document
+- [Text before](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getSourceText--) changes
+- [Text after](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getTargetText--) changes
+- Coordinates [of the box](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getBox--) on the page, in which the change is located in document
+- [List of style](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo#getStyleChanges--) changes
+- And [so on](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ChangeInfo)
 
 ### Get a Free API License
 

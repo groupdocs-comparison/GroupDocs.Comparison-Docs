@@ -33,9 +33,9 @@ It is highly difficult to see the difference of two AutoCad drawings (DWG files)
 
 Just follow next steps to compare two or more of them:
 
-1. Create new instance of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class with source file path or stream as an argument
-2. Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method adding target document path or stream to be compared with the source one
-3. Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to compare files and save the result document
+1. Create new instance of [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class with source file path or stream as an argument
+2. Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method adding target document path or stream to be compared with the source one
+3. Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to compare files and save the result document
 
 Here is Java code that demonstrate steps described above:
 
