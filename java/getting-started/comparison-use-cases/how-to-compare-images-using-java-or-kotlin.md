@@ -83,9 +83,9 @@ You can download the ZIP file with JAR library, documentation and other useful f
 
 Comparing two images in Java is too easy with [GroupDocs.Comparison](https://products.groupdocs.com/comparison) within Java application. The following steps explain how we can compare any two JPG, PNG, BMP, or any other image. It successfully detects the changes and highlights them in the output/resultant image.
 
-- Define the first image using the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class.
-- Add the second image using [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
-- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to compare both the images and save the resultant image that highlights the differences among both the images.
+- Define the first image using the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class.
+- Add the second image using [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to compare both the images and save the resultant image that highlights the differences among both the images.
 
 ---
 

@@ -31,11 +31,11 @@ structuredData:
 [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) allows to compare values from variables of _string_ type.
 The following are the steps to compare text from variables:
 
-- Instantiate [LoadOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object and set [LoadText](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/loadoptions/properties/loadtext) property to _true_ (this indicates that passed string contains text to be compared, not file path);
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) *object* with source variable of _string_ type and [LoadOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) *object* created at previous step;
-- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target variable of _string_ type and [LoadOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) _object_ created at previous step;
-- Call [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method.
-- Call [GetResultString](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/getresultstring) method to get string with comparison result.
+- Instantiate [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object and set [LoadText](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/loadoptions/properties/loadtext) property to _true_ (this indicates that passed string contains text to be compared, not file path);
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) *object* with source variable of _string_ type and [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) *object* created at previous step;
+- Call [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target variable of _string_ type and [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) _object_ created at previous step;
+- Call [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method.
+- Call [GetResultString](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/getresultstring) method to get string with comparison result.
 
 The following code snippet shows how to load values from variables:
 

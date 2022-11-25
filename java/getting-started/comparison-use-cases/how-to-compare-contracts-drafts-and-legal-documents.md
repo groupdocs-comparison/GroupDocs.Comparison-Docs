@@ -57,9 +57,9 @@ As a result of creating a text file, we have to subject it to multiple changes. 
 
 Sometimes Microsoft Word comparison features may be not enough to satisfy your requirements - for example you need your own way to implement comparison logic or you are developing your own application. [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/java) provides a possibility to compare documents programmatically and manage found differences in code for wide range of [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}}). Here is an example of how to compare two contracts using GroupDocs.Comparsion API. Usually you just have to follow these steps:
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
-- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target document path or stream;
-- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method.
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
+- Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target document path or stream;
+- Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method.
 
 Let's say you have two contracts in DOCX format that were concluded in different years (For example, for 2018 and 2019). Now you are going to compare how the conditions have changed after some time.
 

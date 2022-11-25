@@ -36,19 +36,19 @@ structuredData:
 
 ---
 
-[**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides an ability to merge source code files by using the [ComparisonAction](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/changeinfo/properties/comparisonaction) properties:
+[**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides an ability to merge source code files by using the [ComparisonAction](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/changeinfo/properties/comparisonaction) properties:
 
-- [ComparisonAction.Accept](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) accepts the found changes and adds them to the file without highlighting;
-- [ComparisonAction.Reject](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) cancels found changes and removes them from the result file.
+- [ComparisonAction.Accept](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) accepts the found changes and adds them to the file without highlighting;
+- [ComparisonAction.Reject](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) cancels found changes and removes them from the result file.
 
 The following are the steps to apply/reject changes to resultant file.
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
-- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method  and specify path target document path or stream;
-- Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method;
-- Call [GetChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method and obtain detected changes list;
-- Set [ComparisonAction](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) of needed change object to [ComparisonAction.Accept](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value;
-- Call [ApplyChanges](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method and pass collection of changes to it.
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
+- Call [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method  and specify path target document path or stream;
+- Call [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method;
+- Call [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method and obtain detected changes list;
+- Set [ComparisonAction](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) of needed change object to [ComparisonAction.Accept](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value;
+- Call [ApplyChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method and pass collection of changes to it.
 
 ## Example of merge source code file by using GroupDocs.Comparison
 
@@ -61,7 +61,7 @@ For example, you need to compare and merge several versions of source code files
 
 The differences show that two methods are written in the **source.cs** file: _AddNumbers_ and _Sum_.
 
-If you did not use ComparisonAction, then in the resulting file, all changes will be committed, and these methods will be removed, but if you need to control the merging of files, the [ComparisonAction](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.result/changeinfo/properties/comparisonaction) property will help you with this.
+If you did not use ComparisonAction, then in the resulting file, all changes will be committed, and these methods will be removed, but if you need to control the merging of files, the [ComparisonAction](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/changeinfo/properties/comparisonaction) property will help you with this.
 
 ## Example of using ComparisonAction
 

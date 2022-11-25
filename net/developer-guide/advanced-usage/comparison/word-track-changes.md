@@ -38,10 +38,10 @@ structuredData:
 
 By default, the Word Track Changes option is _false_. Below are the steps to turn on the Word Track Changes:
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object with source file path or stream;
-- Call [Add](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method and specify target file path or stream;
-- Instantiate [CompareOptions](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object and set [WordTrackChanges](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/wordtrackchanges) property to _true_;
-- Call [Comparer](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) method and pass [CompareOptions](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object from previous step.
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object with source file path or stream;
+- Call [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method and specify target file path or stream;
+- Instantiate [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object and set [WordTrackChanges](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/wordtrackchanges) property to _true_;
+- Call [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) method and pass [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object from previous step.
 
 ## Example code block to disable the display of revisions
 

@@ -59,9 +59,9 @@ As a result of creating a text file, we have to subject it to multiple changes. 
 
 Sometimes Microsoft Word comparison features may be not enough to satisfy your requirements - for example you need your own way to implement comparison logic or you are developing your own application. [**GroupDocs.Comparison**](https://products.groupdocs.com/comparison/net) provides a possibility to compare documents programmatically and manage found differences in code for wide range of [supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}). Here is an example of how to compare two contracts using GroupDocs.Comparsion API. Usually you just have to follow these steps:
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) objec with source document path or stream;;
-- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
-- Call [Compare](https://apireference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/compare) method.
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) objec with source document path or stream;;
+- Call [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
+- Call [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/compare) method.
 
 Let's say you have two contracts in DOCX format that were concluded in different years (For example, for 2018 and 2019). Now you are going to compare how the conditions have changed after some time.
 

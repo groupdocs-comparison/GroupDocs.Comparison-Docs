@@ -37,10 +37,10 @@ Possible metadata sources are:
 
 The following are the steps to set resultant document metadata.
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
-- Call [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
-- Instantiate [SaveOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object and set [CloneMetadataType](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions/properties/clonemetadatatype) property with desired [MetadataType](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/metadatatype) variant;
-- Call [Compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method and pass [SaveOptions](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object to method.
+- Instantiate [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object with source document path or stream;
+- Call [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream;
+- Instantiate [SaveOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object and set [CloneMetadataType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions/properties/clonemetadatatype) property with desired [MetadataType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/metadatatype) variant;
+- Call [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method and pass [SaveOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object to method.
 
 The following code demonstrates how to set resultant document metadata.
 

@@ -33,9 +33,9 @@ structuredData:
 
 The following are the steps to compare multiple documents.
 
-*   Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
-*   Call [add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream. Repeat this step for every target document.
-*   Call [compare](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method.
+*   Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
+*   Call [add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream. Repeat this step for every target document.
+*   Call [compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method.
 
 The following code sample shows how to compare multiple documents with specific options.
 

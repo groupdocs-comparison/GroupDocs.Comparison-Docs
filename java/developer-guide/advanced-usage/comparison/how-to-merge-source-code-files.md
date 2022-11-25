@@ -31,19 +31,19 @@ structuredData:
 
 ---
 
-[**GroupDocs.Comparison for Java**](https://products.groupdocs.com/comparison/java) provides an ability to merge source code files by using the [ComparisonAction](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction) properties:
+[**GroupDocs.Comparison for Java**](https://products.groupdocs.com/comparison/java) provides an ability to merge source code files by using the [ComparisonAction](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction) properties:
 
-- [ComparisonAction.ACCEPT](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) accepts the found changes and adds them to the file without highlighting;
-- [ComparisonAction.REJECT](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) cancels found changes and removes them from the result file.
+- [ComparisonAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) accepts the found changes and adds them to the file without highlighting;
+- [ComparisonAction.REJECT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) cancels found changes and removes them from the result file.
 
 The following are the steps to apply/reject changes to resultant file.
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
-- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method  and specify path target document path or stream;
-- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method;
-- Call [getChanges](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method and obtain detected changes list;
-- Set [ComparisonAction](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction) of needed change object to [ComparisonAction.ACCEPT](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.REJECT](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value;
-- Call [applyChanges](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#applyChanges(java.io.OutputStream,%20com.groupdocs.comparison.options.ApplyChangeOptions)>) method and pass collection of changes to it.
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with source document path or stream;
+- Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method  and specify path target document path or stream;
+- Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method;
+- Call [getChanges](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method and obtain detected changes list;
+- Set [ComparisonAction](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction) of needed change object to [ComparisonAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.REJECT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value;
+- Call [applyChanges](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#applyChanges(java.io.OutputStream,%20com.groupdocs.comparison.options.ApplyChangeOptions)>) method and pass collection of changes to it.
 
 ## Example of merge source code file by using GroupDocs.Comparison
 
@@ -56,7 +56,7 @@ For example, you need to compare and merge several versions of source code files
 
 The differences show that two methods are written in the **source.cs** file: _AddNumbers_ and _Sum_.
 
-If you did not use ComparisonAction, then in the resulting file, all changes will be committed, and these methods will be removed, but if you need to control the merging of files, the [ComparisonAction](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction) property will help you with this.
+If you did not use ComparisonAction, then in the resulting file, all changes will be committed, and these methods will be removed, but if you need to control the merging of files, the [ComparisonAction](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction) property will help you with this.
 
 ## Example of using ComparisonAction
 

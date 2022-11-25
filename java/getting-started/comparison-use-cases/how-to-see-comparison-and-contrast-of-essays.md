@@ -81,10 +81,10 @@ It is very easy to use [GroupDocs.Comparison](https://products.groupdocs.com/com
 
 Here are the steps to compare two essays as PDF files:
 
-- Instantiate [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object passing source essay path or stream as an argument
-- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target essay path or stream
-- Optionally, you can use [CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) and its method [setDetectStyleChanges](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setDetectStyleChanges-boolean-) to configure comparer to highlight style changes (by default changes are shown in green)
-- Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to run the comparison of essays.
+- Instantiate [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object passing source essay path or stream as an argument
+- Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method and specify target essay path or stream
+- Optionally, you can use [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) and its method [setDetectStyleChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions#setDetectStyleChanges-boolean-) to configure comparer to highlight style changes (by default changes are shown in green)
+- Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to run the comparison of essays.
 
 Java code sample:
 

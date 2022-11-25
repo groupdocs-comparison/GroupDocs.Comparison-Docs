@@ -41,9 +41,9 @@ The result of comparison can be saved as PDF file with highlighting changed, del
 
 To compare DXF (Autodesk Drawing eXchange Format) documents you should do next:
 
-1. Create new instance of [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class passing source document path or stream as an argument
-2. Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method passing target document path or stream as an argument
-3. Call [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to run the comparison process
+1. Create new instance of [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) class passing source document path or stream as an argument
+2. Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.lang.String)>) method passing target document path or stream as an argument
+3. Call [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.lang.String)>) method to run the comparison process
 
 The following Java code sample demonstrates an approach described above:
 

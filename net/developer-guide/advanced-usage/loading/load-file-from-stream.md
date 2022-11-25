@@ -33,7 +33,7 @@ In case when you have the file in the form of a stream. To avoid the overhead of
 The following are the steps to be followed:
 
 - Obtain file stream;
-- Pass opened source file stream to [Comparer](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) class constructor or pass opened target file stream to [Add](https://apireference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method.
+- Pass opened source file stream to [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) class constructor or pass opened target file stream to [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method.
 
 Following code snippet describes how to load file from stream.
 

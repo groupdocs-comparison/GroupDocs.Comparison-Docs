@@ -35,9 +35,9 @@ This article will give you the idea, how [GroupDocs.Comparison](https://products
 
 [GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java) allows developers to compare two documents (in fact more than 2). The resulting document shows the changes between the two files in comparison. Below shown code how you can compare two excel files in just 3 lines of code in Java or Kotlin.
 
-- Instantiate the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document path or stream.
-- Call [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method to specify the target(s) document path(s).
-- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to run comparison process.
+- Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document path or stream.
+- Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method to specify the target(s) document path(s).
+- Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to run comparison process.
 
 ---
 
@@ -104,9 +104,9 @@ The API already supports the comparison of multiple files for various document f
 
 As a programmer, you are not only allowed to compare documents that are available on local disk, but also you can compare documents from streams.
 
-- Just create the [Comparer](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document stream.
-- Add all target documents to compare using the [add](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
-- Call the [compare](<https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to write result document into output stream.
+- Just create the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer) object with the source document stream.
+- Add all target documents to compare using the [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method of Comparer object.
+- Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare(java.io.OutputStream)>) method to write result document into output stream.
 
 ---
 
@@ -130,7 +130,7 @@ As a programmer, you are not only allowed to compare documents that are availabl
 
 Password protection is common in the official documentation. Using the [document comparison Java API](https://products.groupdocs.com/comparison), allows its users/developers to compare password-protected documents.
 
-Just a little change in the code of comparing documents that are not password-protected. While loading the document, use [LoadOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) to specify the document password. Below is the sample comparison code for your assistance.
+Just a little change in the code of comparing documents that are not password-protected. While loading the document, use [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/LoadOptions) to specify the document password. Below is the sample comparison code for your assistance.
 
 ---
 
@@ -154,7 +154,7 @@ Just a little change in the code of comparing documents that are not password-pr
 
 One step ahead of just comparing, using the code similar to the mentioned below, you can compare multiple documents with your customized comparison settings.
 
-[CompareOptions](https://apireference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) provides you the opportunity to specify your comparison options like font styling for detected changes etc.
+[CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/CompareOptions) provides you the opportunity to specify your comparison options like font styling for detected changes etc.
 
 ---
 
