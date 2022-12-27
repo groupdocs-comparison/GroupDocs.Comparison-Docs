@@ -9,8 +9,6 @@ geekdocAnchor: false
 hideChildren: true
 ---
 
-## GroupDocs Developers Cookbook
-
 GroupDocs.Annotation is a cross-platform library that allows you to compare Microsoft Word, Excel, PowerPoint, OpenDocument, PDF, and plain text documents using C# and Java.
 
 <br/>
