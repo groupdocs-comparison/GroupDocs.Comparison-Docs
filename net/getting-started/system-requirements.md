@@ -16,22 +16,16 @@ toc: True
 
 ## Supported Operating Systems
 
-GroupDocs.Comparison for .NET supports any 32-bit or 64-bit operating system where .NET or Mono framework is installed including, but not limited to:
+GroupDocs.Comparison for .NET supports any 32-bit or 64-bit operating system where .NET or .NET Core is installed including, but not limited to:
 
 ### Windows
 
-- Microsoft Windows 2003 Server ( x64, x86)
-- Microsoft Windows 2008 Server ( x64, x86)
-- Microsoft Windows 2012 Server ( x64, x86)
-- Microsoft Windows 2012 R2 Server ( x64, x86)
-- Microsoft Windows 2016 Server ( x64, x86)
-- Microsoft Windows 2019 Server ( x64, x86)
+- Microsoft Windows Server 2003 and later
 - Microsoft Windows Vista ( x64, x86)
 - Microsoft Windows XP ( x64, x86)
-- Microsoft Windows 7 ( x64, x86)
-- Microsoft Windows 8, 8.1 ( x64, x86)
+- Microsoft Windows 7, 8, 8.1 ( x64, x86)
 - Microsoft Windows 10 ( x64, x86)
-- Microsoft Azure
+- Microsoft Windows 11 (x64)
 
 ### Linux
 
@@ -43,18 +37,22 @@ GroupDocs.Comparison for .NET supports any 32-bit or 64-bit operating system w
 
 ## Supported Frameworks
 
-GroupDocs.Comparison for .NET supports .NET and Mono frameworks as follows:
+GroupDocs.Comparison for .NET supports .NET frameworks as follows:
 
-### .NET Standard 2.0
+### .NET
+- .NET 6
 
-Any type of .NET Standard 2.0 application is supported.
+### .NET Core
+- .NET Core 3.1
+
+### .NET Standard
+- .NET Standard 2.1
 
 ### .NET Frameworks
 
-- .NET Framework 2.0
-- .NET Framework 3.5
+- .NET Framework 2.0 (Until GroupDocs.Comparison 22.6)
+- .NET Framework 3.5 (Until GroupDocs.Comparison 22.6)
 - .NET Framework 4.0
-- .NET Framework 4.0_ClientProfile
 - .NET Framework 4.5.0
 - .NET Framework 4.5.1
 - .NET Framework 4.5.2
@@ -66,26 +64,12 @@ Any type of .NET Standard 2.0 application is supported.
 - .NET Framework 4.6.2
 - .NET Framework 4.7
 - .NET Framework 4.7.2
-- .NET Standard 2.0
-- .NET Core 2.0
-- .NET Core 2.1
-
-### Mono Framework
-
-- Mono 2.6.7 or later
+- .NET Framework 4.8
 
 ## Development Environments
 
 GroupDocs.Comparison for .NET can be used to develop applications in any development environment that targets the .NET platform, but the following environments are explicitly supported:
 
-- Microsoft Visual Studio 2010
-- Microsoft Visual Studio 2011
-- Microsoft Visual Studio 2012
-- Microsoft Visual Studio 2013
-- Microsoft Visual Studio 2015
-- Microsoft Visual Studio 2017
-- Microsoft Visual Studio 2019
-- Xamarin.Android
-- Xamarin.IOS
-- Xamarin.Mac
-- MonoDevelop 2.4 and later
+- Microsoft Visual Studio 2010 and later
+- Microsoft Visual Studio for Mac
+- Rider from JetBrains
