@@ -20,6 +20,7 @@ There are 5 bug fixes in this release.
 | COMPARISONNET-3254  | Comparison of characters with ruby											   | Bug		 |
 | COMPARISONNET-2450  | Fixed Header/Footer Comparison issue in PDF									   | Bug		 |
 | COMPARISONNET-3220  | Annotations are not displayed correctly in the resulting PDF file			   | Bug		 |
+| COMPARISONJAVA-943 | Chart name comparison issue in PDF      | Bug		 |
 | COMPARISONJAVA-1528 | 'null' is a part of source and target texts of ChageInfo for some formats      | Bug		 |
 
 ## Major Features
