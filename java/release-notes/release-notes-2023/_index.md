@@ -1,8 +1,8 @@
 ---
-id: release-notes-2016
-url: comparison/java/release-notes-2016
-title: Release Notes - 2016
-weight: 12
+id: release-notes-2022
+url: comparison/java/release-notes-2023
+title: Release Notes - 2023
+weight: 5
 description: ""
 keywords:
 productName: GroupDocs.Comparison for Java
