@@ -10,7 +10,7 @@ hideChildren: False
 ---
 {{< alert style="info" >}}This page contains release notes for GroupDocs.Comparison for Java 23.3{{< /alert >}}
 
-There are 5 bug fixes in this release.
+There are 6 bug fixes in this release.
 
 ## Full list of changes in this release
 
