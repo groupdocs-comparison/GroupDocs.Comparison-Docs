@@ -4,21 +4,22 @@ url: comparison/net/groupdocs-comparison-for-net-23-1-release-notes
 title: GroupDocs.Comparison for .NET 23.1 Release Notes
 weight: 20
 description: ""
-keywords: 
+keywords: release notes, groupdocs.comparison, .net, 23.1
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
 ---
+
 ## Full list of changes in this release
 
-| Key | Summary | Issue Type |
+| Key | Category | Summary |
 | --- | --- | --- |
-| COMPARISONNET-3291 | Problem with displaying deleted hyperlinks in Cells files | Fix |
-| COMPARISONNET-3292 | Part of the word is omitted from the chart title after comparing Cells | Fix |
-| COMPARISONNET-3284 | Exception when Cells comparing documents | Fix |
-| COMPARISONNET-3347 | Duplicate chart title and one bar missing during comparing Cells. | Fix |
-| COMPARISONNET-3279 | Multi comparison PDF documents throws exception. | Fix |
-| COMPARISONNET-3273 |CompareMultiplePdfDocuments example throws exception. | Fix |
+| COMPARISONNET-3291 | Fix | Problem with displaying deleted hyperlinks in Cells files |
+| COMPARISONNET-3292 | Fix | Part of the word is omitted from the chart title after comparing Cells |
+| COMPARISONNET-3284 | Fix | Exception when Cells comparing documents |
+| COMPARISONNET-3347 | Fix | Duplicate chart title and one bar missing during comparing Cells. |
+| COMPARISONNET-3279 | Fix | Multi comparison PDF documents throws exception. |
+| COMPARISONNET-3273 | Fix | CompareMultiplePdfDocuments example throws exception. |
 
 
 ## Major Features
