@@ -21,10 +21,10 @@ toc: True
 ## Major Features
 Below is the list of most notable changes in release of GroupDocs.Comparison for .NET 23.4:
 
+*   Implemented folder comparison feature
 *   Fixed exception when selecting accepted changes
 *   Added changes to summary page that will indicate that user trying to compare the same documents for all supported document types
 *   Fixed Exception when comparing text filesCompare
-*   Implemented folder comparison function
 
 ## Folders comparison 
 Starting from 23.4 we've added ability to compare folders. Here is a code snippet how to compare folders
