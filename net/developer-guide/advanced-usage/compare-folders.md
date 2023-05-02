@@ -41,15 +41,15 @@ structuredData:
 ```
 - Initialize the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object, in its parameters specify the path to the first compared folder, the second parameter is the CompareOptions object;
 ```csharp
-  Comparer comparer = new Comparer("C:\Folder_1", compareOptions);
+  Comparer comparer = new Comparer("C:\\Folder_1", compareOptions);
 ```
 - Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/add/#add_*) method for the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object, specifying the path to the second folder and the [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object;
 ```csharp
-  comparer.Add("C:\Folder_2", compareOptions);
+  comparer.Add("C:\\Folder_2", compareOptions);
 ```
 - Call the [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/compare/#compare) method for the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object, specifying the path to save the compare results and the [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object.
 ```csharp
-  comparer.Compare("C:\Result.html", compareOptions);
+  comparer.Compare("C:\\Folder_to_save_result\\", compareOptions);
 ```
 - You can select the format for saving the result in the FormatFolderComparison option. The default is _txt_.
 ```csharp
@@ -81,9 +81,9 @@ class YoursProgram
       {
           DirectoryCompare = true,
       };
-      Comparer comparer = new Comparer("C:\Folder_1", compareOptions);
-      comparer.Add("C:\Folder_2", compareOptions);
-      comparer.Compare("C:\Result.html", compareOptions);
+      Comparer comparer = new Comparer("C:\\Folder_1", compareOptions);
+      comparer.Add("C:\\Folder_2", compareOptions);
+      comparer.Compare("C:\\Folder_to_save_result\\", compareOptions);
   }
 }
 ```
