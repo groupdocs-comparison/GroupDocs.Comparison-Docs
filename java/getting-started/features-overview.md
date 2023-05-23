@@ -32,3 +32,11 @@ Every particular difference between compared document can be applied or rejected
 ## Comparison summary report
 
 Once comparison process is complete, you can save a differences summary report which lists all changes found between compared documents.
+
+## Example of comparison
+Below are the example source and output files.
+
+
+| Source file                                    | Result file                                           |
+| ---------------------------------------------- | ----------------------------------------------------- |
+| ![](/comparison/java/images/Comparison-example-source.jpg) | ![](/comparison/java/images/Comparison-example-result.jpg) |
