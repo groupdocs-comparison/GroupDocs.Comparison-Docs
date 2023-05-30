@@ -96,7 +96,7 @@ The following are the steps to apply/reject changes to the resultant document.
 - Call [add](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#add(java.io.InputStream...)>) method and specify target document's path or stream.
 - Call the [compare](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#compare()>) method to comparison process.
 - Call [getChanges](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#getChanges()>) method and obtain detected changes list.
-- Set ComparisonAction of needed change object to [ComparisonAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.Reject](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value.
+- Set ComparisonAction of needed change object to [ComparisonAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#ACCEPT) or [ComparisonAction.REJECT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/ComparisonAction#REJECT) value.
 - Call [applyChanges](<https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/Comparer#applyChanges(java.lang.String,%20com.groupdocs.comparison.options.ApplyChangeOptions)>) method and pass object of [ApplyChangeOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/ApplyChangeOptions) with collection of changes to it.
 
 ---
