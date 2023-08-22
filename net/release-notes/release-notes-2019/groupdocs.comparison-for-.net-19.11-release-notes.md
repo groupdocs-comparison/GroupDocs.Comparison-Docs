@@ -21,7 +21,7 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 - Implemented multicomparing for Text and Email documents
 - Fixed issue with releasing document handlers
 - Improved accuracy for PDF documents comparing
-- Fixed issue with wrong result files in Cells
+- Fixed issue with wrong output files in Cells
 - Fixed accuracy of coordinates of changes on document preview
 
 ## Full List of Issues Covering all Changes in this Release
@@ -35,7 +35,7 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 | COMPARISONNET-2094   | API is not releasing file handles                                    | Bug        |
 | COMPARISONNET-2076   | Compatibility issues under .NET Standard 2.0                         | Bug        |
 | COMPARISONNET-2071   | Difference width and height is incorrect                             | Bug        |
-| COMPARISONNET-2070   | Wrong Cells result file                                              | Bug        |
+| COMPARISONNET-2070   | Wrong Cells output file                                              | Bug        |
 | COMPARISONNET-2014   | Unexpected amount of changes in the comparing results of a PDF-files | Bug        |
 | COMPARISONNET-2012   | Exception during comparing PDF-files without license                 | Bug        |
 | COMPARISONNET-1993   | Incorrect box dimensions and position                                | Bug        |
@@ -87,7 +87,7 @@ Public API and Backward Incompatible Changes
 
     A new *PaperSize* propertywas added  to CompareOptions. User can set the output document paper size by assigning this property the value from the *PaperSize* enum.
 
-    If user doesn’t set *PaperSize*, it has a default value - paper size in the resulting document is the same as in the target.
+    If user doesn’t set *PaperSize*, it has a default value - paper size in the output document is the same as in the target.
 
     ```csharp
     string sourcePath = "source.docx";

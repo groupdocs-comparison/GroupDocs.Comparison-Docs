@@ -33,7 +33,7 @@ Below the list of changes in release of GroupDocs.Comparison for .NET 20.3:
 
 **Getting Target text from Words documents**
 
-Starting from version 20.3 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** allows to getting target text of specific changes in Result document this working for **Word** documents.
+Starting from version 20.3 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows to getting target text of specific changes in Result document this working for **Word** documents.
 
 To use this feature you should specify in *GetChanges TargetText* property
 

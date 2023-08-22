@@ -38,7 +38,7 @@ Below the list of changes in release of GroupDocs.Comparison for .NET 20.4:
 
 ## **Show inserted content**
 
-Starting from version 20.4 **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides the ability to disable the display of added content in the result file.
+Starting from version 20.4 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) provides the ability to disable the display of added content in the output file.
 
 To use this feature you should specify in *CompareOptions ShowInsertedContent *propertyto false.
 

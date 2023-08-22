@@ -40,7 +40,7 @@ There are 14 improvements and fixes in this regular monthly release. The most no
 | COMPARISONNET-533 | Implement of comparing pdf with the images                                                                       | Improvement |
 | COMPARISONNET-794 | GroupDocs.Comparison.Words: Aligning of paragraphs mismatch for the case when paragraphs is moved by page break  | Bug         |
 | COMPARISONNET-780 | Out of memory exception in ComparisonText                                                                        | Bug         |
-| COMPARISONNET-737 | Cannot open result file when graphics objects are used                                                           | Bug         |
+| COMPARISONNET-737 | Cannot open output file when graphics objects are used                                                           | Bug         |
 | COMPARISONNET-445 | Cells: original Excel tables layout is not supported.                                                            | Bug         |
 
 ## Public API and Backward Incompatible Changes

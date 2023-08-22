@@ -20,7 +20,7 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 - Fixed handling of some unsupported file signatures
 - Fixed coordinate calculation for changes in ChangeInfo list
 - Fixed creation of charts in some cases in Excel format
-- Fixed creation of resulting document in HTML format
+- Fixed creation of output document in HTML format
 - Fixed change list counting in Diagram format
 
 ## Full List of Issues Covering all Changes in this Release

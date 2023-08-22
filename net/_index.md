@@ -12,11 +12,11 @@ fullWidth: True
 
 <img src="/comparison/net/images/home.png" alt="groupdocs comparison .net logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
-GroupDocs.Comparison enables you to diff Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text and HTML documents.
+GroupDocs.Comparison allows you to compare Microsoft Word, Excel, PowerPoint, OpenDocument ODT, PDF, Text, and HTML documents.
 
-Document comparison API compares content to detect changes for words, paragraphs and characters.
+The Document Compare API compares content to detect word, paragraph, and character changes.
 
-It also compares style changes like font size, bold, italic etc. Differences summary saved in a separate result file.
+GroupDocs.Comparison also compares style changes such as font size, bolding, italics, etc. It stores a summary of the differences in a distinct output file.
 
 ---
 
@@ -52,10 +52,10 @@ It also compares style changes like font size, bold, italic etc. Differences sum
 <p><b>Develop Functions</b></p>
 <hr><p>GUIDE</p></hr>
 <ul>
-	<li><a href='{{< ref "comparison/net/developer-guide/basic-usage/get-file-info" >}}'>Retrieve File Info</a></li>
-	<li><a href='{{< ref "comparison/net/developer-guide/basic-usage/compare-documents" >}}'>Compare Documents</a></li>
-	<li><a href='{{< ref "comparison/net/developer-guide/advanced-usage/accept-or-reject-revisions" >}}'>Accept or Reject revisions</a></li>
-	<li><a href='{{< ref "comparison/net/developer-guide/advanced-usage/generate-document-pages-preview" >}}'>Generate Document Pages Preview</a></li>				
+	<li><a href='{{< ref "comparison/net/comparison-basic/get-file-info" >}}'>Retrieve File Info</a></li>
+	<li><a href='{{< ref "comparison/net/comparison-basic/compare-documents" >}}'>Compare Documents</a></li>
+	<li><a href='{{< ref "comparison/net/advanced-usage/accept-or-reject-revisions" >}}'>Accept or Reject revisions</a></li>
+	<li><a href='{{< ref "comparison/net/advanced-usage/generate-document-pages-preview" >}}'>Generate Document Pages Preview</a></li>				
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>

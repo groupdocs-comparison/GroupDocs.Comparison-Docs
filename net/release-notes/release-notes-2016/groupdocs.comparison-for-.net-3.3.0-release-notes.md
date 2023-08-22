@@ -35,7 +35,7 @@ There are 12 improvements and fixes in this regular monthly release. The most no
 | COMPARISONNET-727 | Comparing Words: - Files generating zero output (no change is detected ) for attached files only                                      | Bug         |
 | COMPARISONNET-736 | Some tables differ on two cell but algorithm not defined the tables as similar                                                        | Bug         |
 | COMPARISONNET-795 | GroupDocs.Comparison.Words: The target file is modification of source file but defined as different                                   | Bug         |
-| COMPARISONNET-850 | Cannot open result file: graphics objects                                                                                             | Bug         |
+| COMPARISONNET-850 | Cannot open output file: graphics objects                                                                                             | Bug         |
 | COMPARISONNET-851 | Some images (or graphical objects) are not displayed                                                                                  | Bug         |
 
 ## Public API and Backward Incompatible Changes

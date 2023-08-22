@@ -17,10 +17,10 @@ toc: True
 Below is the list of most notable changes in release of GroupDocs.Comparison for .NET 19.1:
 
 - Improved large sized files comparing in PDF
-- Improved worksheet name generation in result file
+- Improved worksheet name generation in output file
 - Implemented chart title comparing in Cells
-- Implemented autosize in auto shapes in result file generation on Cells documents
-- Implemented chart generation in result files (instead of picture) on Cells
+- Implemented autosize in auto shapes in output file generation on Cells documents
+- Implemented chart generation in output files (instead of picture) on Cells
 - Improved Paragraph absorber in PDF for comparing speed increase
 - Fixed issue with setting paragraphs line
 - Fixed issue in setting Hyperlinks in big size PDF file
@@ -31,7 +31,7 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 | ------------------ | ------------------------------------------------ | ----------- |
 | COMPARISONNET-1738 | Improve paragraph absorber in result document    | Improvement |
 | COMPARISONNET-1742 | Improve charts comparing on Cells                | Improvement |
-| COMPARISONNET-1760 | Incorrect Sheet Name in result file in Cells     | Bug         |
+| COMPARISONNET-1760 | Incorrect Sheet Name in output file in Cells     | Bug         |
 | COMPARISONNET-1747 | Issue in comparing large sized PDF files         | Bug         |
 | COMPARISONNET-1769 | Issue when setting ParaghraphLines.              | Bug         |
 | COMPARISONNET-1766 | Issue in setting Hyperlinks in big size PDF file | Bug         |

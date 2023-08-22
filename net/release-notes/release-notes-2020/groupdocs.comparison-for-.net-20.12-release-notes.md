@@ -34,7 +34,7 @@ Below the list of changes in release of GroupDocs.Comparison for .NET 20.12:
 
    **Revision** - changes received when comparing documents using built-in Word tools.
 
-   To solve this problem, new _ShowRevisions_ property was created that allows you to disable the display of these _Revisions_ in the resulting document. An example of the code for using the new property is presented below.
+   To solve this problem, new _ShowRevisions_ property was created that allows you to disable the display of these _Revisions_ in the output document. An example of the code for using the new property is presented below.
 
 ```csharp
 using (Comparer comparer = new Comparer(sourcePath))

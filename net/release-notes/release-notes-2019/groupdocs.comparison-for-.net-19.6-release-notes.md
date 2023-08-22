@@ -20,7 +20,7 @@ Below is the list of most notable changes in release of GroupDocs.Comparison for
 - Fixed typos in API reference
 - Implemented sensitivity option
 - Implemented calculation coordinates of changes for Words documents
-- Fixed content overlapping in resultant PDF documents
+- Fixed content overlapping in output PDF documents
 - Fixed problem when sections moved to the new page
 - Integrated credit based billing system using latest version of Metered
 

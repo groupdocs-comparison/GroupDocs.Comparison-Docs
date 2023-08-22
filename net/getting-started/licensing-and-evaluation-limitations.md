@@ -26,65 +26,97 @@ structuredData:
         text: Call the SetLicense method of your object and put the license path or license file stream parameter.
 ---
 
-{{< alert style="info" >}}You can use GroupDocs.Comparison without the license. The usage and functionalities are pretty much same as the licensed one but you will face few limitations while using the non-licensed API.{{< /alert >}}
+Sometimes to study the system better, you want to dive into the code as fast as possible. To make this easier, GroupDocs.Comparison provides different plans for purchase or offers a Free Trial and a 30-day Temporary License for evaluation.
 
-## Evaluation Limitations
+{{< alert style="info" >}}
+Note that there are a number of general policies and practices that guide you on how to evaluate, properly license, and purchase our products. You can find them in the ["Purchase Policies and FAQ"](https://purchase.groupdocs.com/policies) section.
+{{< /alert >}}
 
-You can easily download **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** for evaluation. The evaluation download is the same as the purchased download. The evaluation version simply becomes licensed when you add a few lines of code to apply the license. You will face following limitations while using the API without the license:
+## Free Trial or Temporary License
 
-- Only first 3 document pages with simple structure are processed.
-- PDF documents should not have more then four elements in any collection.
+You can try GroupDocs.Comparison without buying a license.
+
+### Free Trial
+
+The evaluation version is the same as the purchased one – the evaluation version simply becomes licensed when you set the license. You can set the license in a number of ways that described in the next sections of this article.
+
+The evaluation version comes with the limitations:
+
+- Only first 2 pages can be processed.
 - Trial badges are placed in the document on the top of each page.
 
-## Licensing
+### Temporary License
 
-The license file contains details such as the product name, number of developers it is licensed to, subscription expiry date and so on. It contains the digital signature, so don't modify the file. Even inadvertent addition of an extra line break into the file will invalidate it. You need to set a license before utilizing GroupDocs.Comparison API if you want to avoid its evaluation limitations.   
-The license can be loaded from a file or stream object. The easiest way to set a license is to put the license file in the same folder as the GroupDocs.Comparison.dll file and specify the file name, without a path, as shown in the examples below.
+If you wish to test GroupDocs.Annotation without the limitations of the trial version, you can also request a 30-day Temporary License. For details, see the ["Get a Temporary License"](https://purchase.groupdocs.com/temporary-license) page.
 
-#### Setting License from File
+## How to set a license
 
-The code below will explain how to set product license.
+{{< alert style="info" >}}
+
+You can find the pricing information on the ["Pricing Information"](https://purchase.groupdocs.com/pricing/comparison/net) page.
+
+{{< /alert >}}
+
+After getting the license, you need to set it. This section describes different ways to set the license.
+
+The license should be set:
+
+- Only once per application domain.
+- Before using any other of GroupDocs.Annotation classes.
+
+{{< alert style="info" >}}
+
+The license can be set multiple times per app domain but we recommend doing it once since all calls to `SetLicense` except first will just waste processor time.
+
+{{< /alert >}}
+
+### Set License from File
+
+The following code snippet shows how to set a license from file:
+
+{{< tabs "example1">}}
+{{< tab "C#" >}}
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET
-// Setup license.
+string licensePath = "path to the .lic file";
 License license = new License();
 license.SetLicense(licensePath);
 ```
 
-#### Setting License from Stream
+{{< /tab >}}
+{{< /tabs >}}
 
-The following example shows how to load a license from a stream.
+
+### Set License from Stream
+
+The following code snippet shows how to set a license from a stream:
+
+{{< tabs "example2">}}
+{{< tab "C#" >}}
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET
-using (FileStream fileStream = File.OpenRead("GroupDocs.Comparison.lic"))
+string licensePath = "path to the .lic file";
+using (FileStream fileStream = File.OpenRead(licensePath))
 {
     License license = new License();
     license.SetLicense(fileStream);
 }
 ```
 
-{{< alert style="info" >}}Calling License.SetLicense multiple times is not harmful but simply wastes processor time. If you are developing a Windows Forms or console application, call License.SetLicense in your startup code, before using GroupDocs.Comparison classes. When developing an ASP.NET application, you can call License.SetLicense from the Global.asax.cs (Global.asax.vb) file in the Application_Start protected method. It is called once when the application starts.Do not call License.SetLicense from within Page_Load methods since it means the license will be loaded every time a web page is loaded.{{< /alert >}}
+{{< /tab >}}
+{{< /tabs >}}
 
-#### Setting Metered License
 
-{{< alert style="info" >}}You can also set Metered license as an alternative to license file. It is a new licensing mechanism that will be used along with existing licensing method. It is useful for the customers who want to be billed based on the usage of the API features. For more details, please refer to Metered Licensing FAQ section.{{< /alert >}}
+### Set Metered License
 
-Here are the simple steps to use the `Metered` class.
+You can also set the [Metered](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/metered/) license as an alternative to license file. It is a new licensing mechanism that will be used along with existing licensing method. It is useful for the customers who want to be billed based on the usage of the API features. For  details, please refer to the [Metered Licensing FAQ](https://purchase.groupdocs.com/faqs/licensing/metered) section.
 
-1.  Create an instance of `Metered` class.
-2.  Pass public & private keys to `SetMeteredKey` method.
-3.  Do processing (perform task).
-4.  call method `GetConsumptionQuantity` of the `Metered` class.
-5.  It will return the amount/quantity of API requests that you have consumed so far.
-6.  call method `GetConsumptionCredit` of the `Metered` class.
-7.  It will return the credit that you have consumed so far.
+The following code snippet shows how to use `Metered` licensing:
 
-Following is the sample code demonstrating how to use `Metered` class.
+{{< tabs "example3">}}
+{{< tab "C#" >}}
 
 ```csharp
-// For complete examples and data files, please go to https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET
 string publicKey = ""; // Your public license key
 string privateKey = ""; // Your private license key
 
@@ -92,10 +124,13 @@ Metered metered = new Metered();
 metered.SetMeteredKey(publicKey, privateKey);
 
 // Get amount (MB) consumed
-decimal amountConsumed = GroupDocs.Comparison.Metered.GetConsumptionQuantity();
+decimal amountConsumed = GroupDocs.Viewer.Metered.GetConsumptionQuantity();
 Console.WriteLine("Amount (MB) consumed: " + amountConsumed);
 
 // Get count of credits consumed
-decimal creditsConsumed = GroupDocs.Comparison.Metered.GetConsumptionCredit();
+decimal creditsConsumed = GroupDocs.Viewer.Metered.GetConsumptionCredit();
 Console.WriteLine("Credits consumed: " + creditsConsumed);
 ```
+
+{{< /tab >}}
+{{< /tabs >}}

@@ -16,7 +16,7 @@ toc: True
 Below is the list of most notable changes in release of GroupDocs.Comparison for .NET 22.11:
 
 *   Fixed issue comparing PDF files gives out an error
-*   Fixed issue when Ruby was not output to the result file when comparing differences in PDFs that were output by setting ruby in MS Word
+*   Fixed issue when Ruby was not output to the output file when comparing differences in PDFs that were output by setting ruby in MS Word
 *   Fixed Header/Footer Comparison issue in PDF
 *   Fixed issue with annotations are not displayed correctly in the resulting PDF file
 

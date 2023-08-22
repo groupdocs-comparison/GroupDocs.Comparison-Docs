@@ -10,31 +10,12 @@ hideChildren: False
 toc: True
 ---
 
-## What Is GroupDocs.Comparison?
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) is a powerful cross-platform library that allows you to to implement in your applications the ability to compare and merge two or more files of [the various formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}). Compiled file shows line-by-line difference of content, paragraphs, characters, styles, shapes, and positions.
 
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** – API for compare and merge two or more files in applications on the .NET platform. Compiled file shows line-by-line difference of content, paragraphs, characters, styles, shapes and positions.
+The API provides the following features:
 
-Supported formats:
-
-- Microsoft Word – DOC, DOCX, DOCM, DOT, DOTM, DOTX, RTF;
-- Microsoft Excel – XLS, XLSX, XLT, XLTM, XLSB, XLSM, CSV;
-- Microsoft PowerPoint – PPT, PPTX, POT, POTX, PPS, PPSX;
-- Microsoft Visio – VSD, VSDX, VSS, VST, VDX;
-- Microsoft OneNote – ONE;
-- Portable Document Formats –PDF;
-- Autocad – DWG, DXF;
-- Open Document - ODT, OTT, ODS, ODP, OTP;
-- Ebook – MOBI;
-- Image – PNG, JPG, BMP, DJVU, DICOM, DCM;
-- Email – EML, EMLX, MSG;
-- Source Code files – CS, JAVA, CPP, JS, PHP, HTML, JSON, etc;
-- and many others [supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}).
-
-## Why Use GroupDocs.Comparison?
-
-- GroupDocs.Comparison supports 100\+ file formats without any additional software;
-- Wide range of options to customize comparison process;
-- Information extraction – file type, page count, etc.;
-- Handful differences categorization and highlight;
-- Content structure, styling and formatting changes detection;
-- Ability to apply or reject detected changes and save result document;
+- A wide range of options to customize the comparison process;
+- Information extraction - file type, number of pages, etc.;
+- Classification of several differences and their allocation;
+- Detection of changes in content structure, style, and formatting;
+- Ability to apply or reject the detected changes and save the output documents.
