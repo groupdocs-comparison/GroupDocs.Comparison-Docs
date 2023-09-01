@@ -69,10 +69,18 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< /tab >}}
 {{< /tabs >}}
 
+The result is as follows:
+
+|                            Accepted changes                             |                             Rejected changes                            |
+| :-----------------------------------------------------------------: | :----------------------------------------------------------------: |
+| ![](/comparison/net/images/accepted-changes.png) | ![](/comparison/net/images/rejected-changes.png) |
+
+
+
+## Accept or reject changes for documents provided as a stream
+
 {{< tabs "example2">}}
 {{< tab "C#" >}}
-## Accept or Reject changes for documents provided as a stream
-
 ```csharp
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
@@ -86,7 +94,7 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {{< /tab >}}
 {{< /tabs >}}
 
-## The following code sample shows how to accept/reject detected changes using SaveOriginalState option
+## Accept or reject detected changes using SaveOriginalState option
 
 {{< tabs "example3">}}
 {{< tab "C#" >}}

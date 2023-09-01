@@ -48,10 +48,15 @@ using (Comparer compare = new Comparer("source text", new LoadOptions() { LoadTe
     compare.Add("target text", new LoadOptions() { LoadText = true });
     compare.Compare();
     string result = compare.GetResultString();
+    Console.WriteLine("Result string: \n" + comparer.GetResultString());
 }
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+The result is as follows:
+
+![](/comparison/net/images/load-text-from-string.png)
 
 The following code snippet shows how to combine the different ways of specifying documents:
 

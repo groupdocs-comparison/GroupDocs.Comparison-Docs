@@ -52,7 +52,7 @@ The following code snippets show how to set output document metadata:
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     comparer.Compare("result.docx", new SaveOptions() { CloneMetadataType = MetadataType.Source });
 }
 ```
@@ -66,7 +66,7 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     comparer.Compare("result.docx", new SaveOptions() { CloneMetadataType = MetadataType.Target });
 }
 ```
@@ -80,13 +80,13 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     SaveOptions saveOptions = new SaveOptions()
     {
     	CloneMetadataType = MetadataType.FileAuthor,
         FileAuthorMetadata = new FileAuthorMetadata
         {
-        	Author = "Tom",
+            Author = "Tom",
             Company = "GroupDocs",
             LastSaveBy = "Jack"
         }

@@ -67,6 +67,10 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< /tab >}}
 {{< /tabs >}}
 
+The output file is as follows:
+
+![](/comparison/net/images/compare-documents.png)
+
 ## Compare documents from stream
 
 {{< tabs "example2">}}

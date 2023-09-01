@@ -38,6 +38,10 @@ using (Comparer comparer = new Comparer("source.docx")
 {{< /tab >}}
 {{< /tabs >}}
 
+The result is as follows:
+
+![](/comparison/net/images/compare-multiple-word.png)
+
 ## Compare several documents from a stream
 
 {{< tabs "example2">}}
@@ -53,3 +57,5 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx"))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+

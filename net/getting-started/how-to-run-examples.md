@@ -77,10 +77,15 @@ Uncomment the function to run and comment the rest.
 
 To run [GroupDocs.Comparison for .NET MVC Example](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC), follow these steps:
 
-1. Download [source code](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository
-  ```csharp
+1. Download [source code](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC/archive/master.zip) from GitHub or clone this repository:
+{{< tabs "example2">}}
+{{< tab "CLI" >}}
+  ```git
   git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-MVC
   ```
+{{< /tab >}}
+{{< /tabs >}}
+
 2. Open solution in the VisualStudio. Update common parameters in **web.config** and example related properties in the **configuration.yml** to meet your requirements.
 3. Open [http://localhost:8080/comparison](http://localhost:8080/comparison) in your favorite browser
 
@@ -92,7 +97,7 @@ You can run [GroupDocs.Comparison for .NET Web.Forms Example](https://github.co
 
 1. Download the [source code](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms/archive/master.zip) from GitHub or clone the repository:
  
-{{< tabs "example2">}}
+{{< tabs "example3">}}
 {{< tab "CLI" >}}
   ```git
   git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET-WebForms
@@ -109,9 +114,9 @@ For details, see the [guide](https://github.com/groupdocs-comparison/GroupDocs.
 
 Use the [Docker](https://www.docker.com/) image to try GroupDocs.Comparison for .NET features in an easy way. Execute the following commands to run GroupDocs.Comparison for .NET from docker image:
 
-{{< tabs "example3">}}
+{{< tabs "example4">}}
 {{< tab "CLI" >}}
-```csharp
+```powershell
 mkdir DocumentSamples
 mkdir Licenses
 docker run -p 8080:8080 --env application.hostAddress=localhost -v `pwd`/DocumentSamples:/home/groupdocs/app/DocumentSamples -v `pwd`/Licenses:/home/groupdocs/app/Licenses groupdocs/comparison

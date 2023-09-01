@@ -40,7 +40,7 @@ The following code snippet shows how to load files from local disk:
 string sourcePath = "source.docx";
 using (Comparer comparer = new Comparer(sourcePath))
 {
-	string targetPath = "target.docx";
+    string targetPath = "target.docx";
     comparer.Add("targetPath");
     comparer.Compare("result.docx");
 }

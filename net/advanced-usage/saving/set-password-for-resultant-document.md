@@ -49,7 +49,7 @@ The following code snippet shows how to compare documents and protect the output
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     CompareOptions cOptions = new CompareOptions
     {
      	PasswordSaveOption = PasswordSaveOption.User

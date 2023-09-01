@@ -66,6 +66,10 @@ using (Comparer comparer = new Comparer("source.docx")
 {{< /tab >}}
 {{< /tabs >}}
 
+The result is as follows:
+
+![](/comparison/net/images/compare-multiple-settings.png)
+
 ## Compare multiple documents with specific compare settings from stream
 
 {{< tabs "example2">}}

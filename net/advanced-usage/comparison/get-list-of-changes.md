@@ -51,10 +51,16 @@ using (Comparer comparer = new Comparer("source.docx"))
 	comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
+    foreach (ChangeInfo change in changes)
+    Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", change.Type, change.PageInfo.PageNumber, change.Id, change.Text);
 }
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+The result is as follows:
+
+![](/comparison/net/images/get-changes-list.png)
 
 ## Get list of changes from stream
 
@@ -66,6 +72,8 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 	comparer.Add(File.OpenRead("target.docx"));
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
+    foreach (ChangeInfo change in changes)
+        Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", change.Type, change.PageInfo.PageNumber, change.Id, change.Text);
 }
 ```
 {{< /tab >}}

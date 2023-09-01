@@ -55,6 +55,10 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< /tab >}}
 {{< /tabs >}}
 
+The result is as follows:
+
+![](/comparison/net/images/get-file-info.png)
+
 ## Get file for the file from stream
 
 {{< tabs "example2">}}

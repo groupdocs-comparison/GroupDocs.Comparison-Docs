@@ -57,3 +57,7 @@ using (Comparer comparer = new Comparer(sourcePath))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+The result is as follows:
+
+![](/comparison/net/images/get-only-summary-page.png)

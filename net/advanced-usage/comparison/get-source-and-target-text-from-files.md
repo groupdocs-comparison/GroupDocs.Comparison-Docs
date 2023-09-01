@@ -45,7 +45,7 @@ To get a list of changed source and target texts, follow these steps:
 
 The following code snippets show how to get specified texts from a file.
 
-## Get target text from local disk
+## Get source and target text from local disk
 
 {{< tabs "example1">}}
 {{< tab "C#" >}}
@@ -66,7 +66,11 @@ using (Comparer comparer = new Comparer(sourceDocumentPath))
 {{< /tab >}}
 {{< /tabs >}}
 
-## Get target text from stream
+The result is as follows:
+
+![](/comparison/net/images/get-source-and-target-text-from-files.png)
+
+## Get source and target text from stream
 
 {{< tabs "example2">}}
 {{< tab "C#" >}}

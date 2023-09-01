@@ -45,7 +45,7 @@ using (Stream targetStream = File.OpenRead("target.docx"))
 {
 	using (Comparer comparer = new Comparer(sourceStream))
 	{
-	    comparer.Add(targetStream);
+        comparer.Add(targetStream);
     	comparer.Compare(File.Create("result.docx"));
 	}
 }

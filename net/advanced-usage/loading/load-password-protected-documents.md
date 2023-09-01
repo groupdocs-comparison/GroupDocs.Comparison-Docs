@@ -44,10 +44,10 @@ The following code snippet shows how to compare password protected documents:
 {{< tab "C#" >}}
 ```csharp
 LoadOptions sourceLoadOptions = new LoadOptions(){ Password = "1234" };
- 
+
 using (Comparer comparer = new Comparer("source.docx", sourceLoadOptions))
 {
-	LoadOptions targetLoadOptions =	new LoadOptions() { Password = "5678" };
+    LoadOptions targetLoadOptions =	new LoadOptions() { Password = "5678" };
     comparer.Add("target.docx", targetLoadOptions);
     comparer.Compare("result.docx");
 }

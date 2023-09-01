@@ -61,3 +61,7 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+The result is as follows:
+
+![](/comparison/net/images/get-changes-coordinates.png)

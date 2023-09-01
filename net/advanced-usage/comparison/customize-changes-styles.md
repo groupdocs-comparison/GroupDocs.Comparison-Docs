@@ -85,6 +85,10 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< /tab >}}
 {{< /tabs >}}
 
+The result is as follows:
+
+![](/comparison/net/images/customize-changes-styles.png)
+
 ## Compare documents from stream with custom change styles
 
 {{< tabs "example2">}}

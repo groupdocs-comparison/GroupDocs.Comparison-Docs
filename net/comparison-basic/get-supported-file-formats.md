@@ -45,3 +45,7 @@ foreach (FileType fileType in supportedFileTypes)
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+The result is as follows:
+
+![](/comparison/net/images/get-supported-formats.png)
