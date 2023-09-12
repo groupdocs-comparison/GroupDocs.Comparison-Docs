@@ -122,7 +122,7 @@ Below is the list of most notable changes in release of GroupDocs.Comparsion�
 | COMPARISONNET-1805  | Deleted items in comparison output is not as expected                              | Bug         |
 | COMPARISONNET-1892  | Incorrect difference info in PDF                                                   | Bug         |
 | COMPARISONNET-1899  | Html MarkDeletedInsertedContentDeep Bug                                            | Bug         |
-| COMPARISONNET-1903  | License issue in GroupDocs.Comparison for .NET application                         | Bug         |
+| COMPARISONNET-1903  | License issue in GroupDocs.Comparison for Java application                         | Bug         |
 | COMPARISONNET-1906  | Font detection exception                                                           | Bug         |
 | COMPARISONNET-1909  | Word separation exception                                                          | Bug         |
 | COMPARISONJAVA-147  | Cannot compare two PDF files using GroupDocs.Comparison for Java 17.3.0            | Bug         |

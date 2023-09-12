@@ -3,94 +3,69 @@ id: installation
 url: comparison/java/installation
 title: Installation
 weight: 4
-description: ""
-keywords:
+description: "On this page you will find system requirements supported platforms, development environments. GroupDocs.Comparison for Java does not require any external software or third party tool to be installed."
+keywords: Install from Nuget, How to install GroupDocs.Comparison, Install from website
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Documents Comparison Tool
-    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
-    productCode: comparison
-    productPlatform: java
-  howTo:
-    name: How to install Comparison API
-    description: Learn how to install GroupDocs.Comparison into Java or Kotlin project
-    steps:
-      - name: Specify GroupDocs Repository
-        text: Add GroupDocs Maven repository to the project
-      - name: Define Comparison dependency
-        text: Add comparison dependency so that the project will download required libraries
 ---
 
-### Operating Systems
+This topic describes how to add the GroupDocs.Comparison library to your Java project. You can use a NuGet package to install this library or you can download necessary DLLs from the GroupDocs website: [https://releases.groupdocs.com/comparison/java/](https://releases.groupdocs.com/comparison/java/).
 
-**[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** can be executed on any Operating System with Java JDK installed.
+## Install GroupDocs.Comparison using NuGet packages
 
-- Windows Desktops and Servers
-- Linux
-- Mac OS
+You can use the following tools to install the [GroupDocs.Comparison](https://www.nuget.org/packages/GroupDocs.Comparison) NuGet package: 
 
-### Supported Runtime
+ * [NuGet Package Manager](#use-the-nuget-package-manager-in-visual-studio)
+ * [Package Manager Console](#use-the-package-manager-console-in-visual-studio)
+ * [.NET CLI](#use-the-net-cli)
 
-**[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** supports Java run-time version 8 and above (Kotlin is supported as well).
+### Use the NuGet Package Manager
 
-### Development Environments
+Open your project or solution in Visual Studio and follow the steps below to install the GroupDocs.Comparison package using the [NuGet Package Manager](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio):
 
-- NetBeans
-- IntelliJ IDEA
-- Eclipse
+1. In **Solution Explorer**, right-click your project name and select **Manage NuGet Packages** to display the NuGet Package Manager.
 
-## Installation from GroupDocs Repository using Maven
+2. Select the **Browse** tab and type `GroupDocs.Compariso` in the search box. Select the latest version of the GroupDocs.Comparison package and click **Install**.
 
-GroupDocs hosts all Java APIs on [GroupDocs Repository](https://releases.groupdocs.com/java/repo/). You can easily use [GroupDocs.Comparison for Java](https://releases.groupdocs.com/java/repo/com/groupdocs/groupdocs-comparison/) API directly in your Maven projects with simple configurations.
+    ![](/comparison/java/images/installation.png)
 
-### Specify GroupDocs Repository
+### Use the Package Manager Console
 
-First, you need to specify GroupDocs repository configuration/location in your Maven `pom.xml` as follows:
+The [Package Manager Console](https://learn.microsoft.com/en-us/nuget/consume-packages/install-use-packages-powershell) uses the PowerShell commands to install, update, and remove NuGet packages. Open project in Visual Studio and click **Tools** -> **NuGet Package Manager** -> **Package Manager Console** to open the console window. To install the latest version of the GroupDocs.Comparison library, execute the following command:
 
-<details open><summary>Connect GroupDocs repository</summary><blockquote>
-<details open><summary>Maven</summary>
+{{< tabs "example1">}}
+{{< tab "PowerShell" >}}
+```
+PM> Install-Package GroupDocs.Comparison
+```
+{{< /tab >}}
+{{< /tabs >}}
 
-<script src="https://gist.github.com/groupdocs-comparison-gists/9de00b81ae5dd326fc85fecb5c1220a6.js"></script>
+![Use Package Manager Console ](/comparison/java/images/installation_1.png)
 
-</details>
-<details><summary>Gradle</summary>
+### Use the Java CLI
 
-<script src="https://gist.github.com/groupdocs-comparison-gists/15f77ae825f310acd9cad555dcea0019.js"></script>
+You can use the [.NET CLI tool](https://docs.microsoft.com/en-us/dotnet/core/tools/) to install and update NuGet packages. In your project's folder, open a terminal and execute the following command to install the GroupDocs.Comparison package:
 
-</details>
-<details><summary>Kotlin</summary>
+{{< tabs "example2">}}
+{{< tab ".NET CLI" >}}
+```
+dotnet add package GroupDocs.Comparison
+```
+{{< /tab >}}
+{{< /tabs >}}
 
-<script src="https://gist.github.com/groupdocs-comparison-gists/ad7ad48d4e7f9f60e858c7ba546f3745.js"></script>
+## Download GroupDocs.Comparison from the official website
 
-</details>
-</blockquote></details>
+Visit [list of GroupDocs.Comparison releases](https://releases.groupdocs.com/comparison/java/) and download the GroupDocs.Comparison assemblies as a ZIP archive or MSI installer. To reference the downloaded assembly files in your project, follow these steps:
 
-### Define Comparison Dependency
+1. Extract files from the ZIP archive or run the MSI installer to install GroupDocs.Comparison to a specific location on your computer.
+2. Open your solution or project in Visual Studio.
+3. In **Solution Explorer**, right-click the **References** or **Dependencies** node, and select **Add Reference** (for a Java Framework project) or **Add Project Reference** (for a Java Core project).
+4. In the **Reference Manager** dialog box, select the **Browse** tab and click **Browse** to locate the _GroupDocs.Comparison.dll_ file for the target framework.
+5. Click **OK** to add a reference to the GroupDocs.Comparison library to your project.
 
-Then define **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** API dependency in your `pom.xml` as follows:
-
-_The latest version of Comparison API can be [found here](https://repository.groupdocs.com/comparison/)_
-
-<details open><summary>Add GroupDocs.Comparison dependency</summary><blockquote>
-<details open><summary>Maven</summary>
-
-<script src="https://gist.github.com/groupdocs-comparison-gists/f4d8f0b56d1dfa24dea18c68cd9d8001.js"></script>
-
-</details>
-<details><summary>Gradle</summary>
-
-<script src="https://gist.github.com/groupdocs-comparison-gists/b760d58061daa45d9b211e2701aa52b5.js"></script>
-
-</details>
-<details><summary>Kotlin</summary>
-
-<script src="https://gist.github.com/groupdocs-comparison-gists/b20a9f70c3442ca586a95b00a778a464.js"></script>
-
-</details>
-</blockquote></details>
-
-After performing above-mentioned steps, GroupDocs.Comparison for Java dependency will finally be added to your Maven project.
+{{< alert style="warning" >}}
+If your application targets Java Core / Java 5+, ensure that your project has all the required dependencies installed. Refer to the following page for details: [GroupDocs.Comparison dependencies](https://www.nuget.org/packages/groupdocs.comparison#dependencies-body-tab).
+{{< /alert >}}

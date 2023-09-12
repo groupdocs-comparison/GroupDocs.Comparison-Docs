@@ -72,7 +72,7 @@ Below the list of fixed bugs in this release of GroupDocs.Comparsion for Java.
 | COMPARISONNET-1217 | Add support for JPG, BMP and PNG formats                                                                     | New Feature |
 | COMPARISONNET-1170 | GroupDocs.Comparison.PDF: Add comparison of page context before building of the object model                 | New Feature |
 | COMPARISONNET-1273 | GroupDocs.Comparison.Words: Add support of setting for cloning document metadata                             | New Feature |
-| COMPARISONNET-1295 | Add support of Emails format by GroupDocs.Comparison for .NET                                                | New Feature |
+| COMPARISONNET-1295 | Add support of Emails format by GroupDocs.Comparison for Java                                                | New Feature |
 | COMPARISONNET-1276 | GroupDocs.Comparison all formats: Add support of Check Box and Page in Change Info                           | New Feature |
 | COMPARISONNET-1272 | GroupDocs.Comparison.Words: Add ability of applying or discarding for category of changes                    | New Feature |
 | COMPARISONNET-1274 | GroupDocs.Comparison: All formats: Add support of style settings: bold, italic, underline and strike through | New Feature |
@@ -85,7 +85,7 @@ Below the list of fixed bugs in this release of GroupDocs.Comparsion for Java.
 | COMPARISONNET-1367 | Comparison.Cells: Add support Headers and Footers                                                            | New Feature |
 | COMPARISONNET-1365 | Add support for headers and footers for pivot tables                                                         | New Feature |
 | COMPARISONNET-1362 | Add support of pivot tables in Cells                                                                         | New Feature |
-| COMPARISONNET-1305 | Add support of OneNote format by GroupDocs.Comparison for .NET                                               | New Feature |
+| COMPARISONNET-1305 | Add support of OneNote format by GroupDocs.Comparison for Java                                               | New Feature |
 | COMPARISONNET-778  | Implement the process absorbing of tables with merged cells                                                  | Improvement |
 | COMPARISONNET-1148 | Improved public API                                                                                          | Improvement |
 | COMPARISONNET-1161 | Add ability for comparison of result and original files in Imaging.Tests                                     | Improvement |

@@ -8,27 +8,20 @@ keywords: File comparison, Apply Reject changes between documents, information e
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Documents Comparison Tool
-    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
-    productCode: comparison
-    productPlatform: java
 ---
 
 ## File comparison
 
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** provides an ability to detect differences between source and target files for changes at paragraphs, words and characters levels. Can identify styling and formatting changes - like bold, italic, underlines, strike-troughs, font types, etc.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to detect differences between source and target files for changes at paragraphs, words, and characters levels. It can identify styling and formatting changes like bold, italic, underlines, strike-troughs, font types, etc.
 
 ## Apply/Reject changes between documents
 
-Every particular difference between compared document can be applied or rejected and the exported to a final document.
+Every difference between compared documents can be applied or rejected and then exported to the output document.
 
 ## Document information extraction
 
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java)** allows to obtain basic information about source document - file type, size, pages count etc. This may be quite useful for generating previews of compared documents.
+GroupDocs.Comparison allows obtaining basic information about source documents - file type, size, page count, etc. For example, you can use this to generate previews of compared documents.
 
 ## Comparison summary report
 
-Once comparison process is complete, you can save a differences summary report which lists all changes found between compared documents.
+Once the comparison process is complete, you can save a differences summary report that lists all changes in compared documents.
