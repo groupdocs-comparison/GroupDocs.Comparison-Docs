@@ -48,15 +48,15 @@ GroupDocs.Comparison for .NET supports .NET frameworks as follows:
 ### .NET Standard
 - .NET Standard 2.1
 
-### .NET Frameworks
+### .NET Framework
 
 - .NET Framework 2.0 (Until GroupDocs.Comparison 22.6)
 - .NET Framework 3.5 (Until GroupDocs.Comparison 22.6)
-- .NET Framework 4.0
-- .NET Framework 4.5.0
-- .NET Framework 4.5.1
-- .NET Framework 4.5.2
-- .NET Framework 4.6.0
+- .NET Framework 4.0 (Until GroupDocs.Comparison 23.8)
+- .NET Framework 4.5.0 (Until GroupDocs.Comparison 23.8)
+- .NET Framework 4.5.1 (Until GroupDocs.Comparison 23.8)
+- .NET Framework 4.5.2 (Until GroupDocs.Comparison 23.8)
+- .NET Framework 4.6.0 (Until GroupDocs.Comparison 23.8)
 - .NET Framework 4.6.2
 - .NET Framework 4.5.0
 - .NET Framework 4.5.1
