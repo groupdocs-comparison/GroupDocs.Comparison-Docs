@@ -39,20 +39,20 @@ Revision is a collection of changes received when comparing documents using buil
 By default, the Word Track Changes option is `false`. Follow these steps to turn on the Word Track Changes:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) object. Specify the source file path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer/methods/add/index) method. Specify the target file path or stream.
+2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
 3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object. Set the [WordTrackChanges](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/wordtrackchanges) property to `true`;
-4.  Call the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
 
 The following code snippet shows how to disable the display of revisions:
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(sourcePath))
-{
-    comparer.Add(targetPath);
-    CompareOptions options = new CompareOptions() {WordTrackChanges = true};
-    comparer.Compare(resultPath, options);
+try (Comparer comparer = new Comparer(sourcePath)) {
+    comparer.add(targetPath);
+    CompareOptions options = new CompareOptions();
+    options.setWordTrackChanges(true);
+    comparer.compare(resultPath, options);
 }
 ```
 {{< /tab >}}

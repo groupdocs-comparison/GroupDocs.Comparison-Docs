@@ -30,10 +30,10 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to get the following file information:
 
-*   [FileType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.).
-*   [PageCount](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/pagecount) represents count of document pages.
-*   [FileSize](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size) represents the document file size.
-*   [PagesInfo](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/pageinfo) represents the page information.
+*   [FileType](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.).
+*   [PageCount](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents count of document pages.
+*   [FileSize](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents the document file size.
+*   [PagesInfo](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents the page information.
 
 The following code samples show how to get file information:
 
@@ -42,13 +42,12 @@ The following code samples show how to get file information:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-	IDocumentInfo info = comparer.Source.GetDocumentInfo();
-    for (int i = 0; i < info.PageCount; i++)
-    {
-         Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ",
-             info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
+
+try (Comparer comparer = new Comparer(sourceFile)) {
+    IDocumentInfo info = comparer.getSource().getDocumentInfo();
+    for (int i = 0; i < info.getPageCount(); i++) {
+        System.out.printf("\nFile type: %s\nNumber of pages: %d\nDocument size: %d bytes\nWidth: %d\nHeight: %d%n",
+            info.getFileType().getFileFormat(), info.getPageCount(), info.getSize(), info.getPagesInfo().get(i).getWidth(), info.getPagesInfo().get(i).getHeight());
     }
 }
 ```
@@ -64,13 +63,13 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(File.OpenRead("source.docx"))
-{
-	IDocumentInfo info = comparer.Source.GetDocumentInfo();
-    for (int i = 0; i < info.PageCount; i++)
-    {
-         Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ",
-             info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
+
+try (InputStream inputStream = new FileInputStream(sourceFile);
+    Comparer comparer = new Comparer(inputStream)) {
+    IDocumentInfo info = comparer.getSource().getDocumentInfo();
+    for (int i = 0; i < info.getPageCount(); i++) {
+        System.out.printf("\nFile type: %s\nNumber of pages: %d\nDocument size: %d bytes\nWidth: %d\nHeight: %d%n", 
+            info.getFileType().getFileFormat(), info.getPageCount(), info.getSize(), info.getPagesInfo().get(i).getWidth(), info.getPagesInfo().get(i).getHeight());
     }
 }
 ```

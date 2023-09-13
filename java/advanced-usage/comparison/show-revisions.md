@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify ShowRevisions of true value.
       - name: Compare documents
@@ -39,20 +39,20 @@ Revision is a collection of changes received when comparing documents using buil
 By default, the display of revisions is enabled. To turn off the display of revisions, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) object. Specify the source file path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer/methods/add/index) method. Specify the target file path or stream.
+2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
 3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object. Set the [ShowRevisions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/showrevisions) property to `false`.
-4.  Call the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
 
 The following code snippet shows how disable the display of revisions:
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(sourcePath))
-{
-    comparer.Add(targetPath);
-    CompareOptions options = new CompareOptions() {ShowRevisions = false};
-    comparer.Compare(resultPath, options);
+try (Comparer comparer = new Comparer(sourcePath)) {
+    comparer.add(targetPath);
+    CompareOptions options = new CompareOptions();
+    options.setShowRevisions(false);
+    final Path resultPath = comparer.compare(outputPath, options);
 }
 ```
 {{< /tab >}}

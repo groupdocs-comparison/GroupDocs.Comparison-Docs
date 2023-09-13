@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file or tagret file stream using the Add method.
+        text: Add the path to the target file or target file stream using the Add method.
       - name: Specify necessary settings
         text: Create an options object and specify ExtendedSummaryPage of true value.
       - name: Compare documents
@@ -40,8 +40,8 @@ To get a list of changed source and target texts, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare) method.
-4.  Call the [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges) method.
+3.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method.
+4.  Call the [getChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getChanges--) method.
 
 The following code snippets show how to get specified texts from a file.
 
@@ -50,16 +50,14 @@ The following code snippets show how to get specified texts from a file.
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(sourceDocumentPath))
-{
-    comparer.Add(targetDocumentPath);
-    comparer.Compare(outputPath);
-    ChangeInfo[] changes = comparer.GetChanges();
-    foreach (ChangeInfo change in changes)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Source text: " + change.SourceText);
-        Console.WriteLine("Target text: " + change.TargetText);
+try (Comparer comparer = new Comparer(sourcePath)) {
+    comparer.add(targetPath);
+    final Path resultPath = comparer.compare(outputPath);
+    ChangeInfo[] changes = comparer.getChanges();
+    for (ChangeInfo change : changes) {
+        System.out.println();
+        System.out.println("Source text: " + change.getSourceText());
+        System.out.println("Target text: " + change.getTargetText());
     }
 }
 ```
@@ -75,16 +73,14 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
-{
-    comparer.Add(File.OpenRead("target.docx"));
-    comparer.Compare(outputPath);
-    ChangeInfo[] changes = comparer.GetChanges();
-    foreach (ChangeInfo change in changes)
-    {
-        Console.WriteLine("");
-        Console.WriteLine("Source text: " + change.SourceText);
-        Console.WriteLine("Target text: " + change.TargetText);
+try (Comparer comparer = new Comparer(sourceInputStream)) {
+    comparer.add(targetInputStream);
+    final Path resultPath = comparer.compare(outputPath);
+    ChangeInfo[] changes = comparer.getChanges();
+    for (ChangeInfo change : changes){
+        System.out.println();
+        System.out.println("Source text: "+change.getSourceText());
+        System.out.println("Target text: "+change.getTargetText());
     }
 }
 ```

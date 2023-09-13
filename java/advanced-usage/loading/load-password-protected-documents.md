@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object of LoadOption
         text: Create an object of LoadOption wich contains the password parameters.
       - name: Load target file
-        text: Add the path to the tagret files using the Add method. Second parameter is a LoadOption object that contains password.
+        text: Add the path to the target files using the Add method. Second parameter is a LoadOption object that contains password.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file stream.
 ---
@@ -43,13 +43,9 @@ The following code snippet shows how to compare password protected documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-LoadOptions sourceLoadOptions = new LoadOptions(){ Password = "1234" };
-
-using (Comparer comparer = new Comparer("source.docx", sourceLoadOptions))
-{
-    LoadOptions targetLoadOptions =	new LoadOptions() { Password = "5678" };
-    comparer.Add("target.docx", targetLoadOptions);
-    comparer.Compare("result.docx");
+try (Comparer comparer = new Comparer(sourceExcelDocument, new LoadOptions("password"))) {
+    comparer.add(targetExcelDocument, new LoadOptions("password"));
+    comparer.compare(resultExcelDocument);
 }
 ```
 {{< /tab >}}

@@ -25,7 +25,7 @@ structuredData:
       - name: Create an object and load source file with Options
         text: Create an object of Comparer class. The constructor takes the source file path parameter and object of LoadOptions. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
@@ -46,12 +46,11 @@ The following code snippet shows how to connect custom fonts and compare documen
 ```java
 // Instantiate the LoadOptions object and create a list of custom font directories.
 LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontDirectories.Add("./fontPath/");
-
-using (Comparer comparer = new Comparer("source.docx", loadOptions))
-{
-    comparer.Add("target.docx");
-    comparer.Compare("result.docx");
+loadOptions.getFontDirectories().add("./fontPath/");
+ 
+try (Comparer comparer = new Comparer(sourceDocument, loadOptions)) {
+    comparer.add(targetDocument);
+    final Path resultPath = comparer.compare(resultDocument);
 }
 ```
 {{< /tab >}}

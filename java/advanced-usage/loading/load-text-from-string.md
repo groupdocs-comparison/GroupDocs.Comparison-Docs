@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source text
         text: Create an object of Comparer class. The constructor takes the source text by first parameter and a LoadOption object with LoadText parameter.
       - name: Load target text
-        text: Add the tagret text using the Add method. Second parameter is a LoadOption object that contains LoadText = true.
+        text: Add the target text using the Add method. Second parameter is a LoadOption object that contains LoadText = true.
       - name: Compare documents
         text: Create a string variable where the result of the comparison will be placed.
 ---
@@ -43,12 +43,10 @@ The following code snippet shows how to load values from variables:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer compare = new Comparer("source text", new LoadOptions() { LoadText = true }))
-{
-    compare.Add("target text", new LoadOptions() { LoadText = true });
-    compare.Compare();
-    string result = compare.GetResultString();
-    Console.WriteLine("Result string: \n" + comparer.GetResultString());
+try (Comparer comparer = new Comparer("source text", new LoadOptions(true))) {
+    comparer.add("target text", new LoadOptions(true));
+    comparer.compare();
+    String result = comparer.getResultString();
 }
 ```
 {{< /tab >}}
@@ -63,15 +61,10 @@ The following code snippet shows how to combine the different ways of specifying
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Stream sourceStream = File.OpenRead("./source.docx"))
-{
-    using (Comparer compare = new Comparer(sourceStream))
-    {
-        compare.Add("target text", new LoadOptions() { LoadText = true });
-        compare.Compare();
-        string result = compare.GetResultString();
-        Console.WriteLine(result);
-    }
+try (Comparer comparer = new Comparer(sourceInputStream)) {
+    comparer.add("target text", new LoadOptions(true));
+    comparer.compare();
+    String result = comparer.getResultString();
 }
 ```
 {{< /tab >}}

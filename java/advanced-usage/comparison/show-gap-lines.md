@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Specify necessary settings
         text: Create an options object and specify ShowInsertedContent and ShowDeletedContent of false value and LeaveGaps of true value.
       - name: Compare documents
@@ -41,25 +41,24 @@ Use the [LeaveGaps](https://reference.groupdocs.com/error/404?path=comparison/ja
 Follow these steps to adjust appearance of the output document:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) object. Specify the source file path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer/methods/add/index) method. Specify the target file path or stream.
+2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
 3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object. Sets the [ShowInsertedContent](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/showinsertedcontent), [ShowDeletedContent](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/showdeletedcontent), and/or [LeaveGaps](https://reference.groupdocs.com/error/404?path=comparison/java/groupdocs.comparison.options/compareoptions/properties/leavegaps) properties.
-4.  Call the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
 
 The following code snippet shows how get the desired result
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(sourcePath))
-{
-    comparer.Add(targetPath);
+try (Comparer comparer = new Comparer(sourcePath)) {
+    comparer.add(targetPath);
 
     CompareOptions options = new CompareOptions();
-    options.ShowInsertedContent = false;
-    options.ShowDeletedContent = false;
-    options.LeaveGaps = true;
+    options.setShowInsertedContent(false);
+    options.setShowDeletedContent(false);
+    options.setLeaveGaps(true);
 
-    comparer.Compare(resultPath, options);
+    comparer.compare(resultPath, options);
 }
 ```
 {{< /tab >}}

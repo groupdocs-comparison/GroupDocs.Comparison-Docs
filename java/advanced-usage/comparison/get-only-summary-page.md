@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Specify necessary settings
         text: Create an options object and specify ShowOnlySummaryPage of true value.
       - name: Compare documents
@@ -40,19 +40,19 @@ To get only summary page, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object. Set the [ShowOnlySummaryPage](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/showonlysummarypage) property to `true`;
-4.  Call the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object from the previous step.
+3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object. Set the [ShowOnlySummaryPage](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/showonlysummarypage) property to `true`;
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object from the previous step.
 
 The following code snippet shows how to get only summary page.
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(sourcePath))
-{
-	comparer.Add(targetPath);
-	CompareOptions options = new CompareOptions() {ShowOnlySummaryPage = true};
-    comparer.Compare(resultPath, options);
+try (Comparer comparer = new Comparer(sourcePath)) {
+	comparer.add(targetPath);
+	CompareOptions options = new CompareOptions();
+    options.setShowOnlySummaryPage(true);
+    final Path resultPath = comparer.compare(outputPath, options);
 }
 ```
 {{< /tab >}}

@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify SensitivityOfComparison.
       - name: Compare documents
@@ -64,19 +64,21 @@ To compare documents with specific comparison sensitivity, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object. Specify the appropriate  [SensitivityOfComparison](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions/properties/sensitivityofcomparison) value.
-4.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.comparer/compare/methods/1) method. Specify the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object.
+3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object. Call the  [setSensitivityOfComparison()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setSensitivityOfComparison-int-) method to specify the appropriate value.
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object.
 
 The following code snippet shows how to compare documents with specific sensitivity:
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-	comparer.Add("target.docx");
-    CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100 };
-	comparer.Compare("result.docx", options);
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+
+    CompareOptions compareOptions = new CompareOptions();
+    compareOptions.setSensitivityOfComparison(100);
+
+    final Path resultPath = comparer.compare(resultFile, compareOptions);
 }
 ```
 {{< /tab >}}

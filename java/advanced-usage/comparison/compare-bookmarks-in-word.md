@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify CompareBookmarks of true value.
       - name: Compare documents
@@ -37,22 +37,21 @@ structuredData:
 To compare bookmarks in the Word documents, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) object. Specify the source file path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer/methods/add/index) method. Specify the target file path or stream.
+2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
 3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object. Set the [CompareBookmarks](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/comparebookmarks) property to `true`.
-4.  Call the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
 
 The following code snippet shows how to demonstrate how to compare bookmarks:
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(sourcePath))
-{
-    comparer.Add(targetPath);
+try (Comparer comparer = new Comparer(sourcePath)) {
+    comparer.add(targetPath);
 
-    comparer.Compare(resultPath, new CompareOptions {
-        CompareBookmarks = true
-    });
+    CompareOptions compareOptions = new CompareOptions();
+    compareOptions.setCompareBookmarks(true);
+    final Path resultPath = comparer.compare(outputPath, compareOptions);
 }
 ```
 {{< /tab >}}

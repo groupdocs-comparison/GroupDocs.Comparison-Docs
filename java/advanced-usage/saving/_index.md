@@ -12,7 +12,7 @@ structuredData:
 ---
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) provides different ways of saving output document -  save with password, select document metadata source etc.
 
-The [SaveOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) class provides the following properties to customize saving process:
+The [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) class provides the following properties to customize saving process:
 
 *   CloneMetadataType gets or sets a value indicating whether to clone metadata to target document or not
 *   FileAuthorMetadata allows set metadata values provided by user

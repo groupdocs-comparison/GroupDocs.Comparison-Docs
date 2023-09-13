@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter.
 ---
@@ -49,7 +49,7 @@ To compare two documents, follow these steps:
 
 1.   Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object with source document path or stream.
 2.   Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method and specify target document path or stream.
-3.   Call the [compare](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method.
+3.   Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method.
 
 The following code snippets show how to compare two documents:
 
@@ -58,10 +58,9 @@ The following code snippets show how to compare two documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-	comparer.Add("target.docx");
-	comparer.Compare("result.docx");
+try (Comparer comparer = new Comparer(sourcePdfPath)) {
+    comparer.add(targetPdfPath);
+    final Path resultPath = comparer.compare(resultPdfPath);
 }
 ```
 {{< /tab >}}
@@ -76,10 +75,9 @@ The output file is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
-{
-	comparer.Add(File.OpenRead("target.docx"));
-	comparer.Compare(File.Create("result.docx"));
+try (Comparer comparer = new Comparer(sourceInputStream)) {
+    comparer.add(targetInputStream);
+    final Path resultPath = comparer.compare(resultOutputStream);
 }
 ```
 {{< /tab >}}

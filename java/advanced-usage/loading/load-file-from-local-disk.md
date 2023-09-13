@@ -25,7 +25,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object and load a source file by specifying in the parameter a string variable.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
@@ -37,12 +37,9 @@ The following code snippet shows how to load files from local disk:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-string sourcePath = "source.docx";
-using (Comparer comparer = new Comparer(sourcePath))
-{
-    string targetPath = "target.docx";
-    comparer.Add("targetPath");
-    comparer.Compare("result.docx");
+try (Comparer comparer = new Comparer(sourcePdfPath)) {
+    comparer.add(targetPdfPath);
+    final Path resultPath = comparer.compare(resultPdfPath);
 }
 ```
 {{< /tab >}}

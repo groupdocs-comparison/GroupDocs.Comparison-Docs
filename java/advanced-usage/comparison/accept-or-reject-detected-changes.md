@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file or tagret file stream using the Add method.
+        text: Add the path to the target file or target file stream using the Add method.
       - name: Compare files
         text: Call the Compare method of your object without parameters.
       - name: Create an array for file changes
@@ -40,12 +40,12 @@ To apply/reject changes to output document, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Call the [compare](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method.
-4.  Call the [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method to get changes list.
-5.  Set the [ComparisonAction](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) of the appropriate change object to the [ComparisonAction.Accept](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value.
-6.  Call the [ApplyChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method. Specify the collection of changes.
+3.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method.
+4.  Call the [getChanges()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getChanges--) method to get changes list.
+5.  Call the [setComparisonAction()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/changeinfo/#setComparisonAction-com.groupdocs.comparison.result.ComparisonAction-) method of the appropriate change object. Specify the [ComparisonAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/comparisonaction#ACCEPT) or the [ComparisonAction.REJECT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/comparisonaction#REJECT) value.
+6.  Call the [applyChanges()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#applyChanges-java.lang.String-com.groupdocs.comparison.options.save.SaveOptions-com.groupdocs.comparison.options.ApplyChangeOptions-) method. Specify the collection of changes.
 
-[ApplyChangeOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/applychangeoptions) class includes the following properties:
+The [ApplyChangeOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/applychangeoptions/) class includes the following properties:
 
 - [Changes](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/applychangeoptions/properties/changes) is a list of changes that must be applied (or not) to the output document
 - [SaveOriginalState](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/applychangeoptions/properties/saveoriginalstate) is an option to reep the original state of the compared result after applying changes
@@ -57,13 +57,12 @@ The following code snippets show how to accept/reject changes:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    comparer.Compare();
-    ChangeInfo[] changes = comparer.GetChanges();
-    changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    final Path resultPath = comparer.compare();
+    ChangeInfo[] changes = comparer.getChanges();
+    changes[0].setComparisonAction(ComparisonAction.REJECT);
+    comparer.applyChanges(resultFile, new SaveOptions(), new ApplyChangeOptions(changes));
 }
 ```
 {{< /tab >}}
@@ -82,13 +81,12 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
-{
-    comparer.Add(File.OpenRead("target.docx"));
-    comparer.Compare(new SaveOptions(), new CompareOptions());
-    ChangeInfo[] changes = comparer.GetChanges(new GetChangeOptions());
-    changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
+try (Comparer comparer = new Comparer(sourceInputStream)) {
+    comparer.add(targetInputStream);
+    final Path resultPath = comparer.compare(new SaveOptions(), new CompareOptions());
+    ChangeInfo[] changes = comparer.getChanges();
+    changes[0].setComparisonAction(ComparisonAction.REJECT);
+    comparer.applyChanges(resultOutputStream, new ApplyChangeOptions(changes));
 }
 ```
 {{< /tab >}}
@@ -99,16 +97,18 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    comparer.Compare();
-    ChangeInfo[] changes = comparer.GetChanges();
-    changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges("resultWithRejectedChange.docx", new ApplyChangeOptions() { Changes = changes, SaveOriginalState = true });
-    changes = comparer.GetChanges();
-    changes[0].ComparisonAction = ComparisonAction.Accept;
-    comparer.ApplyChanges("resultWithAcceptedChange.docx", new ApplyChangeOptions() { Changes = changes });
+try (Comparer comparer = new Comparer(sourceFile)) {
+	comparer.add(targetFile);
+    final Path resultPath = comparer.compare();
+    ChangeInfo[] changes = comparer.getChanges();
+    changes[0].setComparisonAction(ComparisonAction.REJECT);
+    ApplyChangeOptions changeOptions = new ApplyChangeOptions();
+    changeOptions.setChanges(changes);
+    changeOptions.setSaveOriginalState(true);
+    comparer.applyChanges(resultFileWithRejectedChange, changeOptions);
+    changes = comparer.getChanges();
+    changes[0].setComparisonAction(ComparisonAction.ACCEPT);
+    comparer.applyChanges(resultFileWithAcceptedChange, new ApplyChangeOptions(changes));
 }
 ```
 {{< /tab >}}

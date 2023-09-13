@@ -57,14 +57,16 @@ The following code snippets show how to get revisions from a document, accept / 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Document_with_revision.docx"))
-{
-    List<RevisionInfo> revisionList = revisionHandler.GetRevisions();
-    foreach (RevisionInfo revision in revisionList)
-    {
-        if (revision.Type == RevisionType.Insertion) revision.Action = RevisionAction.Accept;
+try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionFile)) {
+    List<RevisionInfo> revisionList = revisionHandler.getRevisions();
+    for (RevisionInfo revision : revisionList) {
+        if (revision.getType() == RevisionType.Insertion) {
+            revision.setAction(RevisionAction.Accept);
+        }
     }
-    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { Changes = revisionList });
+    ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions();
+    revisionOptions.setChanges(revisionList);
+    revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
 }
 ```
 {{< /tab >}}
@@ -75,14 +77,15 @@ using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Doc
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (RevisionHandler revisionHandler = new RevisionHandler(File.OpenRead("Document_with_revision.docx")))
-{
-    List<RevisionInfo> revisionList = revisionHandler.GetRevisions();
-    foreach (RevisionInfo revision in revisionList)
-    {
-        if (revision.Type == RevisionType.Insertion) revision.Action = RevisionAction.Accept;
+try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionInputStream)) {
+    List<RevisionInfo> revisionList = revisionHandler.getRevisions();
+    for (RevisionInfo revision : revisionList) {
+        if (revision.getType() == RevisionType.Insertion) {
+            revision.setAction(RevisionAction.Accept);
+        }
     }
-    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { Changes = revisionList });
+    ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions(revisionList);
+    revisionHandler.applyRevisionChanges(resultOutputStream, revisionOptions);
 }
 ```
 {{< /tab >}}
@@ -93,9 +96,10 @@ using (RevisionHandler revisionHandler = new RevisionHandler(File.OpenRead("Docu
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
-using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Document_with_revision.docx"))
-{
-	revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { CommonHandler = RevisionAction.Accept });
+try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionFile)) {
+    ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions();
+    revisionOptions.setCommonHandler(RevisionAction.Accept);
+	revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
 }
 ```
 {{< /tab >}}

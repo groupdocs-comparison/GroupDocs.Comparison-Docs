@@ -36,12 +36,10 @@ The following code snippet shows how to get list of supported file formats:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-IEnumerable<FileType> supportedFileTypes = FileType
-	.GetSupportedFileTypes()
-	.OrderBy(f => f.Extension);
-
-foreach (FileType fileType in supportedFileTypes)
-	Console.WriteLine(fileType);
+Iterable<FileType> fileTypes = FileType.getSupportedFileTypes();
+for (FileType fileType : fileTypes) {
+    System.out.println(fileType);
+}
 ```
 {{< /tab >}}
 {{< /tabs >}}

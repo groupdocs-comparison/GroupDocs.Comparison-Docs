@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter and the SaveOtions object with the required metadata parameter initialised by MetadataType enum.
 ---
@@ -40,8 +40,8 @@ To set output document metadata, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Instantiate the [SaveOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object. Set the [CloneMetadataType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions/properties/clonemetadatatype) property to the appropriate [MetadataType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/metadatatype) variant.
-4.  Call the [compare](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [SaveOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object as a parameter.
+3.  Instantiate the [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) object. Call the [setCloneMetadataType()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/saveoptions/#setCloneMetadataType-com.groupdocs.comparison.options.enums.MetadataType-) method to set the appropriate [MetadataType](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.enums/metadatatype/) variant.
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/saveoptions/) object as a parameter.
 
 The following code snippets show how to set output document metadata:
 
@@ -50,10 +50,11 @@ The following code snippets show how to set output document metadata:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    comparer.Compare("result.docx", new SaveOptions() { CloneMetadataType = MetadataType.Source });
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    final SaveOptions saveOptions = new SaveOptions();
+    saveOptions.setCloneMetadataType(MetadataType.Source);
+    final Path resultPath = comparer.compare(outputFile, saveOptions);
 }
 ```
 {{< /tab >}}
@@ -64,10 +65,11 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    comparer.Compare("result.docx", new SaveOptions() { CloneMetadataType = MetadataType.Target });
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    final SaveOptions saveOptions = new SaveOptions();
+    saveOptions.setCloneMetadataType(MetadataType.Target);
+    final Path resultPath = comparer.compare(outputFile, saveOptions);
 }
 ```
 {{< /tab >}}
@@ -78,20 +80,17 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    SaveOptions saveOptions = new SaveOptions()
-    {
-    	CloneMetadataType = MetadataType.FileAuthor,
-        FileAuthorMetadata = new FileAuthorMetadata
-        {
-            Author = "Tom",
-            Company = "GroupDocs",
-            LastSaveBy = "Jack"
-        }
-    };
-    comparer.Compare("result.docx", saveOptions);
+
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    final FileAuthorMetadata fileAuthorMetadata = new FileAuthorMetadata();
+    fileAuthorMetadata.setAuthor("Tom");
+    fileAuthorMetadata.setCompany("GroupDocs");
+    fileAuthorMetadata.setLastSaveBy("Jack");
+    final SaveOptions saveOptions = new SaveOptions();
+    saveOptions.setCloneMetadataType(MetadataType.FileAuthor);
+    saveOptions.setFileAuthorMetadata(fileAuthorMetadata);
+    final Path resultPath = comparer.compare(outputFile, saveOptions);
 }
 ```
 {{< /tab >}}

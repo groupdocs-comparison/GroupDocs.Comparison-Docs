@@ -53,7 +53,7 @@ If you wish to test GroupDocs.Annotation without the limitations of the trial ve
 
 {{< alert style="info" >}}
 
-You can find the pricing information on the ["Pricing Information"](https://purchase.groupdocs.com/pricing/comparison/net) page.
+You can find the pricing information on the ["Pricing Information"](https://purchase.groupdocs.com/pricing/comparison/java) page.
 
 {{< /alert >}}
 
@@ -78,9 +78,8 @@ The following code snippet shows how to set a license from file:
 {{< tab "Java" >}}
 
 ```java
-string licensePath = "path to the .lic file";
-License license = new License();
-license.SetLicense(licensePath);
+License lic = new License();
+lic.setLicense(licensePath);
 ```
 
 {{< /tab >}}
@@ -95,12 +94,8 @@ The following code snippet shows how to set a license from a stream:
 {{< tab "Java" >}}
 
 ```java
-string licensePath = "path to the .lic file";
-using (FileStream fileStream = File.OpenRead(licensePath))
-{
-    License license = new License();
-    license.SetLicense(fileStream);
-}
+License lic = new License();
+lic.setLicense(licenseInputStream);
 ```
 
 {{< /tab >}}

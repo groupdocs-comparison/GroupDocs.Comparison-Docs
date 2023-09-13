@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file or tagret file stream using the Add method.
+        text: Add the path to the target file or target file stream using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object.
       - name: Create an array for file changes
@@ -36,8 +36,8 @@ To changes list, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare) method.
-4.  Call the [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges) method.
+3.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method.
+4.  Call the [getChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getChanges--) method.
 
 The following code snippets show how to get list of all changes:
 
@@ -46,14 +46,17 @@ The following code snippets show how to get list of all changes:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-	comparer.Add("target.docx");
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
-    foreach (ChangeInfo change in changes)
-    Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", change.Type, change.PageInfo.PageNumber, change.Id, change.Text);
-}
+    for (ChangeInfo change : changes) {
+        System.out.println("Change Type: " + change.getType() +
+                ", Page: " + change.getPageInfo().getPageNumber() +
+                ", Change ID: " + change.getId() +
+                ", Text: " + change.getText());
+    }
+} 
 ```
 {{< /tab >}}
 {{< /tabs >}}
@@ -67,13 +70,16 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
-{
-	comparer.Add(File.OpenRead("target.docx"));
+try (Comparer comparer = new Comparer(new FileInputStream("source.docx"))) {
+    comparer.Add(new FileInputStream("target.docx"));
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
-    foreach (ChangeInfo change in changes)
-        Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", change.Type, change.PageInfo.PageNumber, change.Id, change.Text);
+    for (ChangeInfo change : changes) {
+        System.out.println("Change Type: " + change.getType() +
+                ", Page: " + change.getPageInfo().getPageNumber() +
+                ", Change ID: " + change.getId() +
+                ", Text: " + change.getText());
+    }
 }
 ```
 {{< /tab >}}

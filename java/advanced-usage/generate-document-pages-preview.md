@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare files
         text: Call the Compare method of your object without parameters.
       - name: Create an object of the settings
@@ -34,31 +34,31 @@ structuredData:
         text: Create an object of Document class. The constructor takes the output file stream parameter. Call the GeneratePreview method with PreviewOptions parameter.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to generate page previews for source, target and output document(s) using the [GeneratePreview](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview) method of the [Document](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document) class.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to generate page previews for source, target and output document(s) using the [generatePreview()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/document/#generatePreview-com.groupdocs.comparison.options.PreviewOptions-) method of the [Document](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/document) class.
 
-Use the [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions) class to manage the preview generation process - specify desired page numbers, image format, etc.
+Use the [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/) class to manage the preview generation process - specify desired page numbers, image format, etc.
 
 To generate the document preview using GroupDocs.Comparison API, follow these steps:
 
 1.  Create an instance of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) class. Specify the source document path as a constructor parameter.
 2.  Add the target document to comparison using the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method.
-3.  The [Source](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/source) and [Targets](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/targets) properties of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object allows you to access source and target documents and provides the [GeneratePreview](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview) method;
-4.  Instantiate the [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions) object. Specify the following parameters:
+3.  The [getSource()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getSource--) and [getTargets()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getTargets--) methods of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object allows you to access source and target documents and the [generatePreview()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/document/#generatePreview-com.groupdocs.comparison.options.PreviewOptions-) method.
+4.  Instantiate the [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions) object. Specify the following parameters:
     *   delegate for each page stream creation (see the CreatePageStream event handler)
     *   image preview format - PNG / JPG / BMP
     *   page numbers to process
     *   custom size of preview images (if needed)
-    {{< alert style="info" >}}Stream created by the [CreatePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/createpagestream) delegate is disposed automatically when preview image is generated. If you need to implement the custom disposing of the image preview stream, specify the [ReleasePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/releasepagestream) argument to clean up resources.{{< /alert >}}
-5.  Call the [GeneratePreview](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview) method of the [Source](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/source) and [Targets](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/targets) documents. Specify the [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions).
+    {{< alert style="info" >}}Stream created by the [CreatePageStream](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#getReleasePageStream--) delegate is disposed automatically when preview image is generated. If you need to implement the custom disposing of the image preview stream, specify the [ReleasePageStream](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#setReleasePageStream--) argument to clean up resources.{{< /alert >}}
+5.  Call the [generatePreview()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/document/#generatePreview-com.groupdocs.comparison.options.PreviewOptions-) method of the [Source](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getSource--) and [Targets](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getTargets--) documents. Specify the [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/).
 
-The [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions) class main properties are as follows:
+The [PreviewOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/) class main methods are as follows:
 
-*   [CreatePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/createpagestream) is a delegate which defines method to create output page preview stream
-*   [ReleasePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/releasepagestream) is a delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling
-*   [Width](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/width) is preview image width. Use this property to customize output image width
-*   [Height](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/height) is preview image height. Use this property to customize output image height
-*   [PageNumbers](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/pagenumbers) defines numbers of pages to be previewed;
-*   [PreviewFormat](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/previewformat) gets or sets the preview image format which provides ability to choose between image quality and size. Use the BMP format for the best image quality. Use the JPG format to produce smallest image size (and faster loading image previews), but with lower quality than BMP. By default GroupDocs.Comparison uses the PNG format to provide appropriate image quality and size.
+*   [getCreatePageStream()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#getCreatePageStream--) returns a delegate which defines method to create output page preview stream
+*   [getReleasePageStream()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#getReleasePageStream--) returns a delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling
+*   [setWidth](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#setWidth-int-) sets the preview image width. Use this method to customize output image width
+*   [setHeight](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#setHeight-int-) sets the preview image height. Use this method to customize output image height
+*   [setPageNumbers](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#setPageNumbers-int---) defines an array of page numbers to be previewed;
+*   [setPreviewFormat](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/previewoptions/#setPreviewFormat-com.groupdocs.comparison.options.enums.PreviewFormats-) or sets the preview image format which provides ability to choose between image quality and size. Use the BMP format for the best image quality. Use the JPG format to produce smallest image size (and faster loading image previews), but with lower quality than BMP. By default GroupDocs.Comparison uses the PNG format to provide appropriate image quality and size.
 
 The following code snippet shows how to generate document previews:
 
@@ -67,16 +67,16 @@ The following code snippet shows how to generate document previews:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
-    {
-    	var pagePath = Path.Combine("D:\Temp\", $"result_{pageNumber}.png");
-        return File.Create(pagePath);
+try (Comparer comparer = new Comparer(sourceFile)) {
+    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) {
+            return new FileOutputStream(previewDirectory + "result_" + pageNumber + ".png");
+        }
     });
-    previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int[] { 1, 2 };
-    comparer.Source.GeneratePreview(previewOptions);
+    previewOptions.setPreviewFormat(PreviewFormats.PNG);
+    previewOptions.setPageNumbers(new int[]{1, 2});
+    comparer.getSource().generatePreview(previewOptions);
 }
 ```
 {{< /tab >}}
@@ -91,17 +91,17 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
-    {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
-        return File.Create(pagePath);
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) {
+            return new FileOutputStream(previewDirectory + "result_" + pageNumber + ".png");
+        }
     });
-    previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int[] { 1, 2 };
-    comparer.Targets[0].GeneratePreview(previewOptions);
+    previewOptions.setPreviewFormat(PreviewFormats.PNG);
+    previewOptions.setPageNumbers(new int[]{1, 2});
+    comparer.getTargets().get(0).generatePreview(previewOptions);
 }
 ```
 {{< /tab >}}
@@ -112,19 +112,19 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    comparer.Compare("result.docx");
-    Document document = new Document(File.OpenRead("result.docx"));
-    PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
-    {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
-        return File.Create(pagePath);
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    final Path resultPath = comparer.compare(outputFile);
+    Document document = new Document(resultPath);
+    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) {
+            return new FileOutputStream(previewDirectory + "result_" + pageNumber + ".png");
+        }
     });
-    previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int[] { 1, 2 };
-    document.GeneratePreview(previewOptions);
+    previewOptions.setPreviewFormat(PreviewFormats.PNG);
+    previewOptions.setPageNumbers(new int[]{1, 2});
+    document.generatePreview(previewOptions);
 }
 ```
 {{< /tab >}}
@@ -135,21 +135,22 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< tabs "example4">}}
 {{< tab "Java" >}}
 ```java
-using (Comparer comparer = new Comparer("source.pptx"))
-{
-    comparer.Add("target.pptx");
-    comparer.Compare("result.pptx");
-    Document document = new Document(File.OpenRead("result.pptx"));
-    PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
-    {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
-        return File.Create(pagePath);
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    final Path resultPath = comparer.compare(outputFile);
+    Document document = new Document(resultPath);
+    
+    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) {
+            return new FileOutputStream(previewDirectory + "result-SetSpecificImagesSize_" + pageNumber + ".png");
+        }
     });
-    previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int[] { 1, 2 };
-    previewOptions.Height = 1000;
-    previewOptions.Width = 1000;
-    document.GeneratePreview(previewOptions);
+    previewOptions.setPreviewFormat(PreviewFormats.PNG);
+    previewOptions.setPageNumbers(new int[]{1, 2});
+    previewOptions.setHeight(1000);
+    previewOptions.setWidth(1000);
+    document.generatePreview(previewOptions);
 }
 ```
 {{< /tab >}}
@@ -162,28 +163,27 @@ using (Comparer comparer = new Comparer("source.pptx"))
 {{< tabs "example5">}}
 {{< tab "Java" >}}
 ```java
-// Method should match with ReleasePageStream delegate signature
-private void UserReleaseStreamMethod(int pageNumber, Stream stream)
-{
-	Console.WriteLine($"Releasing memory for page: {pageNumber}");
-    stream.Close();
-}
-
-using (Comparer comparer = new Comparer("source.docx"))
-{
-    comparer.Add("target.docx");
-    comparer.Compare("result.docx");
-    Document document = new Document(File.OpenRead("result.docx"));
-    PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
-    {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
-        return File.Create(pagePath);
+try (Comparer comparer = new Comparer(sourceFile)) {
+    comparer.add(targetFile);
+    final Path resultPath = comparer.compare(outputFile);
+    Document document = new Document(resultPath);
+    
+    PreviewOptions previewOptions = new PreviewOptions(new Delegates.CreatePageStream() {
+        @Override
+        public OutputStream invoke(int pageNumber) {
+            return new FileOutputStream(previewDirectory + "result-GetPagePreviewsResouresCleaning_" + pageNumber + ".png");
+        }
     });
-    previewOptions.PreviewFormat = PreviewFormats.PNG;
-    previewOptions.PageNumbers = new int[] { 1, 2 };
-    // here we set delegate target method
-    previewOptions.ReleasePageStream = UserReleaseStreamMethod;
-    document.GeneratePreview(previewOptions);
+    previewOptions.setPreviewFormat(PreviewFormats.PNG);
+    previewOptions.setPageNumbers(new int[]{1, 2});
+    previewOptions.setReleasePageStream(new Delegates.ReleasePageStream() {
+        @Override
+        public void invoke(int pageNumber, OutputStream outputStream) {
+            System.out.println("Releasing memory for page: " + pageNumber);
+            outputStream.close();
+        }
+    });
+    document.generatePreview(previewOptions);
 }
 ```
 {{< /tab >}}

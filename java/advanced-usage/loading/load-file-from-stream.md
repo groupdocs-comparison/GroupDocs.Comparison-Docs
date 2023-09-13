@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and specify source file stream
         text: Create an object of Comparer class. The constructor takes the source file stream. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the tagret file stream using the Add method.
+        text: Add the target file stream using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file stream.
 ---
@@ -40,14 +40,9 @@ The following code snippet shows how to load file from stream:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-using (Stream sourceStream = File.OpenRead("source.docx"))
-using (Stream targetStream = File.OpenRead("target.docx"))
-{
-	using (Comparer comparer = new Comparer(sourceStream))
-	{
-        comparer.Add(targetStream);
-    	comparer.Compare(File.Create("result.docx"));
-	}
+try (Comparer comparer = new Comparer(sourceInputStream)) {
+    comparer.add(targetInputStream);
+    final Path resultPath = comparer.compare(resultOutputStream);
 }
 ```
 {{< /tab >}}
