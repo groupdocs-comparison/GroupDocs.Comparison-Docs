@@ -39,9 +39,14 @@ Supported formats:
 
 ## Why Use GroupDocs.Comparison?
 
-- GroupDocs.Comparison supports 100+ file formats without any additional software;
-- Wide range of options to customize comparison process;
-- Information extraction – file type, page count, etc.;
-- Handful differences categorization and highlight;
-- Content structure, styling and formatting changes detection;
-- Ability to apply or reject detected changes and save result document;
+- GroupDocs.Comparison supports 100+ file formats without any additional software
+- Wide range of options to customize comparison process
+- Information extraction – file type, page count, etc.
+- Handful differences categorization and highlight
+- Content structure, styling and formatting changes detection
+- Ability to apply or reject detected changes and save result document 
+
+You can use GroupDocs.Viewer across multiple platforms and operation systems:
+
+* Windows, Linux, and macOS
+* Java 5 and higher
