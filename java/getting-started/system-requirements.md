@@ -40,36 +40,13 @@ GroupDocs.Comparison for Java supports any 32-bit or 64-bit operating system w
 GroupDocs.Comparison for Java supports Java frameworks as follows:
 
 ### Java
-- Java 6
-
-### Java Core
-- Java Core 3.1
-
-### Java Standard
-- Java Standard 2.1
-
-### Java Frameworks
-
-- Java Framework 2.0 (Until GroupDocs.Comparison 22.6)
-- Java Framework 3.5 (Until GroupDocs.Comparison 22.6)
-- Java Framework 4.0
-- Java Framework 4.5.0
-- Java Framework 4.5.1
-- Java Framework 4.5.2
-- Java Framework 4.6.0
-- Java Framework 4.6.2
-- Java Framework 4.5.0
-- Java Framework 4.5.1
-- Java Framework 4.6.0
-- Java Framework 4.6.2
-- Java Framework 4.7
-- Java Framework 4.7.2
-- Java Framework 4.8
+- Java 8+
+- Kotlin
 
 ## Development Environments
 
 GroupDocs.Comparison for Java can be used to develop applications in any development environment that targets the Java platform, but the following environments are explicitly supported:
 
-- Microsoft Visual Studio 2010 and later
-- Microsoft Visual Studio for Mac
-- Rider from JetBrains
+- JetBrains IntelliJ
+- NetBeans
+- Eclipse

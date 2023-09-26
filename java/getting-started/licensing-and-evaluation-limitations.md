@@ -66,7 +66,7 @@ The license should be set:
 
 {{< alert style="info" >}}
 
-The license can be set multiple times per app domain but we recommend doing it once since all calls to `SetLicense` except first will just waste processor time.
+The license can be set multiple times per application domain but we recommend doing it once since all calls to `SetLicense` except first will just waste processor time.
 
 {{< /alert >}}
 
