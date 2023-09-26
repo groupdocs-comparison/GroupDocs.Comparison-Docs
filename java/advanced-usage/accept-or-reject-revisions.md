@@ -31,24 +31,24 @@ structuredData:
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to get revisions from a Docx file format, process, and save the processing result.
-To take revisions from a document,_accept / reject revisions, and write the processing result to the output file, follow these steps:
+To take revisions from a document, accept / reject revisions, and write the processing result to the output file, follow these steps:
 
-1.  Instantiate the [RevisionHandler](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionhandler) object. Specify the source document path or stream.
-2.  Call the [GetRevisions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionhandler/methods/getrevisions) method to get the revision list.
-3.  Set the [Action](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisioninfo/properties/action) property of the object to be changed to the [RevisionAction.Accept](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionaction) or [RevisionAction.Reject](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionaction) value.
-4.  Call the [ApplyRevisionChanges](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionhandler/methods/applyrevisionchanges/index) method. Specify the created instance of the [ApplyRevisionOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/applyrevisionoptions) class and path or stream of the output document, collecting changes in the revisions.
+1.  Instantiate the [RevisionHandler](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionhandler/) object. Specify the source document path or stream.
+2.  Call the [getRevisions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionhandler/#getRevisions--) method to get the revision list.
+3.  Call the [setAction](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisioninfo/#getAction--) property of the object to be changed. Specify the [RevisionAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionaction/#ACCEPT) or [RevisionAction.REJECT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionaction/#REJECT) value.
+4.  Call the [applyRevisionChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionhandler/#applyRevisionChanges-com.groupdocs.comparison.words.revision.ApplyRevisionOptions-) method. Specify the created instance of the [ApplyRevisionOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/applyrevisionoptions/) class and path or stream of the output document, collecting changes in the revisions.
 
 You can process all changes together within one action.To handle all changes at once, follow these steps:
 
 1.  Instantiate the [RevisionHandler](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionhandler) object. Specify the source document path or stream.
-2.  Call the [ApplyRevisionChanges](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionhandler/methods/applyrevisionchanges/index) method. Specify the [ApplyRevisionOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/applyrevisionoptions) object and one of the ([RevisionAction.Accept](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionaction), [RevisionAction.Reject](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionaction) or [RevisionAction.None](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionaction)) values.
+2.  Call the [applyRevisionChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionhandler/#applyRevisionChanges-com.groupdocs.comparison.words.revision.ApplyRevisionOptions-) method. Specify the [ApplyRevisionOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/applyrevisionoptions/) object and one of the ([RevisionAction.Accept](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionaction), [RevisionAction.Reject](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionaction) or [RevisionAction.NONE](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionaction/#NONE)) values.
 
-The main properties of the [ApplyRevisionOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/applyrevisionoptions) class are as follows:
+The main properties of the [ApplyRevisionOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/applyrevisionoptions/) class are as follows:
 
-*   [Changes](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/applyrevisionoptions/properties/changes) is a list of revision changes that need to be applied to the final document
-*   [CommonHandler](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/applyrevisionoptions/fields/commonhandler) allows you to define one action to handle all revision
+*   [Changes](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/applyrevisionoptions/#getChanges--) is a list of revision changes that need to be applied to the final document
+*   [CommonHandler](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/applyrevisionoptions/#getCommonHandler--) allows you to define one action to handle all revision
 
-If you do not specify the path or file to the output document for the [ApplyRevisionChanges](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.words.revision/revisionhandler/methods/applyrevisionchanges) method, the source file is rewritten.
+If you do not specify the path or file to the output document for the [applyRevisionChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.words.revision/revisionhandler/#applyRevisionChanges-com.groupdocs.comparison.words.revision.ApplyRevisionOptions-) method, the source file is rewritten.
 
 The following code snippets show how to get revisions from a document, accept / reject detected revisions and save changes to the output document:
 
@@ -60,7 +60,7 @@ The following code snippets show how to get revisions from a document, accept / 
 try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionFile)) {
     List<RevisionInfo> revisionList = revisionHandler.getRevisions();
     for (RevisionInfo revision : revisionList) {
-        if (revision.getType() == RevisionType.Insertion) {
+        if (revision.getType() == RevisionType.INSERTION) {
             revision.setAction(RevisionAction.Accept);
         }
     }

@@ -59,7 +59,7 @@ The result is as follows:
 
 ![](/comparison/net/images/get-file-info.png)
 
-## Get file for the file from stream
+## Get file info for the file from stream
 
 {{< tabs "example2">}}
 {{< tab "C#" >}}

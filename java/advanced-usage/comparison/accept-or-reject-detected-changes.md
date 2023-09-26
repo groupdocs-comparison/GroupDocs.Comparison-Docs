@@ -47,8 +47,8 @@ To apply/reject changes to output document, follow these steps:
 
 The [ApplyChangeOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/applychangeoptions/) class includes the following properties:
 
-- [Changes](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/applychangeoptions/properties/changes) is a list of changes that must be applied (or not) to the output document
-- [SaveOriginalState](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/applychangeoptions/properties/saveoriginalstate) is an option to reep the original state of the compared result after applying changes
+- [getChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/applychangeoptions/#getChanges--) is a list of changes that must be applied (or not) to the output document
+- [isSaveOriginalState](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/applychangeoptions/#isSaveOriginalState--) is an option to reep the original state of the compared result after applying changes
 
 The following code snippets show how to accept/reject changes:
 

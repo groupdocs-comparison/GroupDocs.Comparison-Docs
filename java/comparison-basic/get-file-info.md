@@ -30,10 +30,10 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to get the following file information:
 
-*   [FileType](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.).
-*   [PageCount](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents count of document pages.
-*   [FileSize](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents the document file size.
-*   [PagesInfo](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.interfaces/idocumentinfo/#getFileType%28%29) represents the page information.
+*   [FileType](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/filetype/) represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.).
+*   [PageCount](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagecount/) represents count of document pages.
+*   [FileSize](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/size/) represents the document file size.
+*   [PagesInfo](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagesinfo/) represents the page information.
 
 The following code samples show how to get file information:
 
@@ -58,7 +58,7 @@ The result is as follows:
 
 ![](/comparison/java/images/get-file-info.png)
 
-## Get file for the file from stream
+## Get file info for the file from stream
 
 {{< tabs "example2">}}
 {{< tab "Java" >}}

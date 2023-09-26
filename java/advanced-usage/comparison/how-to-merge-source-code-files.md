@@ -36,10 +36,10 @@ structuredData:
 
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to merge source code files by using the [ComparisonAction](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/changeinfo/properties/comparisonaction) properties:
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to merge source code files by using the [ComparisonAction](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/comparisonaction/) properties:
 
-- [ComparisonAction.Accept](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/comparisonaction) accepts the found changes and adds them to the file without highlighting
-- [ComparisonAction.Reject](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/comparisonaction) rejects the found changes and removes them from the output file
+- [ComparisonAction.ACCEPT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/comparisonaction/#ACCEPT) accepts the found changes and adds them to the file without highlighting
+- [ComparisonAction.REJECT](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/comparisonaction/#REJECT) rejects the found changes and removes them from the output file
 
 To apply/reject changes to output file, follow these steps:
 
@@ -57,7 +57,7 @@ For example, you need to compare and merge several versions of source code files
 
 The differences show that two methods are in the **source.cs** file: `AddNumbers` and `Sum`.
 
-If you do not use the [ComparisonAction](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/changeinfo/properties/comparisonaction) property, all changes are committed to the output file, and these methods are removed. If you need to control the merging of files, the [ComparisonAction](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/changeinfo/properties/comparisonaction) property helps you.
+If you do not use the [ComparisonAction](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/comparisonaction/) property, all changes are committed to the output file, and these methods are removed. If you need to control the merging of files, the [ComparisonAction](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/comparisonaction/) property helps you.
 
 The following code snippet shows how to merge two source code files:
 

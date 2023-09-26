@@ -28,15 +28,15 @@ structuredData:
         text: Create a string variable where the result of the comparison will be placed.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to compare values from the `string` type variables.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to compare values from the `String` type variables.
 
 To compare text from variables, follow these steps:
 
-1.  Instantiate the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object. Set the [LoadText](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/loadoptions/properties/loadtext) property to `true` (this indicates that passed string contains text to be compared, not file path).
-2.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source variable of the `string` type and the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
-3.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify target variable of the `string` type and the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
+1.  Instantiate the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object. Set the [LoadText](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions/#setLoadText-boolean-) property to `true` (this indicates that passed string contains text to be compared, not file path).
+2.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source variable of the `String` type and the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
+3.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify target variable of the `String` type and the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
 4.  Call the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) method.
-5.  Call the [GetResultString](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer/methods/getresultstring) method to get string with comparison result.
+5.  Call the [getResultString](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#getResultString--) method to get string with comparison result.
 
 The following code snippet shows how to load values from variables:
 

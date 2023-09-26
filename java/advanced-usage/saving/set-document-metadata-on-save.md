@@ -53,7 +53,7 @@ The following code snippets show how to set output document metadata:
 try (Comparer comparer = new Comparer(sourceFile)) {
     comparer.add(targetFile);
     final SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setCloneMetadataType(MetadataType.Source);
+    saveOptions.setCloneMetadataType(MetadataType.SOURCE);
     final Path resultPath = comparer.compare(outputFile, saveOptions);
 }
 ```
@@ -68,7 +68,7 @@ try (Comparer comparer = new Comparer(sourceFile)) {
 try (Comparer comparer = new Comparer(sourceFile)) {
     comparer.add(targetFile);
     final SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setCloneMetadataType(MetadataType.Target);
+    saveOptions.setCloneMetadataType(MetadataType.TARGET);
     final Path resultPath = comparer.compare(outputFile, saveOptions);
 }
 ```
@@ -88,7 +88,7 @@ try (Comparer comparer = new Comparer(sourceFile)) {
     fileAuthorMetadata.setCompany("GroupDocs");
     fileAuthorMetadata.setLastSaveBy("Jack");
     final SaveOptions saveOptions = new SaveOptions();
-    saveOptions.setCloneMetadataType(MetadataType.FileAuthor);
+    saveOptions.setCloneMetadataType(MetadataType.FILEAUTHOR);
     saveOptions.setFileAuthorMetadata(fileAuthorMetadata);
     final Path resultPath = comparer.compare(outputFile, saveOptions);
 }

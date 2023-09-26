@@ -52,7 +52,7 @@ try (Comparer comparer = new Comparer(sourceFile)) {
     comparer.add(targetFile);
 
     CompareOptions compareOptions = new CompareOptions();
-    compareOptions.setPasswordSaveOption(PasswordSaveOption.User);
+    compareOptions.setPasswordSaveOption(PasswordSaveOption.USER);
     SaveOptions saveOptions = new SaveOptions();
     saveOptions.setPassword("3333");
     final Path resultPath = comparer.compare(outputFile, saveOptions, compareOptions);

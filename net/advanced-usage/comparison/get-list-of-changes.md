@@ -32,7 +32,7 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to get  list of changes between source and target documents.
 
-To changes list, follow these steps:
+To get list of changes, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.

@@ -25,17 +25,17 @@ structuredData:
         text: Find main method and run it with IDE
 ---
 
-{{< alert style="warning" >}}Before running an example make sure that GroupDocs.Comparison has been installed successfully.{{< /alert >}}
+{{< alert style="warning" >}}Before running an example, make sure that Java and Maven have been installed successfully and operate properly.{{< /alert >}}
 
 ## Download from GitHub
 
 The complete examples package of **[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** is hosted on [Github](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java.git). You can either download the ZIP file from [here](https://codeload.github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/zip/master) or clone the repository of Github using your favorite Github client.
 
-In case you download the ZIP file, extract the folders on your local disk. The extracted files and folders will look like following image:
+If you download the ZIP file, extract the folders on your local disk. The extracted files and folders will look like following image:
 
 ![](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/blob/master/Examples/GroupDocs.Comparison.Examples.Java/Data/Screenshots/folder.PNG?raw=true)
 
-Open Eclipse and import the project to get started with it. Archived project file can also be imported.
+Open Eclipse and import the project to get started with it. Uncomment the appropriate example and run the project (the `main` method).
 
 ![](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java/blob/master/Examples/GroupDocs.Comparison.Examples.Java/Data/Screenshots/eclipse.PNG?raw=true)
 

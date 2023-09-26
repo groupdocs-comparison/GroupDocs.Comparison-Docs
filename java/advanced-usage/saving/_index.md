@@ -14,9 +14,9 @@ structuredData:
 
 The [SaveOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/SaveOptions) class provides the following properties to customize saving process:
 
-*   CloneMetadataType gets or sets a value indicating whether to clone metadata to target document or not
-*   FileAuthorMetadata allows set metadata values provided by user
-*   Password gets or sets the password for result document  
+*   [CloneMetadataType](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/saveoptions/#setCloneMetadataType-com.groupdocs.comparison.options.enums.MetadataType-) is a value indicating whether to clone metadata to target document or not
+*   [FileAuthorMetadata](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/saveoptions/#setFileAuthorMetadata-com.groupdocs.comparison.options.FileAuthorMetadata-) allows set metadata values provided by user
+*   [Password](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.save/saveoptions/#setPassword-java.lang.String-) is the password for the output document  
       
     
 

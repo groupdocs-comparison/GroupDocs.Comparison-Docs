@@ -34,17 +34,17 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to compare various properties of a Word document such as _Variable_, _Built_, and _Custom_ properties.
 
-Use the following methods of the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) class to enable comparison functions for document properties:
+Use the following methods of the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/) class to enable comparison functions for document properties:
 
 - [setCompareVariableProperty()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-) allows the comparison of _variable_ properties
 - [setCompareDocumentProperty()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-) allows  the comparison of _built_ and _custom_ properties
 
 To activate compare document properties, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/groupdocs.comparison/comparer) object. Specify the source file path or stream.
+1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/) object. Specify the source file path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object. Call the [setCompareVariableProperty()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-) method to compare the _variable_ properties and/or the [setCompareDocumentProperty()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-) for _built_ and _custom_ properties.
-4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions) object from the previous step.
+3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/) object. Call the [setCompareVariableProperty()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-) method to compare the _variable_ properties and/or the [setCompareDocumentProperty()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-) for _built_ and _custom_ properties.
+4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/) object from the previous step.
 
 The following code snippet shows how activate comparison of the _variable_, _Bbuilt_ and _custom_ properties:
 

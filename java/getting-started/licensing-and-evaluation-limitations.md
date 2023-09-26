@@ -4,7 +4,7 @@ url: comparison/java/licensing-and-evaluation-limitations
 title: Licensing
 weight: 5
 description: "Follow the instructions on this page to configure the license and find out the restrictions when using GroupDocs.Comparison for Java without a license (Evaluation Limitations)"
-keywords: Licensing, evaluation limitations, setting metered license, setting license
+keywords: Licensing, evaluation limitations, setsetting metered license, setting license
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object
         text: Create an object of license class.
       - name: Set license
-        text: Call the SetLicense method of your object and put the license path or license file stream parameter.
+        text: Call the setLicense method of your object and put the license path or license file stream parameter.
 ---
 
 Sometimes, to study the system better, you want to dive into the code as fast as possible. To make this easier, GroupDocs.Comparison provides different purchase plans or offers a Free Trial and a 30-day Temporary License for evaluation.
@@ -66,7 +66,7 @@ The license should be set:
 
 {{< alert style="info" >}}
 
-The license can be set multiple times per application domain but we recommend doing it once since all calls to `SetLicense` except first will just waste processor time.
+The license can be set multiple times per application domain but we recommend doing it once since all calls to `setLicense` except first will just waste processor time.
 
 {{< /alert >}}
 
@@ -112,19 +112,19 @@ The following code snippet shows how to use `Metered` licensing:
 {{< tab "Java" >}}
 
 ```java
-string publicKey = ""; // Your public license key
-string privateKey = ""; // Your private license key
+String publicKey = ""; // Your public license key
+String privateKey = ""; // Your private license key
 
 Metered metered = new Metered();
-metered.SetMeteredKey(publicKey, privateKey);
+metered.setMeteredKey(publicKey, privateKey);
 
 // Get amount (MB) consumed
-decimal amountConsumed = GroupDocs.Viewer.Metered.GetConsumptionQuantity();
-Console.WriteLine("Amount (MB) consumed: " + amountConsumed);
+double amountConsumed = Metered.getConsumptionQuantity();
+System.out.println("Amount (MB) consumed: " + amountConsumed);
 
 // Get count of credits consumed
-decimal creditsConsumed = GroupDocs.Viewer.Metered.GetConsumptionCredit();
-Console.WriteLine("Credits consumed: " + creditsConsumed);
+double creditsConsumed = Metered.getConsumptionCredit();
+System.out.println("Credits consumed: " + creditsConsumed);
 ```
 
 {{< /tab >}}

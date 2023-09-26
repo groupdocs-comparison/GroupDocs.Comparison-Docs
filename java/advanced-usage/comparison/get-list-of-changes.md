@@ -32,7 +32,7 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to get  list of changes between source and target documents.
 
-To changes list, follow these steps:
+To get list of changes, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
@@ -47,16 +47,16 @@ The following code snippets show how to get list of all changes:
 {{< tab "Java" >}}
 ```java
 try (Comparer comparer = new Comparer("source.docx")) {
-    comparer.Add("target.docx");
-    comparer.Compare();
-    ChangeInfo[] changes = comparer.GetChanges();
+    comparer.add("target.docx");
+    comparer.compare();
+    ChangeInfo[] changes = comparer.getChanges();
     for (ChangeInfo change : changes) {
         System.out.println("Change Type: " + change.getType() +
-                ", Page: " + change.getPageInfo().getPageNumber() +
-                ", Change ID: " + change.getId() +
-                ", Text: " + change.getText());
+                           ", Page: " + change.getPageInfo().getPageNumber() +
+                           ", Change ID: " + change.getId() +
+                           ", Text: " + change.getText());
     }
-} 
+}
 ```
 {{< /tab >}}
 {{< /tabs >}}
@@ -70,15 +70,17 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(new FileInputStream("source.docx"))) {
-    comparer.Add(new FileInputStream("target.docx"));
-    comparer.Compare();
-    ChangeInfo[] changes = comparer.GetChanges();
+try (final FileInputStream sourceInputStream = new FileInputStream("source.docx");
+     final Comparer comparer = new Comparer(sourceInputStream);
+     final FileInputStream targetInputStream = new FileInputStream("target.docx")) {
+    comparer.add(targetInputStream);
+    comparer.compare();
+    ChangeInfo[] changes = comparer.getChanges();
     for (ChangeInfo change : changes) {
         System.out.println("Change Type: " + change.getType() +
-                ", Page: " + change.getPageInfo().getPageNumber() +
-                ", Change ID: " + change.getId() +
-                ", Text: " + change.getText());
+                           ", Page: " + change.getPageInfo().getPageNumber() +
+                           ", Change ID: " + change.getId() +
+                           ", Text: " + change.getText());
     }
 }
 ```

@@ -32,14 +32,14 @@ structuredData:
 
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to detect changes between source and target files and display changes on the separate page - [SummaryPage](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/generatesummarypage).
-You can also get the extended information about comparison of documents, which is displayed in the [SummaryPage](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/generatesummarypage).
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to detect changes between source and target files and display changes on the separate page - [SummaryPage](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setGenerateSummaryPage-boolean-).
+You can also get the extended information about comparison of documents, which is displayed in the [SummaryPage](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setGenerateSummaryPage-boolean-).
 
 To get extended information, follow these steps:
 
 1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
 2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object. Set the [ExtendedSummaryPage](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.options/compareoptions/properties/extendedsummarypage) property to `true`.
+3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object. Set the [ExtendedSummaryPage](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setExtendedSummaryPage-boolean-) property to `true`.
 4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object from the previous step.
 
 The following code snippet shows how to get extended information:

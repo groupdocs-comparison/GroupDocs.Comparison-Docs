@@ -28,8 +28,8 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to get the list of all [supported file formats]({{< ref "comparison/java/getting-started/supported-document-formats.md" >}}). To do this, follow these steps:
 
-1. Call the [GetSupportedFileTypes](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/filetype/methods/getsupportedfiletypes) method of the [FileType](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/filetype) class.
-2. Enumerate through the collection of the [FileType](https://reference.groupdocs.com/comparison/java/groupdocs.comparison.result/filetype) objects.
+1. Call the [getSupportedFileTypes](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/filetype/#getSupportedFileTypes--) method of the [FileType](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/filetype/) class.
+2. Enumerate through the collection of the [FileType](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.result/filetype/) objects.
 
 The following code snippet shows how to get list of supported file formats:
 

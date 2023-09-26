@@ -31,7 +31,7 @@ try (Comparer comparer = new Comparer(sourceFile)) {
     comparer.add(targetFile1);
     comparer.add(targetFile2);
     comparer.add(targetFile3);
-    final Path resultPath = comparer.compare(resultFile);
+    final Path resultPath = comparer.compare(resultInputStream);
 }
 ```
 {{< /tab >}}
@@ -50,7 +50,7 @@ try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream1);
     comparer.add(targetInputStream2);
     comparer.add(targetInputStream3);
-    final Path resultPath = comparer.compare(resultInputStream));
+    final Path resultPath = comparer.compare(resultInputStream);
 }
 ```
 {{< /tab >}}
