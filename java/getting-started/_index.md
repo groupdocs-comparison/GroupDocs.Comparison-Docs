@@ -8,4 +8,6 @@ keywords: Getting started, Basic features, Licensing, System requirements
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 isMenuItemWithNoContent: True
+structuredData:
+  showOrganization: True
 ---

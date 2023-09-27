@@ -9,7 +9,7 @@ productName: GroupDocs.Comparison for .NET
 hideChildren: False
 ---
 
-The following table indicates the file formats that **[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** can work with.
+The following table indicates the file formats that [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) can proceed.
 
 | Format                                                                                                                      | Description                                            | Compare                                     | Auto Detection                              |
 | --------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------- | ------------------------------------------- |
