@@ -12,24 +12,16 @@ toc: True
 
 ## File comparison
 
-**[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net)** provides an ability to detect differences between source and target files for changes at paragraphs, words and characters levels. Can identify styling and formatting changes - like bold, italic, underlines, strike-troughs, font types, etc.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to detect differences between source and target files for changes at paragraphs, words, and characters levels. It can identify styling and formatting changes like bold, italic, underlines, strike-troughs, font types, etc.
 
 ## Apply/Reject changes between documents
 
-Every particular difference between compared document can be applied or rejected and the exported to a final document.
+Every difference between compared documents can be applied or rejected and then exported to the output document.
 
 ## Document information extraction
 
-GroupDocs.Comparison allows to obtain basic information about source document - file type, size, pages count etc. This may be quite useful for generating previews of compared documents.
+GroupDocs.Comparison allows obtaining basic information about source documents - file type, size, page count, etc. For example, you can use this to generate previews of compared documents.
 
 ## Comparison summary report
 
-Once comparison process is complete, you can save a differences summary report which lists all changes found between compared documents.
-
-## Example of comparison
-Below are the example source and output files.
-
-
-| Source file                                    | Result file                                           |
-| ---------------------------------------------- | ----------------------------------------------------- |
-| ![](/comparison/java/images/Comparison-example-source.jpg) | ![](/comparison/java/images/Comparison-example-result.jpg) |
+Once the comparison process is complete, you can save a differences summary report that lists all changes in compared documents.

@@ -29,7 +29,7 @@ It also compares style changes like font size, bold, italic etc. Differences sum
 	<li><a href='{{< ref "comparison/java/getting-started/supported-document-formats" >}}'>Supported Document Formats</a></li>
 	<li><a href='{{< ref "comparison/java/getting-started/system-requirements" >}}'>System Requirements</a></li>
 	<li><a href='{{< ref "comparison/java/getting-started/installation" >}}'>Installation</a></li>
-	<li><a href='{{< ref "comparison/java/getting-started/evaluation-limitations-and-licensing-of-groupdocs.comparison.md" >}}'>Licensing and Subscription</a></li>
+	<li><a href='{{< ref "comparison/java/getting-started/licensing-and-evaluation-limitations" >}}'>Licensing and Subscription</a></li>
 </ul>
 <p>TECHNICAL SUPPORT</p>
 <ul>
@@ -52,10 +52,10 @@ It also compares style changes like font size, bold, italic etc. Differences sum
 <p><b>Develop Functions</b></p>
 <hr><p>GUIDE</p></hr>
 <ul>
-	<li><a href='{{< ref "comparison/java/developer-guide/basic-usage/get-file-info" >}}'>Retrieve File Info</a></li>
-	<li><a href='{{< ref "comparison/java/developer-guide/basic-usage/compare-documents" >}}'>Compare Documents</a></li>
-	<li><a href='{{< ref "comparison/java/developer-guide/advanced-usage/accept-or-reject-revisions" >}}'>Accept or Reject revisions</a></li>
-	<li><a href='{{< ref "comparison/java/developer-guide/advanced-usage/generate-document-pages-preview" >}}'>Generate Document Pages Preview</a></li>				
+	<li><a href='{{< ref "comparison/java/comparison-basic/get-file-info" >}}'>Retrieve File Info</a></li>
+	<li><a href='{{< ref "comparison/java/comparison-basic/compare-documents" >}}'>Compare Documents</a></li>
+	<li><a href='{{< ref "comparison/java/advanced-usage/accept-or-reject-revisions" >}}'>Accept or Reject revisions</a></li>
+	<li><a href='{{< ref "comparison/java/advanced-usage/generate-document-pages-preview" >}}'>Generate Document Pages Preview</a></li>				
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>

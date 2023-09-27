@@ -8,60 +8,45 @@ keywords: System Requirements, Supported Operating System, Supported Frameworks
 productName: GroupDocs.Comparison for Java
 hideChildren: False
 toc: True
-structuredData:
-    showOrganization: True
-    application:
-        name: Documents Comparison Tool
-        description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
-        productCode: comparison
-        productPlatform: java
 ---
 
 ## Overview
 
-**[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java)** does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation]({{< ref "comparison/java/getting-started/installation.md" >}}).
+[GroupDocs.Comparison for Java](https://products.groupdocs.com/comparison/java) does not require any external software or third party tool to be installed. Just follow one of the way as described in [Installation]({{< ref "comparison/java/getting-started/installation.md" >}}).
 
 ## Supported Operating Systems
 
-GroupDocs.Comparison for Java supports any 32-bit or 64-bit operating system that runs the Java runtime including, but not limited:
+GroupDocs.Comparison for Java supports any 32-bit or 64-bit operating system where Java or Java Core is installed including, but not limited to:
 
 ### Windows
 
-- Microsoft Windows 2003 Server ( x64, x86)
-- Microsoft Windows 2008 Server ( x64, x86)
-- Microsoft Windows 2012 Server ( x64, x86)
-- Microsoft Windows 2012 R2 Server ( x64, x86)
-- Microsoft Windows 2016 Server ( x64, x86)
-- Microsoft Windows 2019 Server ( x64, x86)
+- Microsoft Windows Server 2003 and later
 - Microsoft Windows Vista ( x64, x86)
 - Microsoft Windows XP ( x64, x86)
-- Microsoft Windows 7 ( x64, x86)
-- Microsoft Windows 8, 8.1 ( x64, x86)
+- Microsoft Windows 7, 8, 8.1 ( x64, x86)
 - Microsoft Windows 10 ( x64, x86)
-- Microsoft Azure
+- Microsoft Windows 11 (x64)
 
 ### Linux
 
-- Linux (Ubuntu, OpenSUSE, CentOS, and others)
+- Linux (Ubuntu, OpenSUSE, CentOS and others)
 
 ### Mac
 
 - Mac OS X
 
-## Supported Java Versions
+## Supported Frameworks
 
-GroupDocs.Comparison for Java supports the following Java versions:
+GroupDocs.Comparison for Java supports Java frameworks as follows:
 
-- J2SE 8.0 (1.8)
-- or above (_for example Java 10_)
+### Java
+- Java 8+
+- Kotlin
 
 ## Development Environments
 
 GroupDocs.Comparison for Java can be used to develop applications in any development environment that targets the Java platform, but the following environments are explicitly supported:
 
-- IntelliJ IDEA
+- JetBrains IntelliJ
+- NetBeans
 - Eclipse
-- Apache NetBeans
-- Apache Maven
-- Apache Ant
-- Gradle
