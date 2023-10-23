@@ -32,10 +32,10 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to compare the contents of a folder (directory), process and save the result of processing. The steps for _starting the comparison_ and _configuring_ the display of the processing result in the resulting file are described below.
 
-1. Instantiate [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object. 
+1. Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object. 
 1. Call the `setDirectoryCompare` method to set the `DirectoryCompare` property to `true`.
-1. If needed, call the `setFolderComparisonExtension` property to change the output format to `HTML`. By default the format is `TXT`.
-1. If needed, call the`setShowOnlyChanged` property to `true` to display only changed items.
+1. If needed, call the `setFolderComparisonExtension` method to change the output format to `HTML`. By default the format is `TXT`.
+1. If needed, call the`setShowOnlyChanged` method to `true` to display only changed items.
 2. Initialize the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify the path to the first compared folder and the `CompareOptions` object.
 3. Call the [add](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-com.groupdocs.comparison.options.CompareOptions-) method of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify a  path to the second folder and the `CompareOptions` object.
 4. Call the [compare](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-com.groupdocs.comparison.options.CompareOptions-) method of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify a path to save the compare results and the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object.

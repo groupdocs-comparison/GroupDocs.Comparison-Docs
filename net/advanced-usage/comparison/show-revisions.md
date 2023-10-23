@@ -2,7 +2,7 @@
 id: show-revisions
 url: comparison/net/show-revisions
 title: Show Revisions
-weight: 12
+weight: 14
 description: "This article explains how to customize the display of revisions in the output document in GroupDocs.Comparison for .NET."
 keywords: ShowRevisions, revision
 productName: GroupDocs.Comparison for .NET

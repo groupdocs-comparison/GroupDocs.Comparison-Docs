@@ -2,7 +2,7 @@
 id: accept-or-reject-revisions
 url: comparison/net/accept-or-reject-revisions
 title: Accept or Reject revisions
-weight: 4
+weight: 5
 description: "Following this guide, you will learn how to apply or discard revisions found during document comparison using built-in Microsoft Word functionality."
 keywords: Revision, revision processing, accept or reject revision, apply change for revision
 productName: GroupDocs.Comparison for .NET
