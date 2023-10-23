@@ -2,7 +2,7 @@
 id: word-track-changes
 url: comparison/java/word-track-changes
 title: Show results of comparison as a Word Track Changes
-weight: 12
+weight: 13
 description: "This article explains how to use the Microsoft Word Track Changes comparing as a built in feature in GroupDocs.Comparison for Java."
 keywords: WordTrackChanges, revisions
 productName: GroupDocs.Comparison for Java

@@ -2,7 +2,7 @@
 id: show-gap-lines
 url: comparison/java/show-gap-lines
 title: Show gap lines instead of changes
-weight: 13
+weight: 15
 description: "This article explains how to adjust the display of the output document so that the changed content is replaced with empty lines in GroupDocs.Comparison for Java."
 keywords: LeaveGaps, gap lines, empty lines
 productName: GroupDocs.Comparison for Java

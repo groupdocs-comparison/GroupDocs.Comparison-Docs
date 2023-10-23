@@ -2,7 +2,7 @@
 id: generate-document-pages-preview
 url: comparison/java/generate-document-pages-preview
 title: Generate document pages preview
-weight: 4
+weight: 6
 description: "Following this guide you will learn how to generate PDF, Word, Excel, PowerPoint documents thumbnails and preview document pages using GroupDocs.Comparison for Java API."
 keywords: Document preview, Preview document pages, Document pages as PNG, document pages as JPG
 productName: GroupDocs.Comparison for Java
