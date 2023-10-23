@@ -2,7 +2,7 @@
 id: show-revisions
 url: comparison/java/show-revisions
 title: Show Revisions
-weight: 12
+weight: 14
 description: "This article explains how to customize the display of revisions in the output document in GroupDocs.Comparison for Java."
 keywords: ShowRevisions, revision
 productName: GroupDocs.Comparison for Java

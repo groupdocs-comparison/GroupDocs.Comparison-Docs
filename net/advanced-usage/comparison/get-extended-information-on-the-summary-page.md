@@ -49,8 +49,8 @@ The following code snippet shows how to get extended information:
 ```csharp
 using (Comparer comparer = new Comparer(sourcePath))
 {
-	comparer.Add(targetPath);
-	CompareOptions options = new CompareOptions() {ExtendedSummaryPage = true};
+    comparer.Add(targetPath);
+    CompareOptions options = new CompareOptions() {ExtendedSummaryPage = true};
     comparer.Compare(resultPath, options);
 }
 ```
