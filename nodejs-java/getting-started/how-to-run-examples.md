@@ -34,7 +34,7 @@ To get started make sure that [Node.js](https://nodejs.org/) is installed.
 3. Install the necessary packages with the `npm install` command.
 4. Run the examples with the `node runExamples.js` command.
 
-To check what examples are available open `Examples/runExamples.js` file using your favorite text editor. Uncomment examples that you want to run and type node runExamples.js to start them.
+To check what examples are available open `runExamples.js` file using your favorite text editor. Uncomment examples that you want to run and type node runExamples.js to start them.
 
 ## Contribute
 
