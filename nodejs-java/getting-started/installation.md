@@ -29,6 +29,6 @@ structuredData:
 
 All Java packages are hosted at [NPM](https://www.npmjs.com/package/@groupdocs/groupdocs.comparison). You can easily reference GroupDocs.Comparison for Node.js via Java API directly in your Node.js project by installing it with the following command.
 
-```
+```shell
 npm install @groupdocs/groupdocs.comparison
 ```

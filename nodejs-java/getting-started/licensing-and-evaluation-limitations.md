@@ -4,7 +4,7 @@ url: comparison/nodejs-java/licensing-and-evaluation-limitations
 title: Licensing
 weight: 5
 description: "Follow the instructions on this page to configure the license and find out the restrictions when using GroupDocs.Comparison for Node.js via Java without a license (Evaluation Limitations)"
-keywords: Licensing, evaluation limitations, setsetting metered license, setting license
+keywords: Licensing, evaluation limitations, set metered license, setting license
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
@@ -38,18 +38,18 @@ You can try GroupDocs.Comparison without buying a license.
 
 ### Free Trial
 
-The evaluation version is the same as the purchased one – the evaluation version simply becomes licensed when you set the license. You can set the license in a number of ways that described in the next sections of this article.
+The evaluation version is the same as the purchased one – the evaluation version simply becomes licensed when you set the license. You can set the license in several ways that are described in the next sections of this article.
 
-The evaluation version comes with the limitations:
+The evaluation version comes with the following limitations:
 
-- Only first 2 pages can be processed.
+- Only the first 2 pages can be processed.
 - Trial badges are placed in the document on the top of each page.
 
 ### Temporary License
 
 If you wish to test GroupDocs.Comparison without the limitations of the trial version, you can also request a 30-day Temporary License. For details, see the ["Get a Temporary License"](https://purchase.groupdocs.com/temporary-license) page.
 
-## How to set a license
+## How to set up a license
 
 {{< alert style="info" >}}
 
@@ -62,20 +62,17 @@ After getting the license, you need to set it. This section describes different 
 The license should be set:
 
 - Only once per application domain.
-- Before using any other of GroupDocs.Comparison classes.
+- Before using any other GroupDocs.Comparison classes.
 
 {{< alert style="info" >}}
 
-The license can be set multiple times per application domain but we recommend doing it once since all calls to `setLicense` except first will just waste processor time.
+The license can be set multiple times per application domain, but we recommend doing it once since all the subsequent calls to the `setLicense` method except for the first one will just waste processor time.
 
 {{< /alert >}}
 
 ### Set License from File
 
-The following code snippet shows how to set a license from file:
-
-{{< tabs "example1">}}
-{{< tab "Javascript" >}}
+The following code snippet shows how to set a license from a file:
 
 ```javascript
 const licensePath = "path to the .lic file";
@@ -83,16 +80,9 @@ const license = new groupdocs.comparison.License()
 await license.setLicense(licensePath); 
 ```
 
-{{< /tab >}}
-{{< /tabs >}}
-
-
 ### Set License from Stream
 
 The following code snippet shows how to set a license from a stream:
-
-{{< tabs "example2">}}
-{{< tab "Javascript" >}}
 
 ```javascript
 const java = require('java');
@@ -112,6 +102,3 @@ try {
     "\nLearn how to request a temporary license at https://purchase.groupdocs.com/temporary-license.");
 }
 ```
-
-{{< /tab >}}
-{{< /tabs >}}
