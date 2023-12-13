@@ -10,7 +10,7 @@ hideChildren: False
 toc: True
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) is a powerful cross-platform library that allows you to to implement in your applications the ability to compare and merge two or more files of [the various formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}). Compiled file shows line-by-line difference of content, paragraphs, characters, styles, shapes, and positions.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) is a powerful cross-platform library that allows you to implement in your applications the ability to compare and merge two or more files of [the various formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}}). The compiled file shows line-by-line differences in content, paragraphs, characters, styles, shapes, and positions.
 
 The API provides the following features:
 
