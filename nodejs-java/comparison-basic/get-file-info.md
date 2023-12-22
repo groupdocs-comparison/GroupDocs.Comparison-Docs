@@ -17,10 +17,10 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: Get Comparer file info in JavaScript
-    description: Get Comparer file info in Java step by step
+    name: Get Comparer file info in JavaScriptScript
+    description: Get Comparer file info in JavaScript step by step
     steps:
-      - name: Create an object and load source file
+      - name: Create an object and load the source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
       - name: Create a file info object
         text: Call the GetDocumentInfo method on the Source field of the comparer object and assign the result to a file info object of the IDocumentInfo class.
@@ -30,10 +30,10 @@ structuredData:
 
 With [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) you can retrieve the following information about a file:
 
-*   [FileType](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/filetype/) represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation, image etc.).
-*   [PageCount](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagecount/) represents the number of pages in a document.
-*   [FileSize](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/size/) represents the document file size.
-*   [PagesInfo](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagesinfo/) represents the page information.
+*   `FileType`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/filetype/)--> represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation, image etc.).
+*   `PageCount`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagecount/)--> represents the number of pages in a document.
+*   `FileSize`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/size/)--> represents the document file size.
+*   `PagesInfo`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagesinfo/)--> represents the page information.
 
 The following code samples show how to get file information:
 

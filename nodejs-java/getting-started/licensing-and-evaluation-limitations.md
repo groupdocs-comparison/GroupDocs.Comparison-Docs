@@ -17,8 +17,8 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: How to Setting License in Java
-    description: Learn how to Setting License in Java step by step
+    name: How to Setting License in JavaScript
+    description: Learn how to Setting License in JavaScript step by step
     steps:
       - name: Create an object
         text: Create an object of license class.
