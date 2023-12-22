@@ -17,13 +17,13 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: How load text from string in Java
-    description: Learn how to load file from string in Java step by step
+    name: How to load text from a string in JavaScript
+    description: Learn how to load a file from a string in JavaScript step by step
     steps:
-      - name: Create an object and load source text
-        text: Create an object of Comparer class. The constructor takes the source text by first parameter and a LoadOption object with LoadText parameter.
+      - name: Create an object and load the source text
+        text: Create an object of the Comparer class. The constructor takes the source text by the first parameter and a LoadOption object with the LoadText parameter.
       - name: Load target text
-        text: Add the target text using the Add method. Second parameter is a LoadOption object that contains LoadText = true.
+        text: Add the target text using the Add method. The second parameter is a LoadOption object that contains LoadText = true.
       - name: Compare documents
         text: Create a string variable where the result of the comparison will be placed.
 ---
@@ -32,16 +32,14 @@ structuredData:
 
 To compare text from variables, follow these steps:
 
-1.  Instantiate the [LoadOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions) object. Set the [LoadText](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions/#setLoadText-boolean-) property to `true` (this indicates that passed string contains text to be compared, not file path).
-2.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer) object. Specify the source variable of the `String` type and the [LoadOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
-3.  Call the [add()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify target variable of the `String` type and the [LoadOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
-4.  Call the [Comparer](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer) method.
-5.  Call the [getResultString](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#getResultString--) method to get string with comparison result.
+1.  Instantiate the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object. Set the `LoadText`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions/#setLoadText-boolean-)--> property to `true` (this indicates that the passed string contains a text to be compared, not a file path).
+2.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source variable of the `String` type and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in the previous step.
+3.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target variable of the `String` type and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in the previous step.
+4.  Call the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> method.
+5.  Call the `getResultString`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#getResultString- -)--> method to get a string with the comparison result.
 
 The following code snippet shows how to load values from variables:
 
-{{< tabs "example1">}}
-{{< tab "Javascript" >}}
 ```javascript
 const loadOptions = new groupdocs.comparison.LoadOptions();
 loadOptions.setLoadText(true);
@@ -50,8 +48,6 @@ comparer.add("target text", loadOptions);
 comparer.compare();
 String result = comparer.getResultString();
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 The result is as follows:
 
@@ -59,8 +55,6 @@ The result is as follows:
 
 The following code snippet shows how to combine the different ways of specifying documents:
 
-{{< tabs "example2">}}
-{{< tab "Javascript" >}}
 ```javascript
 const loadOptions = new groupdocs.comparison.LoadOptions();
 loadOptions.setLoadText(true);
@@ -69,5 +63,3 @@ comparer.add("target text", loadOptions);
 comparer.compare();
 String result = comparer.getResultString();
 ```
-{{< /tab >}}
-{{< /tabs >}}

@@ -17,32 +17,30 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: How to load custom fonts in Java
-    description: Learn how to load custom fonts in Java step by step
+    name: How to load custom fonts in JavaScript
+    description: Learn how to load custom fonts in JavaScript step by step
     steps:
       - name: Create an object and load font.
-        text: Create an object of LoadOptions class. Access the object field using the Add method with the path to the font file parameter.
-      - name: Create an object and load source file with Options
-        text: Create an object of Comparer class. The constructor takes the source file path parameter and object of LoadOptions. You may specify absolute or relative file path as per your requirements.
-      - name: Load target file
+        text: Create an object of the LoadOptions class. Access the object field using the Add method with the path to the font file parameter.
+      - name: Create an object and load the source file with Options
+        text: Create an object of Comparer class. The constructor takes the source file path parameter and object of LoadOptions. You may specify absolute or relative file paths as per your requirements.
+      - name: Load the target file
         text: Add the path to the target file using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare documents that contains non-standard fonts.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare documents that contain non-standard fonts.
 
 To connect custom fonts and compare documents, follow these steps:
 
-1. Instantiate the [LoadOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions) object. Speicfy a list of directories with custom fonts.
-2. Instantiate the [Comparer](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer) object with source document path or stream and the [LoadOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
-3. Call the [add()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-4. Call the [Comparer](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer) method.
+1. Instantiate the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object. Specify a list of directories with custom fonts.
+2. Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object with the source document path or stream and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in the previous step.
+3. Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
+4. Call the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> method.
 
 The following code snippet shows how to connect custom fonts and compare documents:
 
-{{< tabs "example1">}}
-{{< tab "Javascript" >}}
 ```javascript
 // Instantiate the LoadOptions object and create a list of custom font directories.
 const loadOptions = new groupdocs.comparison.LoadOptions();
@@ -52,5 +50,3 @@ const comparer = new groupdocs.comparison.Comparer(sourceDocument, loadOptions);
 comparer.add(targetDocument);
 const resultPath = comparer.compare(resultDocument);
 ```
-{{< /tab >}}
-{{< /tabs >}}

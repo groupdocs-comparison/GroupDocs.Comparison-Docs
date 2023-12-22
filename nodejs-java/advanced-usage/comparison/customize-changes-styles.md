@@ -3,7 +3,7 @@ id: customize-changes-styles
 url: comparison/nodejs-java/customize-changes-styles
 title: Customize changes styles
 weight: 4
-description: "Following this guide you will learn how to customize document comparison report and modify appearance of detected changes when use GroupDocs.Comparison for Node.js via Java."
+description: "Following this guide you will learn how to customize document comparison report and modify the appearance of detected changes when using GroupDocs.Comparison for Node.js via Java."
 keywords: Style change detection, Compare document styles, Document comparison
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
@@ -17,12 +17,12 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: How to customize changes styles in Java
-    description: Learn how to customize changes styles in Java step by step
+    name: How to customize changes styles in JavaScript
+    description: Learn how to customize changes styles in JavaScript step by step
     steps:
-      - name: Create an object and load source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
-      - name: Load target file
+      - name: Create an object and load the source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
+      - name: Load the target file
         text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and initialize InsertedItemStyle, DeletedItemStyle, ChangedItemStyle parameters by object with required parameters.
@@ -34,17 +34,15 @@ structuredData:
 
 To compare two documents with custom change style settings, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer) object. Specify the source document path or stream.
-2.  Call the [add()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions) object. Specify the appropriate parameters.
-4.  Call the [compare()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions) object.
+1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
+2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
+3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object. Specify the appropriate parameters.
+4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object.
 
 The following code snippets show how to compare documents with specific options:
 
-## Compare documents from local disk with custom change styles
+## Compare documents from a local disk with custom change styles
 
-{{< tabs "example1">}}
-{{< tab "Javascript" >}}
 ```javascript
 const comparer = new groupdocs.comparison.Comparer(sourceFile);
 comparer.add(targetFile);
@@ -80,17 +78,13 @@ compareOptions.setChangedItemStyle(changedStyleSettings);
 
 const resultPath = comparer.compare(resultFile, compareOptions);
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 The result is as follows:
 
 ![](/comparison/nodejs-java/images/customize-changes-styles.png)
 
-## Compare documents from stream with custom change styles
+## Compare documents from a stream with custom change styles
 
-{{< tabs "example2">}}
-{{< tab "Javascript" >}}
 ```javascript
 const comparer = new groupdocs.comparison.Comparer(sourceInputStream);
 comparer.add(targetInputStream);
@@ -126,5 +120,3 @@ compareOptions.setChangedItemStyle(changedStyleSettings);
 
 const resultPath = comparer.compare(resultInputStream, compareOptions);
 ```
-{{< /tab >}}
-{{< /tabs >}}

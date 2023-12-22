@@ -17,12 +17,12 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: How to show Revisions in Java
-    description: Learn how to show Revisions in Java step by step
+    name: How to show Revisions in JavaScript
+    description: Learn how to show Revisions in JavaScript step by step
     steps:
-      - name: Create an object and load source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
-      - name: Load target file
+      - name: Create an object and load the source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
+      - name: Load the target file
         text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify ShowRevisions of true value.
@@ -30,23 +30,19 @@ structuredData:
         text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
----
-
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare and customize the display of revisions in the output document.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare and customize the visibility of revisions in the output document.
 
 Revision is a collection of changes received when comparing documents using built-in Word tools.
 
-By default, the display of revisions is enabled. To turn off the display of revisions, follow these steps:
+By default, the visibility of revisions is enabled. To turn off the visibility of revisions, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/) object. Specify the source file path or stream.
-2.  Call the [add()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/) object. Set the [ShowRevisions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowRevisions-boolean-) property to `false`.
-4.  Call the [compare()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/) object from the previous step.
+1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/)--> object. Specify the source file path or stream.
+2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target file path or stream.
+3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object. Set the `ShowRevisions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowRevisions-boolean-)--> property to `false`.
+4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object from the previous step.
 
-The following code snippet shows how disable the display of revisions:
+The following code snippet shows how to disable the visibility of revisions:
 
-{{< tabs "example1">}}
-{{< tab "Javascript" >}}
 ```javascript
 const comparer = new groupdocs.comparison.Comparer(sourcePath);
 comparer.add(targetPath);
@@ -54,8 +50,6 @@ const options = new groupdocs.comparison.CompareOptions();
 options.setShowRevisions(false);
 const resultPath = comparer.compare(outputPath, options);
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 The result is as follows:
 
