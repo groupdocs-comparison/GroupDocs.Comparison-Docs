@@ -27,7 +27,7 @@ If you need help with GroupDocs.Comparison, consider the following:
 
 The paid support issues have a higher priority compared to the free support requests.
 
-* Post your question at the [Paid Support Helpdesk](https://helpdesk.groupdocs.com/) to set higher priority for the issue.
+* Post your question at the [Paid Support Helpdesk](https://helpdesk.groupdocs.com/) to set a higher priority for the issue.
 
 ## Report an Issue or Feature Request
 
