@@ -17,24 +17,23 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: Get file formats supported by Comparison in Java
+    name: Get file formats supported by Comparison in JavaScriptScript
     description: Get file formats supported by Comparison Java step by step
     steps:
-      - name: Get an array supported file types
-        text: Call the GetSupportedFileTypes method using the FileType object. Additional OrderBy method can be sorting rezulting array, it using lambda expression as parameter. And assign the result to a collection with a FileType data type, with the possibility of iteration.
-      - name: Output supported file types
-        text: Using iteration of your collection, you can display the supported data types, for example, to the console.
+      - name: Get an array of supported file types
+        text: Call the GetSupportedFileTypes method of the FileType object. Additionally, the OrderBy method can sort the resulting array, using lambda expression as the parameter. The result is a collection of a FileType data type, with the possibility of iteration.
+      - name: Output the supported file types
+        text: Iterate through the collection, to output the supported data types, for example, to the console.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to get the list of all [supported file formats]({{< ref "comparison/nodejs-java/getting-started/supported-document-formats.md" >}}). To do this, follow these steps:
 
-1. Call the [getSupportedFileTypes](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/filetype/#getSupportedFileTypes--) method of the [FileType](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/filetype/) class.
-2. Enumerate through the collection of the [FileType](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/filetype/) objects.
+1. Call the `getSupportedFileTypes`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/filetype/#getSupportedFileTypes- -)--> method of the `FileType`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/filetype/)--> class.
+2. Enumerate through the collection of the `FileType`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/filetype/)--> objects.
 
-The following code snippet shows how to get list of supported file formats:
+The following code snippet shows how to obtain a list of supported file formats:
 
-{{< tabs "example1">}}
-{{< tab "Javascript" >}}
+
 ```javascript
 fileTypes = await groupdocs.comparison.FileType.getSupportedFileTypes();
 let count = 0;
@@ -44,8 +43,6 @@ while (fileTypes.size() > count)
   count++;
 }
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 The result is as follows:
 

@@ -12,11 +12,17 @@ fullWidth: True
 
 <img src="/comparison/nodejs-java/images/home.png" alt="groupdocs comparison java logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
-GroupDocs.Comparison enables you to diff Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text and HTML documents.
+<dt class="flex flex-wrap align-center gdoc-props__meta">
+    <a href='https://www.npmjs.com/package/@groupdocs/groupdocs.comparison'>
+        <span class="gdoc-props__tag tip">Latest version 23.12.0 (December 2023)</span>
+    </a>
+</dt>
 
-Document comparison API compares content to detect changes for words, paragraphs and characters.
+{{< button style="primary" link="https://releases.groupdocs.com/comparison/nodejs-java/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}} 
+{{< button style="primary" link="https://www.npmjs.com/package/@groupdocs/groupdocs.comparison/" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
 
-It also compares style changes like font size, bold, italic etc. Differences summary saved in a separate result file.
+
+**GroupDocs.Comparison for Node.js via Java** is a Node.js version of the GroupDocs.Comparison API. It provides the ability to detect differences between source and target files across paragraph, word, and character levels. Additionally, it detects changes in styling and formatting. This versatile API supports over 50 document types, including Microsoft Office, OpenOffice, AutoCAD, Visio, images, programming files, PDFs, and more.
 
 ---
 
@@ -44,7 +50,7 @@ It also compares style changes like font size, bold, italic etc. Differences sum
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>
-	<li><a href="https://www.nuget.org/packages/groupdocs.comparison">GroupDocs.Comparison Nuget Package</a></li>
+	<li><a href="https://www.npmjs.com/package/@groupdocs/groupdocs.comparison">GroupDocs.Comparison NPM Package</a></li>
 	</li><li><a href="https://downloads.groupdocs.com/comparison/nodejs-java">GroupDocs.Comparison for Node.js via Java Downloads</a></li>
 	<li><a href="https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Node.js-via-Java/">Download Examples and Demos at GitHub</a></li>
 </ul>
@@ -59,7 +65,7 @@ It also compares style changes like font size, bold, italic etc. Differences sum
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>
-	<li><a href="https://reference.groupdocs.com/comparison/nodejs-java">GroupDocs.Comparison for Node.js via Java API Reference</a></li>
+	<!--li><a href="https://reference.groupdocs.com/comparison/nodejs-java">GroupDocs.Comparison for Node.js via Java API Reference</a></li-->
 	<li><a href='https://releases.groupdocs.com/comparison/nodejs-java/release-notes/'>GroupDocs.Comparison for Node.js via Java Release Notes</a></li>
 </ul>
 {{< /columns >}}

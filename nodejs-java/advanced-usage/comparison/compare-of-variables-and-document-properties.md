@@ -17,12 +17,12 @@ structuredData:
     productPlatform: nodejs-java
   showVideo: True
   howTo:
-    name: How to Variables and Document properties in Java
-    description: Learn how to compare Variables and Document properties in Java step by step
+    name: How to Variables and Document properties in JavaScript
+    description: Learn how to compare Variables and Document properties in JavaScript step by step
     steps:
-      - name: Create an object and load source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
-      - name: Load target file
+      - name: Create an object and load the source file
+        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
+      - name: Load the target file
         text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify CompareVariableProperty and CompareDocumentProperty of true value.
@@ -30,26 +30,22 @@ structuredData:
         text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
----
-
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare various properties of a Word document such as _Variable_, _Built_, and _Custom_ properties.
 
-Use the following methods of the [CompareOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/) class to enable comparison functions for document properties:
+Use the following methods of the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> class to enable comparison functions for document properties:
 
-- [setCompareVariableProperty()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-) allows the comparison of _variable_ properties
-- [setCompareDocumentProperty()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-) allows  the comparison of _built_ and _custom_ properties
+- `setCompareVariableProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-)--> allows the comparison of _variable_ properties
+- `setCompareDocumentProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-)--> allows the comparison of _built_ and _custom_ properties
 
-To activate compare document properties, follow these steps:
+To activate the comparison of document properties, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/) object. Specify the source file path or stream.
-2.  Call the [add()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/) object. Call the [setCompareVariableProperty()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-) method to compare the _variable_ properties and/or the [setCompareDocumentProperty()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-) for _built_ and _custom_ properties.
-4.  Call the [compare()](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/) object from the previous step.
+1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/)--> object. Specify the source file path or stream.
+2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target file path or stream.
+3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object. Call the `setCompareVariableProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-)--> method to compare the _variable_ properties and/or the `setCompareDocumentProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-)--> for _built_ and _custom_ properties.
+4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object from the previous step.
 
-The following code snippet shows how activate comparison of the _variable_, _Bbuilt_ and _custom_ properties:
+The following code snippet shows how to activate the comparison of the _variable_, _Bbuilt_ and _custom_ properties:
 
-{{< tabs "example1">}}
-{{< tab "Javascript" >}}
 ```javascript
 const comparer = new groupdocs.comparison.Comparer(sourcePath);
 comparer.add(targetPath);
@@ -59,8 +55,6 @@ options.setCompareDocumentProperty(true); // to activate the comparison of built
 
 const resultPath = comparer.compare(outputPath, options);
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 The result is as follows:
 
