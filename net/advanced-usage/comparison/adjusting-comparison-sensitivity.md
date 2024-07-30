@@ -74,9 +74,9 @@ The following code snippet shows how to compare documents with specific sensitiv
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
-    CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100 };
-	comparer.Compare("result.docx", options);
+  comparer.Add("target.docx");
+  CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100 };
+  comparer.Compare("result.docx", options);
 }
 ```
 {{< /tab >}}
@@ -87,3 +87,26 @@ The result is as follows:
 |            SensitivityOfComparison = 50                             |                         SensitivityOfComparison = 100                            |
 | :-----------------------------------------------------------------: | :----------------------------------------------------------------: |
 | ![](/comparison/net/images/sensitivity50.png) | ![](/comparison/net/images/sensitivity100.png) |
+
+
+You can also set the sensitivity level specifically for tables.
+The following code snippet shows how to do it:
+
+{{< tabs "example2">}}
+{{< tab "C#" >}}
+```csharp
+using (Comparer comparer = new Comparer("source.docx"))
+{
+  comparer.Add("target.docx");
+  CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100, SensitivityOfComparisonForTables = 75 };
+  comparer.Compare("result.docx", options);
+}
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+The result is as follows:
+
+|            SensitivityOfComparisonForTables = 50                             |                         SensitivityOfComparisonForTables = 75                            |
+| :-----------------------------------------------------------------: | :----------------------------------------------------------------: |
+| ![](/comparison/net/images/tablesensitivity50.png) | ![](/comparison/net/images/tablesensitivity75.png) |
