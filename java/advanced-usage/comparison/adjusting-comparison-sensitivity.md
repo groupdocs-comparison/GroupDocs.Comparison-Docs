@@ -72,13 +72,13 @@ The following code snippet shows how to compare documents with specific sensitiv
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
 
     CompareOptions compareOptions = new CompareOptions();
     compareOptions.setSensitivityOfComparison(100);
 
-    final Path resultPath = comparer.compare(resultFile, compareOptions);
+    final Path resultPath = comparer.compare("result.docx", compareOptions);
 }
 ```
 {{< /tab >}}

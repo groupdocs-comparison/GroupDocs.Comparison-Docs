@@ -48,14 +48,14 @@ The following code snippet shows how to compare documents and protect the output
 {{< tab "Java" >}}
 ```java
 
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
 
     CompareOptions compareOptions = new CompareOptions();
     compareOptions.setPasswordSaveOption(PasswordSaveOption.USER);
     SaveOptions saveOptions = new SaveOptions();
     saveOptions.setPassword("3333");
-    final Path resultPath = comparer.compare(outputFile, saveOptions, compareOptions);
+    final Path resultPath = comparer.compare("result.docx", saveOptions, compareOptions);
 }
 ```
 {{< /tab >}}

@@ -27,9 +27,9 @@ The following code snippets show how to several documents:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer("source.docx")
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target1.docx");
+    comparer.Add("target1.docx");
     comparer.Add("target2.docx");
     comparer.Add("target3.docx");
     comparer.Compare("result.docx");

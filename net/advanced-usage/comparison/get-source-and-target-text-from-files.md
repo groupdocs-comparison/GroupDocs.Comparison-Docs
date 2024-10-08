@@ -50,10 +50,10 @@ The following code snippets show how to get specified texts from a file.
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(sourceDocumentPath))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-    comparer.Add(targetDocumentPath);
-    comparer.Compare(outputPath);
+    comparer.Add("target.docx");
+    comparer.Compare("result.docx");
     ChangeInfo[] changes = comparer.GetChanges();
     foreach (ChangeInfo change in changes)
     {
@@ -78,7 +78,7 @@ The result is as follows:
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
     comparer.Add(File.OpenRead("target.docx"));
-    comparer.Compare(outputPath);
+    comparer.Compare("result.docx");
     ChangeInfo[] changes = comparer.GetChanges();
     foreach (ChangeInfo change in changes)
     {

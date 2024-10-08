@@ -50,16 +50,16 @@ The following code snippet shows how get the desired result
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(sourcePath))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-    comparer.Add(targetPath);
+    comparer.Add("target.docx");
 
     CompareOptions options = new CompareOptions();
     options.ShowInsertedContent = false;
     options.ShowDeletedContent = false;
     options.LeaveGaps = true;
 
-    comparer.Compare(resultPath, options);
+    comparer.Compare("result.docx", options);
 }
 ```
 {{< /tab >}}

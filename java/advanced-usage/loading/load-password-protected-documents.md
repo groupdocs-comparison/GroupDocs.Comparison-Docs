@@ -43,9 +43,9 @@ The following code snippet shows how to compare password protected documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceExcelDocument, new LoadOptions("password"))) {
-    comparer.add(targetExcelDocument, new LoadOptions("password"));
-    comparer.compare(resultExcelDocument);
+try (Comparer comparer = new Comparer("source.xlsx", new LoadOptions("password"))) {
+    comparer.add("target.xlsx", new LoadOptions("password"));
+    comparer.compare("result.xlsx");
 }
 ```
 {{< /tab >}}

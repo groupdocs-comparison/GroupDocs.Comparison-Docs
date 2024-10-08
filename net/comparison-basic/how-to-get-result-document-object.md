@@ -47,9 +47,9 @@ The following code snippets show how to get changes and create new Aspose Word d
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(sourcePath))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-      comparer.Add(targetPath);
+      comparer.Add("target.docx");
       GroupDocs.Comparison.Document resultDocument = comparer.Compare(result);
       foreach (var change in resultDocument.Changes)
       {
@@ -81,15 +81,11 @@ You can use the Comparison [Document](https://reference.groupdocs.com/comparison
 ```csharp
 using Aspose.Words;
 
-string sourcePath = @"source.docx";
-string targetPath = @"target.docx";
-string resultPath = @"result.docx";
-
-using (Comparer comparer = new Comparer(sourcePath))
+using (Comparer comparer = new Comparer("source.docx"))
 {
       // Add target document and save comparison result to Comparison.Document object
-      comparer.Add(targetPath);
-      GroupDocs.Comparison.Document resultDocument = comparer.Compare(resultPath);
+      comparer.Add("target.docx");
+      GroupDocs.Comparison.Document resultDocument = comparer.Compare("result.docx");
 
       // Create a new Aspose Document object of corresponding format.
       Aspose.Words.Document asposeDocument = new Aspose.Words.Document(resultDocument.Stream);

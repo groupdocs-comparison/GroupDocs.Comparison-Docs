@@ -58,9 +58,9 @@ The following code snippets show how to compare two documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePdfPath)) {
-    comparer.add(targetPdfPath);
-    final Path resultPath = comparer.compare(resultPdfPath);
+try (Comparer comparer = new Comparer("source.pdf")) {
+    comparer.add("target.pdf");
+    final Path resultPath = comparer.compare("result.pdf");
 }
 ```
 {{< /tab >}}

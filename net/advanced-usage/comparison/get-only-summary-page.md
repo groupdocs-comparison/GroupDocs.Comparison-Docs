@@ -48,11 +48,11 @@ The following code snippet shows how to get only summary page.
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(sourcePath))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add(targetPath);
-	CompareOptions options = new CompareOptions() {ShowOnlySummaryPage = true};
-    comparer.Compare(resultPath, options);
+    comparer.Add("target.docx");
+    CompareOptions options = new CompareOptions() {ShowOnlySummaryPage = true};
+      comparer.Compare("result.docx", options);
 }
 ```
 {{< /tab >}}

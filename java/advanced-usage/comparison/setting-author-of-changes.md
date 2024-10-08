@@ -42,8 +42,8 @@ The following code snippet shows how to change author of changes:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-    try (Comparer comparer = new Comparer(sourcePath)) {
-        comparer.add(targetPath);
+    try (Comparer comparer = new Comparer("source.docx")) {
+        comparer.add("target.docx");
 
         CompareOptions compareOptions = new CompareOptions();
         compareOptions.setShowRevisions(true);

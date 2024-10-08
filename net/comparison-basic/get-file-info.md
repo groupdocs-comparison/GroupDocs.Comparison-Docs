@@ -44,11 +44,11 @@ The following code samples show how to get file information:
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	IDocumentInfo info = comparer.Source.GetDocumentInfo();
+    IDocumentInfo info = comparer.Source.GetDocumentInfo();
     for (int i = 0; i < info.PageCount; i++)
     {
-         Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ",
-             info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
+        Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ",
+            info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
     }
 }
 ```
@@ -64,13 +64,13 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead("source.docx"))
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	IDocumentInfo info = comparer.Source.GetDocumentInfo();
+    IDocumentInfo info = comparer.Source.GetDocumentInfo();
     for (int i = 0; i < info.PageCount; i++)
     {
-         Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ",
-             info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
+        Console.WriteLine("\nPage number: {5}\nFile type: {0}\nNumber of pages: {1}\nDocument size: {2} bytes\nWidth: {3}\nHeight: {4} ",
+            info.FileType, info.PageCount, info.Size, info.PagesInfo[i].Width, info.PagesInfo[i].Height, i + 1);
     }
 }
 ```

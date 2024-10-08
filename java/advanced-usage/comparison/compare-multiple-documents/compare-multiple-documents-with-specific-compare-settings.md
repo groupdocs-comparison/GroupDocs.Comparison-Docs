@@ -48,10 +48,10 @@ The following code snippets show how to compare multiple documents with the app
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile1);
-    comparer.add(targetFile2);
-    comparer.add(targetFile3);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    comparer.add("target2.docx");
+    comparer.add("target3.docx");
 
     final StyleSettings styleSettings = new StyleSettings();
     styleSettings.setFontColor(Color.YELLOW);
@@ -59,7 +59,7 @@ try (Comparer comparer = new Comparer(sourceFile)) {
     CompareOptions compareOptions = new CompareOptions();
     compareOptions.setInsertedItemStyle(styleSettings);
 
-    final Path resultPath = comparer.compare(resultFile, compareOptions);
+    final Path resultPath = comparer.compare("result.docx", compareOptions);
 }
 ```
 {{< /tab >}}

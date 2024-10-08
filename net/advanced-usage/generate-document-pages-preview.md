@@ -71,7 +71,7 @@ using (Comparer comparer = new Comparer("source.docx"))
 {
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine("D:\Temp\", $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine(@"D:\Temp\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -96,7 +96,7 @@ using (Comparer comparer = new Comparer("source.docx"))
     comparer.Add("target.docx");
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine(@"C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -119,7 +119,7 @@ using (Comparer comparer = new Comparer("source.docx"))
     Document document = new Document(File.OpenRead("result.docx"));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine(@"C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -142,7 +142,7 @@ using (Comparer comparer = new Comparer("source.pptx"))
     Document document = new Document(File.OpenRead("result.pptx"));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine(@"C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;
@@ -165,7 +165,7 @@ using (Comparer comparer = new Comparer("source.pptx"))
 // Method should match with ReleasePageStream delegate signature
 private void UserReleaseStreamMethod(int pageNumber, Stream stream)
 {
-	Console.WriteLine($"Releasing memory for page: {pageNumber}");
+    Console.WriteLine($"Releasing memory for page: {pageNumber}");
     stream.Close();
 }
 
@@ -176,7 +176,7 @@ using (Comparer comparer = new Comparer("source.docx"))
     Document document = new Document(File.OpenRead("result.docx"));
     PreviewOptions previewOptions = new PreviewOptions(pageNumber =>
     {
-    	var pagePath = Path.Combine("C:\", $"result_{pageNumber}.png");
+    	var pagePath = Path.Combine(@"C:\", $"result_{pageNumber}.png");
         return File.Create(pagePath);
     });
     previewOptions.PreviewFormat = PreviewFormats.PNG;

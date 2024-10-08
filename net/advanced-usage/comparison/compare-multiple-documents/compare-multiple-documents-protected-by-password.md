@@ -49,7 +49,7 @@ The following code snippets shows how to compare several password-protected docu
 ```csharp
 using (Comparer comparer = new Comparer("source.docx", new LoadOptions() { Password = "1234" }))
 {
-	comparer.Add("target1.docx", new LoadOptions() { Password = "5678" });
+    comparer.Add("target1.docx", new LoadOptions() { Password = "5678" });
     comparer.Add("target2.docx", new LoadOptions() { Password = "5678" });
     comparer.Add("target3.docx", new LoadOptions() { Password = "5678" });
     comparer.Compare("result.docx");
@@ -65,7 +65,7 @@ using (Comparer comparer = new Comparer("source.docx", new LoadOptions() { Passw
 ```csharp
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx"), new LoadOptions() { Password = "1234" }))
 {
-	comparer.Add(File.OpenRead("target1.docx"), new LoadOptions() { Password = "5678" });
+    comparer.Add(File.OpenRead("target1.docx"), new LoadOptions() { Password = "5678" });
     comparer.Add(File.OpenRead("target2.docx"), new LoadOptions() { Password = "5678" });
     comparer.Add(File.OpenRead("target3.docx"), new LoadOptions() { Password = "5678" });
     comparer.Compare(File.Create("result.docx"));

@@ -95,7 +95,7 @@ using (RevisionHandler revisionHandler = new RevisionHandler(File.OpenRead("Docu
 ```csharp
 using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Document_with_revision.docx"))
 {
-	revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { CommonHandler = RevisionAction.Accept });
+    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { CommonHandler = RevisionAction.Accept });
 }
 ```
 {{< /tab >}}

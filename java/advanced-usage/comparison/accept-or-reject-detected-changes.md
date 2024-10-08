@@ -57,12 +57,12 @@ The following code snippets show how to accept/reject changes:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     final Path resultPath = comparer.compare();
     ChangeInfo[] changes = comparer.getChanges();
     changes[0].setComparisonAction(ComparisonAction.REJECT);
-    comparer.applyChanges(resultFile, new SaveOptions(), new ApplyChangeOptions(changes));
+    comparer.applyChanges("result.docx", new SaveOptions(), new ApplyChangeOptions(changes));
 }
 ```
 {{< /tab >}}
@@ -97,8 +97,8 @@ try (Comparer comparer = new Comparer(sourceInputStream)) {
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-	comparer.add(targetFile);
+try (Comparer comparer = new Comparer("source.docx")) {
+	comparer.add("target.docx");
     final Path resultPath = comparer.compare();
     ChangeInfo[] changes = comparer.getChanges();
     changes[0].setComparisonAction(ComparisonAction.REJECT);

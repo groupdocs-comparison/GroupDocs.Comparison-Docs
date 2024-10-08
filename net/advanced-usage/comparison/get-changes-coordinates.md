@@ -52,12 +52,12 @@ The following code snippet shows how to compare multiple documents with specifi
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     CompareOptions compareOptions = new CompareOptions(){ CalculateCoordinates = true };
     comparer.Compare(compareOptions);
     ChangeInfo[] changes = comparer.GetChanges();
     foreach (ChangeInfo change in changes)
-    	Console.WriteLine("Change Type: {0}, X: {1}, Y: {2}, Text: {3}", change.Type, change.Box.X, change.Box.Y, change.Text);
+        Console.WriteLine("Change Type: {0}, X: {1}, Y: {2}, Text: {3}", change.Type, change.Box.X, change.Box.Y, change.Text);
 }
 ```
 {{< /tab >}}

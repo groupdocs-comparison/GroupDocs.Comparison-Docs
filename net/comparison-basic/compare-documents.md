@@ -60,8 +60,8 @@ The following code snippets show how to compare two documents:
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
-	comparer.Compare("result.docx");
+    comparer.Add("target.docx");
+    comparer.Compare("result.docx");
 }
 ```
 {{< /tab >}}
@@ -78,8 +78,8 @@ The output file is as follows:
 ```csharp
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead("target.docx"));
-	comparer.Compare(File.Create("result.docx"));
+    comparer.Add(File.OpenRead("target.docx"));
+    comparer.Compare(File.Create("result.docx"));
 }
 ```
 {{< /tab >}}

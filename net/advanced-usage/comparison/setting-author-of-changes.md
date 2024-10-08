@@ -42,18 +42,18 @@ The following code snippet shows how to change author of changes:
 {{< tabs "example1">}}
 {{< tab ".NET" >}}
 ```cs
-using (Comparer comparer = new Comparer(sourcePath))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-    comparer.Add(targetPath);
+  comparer.Add("target.docx");
 
-	CompareOptions options = new CompareOptions()
-    {
-        ShowRevisions = true,
-        WordTrackChanges = true,
-        RevisionAuthorName = "New author",
-    };
+  CompareOptions options = new CompareOptions()
+  {
+    ShowRevisions = true,
+    WordTrackChanges = true,
+    RevisionAuthorName = "New author",
+  };
 
-    comparer.Compare(resultPath, options);
+  comparer.Compare("result.docx", options);
 }
 ```
 {{< /tab >}}

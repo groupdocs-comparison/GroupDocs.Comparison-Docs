@@ -50,11 +50,11 @@ The following code snippets show how to set output document metadata:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     final SaveOptions saveOptions = new SaveOptions();
     saveOptions.setCloneMetadataType(MetadataType.SOURCE);
-    final Path resultPath = comparer.compare(outputFile, saveOptions);
+    final Path resultPath = comparer.compare("result.docx", saveOptions);
 }
 ```
 {{< /tab >}}
@@ -65,11 +65,11 @@ try (Comparer comparer = new Comparer(sourceFile)) {
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     final SaveOptions saveOptions = new SaveOptions();
     saveOptions.setCloneMetadataType(MetadataType.TARGET);
-    final Path resultPath = comparer.compare(outputFile, saveOptions);
+    final Path resultPath = comparer.compare("result.docx", saveOptions);
 }
 ```
 {{< /tab >}}
@@ -81,8 +81,8 @@ try (Comparer comparer = new Comparer(sourceFile)) {
 {{< tab "Java" >}}
 ```java
 
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     final FileAuthorMetadata fileAuthorMetadata = new FileAuthorMetadata();
     fileAuthorMetadata.setAuthor("Tom");
     fileAuthorMetadata.setCompany("GroupDocs");
@@ -90,7 +90,7 @@ try (Comparer comparer = new Comparer(sourceFile)) {
     final SaveOptions saveOptions = new SaveOptions();
     saveOptions.setCloneMetadataType(MetadataType.FILEAUTHOR);
     saveOptions.setFileAuthorMetadata(fileAuthorMetadata);
-    final Path resultPath = comparer.compare(outputFile, saveOptions);
+    final Path resultPath = comparer.compare("result.docx", saveOptions);
 }
 ```
 {{< /tab >}}

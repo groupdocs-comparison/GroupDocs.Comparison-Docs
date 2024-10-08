@@ -74,9 +74,9 @@ The following code snippet shows how to compare documents with specific sensitiv
 ```csharp
 using (Comparer comparer = new Comparer("source.docx"))
 {
-  comparer.Add("target.docx");
-  CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100 };
-  comparer.Compare("result.docx", options);
+    comparer.Add("target.docx");
+    CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100 };
+    comparer.Compare("result.docx", options);
 }
 ```
 {{< /tab >}}

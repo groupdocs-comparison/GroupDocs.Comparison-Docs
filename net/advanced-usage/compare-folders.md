@@ -40,7 +40,7 @@ structuredData:
 3. Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/add/#add_*) method of the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify a  path to the second folder and the `CompareOptions` object.
 4. Call the [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/compare/#compare) method of the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify a path to save the compare results and the [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object.
 
-The following code snippet shows how to compare the `folder1` and `folder2` folders:
+The following code snippet shows how to compare the `SourceFolder` and `TargetFolder` folders:
 
 {{< tabs "example1">}}
 {{< tab ".NET" >}}
@@ -56,8 +56,8 @@ class YoursProgram
       {
           DirectoryCompare = true,
       };
-      Comparer comparer = new Comparer("C:\\Folder_1", compareOptions);
-      comparer.Add("C:\\Folder_2", compareOptions);
+      Comparer comparer = new Comparer("C:\\SourceFolder", compareOptions);
+      comparer.Add("C:\\TargetFolder", compareOptions);
       comparer.Compare("C:\\Folder_to_save_result\\", compareOptions);
   }
 }

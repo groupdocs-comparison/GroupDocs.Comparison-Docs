@@ -64,9 +64,9 @@ The following code snippet shows how to merge two source code files:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
-    final Path resultPath = comparer.compare(outputPath);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    final Path resultPath = comparer.compare("result.docx");
 
     ChangeInfo[] changes = comparer.getChanges();
     for (int i = 0; i < 10; i++) {

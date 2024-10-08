@@ -51,13 +51,13 @@ The following code snippet shows how activate comparison of the _variable_, _Bbu
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     CompareOptions options = new CompareOptions();
     options.setCompareVariableProperty(true); // to activate the comparison of variable properties
     options.setCompareDocumentProperty(true); // to activate the comparison of built and custom properties
 
-    final Path resultPath = comparer.compare(outputPath, options);
+    final Path resultPath = comparer.compare("result.docx", options);
 }
 ```
 {{< /tab >}}

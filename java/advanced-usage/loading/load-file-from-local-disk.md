@@ -37,9 +37,9 @@ The following code snippet shows how to load files from local disk:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePdfPath)) {
-    comparer.add(targetPdfPath);
-    final Path resultPath = comparer.compare(resultPdfPath);
+try (Comparer comparer = new Comparer("source.pdf")) {
+    comparer.add("target.pdf");
+    final Path resultPath = comparer.compare("result.pdf");
 }
 ```
 {{< /tab >}}

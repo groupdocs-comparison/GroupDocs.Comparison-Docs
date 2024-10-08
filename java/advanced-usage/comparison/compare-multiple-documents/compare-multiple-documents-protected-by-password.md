@@ -47,11 +47,11 @@ The following code snippets shows how to compare several password-protected docu
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile, new LoadOptions("source-password"))) {
-    comparer.add(targetFile1, new LoadOptions("target-password"));
-    comparer.add(targetFile2, new LoadOptions("target-password"));
-    comparer.add(targetFile3, new LoadOptions("target-password"));
-    final Path resultPath = comparer.compare(resultFile);
+try (Comparer comparer = new Comparer("source.docx", new LoadOptions("source-password"))) {
+    comparer.add("target.docx", new LoadOptions("target-password"));
+    comparer.add("target2.docx", new LoadOptions("target-password"));
+    comparer.add("target3.docx", new LoadOptions("target-password"));
+    final Path resultPath = comparer.compare("result.docx");
 }
 ```
 {{< /tab >}}

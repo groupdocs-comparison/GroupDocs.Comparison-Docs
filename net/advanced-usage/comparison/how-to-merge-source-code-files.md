@@ -64,10 +64,10 @@ The following code snippet shows how to merge two source code files:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(sourcePath))
+using (Comparer comparer = new Comparer("source.docx"))
 {
-    comparer.Add(targetPath);
-    comparer.Compare(resultPath);
+    comparer.Add("target.docx");
+    comparer.Compare("result.docx");
 
     ChangeInfo[] changes = comparer.GetChanges();
     for (int i = 0; i < 10; i++)
@@ -80,7 +80,7 @@ using (Comparer comparer = new Comparer(sourcePath))
     	changes[i].ComparisonAction = ComparisonAction.Reject;
     }
 
-    comparer.ApplyChanges(File.Create(resultPath), new ApplyChangeOptions { Changes = changes });
+    comparer.ApplyChanges(File.Create("result.docx"), new ApplyChangeOptions { Changes = changes });
 }
 ```
 {{< /tab >}}

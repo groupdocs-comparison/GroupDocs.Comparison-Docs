@@ -99,7 +99,7 @@ try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionInputStre
 try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionFile)) {
     ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions();
     revisionOptions.setCommonHandler(RevisionAction.Accept);
-	revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
+    revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
 }
 ```
 {{< /tab >}}

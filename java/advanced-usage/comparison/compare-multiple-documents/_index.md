@@ -27,10 +27,10 @@ The following code snippets show how to several documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile1);
-    comparer.add(targetFile2);
-    comparer.add(targetFile3);
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    comparer.add("target2.docx");
+    comparer.add("target3.docx");
     final Path resultPath = comparer.compare(resultInputStream);
 }
 ```

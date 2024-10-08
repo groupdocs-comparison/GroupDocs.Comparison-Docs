@@ -43,7 +43,7 @@ The following code samples show how to get file information:
 {{< tab "Java" >}}
 ```java
 
-try (Comparer comparer = new Comparer(sourceFile)) {
+try (Comparer comparer = new Comparer("source.docx")) {
     IDocumentInfo info = comparer.getSource().getDocumentInfo();
     for (int i = 0; i < info.getPageCount(); i++) {
         System.out.printf("\nFile type: %s\nNumber of pages: %d\nDocument size: %d bytes\nWidth: %d\nHeight: %d%n",
@@ -64,7 +64,7 @@ The result is as follows:
 {{< tab "Java" >}}
 ```java
 
-try (InputStream inputStream = new FileInputStream(sourceFile);
+try (InputStream inputStream = new FileInputStream("source.docx");
     Comparer comparer = new Comparer(inputStream)) {
     IDocumentInfo info = comparer.getSource().getDocumentInfo();
     for (int i = 0; i < info.getPageCount(); i++) {
