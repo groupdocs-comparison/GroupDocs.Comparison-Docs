@@ -43,6 +43,10 @@ The following code snippet shows how to compare password protected documents:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 LoadOptions sourceLoadOptions = new LoadOptions(){ Password = "1234" };
 
 using (Comparer comparer = new Comparer("source.docx", sourceLoadOptions))

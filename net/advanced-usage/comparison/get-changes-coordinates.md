@@ -50,6 +50,12 @@ The following code snippet shows how to compare multiple documents with specifi
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using System;
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Result;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
@@ -57,7 +63,11 @@ using (Comparer comparer = new Comparer("source.docx"))
     comparer.Compare(compareOptions);
     ChangeInfo[] changes = comparer.GetChanges();
     foreach (ChangeInfo change in changes)
-        Console.WriteLine("Change Type: {0}, X: {1}, Y: {2}, Text: {3}", change.Type, change.Box.X, change.Box.Y, change.Text);
+        Console.WriteLine("Change Type: {0}, X: {1}, Y: {2}, Text: {3}", 
+            change.Type, 
+            change.Box.X, 
+            change.Box.Y, 
+            change.Text);
 }
 ```
 {{< /tab >}}

@@ -64,6 +64,12 @@ The following code snippet shows how to merge two source code files:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Result;
+using GroupDocs.Comparison.Options;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");

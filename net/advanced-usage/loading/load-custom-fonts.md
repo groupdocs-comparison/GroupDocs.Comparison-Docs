@@ -44,6 +44,10 @@ The following code snippet shows how to connect custom fonts and compare documen
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 // Instantiate the LoadOptions object and create a list of custom font directories.
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.FontDirectories.Add("./fontPath/");

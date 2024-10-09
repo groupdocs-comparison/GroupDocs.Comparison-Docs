@@ -48,6 +48,10 @@ The following code snippet shows how to disable the display of revisions:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");

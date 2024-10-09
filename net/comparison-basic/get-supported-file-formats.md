@@ -36,6 +36,13 @@ The following code snippet shows how to get list of supported file formats:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using GroupDocs.Comparison.Result;
+// ...
+
 IEnumerable<FileType> supportedFileTypes = FileType
 	.GetSupportedFileTypes()
 	.OrderBy(f => f.Extension);

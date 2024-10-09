@@ -41,6 +41,9 @@ The following code snippet shows how to save comparison result in different form
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+// ...
+
 using (Comparer comparer = new Comparer("source.txt"))
 {
     // Add target document

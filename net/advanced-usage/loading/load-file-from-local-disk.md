@@ -37,6 +37,9 @@ The following code snippet shows how to load files from local disk:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");

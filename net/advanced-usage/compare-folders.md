@@ -50,16 +50,16 @@ using GroupDocs.Comparison;
 using GroupDocs.Comparison.Options;
 class YoursProgram
 {
-  static void Main(string[] args)
-  {
-      CompareOptions compareOptions = new CompareOptions
-      {
-          DirectoryCompare = true,
-      };
-      Comparer comparer = new Comparer("C:\\SourceFolder", compareOptions);
-      comparer.Add("C:\\TargetFolder", compareOptions);
-      comparer.Compare("C:\\Folder_to_save_result\\", compareOptions);
-  }
+    static void Main(string[] args)
+    {
+        CompareOptions compareOptions = new CompareOptions
+        {
+            DirectoryCompare = true,
+        };
+        Comparer comparer = new Comparer("C:\\SourceFolder", compareOptions);
+        comparer.Add("C:\\TargetFolder", compareOptions);
+        comparer.Compare("C:\\Folder_to_save_result\\", compareOptions);
+    }
 }
 ```
 {{< /tab >}}

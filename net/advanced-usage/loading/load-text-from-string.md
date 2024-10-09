@@ -43,10 +43,15 @@ The following code snippet shows how to load values from variables:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer compare = new Comparer("source text", new LoadOptions() { LoadText = true }))
+using System;
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
+using (Comparer comparer = new Comparer("source text", new LoadOptions() { LoadText = true }))
 {
-    compare.Add("target text", new LoadOptions() { LoadText = true });
-    compare.Compare();
+    comparer.Add("target text", new LoadOptions() { LoadText = true });
+    comparer.Compare();
     string result = compare.GetResultString();
     Console.WriteLine("Result string: \n" + comparer.GetResultString());
 }
@@ -63,12 +68,18 @@ The following code snippet shows how to combine the different ways of specifying
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using System;
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using System.IO;
+// ...
+
 using (Stream sourceStream = File.OpenRead("./source.docx"))
 {
-    using (Comparer compare = new Comparer(sourceStream))
+    using (Comparer comparer = new Comparer(sourceStream))
     {
-        compare.Add("target text", new LoadOptions() { LoadText = true });
-        compare.Compare();
+        comparer.Add("target text", new LoadOptions() { LoadText = true });
+        comparer.Compare();
         string result = compare.GetResultString();
         Console.WriteLine(result);
     }

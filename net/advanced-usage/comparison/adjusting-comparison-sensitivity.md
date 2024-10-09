@@ -72,6 +72,10 @@ The following code snippet shows how to compare documents with specific sensitiv
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
@@ -95,11 +99,18 @@ The following code snippet shows how to do it:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
-  comparer.Add("target.docx");
-  CompareOptions options = new CompareOptions() { SensitivityOfComparison = 100, SensitivityOfComparisonForTables = 75 };
-  comparer.Compare("result.docx", options);
+    comparer.Add("target.docx");
+    CompareOptions options = new CompareOptions() 
+    { 
+        SensitivityOfComparison = 100, SensitivityOfComparisonForTables = 75 
+    };
+    comparer.Compare("result.docx", options);
 }
 ```
 {{< /tab >}}

@@ -57,14 +57,24 @@ The following code snippets show how to get revisions from a document, accept / 
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Document_with_revision.docx"))
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using System.Collections.Generic;
+using GroupDocs.Comparison.Words.Revision;
+// ...
+
+using (RevisionHandler revisionHandler = new RevisionHandler(
+    pathRevision + "Document_with_revision.docx"))
 {
     List<RevisionInfo> revisionList = revisionHandler.GetRevisions();
     foreach (RevisionInfo revision in revisionList)
     {
         if (revision.Type == RevisionType.Insertion) revision.Action = RevisionAction.Accept;
     }
-    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { Changes = revisionList });
+    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() 
+    { 
+        Changes = revisionList 
+    });
 }
 ```
 {{< /tab >}}
@@ -75,14 +85,24 @@ using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Doc
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
-using (RevisionHandler revisionHandler = new RevisionHandler(File.OpenRead("Document_with_revision.docx")))
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using System.Collections.Generic;
+using GroupDocs.Comparison.Words.Revision;
+// ...
+
+using (RevisionHandler revisionHandler = new RevisionHandler(
+    File.OpenRead("Document_with_revision.docx")))
 {
     List<RevisionInfo> revisionList = revisionHandler.GetRevisions();
     foreach (RevisionInfo revision in revisionList)
     {
         if (revision.Type == RevisionType.Insertion) revision.Action = RevisionAction.Accept;
     }
-    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { Changes = revisionList });
+    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() 
+    { 
+        Changes = revisionList 
+    });
 }
 ```
 {{< /tab >}}
@@ -93,9 +113,19 @@ using (RevisionHandler revisionHandler = new RevisionHandler(File.OpenRead("Docu
 {{< tabs "example3">}}
 {{< tab "C#" >}}
 ```csharp
-using (RevisionHandler revisionHandler = new RevisionHandler(pathRevision + "Document_with_revision.docx"))
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using System.Collections.Generic;
+using GroupDocs.Comparison.Words.Revision;
+// ...
+
+using (RevisionHandler revisionHandler = new RevisionHandler(
+    pathRevision + "Document_with_revision.docx"))
 {
-    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() { CommonHandler = RevisionAction.Accept });
+    revisionHandler.ApplyRevisionChanges(pathRevision + "result.docx", new ApplyRevisionOptions() 
+    { 
+        CommonHandler = RevisionAction.Accept 
+    });
 }
 ```
 {{< /tab >}}

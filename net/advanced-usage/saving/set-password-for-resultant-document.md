@@ -47,16 +47,20 @@ The following code snippet shows how to compare documents and protect the output
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
     CompareOptions cOptions = new CompareOptions
     {
-     	PasswordSaveOption = PasswordSaveOption.User
+        PasswordSaveOption = PasswordSaveOption.User
     };
     SaveOptions sOptions = new SaveOptions()
     {
-     	Password = "3333"
+        Password = "3333"
     };
     comparer.Compare("result.docx", sOptions, cOptions);
 }

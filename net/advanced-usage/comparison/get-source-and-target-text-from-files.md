@@ -50,6 +50,11 @@ The following code snippets show how to get specified texts from a file.
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using System;
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Result;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
@@ -75,6 +80,12 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using System;
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Result;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
     comparer.Add(File.OpenRead("target.docx"));

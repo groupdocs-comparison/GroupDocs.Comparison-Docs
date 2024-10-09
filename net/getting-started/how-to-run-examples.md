@@ -44,6 +44,9 @@ Please choose one from the following list:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+// ...
+
 string sourceDocumentPath = @"C:\source.docx"; // NOTE: Put here actual path to source document
 string targetDocumentPath = @"C:\target.docx"; // NOTE: Put here actual path to source document
 string outputPath = @"C:\result.docx"; // NOTE: Put here actual path to source document

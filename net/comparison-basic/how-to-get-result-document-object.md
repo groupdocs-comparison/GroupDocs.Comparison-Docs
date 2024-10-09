@@ -47,10 +47,14 @@ The following code snippets show how to get changes and create new Aspose Word d
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using System;
+using GroupDocs.Comparison;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
       comparer.Add("target.docx");
-      GroupDocs.Comparison.Document resultDocument = comparer.Compare(result);
+      GroupDocs.Comparison.Document resultDocument = comparer.Compare("result.docx");
       foreach (var change in resultDocument.Changes)
       {
           Console.ForegroundColor = ConsoleColor.Green;
@@ -79,7 +83,10 @@ You can use the Comparison [Document](https://reference.groupdocs.com/comparison
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using System;
+using GroupDocs.Comparison;
 using Aspose.Words;
+// ...
 
 using (Comparer comparer = new Comparer("source.docx"))
 {
