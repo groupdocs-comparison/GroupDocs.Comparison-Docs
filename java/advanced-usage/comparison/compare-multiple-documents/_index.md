@@ -27,11 +27,15 @@ The following code snippets show how to several documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import java.nio.file.Path;
+// ...
+
 try (Comparer comparer = new Comparer("source.docx")) {
     comparer.add("target.docx");
     comparer.add("target2.docx");
     comparer.add("target3.docx");
-    final Path resultPath = comparer.compare(resultInputStream);
+    final Path resultPath = comparer.compare("result.docx");
 }
 ```
 {{< /tab >}}
@@ -46,6 +50,12 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream1);
     comparer.add(targetInputStream2);

@@ -43,6 +43,10 @@ The following code snippet shows how to compare password protected documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.load.LoadOptions;
+// ...
+
 try (Comparer comparer = new Comparer("source.xlsx", new LoadOptions("password"))) {
     comparer.add("target.xlsx", new LoadOptions("password"));
     comparer.compare("result.xlsx");

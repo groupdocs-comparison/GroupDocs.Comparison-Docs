@@ -43,6 +43,10 @@ The following code snippet shows how to load values from variables:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.load.LoadOptions;
+// ...
+
 try (Comparer comparer = new Comparer("source text", new LoadOptions(true))) {
     comparer.add("target text", new LoadOptions(true));
     comparer.compare();
@@ -61,6 +65,12 @@ The following code snippet shows how to combine the different ways of specifying
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.load.LoadOptions;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add("target text", new LoadOptions(true));
     comparer.compare();

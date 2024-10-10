@@ -42,16 +42,20 @@ The following code snippet shows how to change author of changes:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-    try (Comparer comparer = new Comparer("source.docx")) {
-        comparer.add("target.docx");
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+// ...
 
-        CompareOptions compareOptions = new CompareOptions();
-        compareOptions.setShowRevisions(true);
-        compareOptions.setWordTrackChanges(true);
-        compareOptions.setRevisionAuthorName("New author");
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
 
-        comparer.compare(resultPath, compareOptions);
-    }
+    CompareOptions compareOptions = new CompareOptions();
+    compareOptions.setShowRevisions(true);
+    compareOptions.setWordTrackChanges(true);
+    compareOptions.setRevisionAuthorName("New author");
+
+    comparer.compare(resultPath, compareOptions);
+}
 ```
 {{< /tab >}}
 {{< /tabs >}}

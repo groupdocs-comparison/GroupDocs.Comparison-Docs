@@ -64,6 +64,13 @@ The following code snippet shows how to merge two source code files:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.ApplyChangeOptions;
+import com.groupdocs.comparison.result.ChangeInfo;
+import com.groupdocs.comparison.result.ComparisonAction;
+import java.nio.file.Path;
+// ...
+
 try (Comparer comparer = new Comparer("source.docx")) {
     comparer.add("target.docx");
     final Path resultPath = comparer.compare("result.docx");

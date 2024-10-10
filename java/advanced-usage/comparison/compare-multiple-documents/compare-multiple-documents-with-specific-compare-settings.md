@@ -48,6 +48,13 @@ The following code snippets show how to compare multiple documents with the app
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+import com.groupdocs.comparison.options.style.StyleSettings;
+import java.awt.*;
+import java.nio.file.Path;
+// ...
+
 try (Comparer comparer = new Comparer("source.docx")) {
     comparer.add("target.docx");
     comparer.add("target2.docx");
@@ -74,6 +81,15 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+import com.groupdocs.comparison.options.style.StyleSettings;
+import java.awt.*;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream1);
     comparer.add(targetInputStream2);

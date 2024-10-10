@@ -46,6 +46,10 @@ The following code snippets show how to get list of all changes:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.result.ChangeInfo;
+// ...
+
 try (Comparer comparer = new Comparer("source.docx")) {
     comparer.add("target.docx");
     comparer.compare();
@@ -70,17 +74,23 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.result.ChangeInfo;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
+
 try (final FileInputStream sourceInputStream = new FileInputStream("source.docx");
-     final Comparer comparer = new Comparer(sourceInputStream);
-     final FileInputStream targetInputStream = new FileInputStream("target.docx")) {
+    final Comparer comparer = new Comparer(sourceInputStream);
+    final FileInputStream targetInputStream = new FileInputStream("target.docx")) {
     comparer.add(targetInputStream);
     comparer.compare();
     ChangeInfo[] changes = comparer.getChanges();
     for (ChangeInfo change : changes) {
         System.out.println("Change Type: " + change.getType() +
-                           ", Page: " + change.getPageInfo().getPageNumber() +
-                           ", Change ID: " + change.getId() +
-                           ", Text: " + change.getText());
+                            ", Page: " + change.getPageInfo().getPageNumber() +
+                            ", Change ID: " + change.getId() +
+                            ", Text: " + change.getText());
     }
 }
 ```

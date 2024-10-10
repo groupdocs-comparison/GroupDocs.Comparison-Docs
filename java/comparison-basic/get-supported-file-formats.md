@@ -36,6 +36,9 @@ The following code snippet shows how to get list of supported file formats:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.result.FileType;
+// ...
+
 Iterable<FileType> fileTypes = FileType.getSupportedFileTypes();
 for (FileType fileType : fileTypes) {
     System.out.println(fileType);

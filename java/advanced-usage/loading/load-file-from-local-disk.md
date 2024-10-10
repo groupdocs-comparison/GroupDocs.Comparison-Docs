@@ -37,6 +37,10 @@ The following code snippet shows how to load files from local disk:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import java.nio.file.Path;
+// ...
+
 try (Comparer comparer = new Comparer("source.pdf")) {
     comparer.add("target.pdf");
     final Path resultPath = comparer.compare("result.pdf");

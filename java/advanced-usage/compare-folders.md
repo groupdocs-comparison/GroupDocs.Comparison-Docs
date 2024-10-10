@@ -45,6 +45,10 @@ The following code snippet shows how to compare the `SourceFolder` and `TargetFo
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+
+// ...
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
 CompareOptions compareOptions = new CompareOptions();
 compareOptions.setDirectoryCompare(true);
 try (Comparer comparer = new Comparer("C:\\SourceFolder\\", compareOptions)) {

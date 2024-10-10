@@ -50,6 +50,12 @@ The following code snippets show how to set output document metadata:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.enums.MetadataType;
+import com.groupdocs.comparison.options.save.SaveOptions;
+import java.nio.file.Path;
+// ...
+
 try (Comparer comparer = new Comparer("source.docx")) {
     comparer.add("target.docx");
     final SaveOptions saveOptions = new SaveOptions();
@@ -65,6 +71,12 @@ try (Comparer comparer = new Comparer("source.docx")) {
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.enums.MetadataType;
+import com.groupdocs.comparison.options.save.SaveOptions;
+import java.nio.file.Path;
+// ...
+
 try (Comparer comparer = new Comparer("source.docx")) {
     comparer.add("target.docx");
     final SaveOptions saveOptions = new SaveOptions();
@@ -80,6 +92,12 @@ try (Comparer comparer = new Comparer("source.docx")) {
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.enums.MetadataType;
+import com.groupdocs.comparison.options.save.SaveOptions;
+import java.nio.file.Path;
+import com.groupdocs.comparison.words.revision.*;
+// ...
 
 try (Comparer comparer = new Comparer("source.docx")) {
     comparer.add("target.docx");

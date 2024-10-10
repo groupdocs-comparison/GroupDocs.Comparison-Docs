@@ -44,6 +44,11 @@ The following code snippet shows how to connect custom fonts and compare documen
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.load.LoadOptions;
+import java.nio.file.Path;
+// ...
+
 // Instantiate the LoadOptions object and create a list of custom font directories.
 LoadOptions loadOptions = new LoadOptions();
 loadOptions.getFontDirectories().add("./fontPath/");
