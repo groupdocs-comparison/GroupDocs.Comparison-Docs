@@ -50,6 +50,10 @@ The following code snippets show how to set output document metadata:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
@@ -64,6 +68,10 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
@@ -78,12 +86,16 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< tabs "example3">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
     SaveOptions saveOptions = new SaveOptions()
     {
-    	CloneMetadataType = MetadataType.FileAuthor,
+        CloneMetadataType = MetadataType.FileAuthor,
         FileAuthorMetadata = new FileAuthorMetadata
         {
             Author = "Tom",

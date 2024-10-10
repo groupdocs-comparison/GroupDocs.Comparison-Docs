@@ -46,11 +46,15 @@ The following code snippet shows how to demonstrate how to compare bookmarks:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(sourcePath))
-{
-    comparer.Add(targetPath);
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
 
-    comparer.Compare(resultPath, new CompareOptions {
+using (Comparer comparer = new Comparer("source.docx"))
+{
+    comparer.Add("target.docx");
+
+    comparer.Compare("result.docx", new CompareOptions {
         CompareBookmarks = true
     });
 }

@@ -51,14 +51,18 @@ The following code snippet shows how activate comparison of the Variable, Built 
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(sourcePath))
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
+using (Comparer comparer = new Comparer("source.docx"))
 {
-    comparer.Add(targetPath);
+    comparer.Add("target.docx");
     CompareOptions options = new CompareOptions();
     options.CompareVariableProperty = true; // to activate the comparison of variable properties
     options.CompareDocumentProperty = true; // to activate the comparison of built and custom properties
 
-    comparer.Compare(resultPath, options);
+    comparer.Compare("result.docx", options);
 }
 ```
 {{< /tab >}}

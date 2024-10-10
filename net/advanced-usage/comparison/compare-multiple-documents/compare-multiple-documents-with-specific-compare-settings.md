@@ -48,16 +48,20 @@ The following code snippets show how to compare multiple documents with the app
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer("source.docx")
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
+using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target1.docx");
+    comparer.Add("target1.docx");
     comparer.Add("target2.docx");
     comparer.Add("target3.docx");
-	CompareOptions compareOptions = new CompareOptions()
+    CompareOptions compareOptions = new CompareOptions()
     {
-    	InsertedItemStyle = new StyleSettings()
+        InsertedItemStyle = new StyleSettings()
         {
-        	FontColor = System.Drawing.Color.Yellow
+            FontColor = System.Drawing.Color.Yellow
         }
     };
     comparer.Compare("result.docx", compareOptions);
@@ -75,16 +79,21 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
-using (Comparer comparer = new Comparer(File.OpenRead("source.docx"))
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using System.IO;
+// ...
+
+using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead("target1.docx"));
+    comparer.Add(File.OpenRead("target1.docx"));
     comparer.Add(File.OpenRead("target2.docx"));
     comparer.Add(File.OpenRead("target3.docx"));
     CompareOptions compareOptions = new CompareOptions()
     {
-    	InsertedItemStyle = new StyleSettings()
+        InsertedItemStyle = new StyleSettings()
         {
-        	FontColor = System.Drawing.Color.Yellow
+            FontColor = System.Drawing.Color.Yellow
         }
     };
     comparer.Compare(File.Create("result.docx"), compareOptions);

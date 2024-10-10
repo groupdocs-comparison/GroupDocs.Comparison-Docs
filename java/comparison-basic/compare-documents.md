@@ -58,9 +58,13 @@ The following code snippets show how to compare two documents:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePdfPath)) {
-    comparer.add(targetPdfPath);
-    final Path resultPath = comparer.compare(resultPdfPath);
+import com.groupdocs.comparison.Comparer;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.pdf")) {
+    comparer.add("target.pdf");
+    final Path resultPath = comparer.compare("result.pdf");
 }
 ```
 {{< /tab >}}
@@ -75,6 +79,14 @@ The output file is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream);
     final Path resultPath = comparer.compare(resultOutputStream);

@@ -78,6 +78,9 @@ The following code snippet shows how to set a license from file:
 {{< tab "C#" >}}
 
 ```csharp
+using GroupDocs.Comparison;
+// ...
+
 string licensePath = "path to the .lic file";
 License license = new License();
 license.SetLicense(licensePath);
@@ -95,6 +98,10 @@ The following code snippet shows how to set a license from a stream:
 {{< tab "C#" >}}
 
 ```csharp
+using GroupDocs.Comparison;
+using System.IO;
+// ...
+
 string licensePath = "path to the .lic file";
 using (FileStream fileStream = File.OpenRead(licensePath))
 {
@@ -117,6 +124,10 @@ The following code snippet shows how to use `Metered` licensing:
 {{< tab "C#" >}}
 
 ```csharp
+using System;
+using GroupDocs.Comparison;
+// ...
+
 string publicKey = ""; // Your public license key
 string privateKey = ""; // Your private license key
 
@@ -124,11 +135,11 @@ Metered metered = new Metered();
 metered.SetMeteredKey(publicKey, privateKey);
 
 // Get amount (MB) consumed
-decimal amountConsumed = GroupDocs.Viewer.Metered.GetConsumptionQuantity();
+decimal amountConsumed = GroupDocs.Comparison.Metered.GetConsumptionQuantity();
 Console.WriteLine("Amount (MB) consumed: " + amountConsumed);
 
 // Get count of credits consumed
-decimal creditsConsumed = GroupDocs.Viewer.Metered.GetConsumptionCredit();
+decimal creditsConsumed = GroupDocs.Comparison.Metered.GetConsumptionCredit();
 Console.WriteLine("Credits consumed: " + creditsConsumed);
 ```
 

@@ -40,14 +40,18 @@ The following code snippet shows how to load file from stream:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using System.IO;
+// ...
+
 using (Stream sourceStream = File.OpenRead("source.docx"))
 using (Stream targetStream = File.OpenRead("target.docx"))
 {
-	using (Comparer comparer = new Comparer(sourceStream))
-	{
+    using (Comparer comparer = new Comparer(sourceStream))
+    {
         comparer.Add(targetStream);
-    	comparer.Compare(File.Create("result.docx"));
-	}
+        comparer.Compare(File.Create("result.docx"));
+    }
 }
 ```
 {{< /tab >}}

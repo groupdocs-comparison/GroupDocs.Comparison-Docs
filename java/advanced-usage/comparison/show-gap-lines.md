@@ -50,8 +50,12 @@ The following code snippet shows how get the desired result
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
 
     CompareOptions options = new CompareOptions();
     options.setShowInsertedContent(false);

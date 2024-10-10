@@ -46,40 +46,44 @@ The following code snippets show how to compare documents with specific options:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
-	CompareOptions compareOptions = new CompareOptions()
-	{
-    	 InsertedItemStyle = new StyleSettings()
-         {
-     	    HighlightColor = System.Drawing.Color.Red,
+    comparer.Add("target.docx");
+    CompareOptions compareOptions = new CompareOptions()
+    {
+        InsertedItemStyle = new StyleSettings()
+        {
+            HighlightColor = System.Drawing.Color.Red,
             FontColor = System.Drawing.Color.Green,
             IsUnderline = true,
-	    IsBold = true,
-	    IsStrikethrough = true,
-	    IsItalic = true
-         },
-	 DeletedItemStyle = new StyleSettings()
-         {
+            IsBold = true,
+            IsStrikethrough = true,
+            IsItalic = true
+        },
+        DeletedItemStyle = new StyleSettings()
+        {
             HighlightColor = System.Drawing.Color.Azure,
             FontColor = System.Drawing.Color.Brown,
             IsUnderline = true,
-	    IsBold = true,
-	    IsStrikethrough = true,
-	    IsItalic = true
-         },
-	 ChangedItemStyle = new StyleSettings()
-         {
+            IsBold = true,
+            IsStrikethrough = true,
+            IsItalic = true
+        },
+        ChangedItemStyle = new StyleSettings()
+        {
             HighlightColor = System.Drawing.Color.Crimson,
             FontColor = System.Drawing.Color.Firebrick,
             IsUnderline = true,
-	    IsBold = true,
-	    IsStrikethrough = true,
-	    IsItalic = true
-         }
-	};
-        comparer.Compare("result.docx", compareOptions);
+            IsBold = true,
+            IsStrikethrough = true,
+            IsItalic = true
+        }
+    };
+    comparer.Compare("result.docx", compareOptions);
 }
 ```
 {{< /tab >}}
@@ -94,40 +98,45 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead("target.docx"));
-	CompareOptions compareOptions = new CompareOptions()
-	{
-    	 InsertedItemStyle = new StyleSettings()
-         {
+    comparer.Add(File.OpenRead("target.docx"));
+    CompareOptions compareOptions = new CompareOptions()
+    {
+        InsertedItemStyle = new StyleSettings()
+        {
             HighlightColor = System.Drawing.Color.Red,
             FontColor = System.Drawing.Color.Green,
             IsUnderline = true,
-	    IsBold = true,
-	    IsStrikethrough = true,
-	    IsItalic = true
-         },
-	 DeletedItemStyle = new StyleSettings()
-         {
+            IsBold = true,
+            IsStrikethrough = true,
+            IsItalic = true
+        },
+        DeletedItemStyle = new StyleSettings()
+        {
             HighlightColor = System.Drawing.Color.Azure,
             FontColor = System.Drawing.Color.Brown,
             IsUnderline = true,
-	    IsBold = true,
-	    IsStrikethrough = true,
-	    IsItalic = true
-         },
-		ChangedItemStyle = new StyleSettings()
-         {
+            IsBold = true,
+            IsStrikethrough = true,
+            IsItalic = true
+        },
+        ChangedItemStyle = new StyleSettings()
+        {
             HighlightColor = System.Drawing.Color.Crimson,
             FontColor = System.Drawing.Color.Firebrick,
             IsUnderline = true,
-	    IsBold = true,
-	    IsStrikethrough = true,
-	    IsItalic = true
-         }
-	};
-        comparer.Compare(File.Create("result.docx"), compareOptions);
+            IsBold = true,
+            IsStrikethrough = true,
+            IsItalic = true
+        }
+    };
+    comparer.Compare(File.Create("result.docx"), compareOptions);
 }
 ```
 {{< /tab >}}

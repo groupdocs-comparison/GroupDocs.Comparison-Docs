@@ -78,6 +78,9 @@ The following code snippet shows how to set a license from file:
 {{< tab "Java" >}}
 
 ```java
+import com.groupdocs.comparison.license.License;
+// ...
+
 License lic = new License();
 lic.setLicense(licensePath);
 ```
@@ -94,6 +97,10 @@ The following code snippet shows how to set a license from a stream:
 {{< tab "Java" >}}
 
 ```java
+import com.groupdocs.comparison.license.License;
+import java.io.FileInputStream;
+// ...
+
 License lic = new License();
 lic.setLicense(licenseInputStream);
 ```
@@ -112,6 +119,9 @@ The following code snippet shows how to use `Metered` licensing:
 {{< tab "Java" >}}
 
 ```java
+import com.groupdocs.comparison.license.Metered;
+// ...
+
 String publicKey = ""; // Your public license key
 String privateKey = ""; // Your private license key
 

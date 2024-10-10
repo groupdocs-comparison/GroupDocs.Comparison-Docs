@@ -42,12 +42,24 @@ The following code samples show how to get file information:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.interfaces.IDocumentInfo;
+// ...
 
-try (Comparer comparer = new Comparer(sourceFile)) {
+try (Comparer comparer = new Comparer("source.docx")) {
     IDocumentInfo info = comparer.getSource().getDocumentInfo();
     for (int i = 0; i < info.getPageCount(); i++) {
-        System.out.printf("\nFile type: %s\nNumber of pages: %d\nDocument size: %d bytes\nWidth: %d\nHeight: %d%n",
-            info.getFileType().getFileFormat(), info.getPageCount(), info.getSize(), info.getPagesInfo().get(i).getWidth(), info.getPagesInfo().get(i).getHeight());
+        System.out.printf("\n" +
+                        "File type: %s\n" +
+                        "Number of pages: %d\n" +
+                        "Document size: %d bytes\n" +
+                        "Width: %d\n" +
+                        "Height: %d%n",
+                info.getFileType().getFileFormat(), 
+                info.getPageCount(), 
+                info.getSize(), 
+                info.getPagesInfo().get(i).getWidth(), 
+                info.getPagesInfo().get(i).getHeight());
     }
 }
 ```
@@ -63,13 +75,27 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.interfaces.IDocumentInfo;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
 
-try (InputStream inputStream = new FileInputStream(sourceFile);
+try (InputStream inputStream = new FileInputStream("source.docx");
     Comparer comparer = new Comparer(inputStream)) {
     IDocumentInfo info = comparer.getSource().getDocumentInfo();
     for (int i = 0; i < info.getPageCount(); i++) {
-        System.out.printf("\nFile type: %s\nNumber of pages: %d\nDocument size: %d bytes\nWidth: %d\nHeight: %d%n", 
-            info.getFileType().getFileFormat(), info.getPageCount(), info.getSize(), info.getPagesInfo().get(i).getWidth(), info.getPagesInfo().get(i).getHeight());
+        System.out.printf("\n" +
+                        "File type: %s\n" +
+                        "Number of pages: %d\n" +
+                        "Document size: %d bytes\n" +
+                        "Width: %d\n" +
+                        "Height: %d%n",
+                info.getFileType().getFileFormat(), 
+                info.getPageCount(), 
+                info.getSize(), 
+                info.getPagesInfo().get(i).getWidth(), 
+                info.getPagesInfo().get(i).getHeight());
     }
 }
 ```

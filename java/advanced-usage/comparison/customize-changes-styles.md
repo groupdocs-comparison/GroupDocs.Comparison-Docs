@@ -46,8 +46,15 @@ The following code snippets show how to compare documents with specific options:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+import com.groupdocs.comparison.options.style.StyleSettings;
+import java.awt.*;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     
     CompareOptions compareOptions = new CompareOptions();
 
@@ -78,7 +85,7 @@ try (Comparer comparer = new Comparer(sourceFile)) {
     changedStyleSettings.setItalic(true);
     compareOptions.setChangedItemStyle(changedStyleSettings);
 
-    final Path resultPath = comparer.compare(resultFile, compareOptions);
+    final Path resultPath = comparer.compare("result.docx", compareOptions);
 }
 ```
 {{< /tab >}}
@@ -93,6 +100,15 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+import com.groupdocs.comparison.options.style.StyleSettings;
+import java.awt.*;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream);
     

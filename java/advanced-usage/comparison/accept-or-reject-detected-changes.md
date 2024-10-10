@@ -57,12 +57,20 @@ The following code snippets show how to accept/reject changes:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.ApplyChangeOptions;
+import com.groupdocs.comparison.options.save.SaveOptions;
+import com.groupdocs.comparison.result.ChangeInfo;
+import com.groupdocs.comparison.result.ComparisonAction;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     final Path resultPath = comparer.compare();
     ChangeInfo[] changes = comparer.getChanges();
     changes[0].setComparisonAction(ComparisonAction.REJECT);
-    comparer.applyChanges(resultFile, new SaveOptions(), new ApplyChangeOptions(changes));
+    comparer.applyChanges("result.docx", new SaveOptions(), new ApplyChangeOptions(changes));
 }
 ```
 {{< /tab >}}
@@ -81,6 +89,19 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.ApplyChangeOptions;
+import com.groupdocs.comparison.options.CompareOptions;
+import com.groupdocs.comparison.options.save.SaveOptions;
+import com.groupdocs.comparison.result.ChangeInfo;
+import com.groupdocs.comparison.result.ComparisonAction;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream);
     final Path resultPath = comparer.compare(new SaveOptions(), new CompareOptions());
@@ -97,8 +118,15 @@ try (Comparer comparer = new Comparer(sourceInputStream)) {
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-	comparer.add(targetFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.ApplyChangeOptions;
+import com.groupdocs.comparison.result.ChangeInfo;
+import com.groupdocs.comparison.result.ComparisonAction;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     final Path resultPath = comparer.compare();
     ChangeInfo[] changes = comparer.getChanges();
     changes[0].setComparisonAction(ComparisonAction.REJECT);

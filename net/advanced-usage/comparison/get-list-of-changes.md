@@ -46,13 +46,22 @@ The following code snippets show how to get list of all changes:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
+    comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
     foreach (ChangeInfo change in changes)
-    Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", change.Type, change.PageInfo.PageNumber, change.Id, change.Text);
+        Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", 
+            change.Type, 
+            change.PageInfo.PageNumber, 
+            change.Id, 
+            change.Text
+        );
 }
 ```
 {{< /tab >}}
@@ -67,13 +76,23 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead("target.docx"));
+    comparer.Add(File.OpenRead("target.docx"));
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
     foreach (ChangeInfo change in changes)
-        Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", change.Type, change.PageInfo.PageNumber, change.Id, change.Text);
+        Console.WriteLine("Change Type: {0}, Page: {1}, Change ID: {2}, Text: {3}", 
+            change.Type, 
+            change.PageInfo.PageNumber, 
+            change.Id, 
+            change.Text
+        );
 }
 ```
 {{< /tab >}}

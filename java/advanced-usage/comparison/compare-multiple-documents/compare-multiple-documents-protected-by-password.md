@@ -47,11 +47,17 @@ The following code snippets shows how to compare several password-protected docu
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile, new LoadOptions("source-password"))) {
-    comparer.add(targetFile1, new LoadOptions("target-password"));
-    comparer.add(targetFile2, new LoadOptions("target-password"));
-    comparer.add(targetFile3, new LoadOptions("target-password"));
-    final Path resultPath = comparer.compare(resultFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.words.revision.*;
+import java.awt.*;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx", new LoadOptions("source-password"))) {
+    comparer.add("target.docx", new LoadOptions("target-password"));
+    comparer.add("target2.docx", new LoadOptions("target-password"));
+    comparer.add("target3.docx", new LoadOptions("target-password"));
+    final Path resultPath = comparer.compare("result.docx");
 }
 ```
 {{< /tab >}}
@@ -62,6 +68,14 @@ try (Comparer comparer = new Comparer(sourceFile, new LoadOptions("source-passwo
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.words.revision.*;
+import java.awt.*;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream, new LoadOptions("source-password"))) {
     comparer.add(targetInputStream1, new LoadOptions("target-password"));
     comparer.add(targetInputStream2, new LoadOptions("target-password"));

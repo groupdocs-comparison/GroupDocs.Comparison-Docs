@@ -40,16 +40,20 @@ structuredData:
 3. Call the [add](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-com.groupdocs.comparison.options.CompareOptions-) method of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify a  path to the second folder and the `CompareOptions` object.
 4. Call the [compare](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-com.groupdocs.comparison.options.CompareOptions-) method of the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object. Specify a path to save the compare results and the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions) object.
 
-The following code snippet shows how to compare the `folder1` and `folder2` folders:
+The following code snippet shows how to compare the `SourceFolder` and `TargetFolder` folders:
 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+
+// ...
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
 CompareOptions compareOptions = new CompareOptions();
 compareOptions.setDirectoryCompare(true);
-try (Comparer comparer = new Comparer("C:\\folder1\\", compareOptions)) {
-    comparer.add("C:\\folder2\\", compareOptions);
-    comparer.compare("C:\\res.html", compareOptions);
+try (Comparer comparer = new Comparer("C:\\SourceFolder\\", compareOptions)) {
+    comparer.add("C:\\TargetFolder\\", compareOptions);
+    comparer.compare("C:\\result.html", compareOptions);
 }
 ```
 {{< /tab >}}

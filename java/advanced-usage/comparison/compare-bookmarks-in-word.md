@@ -46,12 +46,17 @@ The following code snippet shows how to demonstrate how to compare bookmarks:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
 
     CompareOptions compareOptions = new CompareOptions();
     compareOptions.setCompareBookmarks(true);
-    final Path resultPath = comparer.compare(outputPath, compareOptions);
+    final Path resultPath = comparer.compare("result.docx", compareOptions);
 }
 ```
 {{< /tab >}}

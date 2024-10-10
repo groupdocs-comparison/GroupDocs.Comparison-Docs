@@ -49,12 +49,18 @@ The following code snippet shows how to compare multiple documents with specifi
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+import com.groupdocs.comparison.result.ChangeInfo;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
 
     CompareOptions compareOptions = new CompareOptions();
     compareOptions.setCalculateCoordinates(true);
-    final Path resultPath = comparer.compare(resultFile, compareOptions);
+    final Path resultPath = comparer.compare("result.docx", compareOptions);
 
     ChangeInfo[] changes = comparer.getChanges();
     for (ChangeInfo change : changes) {

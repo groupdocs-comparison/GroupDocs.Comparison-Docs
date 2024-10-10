@@ -58,10 +58,13 @@ The following code snippets show how to compare two documents:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
-	comparer.Add("target.docx");
-	comparer.Compare("result.docx");
+    comparer.Add("target.docx");
+    comparer.Compare("result.docx");
 }
 ```
 {{< /tab >}}
@@ -76,10 +79,14 @@ The output file is as follows:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
-	comparer.Add(File.OpenRead("target.docx"));
-	comparer.Compare(File.Create("result.docx"));
+    comparer.Add(File.OpenRead("target.docx"));
+    comparer.Compare(File.Create("result.docx"));
 }
 ```
 {{< /tab >}}

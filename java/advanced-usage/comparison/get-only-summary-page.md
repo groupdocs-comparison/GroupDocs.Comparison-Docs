@@ -48,11 +48,16 @@ The following code snippet shows how to get only summary page.
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-	comparer.add(targetPath);
-	CompareOptions options = new CompareOptions();
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    CompareOptions options = new CompareOptions();
     options.setShowOnlySummaryPage(true);
-    final Path resultPath = comparer.compare(outputPath, options);
+    final Path resultPath = comparer.compare("result.docx", options);
 }
 ```
 {{< /tab >}}

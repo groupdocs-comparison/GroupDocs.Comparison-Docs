@@ -57,11 +57,15 @@ The following code snippets show how to get revisions from a document, accept / 
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.words.revision.*;
+import java.util.List;
+// ...
+
 try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionFile)) {
     List<RevisionInfo> revisionList = revisionHandler.getRevisions();
     for (RevisionInfo revision : revisionList) {
         if (revision.getType() == RevisionType.INSERTION) {
-            revision.setAction(RevisionAction.Accept);
+            revision.setAction(RevisionAction.ACCEPT);
         }
     }
     ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions();
@@ -77,6 +81,14 @@ try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionFile)) {
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.words.revision.*;
+import java.util.List;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+// ...
+
 try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionInputStream)) {
     List<RevisionInfo> revisionList = revisionHandler.getRevisions();
     for (RevisionInfo revision : revisionList) {
@@ -96,10 +108,13 @@ try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionInputStre
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.words.revision.*;
+// ...
+
 try (RevisionHandler revisionHandler = new RevisionHandler(withRevisionFile)) {
     ApplyRevisionOptions revisionOptions = new ApplyRevisionOptions();
     revisionOptions.setCommonHandler(RevisionAction.Accept);
-	revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
+    revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
 }
 ```
 {{< /tab >}}

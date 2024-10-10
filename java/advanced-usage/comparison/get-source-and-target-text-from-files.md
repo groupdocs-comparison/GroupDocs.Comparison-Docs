@@ -50,9 +50,14 @@ The following code snippets show how to get specified texts from a file.
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
-    final Path resultPath = comparer.compare(outputPath);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.result.ChangeInfo;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    final Path resultPath = comparer.compare("result.docx");
     ChangeInfo[] changes = comparer.getChanges();
     for (ChangeInfo change : changes) {
         System.out.println();
@@ -73,9 +78,16 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.result.ChangeInfo;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream);
-    final Path resultPath = comparer.compare(outputPath);
+    final Path resultPath = comparer.compare("result.docx");
     ChangeInfo[] changes = comparer.getChanges();
     for (ChangeInfo change : changes){
         System.out.println();

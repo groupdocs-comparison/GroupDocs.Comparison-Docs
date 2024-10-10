@@ -40,6 +40,14 @@ The following code snippet shows how to load file from stream:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
+import com.groupdocs.comparison.Comparer;
+import java.nio.file.Path;
+import java.io.FileInputStream;
+import java.io.InputStream;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+// ...
+
 try (Comparer comparer = new Comparer(sourceInputStream)) {
     comparer.add(targetInputStream);
     final Path resultPath = comparer.compare(resultOutputStream);

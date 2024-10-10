@@ -47,10 +47,14 @@ Here is a brief comparison of how to compare document with old and new API.
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 Comparer comparer = new Comparer();
 ComparisonSettings settings = new ComparisonSettings()
 {
-	StyleChangeDetection = true
+    StyleChangeDetection = true
 };
 ICompareResult result = comparer.Compare("source.docx", @"target.docx", settings);
 result.SaveDocument("result.docx");
@@ -63,6 +67,10 @@ result.SaveDocument("result.docx");
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");

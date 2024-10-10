@@ -57,13 +57,22 @@ The following code snippets show how to accept/reject changes:
 {{< tabs "example1">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using GroupDocs.Comparison.Result;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
     changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
+    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() 
+    { 
+      Changes = changes 
+    });
 }
 ```
 {{< /tab >}}
@@ -82,13 +91,22 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using GroupDocs.Comparison.Result;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {
     comparer.Add(File.OpenRead("target.docx"));
     comparer.Compare(new SaveOptions(), new CompareOptions());
     ChangeInfo[] changes = comparer.GetChanges(new GetChangeOptions());
     changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() { Changes = changes });
+    comparer.ApplyChanges(File.Create("result.docx"), new SaveOptions(), new ApplyChangeOptions() 
+    { 
+      Changes = changes 
+    });
 }
 ```
 {{< /tab >}}
@@ -99,16 +117,28 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {{< tabs "example3">}}
 {{< tab "C#" >}}
 ```csharp
+using GroupDocs.Comparison;
+using GroupDocs.Comparison.Options;
+using GroupDocs.Comparison.Result;
+using System.IO;
+// ...
+
 using (Comparer comparer = new Comparer("source.docx"))
 {
     comparer.Add("target.docx");
     comparer.Compare();
     ChangeInfo[] changes = comparer.GetChanges();
     changes[0].ComparisonAction = ComparisonAction.Reject;
-    comparer.ApplyChanges("resultWithRejectedChange.docx", new ApplyChangeOptions() { Changes = changes, SaveOriginalState = true });
+    comparer.ApplyChanges("resultWithRejectedChange.docx", new ApplyChangeOptions() 
+    { 
+      Changes = changes, SaveOriginalState = true 
+    });
     changes = comparer.GetChanges();
     changes[0].ComparisonAction = ComparisonAction.Accept;
-    comparer.ApplyChanges("resultWithAcceptedChange.docx", new ApplyChangeOptions() { Changes = changes });
+    comparer.ApplyChanges("resultWithAcceptedChange.docx", new ApplyChangeOptions() 
+    { 
+      Changes = changes 
+    });
 }
 ```
 {{< /tab >}}

@@ -48,8 +48,12 @@ The following code snippet shows how to disable the display of revisions:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourcePath)) {
-    comparer.add(targetPath);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.options.CompareOptions;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     CompareOptions options = new CompareOptions();
     options.setWordTrackChanges(true);
     comparer.compare(resultPath, options);

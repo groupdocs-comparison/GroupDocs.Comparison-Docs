@@ -67,7 +67,15 @@ The following code snippet shows how to generate document previews:
 {{< tabs "example1">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.common.function.CreatePageStreamFunction;
+import com.groupdocs.comparison.options.PreviewOptions;
+import com.groupdocs.comparison.options.enums.PreviewFormats;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
     PreviewOptions previewOptions = new PreviewOptions(new CreatePageStreamFunction() {
         @Override
         public OutputStream invoke(int pageNumber) {
@@ -91,8 +99,16 @@ The result is as follows:
 {{< tabs "example2">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.common.function.CreatePageStreamFunction;
+import com.groupdocs.comparison.options.PreviewOptions;
+import com.groupdocs.comparison.options.enums.PreviewFormats;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
     PreviewOptions previewOptions = new PreviewOptions(new CreatePageStreamFunction() {
         @Override
         public OutputStream invoke(int pageNumber) {
@@ -112,9 +128,19 @@ try (Comparer comparer = new Comparer(sourceFile)) {
 {{< tabs "example3">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
-    final Path resultPath = comparer.compare(outputFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.Document;
+import com.groupdocs.comparison.common.function.CreatePageStreamFunction;
+import com.groupdocs.comparison.options.PreviewOptions;
+import com.groupdocs.comparison.options.enums.PreviewFormats;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    final Path resultPath = comparer.compare("result.docx");
     Document document = new Document(resultPath);
     PreviewOptions previewOptions = new PreviewOptions(new CreatePageStreamFunction() {
         @Override
@@ -135,15 +161,26 @@ try (Comparer comparer = new Comparer(sourceFile)) {
 {{< tabs "example4">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
-    final Path resultPath = comparer.compare(outputFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.Document;
+import com.groupdocs.comparison.common.function.CreatePageStreamFunction;
+import com.groupdocs.comparison.options.PreviewOptions;
+import com.groupdocs.comparison.options.enums.PreviewFormats;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    final Path resultPath = comparer.compare("result.docx");
     Document document = new Document(resultPath);
     
     PreviewOptions previewOptions = new PreviewOptions(new CreatePageStreamFunction() {
         @Override
         public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream(previewDirectory + "result-SetSpecificImagesSize_" + pageNumber + ".png");
+            return new FileOutputStream(previewDirectory + 
+                "result-SetSpecificImagesSize_" + pageNumber + ".png");
         }
     });
     previewOptions.setPreviewFormat(PreviewFormats.PNG);
@@ -163,15 +200,27 @@ try (Comparer comparer = new Comparer(sourceFile)) {
 {{< tabs "example5">}}
 {{< tab "Java" >}}
 ```java
-try (Comparer comparer = new Comparer(sourceFile)) {
-    comparer.add(targetFile);
-    final Path resultPath = comparer.compare(outputFile);
+import com.groupdocs.comparison.Comparer;
+import com.groupdocs.comparison.Document;
+import com.groupdocs.comparison.common.function.CreatePageStreamFunction;
+import com.groupdocs.comparison.common.function.ReleasePageStreamFunction;
+import com.groupdocs.comparison.options.PreviewOptions;
+import com.groupdocs.comparison.options.enums.PreviewFormats;
+import java.io.FileOutputStream;
+import java.io.OutputStream;
+import java.nio.file.Path;
+// ...
+
+try (Comparer comparer = new Comparer("source.docx")) {
+    comparer.add("target.docx");
+    final Path resultPath = comparer.compare("result.docx");
     Document document = new Document(resultPath);
     
     PreviewOptions previewOptions = new PreviewOptions(new CreatePageStreamFunction() {
         @Override
         public OutputStream invoke(int pageNumber) {
-            return new FileOutputStream(previewDirectory + "result-GetPagePreviewsResouresCleaning_" + pageNumber + ".png");
+            return new FileOutputStream(previewDirectory + 
+                "result-GetPagePreviewsResouresCleaning_" + pageNumber + ".png");
         }
     });
     previewOptions.setPreviewFormat(PreviewFormats.PNG);
