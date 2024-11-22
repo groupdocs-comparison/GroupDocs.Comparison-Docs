@@ -19,32 +19,31 @@ GroupDocs.Comparison is a cross-platform library that allows you to compare Micr
 <div class="gdoc-product-docs">
 
 <div class="gdoc-product-doc">
-    <div class="gdoc-product-doc__icon-box">
-    <svg class="gdoc-product-doc__icon"><use xlink:href="/img/groupdocs-stack.svg#net"></use></svg>
-    </div>
-    <a class="gdoc-product-doc__title"  href='/comparison/net/'>GroupDocs.Comparison for .NET</a>
-    <div class="gdoc-product-cols">
-        <div class="gdoc-product-col">
-        <div class="gdoc-product-col__title">
-        <svg class="gdoc-product-col__icon"><use xlink:href="/img/groupdocs-stack.svg#time"></use></svg>
-        <div>Getting Started</div></div>
-        <div class="gdoc-product-col__descr">Start quickly with our getting started documentation</div>
-        <ul class="gdoc-product-col__links">
-        <li> <a href='/comparison/net/features-overview/'>Features Overview</a></li>
-        <li> <a href='/comparison/net/supported-document-formats/'>Supported Document Formats</a></li>
-        <li> <a href='/comparison/net/system-requirements/'>System Requirements</a></li>
-        <li> <a href='/comparison/net/installation/'>Installation</a></li>
-        </ul>
+    <h3>
+        <a class="home-resource-link" rel="nofollow" href='{{< ref "/comparison/net" >}}'> 
+            {{< icon-large "windows" >}} 
+            <br/><br/>
+            GroupDocs.Comparison for .NET
+        </a>
+    </h3>
+    <div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "gdoc_timer" >}} Getting Started</h4>
+            <p>Start quickly with our getting started documentation</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/net/getting-started/features-overview.md" >}}'>Features Overview</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/net/getting-started/supported-document-formats.md" >}}'>Supported Document Formats</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/net/getting-started/system-requirements.md" >}}'>System Requirements</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/net/getting-started/installation.md" >}}'>Installation</a></li>
+            </ul>
         </div>
-        <div class="gdoc-product-col">
-        <div class="gdoc-product-col__title">
-         <svg class="gdoc-product-col__icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg>
-        <div>Developer Guide</div></div>
-        <div class="gdoc-product-col__descr">Articles and guidelines <br> for developers</div>
-        <ul class="gdoc-product-col__links">
-        <li> <a href='/comparison/net/basic-usage'>Basic Usage</a></li>
-        <li> <a href='/comparison/net/advanced-usage'>Advanced Usage</a></li>
-        </ul>
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "book" >}} Developer Guide</h4>
+            <p>Guidelines and articles for basic and advanced development</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='/comparison/net/basic-usage/'>Basic Usage</a></li>
+                <li>{{< icon "file-alt" >}} <a href='/comparison/net/advanced-usage/'>Advanced Usage</a></li>
+            </ul>
         </div>
     </div>
     <a class="gdoc-product-doc__btn"  href='/comparison/net/'>More</a>
@@ -52,35 +51,99 @@ GroupDocs.Comparison is a cross-platform library that allows you to compare Micr
 </div>
 
 <div class="gdoc-product-doc">
-    <div class="gdoc-product-doc__icon-box">
-    <svg class="gdoc-product-doc__icon"><use xlink:href="/img/groupdocs-stack.svg#java"></use></svg>
-    </div>
-    <a class="gdoc-product-doc__title"  href='/comparison/java/'>GroupDocs.Comparison for Java</a>
-    <div class="gdoc-product-cols">
-        <div class="gdoc-product-col">
-        <div class="gdoc-product-col__title ">
-         <svg class="gdoc-product-col__icon"><use xlink:href="/img/groupdocs-stack.svg#time"></use></svg>
-        <div>Getting Started</div></div>
-        <div class="gdoc-product-col__descr">Start quickly with our getting started documentation</div>
-        <ul class="gdoc-product-col__links">
-         <li> <a href='/comparison/java/features-overview/'>Features  Overview</a></li>
-         <li> <a href='/comparison/java/supported-document-formats/'>Supported Document Formats</a></li>
-         <li> <a href='/comparison/java/system-requirements/'>System Requirements</a></li>
-         <li> <a href='/comparison/java/installation/'>Installation</a></li>
-        </ul>
+    <h3>
+        <a class="home-resource-link" rel="nofollow" href='{{< ref "/comparison/java" >}}'> {{< icon-large "java" >}}
+            <br/><br/>
+            GroupDocs.Comparison for Java
+        </a>
+    </h3>
+    <div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "gdoc_timer" >}} Getting Started</h4>
+            <p>Start quickly with our getting started documentation</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/java/getting-started/features-overview.md" >}}'>Features Overview</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/java/getting-started/supported-document-formats.md" >}}'>Supported Document Formats</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/java/getting-started/system-requirements.md" >}}'>System Requirements</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/java/getting-started/installation.md" >}}'>Installation</a></li>
+            </ul>
         </div>
-        <div class="gdoc-product-col">
-        <div class="gdoc-product-col__title">
-         <svg class="gdoc-product-col__icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg>
-        <div>Developer Guide</div></div>
-        <div class="gdoc-product-col__descr">Articles and guidelines <br> for developers</div>
-        <ul class="gdoc-product-col__links">
-        <li> <a href='/comparison/java/basic-usage'>Basic Usage</a></li>
-        <li> <a href='/comparison/java/advanced-usage'>Advanced Usage</a></li>
-        </ul>
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "book" >}} Developer Guide</h4>
+            <p>Guidelines and articles for basic and advanced development</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='/comparison/java/basic-usage/'>Basic Usage</a></li>
+                <li>{{< icon "file-alt" >}} <a href='/comparison/java/advanced-usage/'>Advanced Usage</a></li>
+            </ul>
         </div>
     </div>
     <a class="gdoc-product-doc__btn"  href='/comparison/java/'>More</a>
+
+</div>
+
+</div>
+
+<div class="gdoc-product-docs">
+
+<div class="gdoc-product-doc">
+    <h3>
+        <a class="home-resource-link" rel="nofollow" href='{{< ref "/comparison/nodejs-java" >}}'> {{< icon-large "nodejs" >}}
+            <br/><br/>
+            GroupDocs.Comparison for Node.js via Java
+        </a>
+    </h3>
+    <div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "gdoc_timer" >}} Getting Started</h4>
+            <p>Start quickly with our getting started documentation</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/nodejs-java/getting-started/features-overview.md" >}}'>Features Overview</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/nodejs-java/getting-started/supported-document-formats.md" >}}'>Supported Document Formats</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/nodejs-java/getting-started/system-requirements.md" >}}'>System Requirements</a></li>
+                <li>{{< icon "file-alt" >}} <a href='{{< ref "/comparison/nodejs-java/getting-started/installation.md" >}}'>Installation</a></li>
+            </ul>
+        </div>
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "book" >}} Developer Guide</h4>
+            <p>Guidelines and articles for basic and advanced development</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='/comparison/nodejs-java/basic-usage/'>Basic Usage</a></li>
+                <li>{{< icon "file-alt" >}} <a href='/comparison/nodejs-java/advanced-usage/'>Advanced Usage</a></li>
+            </ul>
+        </div>
+    </div>
+    <a class="gdoc-product-doc__btn"  href='/comparison/nodejs-java/'>More</a>
+
+</div>
+
+<div class="gdoc-product-doc">
+    <h3>
+        <a class="home-resource-link" rel="nofollow" href='/comparison/python-net'> {{< icon-large "python" >}}
+            <br/><br/>
+            GroupDocs.Comparison for Python via .NET
+        </a>
+    </h3>
+    <div class="gdoc-columns gdoc-columns--regular flex flex-gap flex-mobile-column">
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "gdoc_timer" >}} Getting Started</h4>
+            <p>Start quickly with our getting started documentation</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='/comparison/python-net/features-overview/'>Features Overview</a></li>
+                <li>{{< icon "file-alt" >}} <a href='/comparison/python-net/supported-document-formats/'>Supported Document Formats</a></li>
+                <li>{{< icon "file-alt" >}} <a href='/comparison/python-net/system-requirements/'>System Requirements</a></li>
+                <li>{{< icon "file-alt" >}} <a href='/comparison/python-net/installation/'>Installation</a></li>
+            </ul>
+        </div>
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even" style="margin-top: 1rem !important">
+            <h4>{{< icon-large "book" >}} Developer Guide</h4>
+            <p>Guidelines and articles for basic and advanced development</p>
+            <ul style="text-align: left;list-style:none">
+                <li>{{< icon "file-alt" >}} <a href='/comparison/python-net/basic-usage/'>Basic Usage</a></li>
+                <li>{{< icon "file-alt" >}} <a href='/comparison/python-net/advanced-usage/'>Advanced Usage</a></li>
+            </ul>
+        </div>
+    </div>
+    <a class="gdoc-product-doc__btn"  href='/comparison/python-net/'>More</a>
 
 </div>
 
