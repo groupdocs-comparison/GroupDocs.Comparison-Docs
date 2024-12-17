@@ -14,7 +14,7 @@ fullWidth: True
 
 <dt class="flex flex-wrap align-center gdoc-props__meta">
     <a href='https://pypi.org/project/groupdocs-comparison-net/'>
-        <span class="gdoc-props__tag tip">Latest version 24.7</span>
+        <span class="gdoc-props__tag tip">Latest version 24.12</span>
     </a>
 </dt>
 
