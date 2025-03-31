@@ -12,7 +12,7 @@ toc: True
 
 This topic lists file formats supported by [GroupDocs.Comparison](https://products.groupdocs.com/comparison/python-net). You can use the input below to filter supported formats by extension.
 
-{{< table-filter placeholder="Start typing to find file format" >}}
+{{< table-filter placeholder="Start typing to find file format" forumUrl="https://forum.groupdocs.com/c/comparison/12">}}
 
 ## CAD and 3D file formats
 
