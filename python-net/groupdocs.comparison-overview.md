@@ -41,7 +41,7 @@ If you are new to GroupDocs.Comparison, see the following topics first:
 * [System requirements]({{< ref "comparison/python-net/getting-started/system-requirements" >}})
 * [Installation]({{< ref "comparison/python-net/getting-started/installation" >}})
 * [Licensing]({{< ref "comparison/python-net/getting-started/licensing-and-evaluation-limitations.md" >}})
-* [Basic usage]({{< ref "/comparison/python-net/comparison-basic/" >}})
+* [Basic usage]({{< ref "/comparison/python-net/comparison-basic/compare-documents.md" >}})
 
 ## Technical support
 

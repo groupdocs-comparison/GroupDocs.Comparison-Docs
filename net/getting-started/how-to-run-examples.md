@@ -2,7 +2,7 @@
 id: how-to-run-examples
 url: comparison/net/how-to-run-examples
 title: How to Run Examples
-weight: 6
+weight: 7
 description: "In this article you can find how to run examples. We offer multiple solutions on how you can run GroupDocs.Comparison examples, by building your own or using our back-end or front-end examples out-of-the-box."
 keywords: How to run comparison, basic usage, How to run examples
 productName: GroupDocs.Comparison for .NET

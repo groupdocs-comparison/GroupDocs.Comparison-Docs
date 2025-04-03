@@ -2,7 +2,7 @@
 id: licensing-and-evaluation-limitations
 url: comparison/net/licensing-and-evaluation-limitations
 title: Licensing
-weight: 5
+weight: 6
 description: "Follow the instructions on this page to configure the license and find out the restrictions when using GroupDocs.Comparison for .NET without a license (Evaluation Limitations)"
 keywords: Licensing, evaluation limitations, setting metered license, setting license
 productName: GroupDocs.Comparison for .NET

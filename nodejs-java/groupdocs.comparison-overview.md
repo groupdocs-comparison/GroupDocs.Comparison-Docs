@@ -41,7 +41,7 @@ If you are new to GroupDocs.Comparison, see the following topics first:
 * [System requirements]({{< ref "comparison/nodejs-java/getting-started/system-requirements" >}})
 * [Installation]({{< ref "comparison/nodejs-java/getting-started/installation" >}})
 * [Licensing]({{< ref "comparison/nodejs-java/getting-started/licensing-and-evaluation-limitations.md" >}})
-* [Basic usage]({{< ref "/comparison/nodejs-java/comparison-basic/" >}})
+* [Basic usage]({{< ref "/comparison/nodejs-java/comparison-basic/compare-documents.md" >}})
 
 ## Technical support
 
