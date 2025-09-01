@@ -15,12 +15,10 @@ AddLibInfoScript: True
 <img src="/comparison/python-net/images/home.png" alt="groupdocs comparison python logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
 <a href="https://pypi.org/project/groupdocs-comparison-net/">
-	<img src="https://img.shields.io/pypi/v/groupdocs-comparison-net?label=GroupDocs.Comparison%20for%20Python%20PyPI
-	" alt="PyPI package">
+	<img src="https://img.shields.io/pypi/v/groupdocs-comparison-net?label=GroupDocs.Comparison%20for%20Python%20PyPI&cacheSeconds=3600" alt="PyPI package">
 </a>
 <a href="https://pypi.org/project/groupdocs-comparison-net/#files">
-	<img src="https://img.shields.io/pypi/dm/groupdocs-comparison-net?label=pypi%20downloads" alt="PyPI downloads">
-		src="https://img.shields.io/pypi/v/groupdocs-comparison-net?label=Latest%20version&logo=pypi">
+	<img src="https://img.shields.io/pypi/dm/groupdocs-comparison-net?label=GroupDocs.Comparison%20Downloads&cacheSeconds=3600" alt="PyPI downloads">
 </a>
 
 {{< button style="primary" link="https://releases.groupdocs.com/comparison/python-net/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}} 
