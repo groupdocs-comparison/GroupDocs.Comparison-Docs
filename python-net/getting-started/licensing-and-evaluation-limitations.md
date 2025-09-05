@@ -94,3 +94,33 @@ def run():
         with open(license_path, "rb") as stream:
             gc.License().set_license(stream)
 ```
+
+### Set Metered License
+
+A [Metered License](https://reference.groupdocs.com/comparison/python-net/groupdocs.comparison/metered) is also available as an alternative to a traditional license file. It is a usage-based licensing model that may be more suitable for customers who prefer to be billed based on actual API feature usage. For more information, refer to the [Metered Licensing FAQ](https://purchase.groupdocs.com/faqs/licensing/metered).
+
+The following sample demonstrates how to use metered licensing:
+
+```python
+from groupdocs.comparison import Metered
+
+def set_metered_license():
+    # Set your public and private keys
+    public_key = "******" 
+    private_key = "******" 
+
+    # Instantiate Metered and set keys
+    metered = Metered()
+    metered.set_metered_key(public_key, private_key)
+
+    # Get a number of MBs processed 
+    mb_processed = metered.get_consumption_quantity()
+    print("MB processed: ", mb_processed)
+
+    # Get a number of credits used
+    credits_used = metered.get_consumption_credit()
+    print("Credits used: ", credits_used)
+
+if __name__ == "__main__":
+    set_metered_license()
+```

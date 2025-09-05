@@ -32,3 +32,47 @@ All Python packages are hosted at [PYPI](https://pypi.org/project/groupdocs-comp
 ```shell
 pip install groupdocs-comparison-net
 ```
+
+## Download Package from Official Website
+
+To download the GroupDocs.comparison package for your operating system, please visit the official [GroupDocs Releases website](https://releases.groupdocs.com/comparison/python-net/). Currently, four OS-specific packages are available:
+
+- **Windows 64-bit:** Package name ends with `amd64.whl`
+- **Linux 64-bit:** Package name ends with `arm64.whl`
+- **macOS Intel Silicon:** Package name ends with `x86_64.whl`
+
+Choose the appropriate package based on your system's architecture.
+
+### Copy Downloaded File
+
+Copy the downloaded file into your project folder.
+
+### Install Package Using Pip
+
+To install package run the command specific to your your operation system. 
+
+{{< tabs "example2">}}
+{{< tab "Windows (64-bit)" >}}
+```ps
+py -m pip install groupdocs_comparison_net-25.6-py3-none-win_amd64.whl
+```
+{{< /tab >}}
+{{< tab "Linux 64-bit" >}}
+```ps
+py -m pip install groupdocs_comparison_net-25.6-py3-none-macosx_10_14_x86_64.whl
+```
+{{< /tab >}}
+{{< tab "macOS (Intel Silicon)" >}}
+```ps
+python3 -m pip install groupdocs_comparison_net-25.6-py3-none-manylinux1_x86_64.whl
+```
+{{< /tab >}}
+{{< /tabs >}}
+
+Expected output:
+
+```bash
+Processing groupdocs_comparison_net-25.6-py3-none-*.whl
+Installing collected packages: groupdocs-comparison-net
+Successfully installed groupdocs-comparison-net-25.6
+```

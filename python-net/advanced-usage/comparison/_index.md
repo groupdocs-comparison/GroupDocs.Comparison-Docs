@@ -33,5 +33,8 @@ You can customize the following parameters:
 *   `CompareDocumentProperty`<!--](https://reference.groupdocs.com/comparison/python-net/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-)--> specifies whether to compare built and custom properties.
 *   `ShowRevisions`<!--](https://reference.groupdocs.com/comparison/python-net/com.groupdocs.comparison.options/compareoptions/#setShowRevisions-boolean-)--> specifies whether to show other revisions in the output document.
 *   `LeaveGaps`<!--](https://reference.groupdocs.com/comparison/python-net/com.groupdocs.comparison.options/compareoptions/#setLeaveGaps-boolean-)--> specifies whether to show empty lines instead of inserted/deleted components in the final document.
+*   `PasswordSaveOption`<!--](https://reference.groupdocs.com/comparison/python-net/groupdocs.comparison.options/compareoptions/properties/passwordsaveoption)--> specifies the password save option. For details, see [here]({{< ref "comparison/net/advanced-usage/saving/set-password-for-resultant-document.md" >}}).  
+*   `SensitivityOfComparison`<!--](https://reference.groupdocs.com/comparison/python-net/groupdocs.comparison.options/compareoptions/properties/sensitivityofcomparison)--> specifies the comparison sensitivity. For details, see [here]({{< ref "comparison/net/advanced-usage/comparison/adjusting-comparison-sensitivity.md" >}}).  
+
 
 For details, see the following guides:
