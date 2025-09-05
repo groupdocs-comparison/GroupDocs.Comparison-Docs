@@ -2,21 +2,24 @@
 id: home
 url: comparison/python-net
 title: GroupDocs.Comparison for Python via .NET
+linkTitle: GroupDocs.Comparison for Python
 weight: 1
 description: GroupDocs.Compairson for Python developer documentation. Learn how to diff docx, pptx, and pdf files using Python.
-keywords: compare,diff,compare files,diff files,python api,api,xlsx,microsoft word,docx,pptx,pdf,python
+keywords: compare, diff, compare files, diff files, python api, pdf, words, xlsx, microsoft words, docx, pptx, epub
 productName: GroupDocs.Comparison for Python via .NET
 hideChildren: True
 fullWidth: True
+AddLibInfoScript: True
 ---
 
 <img src="/comparison/python-net/images/home.png" alt="groupdocs comparison python logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
 
-<dt class="flex flex-wrap align-center gdoc-props__meta">
-    <a href='https://pypi.org/project/groupdocs-comparison-net/'>
-        <span class="gdoc-props__tag tip">Latest version 24.12</span>
-    </a>
-</dt>
+<a href="https://pypi.org/project/groupdocs-comparison-net/">
+	<img src="https://img.shields.io/pypi/v/groupdocs-comparison-net?label=GroupDocs.Comparison%20for%20Python%20PyPI&cacheSeconds=3600" alt="PyPI package">
+</a>
+<a href="https://pypi.org/project/groupdocs-comparison-net/#files">
+	<img src="https://img.shields.io/pypi/dm/groupdocs-comparison-net?label=GroupDocs.Comparison%20Downloads&cacheSeconds=3600" alt="PyPI downloads">
+</a>
 
 {{< button style="primary" link="https://releases.groupdocs.com/comparison/python-net/release-notes/" >}} <svg class="gdoc-icon gdoc-product-doc__btn-icon"><use xlink:href="/img/groupdocs-stack.svg#document"></use></svg> Release notes {{< /button >}} 
 {{< button style="primary" link="https://pypi.org/project/groupdocs-comparison-net/" >}} {{< icon "gdoc_download" >}} Package repository {{< /button >}}
@@ -63,7 +66,7 @@ fullWidth: True
 </ul>
 <p>USEFUL RESOURCES</p>
 <ul>
-	<!--li><a href="https://reference.groupdocs.com/comparison/python-net">GroupDocs.Comparison for Python via .NET API Reference</a></li-->
+	<li><a href="https://reference.groupdocs.com/comparison/python-net">GroupDocs.Comparison for Python via .NET API Reference</a></li-->
 	<li><a href='https://releases.groupdocs.com/comparison/python-net/release-notes/'>GroupDocs.Comparison for Python via .NET Release Notes</a></li>
 </ul>
 {{< /columns >}}
