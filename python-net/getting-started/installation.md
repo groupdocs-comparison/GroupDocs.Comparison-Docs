@@ -51,23 +51,23 @@ Copy the downloaded file into your project folder.
 
 To install package run the command specific to your your operation system. 
 
-{{< tabs "example2">}}
-{{< tab "Windows (64-bit)" >}}
-```ps
+Windows 64-bit
+
+```bash
 py -m pip install groupdocs_comparison_net-25.6-py3-none-win_amd64.whl
 ```
-{{< /tab >}}
-{{< tab "Linux 64-bit" >}}
-```ps
+
+Linux 64-bit
+
+```bash
 py -m pip install groupdocs_comparison_net-25.6-py3-none-macosx_10_14_x86_64.whl
 ```
-{{< /tab >}}
-{{< tab "macOS (Intel Silicon)" >}}
-```ps
+
+macOS Intel Silicon
+
+```bash
 python3 -m pip install groupdocs_comparison_net-25.6-py3-none-manylinux1_x86_64.whl
 ```
-{{< /tab >}}
-{{< /tabs >}}
 
 Expected output:
 
