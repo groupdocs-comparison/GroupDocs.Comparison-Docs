@@ -48,4 +48,8 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Share a concise overview of differences without exposing full document content.
 
+The result is as follows:
+
+![](/comparison/python-net/images/get-only-summary-page.png)
+
 

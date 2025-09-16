@@ -49,6 +49,10 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Build a custom report UI that lists all differences with pagination info.
 
+The result is as follows:
+
+![](/comparison/python-net/images/get-changes-list.png)
+
 ## Get list of changes from stream
 
 Compare from streams and retrieve the changes programmatically.

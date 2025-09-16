@@ -118,3 +118,12 @@ with RevisionHandler(source_path) as revision_handler:
 
     revision_handler.apply_revision_changes(result_path, options)
 ```
+
+
+## Result of revision processing
+
+Below are the source and output files based on the code presented earlier.
+
+| Source file                                   | Result file                                          |
+| --------------------------------------------- | ---------------------------------------------------- |
+| ![](/comparison/net/images/revision-file.png) | ![](/comparison/python-net/images/result-revision-file.png) |

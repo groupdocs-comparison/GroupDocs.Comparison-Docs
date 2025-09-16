@@ -49,4 +49,8 @@ with gc.Comparer("source.pdf") as comparer:
 
 🔹 Use case: Speed up PDF comparisons and avoid noise from embedded graphics.
 
+The result is as follows:
+
+![](/comparison/python-net/images/disable-image-comparison-in-pdf-documents.png)
+
 

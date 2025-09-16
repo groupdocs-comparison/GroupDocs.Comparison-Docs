@@ -50,4 +50,6 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Attribute changes to a specific reviewer or automated system in audit trails.
 
+The result is as follows:
 
+ ![Change author](/comparison/net/images/set-new-author-of-changes-example.png)

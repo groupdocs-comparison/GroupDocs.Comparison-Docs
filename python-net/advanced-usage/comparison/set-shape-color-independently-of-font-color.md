@@ -62,3 +62,6 @@ with gc.Comparer("source.docx") as comparer:
 🔹 Use case: Emphasize shape modifications (e.g., diagrams) without altering text color coding.
 
 
+The result is as follows:
+
+![](/comparison/net/images/set-shape-color-independently-of-font-color.png)

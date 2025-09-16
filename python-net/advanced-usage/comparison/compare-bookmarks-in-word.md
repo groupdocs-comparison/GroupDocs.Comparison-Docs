@@ -48,4 +48,8 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Validate that critical bookmarked sections (e.g., clauses) remain unchanged.
 
+The result is as follows:
+
+![](/comparison/python-net/images/compared-bookmarks.png)
+
 

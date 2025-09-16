@@ -48,4 +48,10 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Produce a clean deliverable without inline revision markers for end users.
 
+The result is as follows:
+
+|              Disable display Revisions               |
+| :--------------------------------------------------: |
+| ![](/comparison/python-net/images/show-revisions-false.png) |
+
 

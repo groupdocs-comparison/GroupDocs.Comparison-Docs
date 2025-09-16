@@ -49,3 +49,10 @@ with gc.Comparer("source.docx") as comparer:
 🔹 Use case: Provide management with detailed metrics beyond the standard summary counts.
 
 
+The result is as follows:
+
+![](/comparison/python-net/images/how-to-get-extended-information-image.png)
+
+
+
+

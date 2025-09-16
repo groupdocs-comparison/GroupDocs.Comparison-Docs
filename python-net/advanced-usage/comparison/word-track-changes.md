@@ -70,4 +70,17 @@ with gc.Comparer("source-with-revisions.docx") as comparer:
 
 Note: Availability of particular options may depend on the document format and library version.
 
+The result is as follows:
+
+|                     WordTrackChanges true                      |
+| :------------------------------------------------------------: |
+| ![](/comparison/python-net/images/word-track-changes-option-true.png) |
+
+
+
+
+|                     WordTrackChanges false                      |
+| :-------------------------------------------------------------: |
+| ![](/comparison/python-net/images/word-track-changes-option-false.png) |
+
 

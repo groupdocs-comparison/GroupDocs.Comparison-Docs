@@ -51,4 +51,8 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Draw bounding boxes over preview images to visualize change locations.
 
+The result is as follows:
+
+![](/comparison/python-net/images/get-changes-coordinates.png)
+
 

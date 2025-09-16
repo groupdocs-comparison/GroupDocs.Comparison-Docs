@@ -34,8 +34,6 @@ structuredData:
 
 To compare two documents with custom change style settings, follow these steps:
 
-🔹 Use case: Enforce brand-compliant highlighting for insertions, deletions, and edits in legal reviews.
-
 1. Instantiate the `Comparer` object with a source path or stream.
 2. Call `add()` and provide the target path or stream.
 3. Instantiate `CompareOptions` and configure `InsertedItemStyle`, `DeletedItemStyle`, and `ChangedItemStyle`.

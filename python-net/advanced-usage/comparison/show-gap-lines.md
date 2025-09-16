@@ -50,4 +50,14 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Provide redacted-style diffs that keep layout alignment without showing actual changed text.
 
+The result is as follows:
+
+|                        Default result                         |                Result without LeaveGaps property                 |
+| :-----------------------------------------------------------: | :--------------------------------------------------------------: |
+| ![](/comparison/python-net/images/show-gap-lines-default-result.png) | ![](/comparison/python-net/images/show-gap-lines-without-leavegaps.png) |
+
+|                        Default result                         |                Result with LeaveGaps property                 |
+| :-----------------------------------------------------------: | :-----------------------------------------------------------: |
+| ![](/comparison/python-net/images/show-gap-lines-default-result.png) | ![](/comparison/python-net/images/show-gap-lines-with-leavegaps.png) |
+
 

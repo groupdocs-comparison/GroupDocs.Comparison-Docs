@@ -56,6 +56,12 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Remove undesired edits from the final deliverable while keeping approved changes.
 
+The result is as follows:
+
+|                            Accepted changes                             |                             Rejected changes                            |
+| :-----------------------------------------------------------------: | :----------------------------------------------------------------: |
+| ![](/comparison/python-net/images/accepted-changes.png) | ![](/comparison/python-net/images/rejected-changes.png) |
+
 ## Accept or reject changes (streams)
 
 Work entirely with streams and persist the merged result.
