@@ -50,3 +50,6 @@ with gc.Comparer("source.docx") as comparer:
 🔹 Use case: Ensure key metadata values remain consistent across document versions.
 
 
+The result is as follows:
+
+![](/comparison/net/images/properties-summary-page.png)

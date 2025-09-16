@@ -51,6 +51,11 @@ with gc.Comparer("source.docx") as comparer:
 
 🔹 Use case: Extract changed text pairs to power side-by-side diff review tools.
 
+The result is as follows:
+
+![](/comparison/python-net/images/get-source-and-target-text-from-files.png)
+
+
 ## Get source and target text from stream
 
 Work directly with streams and retrieve the same data programmatically.

@@ -64,4 +64,4 @@ with gc.Comparer("source.docx") as comparer:
 
 The result is as follows:
 
-![](/comparison/net/images/set-shape-color-independently-of-font-color.png)
+![](/comparison/python-net/images/set-shape-color-independently-of-font-color.png)
