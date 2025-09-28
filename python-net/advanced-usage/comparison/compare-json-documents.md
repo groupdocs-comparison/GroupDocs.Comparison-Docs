@@ -28,8 +28,6 @@ structuredData:
   showVideo: true
 ---
 
-# Compare JSON documents in Python
-
 [GroupDocs.Comparison for Python via .NET](https://products.groupdocs.com/comparison/python-net) allows developers to easily **compare JSON files** and detect differences in deeply nested objects, arrays, data types, and structures.\
 This is useful for validating APIs, configurations, and large datasets where accuracy is critical.
 

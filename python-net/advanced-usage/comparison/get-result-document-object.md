@@ -28,8 +28,6 @@ structuredData:
   showVideo: true
 ---
 
-# Get comparison result as an object model in Python
-
 [GroupDocs.Comparison for Python via .NET](https://products.groupdocs.com/comparison/python-net) allows you to obtain the **result document object model** after comparing files.
 
 To get the result document object, follow these steps:

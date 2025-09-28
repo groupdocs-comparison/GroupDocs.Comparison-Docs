@@ -32,8 +32,6 @@ structuredData:
         text: Call apply_changes() with ApplyChangeOptions to produce the merged file.
 ---
 
-# Merging Source Code Files in Python
-
 GroupDocs.Comparison allows you to merge source code files by using the `ComparisonAction`property:
 
 - `ComparisonAction.Accept` accepts the found changes and adds them to the file without highlighting

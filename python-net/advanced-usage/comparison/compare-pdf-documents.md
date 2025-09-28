@@ -28,8 +28,6 @@ structuredData:
         text: Call the compare method to generate the result file with highlighted changes.
 ---
 
-# Compare PDF documents in Python
-
 [GroupDocs.Comparison for Python via .NET](https://products.groupdocs.com/comparison/python-net) makes it simple to **compare PDF documents** and identify changes in text, formatting, annotations, and structure.  
 This is particularly useful for reviewing contracts, business agreements, and legal documents where precise difference detection is critical.
 

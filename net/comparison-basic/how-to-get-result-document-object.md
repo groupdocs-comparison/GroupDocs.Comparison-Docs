@@ -28,8 +28,6 @@ structuredData:
         text: Call the Compare method of your object and get the result document object.
 ---
 
----
-
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to get result document object model after comparison.
 
 To get result document object, follow these steps:
