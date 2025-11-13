@@ -2,8 +2,9 @@
 id: installation
 url: comparison/nodejs-java/installation
 title: Install GroupDocs.Comparison for Node.js via Java 
+linkTitle: Installation
 weight: 4
-description: ""
+description: "Install GroupDocs.Comparison for Node.js via Java using npm or an offline package. Includes prerequisites, Java setup, verification, and troubleshooting."
 keywords:
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
@@ -12,23 +13,97 @@ structuredData:
   showOrganization: True
   application:
     name: Documents Comparison Tool
-    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison report
+    description: The product allows comparing PDF, Word, Excel, PowerPoint, AutoCAD, Images, Code, and more. The API also supports accepting/rejecting changes, extracting document information, and generating comparison reports.
     productCode: comparison
     productPlatform: nodejs-java
   howTo:
-    name: How to install Comparison API
-    description: Learn how to install GroupDocs.Comparison into Java or Kotlin project
+    name: How to install GroupDocs.Comparison for Node.js via Java
+    description: Learn how to add GroupDocs.Comparison to a Node.js project and set up Java
     steps:
-      - name: Specify GroupDocs Repository
-        text: Add GroupDocs Maven repository to the project
-      - name: Define Comparison dependency
-        text: Add comparison dependency so that the project will download required libraries
+      - name: Check prerequisites
+        text: Ensure Node.js LTS and a compatible Java JRE/JDK are installed and JAVA_HOME is set
+      - name: Install the npm package
+        text: Add the @groupdocs/groupdocs.comparison package to your project using npm, yarn, or pnpm
+      - name: Verify installation
+        text: Run a short script to ensure the package and Java bridge load successfully
 ---
 
-### Install using NPM
+### Prerequisites
 
-All Java packages are hosted at [NPM](https://www.npmjs.com/package/@groupdocs/groupdocs.comparison). You can easily reference GroupDocs.Comparison for Node.js via Java API directly in your Node.js project by installing it with the following command.
+- Node.js: 20 LTS or later (22 LTS supported)
+- Java: JRE/JDK 8+ (recommended 17 LTS)
+- Build tools if needed by your environment (node-gyp toolchain)
 
-```shell
+See full details on the [System Requirements]({{< ref "comparison/nodejs-java/getting-started/system-requirements" >}}) page.
+
+### Install from npm
+
+All Java-bridged packages are hosted on npm. Install the library into your project using your preferred package manager:
+
+```bash
+# npm
 npm install @groupdocs/groupdocs.comparison
+
+# yarn
+yarn add @groupdocs/groupdocs.comparison
+
+# pnpm
+pnpm add @groupdocs/groupdocs.comparison
 ```
+
+### Set up Java (JAVA_HOME)
+
+Ensure your Java installation is available on PATH and `JAVA_HOME` is set.
+
+Windows (PowerShell):
+
+```powershell
+$env:JAVA_HOME="C:\Program Files\Java\jdk-17"
+$env:Path="$env:JAVA_HOME\bin;$env:Path"
+```
+
+Linux/macOS (Bash):
+
+```bash
+export JAVA_HOME=/usr/lib/jvm/java-17
+export PATH="$JAVA_HOME/bin:$PATH"
+```
+
+See the [System Requirements]({{< ref "comparison/nodejs-java/getting-started/system-requirements" >}}) page for more details.
+
+### Verify installation
+
+Create a small script (e.g., `check.js`) and run it with Node.js:
+
+```javascript
+// check.js
+try {
+  const comparison = require('@groupdocs/groupdocs.comparison');
+  console.log('GroupDocs.Comparison loaded:', typeof comparison === 'object');
+  console.log('Java bridge initialized successfully.');
+} catch (e) {
+  console.error('Failed to load GroupDocs.Comparison:', e);
+  process.exit(1);
+}
+```
+
+```bash
+node check.js
+```
+
+### Download from GroupDocs.Releases (offline)
+
+You can download a package archive from [GroupDocs.Releases](https://releases.groupdocs.com/comparison/nodejs-java/#direct-download) and add it to your app. After downloading the `.tgz` file, install it locally:
+
+```bash
+npm install ./@groupdocs-groupdocs.comparison-<version>.tgz
+```
+
+Alternatively, configure npm to use your corporate registry or proxy, then install using the standard command.
+
+### Troubleshooting installation
+
+- node-gyp toolchain not found: install the required build tools for your OS (see System Requirements).
+- Java not detected: set `JAVA_HOME` and add `<JAVA_HOME>/bin` to `PATH`.
+- Corporate proxy: configure npm proxy settings before running install.
+- Permission errors: ensure you have write access to the project directory and cache folders.
