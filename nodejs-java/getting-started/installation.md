@@ -93,10 +93,10 @@ node check.js
 
 ### Download from GroupDocs.Releases (offline)
 
-You can download a package archive from [GroupDocs.Releases](https://releases.groupdocs.com/comparison/nodejs-java/#direct-download) and add it to your app. After downloading the `.tgz` file, install it locally:
+You can download a package archive from [GroupDocs.Releases](https://releases.groupdocs.com/comparison/nodejs-java/#direct-download) and add it to your app. After downloading the `.tar` file, install it locally:
 
 ```bash
-npm install ./@groupdocs-groupdocs.comparison-<version>.tgz
+npm install ./groupdocs-groupdocs.comparison-<version>.tar
 ```
 
 Alternatively, configure npm to use your corporate registry or proxy, then install using the standard command.
