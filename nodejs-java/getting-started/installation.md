@@ -30,7 +30,7 @@ structuredData:
 
 ### Prerequisites
 
-- Node.js: 20 LTS or later (22 LTS supported)
+- Node.js: 20 LTS or later
 - Java: JRE/JDK 8+ (recommended 17 LTS)
 - Build tools if needed by your environment (node-gyp toolchain)
 
@@ -75,8 +75,11 @@ See the [System Requirements]({{< ref "comparison/nodejs-java/getting-started/sy
 
 Create a small script (e.g., `check.js`) and run it with Node.js:
 
-```javascript
-// check.js
+{{< tabs "check_installation" >}}
+
+{{< tab "check.js" >}}  
+{{< highlight javascript "" >}}
+
 try {
   const comparison = require('@groupdocs/groupdocs.comparison');
   console.log('GroupDocs.Comparison loaded:', typeof comparison === 'object');
@@ -85,7 +88,14 @@ try {
   console.error('Failed to load GroupDocs.Comparison:', e);
   process.exit(1);
 }
-```
+
+{{< /highlight >}}
+{{< /tab >}}
+
+{{< /tabs >}}
+
+
+And than run the script to verify the installation:
 
 ```bash
 node check.js

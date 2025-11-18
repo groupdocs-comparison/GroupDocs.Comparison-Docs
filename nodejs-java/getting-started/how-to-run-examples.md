@@ -3,42 +3,79 @@ id: how-to-run-examples
 url: comparison/nodejs-java/how-to-run-examples
 title: How to Run Examples
 weight: 6
-description: "In this article, you can find how to run examples. We offer multiple solutions on how you can run GroupDocs.Comparison examples, by building your own or using our back-end or front-end examples out-of-the-box."
+description: "Learn how to clone, configure, and run GroupDocs.Comparison for Node.js via Java example projects."
 keywords: How to run a comparison, basic usage, How to run examples
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Documents Comparison Tool
-    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating the comparison report
-    productCode: comparison
-    productPlatform: nodejs-java
-  howTo:
-    name: How to run Comparison examples
-    description: Learn how to run GroupDocs.Comparison examples using IDE
-    steps:
-      - name: Open project with examples in IDE
-        text: Open project with Comparison examples using favorite IDE
-      - name: Run main method
-        text: Find main method and run it with IDE
 ---
-The complete project [GroupDocs.Comparison Examples](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Node.js-via-Java) with code examples and sample files is hosted on GitHub.
 
-## Run examples using NPM
+The complete project [GroupDocs.Comparison for Node.js via Java — Code Examples](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Node.js-via-Java) with runnable examples and sample files is hosted on GitHub. The structure and commands below are based on this repository and its README.
 
-To get started make sure that [Node.js](https://nodejs.org/) is installed.
+## Prerequisites
 
-1. Clone repository with examples `git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Node.js-via-Java.git`
-2. Navigate to the project folder `cd ./GroupDocs.Comparison-for-Node.js-via-Java`
-3. Install the necessary packages with the `npm install` command.
-4. Run the examples with the `node runExamples.js` command.
+Before running examples, make sure your environment meets the [System Requirements]({{< ref "comparison/nodejs-java/getting-started/system-requirements" >}}) and [Installation]({{< ref "comparison/nodejs-java/getting-started/installation" >}}) guides:
 
-To check what examples are available, open the `runExamples.js` file in your favorite text editor. Uncomment examples you want to run and type `node runExamples.js` to start them.
+- **Node.js**: 20 LTS or later
+- **Java**: JRE/JDK 8+ (17 LTS recommended)
+- **Java environment**: `JAVA_HOME` set and added to `PATH`
 
-## Contribute
+Windows PowerShell:
 
-If you like to add or improve an example, we encourage you to contribute to the project. All examples in this repository are open-source and can be freely used in your own applications.
+```powershell
+$env:JAVA_HOME="C:\Program Files\Java\jdk-17"
+$env:Path="$env:JAVA_HOME\bin;$env:Path"
+```
 
-To contribute, you can fork the repository, edit the source code and create a pull request. We will review the changes and include them in the repository if found helpful.
+Linux/macOS:
+
+```bash
+export JAVA_HOME=/usr/lib/jvm/java-17
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+For more details, see the examples repository README:  
+[GroupDocs.Comparison for Node.js via Java — Code Examples README](https://raw.githubusercontent.com/groupdocs-comparison/GroupDocs.Comparison-for-Node.js-via-Java/refs/heads/master/README.md).
+
+## Run examples using npm
+
+To get started, make sure that [Node.js](https://nodejs.org/) and Java are installed and configured as described above.
+
+1. **Clone the repository with examples**
+
+   ```bash
+   git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Node.js-via-Java.git
+   cd GroupDocs.Comparison-for-Node.js-via-Java
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+   This installs the bundled `groupdocs-groupdocs.comparison-<version>.tgz` package and other dependencies defined in `package.json`.  
+   If installation fails with native build errors, review the build tools section in [System Requirements]({{< ref "comparison/nodejs-java/getting-started/system-requirements" >}}).
+
+3. **Run all examples**
+
+   ```bash
+   node runExamples.js
+   ```
+
+   Output documents are created under the `Results/Output/` directory, grouped by example.
+
+## Explore available examples
+
+After running the project once, you may want to see what examples are available and how they are organized:
+
+- Open `examples.js` and `runExamples.js` to review the list of functions being called.
+- Enable or disable specific examples by editing `runExamples.js` and re-running:
+
+  ```bash
+  node runExamples.js
+  ```
+
+Refer to the examples README for an overview of QuickStart, BasicUsage, and AdvancedUsage folders and the scenarios they cover  
+([README](https://raw.githubusercontent.com/groupdocs-comparison/GroupDocs.Comparison-for-Node.js-via-Java/refs/heads/master/README.md)).
+

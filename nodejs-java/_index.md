@@ -14,7 +14,7 @@ fullWidth: True
 
 <dt class="flex flex-wrap align-center gdoc-props__meta">
     <a href='https://www.npmjs.com/package/@groupdocs/groupdocs.comparison'>
-        <span class="gdoc-props__tag tip">Latest version 23.12.0 (December 2023)</span>
+        <span class="gdoc-props__tag tip">Latest version 25.11.0 (November 2025)</span>
     </a>
 </dt>
 
