@@ -7,8 +7,6 @@ description: "Learn more about document saving and how to customize process with
 keywords: Cloning metadata type, get or set password
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
-structuredData:
-    showOrganization: True
 ---
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) provides different ways of saving the output document - save with password, select document metadata source etc.
 

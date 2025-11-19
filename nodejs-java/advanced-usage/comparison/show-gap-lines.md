@@ -8,54 +8,53 @@ keywords: LeaveGaps, gap lines, empty lines
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to show gap lines instead of changes in JavaScript
-    description: How to show gap lines instead of changes in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method.
-      - name: Specify necessary settings
-        text: Create an options object and specify ShowInsertedContent and ShowDeletedContent of false value and LeaveGaps of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to adjust the appearance of the output document.
 
-By default, changes from the two input files (source and target files) are added to the output document and highlighted. Use the `ShowInsertedContent`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowInsertedContent-boolean-)--> and `ShowDeletedContent`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowDeletedContent-boolean-)--> properties to configure the content of the output file.
+By default, changes from the two input files (source and target files) are added to the output document and highlighted. Use the `ShowInsertedContent` and `ShowDeletedContent` properties to configure the content of the output file.
 
-Use the `LeaveGaps`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setLeaveGaps-boolean-)--> property to adjust the display of the output document, which replaces the changed content with empty lines. To use this property, activate the `ShowInsertedContent`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowInsertedContent-boolean-)--> and `ShowDeletedContent`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowDeletedContent-boolean-)--> properties.
-
-Follow these steps to adjust the appearance of the output document:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/)--> object. Specify the source file path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target file path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object. Set the `ShowInsertedContent`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowInsertedContent-boolean-)-->, `ShowDeletedContent`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowDeletedContent-boolean-)-->, and/or `LeaveGaps`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setLeaveGaps-boolean-)--> properties.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object from the previous step.
+Use the `LeaveGaps` property to adjust the display of the output document, which replaces the changed content with empty lines. To use this property, activate the `ShowInsertedContent` and `ShowDeletedContent` properties.
 
 The following code snippet shows how to get the desired result
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePath);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and result documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+const resultPath = 'result.docx';
+
+// Initialize comparer with the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+// Add the target document to be compared
 comparer.add(targetPath);
 
-const options = new groupdocs.comparison.CompareOptions();
+// Create comparison options object
+const options = new groupdocs.CompareOptions();
+
+// Do not display inserted content in the result
 options.setShowInsertedContent(false);
+
+// Do not display deleted content in the result
 options.setShowDeletedContent(false);
+
+// Keep gaps where deletions occurred
 options.setLeaveGaps(true);
 
+// Execute comparison and save the result to the specified path
 comparer.compare(resultPath, options);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It configures the output to hide both inserted and deleted content by setting `setShowInsertedContent(false)` and `setShowDeletedContent(false)`, then enables gap lines by setting `setLeaveGaps(true)`. When the comparison is performed, instead of showing the actual changed content, empty lines (gaps) will be inserted where changes occurred, providing a cleaner view of the document structure.
 
 The result is as follows:
 

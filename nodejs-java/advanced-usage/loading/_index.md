@@ -8,6 +8,4 @@ keywords: Load document from local path, Load document from stream
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 isMenuItemWithNoContent: True
-structuredData:
-  showOrganization: True
 ---

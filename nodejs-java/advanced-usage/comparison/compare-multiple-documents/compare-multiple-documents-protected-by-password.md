@@ -8,56 +8,97 @@ keywords: Compare multiple password-protected documents, compare multiple protec
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to Compare multiple documents in JavaScript
-    description: Learn how to compare multiple documents in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of the Comparer class. The constructor accepts the source file path or source file stream as the first parameter and a LoadOption object as a second parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target files
-        text: Add the path to the target files using the Add method. The second parameter is a LoadOption object that contains the password.
-      - name: Compare documents
-        text: Call the Compare method of your object and pass the resulting file path as the parameter.
 ---
 
 {{< alert style="info" >}}This feature is available only for Word documents, PowerPoint, and Open Document presentations.{{< /alert >}}
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare more than two password-protected documents.
 
-To compare several password-protected documents, follow these steps:
-
-1.  Instantiate the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object. Specify the password for the source document.
-2.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in the previous step.
-3.  Instantiate another `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object and specify the password for the target document.
-4.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-com.groupdocs.comparison.options.load.LoadOptions-)--> method and specify the target document path or stream and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in step 3. Repeat steps 3 and 4 for every target document.
-5.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method.
-
 The following code snippets show how to compare several password-protected documents:
 
 ## Compare several password-protected documents from a local disk
 
+The following example compares a password-protected source document with three password-protected target documents from disk and saves a combined result.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile, new groupdocs.comparison.LoadOptions("source-password"));
-comparer.add(targetFile1, new groupdocs.comparison.LoadOptions("target-password"));
-comparer.add(targetFile2, new groupdocs.comparison.LoadOptions("target-password"));
-comparer.add(targetFile3, new groupdocs.comparison.LoadOptions("target-password"));
-const resultPath = comparer.compare(resultFile);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for the source document, three target documents, and the output result
+const sourceFile = 'sample-files/source_protected.docx';
+const targetFile1 = 'sample-files/target_protected.docx';
+const targetFile2 = 'sample-files/target2_protected.docx';
+const targetFile3 = 'sample-files/target3_protected.docx';
+const resultFile = 'result.docx';
+
+// Create a Comparer instance for the source file, providing its password via LoadOptions
+const comparer = new groupdocs.Comparer(sourceFile, new groupdocs.LoadOptions('1234'));
+
+// Add the target documents with their passwords
+comparer.add(targetFile1, new groupdocs.LoadOptions('5678'));
+comparer.add(targetFile2, new groupdocs.LoadOptions('5678'));
+comparer.add(targetFile3, new groupdocs.LoadOptions('5678'));
+
+// Perform the comparison and save the merged result to the specified output file
+comparer.compare(resultFile);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This disk-based example:
+
+1. Creates a `Comparer` instance for the password-protected source document using `LoadOptions`.
+2. Adds each protected target document with its corresponding `LoadOptions` (containing the password) via `add()`.
+3. Calls `compare()` to generate a single result that merges changes across all password-protected documents.
 
 ## Compare several password-protected documents from a stream
 
+The following example performs the same operation using Java input streams instead of file paths.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceInputStream, new groupdocs.comparison.LoadOptions("source-password"));
-comparer.add(targetInputStream1, new groupdocs.comparison.LoadOptions("target-password"));
-comparer.add(targetInputStream2, new groupdocs.comparison.LoadOptions("target-password"));
-comparer.add(targetInputStream3, new groupdocs.comparison.LoadOptions("target-password"));
-const resultPath = comparer.compare(resultInputStream);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Import Java bridge and FileInputStream class
+const java = require('java');
+const InputStream = java.import('java.io.FileInputStream');
+
+// Define file paths for the protected documents and the result
+const sourcePath = 'sample-files/source_protected.docx';
+const targetPath1 = 'sample-files/target_protected.docx';
+const targetPath2 = 'sample-files/target2_protected.docx';
+const targetPath3 = 'sample-files/target3_protected.docx';
+const resultPath = 'result_multiple_protected.docx';
+
+// Create input streams for source and targets
+const sourceStream = new InputStream(sourcePath);
+const targetStream1 = new InputStream(targetPath1);
+const targetStream2 = new InputStream(targetPath2);
+const targetStream3 = new InputStream(targetPath3);
+
+// Initialize comparer for the protected source document
+const comparer = new groupdocs.Comparer(sourceStream, new groupdocs.LoadOptions('1234'));
+
+// Add protected target documents using their passwords
+comparer.add(targetStream1, new groupdocs.LoadOptions('5678'));
+comparer.add(targetStream2, new groupdocs.LoadOptions('5678'));
+comparer.add(targetStream3, new groupdocs.LoadOptions('5678'));
+
+// Compare all documents and save the combined result
+comparer.compare(resultPath);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+In the stream-based scenario:
+
+1. Input streams are opened for the source and each protected target document.
+2. The `Comparer` is initialized with the source stream and its password through `LoadOptions`.
+3. Target streams are added with their own `LoadOptions` instances that specify passwords.
+4. The `compare()` method runs the multi-document comparison and outputs the merged result file.

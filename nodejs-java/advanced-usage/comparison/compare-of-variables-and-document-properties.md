@@ -8,53 +8,52 @@ keywords: variables properties, built properties, custom properties, compare doc
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to Variables and Document properties in JavaScript
-    description: Learn how to compare Variables and Document properties in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and specify CompareVariableProperty and CompareDocumentProperty of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare various properties of a Word document such as _Variable_, _Built_, and _Custom_ properties.
 
-Use the following methods of the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> class to enable comparison functions for document properties:
+Use the following methods of the `CompareOptions` class to enable comparison functions for document properties:
 
-- `setCompareVariableProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-)--> allows the comparison of _variable_ properties
-- `setCompareDocumentProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-)--> allows the comparison of _built_ and _custom_ properties
+- `setCompareVariableProperty()` allows the comparison of _variable_ properties
+- `setCompareDocumentProperty()` allows the comparison of _built_ and _custom_ properties
 
-To activate the comparison of document properties, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/)--> object. Specify the source file path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target file path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object. Call the `setCompareVariableProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareVariableProperty-boolean-)--> method to compare the _variable_ properties and/or the `setCompareDocumentProperty()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCompareDocumentProperty-boolean-)--> for _built_ and _custom_ properties.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object from the previous step.
-
-The following code snippet shows how to activate the comparison of the _variable_, _Bbuilt_ and _custom_ properties:
+The following code snippet shows how to activate the comparison of the _variable_, _built_ and _custom_ properties:
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePath);
-comparer.add(targetPath);
-const options = new groupdocs.comparison.CompareOptions();
-options.setCompareVariableProperty(true); // to activate the comparison of variable properties
-options.setCompareDocumentProperty(true); // to activate the comparison of built and custom properties
+'use strict';
 
-const resultPath = comparer.compare(outputPath, options);
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+ // Enable strict mode for better error handling
+ // Define file paths for source, target, and output documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+const outputPath = 'result.docx';
+
+ // Initialize the comparer with the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+ // Add the target document to be compared against the source
+comparer.add(targetPath);
+
+ // Create a CompareOptions instance to customize comparison settings
+const options = new groupdocs.CompareOptions();
+
+ // Enable comparison of variable (custom) properties
+options.setCompareVariableProperty(true);
+
+ // Enable comparison of built-in document properties
+options.setCompareDocumentProperty(true);
+
+ // Execute the comparison and save the result to the output path
+comparer.compare(outputPath, options);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It enables comparison of both variable properties (using `setCompareVariableProperty(true)`) and document properties including built-in and custom properties (using `setCompareDocumentProperty(true)`), then performs the comparison with these options. Any differences in document properties will be highlighted in the result document.
 
 The result is as follows:
 

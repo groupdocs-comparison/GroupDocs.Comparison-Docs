@@ -8,6 +8,4 @@ keywords: GroupDocs.Comparison Quick Start, GroupDocs.Comparison Java Basic Usag
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 isMenuItemWithNoContent: True
-structuredData:
-  showOrganization: True
 ---

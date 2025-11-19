@@ -8,58 +8,68 @@ keywords: Load values from variables of string type, Load text with GroupDocs.Co
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to load text from a string in JavaScript
-    description: Learn how to load a file from a string in JavaScript step by step
-    steps:
-      - name: Create an object and load the source text
-        text: Create an object of the Comparer class. The constructor takes the source text by the first parameter and a LoadOption object with the LoadText parameter.
-      - name: Load target text
-        text: Add the target text using the Add method. The second parameter is a LoadOption object that contains LoadText = true.
-      - name: Compare documents
-        text: Create a string variable where the result of the comparison will be placed.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare values from the `String` type variables.
 
-To compare text from variables, follow these steps:
-
-1.  Instantiate the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object. Set the `LoadText`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions/#setLoadText-boolean-)--> property to `true` (this indicates that the passed string contains a text to be compared, not a file path).
-2.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source variable of the `String` type and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in the previous step.
-3.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target variable of the `String` type and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in the previous step.
-4.  Call the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> method.
-5.  Call the `getResultString`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#getResultString- -)--> method to get a string with the comparison result.
-
-The following code snippet shows how to load values from variables:
+The following code snippet shows how to load plain text from variables and compare it as if it were document content.
 
 ```javascript
-const loadOptions = new groupdocs.comparison.LoadOptions();
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Enable text mode so passed strings are treated as content, not file paths
+const loadOptions = new groupdocs.LoadOptions();
 loadOptions.setLoadText(true);
-const comparer = new groupdocs.comparison.Comparer("source text", loadOptions);
-comparer.add("target text", loadOptions);
-comparer.compare();
-String result = comparer.getResultString();
+
+// Create a comparer using a source string value
+const comparer = new groupdocs.Comparer('This is the original text.', loadOptions);
+
+// Add a target string to compare against the source
+comparer.add('This is the changed text.', loadOptions);
+
+// Run the comparison and write the result to a text file
+comparer.compare('result.txt');
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example demonstrates how to compare plain text strings directly without using files. It creates a `LoadOptions` object and sets `setLoadText(true)` to indicate that the strings passed are text content, not file paths. The `Comparer` is initialized with a source string and the `LoadOptions`, and the target string is added with the same `LoadOptions`. The comparison is then performed and saved to a file, treating the strings as document content.
 
 The result is as follows:
 
 ![](/comparison/nodejs-java/images/load-text-from-string.png)
 
-The following code snippet shows how to combine the different ways of specifying documents:
+The following code snippet shows how to mix a document loaded from disk with text provided directly as a string.
 
 ```javascript
-const loadOptions = new groupdocs.comparison.LoadOptions();
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Configure LoadOptions to indicate that the target value is raw text
+const loadOptions = new groupdocs.LoadOptions();
 loadOptions.setLoadText(true);
-const comparer = new groupdocs.comparison.Comparer(sourceInputStream);
-comparer.add("target text", loadOptions);
+
+// Load the source content from a physical text file
+const comparer = new groupdocs.Comparer('sample-files/source.txt');
+
+// Add the target content as plain text (not as a file path)
+comparer.add('This is the target text to compare with the file content.', loadOptions);
+
+// Perform comparison without saving to disk and get the result as a string
 comparer.compare();
-String result = comparer.getResultString();
+const result = comparer.getResultString();
+
+// Print the comparison result to the console
+console.log(result);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example shows how to mix a document loaded from disk with text provided as a string. The source document is loaded from a file path (without `LoadOptions`), while the target is provided as a plain text string with `LoadOptions` that has `setLoadText(true)`. After performing the comparison, it calls `getResultString()` to retrieve the comparison result as a string instead of saving it to a file, which is useful when you need to process the result programmatically.

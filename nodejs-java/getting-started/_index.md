@@ -8,6 +8,4 @@ keywords: Getting started, Basic features, Licensing, System requirements
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 isMenuItemWithNoContent: True
-structuredData:
-  showOrganization: True
 ---

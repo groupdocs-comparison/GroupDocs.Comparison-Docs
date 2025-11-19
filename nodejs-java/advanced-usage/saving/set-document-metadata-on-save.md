@@ -8,24 +8,6 @@ keywords: Save document metadata,  Compare documents, Document comparison, File 
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to set document metadata on save in JavaScript
-    description: Learn how to set document metadata on save in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the SaveOtions object with the required metadata parameter initialized by the MetadataType enum.
 ---
 
 A document can contain some metadata information, such as author, organization, etc. [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to select metadata sources when saving the output document.  
@@ -36,46 +18,118 @@ Possible metadata sources are as follows:
 - Target document metadata
 - User-defined metadata
 
-To set output document metadata, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Instantiate the `SaveOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.save/SaveOptions)--> object. Call the `setCloneMetadataType()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.save/saveoptions/#setCloneMetadataType-com.groupdocs.comparison.options.enums.MetadataType-)--> method to set the appropriate `MetadataType`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.enums/metadatatype/)--> variant.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `SaveOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.save/saveoptions/)--> object as a parameter.
-
-The following code snippets show how to set output document metadata:
+The following code snippets show how to set output document metadata.
 
 ## Set metadata from the source file
 
+The following example copies metadata (author, company, etc.) from the source document into the comparison result.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and output documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const outputFile = 'result.docx';
+
+// Create a Comparer instance for the source document
+const comparer = new groupdocs.Comparer(sourceFile);
+
+// Add the target document to compare against the source
 comparer.add(targetFile);
-const saveOptions = new groupdocs.comparison.SaveOptions();
-saveOptions.setCloneMetadataType(groupdocs.comparison.MetadataType.SOURCE);
-const resultPath = comparer.compare(outputFile, saveOptions);
+
+// Configure save options (clone metadata from the source document)
+const saveOptions = new groupdocs.SaveOptions();
+saveOptions.setCloneMetadataType(groupdocs.MetadataType.SOURCE); // Use source metadata for the result
+
+// Execute the comparison and save the result to the output file
+comparer.compare(outputFile, saveOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `SaveOptions` object. It configures the metadata source by calling `setCloneMetadataType(MetadataType.SOURCE)`, which copies all metadata (author, company, creation date, etc.) from the source document into the result document. When the comparison is performed, the result file will contain the same metadata as the source document.
 
 ## Set metadata from the target file
 
+The following example instead copies metadata from the target document into the result.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for the source, target, and output documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const outputFile = 'result.docx';
+
+// Create a Comparer instance for the source document
+const comparer = new groupdocs.Comparer(sourceFile);
+
+// Add the target document to the comparison list
 comparer.add(targetFile);
-const saveOptions = new groupdocs.comparison.SaveOptions();
-saveOptions.setCloneMetadataType(groupdocs.comparison.MetadataType.TARGET);
-const resultPath = comparer.compare(outputFile, saveOptions);
+
+// Configure save options for the comparison result
+const saveOptions = new groupdocs.SaveOptions();
+
+// Clone metadata from the target document into the result
+saveOptions.setCloneMetadataType(groupdocs.MetadataType.TARGET);
+
+// Perform the comparison and save the result to the output file
+comparer.compare(outputFile, saveOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example follows the same pattern but uses `setCloneMetadataType(MetadataType.TARGET)` instead. This copies all metadata from the target document into the result document, so the result file will have the same metadata properties as the target document rather than the source.
 
 ## Set user-defined metadata 
 
+The following example uses a custom `FileAuthorMetadata` object to write explicit author information into the output document.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and output documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const outputFile = 'result.docx';
+
+// Create a comparer instance for the source document
+const comparer = new groupdocs.Comparer(sourceFile);
+
+// Add the target document to be compared with the source
 comparer.add(targetFile);
-const fileAuthorMetadata = new groupdocs.comparison.FileAuthorMetadata();
-fileAuthorMetadata.setAuthor("Tom");
-fileAuthorMetadata.setCompany("GroupDocs");
-fileAuthorMetadata.setLastSaveBy("Jack");
-const saveOptions = new groupdocs.comparison.SaveOptions();
-saveOptions.setCloneMetadataType(groupdocs.comparison.MetadataType.FILEAUTHOR);
+
+// Initialize metadata that will be written to the result file
+const fileAuthorMetadata = new groupdocs.FileAuthorMetadata();
+
+// Set the author information for the output document
+fileAuthorMetadata.setAuthor('Tom');
+fileAuthorMetadata.setCompany('GroupDocs');
+fileAuthorMetadata.setLastSaveBy('Jack');
+
+// Configure save options for the comparison result
+const saveOptions = new groupdocs.SaveOptions();
+
+// Attach the previously defined author metadata to the save options
 saveOptions.setFileAuthorMetadata(fileAuthorMetadata);
-const resultPath = comparer.compare(outputFile, saveOptions);
+
+// Execute the comparison and save the resulting document with the defined options
+comparer.compare(outputFile, saveOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example demonstrates how to set custom metadata for the result document. It creates a `FileAuthorMetadata` object and sets custom values for author, company, and last-save-by fields. This metadata object is then attached to the `SaveOptions` using `setFileAuthorMetadata()`. When the comparison is performed, the result document will contain these custom metadata values instead of copying from either the source or target document.

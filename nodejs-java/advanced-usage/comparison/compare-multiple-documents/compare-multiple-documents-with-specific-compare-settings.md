@@ -8,57 +8,63 @@ keywords: Compare multiple documents, style change detection, Multi-compare file
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to compare multiple documents with specific compare settings in JavaScript
-    description: Learn how to compare multiple documents with specific compare settings in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Specify necessary settings
-        text: Create a compare options object and specify necessary settings.
-      - name: Load the target files
-        text: Add the path to the target files using the Add method.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 {{< alert style="info" >}}This feature is available for Microsoft Word documents, Microsoft PowerPoint, and Open Document presentations only.{{< /alert >}}
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare more than two documents and specify specific comparison options like styling for detected changes, comparison sensitivity level, etc.
 
-To compare multiple documents using the specific options, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2. Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method and specify the target document path or stream. Repeat this step for every target document.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object and specify the appropriate options.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-com.groupdocs.comparison.options.CompareOptions-)--> method. Specify the pass `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object from the previous step.
-
-The following code snippets show how to compare multiple documents with the appropriate options:
+The following code snippets show how to compare multiple documents with the appropriate options.
 
 ## Compare multiple documents with specific compare settings from a local disk
 
+The following example compares four DOCX documents and highlights all inserted content with a custom font color.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import GroupDocs.Comparison for Node.js via Java and Java Color utilities
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+const java = require('java');
+const Color = java.import('java.awt.Color');
+
+// Define file paths for the source and three target documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile1 = 'sample-files/target.docx';
+const targetFile2 = 'sample-files/target2.docx';
+const targetFile3 = 'sample-files/target3.docx';
+const resultFile = 'output/result.docx';
+
+// Initialize the comparer with the source document
+const comparer = new groupdocs.Comparer(sourceFile);
+
+// Add multiple target documents to the comparison set
 comparer.add(targetFile1);
 comparer.add(targetFile2);
 comparer.add(targetFile3);
 
-const styleSettings = new groupdocs.comparison.StyleSettings();
-styleSettings.setFontColor(Color.YELLOW);
+// Configure visual style for inserted items (e.g., new content in targets)
+const styleSettings = new groupdocs.StyleSettings();
+styleSettings.setFontColor(Color.YELLOW); // render inserted text in yellow
 
-const compareOptions = new groupdocs.comparison.CompareOptions();
+// Attach style settings to comparison options
+const compareOptions = new groupdocs.CompareOptions();
 compareOptions.setInsertedItemStyle(styleSettings);
 
-const resultPath = comparer.compare(resultFile, compareOptions);
+// Run the comparison and save the result document with styled changes
+comparer.compare(resultFile, compareOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example:
+
+1. Instantiates the `Comparer` with the source document path.
+2. Adds several target documents using the `add()` method.
+3. Creates a `CompareOptions` instance and configures `StyleSettings` for inserted items (for example, changing font color).
+4. Calls `compare()` with the result path and options to produce an output document that highlights changes according to the specified styles.
 
 The result is as follows:
 
@@ -66,17 +72,53 @@ The result is as follows:
 
 ## Compare multiple documents with specific compare settings from a stream
 
+The following example performs the same multi-document comparison using Java input streams instead of direct file paths.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceInputStream);
+'use strict';
+
+// Import GroupDocs.Comparison for Node.js via Java plus Java stream/color classes
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+const java = require('java');
+let InputStream = java.import('java.io.FileInputStream');
+let Color = java.import('java.awt.Color');
+
+// Create input streams for the source document and three target documents
+const sourceInputStream = new InputStream('sample-files/source.docx');
+const targetInputStream1 = new InputStream('sample-files/target.docx');
+const targetInputStream2 = new InputStream('sample-files/target2.docx');
+const targetInputStream3 = new InputStream('sample-files/target3.docx');
+
+// Initialize the comparer with the source document stream
+const comparer = new groupdocs.Comparer(sourceInputStream);
+
+// Add each target document to the comparison list
 comparer.add(targetInputStream1);
 comparer.add(targetInputStream2);
 comparer.add(targetInputStream3);
 
-const styleSettings = new groupdocs.comparison.StyleSettings();
-styleSettings.setFontColor(Color.YELLOW);
+// Set up style settings for inserted items (e.g., highlight color)
+const styleSettings = new groupdocs.StyleSettings();
+styleSettings.setFontColor(Color.YELLOW); // use yellow font color for inserted text
 
-const compareOptions = new groupdocs.comparison.CompareOptions();
+// Configure compare options to use the defined style for inserted items
+const compareOptions = new groupdocs.CompareOptions();
 compareOptions.setInsertedItemStyle(styleSettings);
 
-const resultPath = comparer.compare(resultInputStream, compareOptions);
+// Define the output path where the comparison result will be saved
+const resultPath = 'result.docx';
+
+// Execute the comparison and generate the result document
+comparer.compare(resultPath, compareOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+In the stream-based variant:
+
+1. The `Comparer` is initialized with a source document input stream.
+2. Target documents are provided as input streams via multiple calls to `add()`.
+3. A `CompareOptions` object is created and linked with `StyleSettings` to format inserted items.
+4. The `compare()` method is invoked with the destination path and options to generate a combined comparison result.

@@ -9,23 +9,6 @@ keywords:
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Documents Comparison Tool
-    description: The product allows comparing PDF, Word, Excel, PowerPoint, AutoCAD, Images, Code, and more. The API also supports accepting/rejecting changes, extracting document information, and generating comparison reports.
-    productCode: comparison
-    productPlatform: nodejs-java
-  howTo:
-    name: How to install GroupDocs.Comparison for Node.js via Java
-    description: Learn how to add GroupDocs.Comparison to a Node.js project and set up Java
-    steps:
-      - name: Check prerequisites
-        text: Ensure Node.js LTS and a compatible Java JRE/JDK are installed and JAVA_HOME is set
-      - name: Install the npm package
-        text: Add the @groupdocs/groupdocs.comparison package to your project using npm, yarn, or pnpm
-      - name: Verify installation
-        text: Run a short script to ensure the package and Java bridge load successfully
 ---
 
 ### Prerequisites

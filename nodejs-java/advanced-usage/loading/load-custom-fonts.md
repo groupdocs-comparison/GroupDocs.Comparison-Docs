@@ -8,45 +8,37 @@ keywords: Custom fonts, fonts
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to load custom fonts in JavaScript
-    description: Learn how to load custom fonts in JavaScript step by step
-    steps:
-      - name: Create an object and load font.
-        text: Create an object of the LoadOptions class. Access the object field using the Add method with the path to the font file parameter.
-      - name: Create an object and load the source file with Options
-        text: Create an object of Comparer class. The constructor takes the source file path parameter and object of LoadOptions. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare documents that contain non-standard fonts.
 
-To connect custom fonts and compare documents, follow these steps:
-
-1. Instantiate the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object. Specify a list of directories with custom fonts.
-2. Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object with the source document path or stream and the `LoadOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options.load/loadoptions)--> object created in the previous step.
-3. Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-4. Call the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> method.
-
 The following code snippet shows how to connect custom fonts and compare documents:
 
 ```javascript
-// Instantiate the LoadOptions object and create a list of custom font directories.
-const loadOptions = new groupdocs.comparison.LoadOptions();
-loadOptions.getFontDirectories().add("./fontPath/");
- 
-const comparer = new groupdocs.comparison.Comparer(sourceDocument, loadOptions);
-comparer.add(targetDocument);
-const resultPath = comparer.compare(resultDocument);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Enable strict mode for safer JavaScript
+// Create LoadOptions and add a custom font directory
+const loadOptions = new groupdocs.LoadOptions();
+loadOptions.getFontDirectories().add('sample-files/font.otf'); // Register custom font for accurate rendering
+
+// Define the path to the source document
+const sourcePath = 'sample-files/source.docx';
+
+// Initialize the Comparer with the source file and the load options
+const comparer = new groupdocs.Comparer(sourcePath, loadOptions);
+
+// Add the target document to the comparison set
+comparer.add('sample-files/target.docx');
+
+// Perform the comparison and save the result document
+comparer.compare('result.docx');
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `LoadOptions` instance and adds a custom font directory using `getFontDirectories().add()`. It then initializes the `Comparer` with the source document path and the `LoadOptions` object, which ensures that custom fonts are available during comparison. The target document is added, and the comparison is performed. This allows documents with non-standard fonts to be compared accurately, as the custom fonts are registered and used for rendering.

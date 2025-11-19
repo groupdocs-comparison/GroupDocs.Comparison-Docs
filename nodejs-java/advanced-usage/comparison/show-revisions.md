@@ -8,48 +8,45 @@ keywords: ShowRevisions, revision
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to show Revisions in JavaScript
-    description: Learn how to show Revisions in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and specify ShowRevisions of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare and customize the visibility of revisions in the output document.
 
 Revision is a collection of changes received when comparing documents using built-in Word tools.
 
-By default, the visibility of revisions is enabled. To turn off the visibility of revisions, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/)--> object. Specify the source file path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target file path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object. Set the `ShowRevisions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowRevisions-boolean-)--> property to `false`.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object from the previous step.
-
-The following code snippet shows how to disable the visibility of revisions:
+By default, the visibility of revisions is enabled. The following code snippet shows how to disable the visibility of revisions:
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePath);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and result documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+const outputPath = 'result.docx';
+
+// Initialize comparer with the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+// Add the target document that will be compared against the source
 comparer.add(targetPath);
-const options = new groupdocs.comparison.CompareOptions();
+
+// Set up comparison options
+const options = new groupdocs.CompareOptions();
+
+// Disable revision marks in the output document
 options.setShowRevisions(false);
-const resultPath = comparer.compare(outputPath, options);
+
+// Perform the comparison and write the result to the output file
+comparer.compare(outputPath, options);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It disables the display of revision marks by setting `setShowRevisions(false)`. When the comparison is performed, the result document will not show revision marks, displaying the final content directly without revision tracking indicators.
 
 The result is as follows:
 

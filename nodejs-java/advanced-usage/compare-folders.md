@@ -8,47 +8,38 @@ keywords: Directories comparison, folders comparison
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare directories(folders) natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to compare directories (folders) in JavaScript
-    description: Learn how to compare directories in JavaScript step by step
-    steps:
-      - name: Create an object CompareOptions
-        text: Create a CompareOptions object by specifying the DirectoryCompare option - true.
-      - name: Create an object Comparer
-        text: Initialize the comparer object of the Comparer class, in its parameters specify the path to the first compared folder, the second parameter is the CompareOptions object.
-      - name: Add second folder
-        text: Call the add method for the comparer object, specifying the path to the second folder and the CompareOptions object.
-      - name: Compare
-        text: Call the compare method for the comparer object, specifying the path to save the compare results and the CompareOptions object.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare the contents of a folder (directory), process and save the result of processing. The steps for _starting the comparison_ and _configuring_ the display of the processing result in the resulting file are described below.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to compare the contents of a folder (directory), process and save the result of processing.
 
-1. Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object. 
-1. Call the `setDirectoryCompare` method to set the `DirectoryCompare` property to `true`.
-1. If needed, call the `setFolderComparisonExtension` method to change the output format to `HTML`. By default, the format is `TXT`.
-1. If needed, call the `setShowOnlyChanged` method to `true` to display only changed items.
-2. Initialize the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the path to the first compared folder and the `CompareOptions` object.
-3. Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-com.groupdocs.comparison.options.CompareOptions-)--> method of the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify a path to the second folder and the `CompareOptions` object.
-4. Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-com.groupdocs.comparison.options.CompareOptions-)--> method of the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify a path to save the compare results and the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object.
-
-The following code snippet shows how to compare the `folder1` and `folder2` folders:
+The following code snippet shows how to compare the two folders:
 
 ```javascript
-const compareOptions = new groupdocs.comparison.CompareOptions();
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Create a CompareOptions instance to configure comparison settings
+const compareOptions = new groupdocs.CompareOptions();
+
+// Enable directory comparison mode
 compareOptions.setDirectoryCompare(true);
-const comparer = new groupdocs.comparison.Comparer("C:\\folder1\\", compareOptions);
-comparer.add("C:\\folder2\\", compareOptions);
-comparer.compare("C:\\res.html", compareOptions);
+
+// Initialize the Comparer with the source folder and the configured options
+const comparer = new groupdocs.Comparer('sample-files/SourceFolder', compareOptions);
+
+// Add the target folder to compare against
+comparer.add('sample-files/TargetFolder', compareOptions);
+
+// Run the comparison for directories and generate the result as an HTML file
+comparer.compareDirectory('result.html', compareOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `CompareOptions` object and enables directory comparison mode by setting `setDirectoryCompare(true)`. It initializes the `Comparer` with the source folder path and the options, adds the target folder using `add()` with the same options, and then calls `compareDirectory()` instead of `compare()` to perform folder comparison. The result is saved as an HTML file that shows which files were added, deleted, or modified between the two folders.
 
 The following images show the comparison result:
 

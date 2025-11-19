@@ -78,6 +78,8 @@ comparer.add(targetPath);
 // Compare the source and target files and save the output to the output path
 comparer.compare(outputPath);
 
+
+
 {{< /highlight >}}
 {{< /tab >}}
 

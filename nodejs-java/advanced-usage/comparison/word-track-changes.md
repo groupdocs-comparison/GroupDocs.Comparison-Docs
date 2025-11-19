@@ -8,48 +8,45 @@ keywords: WordTrackChanges, revisions
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to show results of comparison as a Word Track Changes
-    description: Learn how to use Word Track Changes in comparison result
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and specify WordTrackChanges of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to customize the display of revisions in the output document.
 
 Revision is a collection of changes received when comparing documents using built-in Word tools.
 
-By default, the Word Track Changes option is `false`. Follow these steps to turn on the Word Track Changes:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/)--> object. Specify the source file path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target file path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object. Set the `WordTrackChanges`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setWordTrackChanges-boolean-)--> property to `true`;
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/)--> object from the previous step.
-
-The following code snippet shows how to disable the display of revisions:
+By default, the Word Track Changes option is `false`. The following code snippet shows how to enable Word Track Changes:
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePath);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and result documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+const resultPath = 'sample-files/result_word_track.docx';
+
+// Create a comparer instance using the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+// Add the target document to the comparison set
 comparer.add(targetPath);
-const options = new groupdocs.comparison.CompareOptions();
+
+// Initialize comparison options
+const options = new groupdocs.CompareOptions();
+
+// Enable Word Track Changes in the output document
 options.setWordTrackChanges(true);
+
+// Perform the comparison and save the result to the specified path
 comparer.compare(resultPath, options);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It enables Word Track Changes by setting `setWordTrackChanges(true)`. When the comparison is performed, the result document will use Microsoft Word's built-in Track Changes feature to display revisions, making it compatible with Word's revision tracking system and allowing users to accept or reject changes directly in Word.
 
 The result is as follows:
 

@@ -8,58 +8,50 @@ keywords: Compare documents, get changes coordinates
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to get changes coordinates in JavaScript
-    description: Learn how to get changes coordinates in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and specify CalculateCoordinates of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the compare options parameter.
-      - name: Create an array for file changes
-        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
-      - name: Output changes coordinates
-        text: Display information about the changes coordinates using the Box field for each element of the changes info object, and then use the field with the name of the coordinate.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to detect changes between the source and target documents and get coordinates of the changes in the document preview images. These coordinates can be useful to highlight changes in the document preview images.
 
-To get the coordinates of changes, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object. Call the `setCalculateCoordinates`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setCalculateCoordinates-boolean-)--> to get coordinates.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object from the previous step.
-5.  Call the `getChanges()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#getChanges- -)--> method.
-
-The following code snippet shows how to compare multiple documents with specific options:
+The following code snippet shows how to compare documents and obtain coordinates for each detected change:
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for the source, target, and result documents
+const sourceFile = "sample-files/source.docx";
+const targetFile = "sample-files/target.docx";
+const resultFile = "result.docx";
+
+// Create a comparer instance for the source document
+const comparer = new groupdocs.Comparer(sourceFile);
+
+// Add the target document to the comparer
 comparer.add(targetFile);
 
-const compareOptions = new groupdocs.comparison.CompareOptions();
+// Initialize comparison options
+const compareOptions = new groupdocs.CompareOptions();
 compareOptions.setCalculateCoordinates(true);
-const resultPath = comparer.compare(resultFile, compareOptions);
 
-let changes = comparer.getChanges();
-for (ChangeInfo change : changes) {
-    System.out.printf("Change Type: %d, X: %f, Y: %f, Text: %s%n",
-        change.getType(), change.getBox().getX(), change.getBox().getY(), change.getText());
+// Execute the comparison and save the result to the specified file
+comparer.compare(resultFile, compareOptions);
+
+// Retrieve the list of detected changes
+const changes = comparer.getChanges();
+
+// Iterate through each change and output its details
+for (let i = 0; i < changes.length; i++) {
+    const change = changes[i];
+    console.log(`Change Type: ${change.getType()}, X: ${change.getBox().getX()}, Y: ${change.getBox().getY()}, Text: ${change.getText()}`);
 }
+
+// Exit the process
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance, adds the target document, and configures comparison options to calculate coordinates by setting `setCalculateCoordinates(true)`. After performing the comparison, it retrieves all detected changes using `getChanges()` and iterates through them to extract and display coordinate information (X, Y positions) from each change's `Box` object, along with the change type and text content.
 
 The result is as follows:
 

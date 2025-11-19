@@ -8,22 +8,6 @@ keywords: Licensing, evaluation limitations, set metered license, setting licens
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to Setting License in JavaScript
-    description: Learn how to Setting License in JavaScript step by step
-    steps:
-      - name: Create an object
-        text: Create an object of license class.
-      - name: Set license
-        text: Call the setLicense method of your object and put the license path or license file stream parameter.
 ---
 
 Sometimes, to study the system better, you want to dive into the code as fast as possible. To make this easier, GroupDocs.Comparison provides different purchase plans or offers a Free Trial and a 30-day Temporary License for evaluation.
@@ -75,9 +59,20 @@ The license can be set multiple times per application domain, but we recommend d
 The following code snippet shows how to set a license from a file:
 
 ```javascript
-const licensePath = "path to the .lic file";
-const license = new groupdocs.comparison.License()
-await license.setLicense(licensePath); 
+'use strict';
+
+// Load the GroupDocs Comparison SDK for Node.js
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Path to the license file
+const licensePath = 'GroupDocs.Comparison.lic';
+
+// Create a License object and set the license
+const license = new groupdocs.License();
+license.setLicense(licensePath);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
 
 ### Set License from Stream
@@ -85,20 +80,25 @@ await license.setLicense(licensePath);
 The following code snippet shows how to set a license from a stream:
 
 ```javascript
+'use strict';
+
+// Load the GroupDocs Comparison SDK for Node.js
+const groupdocs = require('@groupdocs/groupdocs.comparison');
 const java = require('java');
+
+// Create a reference to Java's FileInputStream class
 let InputStream = java.import('java.io.FileInputStream');
 
-const licensePath = "path to the .lic file"
-try {
-  const stream = new InputStream(licensePath)
+// Path to the license file
+const licensePath = 'GroupDocs.Comparison.lic';
 
-  const license = new groupdocs.comparison.License()
-  await license.setLicense(stream);
-  console.log('License set successfully.');
-} catch {
-  console.log("\nWe do not ship any license with this example. " +
-    "\nVisit the GroupDocs site to obtain either a temporary or permanent license. " +
-    "\nLearn more about licensing at https://purchase.groupdocs.com/faqs/licensing. " +
-    "\nLearn how to request a temporary license at https://purchase.groupdocs.com/temporary-license.");
-}
+// Initialize a FileInputStream for the license file
+const stream = new InputStream(licensePath);
+
+// Create a License object and set the license using the InputStream
+const license = new groupdocs.License();
+license.setLicense(stream);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```

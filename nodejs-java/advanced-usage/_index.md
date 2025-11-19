@@ -8,6 +8,4 @@ keywords: GroupDocs.Comparison Advanced Features, GroupDocs.Comparison Customiza
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 isMenuItemWithNoContent: True
-structuredData:
-  showOrganization: True
 ---

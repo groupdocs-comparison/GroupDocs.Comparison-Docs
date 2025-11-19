@@ -8,60 +8,65 @@ keywords: Apply changes to the compared document, reject comparison changes, doc
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to accept or reject detected changes in JavaScript
-    description: Learn how to accept or reject detected changes in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file or target file stream using the Add method.
-      - name: Compare files
-        text: Call the Compare method of your object without parameters.
-      - name: Create an array for file changes
-        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
-      - name: Reject or accept changes
-        text: To reject or accept changes, access the ComparisonAction field of the array element and set the Reject or Accept value from the enum ComparisonAction.
-      - name: Apply Changes
-        text: To apply changes call the method ApplyChanges of the Comparer class object. The method takes a file stream parameter of the resulting file and an ApplyChangeOptions object that contains a ChangeInfo array.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to apply or discard specific changes between the source and target documents and save the output document with (or without) the selected changes. 
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to apply or discard specific changes between the source and target documents and save the output document with (or without) the selected changes. 
 
-To apply/reject changes to the output document, follow these steps:
+The `ApplyChangeOptions` class includes the following properties:
 
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method.
-4.  Call the `getChanges()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#getChanges- -)--> method to get the changes list.
-5.  Call the `setComparisonAction()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/changeinfo/#setComparisonAction-com.groupdocs.comparison.result.ComparisonAction-)--> method of the appropriate change object. Specify the `ComparisonAction.ACCEPT`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/comparisonaction#ACCEPT)--> or the `ComparisonAction.REJECT`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.result/comparisonaction#REJECT)--> value.
-6.  Call the `applyChanges()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#applyChanges-java.lang.String-com.groupdocs.comparison.options.save.SaveOptions-com.groupdocs.comparison.options.ApplyChangeOptions-)--> method. Specify the collection of changes.
-
-The `ApplyChangeOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/applychangeoptions/)--> class includes the following properties:
-
-- `getChanges`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/applychangeoptions/#getChanges- -)--> is a list of changes that must be applied (or not) to the output document
-- `isSaveOriginalState`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/applychangeoptions/#isSaveOriginalState- -)--> is an option to keep the original state of the compared result after applying changes
+- `getChanges` is a list of changes that must be applied (or not) to the output document
+- `isSaveOriginalState` is an option to keep the original state of the compared result after applying changes
 
 The following code snippets show how to accept/reject changes:
 
 ## Accept or Reject changes for documents stored on a local disk
 
+The following example compares two DOCX files from disk, rejects the first detected change, and saves an updated result document.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Load Java integration and import utility class for working with Java collections
+const java = require('java');
+let Arrays = java.import('java.util.Arrays');
+
+// Define file paths for source, target, and result documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const resultFile = 'result.docx';
+
+// Initialize the comparer with the source document
+const comparer = new groupdocs.Comparer(sourceFile);
+
+// Add the target document to be compared against the source
 comparer.add(targetFile);
+
+// Perform the comparison operation (changes are detected but not yet applied)
 comparer.compare();
+
+// Retrieve the list of detected changes (array of ChangeInfo objects)
 let changes = comparer.getChanges();
-changes[0].setComparisonAction(groupdocs.comparison.ComparisonAction.REJECT);
-comparer.applyChanges(resultFile, new groupdocs.comparison.SaveOptions(), new groupdocs.comparison.ApplyChangeOptions(changes));
+
+// Mark the first change in the list as rejected
+changes[0].setComparisonAction(groupdocs.ComparisonAction.REJECT);
+
+// Create options for applying changes
+const applyChangeOptions = new groupdocs.ApplyChangeOptions();
+
+// Specify the changes to apply by wrapping the JavaScript array with Arrays.asList
+applyChangeOptions.setChanges(Arrays.asList(changes));
+
+// Apply the selected changes and save the result document
+comparer.applyChanges(resultFile, applyChangeOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and performs the comparison. It then retrieves all detected changes, marks the first change as rejected using `setComparisonAction()`, wraps the changes array in a Java List, and applies the changes to create a result document where the rejected change is not included.
 
 The result is as follows:
 
@@ -69,32 +74,101 @@ The result is as follows:
 | :-----------------------------------------------------------------: | :----------------------------------------------------------------: |
 | ![](/comparison/nodejs-java/images/accepted-changes.png) | ![](/comparison/nodejs-java/images/rejected-changes.png) |
 
-
-
 ## Accept or reject changes for documents provided as a stream
 
+The following example loads documents from Java streams, rejects the first change, and writes the result to a new file.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceInputStream);
+'use strict';
+
+// Import GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Import Java interop and required classes
+const java = require('java');
+const InputStream = java.import('java.io.FileInputStream');
+const Arrays = java.import('java.util.Arrays');
+
+// Create InputStream objects for source and target documents
+const sourceInputStream = new InputStream('sample-files/source.docx');
+const targetInputStream = new InputStream('sample-files/target.docx');
+
+// Initialize comparer with source document stream
+const comparer = new groupdocs.Comparer(sourceInputStream);
+
+// Add target document stream to comparer
 comparer.add(targetInputStream);
-comparer.compare(new groupdocs.comparison.SaveOptions(), new CompareOptions());
-let changes = comparer.getChanges();
-changes[0].setComparisonAction(groupdocs.comparison.ComparisonAction.REJECT);
-comparer.applyChanges(resultOutputStream, new groupdocs.comparison.ApplyChangeOptions(changes));
+
+// Perform comparison and generate a result document on disk
+comparer.compare('result.docx');
+
+// Retrieve list of detected changes
+const changes = comparer.getChanges();
+
+// Reject the first detected change
+changes[0].setComparisonAction(groupdocs.ComparisonAction.REJECT);
+
+// Configure options for applying changes
+const applyOptions = new groupdocs.ApplyChangeOptions();
+
+// Convert JavaScript array of changes to a Java List using Arrays.asList
+const javaList = Arrays.asList(changes);
+applyOptions.setChanges(javaList);
+
+// Apply the selected changes and save them into a separate result file
+comparer.applyChanges('result_rejected.docx', applyOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example demonstrates the same workflow using Java input streams instead of file paths. It creates `InputStream` objects for both source and target documents, initializes the comparer with the source stream, adds the target stream, performs the comparison, retrieves changes, marks the first change as rejected, and applies the changes to save a new result file.
 
 ## Accept or reject detected changes using the SaveOriginalState option
 
+The following example shows how to apply different actions to the same comparison result while optionally preserving the original state.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Import Java interop helper for working with Java collections
+const java = require('java');
+const Arrays = java.import('java.util.Arrays');
+
+// Define file paths for source, target, and multiple result documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const resultFile = 'result.docx';
+const resultFileWithRejectedChange = 'rejected.docx';
+const resultFileWithAcceptedChange = 'accepted.docx';
+
+// Initialize comparer with the source document and add the target
+const comparer = new groupdocs.Comparer(sourceFile);
 comparer.add(targetFile);
-comparer.compare();
+
+// Run the comparison and save the initial merged result
+comparer.compare(resultFile);
+
+// Reject first change and save result while keeping original state
 let changes = comparer.getChanges();
-changes[0].setComparisonAction(groupdocs.comparison.ComparisonAction.REJECT);
-let changeOptions = new groupdocs.comparison.ApplyChangeOptions();
-changeOptions.setChanges(changes);
-changeOptions.setSaveOriginalState(true);
-comparer.applyChanges(resultFileWithRejectedChange, changeOptions);
+changes[0].setComparisonAction(groupdocs.ComparisonAction.REJECT);
+const rejectOptions = new groupdocs.ApplyChangeOptions();
+rejectOptions.setSaveOriginalState(true);          // keep original state unchanged
+rejectOptions.setChanges(Arrays.asList(changes));  // apply only the updated change list
+comparer.applyChanges(resultFileWithRejectedChange, rejectOptions);
+
+// Accept first change and save another variant of the document
 changes = comparer.getChanges();
-changes[0].setComparisonAction(groupdocs.comparison.ComparisonAction.ACCEPT);
-comparer.applyChanges(resultFileWithAcceptedChange, new groupdocs.comparison.ApplyChangeOptions(changes));
+changes[0].setComparisonAction(groupdocs.ComparisonAction.ACCEPT);
+const acceptOptions = new groupdocs.ApplyChangeOptions();
+acceptOptions.setChanges(Arrays.asList(changes));
+comparer.applyChanges(resultFileWithAcceptedChange, acceptOptions);
+
+// Exit the process
+process.exit(0);
 ```
+
+This example shows how to create multiple result documents from the same comparison with different change actions. It first saves the initial comparison result, then creates one result file with the first change rejected (using `setSaveOriginalState(true)` to preserve the original comparison state), and another result file with the first change accepted. This allows you to generate multiple variants of the document with different change selections.

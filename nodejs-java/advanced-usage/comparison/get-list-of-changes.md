@@ -8,53 +8,52 @@ keywords: Get file diff, documents diff, compare documents, compare files
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to get a list of changes in JavaScript
-    description: Learn how to get a list of changes in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of the Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file or target file stream using the Add method.
-      - name: Compare documents
-        text: Call the Compare method of your object.
-      - name: Create an array for file changes
-        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to get a list of changes between the source and target documents.
-
-To get a list of changes, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method.
-4.  Call the `getChanges`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#getChanges- -)--> method.
 
 The following code snippets show how to get a list of all changes:
 
 ## Get a list of changes from a local disk
 
+The following example compares two local documents and then prints a detailed list of detected changes.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(source);
-comparer.add(target);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Create a Comparer instance for the source document on disk
+const comparer = new groupdocs.Comparer('sample-files/source.docx');
+
+// Add the target document to be compared against the source
+comparer.add('sample-files/target.docx');
+
+// Perform the comparison (no result file path is required for retrieving changes)
 comparer.compare();
-let changes = comparer.getChanges();
-for (ChangeInfo change : changes) {
-    Console.log("Change Type: " + change.getType() +
-                        ", Page: " + change.getPageInfo().getPageNumber() +
-                        ", Change ID: " + change.getId() +
-                        ", Text: " + change.getText());
+
+// Retrieve the array of ChangeInfo objects that describe each change
+const changes = comparer.getChanges();
+
+// Iterate through the collection and print details of every change
+for (let index = 0; index < changes.length; index++) {
+  const change = changes[index];
+
+  const page = change.getPageInfo().getPageNumber(); // Page number where the change is located
+  const type = change.getType().name();              // Type of change (Inserted, Deleted, etc.)
+  const text = (change.getText() || '').trim();      // Normalized change text
+  const src = (change.getSourceText() || '').trim(); // Text from the source document
+  const tgt = (change.getTargetText() || '').trim(); // Text from the target document
+
+  console.log(`[Page ${page}] ${type} "${text}", "${src}" -> "${tgt}"`);
 }
+
+// Exit the process when printing is finished
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and performs the comparison. It then retrieves all detected changes using `getChanges()` and iterates through the collection to extract and display detailed information about each change, including the page number, change type (Inserted, Deleted, etc.), the change text, and the source and target text fragments.
 
 The result is as follows:
 
@@ -62,15 +61,49 @@ The result is as follows:
 
 ## Get a list of changes from a stream
 
+The following example loads source and target documents from Java streams, compares them, and prints the list of changes.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(new FileInputStream(source));
-comparer.add(new FileInputStream(target));
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Import the Java bridge to work with FileInputStream
+const java = require('java');
+let InputStream = java.import('java.io.FileInputStream');
+
+// Create input streams for the source and target documents
+const sourceStream = new InputStream('sample-files/source.docx');
+const targetStream = new InputStream('sample-files/target.docx');
+
+// Create a Comparer instance using the source stream
+const comparer = new groupdocs.Comparer(sourceStream);
+
+// Add the target stream to be compared against the source
+comparer.add(targetStream);
+
+// Run the comparison to populate internal changes collection
 comparer.compare();
-let changes = comparer.getChanges();
-for (ChangeInfo change : changes) {
-    Console.log("Change Type: " + change.getType() +
-                        ", Page: " + change.getPageInfo().getPageNumber() +
-                        ", Change ID: " + change.getId() +
-                        ", Text: " + change.getText());
+
+// Retrieve the list of changes discovered during comparison
+const changes = comparer.getChanges();
+
+// Iterate through the collection and print detailed information about each change
+for (let index = 0; index < changes.length; index++) {
+  const change = changes[index];
+
+  const page = change.getPageInfo().getPageNumber(); // Page number
+  const type = change.getType().name();              // Change type
+  const text = (change.getText() || '').trim();      // Combined change text
+  const src = (change.getSourceText() || '').trim(); // Source text fragment
+  const tgt = (change.getTargetText() || '').trim(); // Target text fragment
+
+  console.log(`[Page ${page}] ${type} "${text}", "${src}" -> "${tgt}"`);
 }
+
+// Exit the process when all changes are printed
+process.exit(0);
 ```
+
+This example demonstrates the same workflow using Java input streams instead of file paths. It creates `InputStream` objects for both source and target documents, initializes the comparer with the source stream, adds the target stream, performs the comparison, and then retrieves and prints the list of changes with the same detailed information as the previous example.

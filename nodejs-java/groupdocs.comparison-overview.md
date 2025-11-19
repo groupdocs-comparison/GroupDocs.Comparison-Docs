@@ -9,13 +9,6 @@ keywords: GroupDocs.Comparison Overview, Developer usage
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Documents Comparison Tool
-    description: The product allows to compare PDF, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating comparison reports
-    productCode: comparison
-    productPlatform: nodejs-java
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) is a robust cross-platform library that enables you to integrate into your applications the feature of comparing and merging two or more files of [different formats]({{< ref "comparison/nodejs-java/getting-started/supported-document-formats.md" >}}). The resulting file displays differences in content line by line, including paragraphs, characters, styles, shapes, and positions.

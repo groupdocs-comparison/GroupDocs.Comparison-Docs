@@ -8,26 +8,6 @@ keywords: Comparison sensitivity, comparison detalisation level, compare documen
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to adjust comparison sensitivity in JavaScript
-    description: Learn how to adjust comparison sensitivity in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and specify SensitivityOfComparison.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to adjust comparison sensitivity to achieve the necessary balance between the comparison speed and accuracy. Possible comparison sensitivity value ranges from **0** to **100**.
@@ -61,24 +41,37 @@ _Case 2._ If **SensitivityOfComparison = 89%**, the comparison of these two str
 
 A common sub-sequence was found because the calculated percent of removed and inserted symbols (**88%**) is less than the **SensitivityOfComparison** value (**89%**). The same results are produced for any calculated percent bigger than **88%**.
 
-To compare documents with specific comparison sensitivity, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object. Call the `setSensitivityOfComparison()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setSensitivityOfComparison-int-)--> method to specify the appropriate value.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object.
-
 The following code snippet shows how to compare documents with specific sensitivity:
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target and output documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const resultFile = 'result.docx';
+
+// Initialize the comparer with the source document
+const comparer = new groupdocs.Comparer(sourceFile);
+
+// Add the target document to the comparison list
 comparer.add(targetFile);
 
-const compareOptions = new groupdocs.comparison.CompareOptions();
-compareOptions.setSensitivityOfComparison(100);
+// Create comparison options and configure sensitivity
+const compareOptions = new groupdocs.CompareOptions();
+compareOptions.setSensitivityOfComparison(100); // 0 (low) to 100 (high) sensitivity
 
-const resultPath = comparer.compare(resultFile, compareOptions);
+// Run the comparison and save the result to the output file
+comparer.compare(resultFile, compareOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It sets the sensitivity to 100 (maximum sensitivity for best quality) using `setSensitivityOfComparison()`, then performs the comparison with these options. Higher sensitivity values (closer to 100) provide more accurate comparison but slower performance, while lower values (closer to 0) are faster but may miss some differences.
 
 The result is as follows:
 

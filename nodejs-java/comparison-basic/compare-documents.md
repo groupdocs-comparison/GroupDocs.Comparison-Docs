@@ -8,24 +8,6 @@ keywords: Compare documents, document comparison in JavaScript
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to compare documents in JavaScriptScript
-    description: Learn how to compare documents in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter.
 ---
 
 
@@ -45,21 +27,43 @@ GroupDocs.Comparison highlights detected changes with different colors:
 
 You can customize the changes styling scheme using different formatting - italic, bold, underlined, strike-through, etc.
 
-To compare two documents, follow these steps:
-
-1.   Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object with the source document path or stream.
-2.   Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method and specify the target document path or stream.
-3.   Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method.
-
 The following code snippets show how to compare two documents:
 
 ## Compare local documents
 
+The following example compares two local documents from the file system and saves a new document that highlights all differences.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePdfPath)
-comparer.add(targetPdfPath);
-comparer.compare(resultPdfPath);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define paths to the source (original) and target (modified) documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+
+// Specify the path of the result document that will contain the comparison output
+const resultPath = 'result.docx';
+
+// Create a Comparer instance for the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+// Add the target document to be compared against the source
+comparer.add(targetPath);
+
+// Run the comparison and save the result document
+comparer.compare(resultPath);
+
+// Exit the process after the comparison is finished
+process.exit(0);
 ```
+
+This example performs the following operations:
+
+1. Instantiates the `Comparer` object with the source document path or stream.
+2. Calls the `add()` method to specify the target document path or stream.
+3. Invokes the `compare()` method to generate the result document.
 
 The output file is as follows:
 
@@ -67,9 +71,43 @@ The output file is as follows:
 
 ## Compare documents from a stream
 
+The following example loads documents from Java input streams instead of file paths and then compares them.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(new FileInputStream(sourcePdfPath))
-comparer.add(new FileInputStream(targetPdfPath));
-comparer.compare(resultPdfPath);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Import the Java bridge so we can work with Java input streams
+const java = require('java');
+
+// Get a reference to the Java FileInputStream class
+let InputStream = java.import('java.io.FileInputStream');
+
+// Define paths to the source and target PDF documents
+const sourcePdfPath = 'sample-files/source.pdf';
+const targetPdfPath = 'sample-files/target.pdf';
+
+// Define the path for the result DOCX file
+const resultDocxPath = 'result.docx';
+
+// Create a Comparer instance using a Java input stream for the source file
+const comparer = new groupdocs.Comparer(new InputStream(sourcePdfPath));
+
+// Add the target document as a Java input stream
+comparer.add(new InputStream(targetPdfPath));
+
+// Perform the comparison and save the result document
+comparer.compare(resultDocxPath);
+
+// Exit the process after the comparison is finished
+process.exit(0);
 ```
+
+In this stream-based scenario:
+
+1. The `Comparer` is initialized with a Java input stream for the source document.
+2. The `add()` method is used to provide the target document as an input stream.
+3. The `compare()` method runs the comparison and writes the output to the specified result file.
 

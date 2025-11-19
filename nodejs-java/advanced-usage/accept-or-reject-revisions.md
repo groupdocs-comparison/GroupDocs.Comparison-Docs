@@ -8,93 +8,151 @@ keywords: Revision, revision processing, accept or reject revision, apply change
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to accept or Reject revisions in JavaScriptScript
-    description: Learn how to accept or Reject revisions in JavaScriptScript step by step
-    steps:
-      - name: Create an object
-        text: Create an object of RevisionHandler class. The constructor takes the revision path or the revision file stream.
-      - name: Get revision
-        text: Call the GetRevisions method of the RevisionHandler object and assign the value to the RevisionInfo list.
-      - name: Accept or Reject revision
-        text: If the list element type equals the Insertion value of the RevisionType enum then assign the RevisionAction.Accept value to the  Action field of the element.
-      - name: Apply revision changes
-        text: To apply changes call the method ApplyRevisionChanges of the RevisionHandler object. The method takes a file path parameter of the resulting file and an object of the ApplyRevisionOptions class which should contain a Changes field initialized with the RevisionInfo list.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to get revisions from a DOCX file format, process, and save the processing result.
-To obtain revisions from a document, accept or reject revisions, and write the processing result to the output file, follow these steps:
 
-1.  Instantiate the `RevisionHandler`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionhandler/)--> object. Specify the source document path or stream.
-2.  Call the `getRevisions`<!--(https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionhandler/#getRevisions- - )--> method to get the revision list.
-3.  Call the `setAction`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisioninfo/#getAction- -)--> property of the object to be changed. Specify the `RevisionAction.ACCEPT`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionaction/#ACCEPT)--> or `RevisionAction.REJECT`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionaction/#REJECT)--> value.
-4.  Call the `applyRevisionChanges`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionhandler/#applyRevisionChanges-com.groupdocs.comparison.words.revision.ApplyRevisionOptions-)--> method. Specify the created instance of the `ApplyRevisionOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/applyrevisionoptions/)--> class and path or stream of the output document, collecting changes in the revisions.
+The main properties of the `ApplyRevisionOptions` class are as follows:
 
-You can process all changes together within one action. To handle all changes at once, follow these steps:
+*   `Changes` is a list of revision changes that need to be applied to the final document
+*   `CommonHandler` allows you to define one action to handle all revision
 
-1.  Instantiate the `RevisionHandler`<!--](https://reference.groupdocs.com/comparison/nodejs-java/groupdocs.comparison.words.revision/revisionhandler)--> object. Specify the source document path or stream.
-2.  Call the `applyRevisionChanges`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionhandler/#applyRevisionChanges-com.groupdocs.comparison.words.revision.ApplyRevisionOptions-)--> method. Specify the `ApplyRevisionOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/applyrevisionoptions/)--> object and one of the (`RevisionAction.Accept`<!--](https://reference.groupdocs.com/comparison/nodejs-java/groupdocs.comparison.words.revision/revisionaction)-->, `RevisionAction.Reject`<!--](https://reference.groupdocs.com/comparison/nodejs-java/groupdocs.comparison.words.revision/revisionaction)--> or `RevisionAction.NONE`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionaction/#NONE)-->) values.
-
-The main properties of the `ApplyRevisionOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/applyrevisionoptions/)--> class are as follows:
-
-*   `Changes`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/applyrevisionoptions/#getChanges- -)--> is a list of revision changes that need to be applied to the final document
-*   `CommonHandler`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/applyrevisionoptions/#getCommonHandler- -)--> allows you to define one action to handle all revision
-
-If you do not specify the path or file to the output document for the `applyRevisionChanges`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.words.revision/revisionhandler/#applyRevisionChanges-com.groupdocs.comparison.words.revision.ApplyRevisionOptions-)--> method, the source file is rewritten.
+If you do not specify the path or file to the output document for the `applyRevisionChanges` method, the source file is rewritten.
 
 The following code snippets show how to get revisions from a document, accept or reject the detected revisions and save changes to the output document:
 
 ## Accept or Reject revisions from a local disk
 
+The following example loads a DOCX file from disk, accepts all insertion revisions, and saves the updated document.
+
 ```javascript
-try {
-  const revisionHandler = new groupdocs.comparison.RevisionHandler(withRevisionFile)
-  List<RevisionInfo> revisionList = revisionHandler.getRevisions();
-  for (RevisionInfo revision : revisionList) {
-      if (revision.getType() == groupdocs.comparison.RevisionType.INSERTION) {
-          revision.setAction(groupdocs.comparison.RevisionAction.Accept);
-      }
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Initialize RevisionHandler for the source document
+const revisionHandler = new groupdocs.RevisionHandler('sample-files/revision.docx');
+
+// Retrieve all revisions from the document
+const revisionList = revisionHandler.getRevisions();
+
+// Iterate through each revision and accept insertions
+for (let i = 0; i < revisionList.length; i++) {
+  const revision = revisionList[i];
+
+  // If the revision type is an insertion, set its action to ACCEPT
+  if (revision.getType() === groupdocs.RevisionType.INSERTION) {
+    // Mark insertion revision for acceptance
+    revision.setAction(groupdocs.RevisionAction.ACCEPT);
   }
-  const revisionOptions = new groupdocs.comparison.ApplyRevisionOptions();
-  revisionOptions.setChanges(revisionList);
-  revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
 }
+
+// Prepare options for applying revisions
+const revisionOptions = new groupdocs.ApplyRevisionOptions();
+
+// Assign the modified revision list to the options
+revisionOptions.setChanges(revisionList);
+
+// Apply the revision changes and save the result to a new file
+revisionHandler.applyRevisionChanges('sample-files/result.docx', revisionOptions);
+
+// Exit the process
+process.exit(0);
 ```
+
+This example creates a `RevisionHandler` instance with the source document path, retrieves all revisions using `getRevisions()`, and iterates through them to identify insertion-type revisions. It marks insertion revisions for acceptance using `setAction(RevisionAction.ACCEPT)`, creates an `ApplyRevisionOptions` object with the modified revision list, and applies the changes to save a new document where all insertion revisions have been accepted.
 
 ## Accept or Reject revisions from a stream
 
+The following example performs the same operation using a Java input stream as the revision source and writes the result to an output stream.
+
 ```javascript
-try {
-  const revisionHandler = new groupdocs.comparison.RevisionHandler(withRevisionInputStream)
-  List<RevisionInfo> revisionList = revisionHandler.getRevisions();
-  for (RevisionInfo revision : revisionList) {
-      if (revision.getType() == groupdocs.comparison.RevisionType.Insertion) {
-          revision.setAction(groupdocs.comparison.RevisionAction.Accept);
-      }
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Load Java integration module for file streams
+const java = require('java');
+let InputStream = java.import('java.io.FileInputStream');
+let OutputStream = java.import('java.io.FileOutputStream');
+
+// Create input stream for the source document that contains revisions
+const revisionInputStream = new InputStream('sample-files/revision.docx');
+
+// Initialize RevisionHandler with the source document stream
+const revisionHandler = new groupdocs.RevisionHandler(revisionInputStream, groupdocs.FileType.DOCX);
+
+// Retrieve all revisions from the document
+const revisionList = revisionHandler.getRevisions();
+
+// Iterate through revisions and accept all insertions
+for (let i = 0; i < revisionList.length; i++) {
+  const revision = revisionList[i];
+
+  // Check if the revision is an insertion type
+  if (revision.getType() === groupdocs.RevisionType.Insertion) {
+    // Mark the insertion revision to be accepted
+    revision.setAction(groupdocs.RevisionAction.Accept);
   }
-  const revisionOptions = new groupdocs.comparison.ApplyRevisionOptions(revisionList);
-  revisionHandler.applyRevisionChanges(resultOutputStream, revisionOptions);
 }
+
+// Prepare output stream for the document after applying revisions
+const resultOutputStream = new OutputStream('result-document.docx');
+
+// Configure options with the modified revision list
+const revisionOptions = new groupdocs.ApplyRevisionOptions(revisionList);
+
+// Apply the revision changes and write the result to the output stream
+revisionHandler.applyRevisionChanges(resultOutputStream, revisionOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example demonstrates the same workflow using Java input and output streams instead of file paths. It creates a `RevisionHandler` with an input stream and the document file type, retrieves revisions, marks insertion revisions for acceptance, and creates an `ApplyRevisionOptions` object initialized directly with the revision list. The `applyRevisionChanges()` method is then called with an output stream to write the processed document directly to a stream without intermediate file operations.
 
 ## Accept or Reject all revisions
 
+The following example shows how to accept all revisions in a document using a single common handler action.
+
 ```javascript
-try {
-  const revisionHandler = new groupdocs.comparison.RevisionHandler(withRevisionFile)
-  const revisionOptions = new groupdocs.comparison.ApplyRevisionOptions();
-  revisionOptions.setCommonHandler(groupdocs.comparison.RevisionAction.Accept);
-  revisionHandler.applyRevisionChanges(resultFile, revisionOptions);
-}
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Import Java classes for file input stream handling
+const java = require('java');
+const InputStream = java.import('java.io.FileInputStream');
+
+// Define file paths for input revision document and output result document
+const revisionFile = 'sample-files/revision.docx';
+const resultFile = 'sample-files/result.docx';
+
+// Create a file input stream from the revision document
+const revisionStream = new InputStream(revisionFile);
+
+// Initialize RevisionHandler with the revision file stream and document type
+const revisionHandler = new groupdocs.RevisionHandler(revisionStream, groupdocs.FileType.DOCX);
+
+// Create ApplyRevisionOptions instance
+const ApplyRevisionOptions = groupdocs.ApplyRevisionOptions;
+const applyOptions = new ApplyRevisionOptions();
+
+// Set the common handler to Accept all revisions
+// This applies the Accept action to all revisions in the document
+applyOptions.setCommonHandler(groupdocs.RevisionAction.Accept);
+
+// Apply the revision changes to the result file using the configured options
+revisionHandler.applyRevisionChanges(resultFile, applyOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example shows a simplified approach for processing all revisions at once. It creates a `RevisionHandler` with a revision document stream and file type, creates an `ApplyRevisionOptions` object, and uses `setCommonHandler(RevisionAction.Accept)` to apply a single action to all revisions without needing to iterate through them individually. This is more efficient when you want to accept or reject all revisions uniformly.
 
 ## Result of revision processing
 

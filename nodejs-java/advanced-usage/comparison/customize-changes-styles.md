@@ -8,76 +8,66 @@ keywords: Style change detection, Compare document styles, Document comparison
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to customize changes styles in JavaScript
-    description: Learn how to customize changes styles in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and initialize InsertedItemStyle, DeletedItemStyle, ChangedItemStyle parameters by object with required parameters.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) provides the compare options collection to set up the appropriate comparison speed and quality.
 
-To compare two documents with custom change style settings, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object. Specify the appropriate parameters.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object.
-
-The following code snippets show how to compare documents with specific options:
+The following code snippets show how to compare documents with specific options.
 
 ## Compare documents from a local disk with custom change styles
 
+The following example compares two DOCX files from disk and applies custom styles to inserted, deleted, and changed content in the result.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceFile);
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and output documents
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const resultFile = 'output/result.docx';
+
+// Initialize the comparer with the source document and add the target
+const comparer = new groupdocs.Comparer(sourceFile);
 comparer.add(targetFile);
 
-const compareOptions = new groupdocs.comparison.CompareOptions();
+// Create comparison options to configure visual styling of changes
+const compareOptions = new groupdocs.CompareOptions();
 
-const insertedStyleSettings = new groupdocs.comparison.StyleSettings();
-insertedStyleSettings.setHighlightColor(Color.RED);
-insertedStyleSettings.setFontColor(Color.GREEN);
+// Configure style for inserted items (text added in the target document)
+const insertedStyleSettings = new groupdocs.StyleSettings();
 insertedStyleSettings.setUnderline(true);
 insertedStyleSettings.setBold(true);
 insertedStyleSettings.setStrikethrough(true);
 insertedStyleSettings.setItalic(true);
 compareOptions.setInsertedItemStyle(insertedStyleSettings);
 
-const deletedStyleSettings = new groupdocs.comparison.StyleSettings();
-deletedStyleSettings.setHighlightColor(Color.PINK);
-deletedStyleSettings.setFontColor(Color.CYAN);
+// Configure style for deleted items (text removed from the source document)
+const deletedStyleSettings = new groupdocs.StyleSettings();
 deletedStyleSettings.setUnderline(true);
 deletedStyleSettings.setBold(true);
 deletedStyleSettings.setStrikethrough(true);
 deletedStyleSettings.setItalic(true);
 compareOptions.setDeletedItemStyle(deletedStyleSettings);
 
-const changedStyleSettings = new groupdocs.comparison.StyleSettings();
-changedStyleSettings.setHighlightColor(Color.LIGHT_GRAY);
-changedStyleSettings.setFontColor(Color.GRAY);
+// Configure style for changed items (text modified between documents)
+const changedStyleSettings = new groupdocs.StyleSettings();
 changedStyleSettings.setUnderline(true);
 changedStyleSettings.setBold(true);
 changedStyleSettings.setStrikethrough(true);
 changedStyleSettings.setItalic(true);
 compareOptions.setChangedItemStyle(changedStyleSettings);
 
-const resultPath = comparer.compare(resultFile, compareOptions);
+// Run the comparison using the configured styling options
+comparer.compare(resultFile, compareOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It then creates separate `StyleSettings` objects for inserted, deleted, and changed items, configuring each with underline, bold, strikethrough, and italic formatting. These style settings are applied to the comparison options, and when the comparison is performed, all detected changes will be styled according to these custom settings in the result document.
 
 The result is as follows:
 
@@ -85,38 +75,80 @@ The result is as follows:
 
 ## Compare documents from a stream with custom change styles
 
+The following example performs the same comparison using document streams and applies color-based styles for each type of change.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceInputStream);
+'use strict';
+
+// Import GroupDocs.Comparison for Node.js via Java and Java interop utilities
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+//----------------------------------------------------
+//----------------------------------------------------
+const java = require('java');
+let InputStream = java.import('java.io.FileInputStream');
+let Color = java.import('java.awt.Color');
+
+//----------------------------------------------------
+// Create input streams for the source and target documents
+const sourceInputStream = new InputStream('sample-files/source.docx');
+const targetInputStream = new InputStream('sample-files/target.docx');
+
+//----------------------------------------------------
+// Initialize the comparer with the source document stream
+const comparer = new groupdocs.Comparer(sourceInputStream);
+
+//----------------------------------------------------
+// Add the target document stream to the comparer
 comparer.add(targetInputStream);
 
-const compareOptions = new groupdocs.comparison.CompareOptions();
+//----------------------------------------------------
+// Prepare comparison options to customize visual styles
+const compareOptions = new groupdocs.CompareOptions();
 
-const insertedStyleSettings = new groupdocs.comparison.StyleSettings();
-insertedStyleSettings.setHighlightColor(Color.RED);
-insertedStyleSettings.setFontColor(Color.GREEN);
-insertedStyleSettings.setUnderline(true);
-insertedStyleSettings.setBold(true);
-insertedStyleSettings.setStrikethrough(true);
-insertedStyleSettings.setItalic(true);
-compareOptions.setInsertedItemStyle(insertedStyleSettings);
+//----------------------------------------------------
+// Configure style for inserted items (e.g., text added in the target)
+const insertedStyleSettings = new groupdocs.StyleSettings();
+insertedStyleSettings.setHighlightColor(Color.RED);      // Highlight inserted text in red
+insertedStyleSettings.setFontColor(Color.GREEN);        // Set font color to green
+insertedStyleSettings.setUnderline(true);               // Underline inserted text
+insertedStyleSettings.setBold(true);                    // Make inserted text bold
+insertedStyleSettings.setStrikethrough(true);           // Apply strikethrough (optional visual cue)
+insertedStyleSettings.setItalic(true);                  // Italicize inserted text
+compareOptions.setInsertedItemStyle(insertedStyleSettings); // Apply inserted style to options
 
-const deletedStyleSettings = new groupdocs.comparison.StyleSettings();
-deletedStyleSettings.setHighlightColor(Color.PINK);
-deletedStyleSettings.setFontColor(Color.CYAN);
-deletedStyleSettings.setUnderline(true);
-deletedStyleSettings.setBold(true);
-deletedStyleSettings.setStrikethrough(true);
-deletedStyleSettings.setItalic(true);
-compareOptions.setDeletedItemStyle(deletedStyleSettings);
+//----------------------------------------------------
+// Configure style for deleted items (e.g., text removed from the source)
+const deletedStyleSettings = new groupdocs.StyleSettings();
+deletedStyleSettings.setHighlightColor(Color.PINK);      // Highlight deleted text in pink
+deletedStyleSettings.setFontColor(Color.CYAN);          // Set font color to cyan
+deletedStyleSettings.setUnderline(true);                // Underline deleted text
+deletedStyleSettings.setBold(true);                     // Make deleted text bold
+deletedStyleSettings.setStrikethrough(true);            // Strike through deleted text
+deletedStyleSettings.setItalic(true);                   // Italicize deleted text
+compareOptions.setDeletedItemStyle(deletedStyleSettings); // Apply deleted style to options
 
-const changedStyleSettings = new groupdocs.comparison.StyleSettings();
-changedStyleSettings.setHighlightColor(Color.LIGHT_GRAY);
-changedStyleSettings.setFontColor(Color.GRAY);
-changedStyleSettings.setUnderline(true);
-changedStyleSettings.setBold(true);
-changedStyleSettings.setStrikethrough(true);
-changedStyleSettings.setItalic(true);
-compareOptions.setChangedItemStyle(changedStyleSettings);
+//----------------------------------------------------
+// Configure style for changed items (e.g., text modified between documents)
+const changedStyleSettings = new groupdocs.StyleSettings();
+changedStyleSettings.setHighlightColor(Color.LIGHT_GRAY); // Highlight changes in light gray
+changedStyleSettings.setFontColor(Color.GRAY);            // Set font color to gray
+changedStyleSettings.setUnderline(true);                 // Underline changed text
+changedStyleSettings.setBold(true);                      // Make changed text bold
+changedStyleSettings.setStrikethrough(true);             // Strikethrough changed text
+changedStyleSettings.setItalic(true);                    // Italicize changed text
+compareOptions.setChangedItemStyle(changedStyleSettings); // Apply changed style to options
 
-const resultPath = comparer.compare(resultInputStream, compareOptions);
+//----------------------------------------------------
+// Define the output path for the comparison result document
+const resultPath = 'result.docx';
+
+//----------------------------------------------------
+// Execute the comparison and save the result using the defined options
+comparer.compare(resultPath, compareOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example demonstrates the same workflow using Java input streams instead of file paths. It creates `InputStream` objects for both documents, initializes the comparer with the source stream, adds the target stream, and creates `CompareOptions` with custom `StyleSettings`. In this case, the styles include color settings: inserted items are highlighted in red with green font, deleted items are highlighted in pink with cyan font, and changed items are highlighted in light gray with gray font. All items also have underline, bold, strikethrough, and italic formatting applied.

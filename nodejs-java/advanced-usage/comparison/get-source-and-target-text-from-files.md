@@ -8,56 +8,56 @@ keywords: Get target txt, Get source txt, documents diff, compare documents, com
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to get source and target text in JavaScript
-    description: Learn how to get source and target text in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path or source file stream parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file or target file stream using the Add method.
-      - name: Specify necessary settings
-        text: Create an options object and specify ExtendedSummaryPage of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter.
-      - name: Create an array for file changes
-        text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
-      - name: Output the changes
-        text: Display the source or target text of the changes using the change info array element.
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to get source and target texts of specific changes in the output file.
-
-To get a list of changed source and target texts, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method.
-4.  Call the `getChanges()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#getChanges- -)--> method.
 
 The following code snippets show how to get specified texts from a file.
 
 ## Get source and target text from a local disk
 
+The following example compares two DOCX files from disk and prints the source and target text for each detected change.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePath);
-    comparer.add(targetPath);
-    const resultPath = comparer.compare(outputPath);
-    let changes = comparer.getChanges();
-    for (ChangeInfo change : changes) {
-        System.out.println();
-        System.out.println("Source text: " + change.getSourceText());
-        System.out.println("Target text: " + change.getTargetText());
-    }
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and output documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+const outputPath = 'result.docx';
+
+// Initialize the comparer with the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+// Add the target document to the comparison set
+comparer.add(targetPath);
+
+// Execute the comparison and write the result to the output file
+comparer.compare(outputPath);
+
+// Retrieve the list of detected changes after comparison
+const changes = comparer.getChanges();
+
+// Iterate over each change and display its source/target text fragments
+for (let i = 0; i < changes.length; i++) {
+  const change = changes[i];
+
+  // Blank line for readability between changes
+  console.log();
+
+  // Output text from the source and target documents for this change
+  console.log('Source text: ', change.getSourceText());
+  console.log('Target text: ', change.getTargetText());
+}
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and performs the comparison. After the comparison, it retrieves all detected changes using `getChanges()` and iterates through them to extract and display the source text (original text from the source document) and target text (modified text from the target document) for each change. This allows you to see exactly what text was changed between the documents.
 
 The result is as follows:
 
@@ -65,14 +65,46 @@ The result is as follows:
 
 ## Get source and target text from a stream
 
+The following example performs the same operation using Java input streams instead of file paths.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourceInputStream);
-    comparer.add(targetInputStream);
-    const resultPath = comparer.compare(outputPath);
-    let changes = comparer.getChanges();
-    for (ChangeInfo change : changes){
-        System.out.println();
-        System.out.println("Source text: "+change.getSourceText());
-        System.out.println("Target text: "+change.getTargetText());
-    }
+'use strict';
+
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Import Java bridge to work with FileInputStream
+const java = require('java');
+const InputStream = java.import('java.io.FileInputStream');
+
+// Create input streams for source and target documents
+const sourceInputStream = new InputStream('sample-files/source.docx');
+const targetInputStream = new InputStream('sample-files/target.docx');
+
+// Define the output file path for the comparison result
+const outputPath = 'result.docx';
+
+// Initialize the comparer with the source document stream
+const comparer = new groupdocs.Comparer(sourceInputStream);
+
+// Add the target document stream to the comparer
+comparer.add(targetInputStream);
+
+// Perform the comparison and generate the result file
+comparer.compare(outputPath);
+
+// Retrieve the list of detected changes
+const changes = comparer.getChanges();
+
+// Iterate over each change and output its source/target text portions
+for (let i = 0; i < changes.length; i++) {
+  const change = changes[i];
+  console.log('Source text: ', change.getSourceText());
+  console.log('Target text: ', change.getTargetText());
+}
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example demonstrates the same workflow using Java input streams instead of file paths. It creates `InputStream` objects for both source and target documents, initializes the comparer with the source stream, adds the target stream, performs the comparison, and then retrieves and displays the source and target text for each detected change, just like the previous example but using streams.

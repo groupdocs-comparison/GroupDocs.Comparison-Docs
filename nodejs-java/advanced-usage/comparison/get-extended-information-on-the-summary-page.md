@@ -8,47 +8,44 @@ keywords: Compare documents, summary page, SummaryPage, extended information, Ex
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to get extended information on the summary page in JavaScript
-    description: Learn how to get extended information on the summary page in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and specify ExtendedSummaryPage of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and compare options parameter.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to detect changes between source and target files and display changes on the separate page - `SummaryPage`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setGenerateSummaryPage-boolean-)-->.
-You can also get extended information about the comparison of documents, which is displayed in the `SummaryPage`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setGenerateSummaryPage-boolean-)-->.
-
-To get extended information, follow these steps:
-
-1.  Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify the source document path or stream.
-2.  Call the `add()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify the target document path or stream.
-3.  Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object. Set the `ExtendedSummaryPage`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setExtendedSummaryPage-boolean-)--> property to `true`.
-4.  Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object from the previous step.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to detect changes between source and target files and display changes on the separate page - `SummaryPage`.
+You can also get extended information about the comparison of documents, which is displayed in the `SummaryPage`.
 
 The following code snippet shows how to get extended information:
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePath);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target and output documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+const outputPath = 'result.docx';
+
+// Initialize the comparer with the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+// Add the target document to the comparison set
 comparer.add(targetPath);
-const options = new groupdocs.comparison.CompareOptions();
+
+// Create comparison options
+const options = new groupdocs.CompareOptions();
+
+// Enable generation of an extended summary page in the result
 options.setExtendedSummaryPage(true);
+
+// Execute the comparison and save the result to the specified output path
 const resultPath = comparer.compare(outputPath, options);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It enables extended summary page generation by setting `setExtendedSummaryPage(true)`, then performs the comparison. The result document will include an extended summary page with detailed information about all detected changes, providing more comprehensive statistics than a standard summary page.
 
 The result is as follows:
 

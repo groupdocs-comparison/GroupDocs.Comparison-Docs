@@ -8,48 +8,45 @@ keywords: RevisionAuthorName, author, revision
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: How to set author of changes in JavaScript
-    description: How to set author of changes in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Load the target file
-        text: Add the path to the target file using the add method.
-      - name: Specify necessary settings
-        text: Create an options object and specify WordTrackChanges and ShowRevisions of true value and set name in RevisionAuthorName.
-      - name: Compare documents
-        text: Call the compare method of your object and put the resulting file path parameter and the options object.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to set the changes author name in the resulting document. To do this, follow these steps:
-1. Instantiate the `Comparer`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer)--> object. Specify a source file path or an input stream.
-2. Call the `add`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#add-java.lang.String-)--> method. Specify a target file path or an input stream.
-3. Instantiate the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object. Set the `WordTrackChanges`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setWordTrackChanges-boolean-)--> and `ShowRevisions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setShowRevisions-boolean-)--> properties to `true`.
-4. Set the author of changes via the `RevisionAuthorName`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions/#setRevisionAuthorName-java.lang.String-)--> property.
-5. Call the `compare()`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison/comparer/#compare-java.lang.String-)--> method. Specify the `CompareOptions`<!--](https://reference.groupdocs.com/comparison/nodejs-java/com.groupdocs.comparison.options/compareoptions)--> object from the previous step.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) allows you to set the changes author name in the resulting document.
 
 The following code snippet shows how to set the changes author:
 
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(sourcePath);
+'use strict';
+
+// Import the GroupDocs Comparison Node.js SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
+
+// Define file paths for source, target, and result documents
+const sourcePath = 'sample-files/source.docx';
+const targetPath = 'sample-files/target.docx';
+const resultPath = 'result.docx';
+
+// Initialize the comparer with the source document
+const comparer = new groupdocs.Comparer(sourcePath);
+
+// Add the target document to the comparison set
 comparer.add(targetPath);
 
-const compareOptions = new groupdocs.comparison.CompareOptions();
-compareOptions.setShowRevisions(true);
-compareOptions.setWordTrackChanges(true);
-compareOptions.setRevisionAuthorName("New author");
+// Create comparison options to customize the output
+const compareOptions = new groupdocs.CompareOptions();
 
+// Enable revision tracking and set author information
+compareOptions.setShowRevisions(true);               // show changes as revisions
+compareOptions.setWordTrackChanges(true);           // generate Word track changes
+compareOptions.setRevisionAuthorName('New author'); // author name for revisions
+
+// Execute the comparison and save the result to the specified path
 comparer.compare(resultPath, compareOptions);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
+
+This example creates a `Comparer` instance with the source document, adds the target document, and creates a `CompareOptions` object. It enables revision tracking by setting both `setShowRevisions(true)` and `setWordTrackChanges(true)`, then sets the author name for revisions using `setRevisionAuthorName('New author')`. When the comparison is performed, all changes will be marked as revisions with the specified author name in the result document.
 
 The result is as follows:
 

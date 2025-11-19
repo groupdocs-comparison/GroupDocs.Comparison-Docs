@@ -8,45 +8,40 @@ keywords: Get file info, Get File Type, Page count, File size
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: False
 toc: True
-structuredData:
-  showOrganization: True
-  application:
-    name: Document Comparison
-    description: Compare documents natively with high performance using JavaScript language and GroupDocs.Comparison for Node.js via Java
-    productCode: comparison
-    productPlatform: nodejs-java
-  showVideo: True
-  howTo:
-    name: Get Comparer file info in JavaScriptScript
-    description: Get Comparer file info in JavaScript step by step
-    steps:
-      - name: Create an object and load the source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file paths as per your requirements.
-      - name: Create a file info object
-        text: Call the GetDocumentInfo method on the Source field of the comparer object and assign the result to a file info object of the IDocumentInfo class.
-      - name: Get file information
-        text: To get general information about a file, access the required field using the file info object. To get information about a particular page, use the PagesInfo field with the required page index and access the required field after that.
 ---
 
 With [GroupDocs.Comparison](https://products.groupdocs.com/comparison/nodejs-java) you can retrieve the following information about a file:
 
-*   `FileType`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/filetype/)--> represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation, image etc.).
-*   `PageCount`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagecount/)--> represents the number of pages in a document.
-*   `FileSize`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/size/)--> represents the document file size.
-*   `PagesInfo`<!--](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/pagesinfo/)--> represents the page information.
+*   `FileType` represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation, image etc.).
+*   `PageCount` represents the number of pages in a document.
+*   `FileSize` represents the document file size.
+*   `PagesInfo` represents the page information.
 
 The following code samples show how to get file information:
 
 ## Get file info for the file from a local disk
 
+The following example opens a local document and prints its basic metadata such as type, page count, and size.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(Constants.SOURCE_WORD);
+'use strict';
 
-let info = await comparer.getSource().getDocumentInfo();
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
 
+// Create a Comparer instance for the source document (loaded from disk)
+const comparer = new groupdocs.Comparer('sample-files/source.docx');
+
+// Retrieve document information (type, pages, size, etc.) from the source
+const info = comparer.getSource().getDocumentInfo();
+
+// Output file type, page count, and size to the console
 console.log(`\nFile type: ${info.getFileType().getFileFormat()}`);
 console.log(`Number of pages: ${info.getPageCount()}`);
 console.log(`Document size: ${info.getSize()} bytes`);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
 
 The result is as follows:
@@ -55,13 +50,32 @@ The result is as follows:
 
 ## Get file info for the file from a stream
 
+The following example loads a document from a Java input stream and then reads its metadata.
+
 ```javascript
-const comparer = new groupdocs.comparison.Comparer(new FileInputStream(Constants.SOURCE_WORD));
+'use strict';
 
-let info = await comparer.getSource().getDocumentInfo();
+// Import the GroupDocs.Comparison for Node.js via Java SDK
+const groupdocs = require('@groupdocs/groupdocs.comparison');
 
+// Import Java bridge to work with input streams
+const java = require('java');
+
+// Get a reference to the Java FileInputStream class
+let InputStream = java.import('java.io.FileInputStream');
+
+// Create a Comparer instance using a Java input stream as the source document
+const comparer = new groupdocs.Comparer(new InputStream('sample-files/source.docx'));
+
+// Retrieve document information from the source stream
+const info = comparer.getSource().getDocumentInfo();
+
+// Print document type, page count, and size to the console
 console.log(`\nFile type: ${info.getFileType().getFileFormat()}`);
 console.log(`Number of pages: ${info.getPageCount()}`);
 console.log(`Document size: ${info.getSize()} bytes`);
+
+// Terminate the process with a success exit code
+process.exit(0);
 ```
 
