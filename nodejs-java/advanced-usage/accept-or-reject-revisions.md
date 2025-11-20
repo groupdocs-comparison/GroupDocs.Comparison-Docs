@@ -55,7 +55,7 @@ const revisionOptions = new groupdocs.ApplyRevisionOptions();
 revisionOptions.setChanges(revisionList);
 
 // Apply the revision changes and save the result to a new file
-revisionHandler.applyRevisionChanges('sample-files/result.docx', revisionOptions);
+revisionHandler.applyRevisionChanges('result.docx', revisionOptions);
 
 // Exit the process
 process.exit(0);
@@ -129,7 +129,7 @@ const InputStream = java.import('java.io.FileInputStream');
 
 // Define file paths for input revision document and output result document
 const revisionFile = 'sample-files/revision.docx';
-const resultFile = 'sample-files/result.docx';
+const resultFile = 'result.docx';
 
 // Create a file input stream from the revision document
 const revisionStream = new InputStream(revisionFile);

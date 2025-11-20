@@ -37,29 +37,38 @@ const java = require('java');
 const sourcePath = 'sample-files/source.docx';
 const targetPath = 'sample-files/target.docx';
 const outputPath = 'result.docx';
+
 // Initialize comparer with the source document
 const comparer = new groupdocs.Comparer(sourcePath);
+
 // Add the target document to be compared against the source
 comparer.add(targetPath);
+
 // Execute the comparison operation
 comparer.compare(outputPath);
+
 // Retrieve the list of detected changes
 const changes = comparer.getChanges();
+
 // Accept the first 10 changes (or fewer if less than 10 exist)
 for (let i = 0; i < 10 && i < changes.length; i++) {
     changes[i].setComparisonAction(groupdocs.ComparisonAction.ACCEPT);
 }
+
 // Reject the remaining changes
 for (let i = 10; i < changes.length; i++) {
     changes[i].setComparisonAction(groupdocs.ComparisonAction.REJECT);
 }
+
 // Prepare options for applying changes
 // Convert JavaScript array to Java array
 const changeArray = java.newArray('com.groupdocs.comparison.result.ChangeInfo', changes);
 const applyChangeOptions = new groupdocs.ApplyChangeOptions();
 applyChangeOptions.setChanges(changeArray);
+
 // Apply the changes to the source document and save the result
 comparer.applyChanges(outputPath, applyChangeOptions);
+
 // Terminate the process with a success exit code
 process.exit(0);
 ```

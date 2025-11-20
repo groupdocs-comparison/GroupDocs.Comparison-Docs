@@ -103,7 +103,7 @@ comparer.add(targetInputStream);
 comparer.compare('result.docx');
 
 // Retrieve list of detected changes
-const changes = comparer.getChanges();
+let changes = comparer.getChanges();
 
 // Reject the first detected change
 changes[0].setComparisonAction(groupdocs.ComparisonAction.REJECT);

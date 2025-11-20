@@ -21,9 +21,9 @@ The following code snippet shows how to compare documents and obtain coordinates
 const groupdocs = require('@groupdocs/groupdocs.comparison');
 
 // Define file paths for the source, target, and result documents
-const sourceFile = "sample-files/source.docx";
-const targetFile = "sample-files/target.docx";
-const resultFile = "result.docx";
+const sourceFile = 'sample-files/source.docx';
+const targetFile = 'sample-files/target.docx';
+const resultFile = 'result.docx';
 
 // Create a comparer instance for the source document
 const comparer = new groupdocs.Comparer(sourceFile);
