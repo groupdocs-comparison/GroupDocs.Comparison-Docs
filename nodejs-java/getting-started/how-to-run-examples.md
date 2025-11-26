@@ -60,10 +60,10 @@ To get started, make sure that [Node.js](https://nodejs.org/) and Java are insta
 3. **Run all examples**
 
    ```bash
-   node runExamples.js
+   npm start
    ```
 
-   Output documents are created under the `Results/Output/` directory, grouped by example.
+   Output documents are created under the `Output/` directory, grouped by example.
 
 ## Explore available examples
 
@@ -73,7 +73,7 @@ After running the project once, you may want to see what examples are available 
 - Enable or disable specific examples by editing `runExamples.js` and re-running:
 
   ```bash
-  node runExamples.js
+  npm start
   ```
 
 Refer to the examples README for an overview of QuickStart, BasicUsage, and AdvancedUsage folders and the scenarios they cover  
