@@ -15,6 +15,6 @@ Here you will find examples on comparing Word documents programmatically, handli
 
 ### Pages in this section
 
-- [Compare Word Documents in Node.js]({{< ref "comparison/nodejs-java/use-cases/legal-document-comparison" >}}) – Learn how to compare Word documents with custom styling, handle password-protected files, and use streams for memory-efficient processing.
+- [Compare Word Documents in Node.js]("comparison/nodejs-java/legal-document-comparison") – Learn how to compare Word documents with custom styling, handle password-protected files, and use streams for memory-efficient processing.
 
-- [Batch Word Document Comparison with Performance Optimization in Node.js]({{< ref "comparison/nodejs-java/use-cases/optimize-document-comparison-performance" >}}) – Learn how to efficiently compare large sets of Word files using parallel processing and performance tuning.
+- [Batch Word Document Comparison with Performance Optimization in Node.js]("comparison/nodejs-java/optimize-document-comparison-performance") – Learn how to efficiently compare large sets of Word files using parallel processing and performance tuning.
