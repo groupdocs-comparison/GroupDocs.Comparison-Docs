@@ -57,6 +57,7 @@ The [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.c
 *   [ReleasePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/releasepagestream) is a delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling
 *   [Width](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/width) is preview image width. Use this property to customize output image width
 *   [Height](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/height) is preview image height. Use this property to customize output image height
+*   [Resolution](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/Resolution) allows to configure horizontal and vertical resolution values for image preview generation
 *   [PageNumbers](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/pagenumbers) defines numbers of pages to be previewed;
 *   [PreviewFormat](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/previewformat) gets or sets the preview image format which provides ability to choose between image quality and size. Use the BMP format for the best image quality. Use the JPG format to produce smallest image size (and faster loading image previews), but with lower quality than BMP. By default GroupDocs.Comparison uses the PNG format to provide appropriate image quality and size.
 
@@ -145,7 +146,7 @@ using (Comparer comparer = new Comparer("source.docx"))
 {{< /tab >}}
 {{< /tabs >}}
 
-## Set specific size for preview images
+## Set specific size and resolution for preview images
 
 {{< tabs "example4">}}
 {{< tab "C#" >}}
@@ -169,6 +170,13 @@ using (Comparer comparer = new Comparer("source.pptx"))
     previewOptions.PageNumbers = new int[] { 1, 2 };
     previewOptions.Height = 1000;
     previewOptions.Width = 1000;
+
+    previewOptions.Resolution = new PreviewResolution()
+    {
+      HorizontalResolution = 300,
+      VerticalResolution = 300
+    };
+
     document.GeneratePreview(previewOptions);
 }
 ```
