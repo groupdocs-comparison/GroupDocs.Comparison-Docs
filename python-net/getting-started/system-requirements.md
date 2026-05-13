@@ -1,47 +1,56 @@
 ---
 id: system-requirements
-url: comparison/python-net/system-requirements
+url: comparison/python-net/getting-started/system-requirements
 title: System Requirements
+linkTitle: System requirements
 weight: 3
-description: "On this page, you will find system requirements supported platforms, development environments. GroupDocs.Comparison for Python via .NET does not require any external software or third party tool to be installed."
-keywords: System Requirements, Supported Operating System, Supported Frameworks
+description: "System requirements for GroupDocs.Comparison for Python via .NET — Windows, Linux, and macOS x64/arm64; CPython 3.5–3.14; bundled .NET runtime; minimal native dependencies."
+keywords: system requirements, supported operating systems, Python version, GroupDocs.Comparison
 productName: GroupDocs.Comparison for Python via .NET
-hideChildren: False
-toc: True
+hideChildren: false
+toc: true
+aliases:
+    - /comparison/python-net/system-requirements/
+structuredData:
+  showOrganization: true
 ---
 
-## Overview
+GroupDocs.Comparison for Python via .NET is a self-contained Python wheel; it does not require a separate .NET installation. The .NET runtime is bundled.
 
-[GroupDocs.Comparison for Python via .NET](https://products.groupdocs.com/comparison/python-net) does not require any external software or third-party tool to be installed. Just follow one of the ways described in the [Installation]({{< ref "comparison/python-net/getting-started/installation.md" >}}).
+## Supported operating systems
 
-## Supported Operating Systems
-
-GroupDocs.Comparison for Python via .NET supports any 32-bit or 64-bit operating system where Python is installed including, but not limited to:
+GroupDocs.Comparison runs on 64-bit Windows, Linux, and macOS. Per-platform wheels are published.
 
 ### Windows
 
-- Microsoft Windows Server 2003 and later
-- Microsoft Windows Vista (x64, x86)
-- Microsoft Windows XP (x64, x86)
-- Microsoft Windows 7, 8, 8.1 (x64, x86)
-- Microsoft Windows 10 (x64, x86)
-- Microsoft Windows 11 (x64)
+- Windows 10 (x64)
+- Windows 11 (x64)
+- Windows Server 2016, 2019, 2022, 2025
 
 ### Linux
 
-- Linux (Ubuntu, OpenSUSE, CentOS and others)
+- Ubuntu 20.04+, Debian 11+, Fedora 36+, CentOS Stream 9+ — any glibc-based distribution that meets the manylinux baseline.
+- Native dependencies: `libgdiplus`, `libfontconfig1`, `libicu-dev`, `ttf-mscorefonts-installer` — see [Installation]({{< ref "comparison/python-net/getting-started/installation" >}}).
 
-### Mac
+### macOS
 
-- Mac OS X
+- macOS 12 Monterey or later, on Intel x64 or Apple Silicon (arm64).
+- Native dependencies: `mono-libgdiplus` via Homebrew.
 
-## Supported Frameworks
+## Supported Python versions
 
-GroupDocs.Comparison for Python via .NET supports the following Python frameworks:
+GroupDocs.Comparison for Python via .NET supports CPython 3.5 through 3.14. The package is published as platform-specific wheels for each supported Python version.
 
-### Python
-- Python 3+
+```bash
+python --version    # Should print 3.5.x or higher
+```
 
-## Development Environments
+## Hardware requirements
 
-GroupDocs.Comparison for Python needs only Python and .NET. You can use any text editor like Atom, Sublime, Visual Studio Code, etc.
+- **CPU:** any 64-bit x86 (x64) or ARM (arm64) processor.
+- **RAM:** at least 1 GB free. Large documents and high-DPI conversions benefit from more.
+- **Disk:** the wheel itself is ~150 MB. Allow ample temporary space for the documents being compared.
+
+## Development environments
+
+Any Python IDE or text editor works — VS Code, PyCharm, Cursor, Sublime Text, vim, etc. AI assistants such as Claude Code, Cursor, and GitHub Copilot have first-class support via the bundled `AGENTS.md` and the [MCP server]({{< ref "comparison/python-net/agents-and-llm-integration" >}}).

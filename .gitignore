@@ -1,3 +1,6 @@
 deploy_key
 .idea/*
 *.iml
+
+# Claude
+.claude/

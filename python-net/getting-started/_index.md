@@ -2,12 +2,13 @@
 id: getting-started
 url: comparison/python-net/getting-started
 title: Getting Started
+linkTitle: Getting started
 weight: 2
-description: "In this manual, you will learn about the installation, basic features, licensing, system requirements, supported platforms of GroupDocs.Comparison for Python via .NET"
-keywords: Getting started, Basic features, Licensing, System requirements
+description: "From zero to your first document comparison in under five minutes — install GroupDocs.Comparison for Python via .NET, set up a license, and run the quick-start example."
+keywords: getting started, installation, licensing, system requirements, GroupDocs.Comparison Python
 productName: GroupDocs.Comparison for Python via .NET
-hideChildren: False
-isMenuItemWithNoContent: True
+hideChildren: false
+isMenuItemWithNoContent: true
 structuredData:
-  showOrganization: True
+  showOrganization: true
 ---

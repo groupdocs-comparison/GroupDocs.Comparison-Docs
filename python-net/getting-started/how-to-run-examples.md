@@ -1,44 +1,84 @@
 ---
 id: how-to-run-examples
-url: comparison/python-net/how-to-run-examples
+url: comparison/python-net/getting-started/how-to-run-examples
 title: How to Run Examples
+linkTitle: How to run examples
 weight: 6
-description: "In this article, you can find how to run examples. We offer multiple solutions on how you can run GroupDocs.Comparison examples, by building your own or using our back-end or front-end examples out-of-the-box."
-keywords: How to run a comparison, basic usage, How to run examples
+description: "Clone the GroupDocs.Comparison for Python via .NET examples repository, install dependencies, and run the bundled examples that accompany this documentation."
+keywords: run examples, GroupDocs.Comparison examples, GitHub repository, examples runner
 productName: GroupDocs.Comparison for Python via .NET
-hideChildren: False
-toc: True
+hideChildren: false
+toc: true
+aliases:
+    - /comparison/python-net/how-to-run-examples/
 structuredData:
-  showOrganization: True
-  application:
-    name: Documents Comparison Tool
-    description: The product allows to compare Pdf, Word, Excel, PowerPoint, AutoCad, Image, Code and much more file formats. Comparison API also supports accepting or rejecting changes, extracting document information and generating the comparison report
-    productCode: comparison
-    productPlatform: python-net
-  howTo:
-    name: How to run Comparison examples
-    description: Learn how to run GroupDocs.Comparison examples using IDE
-    steps:
-      - name: Open project with examples in IDE
-        text: Open project with Comparison examples using favorite IDE
-      - name: Run main method
-        text: Find main method and run it with IDE
+  showOrganization: true
 ---
-The complete project [GroupDocs.Comparison Examples](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-P-via-.NET) with code examples and sample files is hosted on GitHub.
 
-## Run examples using PYPI
+The Python examples for GroupDocs.Comparison are hosted on GitHub at [GroupDocs.Comparison-for-Python-via-.NET](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Python-via-.NET). Every code snippet on this site has a corresponding runnable script in that repository.
 
-To get started make sure that [Python](https://python.org/) is installed.
+## Run examples from the GitHub repository
 
-1. Clone repository with examples `git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Python-via-.NET.git`
-2. Navigate to the project folder `cd ./GroupDocs.Comparison-for-Python-via-.NET`
-3. Install the necessary packages with the `pip install groupdocs-comparison-net` command.
-4. Run the examples with the `python run_examples.py` command.
+Make sure [Python 3.5 or newer](https://python.org/) is installed.
 
-To check what examples are available, open the `run_examples.py` file in your favorite text editor. Uncomment examples you want to run and type `python run_examples.py` to start them.
+1. Clone the examples repository:
+
+   ```bash
+   git clone https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Python-via-.NET.git
+   ```
+
+2. Navigate to the project folder:
+
+   ```bash
+   cd GroupDocs.Comparison-for-Python-via-.NET
+   ```
+
+3. Install the required Python packages:
+
+   ```bash
+   pip install -r Examples/requirements.txt
+   ```
+
+4. Run all examples in one pass:
+
+   ```bash
+   python Examples/run_all_examples.py
+   ```
+
+   `run_all_examples.py` discovers every example script in the `Examples/` tree, executes each one in its own directory, and reports pass/fail counts. It exits with a non-zero status if any example fails.
+
+5. To run a single example, change to its directory and execute it directly:
+
+   ```bash
+   cd Examples/developer-guide/comparing-documents/compare-documents
+   python compare_documents.py
+   ```
+
+## Apply a license before running
+
+By default, examples run in evaluation mode (two-page cap + trial badges). To run them with a license:
+
+```bash
+export GROUPDOCS_LIC_PATH=/path/to/GroupDocs.Comparison.Python.lic
+python Examples/run_all_examples.py
+```
+
+`run_all_examples.py` picks up the `GROUPDOCS_LIC_PATH` environment variable and applies the license before running any example.
+
+## Run in Docker
+
+The repository ships a `Dockerfile` that builds an image with the .NET runtime, native dependencies, and a recent Python pre-installed. To build and run the full example suite in a container:
+
+```bash
+docker build -t groupdocs-comparison-examples .
+docker run --rm \
+    -v /path/to/license:/lic:ro \
+    -e GROUPDOCS_LIC_PATH=/lic/GroupDocs.Comparison.Python.lic \
+    groupdocs-comparison-examples
+```
+
+On Windows with Git Bash, run `export MSYS_NO_PATHCONV=1` before `docker run` to prevent MSYS from mangling the `GROUPDOCS_LIC_PATH` value.
 
 ## Contribute
 
-If you like to add or improve an example, we encourage you to contribute to the project. All examples in this repository are open-source and can be freely used in your own applications.
-
-To contribute, you can fork the repository, edit the source code and create a pull request. We will review the changes and include them in the repository if found helpful.
+If you would like to add or improve an example, the repository is open source. Fork it, edit the code, and submit a pull request — the GroupDocs team will review the change and merge it if it fits the documentation.

@@ -1,0 +1,9 @@
+Type: 2, X: 488.96243, Y: 223.86372, Text: Cool
+Type: 2, X: 560.054, Y: 223.86372, Text:  
+Type: 3, X: 389.23828, Y: 285.49686, Text: test 
+Type: 2, X: 206.4055, Y: 375.95325, Text:  signatures
+Type: 2, X: 119.997, Y: 595.8851, Text: Our 
+Type: 2, X: 435.85577, Y: 657.51825, Text: char[
+Type: 2, X: 435.85577, Y: 657.51825, Text: 255]
+Type: 2, X: 498.0422, Y: 657.51825, Text:  
+Type: 3, X: 119.997, Y: 922.6783, Text:
