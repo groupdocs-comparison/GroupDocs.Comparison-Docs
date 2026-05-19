@@ -1,13 +1,18 @@
 ---
 id: supported-document-formats
-url: comparison/python-net/supported-document-formats
-title: Supported File Formats
+url: comparison/python-net/getting-started/supported-document-formats
+title: Supported Document Formats
+linkTitle: Supported document formats
 weight: 2
-description: "The following article indicates the file formats that GroupDocs.Comparison can work with."
-keywords: File comparison, Apply Reject changes between documents, information extraction
+description: "Complete list of file formats GroupDocs.Comparison for Python via .NET can compare: Word, PDF, Excel, PowerPoint, images, CAD, email, OneNote, source code, and more."
+keywords: supported file formats, supported document formats, file types, GroupDocs.Comparison
 productName: GroupDocs.Comparison for Python via .NET
-hideChildren: False
-toc: True
+hideChildren: false
+toc: true
+aliases:
+    - /comparison/python-net/supported-document-formats/
+structuredData:
+  showOrganization: true
 ---
 
 This topic lists file formats supported by [GroupDocs.Comparison](https://products.groupdocs.com/comparison/python-net). You can use the input below to filter supported formats by extension.

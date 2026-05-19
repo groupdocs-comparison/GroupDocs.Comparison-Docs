@@ -1,38 +1,44 @@
 ---
 id: technical-support
-url: /comparison/python-net/technical-support
+url: comparison/python-net/technical-support
 title: Technical Support
-productName: GroupDocs.Comparison for Python via .NET
-description: "GroupDocs.Comparison for Python via .NET provides free technical support available to all users. Please report your question, issue, or feature request using GroupDocs Free Support Forum."
+linkTitle: Technical support
 weight: 10
-toc: True
+description: "How to get help with GroupDocs.Comparison for Python via .NET — the free support forum, paid helpdesk, and tips for reporting issues efficiently."
+keywords: GroupDocs.Comparison support, free support forum, paid helpdesk, technical support
+productName: GroupDocs.Comparison for Python via .NET
+hideChildren: false
+toc: true
+structuredData:
+  showOrganization: true
 ---
 
-GroupDocs provides unlimited free technical support for all of its products. Support is available to all users, including evaluation. The support is provided at [Free Support Forum](https://forum.groupdocs.com/) and [Paid Support Helpdesk](https://helpdesk.groupdocs.com/).
+GroupDocs provides unlimited free technical support for all of its products. Support is available to every user, including evaluators, through the [Free Support Forum](https://forum.groupdocs.com/) and the [Paid Support Helpdesk](https://helpdesk.groupdocs.com/).
 
 {{< alert style="info" >}}
-Please note that GroupDocs does not provide technical support over the phone. Phone support is only available for sales and purchase questions.
+GroupDocs does not provide technical support over the phone. Phone support is only available for sales and purchase questions.
 {{< /alert >}}
 
 ## GroupDocs Free Support Forum
 
-If you need help with GroupDocs.Comparison, consider the following:
+If you need help with GroupDocs.Comparison:
 
-* Make sure you are using the latest GroupDocs.Comparison version before reporting an issue.
-* Look through the forums, this documentation, and the API Reference before reporting an issue – perhaps your question has already been answered.
-* Post your question at [GroupDocs.Comparison Free Support Forum](https://forum.groupdocs.com/c/comparison/12), and we will assist you. Questions are answered directly by the GroupDocs.Comparison development team.
-* When expecting a reply on the forums, please allow for time zone differences.
+- Make sure you are using the latest version before reporting an issue.
+- Search the forum, this documentation, and the [API reference](https://reference.groupdocs.com/comparison/python-net/) — your question may already be answered.
+- Post at the [GroupDocs.Comparison Free Support Forum](https://forum.groupdocs.com/c/comparison/). Questions are answered directly by the GroupDocs.Comparison development team.
+- Allow for time zone differences when expecting a reply.
 
 ## Paid Support Helpdesk
 
-The paid support issues have a higher priority compared to the free support requests.
+Paid support issues have a higher priority than free support requests. Submit a ticket at the [Paid Support Helpdesk](https://helpdesk.groupdocs.com/) to set a higher priority for your issue.
 
-* Post your question at the [Paid Support Helpdesk](https://helpdesk.groupdocs.com/) to set a higher priority for the issue.
+## Report an issue or feature request
 
-## Report an Issue or Feature Request
+When posting an issue, question, or feature request:
 
-When posting your issue, question, or feature request with GroupDocs.Comparison, follow these simple steps to make sure it is resolved most efficiently:
+- Include the original document(s) and the minimal Python snippet that reproduces the problem. If you need to attach multiple files, zip them.
+- Include the GroupDocs.Comparison version, Python version, and operating system.
+- Include the full traceback or error message.
+- Report one issue per thread — separate issues belong in separate threads.
 
-* Include the original document(s) and possibly the code snippet that is causing the problem. If you need to attach a few files, zip them into one. It is safe to attach your documents to GroupDocs.Forums because only you and the GroupDocs developers have access to the attached files.
-* Add information about the environment you are facing the issue.
-* Try to report one issue per thread. If you have another issue, question, or feature request, please report it in a separate thread.
+Attaching documents to GroupDocs forums is safe — only you and the GroupDocs developers have access to the attached files.

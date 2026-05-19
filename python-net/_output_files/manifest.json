@@ -1,0 +1,413 @@
+{
+  "developer-guide/compare-folders#compare-folders": {
+    "type": "file",
+    "file": "result.htmlResult.html",
+    "path": "developer-guide/compare-folders/compare_folders/result.htmlResult.html",
+    "preview": "<!DOCTYPE html><style>\ndetails {\n   padding-left: 20px;\n}\ndetails details \n   padding-left: calc(100 % -20px);\n}\ndetails summary {\n    padding-left: 20px;\n    cursor: pointer;\n[TRUNCATED]",
+    "function": "compare_folders"
+  },
+  "developer-guide/comparing-documents/accept-or-reject-detected-changes#accept-reject-path": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/accept-or-reject-detected-changes/accept_or_reject_changes/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "accept_or_reject_changes"
+  },
+  "developer-guide/comparing-documents/accept-or-reject-detected-changes#accept-reject-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/accept-or-reject-detected-changes/accept_or_reject_changes_stream/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "accept_or_reject_changes_stream"
+  },
+  "developer-guide/comparing-documents/accept-or-reject-revisions#accept-reject-revisions-path": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/accept-or-reject-revisions/accept_or_reject_revisions/result.docx",
+    "preview": "Binary file (DOCX, 21 KB)",
+    "function": "accept_or_reject_revisions"
+  },
+  "developer-guide/comparing-documents/accept-or-reject-revisions#accept-reject-revisions-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/accept-or-reject-revisions/accept_or_reject_revisions_stream/result.docx",
+    "preview": "Binary file (DOCX, 21 KB)",
+    "function": "accept_or_reject_revisions_stream"
+  },
+  "developer-guide/comparing-documents/accept-or-reject-revisions#accept-all-revisions": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/accept-or-reject-revisions/accept_all_revisions/result.docx",
+    "preview": "Binary file (DOCX, 21 KB)",
+    "function": "accept_all_revisions"
+  },
+  "developer-guide/comparing-documents/adjusting-comparison-sensitivity#sensitivity-overall": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/adjusting-comparison-sensitivity/adjust_comparison_sensitivity/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "adjust_comparison_sensitivity"
+  },
+  "developer-guide/comparing-documents/adjusting-comparison-sensitivity#sensitivity-tables": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/adjusting-comparison-sensitivity/adjust_comparison_sensitivity_tables/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "adjust_comparison_sensitivity_tables"
+  },
+  "developer-guide/comparing-documents/compare-bookmarks-in-word#compare-bookmarks": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-bookmarks-in-word/compare_bookmarks_in_word/result.docx",
+    "preview": "Binary file (DOCX, 27 KB)",
+    "function": "compare_bookmarks_in_word"
+  },
+  "developer-guide/comparing-documents/compare-documents#compare-documents-path": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-documents/compare_documents/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_documents"
+  },
+  "developer-guide/comparing-documents/compare-documents#compare-documents-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-documents/compare_documents_from_stream/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_documents_from_stream"
+  },
+  "developer-guide/comparing-documents/compare-documents#compare-documents-output-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-documents/compare_documents_to_stream/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_documents_to_stream"
+  },
+  "developer-guide/comparing-documents/compare-json-documents#compare-json-basic": {
+    "type": "zip",
+    "file": "compare-json-documents-outputs.zip",
+    "path": "developer-guide/comparing-documents/compare-json-documents/compare_json_documents/compare-json-documents-outputs.zip",
+    "contents": [
+      "result.html",
+      "result.json"
+    ],
+    "preview": "result.html (635 bytes)\nresult.json (170 bytes)",
+    "function": "compare_json_documents"
+  },
+  "developer-guide/comparing-documents/compare-json-documents#compare-json-textual": {
+    "type": "zip",
+    "file": "compare-json-textual-outputs.zip",
+    "path": "developer-guide/comparing-documents/compare-json-documents/compare_json_textual/compare-json-textual-outputs.zip",
+    "contents": [
+      "result.html",
+      "result.json"
+    ],
+    "preview": "result.html (635 bytes)\nresult.json (170 bytes)",
+    "function": "compare_json_textual"
+  },
+  "developer-guide/comparing-documents/compare-multiple-documents#compare-multiple-path": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-multiple-documents/compare_multiple_documents/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_multiple_documents"
+  },
+  "developer-guide/comparing-documents/compare-multiple-documents#compare-multiple-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-multiple-documents/compare_multiple_documents_stream/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_multiple_documents_stream"
+  },
+  "developer-guide/comparing-documents/compare-multiple-documents#compare-multiple-settings": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-multiple-documents/compare_multiple_documents_settings/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_multiple_documents_settings"
+  },
+  "developer-guide/comparing-documents/compare-multiple-documents#compare-multiple-protected": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-multiple-documents/compare_multiple_documents_protected/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_multiple_documents_protected"
+  },
+  "developer-guide/comparing-documents/compare-of-variables-and-document-properties#compare-properties": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-of-variables-and-document-properties/compare_variables_and_document_properties/result.docx",
+    "preview": "Binary file (DOCX, 26 KB)",
+    "function": "compare_variables_and_document_properties"
+  },
+  "developer-guide/comparing-documents/compare-pdf-documents#compare-pdf": {
+    "type": "file",
+    "file": "result.pdf",
+    "path": "developer-guide/comparing-documents/compare-pdf-documents/compare_pdf_documents/result.pdf",
+    "preview": "Binary file (PDF, 279 KB)",
+    "function": "compare_pdf_documents"
+  },
+  "developer-guide/comparing-documents/compare-word-documents#compare-word": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/compare-word-documents/compare_word_documents/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "compare_word_documents"
+  },
+  "developer-guide/comparing-documents/customize-changes-styles#customize-styles-path": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/customize-changes-styles/customize_changes_styles/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "customize_changes_styles"
+  },
+  "developer-guide/comparing-documents/customize-changes-styles#customize-styles-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/customize-changes-styles/customize_changes_styles_stream/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "customize_changes_styles_stream"
+  },
+  "developer-guide/comparing-documents/disable-image-comparison-in-pdf-documents#disable-image-pdf": {
+    "type": "file",
+    "file": "result.pdf",
+    "path": "developer-guide/comparing-documents/disable-image-comparison-in-pdf-documents/disable_image_comparison_in_pdf/result.pdf",
+    "preview": "Binary file (PDF, 279 KB)",
+    "function": "disable_image_comparison_in_pdf"
+  },
+  "developer-guide/comparing-documents/get-changes-coordinates#get-changes-coordinates": {
+    "type": "text",
+    "file": "get-changes-coordinates.txt",
+    "path": "developer-guide/comparing-documents/get-changes-coordinates/get_changes_coordinates/get-changes-coordinates.txt",
+    "preview": "Type: 2, X: 488.96243, Y: 223.86372, Text: Cool\nType: 2, X: 560.054, Y: 223.86372, Text:  \nType: 3, X: 389.23828, Y: 285.49686, Text: test \nType: 2, X: 206.4055, Y: 375.95325, Text:  signatures\nType: 2, X: 119.997, Y: 595.8851, Text: Our \nType: 2, X: 435.85577, Y: 657.51825, Text: char[\nType: 2, X: 435.85577, Y: 657.51825, Text: 255]\nType: 2, X: 498.0422, Y: 657.51825, Text:  \nType: 3, X: 119.997, Y: 922.6783, Text:",
+    "function": "get_changes_coordinates"
+  },
+  "developer-guide/comparing-documents/get-extended-information-on-the-summary-page#extended-summary": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/get-extended-information-on-the-summary-page/get_extended_summary_information/result.docx",
+    "preview": "Binary file (DOCX, 26 KB)",
+    "function": "get_extended_summary_information"
+  },
+  "developer-guide/comparing-documents/get-list-of-changes#get-changes-path": {
+    "type": "text",
+    "file": "get-list-of-changes.txt",
+    "path": "developer-guide/comparing-documents/get-list-of-changes/get_list_of_changes/get-list-of-changes.txt",
+    "preview": "Type: 2, Page: 1, Id: 0, Text: Cool\nType: 2, Page: 1, Id: 1, Text:  \nType: 3, Page: 1, Id: 2, Text: test \nType: 2, Page: 1, Id: 3, Text:  signatures\nType: 2, Page: 1, Id: 4, Text: Our \nType: 2, Page: 1, Id: 5, Text: char[\nType: 2, Page: 1, Id: 6, Text: 255]\nType: 2, Page: 1, Id: 7, Text:  \nType: 3, Page: 1, Id: 8, Text:",
+    "function": "get_list_of_changes"
+  },
+  "developer-guide/comparing-documents/get-list-of-changes#get-changes-stream": {
+    "type": "text",
+    "file": "get-list-of-changes-stream.txt",
+    "path": "developer-guide/comparing-documents/get-list-of-changes/get_list_of_changes_stream/get-list-of-changes-stream.txt",
+    "preview": "Type: 2, Page: 1, Id: 0, Text: Cool\nType: 2, Page: 1, Id: 1, Text:  \nType: 3, Page: 1, Id: 2, Text: test \nType: 2, Page: 1, Id: 3, Text:  signatures\nType: 2, Page: 1, Id: 4, Text: Our \nType: 2, Page: 1, Id: 5, Text: char[\nType: 2, Page: 1, Id: 6, Text: 255]\nType: 2, Page: 1, Id: 7, Text:  \nType: 3, Page: 1, Id: 8, Text:",
+    "function": "get_list_of_changes_stream"
+  },
+  "developer-guide/comparing-documents/get-only-summary-page#summary-only": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/get-only-summary-page/get_only_summary_page/result.docx",
+    "preview": "Binary file (DOCX, 8 KB)",
+    "function": "get_only_summary_page"
+  },
+  "developer-guide/comparing-documents/get-result-document-object#result-document": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/get-result-document-object/get_result_document_object/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "get_result_document_object"
+  },
+  "developer-guide/comparing-documents/get-source-and-target-text-from-files#source-target-text-path": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/get-source-and-target-text-from-files/get_source_and_target_text/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "get_source_and_target_text"
+  },
+  "developer-guide/comparing-documents/get-source-and-target-text-from-files#source-target-text-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/get-source-and-target-text-from-files/get_source_and_target_text_stream/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "get_source_and_target_text_stream"
+  },
+  "developer-guide/comparing-documents/how-to-merge-source-code-files#merge-source-code": {
+    "type": "file",
+    "file": "result.cs",
+    "path": "developer-guide/comparing-documents/how-to-merge-source-code-files/merge_source_code_files/result.cs",
+    "preview": "Binary file (CS, 121 bytes)",
+    "function": "merge_source_code_files"
+  },
+  "developer-guide/comparing-documents/set-shape-color-independently-of-font-color#shape-color-independent": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/set-shape-color-independently-of-font-color/set_shape_color_independently/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "set_shape_color_independently"
+  },
+  "developer-guide/comparing-documents/setting-author-of-changes#set-author": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/setting-author-of-changes/set_author_of_changes/result.docx",
+    "preview": "Binary file (DOCX, 24 KB)",
+    "function": "set_author_of_changes"
+  },
+  "developer-guide/comparing-documents/show-gap-lines#show-gap-lines": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/show-gap-lines/show_gap_lines/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "show_gap_lines"
+  },
+  "developer-guide/comparing-documents/show-revisions#show-revisions": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/show-revisions/hide_revisions/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "hide_revisions"
+  },
+  "developer-guide/comparing-documents/specify-file-type-manually#specify-file-type": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/specify-file-type-manually/specify_file_type_manually/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "specify_file_type_manually"
+  },
+  "developer-guide/comparing-documents/word-track-changes#track-changes-include": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/word-track-changes/include_word_track_changes/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "include_word_track_changes"
+  },
+  "developer-guide/comparing-documents/word-track-changes#track-changes-ignore": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/comparing-documents/word-track-changes/ignore_word_track_changes/result.docx",
+    "preview": "Binary file (DOCX, 30 KB)",
+    "function": "ignore_word_track_changes"
+  },
+  "developer-guide/generate-document-pages-preview#generate-page-previews": {
+    "type": "file",
+    "file": "page-1.png",
+    "path": "developer-guide/generate-document-pages-preview/generate_document_pages_preview/page-1.png",
+    "preview": "Binary file (PNG, 163 KB)",
+    "function": "generate_document_pages_preview"
+  },
+  "developer-guide/get-supported-file-formats#get-supported-formats": {
+    "type": "text",
+    "file": "get-supported-file-formats.txt",
+    "path": "developer-guide/get-supported-file-formats/get_supported_file_formats/get-supported-file-formats.txt",
+    "preview": "ActionScript Programming Language format (.as)\nActionScript Programming Language format (.as3)\nAssembler Programming Language format (.asm)\nType of interpreter that processes shell commands (.bash)\nFile determines the behavior of interactive shells (.bashrc)\nScript file in DOS, OS/2 and Microsoft Windows (.bat)\nConfiguration file for package control on the server-side (.bowerrc)\nC-Based Programming Language format (.c)\nCAD file format (.cad)\nCSharp cross-platform build automation system format (\n[TRUNCATED]",
+    "function": "get_supported_file_formats"
+  },
+  "developer-guide/getting-document-info#get-document-info-path": {
+    "type": "text",
+    "file": "get-document-info.txt",
+    "path": "developer-guide/getting-document-info/get_document_info/get-document-info.txt",
+    "preview": "File type: Microsoft Word Document\nNumber of pages: 1\nDocument size: 26611 bytes\n\nDocument info extracted successfully.",
+    "function": "get_document_info"
+  },
+  "developer-guide/getting-document-info#get-document-info-stream": {
+    "type": "text",
+    "file": "get-document-info-from-stream.txt",
+    "path": "developer-guide/getting-document-info/get_document_info_from_stream/get-document-info-from-stream.txt",
+    "preview": "File type: Microsoft Word Document\nNumber of pages: 1\nDocument size: 26611 bytes",
+    "function": "get_document_info_from_stream"
+  },
+  "developer-guide/loading-documents/load-custom-fonts#load-custom-fonts": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/loading-documents/load-custom-fonts/load_custom_fonts/result.docx",
+    "preview": "Binary file (DOCX, 11 KB)",
+    "function": "load_custom_fonts"
+  },
+  "developer-guide/loading-documents/load-file-from-local-disk#load-from-disk": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/loading-documents/load-file-from-local-disk/load_file_from_local_disk/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "load_file_from_local_disk"
+  },
+  "developer-guide/loading-documents/load-file-from-stream#load-from-stream": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/loading-documents/load-file-from-stream/load_file_from_stream/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "load_file_from_stream"
+  },
+  "developer-guide/loading-documents/load-password-protected-documents#load-password-protected": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/loading-documents/load-password-protected-documents/load_password_protected_documents/result.docx",
+    "preview": "Binary file (DOCX, 24 KB)",
+    "function": "load_password_protected_documents"
+  },
+  "developer-guide/loading-documents/load-text-from-string#load-from-string": {
+    "type": "zip",
+    "file": "load-text-from-string-outputs.zip",
+    "path": "developer-guide/loading-documents/load-text-from-string/load_text_from_string/load-text-from-string-outputs.zip",
+    "contents": [
+      "result.docx",
+      "result.html"
+    ],
+    "preview": "result.docx (107 bytes)\nresult.html (479 bytes)",
+    "function": "load_text_from_string"
+  },
+  "developer-guide/logging-and-diagnostics#logging-console": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/logging-and-diagnostics/logging_console/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "logging_console"
+  },
+  "developer-guide/saving-results/save-comparison-result-in-different-format#save-different-format": {
+    "type": "file",
+    "file": "result.pdf",
+    "path": "developer-guide/saving-results/save-comparison-result-in-different-format/save_comparison_result_in_different_format/result.pdf",
+    "preview": "Binary file (PDF, 25 KB)",
+    "function": "save_comparison_result_in_different_format"
+  },
+  "developer-guide/saving-results/set-document-metadata-on-save#metadata-source": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/saving-results/set-document-metadata-on-save/set_metadata_from_source/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "set_metadata_from_source"
+  },
+  "developer-guide/saving-results/set-document-metadata-on-save#metadata-target": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/saving-results/set-document-metadata-on-save/set_metadata_from_target/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "set_metadata_from_target"
+  },
+  "developer-guide/saving-results/set-document-metadata-on-save#metadata-user-defined": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/saving-results/set-document-metadata-on-save/set_user_defined_metadata/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "set_user_defined_metadata"
+  },
+  "developer-guide/saving-results/set-password-for-resultant-document#set-output-password": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "developer-guide/saving-results/set-password-for-resultant-document/set_password_for_resultant_document/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "set_password_for_resultant_document"
+  },
+  "getting-started/quick-start-guide#quick-start": {
+    "type": "file",
+    "file": "result.docx",
+    "path": "getting-started/quick-start-guide/quick_start/result.docx",
+    "preview": "Binary file (DOCX, 25 KB)",
+    "function": "quick_start"
+  },
+  "getting-started/quick-start-guide#quick-start-changes": {
+    "type": "text",
+    "file": "list-changes.txt",
+    "path": "getting-started/quick-start-guide/list_changes/list-changes.txt",
+    "preview": "Type: 2, Text: Cool\nType: 2, Text:  \nType: 3, Text: test \nType: 2, Text:  signatures\nType: 2, Text: Our \nType: 2, Text: char[\nType: 2, Text: 255]\nType: 2, Text:  \nType: 3, Text:",
+    "function": "list_changes"
+  }
+}
