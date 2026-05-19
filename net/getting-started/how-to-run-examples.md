@@ -3,8 +3,8 @@ id: how-to-run-examples
 url: comparison/net/how-to-run-examples
 title: How to Run Examples
 weight: 7
-description: "In this article you can find how to run examples. We offer multiple solutions on how you can run GroupDocs.Comparison examples, by building your own or using our back-end or front-end examples out-of-the-box."
-keywords: How to run comparison, basic usage, How to run examples
+description: "Run GroupDocs.Comparison for .NET examples from scratch, from the GitHub back-end examples project, or using MVC, WebForms, or Docker sample applications."
+keywords: run GroupDocs.Comparison examples, Visual Studio example project, Docker comparison, MVC example, NuGet install, C# comparison sample
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter.
 ---
@@ -132,3 +132,8 @@ docker run -p 8080:8080 --env application.hostAddress=localhost -v `pwd`/Documen
 
 If you like to add or improve an example, we encourage you to contribute to the project. All examples in this repository are open source and can be freely used in your own applications.  
 To contribute, you can fork the repository, edit the code and create a pull request. We will review the changes and include it in the repository if found helpful.
+
+## See also
+
+- [Installation]({{< ref "comparison/net/getting-started/installation.md" >}})
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})

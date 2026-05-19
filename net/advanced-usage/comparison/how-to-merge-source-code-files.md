@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Create an array for file changes
         text: Call the GetChanges method on the Comparer object and assign the result to an array of type ChangeInfo.
       - name: Reject or accept changes
@@ -43,12 +43,12 @@ structuredData:
 
 To apply/reject changes to output file, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
-3.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method.
-4.  Call the [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method to get changes list.
-5.  Set the [ComparisonAction](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/changeinfo/properties/comparisonaction) of the appropriate change object to the [ComparisonAction.Accept](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.result/comparisonaction) value;
-6.  Call the [ApplyChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/applychanges/index) method. Specify the collection of changes.
+1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify the source document path or stream.
+2.  Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
+3.  Call the [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/compare/index) method.
+4.  Call the [GetChanges](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/getchanges/index) method to get changes list.
+5.  Set the [ComparisonAction](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/changeinfo/properties/comparisonaction) of the appropriate change object to the [ComparisonAction.Accept](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) or [ComparisonAction.Reject](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/comparisonaction) value;
+6.  Call the [ApplyChanges](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/applychanges/index) method. Specify the collection of changes.
 
 For example, you need to compare and merge several versions of source code files and to accept or discard changes made by different persons.
 

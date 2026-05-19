@@ -3,8 +3,8 @@ id: compare-bookmarks-in-word
 url: comparison/net/compare-bookmarks-in-word
 title: Compare bookmarks in Word documents
 weight: 12
-description: "This article explains how to activate the comparison of bookmarks for Word format in GroupDocs.Comparison for .NET."
-keywords: bookmarks, Word, word, docx, doc, compare bookmarks, word bookmarks, CompareBookmarks, bookmarks comparison
+description: "Detect differences in Word document bookmarks using CompareOptions.CompareBookmarks = true in GroupDocs.Comparison for .NET — includes named bookmark changes in the result."
+keywords: CompareBookmarks, WordCompareOptions.CompareBookmarks, compare Word bookmarks, bookmark diff, docx bookmarks C#, bookmark comparison .NET
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify CompareBookmarks of true value.
       - name: Compare documents
@@ -65,3 +65,9 @@ using (Comparer comparer = new Comparer("source.docx"))
 The result of compared bookmarks is as follows:
 
 ![](/comparison/net/images/compared-bookmarks.png)
+
+## See also
+
+- [Word compare options]({{< ref "comparison/net/advanced-usage/comparison/word-compare-options.md" >}})
+- [Compare variables and document properties]({{< ref "comparison/net/advanced-usage/comparison/compare-of-variables-and-document-properties.md" >}})
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})

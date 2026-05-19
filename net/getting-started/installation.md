@@ -4,7 +4,7 @@ url: comparison/net/installation
 title: Installation
 weight: 4
 description: "On this page you will find system requirements supported platforms, development environments. GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed."
-keywords: Install from Nuget, How to install GroupDocs.Comparison, Install from website
+keywords: install GroupDocs.Comparison, NuGet package, dotnet add package, Package Manager Console, GroupDocs.Comparison DLL download
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -69,3 +69,9 @@ Visit [list of GroupDocs.Comparison releases](https://releases.groupdocs.com/com
 {{< alert style="warning" >}}
 If your application targets .NET Core / .NET 5+, ensure that your project has all the required dependencies installed. Refer to the following page for details: [GroupDocs.Comparison dependencies](https://www.nuget.org/packages/groupdocs.comparison#dependencies-body-tab).
 {{< /alert >}}
+
+## See also
+
+- [System requirements]({{< ref "comparison/net/getting-started/system-requirements.md" >}})
+- [Licensing]({{< ref "comparison/net/getting-started/licensing-and-evaluation-limitations.md" >}})
+- [How to run examples]({{< ref "comparison/net/getting-started/how-to-run-examples.md" >}})

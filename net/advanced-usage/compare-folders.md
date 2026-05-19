@@ -3,8 +3,8 @@ id: compare-folders
 url: comparison/net/compare-folders
 title: Comparing Folders
 weight: 4
-description: "This page describes how to compare two folders and find out which files/folders were deleted, added or modified."
-keywords: Directories comparison, folders comparison
+description: "Compare two directory trees with GroupDocs.Comparison for .NET to detect added, deleted, or modified files and folders — outputs an HTML or PDF summary report."
+keywords: compare folders, compare directories, folder diff, directory comparison .NET, CompareOptions FolderComparisonExtension, detect added deleted files
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -70,3 +70,8 @@ The following images show the comparison result:
 | Result in HTML                                                 | Result in TXT                                                 |
 | -------------------------------------------------------------- | ------------------------------------------------------------- |
 | ![](/comparison/net/images/result-comparison-folders-html.png) | ![](/comparison/net/images/result-comparison-folders-txt.png) |
+
+## See also
+
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})
+- [Supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}})

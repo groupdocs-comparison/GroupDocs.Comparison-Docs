@@ -3,8 +3,8 @@ id: get-supported-document-formats
 url: comparison/net/get-supported-document-formats
 title: Get supported file formats
 weight: 1
-description: "This article explains how to obtain supported file formats list when viewing documents with GroupDocs.Comparison within your .NET applications."
-keywords: Get file info, Get File Type, Page count, File size
+description: "Enumerate all file formats supported by GroupDocs.Comparison for .NET at runtime using FileType.GetSupportedFileTypes() — get extension and MIME type for each supported format."
+keywords: GetSupportedFileTypes, FileType enum, list supported formats, C# enumerate formats, supported extensions runtime
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -56,3 +56,9 @@ foreach (FileType fileType in supportedFileTypes)
 The result is as follows:
 
 ![](/comparison/net/images/get-supported-formats.png)
+
+## See also
+
+- [Supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}})
+- [Specify file type manually]({{< ref "comparison/net/advanced-usage/loading/specify-file-type-manually.md" >}})
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})

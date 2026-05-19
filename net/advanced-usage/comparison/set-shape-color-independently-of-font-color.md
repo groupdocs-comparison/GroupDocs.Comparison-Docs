@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and initialize InsertedItemStyle, DeletedItemStyle, ChangedItemStyle parameters by object with required parameters.
       - name: Specify color for changed shapes
@@ -36,11 +36,11 @@ structuredData:
 
 To compare two documents with custom change color for shapes, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object. Specify the [ShapeColor](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/stylesettings/shapecolor/) for the [InsertedItemStyle](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/inserteditemstyle/)/[DeletedItemStyle](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/deleteditemstyle/)/[ChangedItemStyle](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/changeditemstyle/) parameters.
+1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify the source document path or stream.
+2.  Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
+3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object. Specify the [ShapeColor](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/stylesettings/shapecolor/) for the [InsertedItemStyle](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/inserteditemstyle/)/[DeletedItemStyle](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/deleteditemstyle/)/[ChangedItemStyle](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/changeditemstyle/) parameters.
 4. Set [MarkChangedContent](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/markchangedcontent) to true.
-5.  Call the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object.
+5.  Call the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object.
 
 The following code snippets show how to compare documents with specific color options for shapes:
 

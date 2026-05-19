@@ -3,8 +3,8 @@ id: generate-document-pages-preview
 url: comparison/net/generate-document-pages-preview
 title: Generate document pages preview
 weight: 6
-description: "Following this guide you will learn how to generate PDF, Word, Excel, PowerPoint documents thumbnails and preview document pages using GroupDocs.Comparison for .NET API."
-keywords: Document preview, Preview document pages, Document pages as PNG, document pages as JPG
+description: "Generate PNG or JPG page thumbnails from a compared document using PreviewOptions and Comparer.GeneratePreview() in GroupDocs.Comparison for .NET."
+keywords: document pages preview, GeneratePreview, PreviewOptions, page thumbnail C#, PNG preview, JPG preview, comparison preview
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare files
         text: Call the Compare method of your object without parameters.
       - name: Create an object of the settings
@@ -34,32 +34,32 @@ structuredData:
         text: Create an object of Document class. The constructor takes the output file stream parameter. Call the GeneratePreview method with PreviewOptions parameter.
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to generate page previews for source, target and output document(s) using the [GeneratePreview](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview) method of the [Document](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document) class.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to generate page previews for source, target and output document(s) using the [GeneratePreview](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/document/methods/generatepreview) method of the [Document](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/document) class.
 
-Use the [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions) class to manage the preview generation process - specify desired page numbers, image format, etc.
+Use the [PreviewOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions) class to manage the preview generation process - specify desired page numbers, image format, etc.
 
 To generate the document preview using GroupDocs.Comparison API, follow these steps:
 
-1.  Create an instance of the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) class. Specify the source document path as a constructor parameter.
-2.  Add the target document to comparison using the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method.
-3.  The [Source](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/source) and [Targets](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/targets) properties of the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object allows you to access source and target documents and provides the [GeneratePreview](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview) method;
-4.  Instantiate the [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions) object. Specify the following parameters:
+1.  Create an instance of the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) class. Specify the source document path as a constructor parameter.
+2.  Add the target document to comparison using the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method.
+3.  The [Source](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/properties/source) and [Targets](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/properties/targets) properties of the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object allows you to access source and target documents and provides the [GeneratePreview](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/document/methods/generatepreview) method;
+4.  Instantiate the [PreviewOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions) object. Specify the following parameters:
     *   delegate for each page stream creation (see the CreatePageStream event handler)
     *   image preview format - PNG / JPG / BMP
     *   page numbers to process
     *   custom size of preview images (if needed)
-    {{< alert style="info" >}}Stream created by the [CreatePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/createpagestream) delegate is disposed automatically when preview image is generated. If you need to implement the custom disposing of the image preview stream, specify the [ReleasePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/releasepagestream) argument to clean up resources.{{< /alert >}}
-5.  Call the [GeneratePreview](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/document/methods/generatepreview) method of the [Source](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/source) and [Targets](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/properties/targets) documents. Specify the [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions).
+    {{< alert style="info" >}}Stream created by the [CreatePageStream](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/fields/createpagestream) delegate is disposed automatically when preview image is generated. If you need to implement the custom disposing of the image preview stream, specify the [ReleasePageStream](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/fields/releasepagestream) argument to clean up resources.{{< /alert >}}
+5.  Call the [GeneratePreview](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/document/methods/generatepreview) method of the [Source](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/properties/source) and [Targets](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/properties/targets) documents. Specify the [PreviewOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions).
 
-The [PreviewOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions) class main properties are as follows:
+The [PreviewOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions) class main properties are as follows:
 
-*   [CreatePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/createpagestream) is a delegate which defines method to create output page preview stream
-*   [ReleasePageStream](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/fields/releasepagestream) is a delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling
-*   [Width](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/width) is preview image width. Use this property to customize output image width
-*   [Height](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/height) is preview image height. Use this property to customize output image height
-*   [Resolution](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/Resolution) allows to configure horizontal and vertical resolution values for image preview generation
-*   [PageNumbers](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/pagenumbers) defines numbers of pages to be previewed;
-*   [PreviewFormat](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/previewoptions/properties/previewformat) gets or sets the preview image format which provides ability to choose between image quality and size. Use the BMP format for the best image quality. Use the JPG format to produce smallest image size (and faster loading image previews), but with lower quality than BMP. By default GroupDocs.Comparison uses the PNG format to provide appropriate image quality and size.
+*   [CreatePageStream](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/fields/createpagestream) is a delegate which defines method to create output page preview stream
+*   [ReleasePageStream](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/fields/releasepagestream) is a delegate which defines method to remove output page preview stream. This is can be used when need advanced control for resources handling
+*   [Width](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/properties/width) is preview image width. Use this property to customize output image width
+*   [Height](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/properties/height) is preview image height. Use this property to customize output image height
+*   [Resolution](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/properties/Resolution) allows to configure horizontal and vertical resolution values for image preview generation
+*   [PageNumbers](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/properties/pagenumbers) defines numbers of pages to be previewed;
+*   [PreviewFormat](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/previewoptions/properties/previewformat) gets or sets the preview image format which provides ability to choose between image quality and size. Use the BMP format for the best image quality. Use the JPG format to produce smallest image size (and faster loading image previews), but with lower quality than BMP. By default GroupDocs.Comparison uses the PNG format to provide appropriate image quality and size.
 
 The following code snippet shows how to generate document previews:
 
@@ -221,3 +221,9 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## See also
+
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})
+- [Get file info]({{< ref "comparison/net/comparison-basic/get-file-info.md" >}})
+- [Get list of changes]({{< ref "comparison/net/advanced-usage/comparison/get-list-of-changes.md" >}})

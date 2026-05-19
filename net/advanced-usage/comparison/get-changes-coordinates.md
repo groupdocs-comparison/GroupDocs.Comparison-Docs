@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify CalculateCoordinates of true value.
       - name: Compare documents
@@ -38,12 +38,12 @@ structuredData:
 
 To get the changes coordinates, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object. Set the [CalculateCoordinates](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions/properties/calculatecoordinates) property to `true`.
-4.  Set the [CalculateCoordinatesMode](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions/properties/calculatecoordinatesmode) to `CalculateCoordinatesModeEnumeration.Source` or `CalculateCoordinatesModeEnumeration.Target` if you want to get coordinates from source or target document.
-5.  Call the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/compareoptions) object from the previous step.
-6.  Call the [GetChanges](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/getchanges/index) method.
+1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify the source document path or stream.
+2.  Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
+3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object. Set the [CalculateCoordinates](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/calculatecoordinates) property to `true`.
+4.  Set the [CalculateCoordinatesMode](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/calculatecoordinatesmode) to `CalculateCoordinatesModeEnumeration.Source` or `CalculateCoordinatesModeEnumeration.Target` if you want to get coordinates from source or target document.
+5.  Call the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions) object from the previous step.
+6.  Call the [GetChanges](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/getchanges/index) method.
 
 The following code snippet shows how to compare multiple documents with specific options:
 

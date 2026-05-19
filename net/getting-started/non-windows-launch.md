@@ -3,8 +3,8 @@ id: non-windows-launch
 url: comparison/net/non-windows-launch
 title: Non-Windows Launch
 weight: 5
-description: "On this page you will find information how to run GroupDocs.Comparison for .NET in the Docker."
-keywords: docker, dockerfile, linux
+description: "Configure GroupDocs.Comparison for .NET on Linux and in Docker: install libgdiplus, Microsoft core fonts, and set up .NET 6 or .NET 8 Dockerfiles for non-Windows environments."
+keywords: Docker GroupDocs.Comparison, Linux .NET, libgdiplus, ttf-mscorefonts-installer, non-Windows comparison, Dockerfile .NET 6 .NET 8
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -81,3 +81,8 @@ RUN apt install ttf-mscorefonts-installer -y
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 # etc
 ```
+
+## See also
+
+- [System requirements]({{< ref "comparison/net/getting-started/system-requirements.md" >}})
+- [Installation]({{< ref "comparison/net/getting-started/installation.md" >}})

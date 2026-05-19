@@ -3,8 +3,8 @@ id: get-file-info
 url: comparison/net/get-file-info
 title: Get file info
 weight: 2
-description: "This article explains how to detect document file type, size and calculate pages count when annotate documents or images with GroupDocs.Comparison."
-keywords: Get file info, Get File Type, Page count, File size
+description: "Read file type, page count, file size, and page dimensions before comparison using IDocumentInfo from GroupDocs.Comparison for .NET."
+keywords: IDocumentInfo, document metadata, page dimensions, page count C#, file size comparison, GetDocumentInfo, file type detection
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -30,9 +30,9 @@ structuredData:
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to get the following file information:
 
-*   [FileType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.).
-*   [PageCount](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/pagecount) represents count of document pages.
-*   [FileSize](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.interfaces/idocumentinfo/properties/size) represents the document file size.
+*   [FileType](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/properties/filetype) represents the document file type (PDF, Word document, Excel spreadsheet, PowerPoint presentation or image etc.).
+*   [PageCount](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/properties/pagecount) represents count of document pages.
+*   [FileSize](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.interfaces/idocumentinfo/properties/size) represents the document file size.
 *   [PagesInfo](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.result/pageinfo) represents the page information.
 
 The following code samples show how to get file information:
@@ -109,3 +109,9 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## See also
+
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})
+- [Supported file formats]({{< ref "comparison/net/getting-started/supported-document-formats.md" >}})
+- [Get comparison result as an object model]({{< ref "comparison/net/comparison-basic/how-to-get-result-document-object.md" >}})

@@ -3,8 +3,8 @@ id: compare-multiple-documents
 url: comparison/net/compare-multiple-documents
 title: Compare multiple documents
 weight: 3
-description: "Learn more about how to compare multiple Word documents or PowerPoint presentations simultaneously with GroupDocs.Comparison for .NET."
-keywords: Compare multiple documents, documents multi-comparison, compare more than two documents 
+description: "Compare any number of Word documents or PowerPoint/OpenDocument presentations simultaneously using Comparer.Add() — produces a single merged result document."
+keywords: compare multiple documents, multi-document comparison, compare three documents, batch comparison, Comparer.Add multiple files 
 productName: GroupDocs.Comparison for .NET
 hideChildren: True
 structuredData:
@@ -12,15 +12,15 @@ structuredData:
 ---
 {{< alert style="info" >}}This feature is available only for Word documents, PowerPoint and Open Document presentations.{{< /alert >}}
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to compare more that two documents.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to compare more than two documents.
 
 To compare several documents, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream. Repeat this step for every target document.
-3.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method.
+1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify the source document path or stream.
+2.  Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method and specify target document path or stream. Repeat this step for every target document.
+3.  Call the [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/compare/index) method.
 
-The following code snippets show how to several documents:
+The following code snippets show how to compare several documents:
 
 ## Compare several documents from a local disk
 
@@ -65,4 +65,8 @@ using (Comparer comparer = new Comparer(File.OpenRead("source.docx")))
 {{< /tab >}}
 {{< /tabs >}}
 
+## See also
 
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})
+- [Compare multiple documents protected by password]({{< ref "comparison/net/advanced-usage/comparison/compare-multiple-documents/compare-multiple-documents-protected-by-password.md" >}})
+- [Compare multiple documents with specific settings]({{< ref "comparison/net/advanced-usage/comparison/compare-multiple-documents/compare-multiple-documents-with-specific-compare-settings.md" >}})

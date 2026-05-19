@@ -3,8 +3,8 @@ id: migration-notes
 url: comparison/net/migration-notes
 title: Migration Notes
 weight: 4
-description: ""
-keywords:
+description: "Migration notes for GroupDocs.Comparison for .NET — breaking API changes between major versions and guidance for updating existing code."
+keywords: migration notes, GroupDocs.Comparison upgrade, API changes, breaking changes, version migration C#
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter.
 ---

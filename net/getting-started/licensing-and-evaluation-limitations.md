@@ -3,8 +3,8 @@ id: licensing-and-evaluation-limitations
 url: comparison/net/licensing-and-evaluation-limitations
 title: Licensing
 weight: 6
-description: "Follow the instructions on this page to configure the license and find out the restrictions when using GroupDocs.Comparison for .NET without a license (Evaluation Limitations)"
-keywords: Licensing, evaluation limitations, setting metered license, setting license
+description: "Set a GroupDocs.Comparison for .NET license from file, stream, or using a Metered key. Understand evaluation limitations: 2-page cap and watermarks without a valid license."
+keywords: GroupDocs.Comparison license, SetLicense, metered license, evaluation limitations, trial watermark, temporary license
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -145,3 +145,8 @@ Console.WriteLine("Credits consumed: " + creditsConsumed);
 
 {{< /tab >}}
 {{< /tabs >}}
+
+## See also
+
+- [Installation]({{< ref "comparison/net/getting-started/installation.md" >}})
+- [System requirements]({{< ref "comparison/net/getting-started/system-requirements.md" >}})

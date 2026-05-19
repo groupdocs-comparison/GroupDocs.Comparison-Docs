@@ -4,7 +4,7 @@ url: comparison/net/groupdocs-comparison-overview
 title: GroupDocs.Comparison Overview
 weight: 1
 description: "In this article, get acquainted with the features, functions, supported file formats and developer usage of GroupDocs.Comparison for .NET — API to compare two or more files and get the difference between them."
-keywords: GroupDocs.Comparison Overview, Developer usage
+keywords: GroupDocs.Comparison .NET, document comparison API, merge documents, file comparison library, .NET comparison library, supported formats
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True

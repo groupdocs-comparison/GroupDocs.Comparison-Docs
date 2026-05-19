@@ -3,8 +3,8 @@ id: comparison
 url: comparison/net/comparison
 title: Comparison
 weight: 2
-description: "Learn more about advanced document comparison use cases - how to adjust comparison detalisation level, get changed elements coordinates, detect style detection and many more using GroupDocs.Comparison for .NET"
-keywords: Compare document with detalisation, Compare documents with password
+description: "Reference for all CompareOptions properties in GroupDocs.Comparison for .NET — sensitivity, styles, coordinates, summary page, bookmarks, revisions, and format-specific options."
+keywords: CompareOptions, comparison sensitivity, detect style changes, GenerateSummaryPage, CompareBookmarks, ShowRevisions, LeaveGaps, WordCompareOptions
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 structuredData:
@@ -30,10 +30,21 @@ You can customize the following parameters:
 *   [ShowDeletedContent](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/showdeletedcontent) indicates if show deleted components in output document or not.
 *   [ShowInsertedContent](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/showinsertedcontent) indicates if show inserted components in output document or not.
 *   [WordsSeparatorChars](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/wordsseparatorchars) sets an array of delimiters to split text into words.
-*   [CompareBookmarks](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/comparebookmarks) indicates if compare bookmarks.
-*   [CompareVariableProperty](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/comparevariableproperty) indicate if compare variable properties.
-*   [CompareDocumentProperty](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/comparedocumentproperty) indicates if compare built and custom properties.
-*   [ShowRevisions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/showrevisions) indicates if show other revisions in the output document.
-*   [LeaveGaps](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/leavegaps) indcates if show empty lines instead of inserted/deleted components in the final document.
+*   [CompareBookmarks](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/comparebookmarks) indicates if compare bookmarks. See [Compare bookmarks in Word]({{< ref "comparison/net/advanced-usage/comparison/compare-bookmarks-in-word.md" >}}).
+*   [CompareVariableProperty](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/comparevariableproperty) indicates if compare variable properties. See [Compare variables and document properties]({{< ref "comparison/net/advanced-usage/comparison/compare-of-variables-and-document-properties.md" >}}).
+*   [CompareDocumentProperty](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/comparedocumentproperty) indicates if compare built and custom properties. See [Compare variables and document properties]({{< ref "comparison/net/advanced-usage/comparison/compare-of-variables-and-document-properties.md" >}}).
+*   [ShowRevisions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/showrevisions) indicates if show other revisions in the output document. See [Show revisions]({{< ref "comparison/net/advanced-usage/comparison/show-revisions.md" >}}).
+*   [LeaveGaps](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/compareoptions/properties/leavegaps) indicates if show empty lines instead of inserted/deleted components in the final document. See [Show gap lines]({{< ref "comparison/net/advanced-usage/comparison/show-gap-lines.md" >}}).
 
 For details, see the following guides:
+
+{{< alert style="tip" >}}
+**Format-specific options:** For Word documents, you can use [WordCompareOptions]({{< ref "comparison/net/advanced-usage/comparison/word-compare-options.md" >}}) to control revision display mode, author attribution, and bookmark comparison in addition to the general `CompareOptions` above.
+{{< /alert >}}
+
+## See also
+
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})
+- [Word compare options]({{< ref "comparison/net/advanced-usage/comparison/word-compare-options.md" >}})
+- [Adjusting comparison sensitivity]({{< ref "comparison/net/advanced-usage/comparison/adjusting-comparison-sensitivity.md" >}})
+- [Get list of changes]({{< ref "comparison/net/advanced-usage/comparison/get-list-of-changes.md" >}})

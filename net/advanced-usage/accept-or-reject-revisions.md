@@ -1,10 +1,10 @@
 ---
 id: accept-or-reject-revisions
 url: comparison/net/accept-or-reject-revisions
-title: Accept or Reject revisions
+title: Accept or Reject Word revisions (RevisionHandler)
 weight: 5
-description: "Following this guide, you will learn how to apply or discard revisions found during document comparison using built-in Microsoft Word functionality."
-keywords: Revision, revision processing, accept or reject revision, apply change for revision
+description: "Accept or reject native Word track-changes revisions in a DOCX file using RevisionHandler and ApplyRevisionChanges — without running a full document comparison."
+keywords: RevisionHandler, ApplyRevisionChanges, Word revisions, native track changes, accept revision C#, reject revision C#, RevisionInfo, RevisionAction
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -31,7 +31,7 @@ structuredData:
 ---
 
 [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to get revisions from a Docx file format, process, and save the processing result.
-To take revisions from a document,_accept / reject revisions, and write the processing result to the output file, follow these steps:
+To take revisions from a document, accept / reject revisions, and write the processing result to the output file, follow these steps:
 
 1.  Instantiate the [RevisionHandler](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.words.revision/revisionhandler) object. Specify the source document path or stream.
 2.  Call the [GetRevisions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.words.revision/revisionhandler/methods/getrevisions) method to get the revision list.
@@ -138,3 +138,9 @@ Below are the source and output files based on the code presented earlier.
 | Source file                                   | Result file                                          |
 | --------------------------------------------- | ---------------------------------------------------- |
 | ![](/comparison/net/images/revision-file.png) | ![](/comparison/net/images/result-revision-file.png) |
+
+## See also
+
+- [Accept or reject detected changes]({{< ref "comparison/net/advanced-usage/comparison/accept-or-reject-detected-changes.md" >}})
+- [Word compare options]({{< ref "comparison/net/advanced-usage/comparison/word-compare-options.md" >}})
+- [Setting author of changes]({{< ref "comparison/net/advanced-usage/comparison/setting-author-of-changes.md" >}})

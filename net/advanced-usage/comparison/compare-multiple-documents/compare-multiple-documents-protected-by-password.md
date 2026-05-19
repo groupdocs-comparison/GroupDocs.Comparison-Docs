@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path or source file stream by first parameter and a LoadOption object by second parameter that contains password. You may specify absolute or relative file path as per your requirements.
       - name: Load target files
-        text: Add the path to the tagret files using the Add method. Second parameter is a LoadOption object that contains password.
+        text: Add the path to the target files using the Add method. Second parameter is a LoadOption object that contains password.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter.
 ---
@@ -34,11 +34,11 @@ structuredData:
 
 To compare several password-protected documents, follow these steps:
 
-1.  Instantiate the [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object. Specify source document password.
-2.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream and the [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object created in the previous step.
-3.  Instantiate another [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object and specify target document password.
-4.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method and specify the target document path or stream and the [LoadOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/loadoptions) object created at previous step. Repeat steps 3-4 for every target document.
-5.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method.
+1.  Instantiate the [LoadOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/loadoptions) object. Specify source document password.
+2.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify the source document path or stream and the [LoadOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/loadoptions) object created in the previous step.
+3.  Instantiate another [LoadOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/loadoptions) object and specify target document password.
+4.  Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method and specify the target document path or stream and the [LoadOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/loadoptions) object created at previous step. Repeat steps 3-4 for every target document.
+5.  Call the [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/compare/index) method.
 
 The following code snippets shows how to compare several password-protected documents:
 

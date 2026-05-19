@@ -3,8 +3,8 @@ id: set-document-metadata-on-save
 url: comparison/net/set-document-metadata-on-save
 title: Set document metadata on save
 weight: 1
-description: "Follow this guide and learn how to set document metadata when saving output document after files comparison within your .NET applications."
-keywords: Save document metadata,  Compare documents, Document comparison, File diff
+description: "Clone metadata from the source or target document, or supply custom author/company metadata to the result file using SaveOptions.CloneMetadataType in GroupDocs.Comparison for .NET."
+keywords: CloneMetadataType, MetadataType, FileAuthorMetadata, document metadata on save, SaveOptions metadata, clone metadata C#
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter and the SaveOtions object with the required metadata parameter initialised by MetadataType enum.
 ---
@@ -38,10 +38,10 @@ Possible metadata sources are as follows:
 
 To set output document metadata, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
-3.  Instantiate the [SaveOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object. Set the [CloneMetadataType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions/properties/clonemetadatatype) property to the appropriate [MetadataType](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/metadatatype) variant.
-4.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare/index) method. Specify the [SaveOptions](https://reference.groupdocs.com/net/comparison/groupdocs.comparison.options/saveoptions) object as a parameter.
+1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify the source document path or stream.
+2.  Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
+3.  Instantiate the [SaveOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/saveoptions) object. Set the [CloneMetadataType](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/saveoptions/properties/clonemetadatatype) property to the appropriate [MetadataType](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/metadatatype) variant.
+4.  Call the [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/compare/index) method. Specify the [SaveOptions](https://reference.groupdocs.com/comparison/net/groupdocs.comparison.options/saveoptions) object as a parameter.
 
 The following code snippets show how to set output document metadata:
 
@@ -108,3 +108,9 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## See also
+
+- [Set password for output document]({{< ref "comparison/net/advanced-usage/saving/set-password-for-resultant-document.md" >}})
+- [Save comparison result in different format]({{< ref "comparison/net/advanced-usage/saving/save-comparison-result-in-different-format.md" >}})
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})

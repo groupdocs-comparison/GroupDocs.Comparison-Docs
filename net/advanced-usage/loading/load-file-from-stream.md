@@ -3,8 +3,8 @@ id: load-file-from-stream
 url: comparison/net/load-file-from-stream
 title: Load file from stream
 weight: 2
-description: "This article explains how to load PDF, Word, Excel, PowerPoint documents from stream when using GroupDocs.Comparison for .NET."
-keywords: Load document from stream, Load document with GroupDocs.Comparison
+description: "Pass a FileStream or any System.IO.Stream directly to the Comparer constructor and Add() method to compare documents without saving them to disk first in GroupDocs.Comparison for .NET."
+keywords: load file from stream, Comparer stream, FileStream comparison, System.IO.Stream, in-memory comparison, stream-based document loading
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and specify source file stream
         text: Create an object of Comparer class. The constructor takes the source file stream. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the tagret file stream using the Add method.
+        text: Add the target file stream using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file stream.
 ---
@@ -33,7 +33,7 @@ To avoid the saving stream as a file, [GroupDocs.Comparison](https://products.gr
 To work with stream, follow these steps:
 
 1.  Obtain file stream.
-2.  Pass opened source file stream to the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) class constructor or pass opened target file stream to the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method.
+2.  Pass opened source file stream to the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) class constructor or pass opened target file stream to the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method.
 
 The following code snippet shows how to load file from stream:
 
@@ -56,3 +56,9 @@ using (Stream targetStream = File.OpenRead("target.docx"))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## See also
+
+- [Load file from local disk]({{< ref "comparison/net/advanced-usage/loading/load-file-from-local-disk.md" >}})
+- [Load password-protected documents]({{< ref "comparison/net/advanced-usage/loading/load-password-protected-documents.md" >}})
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})

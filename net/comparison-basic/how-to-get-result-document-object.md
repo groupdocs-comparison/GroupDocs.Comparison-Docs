@@ -3,8 +3,8 @@ id: how-to-get-result-document-object
 url: comparison/net/how-to-get-result-document-object
 title: Get comparison result as an object model
 weight: 4
-description: "This article explains how to get result document object model with GroupDocs.Comparison for .NET."
-keywords: Compare documents, result, document, object, aspose
+description: "Retrieve the comparison result as a GroupDocs.Comparison Document object to inspect changes or pass the result stream to Aspose.Words for further manipulation."
+keywords: result document object, Document.Changes, Document.Stream, Aspose.Words integration, comparison result model, Comparer.Compare return value
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Compare documents
         text: Call the Compare method of your object and get the result document object.
 ---
@@ -32,9 +32,9 @@ structuredData:
 
 To get result document object, follow these steps:
 
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) object. Specify the source document path or stream.
-2.  Call the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
-3.  Call the [Compare](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/compare) method and assign its return value to a [Document](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/document/) object.
+1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) object. Specify the source document path or stream.
+2.  Call the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method. Specify the target document path or stream.
+3.  Call the [Compare](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/compare) method and assign its return value to a [Document](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/document/) object.
 
 You can retrieve the name, password, changes, stream and other document information using [Document](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/document/) object. Also, our object model is fully compatible with the object models of Aspose libraries.
 
@@ -113,3 +113,8 @@ The result is as follows:
 
 ![](/comparison/net/images/modify-result-document-using-aspose.png)
 
+## See also
+
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})
+- [Get list of changes]({{< ref "comparison/net/advanced-usage/comparison/get-list-of-changes.md" >}})
+- [Get file info]({{< ref "comparison/net/comparison-basic/get-file-info.md" >}})

@@ -1,10 +1,10 @@
 ---
 id: show-revisions
 url: comparison/net/show-revisions
-title: Show Revisions
+title: Show or hide Word revisions in the result document
 weight: 14
-description: "This article explains how to customize the display of revisions in the output document in GroupDocs.Comparison for .NET."
-keywords: ShowRevisions, revision
+description: "Control whether native Word revision markup (track changes) is visible in the comparison result document using CompareOptions.ShowRevisions in GroupDocs.Comparison for .NET."
+keywords: ShowRevisions, hide revisions, Word revision markup, track changes visibility, CompareOptions.ShowRevisions, comparison result revisions
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -23,7 +23,7 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method
+        text: Add the path to the target file using the Add method
       - name: Specify necessary settings
         text: Create an options object and specify ShowRevisions of true value.
       - name: Compare documents
@@ -73,3 +73,8 @@ The result is as follows:
 | :--------------------------------------------------: |
 | ![](/comparison/net/images/show-revisions-false.png) |
 
+## See also
+
+- [Word compare options]({{< ref "comparison/net/advanced-usage/comparison/word-compare-options.md" >}})
+- [Setting author of changes]({{< ref "comparison/net/advanced-usage/comparison/setting-author-of-changes.md" >}})
+- [Accept or reject revisions]({{< ref "comparison/net/advanced-usage/accept-or-reject-revisions.md" >}})

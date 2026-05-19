@@ -4,7 +4,7 @@ url: comparison/net/system-requirements
 title: System Requirements
 weight: 3
 description: "On this page you will find system requirements supported platforms, development environments. GroupDocs.Comparison for .NET does not require any external software or third party tool to be installed."
-keywords: System Requirements, Supported Operating System, Supported Frameworks
+keywords: system requirements, supported OS, .NET framework versions, GroupDocs.Comparison prerequisites, Visual Studio, development environment
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -73,3 +73,9 @@ GroupDocs.Comparison for .NET can be used to develop applications in any devel
 - Microsoft Visual Studio 2010 and later
 - Microsoft Visual Studio for Mac
 - Rider from JetBrains
+
+## See also
+
+- [Installation]({{< ref "comparison/net/getting-started/installation.md" >}})
+- [Licensing]({{< ref "comparison/net/getting-started/licensing-and-evaluation-limitations.md" >}})
+- [Features overview]({{< ref "comparison/net/getting-started/features-overview.md" >}})

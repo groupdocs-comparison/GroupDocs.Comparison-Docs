@@ -15,4 +15,4 @@ Here you will find examples on comparing Excel spreadsheets programmatically, ap
 
 ### Pages in this section
 
-- [Compare Excel Spreadsheets: Advanced Cell-by-Cell Analysis in C#]("comparison/net/compare-excel-spreadsheets") – Learn how to compare Excel spreadsheets with custom styling, visibility controls, summary pages, and advanced comparison options.
+- [Compare Excel Spreadsheets: Advanced Cell-by-Cell Analysis in C#]({{< ref "/comparison/net/use-cases/compare excel spreadsheets/compare-excel-spreadsheets.md" >}}) – Learn how to compare Excel spreadsheets with custom styling, visibility controls, summary pages, and advanced comparison options.

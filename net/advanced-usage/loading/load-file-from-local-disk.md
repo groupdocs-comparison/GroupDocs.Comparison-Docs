@@ -3,8 +3,8 @@ id: load-file-from-local-disk
 url: comparison/net/load-file-from-local-disk
 title: Load file from local disk
 weight: 1
-description: "This article explains how to load PDF, Word, Excel, PowerPoint documents from local disk when using GroupDocs.Comparison for .NET."
-keywords: Load document from local disk, Load document from file path, Load document with GroupDocs.Comparison
+description: "Pass an absolute or relative file path to the Comparer constructor to load the source document from local disk, then use Add() for the target file in GroupDocs.Comparison for .NET."
+keywords: load file from local disk, Comparer file path, local document comparison, absolute path, relative path, Comparer constructor C#
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -25,12 +25,12 @@ structuredData:
       - name: Create an object and load source file
         text: Create an object and load a source file by specifying in the parameter a string variable.
       - name: Load target file
-        text: Add the path to the tagret file using the Add method.
+        text: Add the path to the target file using the Add method.
       - name: Compare documents
         text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
-When the source file is located on the local disk, [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to load it using the [Comparer](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer) class constructor by specifying absolute or relative path. To load the target file located on the local disk, use the [Add](https://reference.groupdocs.com/net/comparison/groupdocs.comparison/comparer/methods/add/index) method. Specify absolute or relative path as parameter.
+When the source file is located on the local disk, [GroupDocs.Comparison](https://products.groupdocs.com/comparison/net) allows you to load it using the [Comparer](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer) class constructor by specifying absolute or relative path. To load the target file located on the local disk, use the [Add](https://reference.groupdocs.com/comparison/net/groupdocs.comparison/comparer/methods/add/index) method. Specify absolute or relative path as parameter.
 
 The following code snippet shows how to load files from local disk:
 
@@ -48,3 +48,9 @@ using (Comparer comparer = new Comparer("source.docx"))
 ```
 {{< /tab >}}
 {{< /tabs >}}
+
+## See also
+
+- [Load file from stream]({{< ref "comparison/net/advanced-usage/loading/load-file-from-stream.md" >}})
+- [Load password-protected documents]({{< ref "comparison/net/advanced-usage/loading/load-password-protected-documents.md" >}})
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})

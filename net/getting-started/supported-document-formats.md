@@ -4,7 +4,7 @@ url: comparison/net/supported-document-formats
 title: Supported File Formats
 weight: 2
 description: "The following article indicates the file formats that GroupDocs.Comparison can work with."
-keywords: File comparison, Apply Reject changes between documents, information extraction
+keywords: supported file formats, GroupDocs.Comparison formats, PDF DOCX XLSX comparison, image comparison formats, supported extensions
 productName: GroupDocs.Comparison for .NET
 hideChildren: False
 toc: True
@@ -163,3 +163,8 @@ This topic lists file formats supported by [GroupDocs.Comparison](https://produ
 | [ODT](https://docs.fileformat.com/word-processing/odt/) | OpenDocument Text | ![(tick)](/comparison/net/images/check.png) |
 | [OTT](https://docs.fileformat.com/word-processing/ott/) | OpenDocument Text Template | ![(tick)](/comparison/net/images/check.png) |
 | [RTF](https://docs.fileformat.com/word-processing/rtf/) | Rich Text Document | ![(tick)](/comparison/net/images/check.png) |
+
+## See also
+
+- [Compare documents]({{< ref "comparison/net/comparison-basic/compare-documents.md" >}})
+- [Specify file type manually]({{< ref "comparison/net/advanced-usage/loading/specify-file-type-manually.md" >}})
