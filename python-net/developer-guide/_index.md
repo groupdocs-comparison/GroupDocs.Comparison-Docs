@@ -1,6 +1,9 @@
 ---
 id: developer-guide
 url: comparison/python-net/developer-guide
+aliases:
+    - /comparison/python-net/advanced-usage/
+    - /comparison/python-net/basic-usage/
 title: Developer Guide
 linkTitle: Developer guide
 weight: 3
