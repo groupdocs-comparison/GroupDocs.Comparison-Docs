@@ -1,0 +1,29 @@
+# GroupDocs.Comparison Documentation
+
+> GroupDocs.Comparison is a document comparison API that programmatically compares 50+ document formats (Word, PDF, Excel, PowerPoint and more), detects changes, and produces a result document with highlighted differences. Available for .NET, Java, Node.js (via Java), and Python (via .NET).
+
+This repository contains the Markdown/Hugo source files for the official GroupDocs.Comparison documentation published at https://docs.groupdocs.com/comparison/. It is documentation source (MIT-licensed) — not the SDK code, and not the separate GroupDocs.Comparison Cloud REST API. Each supported platform has its own top-level folder: `net/`, `java/`, `nodejs-java/`, `python-net/`.
+
+## Docs
+
+- [Documentation](https://docs.groupdocs.com/comparison/net/): developer guide for GroupDocs.Comparison (swap `net/` for `java/`, `nodejs-java/`, or `python-net/`)
+- [API Reference](https://reference.groupdocs.com/comparison/net/): full class and method reference
+- [Supported Document Formats](https://docs.groupdocs.com/comparison/net/supported-document-formats/): all formats the API can compare
+- [Licensing and Evaluation Limitations](https://docs.groupdocs.com/comparison/net/licensing-and-evaluation-limitations/): trial limits and how to set a license
+
+## Examples
+
+- [How-to articles (blog)](https://blog.groupdocs.com/categories/groupdocs.comparison-product-family/): task-oriented tutorials for comparing Word, PDF, Excel, PowerPoint and other documents across platforms
+- [.NET examples repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-.NET): runnable C# examples and demo projects
+- [Java examples repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Java): runnable Java examples and demo projects
+- [Python examples repository](https://github.com/groupdocs-comparison/GroupDocs.Comparison-for-Python-via-.NET): runnable Python examples
+- [AI agents and LLM integration](https://docs.groupdocs.com/comparison/python-net/agents-and-llm-integration/): using the API from Claude Code, Cursor, and other AI assistants
+
+## Optional
+
+- [NuGet Package (.NET)](https://www.nuget.org/packages/GroupDocs.Comparison): install with `dotnet add package GroupDocs.Comparison`
+- [PyPI Package (Python)](https://pypi.org/project/groupdocs-comparison-net/): install with `pip install groupdocs-comparison-net`
+- [npm Package (Node.js)](https://www.npmjs.com/package/@groupdocs/groupdocs.comparison): install with `npm install @groupdocs/groupdocs.comparison`
+- [Releases](https://releases.groupdocs.com/comparison/net/): downloadable builds
+- [Free Support Forum](https://forum.groupdocs.com/c/comparison/12): ask questions and get help
+- [Temporary License](https://purchase.groupdocs.com/temporary-license/): free 30-day license for evaluation
