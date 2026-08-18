@@ -10,7 +10,7 @@ hideChildren: True
 fullWidth: True
 ---
 
-<img src="/comparison/java/images/home.png" alt="groupdocs comparison java logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/logo/128x128/groupdocs-comparison-java.png" alt="groupdocs-comparison-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 GroupDocs.Comparison enables you to diff Microsoft Word, Excel, PowerPoint, openDocument ODT, PDF, Text and HTML documents.
 

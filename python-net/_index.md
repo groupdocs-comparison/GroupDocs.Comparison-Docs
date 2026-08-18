@@ -15,7 +15,7 @@ structuredData:
     showOrganization: true
 ---
 
-<img src="/comparison/python-net/images/home.png" alt="groupdocs comparison python logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/logo/128x128/groupdocs-comparison-python.png" alt="groupdocs-comparison-python-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 <a href="https://pypi.org/project/groupdocs-comparison-net/">
 	<img src="https://img.shields.io/pypi/v/groupdocs-comparison-net?label=GroupDocs.Comparison%20for%20Python%20PyPI&cacheSeconds=3600" alt="PyPI package">

@@ -10,7 +10,7 @@ hideChildren: True
 fullWidth: True
 ---
 
-<img src="/comparison/nodejs-java/images/home.png" alt="groupdocs comparison java logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/logo/128x128/groupdocs-comparison-nodejs.png" alt="groupdocs-comparison-nodejs-java-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 <dt class="flex flex-wrap align-center gdoc-props__meta">
     <a href='https://www.npmjs.com/package/@groupdocs/groupdocs.comparison'>

@@ -10,7 +10,7 @@ hideChildren: True
 fullWidth: True
 ---
 
-<img src="/comparison/net/images/home.png" alt="groupdocs comparison .net logo" align="left" style="width:110px; margin: 0 30px 0 0"/>
+<img src="/logo/128x128/groupdocs-comparison-net.png" alt="groupdocs-comparison-net-home" align="left" style="width:110px; margin: 0 30px 30px 0"/>
 
 GroupDocs.Comparison allows you to compare Microsoft Word, Excel, PowerPoint, OpenDocument ODT, PDF, Text, and HTML documents.
 
