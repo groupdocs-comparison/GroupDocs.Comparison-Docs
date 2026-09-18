@@ -57,7 +57,7 @@ The agent calls [`compare`]({{< ref "comparison/mcp/tools-reference/compare.md" 
 
 * **Files are resolved by name** from the storage folder, so the agent passes `invoice-001-v1.pdf`, not a full path from your machine.
 * **A missing or mistyped name is not fatal** — the tool answers with the list of files it can see, and the agent corrects itself and retries.
-* **Compare like with like.** Both files in a pair should be the same format; convert first if they are not ([Conversion MCP server]({{< ref "conversion/mcp/_index.md" >}})).
+* **Compare like with like.** Both files in a pair should be the same format; convert first if they are not ([Conversion MCP server](/conversion/mcp/)).
 * **Mind the evaluation cap** — two pages per document until a license is applied, which on a batch means a quietly incomplete report. Check with [`get_license_status`]({{< ref "comparison/mcp/tools-reference/get-license-status.md" >}}) before trusting a sweep.
 * **Long sweeps take time.** Each pair is a real comparison by a real engine; a folder of large PDFs is minutes, not seconds. Ask for progress as it goes rather than one silent batch.
 

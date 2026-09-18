@@ -19,6 +19,6 @@ The pairs agents are asked for most:
 * **PPTX ↔ PPTX** — what changed between two revisions of a deck.
 * **ODT / RTF / TXT / HTML** — OpenDocument and plain formats, same tools.
 
-**Both documents should be the same format.** Comparison runs between like and like: a DOCX against a DOCX, a PDF against a PDF. If you have a DOCX and the PDF that was produced from it, convert one of them first — that is what the [GroupDocs.Conversion MCP server]({{< ref "conversion/mcp/_index.md" >}}) is for — and then compare the matching pair.
+**Both documents should be the same format.** Comparison runs between like and like: a DOCX against a DOCX, a PDF against a PDF. If you have a DOCX and the PDF that was produced from it, convert one of them first — that is what the [GroupDocs.Conversion MCP server](/conversion/mcp/) is for — and then compare the matching pair.
 
 Not sure what you are holding? Ask — *"what format and how many pages is this file?"* — and the agent answers via [`get_document_info`]({{< ref "comparison/mcp/tools-reference/get-document-info.md" >}}).
