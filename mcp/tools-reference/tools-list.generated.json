@@ -1,0 +1,235 @@
+{
+  "serverVersion": "26.9.1",
+  "capturedFrom": "local build (docker-first product, no NuGet package)",
+  "tools": [
+    {
+      "name": "compare",
+      "description": "Compares two documents and highlights the differences between them. Supports PDF, DOCX, XLSX, PPTX, ODT, RTF, TXT, HTML, and 30+ more document formats. Call this tool immediately whenever the user asks to compare, diff, or check differences between two files. Do NOT pre-check whether files exist — just pass the filenames the user provided. The tool resolves files from storage and returns an error with available files if a name is not found. Use this tool when the user wants the marked-up result FILE saved (to view, download, or share). If the user only wants to know WHAT changed (an analysis or summary of the differences) without needing the rendered file, prefer the `analyze_changes` tool, which is cheaper because it skips rendering. The returned text includes either `<N> change(s) detected` or `No changes detected`, followed by the saved path of the marked-up result document (file name pattern: `<source-stem>_compared<source-ext>`), and then a `Changes:` section containing a JSON array describing each change (type, component, page, the specific changed fragment `changedText`, surrounding source/target text, table cell, style changes). On failure, the response text starts with 'Compare failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sourceFile": {
+            "description": "Source (original) document — provide the filename as given by the user, e.g. 'source.pdf'",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "targetFile": {
+            "description": "Target (modified) document to compare against — provide the filename as given by the user, e.g. 'target.pdf'",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "sourcePassword": {
+            "description": "Password for source document, if password-protected",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "targetPassword": {
+            "description": "Password for target document, if password-protected",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "sourceFile",
+          "targetFile"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "analyze_changes",
+      "description": "Analyzes the differences between two documents and returns them as structured data, WITHOUT producing a marked-up result file. Supports PDF, DOCX, XLSX, PPTX, ODT, RTF, TXT, HTML, and 30+ more document formats. Call this tool whenever the user wants to know WHAT changed between two files — to summarize, explain, list, or reason about the differences — rather than to obtain the rendered comparison document. This is cheaper than `compare` because it skips rendering and saving the result file; use `compare` instead when the user needs that file to view, download, or share. Do NOT pre-check whether files exist — just pass the filenames the user provided. The tool resolves files from storage and returns an error with available files if a name is not found. The returned text starts with either `<N> change(s) detected` or `No changes detected`, followed by a `Changes:` section containing a JSON array describing each change (type, component, page, the specific changed fragment `changedText`, surrounding source/target text, table cell, style changes). On failure, the response text starts with 'Analyze failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "sourceFile": {
+            "description": "Source (original) document — provide the filename as given by the user, e.g. 'source.pdf'",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "targetFile": {
+            "description": "Target (modified) document to compare against — provide the filename as given by the user, e.g. 'target.pdf'",
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "sourcePassword": {
+            "description": "Password for source document, if password-protected",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          },
+          "targetPassword": {
+            "description": "Password for target document, if password-protected",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "sourceFile",
+          "targetFile"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_document_info",
+      "description": "Returns file type, page count, file size, and per-page dimensions for a source document — without performing a comparison. Supports PDF, DOCX, XLSX, PPTX, ODT, RTF, TXT, HTML, and 30+ more document formats. Call this tool whenever the user asks to inspect a document, get document info, check file type, page count, or properties before deciding whether to compare. Do NOT pre-check whether files exist — just pass the filename the user provided. The tool resolves files from storage and returns an error with available files if a name is not found. Returns a JSON object with `fileName`, `fileType` (`fileFormat` + dot-prefixed `extension`, e.g. `.pdf`), `pageCount`, `sizeBytes`, and `pages` (per-page width/height). On failure, the response text starts with 'Document-info lookup failed for' followed by the underlying exception type, message, and inner-exception chain.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "object",
+            "properties": {
+              "filePath": {
+                "description": "Name or path of a file in the configured storage, e.g. 'report.pdf' or 'output/report.pdf'. Use this for files the server can already see.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileContent": {
+                "description": "Base64-encoded file content, for passing a file that is not in storage. Must be accompanied by fileName so the format can be determined.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "fileName": {
+                "description": "Filename with extension, e.g. 'report.pdf'. Required alongside fileContent. May also be used on its own as an alias for filePath.",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            }
+          },
+          "password": {
+            "description": "Password for protected documents",
+            "type": [
+              "string",
+              "null"
+            ],
+            "default": null
+          }
+        },
+        "required": [
+          "file"
+        ]
+      },
+      "execution": {
+        "taskSupport": "optional"
+      }
+    },
+    {
+      "name": "get_license_status",
+      "description": "Returns how this MCP server is licensed, and — under metered licensing — how much has been consumed. Call this when the user asks about licensing, evaluation limitations, metered usage, remaining credit, or which product engine version is running. Returns a JSON object with `mode` (\"evaluation\", \"licensed\" or \"metered\"), `licensed` (true for both licensed and metered), `consumption` (null unless metered; otherwise `quantity` and `credit`, or `error` if the reading failed), and `server` / `engine` name and version. Takes no arguments and never modifies anything.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}
