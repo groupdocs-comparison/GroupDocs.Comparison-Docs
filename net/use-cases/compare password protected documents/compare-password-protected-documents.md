@@ -9,7 +9,7 @@ productName: GroupDocs.Comparison for .NET
 structuredData:
     showOrganization: True
 toc: true
-draft: true
+draft: false
 ---
 
 ## Introduction
