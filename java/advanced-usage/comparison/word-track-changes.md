@@ -3,11 +3,11 @@ id: word-track-changes
 url: comparison/java/word-track-changes
 title: Show results of comparison as a Word Track Changes
 weight: 13
-description: "This article explains how to use the Microsoft Word Track Changes comparing as a built in feature in GroupDocs.Comparison for Java."
-keywords: WordTrackChanges, revisions
+description: "This page has moved. Word track-changes output is now configured through WordCompareOptions.setDisplayMode(REVISIONS)."
+keywords: WordTrackChanges, revisions, WordCompareOptions, DisplayMode
 productName: GroupDocs.Comparison for Java
 hideChildren: False
-toc: True
+toc: False
 structuredData:
   showOrganization: True
   application:
@@ -15,63 +15,18 @@ structuredData:
     description: Compare documents natively with high performance using Java language and GroupDocs.Comparison for Java
     productCode: comparison
     productPlatform: java
-  showVideo: True
-  howTo:
-    name: How to show results of comparison as a Word Track Changes
-    description: Learn how to use Word Track Changes in comparison result
-    steps:
-      - name: Create an object and load source file
-        text: Create an object of Comparer class. The constructor takes the source file path parameter. You may specify absolute or relative file path as per your requirements.
-      - name: Load target file
-        text: Add the path to the target file using the Add method
-      - name: Specify necessary settings
-        text: Create an options object and specify WordTrackChanges of true value.
-      - name: Compare documents
-        text: Call the Compare method of your object and put the resulting file path parameter and the options object.
 ---
 
 ---
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to customize the display of revisions in the output document.
+> **This page has moved.**
+>
+> The legacy `CompareOptions.setWordTrackChanges()` method is deprecated in favour of the dedicated [WordCompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/wordcompareoptions/) class. Track-changes output is now configured through `setDisplayMode(WordCompareOptions.ComparisonDisplayMode.REVISIONS)`.
+>
+> Please continue reading on the new page: **[Word document comparison options]({{< ref "/comparison/java/advanced-usage/comparison/word-compare-options.md" >}})**.
 
-Revision is a collection of changes received when comparing documents using built-in Word tools.
+The new page covers:
 
-By default, the Word Track Changes option is `false`. Follow these steps to turn on the Word Track Changes:
-
-1.  Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/) object. Specify the source file path or stream.
-2.  Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target file path or stream.
-3.  Instantiate the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/) object. Set the [WordTrackChanges](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/#setWordTrackChanges-boolean-) property to `true`;
-4.  Call the [compare()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#compare-java.lang.String-) method. Specify the [CompareOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options/compareoptions/) object from the previous step.
-
-The following code snippet shows how to disable the display of revisions:
-
-{{< tabs "example1">}}
-{{< tab "Java" >}}
-```java
-import com.groupdocs.comparison.Comparer;
-import com.groupdocs.comparison.options.CompareOptions;
-// ...
-
-try (Comparer comparer = new Comparer("source.docx")) {
-    comparer.add("target.docx");
-    CompareOptions options = new CompareOptions();
-    options.setWordTrackChanges(true);
-    comparer.compare(resultPath, options);
-}
-```
-{{< /tab >}}
-{{< /tabs >}}
-
-The result is as follows:
-
-|                     WordTrackChanges true                      |
-| :------------------------------------------------------------: |
-| ![](/comparison/java/images/word-track-changes-option-true.png) |
-
-
-
-
-|                     WordTrackChanges false                      |
-| :-------------------------------------------------------------: |
-| ![](/comparison/java/images/word-track-changes-option-false.png) |
-
+- `DisplayMode` — choose between **REVISIONS** (Word track-changes markup) and **HIGHLIGHT** (inline colour highlights) output.
+- `DetectStyleChanges`, `HeaderFootersComparison`, `MarkLineBreaks`, and other Word-specific properties.
+- Links to dedicated articles on bookmarks, document properties, revision author name, and revision visibility.
