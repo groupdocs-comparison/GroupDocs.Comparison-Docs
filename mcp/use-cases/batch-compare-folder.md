@@ -64,3 +64,8 @@ The agent calls [`compare`]({{< ref "comparison/mcp/tools-reference/compare.md" 
 ## Where this goes next
 
 Sweeps like this are how teams check that a re-issued batch matches what was approved, that a vendor's "unchanged" statements really are unchanged, and that a migration produced the same documents it started with — all without a single file leaving the machine ([architecture]({{< ref "comparison/mcp/use-cases/on-premise-document-comparison.md" >}})).
+
+## Read more
+
+* [Enforce Document Comparison with Automated Workflows Using MCP](https://blog.groupdocs.com/comparison/enforce-document-comparison-automated-workflows-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

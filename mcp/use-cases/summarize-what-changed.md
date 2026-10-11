@@ -57,10 +57,15 @@ The last one is worth knowing: a style change and a substantive edit look identi
 
 ## When the answer is "nothing"
 
-`No changes detected` is a real, useful result — it confirms two files are identical in content even when their bytes differ (re-saved, re-exported, different producer). That is a question `diff` cannot answer for a DOCX or a PDF.
+`No changes detected` is a real, useful result — it confirms two files are identical in content even when their bytes differ (re-saved, re-exported, different producer). That is a question `diff` cannot answer for a DOCX or a PDF. In evaluation mode only the first two pages of each document are compared, so a clean result covers those pages only — check [`get_license_status`]({{< ref "comparison/mcp/tools-reference/get-license-status.md" >}}) before you rely on it.
 
 ## Then, only if needed
 
 > Good — now give me the marked-up copy of the ones about pricing.
 
 The agent switches to [`compare`]({{< ref "comparison/mcp/tools-reference/compare.md" >}}) and saves the rendered document. Summarize first, render on demand: that is the pattern that keeps a comparison workflow fast.
+
+## Read more
+
+* [Change summaries for release notes, audits and approvals — automated with MCP](https://blog.groupdocs.com/comparison/summarize-document-changes-ai-agent-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

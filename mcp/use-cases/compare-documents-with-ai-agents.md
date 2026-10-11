@@ -71,9 +71,19 @@ Drop two versions of any document into your storage folder and ask:
 
 A capable agent will make two calls — `analyze_changes` for the summary, `compare` for the file — and hand you both in one turn.
 
+## Before you rely on a result
+
+* **Evaluation cap.** Without a license only the first two pages of each document are compared and the result carries a watermark. Ask *"What is the license status of the comparison server?"* first — [`get_license_status`]({{< ref "comparison/mcp/tools-reference/get-license-status.md" >}}).
+* **Same format on both sides.** Compare like with like; convert first if the two files differ in format ([Conversion MCP server](/conversion/mcp/)).
+
 ## Where to go next
 
 * [Review contract revisions]({{< ref "comparison/mcp/use-cases/review-contract-revisions.md" >}}) — the redline workflow end to end.
 * [Summarize what changed]({{< ref "comparison/mcp/use-cases/summarize-what-changed.md" >}}) — answer-only comparisons, and how to keep them cheap.
 * [Batch-compare a folder]({{< ref "comparison/mcp/use-cases/batch-compare-folder.md" >}}) — many pairs in one prompt.
 * [On-premise architecture]({{< ref "comparison/mcp/use-cases/on-premise-document-comparison.md" >}}) — what leaves your machine, and what does not.
+
+## Read more
+
+* [3 Ways to Compare Documents with AI Agents and MCP](https://blog.groupdocs.com/comparison/3-ways-compare-documents-ai-agents-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+

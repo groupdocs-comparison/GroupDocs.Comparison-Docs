@@ -73,3 +73,8 @@ The agent calls [`get_license_status`]({{< ref "comparison/mcp/tools-reference/g
 ## Why local matters here
 
 Contracts under negotiation are exactly the documents that must not be uploaded to a third-party service. The comparison runs in a child process on your machine, against files in a folder you chose; the only thing that reaches your model provider is the text of your prompt and whatever fragments the agent quotes back to you. See [On-premise architecture]({{< ref "comparison/mcp/use-cases/on-premise-document-comparison.md" >}}) for the full boundary — it is the page to send to a security reviewer.
+
+## Read more
+
+* [Why an AI agent should not redline a contract by reading it](https://blog.groupdocs.com/comparison/ai-contract-review-redlines-claude-mcp/) — the same scenario on the GroupDocs blog, with worked examples and the trade-offs.
+
