@@ -78,7 +78,7 @@ try {
 {{< /tabs >}}
 
 
-And than run the script to verify the installation:
+And then run the script to verify the installation:
 
 ```bash
 node check.js

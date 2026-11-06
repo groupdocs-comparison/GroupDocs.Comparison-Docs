@@ -3,7 +3,7 @@ id: home
 url: comparison/nodejs-java
 title: GroupDocs.Comparison for Node.js via Java
 weight: 1
-description: GroupDocs.Compairson for Java developer documentation. Learn how to diff docx, pptx, and pdf files using Java.
+description: GroupDocs.Comparison for Java developer documentation. Learn how to diff docx, pptx, and pdf files using Java.
 keywords: compare,diff,compare files,diff files,java api,api,xlsx,microsoft word,docx,pptx,pdf,java
 productName: GroupDocs.Comparison for Node.js via Java
 hideChildren: True
