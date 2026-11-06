@@ -34,7 +34,7 @@ structuredData:
 
 To connect custom fonts and compare documents, follow these steps:
 
-1. Instantiate the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object. Speicfy a list of directories with custom fonts.
+1. Instantiate the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object. Specify a list of directories with custom fonts.
 2. Instantiate the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) object with source document path or stream and the [LoadOptions](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison.options.load/loadoptions) object created in the previous step.
 3. Call the [add()](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer/#add-java.lang.String-) method. Specify the target document path or stream.
 4. Call the [Comparer](https://reference.groupdocs.com/comparison/java/com.groupdocs.comparison/comparer) method.
