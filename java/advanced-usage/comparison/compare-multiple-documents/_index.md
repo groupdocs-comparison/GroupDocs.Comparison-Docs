@@ -12,7 +12,7 @@ structuredData:
 ---
 {{< alert style="info" >}}This feature is available only for Word documents, PowerPoint and Open Document presentations.{{< /alert >}}
 
-[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to compare more that two documents.
+[GroupDocs.Comparison](https://products.groupdocs.com/comparison/java) allows you to compare more than two documents.
 
 To compare several documents, follow these steps:
 
