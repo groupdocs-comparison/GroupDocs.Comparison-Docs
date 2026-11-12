@@ -61,4 +61,4 @@ Ask your agent *"list your GroupDocs comparison tools and the license status"* â
 
 ## Still stuck?
 
-Post your config (redact license paths) and the client name in the [Comparison forum](https://forum.groupdocs.com/c/comparison/12) â€” we answer MCP questions daily. Bugs: [GitHub issues](https://github.com/groupdocs-comparison/GroupDocs.Comparison.Mcp/issues).
+Post your config (redact license paths) and the client name in the [Comparison forum](https://forum.groupdocs.com/c/comparison/12). Bugs: [GitHub issues](https://github.com/groupdocs-comparison/GroupDocs.Comparison.Mcp/issues).

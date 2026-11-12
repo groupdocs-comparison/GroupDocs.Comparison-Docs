@@ -52,7 +52,7 @@ That last point deserves care in this product specifically: a comparison summary
 The Docker channel is usually the easier sell to a platform team: one image, pinned by digest, no SDK on the host.
 
 ```bash
-docker run --rm -i \
+docker run --rm -i --user "$(id -u):$(id -g)" \
   -v /srv/contracts:/data \
   -v /srv/licenses:/license:ro \
   -e GROUPDOCS_MCP_STORAGE_PATH=/data \
@@ -61,6 +61,7 @@ docker run --rm -i \
 ```
 
 * Pin the tag (`:26.9.1`, not `:latest`) so a rebuild cannot change behaviour underneath you.
+* `--user "$(id -u):$(id -g)"` (Linux) lets the container, which runs as a non-root user, write into a folder you own. A JSON client config runs no shell to expand it — write the numbers: `"--user", "1000:1000"`.
 * Mount the licence read-only; mount only the folders the agent should be able to reach.
 * Images are multi-arch (linux/amd64 + linux/arm64) and carry every native dependency, which also removes the `libgdiplus` class of problem.
 
