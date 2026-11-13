@@ -56,8 +56,8 @@ try (Comparer comparer = new Comparer("source.txt")) {
 {{< /tab >}}
 {{< /tabs >}}
 
-{{< alert style="warning" >}}
-On Java 17 and later, start the JVM with `--add-opens java.base/java.io=ALL-UNNAMED` when saving a text comparison result to a file with a different extension. Without this flag the result file is written as plain text regardless of its extension.
+{{< alert style="info" >}}
+In versions earlier than 26.10 running on Java 17 and later, start the JVM with `--add-opens java.base/java.io=ALL-UNNAMED` when saving a text comparison result to a file with a different extension. Without this flag those versions write the result file as plain text regardless of its extension. Version 26.10 and later need no flag.
 {{< /alert >}}
 
 ## See also
