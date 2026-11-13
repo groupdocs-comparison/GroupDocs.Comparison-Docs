@@ -179,6 +179,7 @@ Common `LoadOptions` properties:
 - `Password` — open a password-protected source or target document. See [Load password-protected documents]({{< ref "/comparison/java/advanced-usage/loading/load-password-protected-documents.md" >}}).
 - `FileType` — specify the document format explicitly and skip auto-detection (faster for large files). See [Specify file type for comparison manually]({{< ref "/comparison/java/advanced-usage/loading/specify-file-type-manually.md" >}}).
 - `FontDirectories` — provide custom font directories used while rendering the result. See [Load custom fonts]({{< ref "/comparison/java/advanced-usage/loading/load-custom-fonts.md" >}}).
+- `SkipExternalResources` / `WhitelistedResources` — control whether remote images and other external resources referenced by a document are loaded (skipped by default). See [Three Ways to Handle External Resources]({{< ref "/comparison/java/use-cases/configuring external resource loading/configuring-external-resource-loading.md" >}}).
 
 ## Next steps
 
